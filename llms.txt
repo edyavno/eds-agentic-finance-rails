@@ -24,6 +24,13 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 - [Robinhood](providers/robinhood.md): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 - [Webull](providers/webull.md): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
 
+## Advisor agents
+
+- [Advisor agents](advisors/README.md): AI tools that help financial advisors work with client data and firm systems. This section is new and still thin. It currently covers Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate.
+- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
+- [Nitrogen](advisors/nitrogen.md): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
+- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
+
 ## Approval models
 
 - [Approval models](approval-models/README.md): The five ways brokers decide who approves an agent's order, from a walled-off account to no broker-side approval at all.
@@ -59,6 +66,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## What changed
 
+- [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 
 ## Optional

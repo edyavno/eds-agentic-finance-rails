@@ -5,7 +5,7 @@ title: Coinbase
 summary: Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
 provider: Coinbase
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-13'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account]
@@ -60,6 +60,7 @@ There are two ways in: a remote MCP server at `https://agents.coinbase.com/mcp` 
 - **Scopes advertised:** include `mcp:orders:create`, `mcp:trades:create`, `mcp:transfers:create` and `mcp:portfolios:update`.[^cb-04]
 - **Account boundary:** you choose which portfolios the agent can reach on the OAuth approval screen.[^cb-03] Isolated agent portfolios are spot crypto only; US derivatives work only in the default portfolio.[^cb-01]
 - **CLI:** runs locally with a CDP API key; Coinbase calls it the most reliable way to execute trades across models.[^cb-01]
+- **Agent feedback:** official docs have a Send feedback section. They say you or your agent can send feedback about the Coinbase MCP through the `coinbase_feedback_submit` tool, that the team reads submitted feedback every day, that feedback is limited to 2,000 characters or less, and that each user can send up to 6 submissions per day. A tool table on the same page also says submissions are screened. The official docs describe this MCP tool and a local CLI command `coinbase feedback`; they do not document an HTTP path named `/feedback`.[^cb-09]
 
 ## Guardrails and risks
 
@@ -90,6 +91,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Changelog
 
+- 2026-11-13: Added the official `coinbase_feedback_submit` feedback tool, from Coinbase MCP docs.[^cb-09]
 - 2026-11-12: Page drafted from source batch 1.
 
 ## Sources
@@ -99,6 +101,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 [^cb-05]: [CDP MCP - Coinbase Developer Documentation](../sources/cb-05.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-04]: [Coinbase for Agents MCP: OAuth protected-resource metadata](../sources/cb-04.md). Coinbase (endpoint metadata), official, retrieved 2026-11-12.
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-13.
 [^cb-08]: [Coinbase’s new tool can help agents trade and pay for premium research - TechCrunch](../sources/cb-08.md). TechCrunch, third-party, retrieved 2026-11-12.
 
 ---

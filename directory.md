@@ -5,10 +5,22 @@ Key fields for every provider, generated from the YAML headers in `providers/`. 
 | Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Last verified | Page status | Unknown fields |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [Alpaca](providers/alpaca.md) | official-mcp | yes | none | stocks; ETFs; fractional equities; options (including multi-leg); crypto | Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables | `https://api.alpaca.markets/mcp` | yes | 2026-11-12 | current | 3 of 12 |
-| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-12 | current | 4 of 12 |
+| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-13 | current | 4 of 12 |
 | [Interactive Brokers](providers/interactive-brokers.md) | official-mcp | draft-only; yes | draft-then-submit; ai-partition | stocks; equity options | IBKR's own login and authorization flow; credentials are never shared with the AI app; revoke in Client Portal > Settings > Manage Third-Party Consents | `https://api.ibkr.com/v1/api/mcp-public` | unknown | 2026-11-12 | current | 3 of 12 |
 | [Robinhood](providers/robinhood.md) | official-mcp | yes | separate-account; per-order-confirm | long equities; options (single-leg only); crypto (not in some states, including New York) | OAuth to the remote MCP server; protected-resource metadata lists the scope "internal"; an independent test reports PKCE and dynamic client registration | `https://agent.robinhood.com/mcp/trading` | unknown | 2026-11-12 | current | 2 of 12 |
 | [Webull](providers/webull.md) | official-mcp | confirm-in-app; yes | per-order-confirm; none | stocks; options (single-leg and strategies); futures; crypto; event contracts | Cloud MCP: OAuth authorization code flow with a per-account Non-Trading or Trading capability. Local OpenAPI MCP: App Key and App Secret, with a 2FA flow | `https://api.webull.com/mcp` | yes | 2026-11-12 | current | 2 of 12 |
+
+
+## Advisor agents
+
+AI tools for financial advisors. These are not launch-broker pages, so they are not in the table above. This section is new and still thin. Section home: [advisors/](advisors/README.md).
+
+| Tool | Summary | Last verified | Page status |
+|---|---|---|---|
+| [Advisor agents](advisors/README.md) | AI tools that help financial advisors work with client data and firm systems. This section is new and still thin. It currently covers Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate. | 2026-11-13 | current |
+| [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md) | Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs. | 2026-11-13 | current |
+| [Nitrogen](advisors/nitrogen.md) | Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded. | 2026-11-13 | current |
+| [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md) | Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such. | 2026-11-13 | current |
 
 Approval models are explained in [approval-models/](approval-models/README.md).
 A page marked stale or archived should not be treated as current; check last_verified.

@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: Open questions and missing sources, ranked.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-13'
 ---
 
 # Gaps
@@ -19,6 +19,10 @@ This page lists what the wiki cannot answer yet. Items are added from unknown fi
 5. **IBKR Autonomous Trading asset list.** An independent review found IBKR's descriptions inconsistent.[^ib-03]
 6. **Primary statements from blockers.** The JPMorgan and Morgan Stanley evidence is from news reports.[^bl-01][^bl-02]
 7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in the batch.[^rh-02][^ib-03]
+
+## Advisor agents
+
+The [advisor agents](advisors/README.md) section is new and still thin: only Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate have pages so far. Official coverage of other advisor platforms, and of approval and access rules beyond the sources already cited, has not been collected yet.
 
 ## Unknown fields by provider
 

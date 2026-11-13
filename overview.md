@@ -3,7 +3,7 @@ type: overview
 title: Overview - the race to be agent-friendly
 summary: Which financial providers let AI agents in, which keep them out, and what changed in 2026.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-13'
 ---
 
 # Overview: the race to be agent-friendly
@@ -26,16 +26,25 @@ Next in line for pages: **Public**, which documents a hosted MCP with a prefligh
 
 - **JPMorgan Chase:** its CEO said it will not allow outside agents into customer accounts, and a spokeswoman said the bank blocks external agents for retail customers (news report).[^bl-01]
 - **Banks more broadly:** reports say JPMorgan, Morgan Stanley, Bank of America, Citi and Wells Fargo are detecting or blocking unvetted agents in customer accounts.[^bl-02][^bl-08]
-- **Charles Schwab:** reported to block agents that log in on clients' behalf and any agent moving money,[^bl-04][^bl-06] while piloting its own Schwab MCP Server with Claude for select clients.[^bl-05]
+- **Charles Schwab:** reported to block agents that log in on clients' behalf and any agent moving money,[^bl-04][^bl-06] while piloting its own Schwab MCP Server with Claude for select clients.[^bl-05] A third-party RIABiz article published November 13, 2026, quotes the announcement as letting thinkorswim-enabled clients "prepare, place, and manage trades, all with the client in-the-loop, through their own AI platform," and quotes sources saying the announcement "does not at all impact or target RIAs or advisors" and "doesn’t cover advisor-managed accounts." The article's Key Points box is labeled "AI generated." The headline framing that Anthropic's days are numbered is the publisher's opinion, not a fact used here.[^bl-11]
 
 These are mostly news reports, not primary statements, which is a known gap.
 
+## Advisor agents
+
+The wiki also covers AI tools for financial advisors, in a new [advisor agents](advisors/README.md) section that is still thin. Current pages:
+
+- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md), including official connector names and that Claude does not place trades or move money.[^an-01][^an-02]
+- [Nitrogen](advisors/nitrogen.md), including an official MCP server and approval-required actions.[^ni-01][^ni-02]
+- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md), from Wells Fargo's July 15, 2026 launch release.[^wf-01]
+
 ## How to read this wiki
 
-- The [directory](directory.md) is the one-table view.
+- The [directory](directory.md) is the one-table view of launch brokers, with a shorter advisor-agents list below it.
+- [Advisor agents](advisors/README.md) covers AI tools for financial advisors.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
-- [What changed](changelog/2026-11-12.md) and [gaps](gaps.md) show what is new and what is still unknown.
+- [What changed](changelog/2026-11-13.md) ([2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
 
 ## Sources
 
@@ -56,6 +65,12 @@ These are mostly news reports, not primary statements, which is a known gap.
 [^bl-04]: [Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews](sources/bl-04.md). InvestmentNews, third-party, retrieved 2026-11-12.
 [^bl-06]: [Schwab and JPMorgan are blocking AI agents from moving customer money](sources/bl-06.md). The Next Web, third-party, retrieved 2026-11-12.
 [^bl-05]: [Schwab Announces Platform Enhancements Including MCP Server to Connect Clients’ AI Platforms With Their Schwab Accounts - Charles Schwab](sources/bl-05.md). Charles Schwab, official, retrieved 2026-11-12.
+[^bl-11]: [Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM - RIABiz](sources/bl-11.md). RIABiz, third-party, retrieved 2026-11-13.
+[^an-01]: [Claude for Financial Advisors - Claude by Anthropic](sources/an-01.md). Anthropic, official, retrieved 2026-11-13.
+[^an-02]: [Claude for Financial Advisors - Claude by Anthropic](sources/an-02.md). Anthropic, official, retrieved 2026-11-13.
+[^ni-01]: [AI Agents Welcome - Nitrogen](sources/ni-01.md). Nitrogen, official, retrieved 2026-11-13.
+[^ni-02]: [Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities](sources/ni-02.md). Nitrogen, official, retrieved 2026-11-13.
+[^wf-01]: [Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience](sources/wf-01.md). Wells Fargo, official, retrieved 2026-11-13.
 
 ---
 

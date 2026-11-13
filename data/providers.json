@@ -212,7 +212,7 @@
       "provider": "Coinbase",
       "page": "providers/coinbase.md",
       "page_status": "current",
-      "last_verified": "2026-11-12",
+      "last_verified": "2026-11-13",
       "summary": "Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.",
       "status": "official-mcp",
       "can_place_orders": [
@@ -352,6 +352,11 @@
           "id": "cb-08",
           "url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/",
           "card": "sources/cb-08.md"
+        },
+        {
+          "id": "cb-09",
+          "url": "https://docs.cdp.coinbase.com/ai-agents/coinbase-for-agents/coinbase-mcp",
+          "card": "sources/cb-09.md"
         }
       ],
       "unknown_fields": [

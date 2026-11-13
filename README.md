@@ -6,9 +6,11 @@ How brokers, banks and payment networks let AI agents trade, pay and manage mone
 
 A source-linked wiki of how brokers and financial services let AI agents in: which ones offer official access, how it works, who approves the agent's orders, and how to build against it. Every fact links to a source; anything not confirmed says `unknown`.
 
+The wiki also covers AI tools for financial advisors. That section is new and still thin; start at [advisor agents](advisors/README.md).
+
 ## Use it
 
-- **People:** start with the [overview](overview.md), the [directory](directory.md) and the [approval models](approval-models/README.md).
+- **People:** start with the [overview](overview.md), the [directory](directory.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
 - **Engineers:** see [Build it](build/README.md).
 - **AI agents:** clone the repo and load [llms.txt](llms.txt), [AGENTS.md](AGENTS.md) and [data/providers.json](data/providers.json) into context. Everything works offline with no tooling.
 

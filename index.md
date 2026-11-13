@@ -18,6 +18,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [AGENTS.md](AGENTS.md): Rules for agents: ingest, query, lint, citations, page life cycle
 - [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
 - [directory.md](directory.md): Every provider's key fields in one table (generated)
+- [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
 - [Gaps - what we do not know yet](gaps.md): Open questions and missing sources, ranked.
 - [log.md](log.md): Append-only history of ingests, reviews and lint passes
 
@@ -28,6 +29,13 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
 - [Robinhood](providers/robinhood.md) (current): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 - [Webull](providers/webull.md) (current): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
+
+## Advisor agents
+
+- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems. This section is new and still thin. It currently covers Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate.
+- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md) (current): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
+- [Nitrogen](advisors/nitrogen.md) (current): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
+- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md) (current): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
 
 ## Approval models
 
@@ -64,6 +72,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## What changed
 
+- [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 
 ## Schema
@@ -72,7 +81,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [schema/source.schema.json](schema/source.schema.json): source card headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (103)
+## Sources (113)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -84,6 +93,9 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [al-07](sources/al-07.md): Alpaca Launches MCP Servers in Public Beta for Broker Partners. | Alpaca | Alpaca | official | 2026-11-12 |
 | [al-08](sources/al-08.md): Broker API MCP (Alpaca Docs) | Alpaca | Alpaca Docs | official | 2026-11-12 |
 | [al-09](sources/al-09.md): Trading API MCP | Alpaca | Alpaca Docs | official | 2026-11-12 |
+| [an-01](sources/an-01.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
+| [an-02](sources/an-02.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
+| [bd-01](sources/bd-01.md): 8 questions for the Wells Fargo wealth unit’s AI chief \| Banking Dive | Wells Fargo | Banking Dive | third-party | 2026-11-13 |
 | [bl-01](sources/bl-01.md): JPMorgan blocks outside AI agents like Muse, Instinct from account access | JPMorgan Chase | CNBC | third-party | 2026-11-12 |
 | [bl-02](sources/bl-02.md): Scoop: Unvetted AI agents are accessing U.S. bank accounts | Banks (JPM, MS, BofA, Citi, Wells) | Axios | third-party | 2026-11-12 |
 | [bl-04](sources/bl-04.md): Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews | Charles Schwab | InvestmentNews | third-party | 2026-11-12 |
@@ -93,6 +105,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [bl-08](sources/bl-08.md): Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts | Banks (JPM, MS, BofA, Citi, Wells) | Yahoo Finance | third-party | 2026-11-12 |
 | [bl-09](sources/bl-09.md): Schwab and JPMorgan are blocking outside AI agents from accounts | Charles Schwab / JPMorgan | Quartz | third-party | 2026-11-12 |
 | [bl-10](sources/bl-10.md): Schwab blocks outside AI agents and steers clients to Charley: the cash-sweep stakes for client-side agents | Charles Schwab | The Exchange (theexchange.tech) | third-party | 2026-11-12 |
+| [bl-11](sources/bl-11.md): Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM \| RIABiz | Charles Schwab | RIABiz | third-party | 2026-11-13 |
 | [cb-01](sources/cb-01.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-03](sources/cb-03.md): Coinbase for Agents setup skill (skill.md) | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-04](sources/cb-04.md): Coinbase for Agents MCP: OAuth protected-resource metadata | Coinbase | Coinbase (endpoint metadata) | official | 2026-11-12 |
@@ -100,6 +113,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [cb-06](sources/cb-06.md): Coinbase Developer Platform docs llms.txt | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-07](sources/cb-07.md): Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase | Coinbase | Coinbase | official | 2026-11-12 |
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
+| [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-13 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-02](sources/ib-02.md): Interactive Brokers Introduces Autonomous Trading | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-03](sources/ib-03.md): IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested | Interactive Brokers | DeskTested | third-party | 2026-11-12 |
@@ -113,7 +127,10 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [id-04](sources/id-04.md): Now available: AgentKit, Proof of Human for the agentic web | World AgentKit | World | official | 2026-11-12 |
 | [id-05](sources/id-05.md): Emerging Trend in GenAI: Observations on AI Agents | FINRA | FINRA | official | 2026-11-12 |
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
+| [ni-01](sources/ni-01.md): AI Agents Welcome \| Nitrogen | Nitrogen | Nitrogen | official | 2026-11-13 |
+| [ni-02](sources/ni-02.md): Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [np-02](sources/np-02.md): PrimeXBT Launches AI-Assisted Trading with MCP Integration, Connecting ChatGPT and Claude to Trading Accounts | PrimeXBT | GlobeNewswire | official | 2026-11-12 |
+| [nv-01](sources/nv-01.md): Nevis Raises $70M Series B Led by EQT Ventures – Nevis | Nevis | Nevis | official | 2026-11-13 |
 | [pa-01](sources/pa-01.md): GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun | awesome-broker-mcp | mphinance (GitHub) | third-party | 2026-11-12 |
 | [pa-02](sources/pa-02.md): GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub | awesome-finance-mcp | BlockRunAI (GitHub) | third-party | 2026-11-12 |
 | [pa-03](sources/pa-03.md): GitHub - frankxai/awesome-payment-agent-skills: Web-first payment-agent skills: mandates, auth, settlement. Human spend cap required. · GitHub | awesome-payment-agent-skills | frankxai (GitHub) | third-party | 2026-11-12 |
@@ -179,6 +196,8 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-12 |
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
+| [wf-01](sources/wf-01.md): Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience | Wells Fargo | Wells Fargo | official | 2026-11-13 |
+| [ws-01](sources/ws-01.md): Wealthtech Roundup: Anthropic, Schwab, Advyzon, Orion And More | Anthropic | Wealth Solutions Report | third-party | 2026-11-13 |
 
 ---
 
