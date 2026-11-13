@@ -1,6 +1,6 @@
 # Ed's Agentic Finance Rails
 
-> A source-linked wiki of how brokers and financial services let AI agents in: official access, how it works, who approves an agent's orders, and how to build against it. Every fact links to a source card; unconfirmed values say "unknown".
+> Connect AI agents to money, safely How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers. Every fact links to a source card; unconfirmed values say "unknown".
 
 Rules for agents: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Full rules: AGENTS.md.
 

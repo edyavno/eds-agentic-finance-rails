@@ -34,7 +34,7 @@ field_sources:
 
 # Robinhood
 
-> Draft. Not yet reviewed. Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
+> Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
 
 ## Overview and current status
 

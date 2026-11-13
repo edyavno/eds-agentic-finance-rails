@@ -1,5 +1,9 @@
 # Index
 
+**Connect AI agents to money, safely**
+
+How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers.
+
 Every page in the wiki. Generated from page headers by the publisher; do not edit by hand.
 
 ## For agents

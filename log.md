@@ -19,3 +19,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 
 ## [2026-11-12] process | drop per-page review status
 - Removed the per-page draft/reviewed/verified step. page_status is now current, stale or archived. last_verified and stale checks stay.
+
+## [2026-11-13] edit | front-page wording
+- Headline is now "Connect AI agents to money, safely". Subhead covers how brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what, starting with five brokers. Mirrored in README.md, index.md and llms.txt.
+- Removed the leftover "Draft. Not yet reviewed." callout from the five launch provider pages. The sourcing sentence stays.

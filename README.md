@@ -1,6 +1,8 @@
 # Ed's Agentic Finance Rails
 
-**Connect an AI agent to a brokerage account, safely.**
+**Connect AI agents to money, safely.**
+
+How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers.
 
 A source-linked wiki of how brokers and financial services let AI agents in: which ones offer official access, how it works, who approves the agent's orders, and how to build against it. Every fact links to a source; anything not confirmed says `unknown`.
 
