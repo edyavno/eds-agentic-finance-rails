@@ -1,0 +1,940 @@
+{
+  "name": "Ed's Agentic Finance Rails",
+  "description": "Agent access to brokerage accounts: one record per provider. Values are sourced or 'unknown'.",
+  "schema": "schema/provider.schema.json",
+  "key_fields": [
+    "status",
+    "can_place_orders",
+    "approval_model",
+    "assets",
+    "order_types",
+    "auth",
+    "endpoint",
+    "transport",
+    "reads_portfolio",
+    "paper_trading",
+    "limits",
+    "notifications"
+  ],
+  "license": "CC-BY-4.0",
+  "providers": [
+    {
+      "id": "alpaca",
+      "provider": "Alpaca",
+      "page": "providers/alpaca.md",
+      "page_status": "draft",
+      "last_verified": "2026-11-12",
+      "summary": "Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "none"
+      ],
+      "assets": [
+        "stocks",
+        "ETFs",
+        "fractional equities",
+        "options (including multi-leg)",
+        "crypto"
+      ],
+      "order_types": "unknown",
+      "auth": "Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables",
+      "endpoint": "https://api.alpaca.markets/mcp",
+      "transport": [
+        "remote-http",
+        "local-stdio",
+        "cli"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "yes",
+      "limits": "unknown",
+      "notifications": "unknown",
+      "endpoint_note": "Paper trading uses https://paper-api.alpaca.markets/mcp. The local server runs over stdio.",
+      "notes": "Earlier research could not confirm a hosted retail MCP; Alpaca's own agentic repo now documents one. The Broker API MCP (beta) is a separate B2B product for broker partners.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "al-02",
+            "url": "https://github.com/alpacahq/alpaca-mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          },
+          {
+            "id": "al-09",
+            "url": "https://docs.alpaca.markets/docs/alpaca-mcp-server",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "al-01",
+            "url": "https://alpaca.markets/mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "al-09",
+            "url": "https://docs.alpaca.markets/docs/alpaca-mcp-server",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "al-05",
+            "url": "https://github.com/alpacahq/cli",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "al-01",
+            "url": "https://alpaca.markets/mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "al-09",
+            "url": "https://docs.alpaca.markets/docs/alpaca-mcp-server",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          },
+          {
+            "id": "al-02",
+            "url": "https://github.com/alpacahq/alpaca-mcp-server",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          },
+          {
+            "id": "al-02",
+            "url": "https://github.com/alpacahq/alpaca-mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "al-05",
+            "url": "https://github.com/alpacahq/cli",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          }
+        ],
+        "paper_trading": [
+          {
+            "id": "al-01",
+            "url": "https://alpaca.markets/mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "al-03",
+            "url": "https://github.com/alpacahq/agentic",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "al-01",
+          "url": "https://alpaca.markets/mcp-server",
+          "card": "sources/al-01.md"
+        },
+        {
+          "id": "al-02",
+          "url": "https://github.com/alpacahq/alpaca-mcp-server",
+          "card": "sources/al-02.md"
+        },
+        {
+          "id": "al-03",
+          "url": "https://github.com/alpacahq/agentic",
+          "card": "sources/al-03.md"
+        },
+        {
+          "id": "al-04",
+          "url": "https://github.com/alpacahq/alpaca-skills",
+          "card": "sources/al-04.md"
+        },
+        {
+          "id": "al-05",
+          "url": "https://github.com/alpacahq/cli",
+          "card": "sources/al-05.md"
+        },
+        {
+          "id": "al-07",
+          "url": "https://alpaca.markets/blog/alpaca-launches-mcp-servers-in-public-beta-for-broker-partners/",
+          "card": "sources/al-07.md"
+        },
+        {
+          "id": "al-08",
+          "url": "https://docs.alpaca.markets/us/docs/broker-api-mcp",
+          "card": "sources/al-08.md"
+        },
+        {
+          "id": "al-09",
+          "url": "https://docs.alpaca.markets/docs/alpaca-mcp-server",
+          "card": "sources/al-09.md"
+        }
+      ],
+      "unknown_fields": [
+        "order_types",
+        "limits",
+        "notifications"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "id": "coinbase",
+      "provider": "Coinbase",
+      "page": "providers/coinbase.md",
+      "page_status": "draft",
+      "last_verified": "2026-11-12",
+      "summary": "Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "separate-account"
+      ],
+      "assets": [
+        "crypto spot",
+        "US derivatives (futures)",
+        "eligible US equities",
+        "x402 payments"
+      ],
+      "order_types": "unknown",
+      "auth": "OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key",
+      "endpoint": "https://agents.coinbase.com/mcp",
+      "transport": [
+        "remote-http",
+        "cli"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "unknown",
+      "limits": "unknown",
+      "notifications": "unknown",
+      "notes": "The dedicated portfolio is optional; the main account can also be used. Isolated agent portfolios are spot-crypto only. Per-order confirmation depends on the AI client.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          },
+          {
+            "id": "cb-07",
+            "url": "https://www.coinbase.com/blog/coinbase-for-agents",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          },
+          {
+            "id": "cb-03",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/skill.md",
+            "authority": "official"
+          },
+          {
+            "id": "cb-07",
+            "url": "https://www.coinbase.com/blog/coinbase-for-agents",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          },
+          {
+            "id": "cb-04",
+            "url": "https://agents.coinbase.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          },
+          {
+            "id": "cb-04",
+            "url": "https://agents.coinbase.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "cb-01",
+            "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cb-01",
+          "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+          "card": "sources/cb-01.md"
+        },
+        {
+          "id": "cb-03",
+          "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/skill.md",
+          "card": "sources/cb-03.md"
+        },
+        {
+          "id": "cb-04",
+          "url": "https://agents.coinbase.com/.well-known/oauth-protected-resource",
+          "card": "sources/cb-04.md"
+        },
+        {
+          "id": "cb-05",
+          "url": "https://docs.cdp.coinbase.com/get-started/tools/cdp-cli-mcp",
+          "card": "sources/cb-05.md"
+        },
+        {
+          "id": "cb-07",
+          "url": "https://www.coinbase.com/blog/coinbase-for-agents",
+          "card": "sources/cb-07.md"
+        },
+        {
+          "id": "cb-08",
+          "url": "https://techcrunch.com/2026/06/11/coinbase-debuts-mcp-for-agent-trading/",
+          "card": "sources/cb-08.md"
+        }
+      ],
+      "unknown_fields": [
+        "order_types",
+        "paper_trading",
+        "limits",
+        "notifications"
+      ],
+      "unknown_count": 4
+    },
+    {
+      "id": "interactive-brokers",
+      "provider": "Interactive Brokers (IBKR)",
+      "page": "providers/interactive-brokers.md",
+      "page_status": "draft",
+      "last_verified": "2026-11-12",
+      "summary": "Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "draft-only",
+        "yes"
+      ],
+      "approval_model": [
+        "draft-then-submit",
+        "ai-partition"
+      ],
+      "assets": [
+        "stocks",
+        "equity options"
+      ],
+      "order_types": "unknown",
+      "auth": "IBKR's own login and authorization flow; credentials are never shared with the AI app; revoke in Client Portal > Settings > Manage Third-Party Consents",
+      "endpoint": "https://api.ibkr.com/v1/api/mcp-public",
+      "transport": [
+        "remote-http"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "unknown",
+      "limits": "Autonomous Trading: funding limited to cash allocated to the AI Partition; funding, account and eligibility limits apply at launch (amounts not published in the sources)",
+      "notifications": "unknown",
+      "endpoint_note": "The Claude connector directory lists https://api.ibkr.com/v1/api/mcp for IBKR's certified connector.",
+      "notes": "can_place_orders and approval_model list the default AI Integration first, then Autonomous Trading. The exact asset list for Autonomous Trading is unclear; an independent review found IBKR's descriptions inconsistent.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "ib-01",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-08",
+            "url": "https://www.ibkrguides.com/releasenotes/connector-v1.1.5.htm",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "ib-01",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-07",
+            "url": "https://www.ibkrguides.com/orgportal/gen-ai-instructions.htm",
+            "authority": "official"
+          },
+          {
+            "id": "ib-02",
+            "url": "https://www.interactivebrokers.com/en/general/about/mediaRelations/10-21-26.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-06",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "ib-01",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-07",
+            "url": "https://www.ibkrguides.com/orgportal/gen-ai-instructions.htm",
+            "authority": "official"
+          },
+          {
+            "id": "ib-02",
+            "url": "https://www.interactivebrokers.com/en/general/about/mediaRelations/10-21-26.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-06",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "ib-02",
+            "url": "https://www.interactivebrokers.com/en/general/about/mediaRelations/10-21-26.php",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "ib-08",
+            "url": "https://www.ibkrguides.com/releasenotes/connector-v1.1.5.htm",
+            "authority": "official"
+          },
+          {
+            "id": "ib-01",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "ib-08",
+            "url": "https://www.ibkrguides.com/releasenotes/connector-v1.1.5.htm",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "ib-08",
+            "url": "https://www.ibkrguides.com/releasenotes/connector-v1.1.5.htm",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "ib-01",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+            "authority": "official"
+          }
+        ],
+        "limits": [
+          {
+            "id": "ib-06",
+            "url": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+            "authority": "official"
+          },
+          {
+            "id": "ib-02",
+            "url": "https://www.interactivebrokers.com/en/general/about/mediaRelations/10-21-26.php",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "ib-01",
+          "url": "https://www.interactivebrokers.com/en/trading/ai-hub.php",
+          "card": "sources/ib-01.md"
+        },
+        {
+          "id": "ib-02",
+          "url": "https://www.interactivebrokers.com/en/general/about/mediaRelations/10-21-26.php",
+          "card": "sources/ib-02.md"
+        },
+        {
+          "id": "ib-03",
+          "url": "https://desktested.com/posts/ibkr-autonomous-trading/",
+          "card": "sources/ib-03.md"
+        },
+        {
+          "id": "ib-04",
+          "url": "https://claude.com/connectors/interactive-brokers",
+          "card": "sources/ib-04.md"
+        },
+        {
+          "id": "ib-06",
+          "url": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+          "card": "sources/ib-06.md"
+        },
+        {
+          "id": "ib-07",
+          "url": "https://www.ibkrguides.com/orgportal/gen-ai-instructions.htm",
+          "card": "sources/ib-07.md"
+        },
+        {
+          "id": "ib-08",
+          "url": "https://www.ibkrguides.com/releasenotes/connector-v1.1.5.htm",
+          "card": "sources/ib-08.md"
+        }
+      ],
+      "unknown_fields": [
+        "order_types",
+        "paper_trading",
+        "notifications"
+      ],
+      "unknown_count": 3
+    },
+    {
+      "id": "robinhood",
+      "provider": "Robinhood",
+      "page": "providers/robinhood.md",
+      "page_status": "draft",
+      "last_verified": "2026-11-12",
+      "summary": "Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "separate-account",
+        "per-order-confirm"
+      ],
+      "assets": [
+        "long equities",
+        "options (single-leg only)",
+        "crypto (not in some states, including New York)"
+      ],
+      "order_types": [
+        "market (share-based)",
+        "market (dollar-based)",
+        "limit",
+        "stop limit",
+        "stop market"
+      ],
+      "auth": "OAuth to the remote MCP server; protected-resource metadata lists the scope \"internal\"; an independent test reports PKCE and dynamic client registration",
+      "endpoint": "https://agent.robinhood.com/mcp/trading",
+      "transport": [
+        "remote-http"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "unknown",
+      "limits": "unknown",
+      "notifications": "Push notification whenever the agent makes a trade, plus a real-time activity feed and P&L in the app",
+      "notes": "Trade approvals are off by default for MCP accounts and still rolling out. Built-in Robinhood Agents are a separate product.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-10",
+            "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-13",
+            "url": "https://agent.robinhood.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-04",
+            "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-04",
+            "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-10",
+            "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "rh-04",
+            "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+            "authority": "official"
+          }
+        ],
+        "order_types": [
+          {
+            "id": "rh-04",
+            "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "rh-13",
+            "url": "https://agent.robinhood.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          },
+          {
+            "id": "rh-02",
+            "url": "https://desktested.com/posts/robinhood-mcp-desk-test/",
+            "authority": "third-party"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-13",
+            "url": "https://agent.robinhood.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "rh-01",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+            "authority": "official"
+          }
+        ],
+        "notifications": [
+          {
+            "id": "rh-10",
+            "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "rh-01",
+          "url": "https://robinhood.com/us/en/support/articles/agentic-trading-overview/",
+          "card": "sources/rh-01.md"
+        },
+        {
+          "id": "rh-02",
+          "url": "https://desktested.com/posts/robinhood-mcp-desk-test/",
+          "card": "sources/rh-02.md"
+        },
+        {
+          "id": "rh-04",
+          "url": "https://robinhood.com/us/en/support/articles/trading-with-your-agent/",
+          "card": "sources/rh-04.md"
+        },
+        {
+          "id": "rh-07",
+          "url": "https://robinhood.com/us/en/support/articles/robinhood-agents-overview/",
+          "card": "sources/rh-07.md"
+        },
+        {
+          "id": "rh-10",
+          "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+          "card": "sources/rh-10.md"
+        },
+        {
+          "id": "rh-13",
+          "url": "https://agent.robinhood.com/.well-known/oauth-protected-resource",
+          "card": "sources/rh-13.md"
+        }
+      ],
+      "unknown_fields": [
+        "paper_trading",
+        "limits"
+      ],
+      "unknown_count": 2
+    },
+    {
+      "id": "webull",
+      "provider": "Webull",
+      "page": "providers/webull.md",
+      "page_status": "draft",
+      "last_verified": "2026-11-12",
+      "summary": "Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "confirm-in-app",
+        "yes"
+      ],
+      "approval_model": [
+        "per-order-confirm",
+        "none"
+      ],
+      "assets": [
+        "stocks",
+        "options (single-leg and strategies)",
+        "futures",
+        "crypto",
+        "event contracts"
+      ],
+      "order_types": "unknown",
+      "auth": "Cloud MCP: OAuth authorization code flow with a per-account Non-Trading or Trading capability. Local OpenAPI MCP: App Key and App Secret, with a 2FA flow",
+      "endpoint": "https://api.webull.com/mcp",
+      "transport": [
+        "remote-http",
+        "local-stdio",
+        "cli"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "yes",
+      "limits": "Local OpenAPI MCP only: per-market maximum order notional (default USD 10,000 for the US market), quantity limits and a symbol whitelist",
+      "notifications": "unknown",
+      "notes": "can_place_orders and approval_model list the Cloud MCP first, then the local OpenAPI MCP. Paper trading refers to the local MCP's UAT sandbox; for Cloud MCP it is unknown.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          },
+          {
+            "id": "wb-06",
+            "url": "https://www.prnewswire.com/news-releases/webull-launches-model-context-protocol-enabling-investors-to-trade-through-ai-in-plain-language-302797953.html",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-07",
+            "url": "https://www.webull.com/news/15661785982567424",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-07",
+            "url": "https://www.webull.com/news/15661785982567424",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-09",
+            "url": "https://api.webull.com/.well-known/oauth-protected-resource",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          },
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          },
+          {
+            "id": "wb-05",
+            "url": "https://github.com/webull-inc/webull-openapi-cli",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "wb-02",
+            "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "paper_trading": [
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ],
+        "limits": [
+          {
+            "id": "wb-03",
+            "url": "https://github.com/webull-inc/webull-openapi-mcp",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "wb-02",
+          "url": "https://developer.webull.com/apis/docs/AI-friendly-Resources/mcp/",
+          "card": "sources/wb-02.md"
+        },
+        {
+          "id": "wb-03",
+          "url": "https://github.com/webull-inc/webull-openapi-mcp",
+          "card": "sources/wb-03.md"
+        },
+        {
+          "id": "wb-05",
+          "url": "https://github.com/webull-inc/webull-openapi-cli",
+          "card": "sources/wb-05.md"
+        },
+        {
+          "id": "wb-06",
+          "url": "https://www.prnewswire.com/news-releases/webull-launches-model-context-protocol-enabling-investors-to-trade-through-ai-in-plain-language-302797953.html",
+          "card": "sources/wb-06.md"
+        },
+        {
+          "id": "wb-07",
+          "url": "https://www.webull.com/news/15661785982567424",
+          "card": "sources/wb-07.md"
+        },
+        {
+          "id": "wb-09",
+          "url": "https://api.webull.com/.well-known/oauth-protected-resource",
+          "card": "sources/wb-09.md"
+        },
+        {
+          "id": "wb-10",
+          "url": "https://www.webull.co.jp/blog/322",
+          "card": "sources/wb-10.md"
+        }
+      ],
+      "unknown_fields": [
+        "order_types",
+        "notifications"
+      ],
+      "unknown_count": 2
+    }
+  ]
+}
