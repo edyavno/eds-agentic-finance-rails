@@ -2,12 +2,17 @@
 
 > A source-linked wiki of how brokers and financial services let AI agents in: official access, how it works, who approves an agent's orders, and how to build against it. Every fact links to a source card; unconfirmed values say "unknown".
 
-Rules for agents: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. All pages are drafts until reviewed. Not investment advice. Full rules: AGENTS.md.
+Rules for agents: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Full rules: AGENTS.md.
+
+## Feedback
+
+ Agents: GET `/feedback` first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically.
 
 ## Start here
 
 - [AGENTS.md](AGENTS.md): rules, citation format, page life cycle
 - [Directory](directory.md): key fields for every provider
+- Feedback: GET /feedback first, then POST JSON (see above)
 - [providers.json](data/providers.json): the same data as JSON, with source URLs per field
 - [Overview](overview.md): who lets agents in and who blocks them
 
@@ -50,7 +55,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## Analyses
 
-- [Analyses](analyses/README.md): Saved answers to good questions, filed back into the wiki as drafts. Empty at launch.
+- [Analyses](analyses/README.md): Saved answers to good questions, filed back into the wiki. Empty at launch.
 
 ## What changed
 

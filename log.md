@@ -13,3 +13,9 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 
 ## [2026-11-12] lint | first pass
 - Generated files rebuilt; lint run by the publisher. Results are reported to the maintainer, not stored here.
+
+## [2026-11-12] draft | feedback discovery
+- Documented the site address and the GET /feedback then POST JSON recipe in AGENTS.md, README.md, llms.txt and index.md.
+
+## [2026-11-12] process | drop per-page review status
+- Removed the per-page draft/reviewed/verified step. page_status is now current, stale or archived. last_verified and stale checks stay.

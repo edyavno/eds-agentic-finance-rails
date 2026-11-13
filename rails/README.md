@@ -2,7 +2,7 @@
 type: rail
 title: Rails
 summary: The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

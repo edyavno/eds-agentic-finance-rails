@@ -4,9 +4,7 @@ id: interactive-brokers
 title: Interactive Brokers
 summary: Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
 provider: Interactive Brokers (IBKR)
-page_status: draft
-reviewed_by: null
-reviewed_on: null
+page_status: current
 last_verified: '2026-11-12'
 status: official-mcp
 can_place_orders: [draft-only, 'yes']

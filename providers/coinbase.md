@@ -4,9 +4,7 @@ id: coinbase
 title: Coinbase
 summary: Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
 provider: Coinbase
-page_status: draft
-reviewed_by: null
-reviewed_on: null
+page_status: current
 last_verified: '2026-11-12'
 status: official-mcp
 can_place_orders: ['yes']

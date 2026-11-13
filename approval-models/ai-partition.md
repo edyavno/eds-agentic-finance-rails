@@ -2,7 +2,7 @@
 type: approval-model
 title: "Approval model: AI Partition"
 summary: An eligible client funds a partition inside their account where a connected AI may submit supported orders without approving each one.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

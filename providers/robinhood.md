@@ -4,9 +4,7 @@ id: robinhood
 title: Robinhood
 summary: Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 provider: Robinhood
-page_status: draft
-reviewed_by: null
-reviewed_on: null
+page_status: current
 last_verified: '2026-11-12'
 status: official-mcp
 can_place_orders: ['yes']

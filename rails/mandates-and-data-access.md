@@ -2,7 +2,7 @@
 type: rail
 title: Mandates and data access
 summary: Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

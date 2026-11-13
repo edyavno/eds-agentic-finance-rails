@@ -2,7 +2,7 @@
 type: rail
 title: Local MCP servers and CLIs
 summary: Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

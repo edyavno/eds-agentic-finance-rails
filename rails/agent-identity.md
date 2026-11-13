@@ -2,7 +2,7 @@
 type: rail
 title: Agent identity
 summary: How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

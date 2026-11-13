@@ -2,7 +2,7 @@
 type: approval-model
 title: "Approval model: draft, then you submit"
 summary: The agent writes a non-binding trade instruction; nothing happens until you review and submit it yourself in the broker's app.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

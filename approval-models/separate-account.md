@@ -2,7 +2,7 @@
 type: approval-model
 title: "Approval model: separate account"
 summary: The agent can only trade in an account or portfolio you create and fund for it, so its reach is capped by what you deposit.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

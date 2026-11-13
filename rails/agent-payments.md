@@ -2,7 +2,7 @@
 type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

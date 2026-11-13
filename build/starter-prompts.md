@@ -2,7 +2,7 @@
 type: build
 title: Starter prompts for coding agents
 summary: Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
-page_status: draft
+page_status: current
 ---
 
 # Starter prompts for coding agents
@@ -40,8 +40,8 @@ the paper or sandbox endpoint if the provider page lists one. Cite the pages you
 
 ```text
 Before relying on <broker>'s page, check its last_verified date and page_status. If
-page_status is "draft" or last_verified is older than 30 days, warn me and open the
-source cards it cites to confirm the key facts.
+page_status is "stale" or "archived", or last_verified is older than 30 days, warn me
+and open the source cards it cites to confirm the key facts.
 ```
 
 If you find something wrong or missing, use the "Suggest a correction" link at the bottom of any page.

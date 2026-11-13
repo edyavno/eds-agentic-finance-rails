@@ -98,27 +98,9 @@
     },
     "page_status": {
       "enum": [
-        "draft",
-        "reviewed",
-        "verified",
+        "current",
         "stale",
         "archived"
-      ]
-    },
-    "reviewed_by": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "reviewed_on": {
-      "oneOf": [
-        {
-          "type": "null"
-        },
-        {
-          "$ref": "#/$defs/date"
-        }
       ]
     },
     "last_verified": {

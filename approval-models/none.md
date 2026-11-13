@@ -2,7 +2,7 @@
 type: approval-model
 title: "Approval model: none at the broker"
 summary: The broker executes what the agent sends. Any approval step has to live in your agent, MCP client or local server.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

@@ -4,15 +4,50 @@
   "title": "Wiki page YAML header (everything except providers and sources)",
   "type": "object",
   "additionalProperties": false,
-  "required": ["type", "title", "summary", "page_status"],
+  "required": [
+    "type",
+    "title",
+    "summary",
+    "page_status"
+  ],
   "properties": {
-    "type": {"enum": ["overview", "approval-model", "rail", "build", "comparison", "analysis", "changelog", "gaps", "guide"]},
-    "title": {"type": "string", "minLength": 1},
-    "summary": {"type": "string", "minLength": 1, "maxLength": 300},
-    "page_status": {"enum": ["draft", "reviewed", "verified", "stale", "archived"]},
-    "last_verified": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
-    "reviewed_by": {"type": ["string", "null"]},
-    "reviewed_on": {"oneOf": [{"type": "null"}, {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}]},
-    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "Changelog entries only."}
+    "type": {
+      "enum": [
+        "overview",
+        "approval-model",
+        "rail",
+        "build",
+        "comparison",
+        "analysis",
+        "changelog",
+        "gaps",
+        "guide"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "page_status": {
+      "enum": [
+        "current",
+        "stale",
+        "archived"
+      ]
+    },
+    "last_verified": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "Changelog entries only."
+    }
   }
 }

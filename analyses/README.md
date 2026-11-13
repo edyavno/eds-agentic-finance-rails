@@ -1,8 +1,8 @@
 ---
 type: analysis
 title: Analyses
-summary: Saved answers to good questions, filed back into the wiki as drafts. Empty at launch.
-page_status: draft
+summary: Saved answers to good questions, filed back into the wiki. Empty at launch.
+page_status: current
 ---
 
 # Analyses
@@ -11,7 +11,7 @@ When a question asked against the wiki produces an answer worth keeping, it is s
 
 Rules for analyses:
 
-- Start as `page_status: draft` and stay off the site's main navigation until reviewed.
+- Save the answer with `page_status: current`, the date, and the question that produced it.
 - Cite source cards with footnotes, like every other page. An analysis is never a source for another page.
 - Note the date and the question that produced it.
 

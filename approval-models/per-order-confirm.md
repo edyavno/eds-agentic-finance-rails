@@ -2,7 +2,7 @@
 type: approval-model
 title: "Approval model: per-order confirm"
 summary: The agent prepares each order, and a person confirms it in the broker's own app before it reaches the market.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

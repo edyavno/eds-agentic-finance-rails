@@ -2,7 +2,7 @@
 type: build
 title: Connect an MCP client
 summary: Documented connection commands and URLs for each launch broker, taken from the providers' own setup pages.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

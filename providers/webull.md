@@ -4,9 +4,7 @@ id: webull
 title: Webull
 summary: Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
 provider: Webull
-page_status: draft
-reviewed_by: null
-reviewed_on: null
+page_status: current
 last_verified: '2026-11-12'
 status: official-mcp
 can_place_orders: [confirm-in-app, 'yes']

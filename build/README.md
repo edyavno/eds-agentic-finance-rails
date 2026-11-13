@@ -2,7 +2,7 @@
 type: build
 title: Build it
 summary: Practical notes for engineers and coding agents connecting to broker MCP servers safely.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

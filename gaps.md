@@ -2,7 +2,7 @@
 type: gaps
 title: Gaps - what we do not know yet
 summary: Open questions and missing sources, ranked.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

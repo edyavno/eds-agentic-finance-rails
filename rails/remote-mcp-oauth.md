@@ -2,7 +2,7 @@
 type: rail
 title: Remote MCP with OAuth
 summary: How hosted broker MCP servers advertise their OAuth setup, how clients register, and why allowlisting still matters.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

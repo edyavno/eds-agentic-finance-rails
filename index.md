@@ -2,6 +2,12 @@
 
 Every page in the wiki. Generated from page headers by the publisher; do not edit by hand.
 
+## For agents
+
+- Agents: GET `/feedback` first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically.
+- `/feedback`: agents can POST a short JSON note about what was missing or wrong (send GET for instructions).
+- Full rules: [AGENTS.md](AGENTS.md). Entry point: [llms.txt](llms.txt).
+
 ## Start here
 
 - [README.md](README.md): What this wiki is and how to use it
@@ -13,48 +19,48 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## Providers
 
-- [Alpaca](providers/alpaca.md) (draft): Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.
-- [Coinbase](providers/coinbase.md) (draft): Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
-- [Interactive Brokers](providers/interactive-brokers.md) (draft): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
-- [Robinhood](providers/robinhood.md) (draft): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
-- [Webull](providers/webull.md) (draft): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
+- [Alpaca](providers/alpaca.md) (current): Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.
+- [Coinbase](providers/coinbase.md) (current): Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
+- [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
+- [Robinhood](providers/robinhood.md) (current): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
+- [Webull](providers/webull.md) (current): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
 
 ## Approval models
 
-- [Approval models](approval-models/README.md) (draft): The five ways brokers decide who approves an agent's order, from a walled-off account to no broker-side approval at all.
-- [Approval model: AI Partition](approval-models/ai-partition.md) (draft): An eligible client funds a partition inside their account where a connected AI may submit supported orders without approving each one.
-- [Approval model: draft, then you submit](approval-models/draft-then-submit.md) (draft): The agent writes a non-binding trade instruction; nothing happens until you review and submit it yourself in the broker's app.
-- [Approval model: none at the broker](approval-models/none.md) (draft): The broker executes what the agent sends. Any approval step has to live in your agent, MCP client or local server.
-- [Approval model: per-order confirm](approval-models/per-order-confirm.md) (draft): The agent prepares each order, and a person confirms it in the broker's own app before it reaches the market.
-- [Approval model: separate account](approval-models/separate-account.md) (draft): The agent can only trade in an account or portfolio you create and fund for it, so its reach is capped by what you deposit.
+- [Approval models](approval-models/README.md) (current): The five ways brokers decide who approves an agent's order, from a walled-off account to no broker-side approval at all.
+- [Approval model: AI Partition](approval-models/ai-partition.md) (current): An eligible client funds a partition inside their account where a connected AI may submit supported orders without approving each one.
+- [Approval model: draft, then you submit](approval-models/draft-then-submit.md) (current): The agent writes a non-binding trade instruction; nothing happens until you review and submit it yourself in the broker's app.
+- [Approval model: none at the broker](approval-models/none.md) (current): The broker executes what the agent sends. Any approval step has to live in your agent, MCP client or local server.
+- [Approval model: per-order confirm](approval-models/per-order-confirm.md) (current): The agent prepares each order, and a person confirms it in the broker's own app before it reaches the market.
+- [Approval model: separate account](approval-models/separate-account.md) (current): The agent can only trade in an account or portfolio you create and fund for it, so its reach is capped by what you deposit.
 
 ## Rails
 
-- [Rails](rails/README.md) (draft): The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
-- [Agent identity](rails/agent-identity.md) (draft): How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
-- [Agent payments](rails/agent-payments.md) (draft): Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
-- [Local MCP servers and CLIs](rails/local-mcp-and-cli.md) (draft): Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
-- [Mandates and data access](rails/mandates-and-data-access.md) (draft): Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
-- [Remote MCP with OAuth](rails/remote-mcp-oauth.md) (draft): How hosted broker MCP servers advertise their OAuth setup, how clients register, and why allowlisting still matters.
+- [Rails](rails/README.md) (current): The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
+- [Agent identity](rails/agent-identity.md) (current): How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
+- [Agent payments](rails/agent-payments.md) (current): Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
+- [Local MCP servers and CLIs](rails/local-mcp-and-cli.md) (current): Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
+- [Mandates and data access](rails/mandates-and-data-access.md) (current): Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
+- [Remote MCP with OAuth](rails/remote-mcp-oauth.md) (current): How hosted broker MCP servers advertise their OAuth setup, how clients register, and why allowlisting still matters.
 
 ## Build it
 
-- [Build it](build/README.md) (draft): Practical notes for engineers and coding agents connecting to broker MCP servers safely.
-- [Connect an MCP client](build/connect-an-mcp-client.md) (draft): Documented connection commands and URLs for each launch broker, taken from the providers' own setup pages.
-- [Human-in-the-loop patterns](build/human-in-the-loop.md) (draft): Where to put human approval in an agent trading flow, and why broker-side approval beats client-side approval.
-- [Starter prompts for coding agents](build/starter-prompts.md) (draft): Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
+- [Build it](build/README.md) (current): Practical notes for engineers and coding agents connecting to broker MCP servers safely.
+- [Connect an MCP client](build/connect-an-mcp-client.md) (current): Documented connection commands and URLs for each launch broker, taken from the providers' own setup pages.
+- [Human-in-the-loop patterns](build/human-in-the-loop.md) (current): Where to put human approval in an agent trading flow, and why broker-side approval beats client-side approval.
+- [Starter prompts for coding agents](build/starter-prompts.md) (current): Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
 
 ## Comparisons
 
-- [Launch brokers compared: approval and safety posture](comparisons/launch-brokers.md) (draft): Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
+- [Launch brokers compared: approval and safety posture](comparisons/launch-brokers.md) (current): Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
 
 ## Analyses
 
-- [Analyses](analyses/README.md) (draft): Saved answers to good questions, filed back into the wiki as drafts. Empty at launch.
+- [Analyses](analyses/README.md) (current): Saved answers to good questions, filed back into the wiki. Empty at launch.
 
 ## What changed
 
-- [What changed: 2026-11-12](changelog/2026-11-12.md) (draft): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
+- [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 
 ## Schema
 

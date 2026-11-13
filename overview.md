@@ -2,7 +2,7 @@
 type: overview
 title: Overview - the race to be agent-friendly
 summary: Which financial providers let AI agents in, which keep them out, and what changed in 2026.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

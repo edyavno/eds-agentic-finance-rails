@@ -2,7 +2,7 @@
 type: build
 title: Human-in-the-loop patterns
 summary: Where to put human approval in an agent trading flow, and why broker-side approval beats client-side approval.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

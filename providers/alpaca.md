@@ -4,9 +4,7 @@ id: alpaca
 title: Alpaca
 summary: Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.
 provider: Alpaca
-page_status: draft
-reviewed_by: null
-reviewed_on: null
+page_status: current
 last_verified: '2026-11-12'
 status: official-mcp
 can_place_orders: ['yes']

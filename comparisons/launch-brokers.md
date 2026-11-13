@@ -2,7 +2,7 @@
 type: comparison
 title: "Launch brokers compared: approval and safety posture"
 summary: Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 

@@ -2,7 +2,7 @@
 type: approval-model
 title: Approval models
 summary: The five ways brokers decide who approves an agent's order, from a walled-off account to no broker-side approval at all.
-page_status: draft
+page_status: current
 last_verified: '2026-11-12'
 ---
 
