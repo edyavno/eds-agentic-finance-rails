@@ -40,3 +40,10 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Prior-art cards are cited only in gaps.md as leads, not as evidence for provider fields. The pa-01 referral/affiliate links were not reused.
 - Front-page coming-soon tabs were not changed.
 
+## [2026-11-14] site | front page search and plain English
+- Added a short, dated answer under the front-page headline, taken from the comparison and provider pages. The Coinbase approval line matches the comparison page (portfolios picked at sign-in, which can include the main account).
+- Replaced the three coming-soon tabs with a line linking existing rails pages. Brokers and Advisor agents stay as tabs. Payments and personal money agents were not flipped to live.
+- Front table now uses plain-English labels; endpoint URLs stay on provider and Build pages.
+- Search setup: page summaries as meta descriptions, branded titles, one SITE_URL for canonicals (preview default; production build fails if unset), home og:url is /, sitemap drops /claude, /tags/ and /log, JSON-LD WebSite and Organization on home and Dataset on the directory, visible "No affiliate links" line. Preview stays noindex.
+- Added the plain-English writing-style rule to AGENTS.md (style section and lint checklist) and the README. Other wiki pages were not rewritten in this round.
+

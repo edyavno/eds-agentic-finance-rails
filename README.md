@@ -39,6 +39,10 @@ People: use the "Suggest a correction" link at the bottom of any page. This repo
 
 For agents: `/feedback` — agents can POST a short JSON note about what was missing or wrong (send GET for instructions). GET /feedback first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically. The final domain comes later.
 
+## Style
+
+Prefer clear, concise, plain English. Technical terms are fine if explained briefly the first time they appear. Everything should be easy to read and understand, and not too long: short sentences, short paragraphs, no jargon without an explanation.
+
 ## License
 
 Content is licensed under [CC BY 4.0](LICENSE). Source cards quote short excerpts from third-party pages for reference; those pages belong to their publishers.

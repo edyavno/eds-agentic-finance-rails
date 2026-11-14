@@ -1,3 +1,9 @@
+---
+title: Index
+summary: Every page in the wiki, generated from page headers.
+page_status: current
+---
+
 # Index
 
 **Connect AI agents to money, safely**
@@ -72,7 +78,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## What changed
 
-- [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added official ERC-8004 to the Agent identity rail, and cited the remaining prepared source cards on existing pages.
+- [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added official ERC-8004, cited remaining source cards, and refreshed the front page for search and plain-English answers.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 

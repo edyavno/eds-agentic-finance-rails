@@ -1,3 +1,10 @@
+---
+title: Directory
+summary: Key fields for every listed broker, generated from provider page headers, with source URLs in the JSON and CSV downloads.
+page_status: current
+last_verified: '2026-11-14'
+---
+
 # Directory
 
 Key fields for every provider, generated from the YAML headers in `providers/`. Each value is sourced on the provider page; `unknown` means no source confirms it yet. Lists show the default path first. Machine-readable copies: [data/providers.json](data/providers.json), [data/providers.csv](data/providers.csv).
