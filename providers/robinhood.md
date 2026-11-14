@@ -5,7 +5,7 @@ title: Robinhood
 summary: Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 provider: Robinhood
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account, per-order-confirm]
@@ -42,7 +42,7 @@ Robinhood runs an official remote Trading MCP server for outside agents at `http
 
 An external agent gets read access to all of your Robinhood accounts, including account numbers, positions, balances and order history, but it can only place trades in your Robinhood Agentic account.[^rh-01] The agentic account is separate from the rest of your portfolio, so the agent can only use the money you deposit into it.[^rh-10]
 
-Robinhood also offers built-in Robinhood Agents, provided by Robinhood Labs, LLC, which says it is not a broker-dealer.[^rh-07] This page covers outside agents connecting through MCP.
+Robinhood also offers built-in Robinhood Agents, provided by Robinhood Labs, LLC, which says it is not a broker-dealer.[^rh-07] This page covers outside agents connecting through MCP. The official Robinhood Agents product page describes Agent Apps, which connect an agent to additional data and tools, and Agent Loops, which that page marks as coming soon; it also repeats the dedicated-account control.[^rh-05] A support article says Agent Apps are only available in the Robinhood mobile app and only accessible by agents hosted by Robinhood.[^rh-12] Another support article covers setting up a built-in agent in the mobile app.[^rh-08] TechCrunch's launch coverage on 2026-05-27 likewise described a dedicated pre-loaded balance and reported that options, crypto, event contracts, futures, and prediction markets were planned at the time; treat current assets as the official support pages above.[^rh-11]
 
 ## Feature matrix
 
@@ -84,6 +84,8 @@ Robinhood warns that if you tell your agent to act without asking you, it can pl
 3. Decide whether to turn on Trade approvals before the first order.[^rh-04]
 4. For your own client: discover OAuth metadata from `/.well-known/oauth-protected-resource`, then use bearer tokens.[^rh-13]
 
+Robinhood also publishes a machine-readable site index at `https://robinhood.com/llms.txt`.[^rh-06]
+
 See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the-loop patterns](../build/human-in-the-loop.md).
 
 ## Unknown so far
@@ -94,6 +96,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the
 
 ## Changelog
 
+- 2026-11-14: Added official product and support pages on built-in Agents, Agent Apps and Agent Loops, plus TechCrunch launch coverage and the site llms.txt index.[^rh-05][^rh-08][^rh-12][^rh-11][^rh-06]
 - 2026-11-12: Page drafted from source batch 1.
 
 ## Sources
@@ -103,7 +106,12 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the
 [^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-07]: [Robinhood Agents overview - Robinhood](../sources/rh-07.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-05]: [Robinhood Agents - Build Your AI Trading Agent](../sources/rh-05.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-12]: [Agent apps - Robinhood](../sources/rh-12.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-08]: [Setting up an agent - Robinhood](../sources/rh-08.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-11]: [Robinhood now lets your AI agents trade stocks - TechCrunch](../sources/rh-11.md). TechCrunch, third-party, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](../sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
+[^rh-06]: [robinhood.com llms.txt](../sources/rh-06.md). Robinhood, official, retrieved 2026-11-12.
 
 ---
 

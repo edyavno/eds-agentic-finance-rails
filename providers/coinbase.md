@@ -5,7 +5,7 @@ title: Coinbase
 summary: Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
 provider: Coinbase
 page_status: current
-last_verified: '2026-11-13'
+last_verified: '2026-11-14'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account]
@@ -81,6 +81,8 @@ The advertised scopes include transfers, so check which tools your client expose
 2. Add the remote MCP in your client, or use the CLI with a CDP API key for terminal agents.[^cb-01]
 3. If your agent only previews orders on a hosted client, ask it to execute explicitly or use the CLI, as Coinbase suggests.[^cb-01]
 
+Coinbase also publishes an agent-readable documentation index at `https://docs.cdp.coinbase.com/llms.txt`, which lists Coinbase for Agents materials.[^cb-06]
+
 See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Unknown so far
@@ -91,6 +93,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Changelog
 
+- 2026-11-14: Cited the official CDP docs llms.txt index.[^cb-06]
 - 2026-11-13: Added the official `coinbase_feedback_submit` feedback tool, from Coinbase MCP docs.[^cb-09]
 - 2026-11-12: Page drafted from source batch 1.
 
@@ -102,6 +105,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 [^cb-04]: [Coinbase for Agents MCP: OAuth protected-resource metadata](../sources/cb-04.md). Coinbase (endpoint metadata), official, retrieved 2026-11-12.
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-13.
+[^cb-06]: [Coinbase Developer Platform docs llms.txt](../sources/cb-06.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-08]: [Coinbase’s new tool can help agents trade and pay for premium research - TechCrunch](../sources/cb-08.md). TechCrunch, third-party, retrieved 2026-11-12.
 
 ---

@@ -3,7 +3,7 @@ type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 ---
 
 # Agent payments
@@ -14,6 +14,7 @@ last_verified: '2026-11-12'
 | Mastercard Agent Pay | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
 | Agentic Commerce Protocol (ACP) | Open standard for buyers, their agents and businesses; the spec is maintained by OpenAI and Stripe | [^pm-07] |
 | Stripe Shared Payment Tokens | A scoped, expiring payment credential with usage limits for agent purchases | [^pm-08] |
+| Stripe MCP | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
 | PayPal MCP server and Agent Toolkit | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
 | x402 | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 
@@ -33,6 +34,7 @@ Payments are a starter set in batch 1; deeper pages will follow.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](../sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
+[^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.

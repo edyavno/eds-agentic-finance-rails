@@ -3,7 +3,7 @@ type: rail
 title: Mandates and data access
 summary: Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 ---
 
 # Mandates and data access
@@ -15,9 +15,9 @@ last_verified: '2026-11-12'
 ## Data access
 
 - **CFPB Section 1033 (personal financial data rights):** the rule went through a reconsideration notice in August 2025.[^pb-05] A November 2026 report says the rule, then at OMB, could become a vehicle to regulate AI agents.[^pb-04]
-- **Aggregators:** Plaid powers account connections for Meta's Muse agent.[^pb-01] Plaid's own MCP servers are for dashboard diagnostics and a sandbox coding toolkit, not end-user account access.[^pb-02]
+- **Aggregators:** Plaid powers account connections for Meta's Muse agent.[^pb-01] Plaid's own MCP servers are for dashboard diagnostics and a sandbox coding toolkit, not end-user account access.[^pb-02] A September 27, 2026 CNBC article covers Muse as a personal agent, including consumers giving the AI access to banking and credit card statements.[^pb-03]
 
-Rules and risk are background here, not a focus. See [FINRA's observations on AI agents](../sources/id-05.md) for the regulator view.
+Rules and risk are background here, not a focus. A January 27, 2026 FINRA blog, "Emerging Trend in GenAI: Observations on AI Agents," discusses member firms' use of AI agents.[^id-05] FINRA's 2026 Annual Regulatory Oversight Report also has a GenAI section on emerging agent trends, describing AI agents as systems that can autonomously perform and complete tasks on behalf of a user.[^id-06]
 
 ## Sources
 
@@ -27,6 +27,9 @@ Rules and risk are background here, not a focus. See [FINRA's observations on AI
 [^pb-04]: [AI agents scramble banks' fight with fintechs](../sources/pb-04.md). POLITICO, third-party, retrieved 2026-11-12.
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
+[^pb-03]: [Meta's Muse is attacking one of economy's most profitable weak spots](../sources/pb-03.md). CNBC, third-party, retrieved 2026-11-12.
+[^id-05]: [Emerging Trend in GenAI: Observations on AI Agents](../sources/id-05.md). FINRA, official, retrieved 2026-11-12.
+[^id-06]: [GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report)](../sources/id-06.md). FINRA, official, retrieved 2026-11-12.
 
 ---
 

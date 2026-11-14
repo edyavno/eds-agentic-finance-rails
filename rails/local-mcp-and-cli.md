@@ -3,7 +3,7 @@ type: rail
 title: Local MCP servers and CLIs
 summary: Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 ---
 
 # Local MCP servers and CLIs
@@ -15,12 +15,12 @@ Some providers publish servers or CLIs you run on your own machine with API cred
 | Alpaca | Trading MCP v2 (stdio) and CLI | API key and secret | Tool filtering with `ALPACA_TOOLSETS`; CLI has no confirmation prompts | [^al-02][^al-05] |
 | Webull | OpenAPI MCP and CLI (alpha) | App Key and App Secret, 2FA | UAT sandbox by default; notional, quantity and symbol limits | [^wb-03][^wb-05] |
 | Coinbase | CLI | CDP API key | Key scoped to chosen portfolios | [^cb-01] |
-| tastytrade | Self-hosted MCP only | OAuth refresh token in env vars | Defaults to production; read-only mode available | [^tt-03] |
+| tastytrade | Self-hosted MCP only | OAuth2 refresh token in env vars | Defaults to production; read-only mode available. A newsroom post describes quotes, option chains with Greeks, single- and multi-leg orders, and preflight cost estimates. | [^tt-03][^tt-04][^tt-02] |
 
 ## Builder notes
 
 - Never expose a local server to the internet. Alpaca warns its package has no remote auth.[^al-02]
-- Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03]
+- Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03] Webull also publishes OpenAPI agent skills for its CLI, with configurable risk controls.[^wb-04]
 - Limits set in environment variables can be changed by anything that can edit that environment.
 
 ## Sources
@@ -31,6 +31,9 @@ Some providers publish servers or CLIs you run on your own machine with API cred
 [^wb-05]: [GitHub - webull-inc/webull-openapi-cli · GitHub](../sources/wb-05.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^tt-03]: [MCP Server · tastytrade Developer Docs](../sources/tt-03.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
+[^tt-04]: [OAuth2 authentication · tastytrade Developer Docs](../sources/tt-04.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
+[^tt-02]: [Open API MCP Brings AI to Your tastytrade Account](../sources/tt-02.md). tastytrade, official, retrieved 2026-11-12.
+[^wb-04]: [GitHub - webull-inc/webull-openapi-skills · GitHub](../sources/wb-04.md). Webull (GitHub), official, retrieved 2026-11-12.
 
 ---
 

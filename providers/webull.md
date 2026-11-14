@@ -5,7 +5,7 @@ title: Webull
 summary: Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
 provider: Webull
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 status: official-mcp
 can_place_orders: [confirm-in-app, 'yes']
 approval_model: [per-order-confirm, none]
@@ -43,7 +43,7 @@ Webull has two official agent paths:
 1. **Cloud MCP**, hosted by Webull at `https://api.webull.com/mcp`. It prepares trade instructions, and each trade needs your separate confirmation in Webull before it goes to the market.[^wb-02][^wb-07]
 2. **Local OpenAPI MCP**, an open-source server you run yourself with API credentials. It can place, modify and cancel orders directly.[^wb-03]
 
-Webull announced its MCP server on 2026-06-11, saying it had been working with clients since April.[^wb-06] On 2026-09-29 it expanded Cloud MCP to trade preparation with no API keys, available to eligible US users through Claude, Perplexity and Grok, with ChatGPT pending.[^wb-07] A separate Japan launch was announced on 2026-05-13.[^wb-10]
+Webull announced its MCP server on 2026-06-11, saying it had been working with clients since April.[^wb-06] An earlier official announcement, dated 08/04 in the post (source card published 2026-08-04), described ChatGPT, Claude, and Grok connectors, a Webull CLI packaged as a standalone Go binary, and enhanced MCP.[^wb-08] On 2026-09-29 it expanded Cloud MCP to trade preparation with no API keys, available to eligible US users through Claude, Perplexity and Grok, with ChatGPT pending.[^wb-07] A separate Japan launch was announced on 2026-05-13.[^wb-10] Webull also maintains an official Agentic Trading product page.[^wb-01]
 
 ## Feature matrix
 
@@ -63,7 +63,7 @@ Webull announced its MCP server on 2026-06-11, saying it had been working with c
 - **Cloud auth:** OAuth authorization code flow. Each account gets a Non-Trading capability (data and account info only) or a Trading capability (adds trade instructions).[^wb-02] The protected-resource metadata lists scopes `account:read`, `order:read`, `order:write`, `market:read`, `instrument:read` and `instruction:all`.[^wb-09]
 - **Cloud order tools:** `place_stock_instruction`, `place_option_single_instruction`, `place_option_strategy_instruction`, `place_futures_instruction`, `place_crypto_instruction`, `place_event_instruction` and `place_algo_instruction`, each documented as needing confirmation in the Webull app or desktop.[^wb-02]
 - **Local MCP:** runs with `uvx webull-openapi-mcp`, needs an App Key and App Secret, supports 2FA and defaults to the UAT sandbox until you set `WEBULL_ENVIRONMENT=prod`.[^wb-03]
-- **CLI:** Webull also publishes an OpenAPI CLI, labelled an alpha preview.[^wb-05]
+- **CLI:** Webull also publishes an OpenAPI CLI, labelled an alpha preview.[^wb-05] A related official repo, webull-openapi-skills, provides agent skills for the OpenAPI CLI with configurable risk controls.[^wb-04]
 
 ## Guardrails and risks
 
@@ -92,6 +92,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Changelog
 
+- 2026-11-14: Added the official Agentic Trading landing page, the OpenAPI skills repo, and the 2026-08-04 connectors and CLI announcement.[^wb-01][^wb-04][^wb-08]
 - 2026-11-12: Page drafted from source batch 1.
 
 ## Sources
@@ -100,9 +101,12 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](../sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^wb-06]: [Webull Launches Model Context Protocol, Enabling Investors to Trade Through AI in Plain Language](../sources/wb-06.md). PR Newswire, official, retrieved 2026-11-12.
+[^wb-08]: [Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools](../sources/wb-08.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^wb-10]: [「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※）](../sources/wb-10.md). Webull Securities Japan, official, retrieved 2026-11-12.
+[^wb-01]: [Webull Agentic Trading — Let your AI agent trade the markets](../sources/wb-01.md). Webull, official, retrieved 2026-11-12.
 [^wb-09]: [Webull API: OAuth protected-resource metadata](../sources/wb-09.md). Webull (endpoint metadata), official, retrieved 2026-11-12.
 [^wb-05]: [GitHub - webull-inc/webull-openapi-cli · GitHub](../sources/wb-05.md). Webull (GitHub), official, retrieved 2026-11-12.
+[^wb-04]: [GitHub - webull-inc/webull-openapi-skills · GitHub](../sources/wb-04.md). Webull (GitHub), official, retrieved 2026-11-12.
 
 ---
 

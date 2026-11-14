@@ -35,3 +35,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Added an ERC-8004 (Trustless Agents) row to rails/agent-identity.md, with status Draft as stated on the official page, and a short note under "Why it matters for finance" that the ERC says payments are orthogonal and gives x402 feedback examples.
 - Eco registration figures were not added; the cited Dune dashboard was not opened and confirmed.
 
+## [2026-11-14] ingest | remaining prepared source cards
+- Folded previously uncited batch cards into existing pages with footnotes: blockers (bl-07, bl-09, bl-10), Coinbase docs index (cb-06), FINRA (id-05, id-06), PrimeXBT watchlist (np-02), prior-art directories as leads only (pa-01 through pa-10), Muse coverage (pb-03), Stripe MCP (pm-09), Public (pu-01, pu-03, pu-04, pu-07, pu-08, pu-09), Robinhood (rh-05, rh-06, rh-08, rh-11, rh-12), tastytrade (tt-02, tt-04), and Webull (wb-01, wb-04, wb-08).
+- Prior-art cards are cited only in gaps.md as leads, not as evidence for provider fields. The pa-01 referral/affiliate links were not reused.
+- Front-page coming-soon tabs were not changed.
+
