@@ -30,3 +30,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Updated overview.md with the RIABiz Schwab report (retail / thinkorswim; RIAs not included). Noted that the article's Key Points box is labeled AI generated and that the Anthropic headline framing is opinion.
 - Updated providers/coinbase.md with the official `coinbase_feedback_submit` tool from Coinbase MCP docs. Official docs do not document an HTTP path named `/feedback`.
 
+## [2026-11-14] ingest | ERC-8004 on the Agent identity rail
+- Retrieved and ingested official source card id-07 from https://eips.ethereum.org/EIPS/eip-8004 (summary, fingerprint, short verified quotes; no full copy).
+- Added an ERC-8004 (Trustless Agents) row to rails/agent-identity.md, with status Draft as stated on the official page, and a short note under "Why it matters for finance" that the ERC says payments are orthogonal and gives x402 feedback examples.
+- Eco registration figures were not added; the cited Dune dashboard was not opened and confirmed.
+

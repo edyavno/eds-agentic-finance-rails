@@ -72,6 +72,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## What changed
 
+- [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added official ERC-8004 (Trustless Agents), a Draft Ethereum ERC, to the Agent identity rail page.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 
@@ -81,7 +82,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [schema/source.schema.json](schema/source.schema.json): source card headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (113)
+## Sources (114)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -127,6 +128,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 | [id-04](sources/id-04.md): Now available: AgentKit, Proof of Human for the agentic web | World AgentKit | World | official | 2026-11-12 |
 | [id-05](sources/id-05.md): Emerging Trend in GenAI: Observations on AI Agents | FINRA | FINRA | official | 2026-11-12 |
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
+| [id-07](sources/id-07.md): ERC-8004: Trustless Agents | ERC-8004 | Ethereum Improvement Proposals | official | 2026-11-14 |
 | [ni-01](sources/ni-01.md): AI Agents Welcome \| Nitrogen | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [ni-02](sources/ni-02.md): Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [np-02](sources/np-02.md): PrimeXBT Launches AI-Assisted Trading with MCP Integration, Connecting ChatGPT and Claude to Trading Accounts | PrimeXBT | GlobeNewswire | official | 2026-11-12 |

@@ -3,7 +3,7 @@ type: rail
 title: Agent identity
 summary: How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-14'
 ---
 
 # Agent identity
@@ -15,10 +15,13 @@ last_verified: '2026-11-12'
 | Visa Trusted Agent Protocol | Agent identity to merchants via HTTP Message Signatures | [^pm-03] |
 | Mastercard Agent Pay | Uses Web Bot Auth at the CDN to verify agents | [^pm-06] |
 | World AgentKit | Proof-of-human delegation to agents, in beta | [^id-04] |
+| ERC-8004 (Trustless Agents) | Draft Ethereum ERC for on-chain identity, reputation, and validation registries, so agents can be discovered and trusted across organizational boundaries without pre-existing trust. Status on the official page: Draft. | [^id-07] |
 
 ## Why it matters for finance
 
 Banks in the batch say they block agents that log in with customer credentials or browser automation.[^bl-04][^bl-08] Signed, identifiable agent traffic is one way a provider could tell a sanctioned agent from an unvetted one.
+
+ERC-8004 says payments are orthogonal to the protocol and not covered here, but it gives examples of how x402 payments can enrich feedback signals.[^id-07]
 
 ## Sources
 
@@ -28,6 +31,7 @@ Banks in the batch say they block agents that log in with customer credentials o
 [^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](../sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^id-04]: [Now available: AgentKit, Proof of Human for the agentic web](../sources/id-04.md). World, official, retrieved 2026-11-12.
+[^id-07]: [ERC-8004: Trustless Agents](../sources/id-07.md). Ethereum Improvement Proposals, official, retrieved 2026-11-14.
 [^bl-04]: [Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews](../sources/bl-04.md). InvestmentNews, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
 
