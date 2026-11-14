@@ -38,9 +38,11 @@ notifications: unknown
 
 ## Overview and current status
 
-Interactive Brokers runs an MCP server for AI platforms such as ChatGPT, Claude, Grok and Perplexity. With the default **AI Integration**, the AI generates trade instructions and you review and submit every order.[^ib-01] Instructions show up in an IBKR app such as Client Portal, where you confirm or reject them.[^ib-07]
+Interactive Brokers runs an MCP server for AI platforms such as ChatGPT, Claude, Grok and Perplexity. MCP (Model Context Protocol) is a standard way for an AI to connect to a broker.
 
-On 2026-10-21 IBKR announced **Autonomous Trading**: eligible clients can let their connected AI submit supported orders without approving each one, inside a separately funded AI Partition.[^ib-02][^ib-06]
+With the default **AI Integration**, the AI generates trade instructions and you review and submit every order.[^ib-01] Instructions show up in an IBKR app such as Client Portal, where you confirm or reject them.[^ib-07]
+
+On 2026-10-21 IBKR announced **Autonomous Trading**. Eligible clients can let their connected AI submit supported orders without approving each one, inside a separately funded AI Partition (a dedicated slice of the account).[^ib-02][^ib-06]
 
 Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom connector URL.[^ib-08]
 
@@ -59,9 +61,9 @@ Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom co
 ## Implementation details
 
 - **Endpoint:** `https://api.ibkr.com/v1/api/mcp-public` for custom connectors in any MCP client, including Claude Code and Cursor.[^ib-08] The Claude connector directory lists `https://api.ibkr.com/v1/api/mcp` and tools such as `get_order_instructions`, `get_account_positions` and `search_contracts`.[^ib-04]
-- **Auth:** you sign in on IBKR's own login screen; credentials are never shared with the AI app.[^ib-08][^ib-01]
+- **Auth:** you sign in on IBKR's own login screen. Credentials are never shared with the AI app.[^ib-08][^ib-01]
 - **Revoke:** Client Portal > Settings > Manage Third-Party Consents.[^ib-08]
-- **Autonomous eligibility:** individual, non-margin accounts; joint, retirement, advisor-managed, organizational and Lite accounts are excluded. You first execute at least 10 trades over two weeks in Review & Approve mode.[^ib-06] An independent review quoted the requirement as 10 trades "of $100 or more each"; the IBKR page retrieved on 2026-11-12 does not show that amount.[^ib-03]
+- **Autonomous eligibility:** individual, non-margin accounts. Joint, retirement, advisor-managed, organizational and Lite accounts are excluded. You first execute at least 10 trades over two weeks in Review & Approve mode.[^ib-06] An independent review quoted the requirement as 10 trades "of $100 or more each"; the IBKR page retrieved on 2026-11-12 does not show that amount.[^ib-03]
 - **Entities:** an independent review reports IBKR's FAQ plans Autonomous Trading for IB LLC, Australia, Singapore and the UK.[^ib-03]
 
 ## Guardrails and risks

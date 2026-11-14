@@ -47,3 +47,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Search setup: page summaries as meta descriptions, branded titles, one SITE_URL for canonicals (preview default; production build fails if unset), home og:url is /, sitemap drops /claude, /tags/ and /log, JSON-LD WebSite and Organization on home and Dataset on the directory, visible "No affiliate links" line. Preview stays noindex.
 - Added the plain-English writing-style rule to AGENTS.md (style section and lint checklist) and the README. Other wiki pages were not rewritten in this round.
 
+## [2026-11-14] edit | plain-English pass
+- Rewrote overview.md (especially Public, tastytrade, Schwab, and PrimeXBT), and the Coinbase, Robinhood, Webull, Interactive Brokers, and Alpaca provider pages, following the AGENTS.md style rule. Light pass on rails/local-mcp-and-cli.md and rails/mandates-and-data-access.md.
+- Facts, numbers, links, and footnote citations were kept. No new facts were added.
+

@@ -8,7 +8,7 @@ last_verified: '2026-11-14'
 
 # Overview: the race to be agent-friendly
 
-In 2026, several brokers started publishing official ways for AI agents to read accounts and place orders, mostly as MCP servers. Others are blocking outside agents. This wiki tracks both, with a source for every claim.
+In 2026, several brokers started publishing official ways for AI agents to read accounts and place orders, mostly as MCP servers. MCP (Model Context Protocol) is a standard way for an AI to connect to a broker. Others are blocking outside agents. This wiki tracks both, with a source for every claim.
 
 ## Who has official agent access
 
@@ -20,17 +20,31 @@ All five launch brokers document an official MCP server:
 - **Interactive Brokers** added a custom connector for any MCP client on 2026-07-17[^ib-08] and announced Autonomous Trading on 2026-10-21.[^ib-02]
 - **Alpaca** documents hosted and local Trading MCP servers.[^al-03][^al-02]
 
-Next in line for pages: **Public**, which documents a hosted MCP at `https://mcp.public.com/mcp` with a preflight before you confirm and no paper mode.[^pu-02][^pu-06] Public's product page lists stocks and ETFs, options, crypto, and bonds, describes dedicated brokerage accounts for MCP connections, and documents OAuth for some clients and an API key for others.[^pu-01] An official changelog entry covers Grok MCP connector setup with OAuth.[^pu-03] Public's official GitHub repository is `publicdotcom-mcp-server`; release 0.1.0 on 2026-03-11 is described as the "initial release of the Official Public API MCP Server," and the repo documents tools including `place_order` and `preflight_order`.[^pu-08][^pu-04] Public also publishes a Claude and Claude Code connector guide and a site-wide llms.txt index.[^pu-09][^pu-07]
+**Public** is next in line for a provider page.
 
-**tastytrade** documents a self-hosted MCP only, with "no tastytrade-hosted endpoint," using an OAuth2 refresh token in environment variables.[^tt-03][^tt-04] A tastytrade newsroom post describes real-time quotes, full option chains with Greeks, single-leg and multi-leg order placement, and preflight cost estimates.[^tt-02]
+It documents a hosted MCP at `https://mcp.public.com/mcp`, with a preflight (an order preview) before you confirm, and no paper mode (no practice trading with simulated money).[^pu-02][^pu-06]
 
-On the watchlist, not yet a provider page: PrimeXBT announced on 2026-11-04 an MCP integration for ChatGPT and Claude that lets clients prepare market, limit, and stop orders and preview estimated prices, fees, margin requirements, leverage, and liquidation levels, with explicit trader confirmation before execution and Read-only and Read & Trade permissions.[^np-02]
+The product page lists stocks and ETFs, options, crypto, and bonds, and describes dedicated brokerage accounts for MCP connections. Some clients use OAuth, a standard sign-in method; others use an API key.[^pu-01]
+
+An official changelog entry covers Grok MCP connector setup with OAuth.[^pu-03] The official GitHub repository is `publicdotcom-mcp-server`. Release 0.1.0 on 2026-03-11 is described as the "initial release of the Official Public API MCP Server." The repo documents tools including `place_order` and `preflight_order`.[^pu-08][^pu-04] Public also publishes a Claude and Claude Code connector guide and a site-wide llms.txt index (a machine-readable page list for AI agents).[^pu-09][^pu-07]
+
+**tastytrade** documents a self-hosted MCP only, with "no tastytrade-hosted endpoint," using an OAuth2 refresh token in environment variables (settings on the machine that runs the server).[^tt-03][^tt-04]
+
+A tastytrade newsroom post describes real-time quotes, full option chains with Greeks (standard option risk measures), single-leg and multi-leg order placement, and preflight cost estimates.[^tt-02]
+
+On the watchlist, and not yet a provider page: PrimeXBT announced an MCP integration for ChatGPT and Claude on 2026-11-04. Clients can prepare market, limit, and stop orders, and preview estimated prices, fees, margin requirements, leverage, and liquidation levels. Every order still needs explicit trader confirmation before it is executed. Read-only and Read & Trade permissions are available.[^np-02]
 
 ## Who is blocking agents
 
-- **JPMorgan Chase:** its CEO said it will not allow outside agents into customer accounts, and a spokeswoman said the bank blocks external agents for retail customers (news report).[^bl-01] In a later Banking Dive report, Dimon said JPMorgan is "not going to allow just any outside agent to come in inside the company because it's too risky for the clients and for JPMorgan," and warned customers about "liability transfer."[^bl-07]
+- **JPMorgan Chase:** its CEO said it will not allow outside agents into customer accounts. A spokeswoman said the bank blocks external agents for retail customers (news report).[^bl-01] In a later Banking Dive report, Dimon said JPMorgan is "not going to allow just any outside agent to come in inside the company because it's too risky for the clients and for JPMorgan." He also warned customers about "liability transfer."[^bl-07]
 - **Banks more broadly:** reports say JPMorgan, Morgan Stanley, Bank of America, Citi and Wells Fargo are detecting or blocking unvetted agents in customer accounts.[^bl-02][^bl-08]
-- **Charles Schwab:** reported to block agents that log in on clients' behalf and any agent moving money,[^bl-04][^bl-06] while piloting its own Schwab MCP Server with Claude for select clients.[^bl-05] Other third-party reports likewise say Schwab is blocking outside agents that use client credentials or browser automation, will not allow agents to move money, and is steering clients toward Charley, while describing MCP access for a client's chosen model to check balances and do research with no money movement.[^bl-10] Quartz, citing The Epoch Times, also reported that Schwab planned to let third-party models connect through MCP with defined permissions, including a bar on transferring funds.[^bl-09] A third-party RIABiz article published November 13, 2026, quotes the announcement as letting thinkorswim-enabled clients "prepare, place, and manage trades, all with the client in-the-loop, through their own AI platform," and quotes sources saying the announcement "does not at all impact or target RIAs or advisors" and "doesn’t cover advisor-managed accounts." The article's Key Points box is labeled "AI generated." The headline framing that Anthropic's days are numbered is the publisher's opinion, not a fact used here.[^bl-11]
+- **Charles Schwab:** reported to block agents that log in on clients' behalf, and any agent moving money,[^bl-04][^bl-06] while piloting its own Schwab MCP Server with Claude for select clients.[^bl-05]
+
+Other third-party reports likewise say Schwab is blocking outside agents that use client credentials or browser automation. They say it will not allow agents to move money, and is steering clients toward Charley. They also describe MCP access for a client's chosen model to check balances and do research, with no money movement.[^bl-10]
+
+Quartz, citing The Epoch Times, also reported that Schwab planned to let third-party models connect through MCP with defined permissions, including a bar on transferring funds.[^bl-09]
+
+A third-party RIABiz article published November 13, 2026, quotes the announcement as letting thinkorswim-enabled clients "prepare, place, and manage trades, all with the client in-the-loop, through their own AI platform." It quotes sources saying the announcement "does not at all impact or target RIAs or advisors" and "doesn’t cover advisor-managed accounts." The article's Key Points box is labeled "AI generated." The headline framing that Anthropic's days are numbered is the publisher's opinion, not a fact used here.[^bl-11]
 
 These are mostly news reports, not primary statements, which is a known gap.
 

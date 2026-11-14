@@ -38,11 +38,19 @@ field_sources:
 
 ## Overview and current status
 
-Robinhood runs an official remote Trading MCP server for outside agents at `https://agent.robinhood.com/mcp/trading`.[^rh-01][^rh-13] Robinhood announced Agentic Trading on 2026-05-27 as a beta that supported equities only at launch.[^rh-10] The current support pages list long equities, options and crypto.[^rh-04]
+Robinhood runs an official remote Trading MCP server for outside agents at `https://agent.robinhood.com/mcp/trading`.[^rh-01][^rh-13] MCP (Model Context Protocol) is a standard way for an AI to connect to a broker.
 
-An external agent gets read access to all of your Robinhood accounts, including account numbers, positions, balances and order history, but it can only place trades in your Robinhood Agentic account.[^rh-01] The agentic account is separate from the rest of your portfolio, so the agent can only use the money you deposit into it.[^rh-10]
+Robinhood announced Agentic Trading on 2026-05-27 as a beta that supported equities only at launch.[^rh-10] The current support pages list long equities, options and crypto.[^rh-04]
 
-Robinhood also offers built-in Robinhood Agents, provided by Robinhood Labs, LLC, which says it is not a broker-dealer.[^rh-07] This page covers outside agents connecting through MCP. The official Robinhood Agents product page describes Agent Apps, which connect an agent to additional data and tools, and Agent Loops, which that page marks as coming soon; it also repeats the dedicated-account control.[^rh-05] A support article says Agent Apps are only available in the Robinhood mobile app and only accessible by agents hosted by Robinhood.[^rh-12] Another support article covers setting up a built-in agent in the mobile app.[^rh-08] TechCrunch's launch coverage on 2026-05-27 likewise described a dedicated pre-loaded balance and reported that options, crypto, event contracts, futures, and prediction markets were planned at the time; treat current assets as the official support pages above.[^rh-11]
+An external agent gets read access to all of your Robinhood accounts, including account numbers, positions, balances and order history. It can only place trades in your Robinhood Agentic account.[^rh-01] The agentic account is separate from the rest of your portfolio, so the agent can only use the money you deposit into it.[^rh-10]
+
+Robinhood also offers built-in Robinhood Agents, provided by Robinhood Labs, LLC, which says it is not a broker-dealer.[^rh-07] This page covers outside agents connecting through MCP.
+
+The official Robinhood Agents product page describes Agent Apps, which connect an agent to additional data and tools, and Agent Loops, which that page marks as coming soon. It also repeats the dedicated-account control.[^rh-05]
+
+A support article says Agent Apps are only available in the Robinhood mobile app, and only accessible by agents hosted by Robinhood.[^rh-12] Another support article covers setting up a built-in agent in the mobile app.[^rh-08]
+
+TechCrunch's launch coverage on 2026-05-27 likewise described a dedicated pre-loaded balance. It reported that options, crypto, event contracts, futures, and prediction markets were planned at the time. Treat current assets as the official support pages above.[^rh-11]
 
 ## Feature matrix
 
@@ -61,7 +69,7 @@ Robinhood also offers built-in Robinhood Agents, provided by Robinhood Labs, LLC
 ## Implementation details
 
 - **Endpoint:** `https://agent.robinhood.com/mcp/trading`, added as a remote HTTP MCP server, for example `claude mcp add robinhood-trading --transport http https://agent.robinhood.com/mcp/trading`.[^rh-01]
-- **Auth:** OAuth. The protected-resource metadata names the same URL as resource and authorization server, uses bearer tokens in the header, and lists one scope, `internal`.[^rh-13] An independent test on 2026-09-05 reported OAuth 2.0 with PKCE, dynamic client registration and 73 tools on that date.[^rh-02]
+- **Auth:** OAuth, a standard sign-in method. The protected-resource metadata (the server's published sign-in details) names the same URL as resource and authorization server, uses bearer tokens in the header, and lists one scope, `internal`.[^rh-13] An independent test on 2026-09-05 reported OAuth 2.0 with PKCE (an extra check in the sign-in flow), dynamic client registration, and 73 tools on that date.[^rh-02]
 - **Tool list:** Robinhood publishes tool tables per category, including trade-approval tools such as `get_trade_approvals` and `decline_trade_approval`.[^rh-04]
 - **Account boundary:** read access spans all accounts; trading is limited to the agentic account.[^rh-01]
 

@@ -8,14 +8,16 @@ last_verified: '2026-11-14'
 
 # Local MCP servers and CLIs
 
-Some providers publish servers or CLIs you run on your own machine with API credentials.
+Some providers publish servers or CLIs you run on your own machine with API credentials. MCP (Model Context Protocol) is a standard way for an AI to connect to a broker. A CLI is a command-line tool.
 
 | Provider | Local option | Credentials | Safety defaults | Sources |
 |---|---|---|---|---|
 | Alpaca | Trading MCP v2 (stdio) and CLI | API key and secret | Tool filtering with `ALPACA_TOOLSETS`; CLI has no confirmation prompts | [^al-02][^al-05] |
 | Webull | OpenAPI MCP and CLI (alpha) | App Key and App Secret, 2FA | UAT sandbox by default; notional, quantity and symbol limits | [^wb-03][^wb-05] |
 | Coinbase | CLI | CDP API key | Key scoped to chosen portfolios | [^cb-01] |
-| tastytrade | Self-hosted MCP only | OAuth2 refresh token in env vars | Defaults to production; read-only mode available. A newsroom post describes quotes, option chains with Greeks, single- and multi-leg orders, and preflight cost estimates. | [^tt-03][^tt-04][^tt-02] |
+| tastytrade | Self-hosted MCP only | OAuth2 refresh token in env vars | Defaults to production; read-only mode available | [^tt-03][^tt-04] |
+
+A tastytrade newsroom post describes real-time quotes, option chains with Greeks (standard option risk measures), single- and multi-leg orders, and preflight cost estimates.[^tt-02]
 
 ## Builder notes
 

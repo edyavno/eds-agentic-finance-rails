@@ -38,9 +38,11 @@ field_sources:
 
 ## Overview and current status
 
-Alpaca is an API-first broker with several official agent options: hosted MCP servers behind OAuth, a local Trading MCP server you run with API keys, and a CLI.[^al-03] The hosted Trading MCP is at `https://api.alpaca.markets/mcp`, with a paper-trading twin at `https://paper-api.alpaca.markets/mcp`.[^al-03] Hosted access currently supports Cursor, Claude Code and Codex through plugins.[^al-03]
+Alpaca is an API-first broker with several official agent options: hosted MCP servers behind OAuth (a standard sign-in method), a local Trading MCP server you run with API keys, and a CLI (a command-line tool). MCP (Model Context Protocol) is a standard way for an AI to connect to a broker.[^al-03]
 
-Agents can trade fractional equities, ETFs, crypto and multi-leg options.[^al-01] Paper mode starts with $100K in simulated funds; switching to live means changing API keys.[^al-01]
+The hosted Trading MCP is at `https://api.alpaca.markets/mcp`, with a paper-trading twin at `https://paper-api.alpaca.markets/mcp`. Paper trading is practice trading with simulated money.[^al-03] Hosted access currently supports Cursor, Claude Code and Codex through plugins.[^al-03]
+
+Agents can trade fractional equities, ETFs, crypto and multi-leg options.[^al-01] Paper mode starts with $100K in simulated funds. Switching to live means changing API keys.[^al-01]
 
 A separate Broker API MCP, in public beta since 2026-07-20, is for broker partners who build investing apps for their own customers.[^al-07][^al-08] It is not a retail path and is noted here only for context.
 
@@ -60,8 +62,8 @@ A separate Broker API MCP, in public beta since 2026-07-20, is for broker partne
 ## Implementation details
 
 - **Hosted Trading MCP:** `https://api.alpaca.markets/mcp` (live) and `https://paper-api.alpaca.markets/mcp` (paper), OAuth sign-in with an Alpaca account.[^al-03]
-- **Local Trading MCP v2:** a full rewrite on FastMCP and OpenAPI; none of the v1 tools exist in v2.[^al-02] It runs over stdio with API keys and does not set up remote auth, so Alpaca warns not to expose it to the internet.[^al-02]
-- **CLI:** built for agents and scripts; Alpaca says it has no confirmation prompts and every command runs immediately.[^al-05]
+- **Local Trading MCP v2:** a full rewrite on FastMCP and OpenAPI. None of the v1 tools exist in v2.[^al-02] It runs over stdio (standard input and output on your machine, not a public web address) with API keys and does not set up remote auth, so Alpaca warns not to expose it to the internet.[^al-02]
+- **CLI:** built for agents and scripts. Alpaca says it has no confirmation prompts and every command runs immediately.[^al-05]
 - **Agent skills:** Alpaca publishes SKILL.md files for its Trading and Broker APIs.[^al-04]
 
 ## Guardrails and risks

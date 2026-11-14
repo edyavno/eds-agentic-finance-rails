@@ -10,14 +10,18 @@ last_verified: '2026-11-14'
 
 ## Mandates
 
-- **AP2 (Agent Payments Protocol):** a protocol for agent-initiated payments built on mandates, designed to work with A2A and MCP.[^pm-13] A reference implementation and samples are on GitHub.[^pm-12]
+- **AP2 (Agent Payments Protocol):** a protocol for agent-initiated payments built on mandates, which record what a user authorized an agent to do. It is designed to work with A2A and MCP (Model Context Protocol, a standard way for an AI to connect to a service).[^pm-13] A reference implementation and samples are on GitHub.[^pm-12]
 
 ## Data access
 
 - **CFPB Section 1033 (personal financial data rights):** the rule went through a reconsideration notice in August 2025.[^pb-05] A November 2026 report says the rule, then at OMB, could become a vehicle to regulate AI agents.[^pb-04]
 - **Aggregators:** Plaid powers account connections for Meta's Muse agent.[^pb-01] Plaid's own MCP servers are for dashboard diagnostics and a sandbox coding toolkit, not end-user account access.[^pb-02] A September 27, 2026 CNBC article covers Muse as a personal agent, including consumers giving the AI access to banking and credit card statements.[^pb-03]
 
-Rules and risk are background here, not a focus. A January 27, 2026 FINRA blog, "Emerging Trend in GenAI: Observations on AI Agents," discusses member firms' use of AI agents.[^id-05] FINRA's 2026 Annual Regulatory Oversight Report also has a GenAI section on emerging agent trends, describing AI agents as systems that can autonomously perform and complete tasks on behalf of a user.[^id-06]
+Rules and risk are background here, not a focus.
+
+A January 27, 2026 FINRA blog, "Emerging Trend in GenAI: Observations on AI Agents," discusses member firms' use of AI agents. GenAI means generative AI.[^id-05]
+
+FINRA's 2026 Annual Regulatory Oversight Report also has a GenAI section on emerging agent trends. It describes AI agents as systems that can autonomously perform and complete tasks on behalf of a user.[^id-06]
 
 ## Sources
 
