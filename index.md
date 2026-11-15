@@ -8,7 +8,7 @@ page_status: current
 
 **Connect AI agents to money, safely**
 
-How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers.
+How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what.
 
 Every page in the wiki. Generated from page headers by the publisher; do not edit by hand.
 
@@ -24,7 +24,8 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [AGENTS.md](AGENTS.md): Rules for agents: ingest, query, lint, citations, page life cycle
 - [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
 - [Glossary](glossary.md): Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
-- [directory.md](directory.md): Every provider's key fields in one table (generated)
+- [Trading](directory.md): Trading: which brokers let AI agents trade, who approves, and every broker's key fields (generated)
+- [FAQ: AI agents and money](faq.md): Short cited answers to common questions
 - [Payments](payments/README.md): How AI agents pay: card networks, payment tokens, commerce and payment protocols
 - [Personal money agents](personal-money/README.md): Personal money agents, bank AI tools, and how banks treat outside agents
 - [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
@@ -102,7 +103,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, the Trading short answer moved to the directory, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
+- [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.

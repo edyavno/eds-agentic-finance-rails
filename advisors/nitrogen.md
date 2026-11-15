@@ -8,6 +8,8 @@ last_verified: '2026-11-13'
 
 # Nitrogen
 
+Nitrogen offers advisor agents through an official MCP server and its Nucleus agentic AI engine, and its official agents page says every action still requires the advisor's approval.[^ni-01][^ni-02]
+
 Nitrogen documents advisor agents on its official agents page and in a Fall 2026 product announcement distributed on GlobeNewswire (Source: Nitrogen).[^ni-01][^ni-02]
 
 ## Official agents page

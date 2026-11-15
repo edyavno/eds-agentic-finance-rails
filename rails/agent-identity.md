@@ -8,6 +8,8 @@ last_verified: '2026-11-14'
 
 # Agent identity
 
+Agents can prove who they are to websites and merchants by signing their web requests, as Web Bot Auth and the card-network programs built on it do, by carrying proof that a real person delegated them, or through on-chain identity registries.[^id-01][^pm-03][^pm-06][^id-04][^id-07] The table lists each approach.
+
 | Approach | What it is | Sources |
 |---|---|---|
 | Web Bot Auth | IETF draft using HTTP Message Signatures for automated traffic | [^id-01] |
@@ -26,12 +28,12 @@ ERC-8004 says payments are orthogonal to the protocol and not covered here, but 
 ## Sources
 
 [^id-01]: [draft-ietf-webbotauth-httpsig-protocol-01 - HTTP Message Signatures for automated traffic](../sources/id-01.md). IETF, official, retrieved 2026-11-12.
-[^id-02]: [Web Bot Auth · Cloudflare bot solutions docs](../sources/id-02.md). Cloudflare Docs, official, retrieved 2026-11-12.
-[^id-03]: [The age of agents: cryptographically recognizing agent traffic - Cloudflare Blog](../sources/id-03.md). Cloudflare Blog, official, retrieved 2026-11-12.
 [^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](../sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^id-04]: [Now available: AgentKit, Proof of Human for the agentic web](../sources/id-04.md). World, official, retrieved 2026-11-12.
 [^id-07]: [ERC-8004: Trustless Agents](../sources/id-07.md). Ethereum Improvement Proposals, official, retrieved 2026-11-14.
+[^id-02]: [Web Bot Auth · Cloudflare bot solutions docs](../sources/id-02.md). Cloudflare Docs, official, retrieved 2026-11-12.
+[^id-03]: [The age of agents: cryptographically recognizing agent traffic - Cloudflare Blog](../sources/id-03.md). Cloudflare Blog, official, retrieved 2026-11-12.
 [^bl-04]: [Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews](../sources/bl-04.md). InvestmentNews, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
 

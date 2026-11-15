@@ -8,7 +8,7 @@ last_verified: '2026-11-13'
 
 # Advisor agents
 
-This section covers official agent tools built for financial advisors, as distinct from the retail broker MCP servers in the [directory](../directory.md). It is new and still thin. Claims below are limited to the sources cited.
+This section covers official agent tools built for financial advisors, as distinct from the retail broker MCP servers on the [Trading](../directory.md) page. It is new and still thin. Claims below are limited to the sources cited.
 
 | Tool | What the cited sources say | Sources |
 |---|---|---|

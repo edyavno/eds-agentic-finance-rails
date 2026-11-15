@@ -8,6 +8,8 @@ last_verified: '2026-11-13'
 
 # Claude for Financial Advisors
 
+Claude for Financial Advisors is Anthropic's product for advisors. It connects Claude to firm systems through partner connectors, and official pages say it does not place trades or move money.[^an-01][^an-02]
+
 Anthropic documents Claude for Financial Advisors on an official article originally published on September 14, 2026, later updated to include additional connectors from Anthropic partners, and on an official solutions page.[^an-01][^an-02]
 
 ## What official pages say it does not do

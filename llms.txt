@@ -1,6 +1,6 @@
 # Ed's Agentic Finance Rails
 
-> Connect AI agents to money, safely How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers. Every fact links to a source card; unconfirmed values say "unknown".
+> Connect AI agents to money, safely How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Every fact links to a source card; unconfirmed values say "unknown".
 
 Rules for agents: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Full rules: AGENTS.md.
 
@@ -11,7 +11,8 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 ## Start here
 
 - [AGENTS.md](AGENTS.md): rules, citation format, page life cycle
-- [Directory](directory.md): short answer to which brokers let AI agents trade and who approves, then key fields for every provider and program
+- [Trading](directory.md): short answer to which brokers let AI agents trade and who approves, then key fields for every broker
+- [FAQ](faq.md): short cited answers to common questions
 - [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Advisor agents](advisors/README.md), [Rails](rails/README.md): section home pages
 - [Approval models](approval-models/README.md): the five ways an agent's order gets approved
 - [What changed](changelog/README.md): every update, newest first, with the wiki in numbers
@@ -86,14 +87,10 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 - [Launch brokers compared: approval and safety posture](comparisons/launch-brokers.md): Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
 
-## Analyses
-
-- [Analyses](analyses/README.md): Saved answers to good questions, filed back into the wiki. Empty at launch.
-
 ## What changed
 
 - [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, the Trading short answer moved to the directory, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
+- [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
 - [What changed: 2026-11-14](changelog/2026-11-14.md): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.

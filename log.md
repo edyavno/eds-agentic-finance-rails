@@ -70,3 +70,11 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Generated record tables (what an agent can do, what you control, official MCP, last verified) added to payments/README.md and personal-money/README.md between records markers.
 - Glossary: approval model, human in the loop, rails. README style section now matches the AGENTS.md glossary rule. AGENTS.md lists the new generated files.
 - No last_verified dates were bumped; no facts or source cards changed.
+
+## [2026-11-15] edit | approved organization pass: Trading page, FAQ, answer-first openings
+- directory.md renamed to "Trading" in titles, nav and link text; the /directory URL is unchanged. It now covers brokers only. The payments, personal-money and advisor tables were removed from it; their operator and availability columns moved into the generated records tables on payments/README.md and personal-money/README.md, so no field was lost. Advisor summaries, last_verified and page status remain on advisors/README.md and each advisor page.
+- New faq.md (six Q&As). Every answer is footnoted from cards already cited on existing pages (al-01, al-02, al-03, al-05, cb-01, cb-03, cb-07, ib-01, ib-06, ib-07, rh-01, rh-04, rh-09, wb-02, wb-03, wb-07, pm-01, pm-05, pm-06, pm-08, bl-01, bl-02, bl-08, an-02, ni-01, wf-01). Unknowns kept as unknown (paper options for Robinhood, Coinbase and IBKR; Webull Cloud MCP sandbox; Wells Fargo AI Teammate trading). last_verified set to 2026-11-12, the earliest underlying check.
+- Answer-first openings added to rails/agent-identity.md, rails/agent-payments.md, rails/mandates-and-data-access.md, build/human-in-the-loop.md and the three advisors pages, using footnotes already defined on each page. last_verified not bumped.
+- "Starting with five brokers." dropped from the README lede. README, overview.md and the generated index and llms.txt link the FAQ.
+- No facts or source cards changed.
+- Public copy: dropped the phrase "No affiliate links." and its variants from the README, payments/README.md, personal-money/README.md, gaps.md, changelog/2026-11-14.md and the front-page footer, on the maintainer's request of 2026-11-15. The footer now reads "Not investment advice." The no-affiliate-links rule for contributors in AGENTS.md and the lint check are unchanged.

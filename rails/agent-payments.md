@@ -8,6 +8,8 @@ last_verified: '2026-11-14'
 
 # Agent payments
 
+AI agents pay through card-network programs, limited payment tokens, open commerce protocols and payments built into a web request.[^pm-01][^pm-05][^pm-08][^pm-07][^pm-14] The table lists each rail; every program also has its own page in [Payments](../payments/README.md).
+
 | Rail | What it is | Sources |
 |---|---|---|
 | [Visa Intelligent Commerce](../payments/visa-intelligent-commerce.md) | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
@@ -28,16 +30,16 @@ Each program has its own page, with a sourced record, in the [Payments](../payme
 ## Sources
 
 [^pm-01]: [Visa Developer Center](../sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
+[^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
+[^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
+[^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](../sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
+[^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
-[^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
-[^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](../sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
-[^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
-[^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-12.

@@ -2,13 +2,13 @@
 
 **Connect AI agents to money, safely.**
 
-How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Starting with five brokers.
+How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what.
 
 A source-linked wiki of how brokers and financial services let AI agents in: which ones offer official access, how it works, who approves the agent's orders, and how to build against it. Every fact links to a source; anything not confirmed says `unknown`.
 
 The wiki covers five areas:
 
-- **Trading:** brokers that let agents read accounts and place orders. Start at the [directory](directory.md).
+- **Trading:** brokers that let agents read accounts and place orders. Start at [Trading](directory.md).
 - **Payments:** card networks, payment tokens and protocols that let agents pay. Start at [payments](payments/README.md).
 - **Personal money agents:** AI agents that work with bank and card data, banks' own AI tools, and how banks treat outside agents. Start at [personal money agents](personal-money/README.md).
 - **Advisors:** AI tools for financial advisors. This section is new and still thin; start at [advisor agents](advisors/README.md).
@@ -16,7 +16,8 @@ The wiki covers five areas:
 
 ## Use it
 
-- **People:** start with the [overview](overview.md), the [directory](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
+- **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
+- **Quick answers:** the [FAQ](faq.md).
 - **Engineers:** see [Build it](build/README.md).
 - **AI agents:** clone the repo and load [llms.txt](llms.txt), [AGENTS.md](AGENTS.md), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling.
 
@@ -57,7 +58,7 @@ Prefer clear, concise, plain English: short sentences, short paragraphs. Define 
 
 Content is licensed under [CC BY 4.0](LICENSE). Source cards quote short excerpts from third-party pages for reference; those pages belong to their publishers.
 
-Not investment advice. No affiliate links.
+Not investment advice.
 
 ---
 

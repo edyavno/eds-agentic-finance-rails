@@ -8,7 +8,7 @@ last_verified: '2026-11-12'
 
 # Launch brokers compared
 
-The [directory](../directory.md) lists every field. This page compares the safety posture.
+The [Trading](../directory.md) page lists every field. This page compares the safety posture.
 
 ## Who approves the order?
 

@@ -8,6 +8,8 @@ last_verified: '2026-11-13'
 
 # Wells Fargo AI Teammate
 
+AI Teammate is a chat-based AI capability inside Wells Fargo's Advisor Gateway that helps advisor teams search and summarize information from the firm's core resource center. It launched on 2026-07-15.[^wf-01]
+
 Wells Fargo's newsroom published a release dated 07/15/2026 announcing the launch of AI Teammate, "a new artificial intelligence (AI)–powered capability embedded within Advisor Gateway."[^wf-01]
 
 The release says: "AI Teammate introduces a chat-based experience embedded within the firm’s central technology platform, Advisor Gateway." In its initial phase, "AI Teammate helps teams search and summarize information from WFA’s core resource center," including plain-language search, guided workflows, and next steps.[^wf-01]

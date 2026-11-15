@@ -8,6 +8,8 @@ last_verified: '2026-11-14'
 
 # Mandates and data access
 
+A [mandate](../glossary.md#mandates) records what a user authorized an agent to do, and AP2 is a payments protocol built on them.[^pm-13] On data access, the US personal financial data rights rule (CFPB Section 1033) went through a reconsideration notice in August 2025, and a November 2026 report says it could become a vehicle to regulate AI agents.[^pb-05][^pb-04]
+
 ## Mandates
 
 - **AP2 (Agent Payments Protocol):** a protocol for agent-initiated payments built on [mandates](../glossary.md#mandates), designed to work with A2A and [MCP](../glossary.md#mcp).[^pm-13] A reference implementation and samples are on GitHub.[^pm-12] Details: [AP2](../payments/ap2.md).
@@ -22,9 +24,9 @@ Rules and risk are background here, not a focus. A January 27, 2026 FINRA blog, 
 ## Sources
 
 [^pm-13]: [AP2 - Agent Payments Protocol Documentation](../sources/pm-13.md). AP2 Protocol, official, retrieved 2026-11-12.
-[^pm-12]: [GitHub - google-agentic-commerce/AP2: Building a Secure and Interoperable Future for AI-Driven Payments. · GitHub](../sources/pm-12.md). Google (GitHub), official, retrieved 2026-11-12.
 [^pb-05]: [Federal Register](../sources/pb-05.md). Federal Register, official, retrieved 2026-11-12.
 [^pb-04]: [AI agents scramble banks' fight with fintechs](../sources/pb-04.md). POLITICO, third-party, retrieved 2026-11-12.
+[^pm-12]: [GitHub - google-agentic-commerce/AP2: Building a Secure and Interoperable Future for AI-Driven Payments. · GitHub](../sources/pm-12.md). Google (GitHub), official, retrieved 2026-11-12.
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^pb-03]: [Meta's Muse is attacking one of economy's most profitable weak spots](../sources/pb-03.md). CNBC, third-party, retrieved 2026-11-12.

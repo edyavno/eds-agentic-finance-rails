@@ -34,11 +34,11 @@ The [advisor agents](advisors/README.md) section is new and still thin: only Cla
 
 ## Unknown fields by provider
 
-See the `unknown` values in [data/providers.csv](data/providers.csv) or the [directory](directory.md).
+See the `unknown` values in [data/providers.csv](data/providers.csv) or the [Trading](directory.md) page.
 
 ## Leads and other directories (not evidence)
 
-These cards are prior art or competing directories. They are leads only: use them to find official sources, not to back a provider field or a factual claim about a broker or rail. Outbound referral or affiliate links from those sites are not reused here.
+These cards are prior art or competing directories. They are leads only: use them to find official sources, not to back a provider field or a factual claim about a broker or rail.
 
 - Broker and finance MCP lists: awesome-broker-mcp,[^pa-01] awesome-finance-mcp,[^pa-02] awesome-finance-agent,[^pa-05] and the Finance & Fintech section of awesome-mcp-servers.[^pa-06]
 - Agent-payments lists: awesome-payment-agent-skills[^pa-03] and awesome_mpp.[^pa-04]

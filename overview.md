@@ -61,7 +61,7 @@ The wiki also covers AI tools for financial advisors, in a new [advisor agents](
 
 ## How to read this wiki
 
-- The [directory](directory.md) is the one-table view of launch brokers, with payments, personal money and advisor-agents tables below it.
+- [Trading](directory.md) is the one-table view of launch brokers. Payments, personal money and advisor tools each have their own section page: [payments](payments/README.md), [personal money agents](personal-money/README.md) and [advisor agents](advisors/README.md). Short answers are in the [FAQ](faq.md).
 - The [glossary](glossary.md) defines recurring terms.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
