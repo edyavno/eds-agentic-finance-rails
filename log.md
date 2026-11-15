@@ -87,3 +87,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] edit | feedback instructions for agents
 - AGENTS.md gained a "Giving feedback" section (#giving-feedback) with the fields, limits and replies of /feedback, and a line that the endpoint records the sender's IP address with each note. README and llms.txt now point there with one line.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] edit | agent notes pointer kept to agent files
+- The pointer for agent notes now appears only in llms.txt, llms-full.txt and the AGENTS.md reader's guide. README, index.md, the front page and the site footer no longer mention it. README's "Corrections and feedback" heading is now "Corrections".
+- No facts, footnotes, source cards or last_verified dates changed.

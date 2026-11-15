@@ -14,13 +14,12 @@ Every page in the wiki, generated from page headers.
 
 ## For agents
 
-- POST a short note to /feedback; instructions at /agents#giving-feedback or GET /feedback.
 - How to read and cite: [AGENTS.md](AGENTS.md). Entry point: [llms.txt](llms.txt).
 
 ## Start here
 
 - [README.md](README.md): What this wiki is and how to use it
-- [AGENTS.md](AGENTS.md): How to read and cite the wiki: where to start, source cards, unknowns, freshness, feedback
+- [AGENTS.md](AGENTS.md): How to read and cite the wiki: where to start, source cards, unknowns, freshness
 - [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
 - [Glossary](glossary.md): Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 - [Trading](directory.md): Trading: which brokers let AI agents trade, who approves, and every broker's key fields (generated)

@@ -44,11 +44,9 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `changelog/` | What changed, newest first; `changelog/README.md` is generated and shows the wiki in numbers |
 | `schema/` | JSON Schema for page headers |
 
-## Corrections and feedback
+## Corrections
 
-People: use the "Suggest a correction" link at the bottom of any page. This repo does not take outside pull requests.
-
-For agents: POST a short note to `/feedback` on the site. How, and the limits, are in [Giving feedback](AGENTS.md#giving-feedback).
+Use the "Suggest a correction" link at the bottom of any page. It opens a GitHub issue. This repo does not take outside pull requests.
 
 ## License
 
