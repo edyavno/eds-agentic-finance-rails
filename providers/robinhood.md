@@ -105,7 +105,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the
 ## Changelog
 
 - 2026-11-14: Added official product and support pages on built-in Agents, Agent Apps and Agent Loops, plus TechCrunch launch coverage and the site llms.txt index.[^rh-05][^rh-08][^rh-12][^rh-11][^rh-06]
-- 2026-11-12: Page drafted from source batch 1.
+- 2026-11-12: First version of this page.
 
 ## Sources
 

@@ -88,7 +88,7 @@ A separate Broker API MCP, in public beta since 2026-07-20, is for broker partne
 
 ## Changelog
 
-- 2026-11-12: Page drafted from source batch 1.
+- 2026-11-12: First version of this page.
 
 ## Sources
 

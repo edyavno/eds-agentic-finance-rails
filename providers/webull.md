@@ -93,7 +93,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 ## Changelog
 
 - 2026-11-14: Added the official Agentic Trading landing page, the OpenAPI skills repo, and the 2026-08-04 connectors and CLI announcement.[^wb-01][^wb-04][^wb-08]
-- 2026-11-12: Page drafted from source batch 1.
+- 2026-11-12: First version of this page.
 
 ## Sources
 

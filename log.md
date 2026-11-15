@@ -109,3 +109,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] edit | overview wording for Public
 - overview.md now introduces Public as "Not yet profiled here" instead of roadmap wording.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] edit | provider history wording
+- The 2026-11-12 history line on the robinhood, coinbase, webull, interactive-brokers and alpaca pages now reads "First version of this page."
+- No facts, footnotes, source cards or last_verified dates changed.

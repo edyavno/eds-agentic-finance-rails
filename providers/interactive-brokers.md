@@ -93,7 +93,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Changelog
 
-- 2026-11-12: Page drafted from source batch 1.
+- 2026-11-12: First version of this page.
 
 ## Sources
 

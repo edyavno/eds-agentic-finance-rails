@@ -97,7 +97,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 - 2026-11-14: Cited the official CDP docs llms.txt index.[^cb-06]
 - 2026-11-13: Added the official `coinbase_feedback_submit` feedback tool, from Coinbase MCP docs.[^cb-09]
-- 2026-11-12: Page drafted from source batch 1.
+- 2026-11-12: First version of this page.
 
 ## Sources
 
