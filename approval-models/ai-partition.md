@@ -16,7 +16,7 @@ last_verified: '2026-11-12'
 
 ## How it differs from a separate account
 
-Both cap what the agent can lose. The AI Partition adds an **eligibility gate**: a track record of approved trades before autonomy is allowed.[^ib-06] Separate-account models in the current batch do not require that history.[^rh-10][^cb-07]
+Both cap what the agent can lose. The AI Partition adds an **eligibility gate**: a track record of approved trades before autonomy is allowed.[^ib-06] Separate-account models in our sources do not require that history.[^rh-10][^cb-07]
 
 [Back to approval models](README.md)
 

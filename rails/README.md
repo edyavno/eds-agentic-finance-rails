@@ -18,7 +18,7 @@ last_verified: '2026-11-12'
 | [Agent identity](agent-identity.md) | Signing agent traffic so sites can tell which agent is calling |
 | [Mandates and data access](mandates-and-data-access.md) | Proof of what a user authorized, and the rules on sharing financial data |
 
-These pages are starter overviews built from batch 1. Each claim is cited; depth will grow with later source batches.
+These pages are starter overviews and will get more detail as we add sources. Each claim is cited.
 
 ## Related pages
 

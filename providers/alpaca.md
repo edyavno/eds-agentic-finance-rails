@@ -34,7 +34,7 @@ field_sources:
 
 # Alpaca
 
-> Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
+> Every fact below links to a source card; "unknown" means no source we cite confirms it.
 
 ## Overview and current status
 
@@ -84,7 +84,7 @@ A separate Broker API MCP, in public beta since 2026-07-20, is for broker partne
 
 - Order types and limits for agent orders: unknown.
 - Whether the hosted Trading MCP adds any broker-side confirmation: unknown.
-- Agent terms of use: not yet in the source batch.
+- Agent terms of use: not yet reviewed here.
 
 ## Changelog
 

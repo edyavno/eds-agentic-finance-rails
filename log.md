@@ -113,3 +113,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] edit | provider history wording
 - The 2026-11-12 history line on the robinhood, coinbase, webull, interactive-brokers and alpaca pages now reads "First version of this page."
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] edit | source-set wording
+- Provider pages: "not yet in the source batch" now reads "not yet reviewed here", and the callout's "no source in the current batch" now reads "no source we cite".
+- rails/README.md, gaps.md, rails/remote-mcp-oauth.md, rails/agent-identity.md and approval-models/ai-partition.md now say "our sources" instead of the batch. The 2026-11-12 changelog no longer names the batch.
+- No facts, footnotes, source cards or last_verified dates changed.

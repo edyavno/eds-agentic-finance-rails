@@ -34,7 +34,7 @@ field_sources:
 
 # Robinhood
 
-> Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
+> Every fact below links to a source card; "unknown" means no source we cite confirms it.
 
 ## Overview and current status
 
@@ -100,7 +100,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the
 
 - [Paper trading](../glossary.md#paper-trading) or [sandbox](../glossary.md#sandbox) for agents: unknown.
 - Order size and rate limits: unknown.
-- The agentic account agreement and disclosure text: not yet in the source batch.
+- The agentic account agreement and disclosure text: not yet reviewed here.
 
 ## Changelog
 

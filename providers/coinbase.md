@@ -32,7 +32,7 @@ field_sources:
 
 # Coinbase
 
-> Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
+> Every fact below links to a source card; "unknown" means no source we cite confirms it.
 
 ## Overview and current status
 
@@ -91,7 +91,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 - Order types and limits: unknown.
 - [Paper trading](../glossary.md#paper-trading) for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
-- Agent terms of use: not yet in the source batch.
+- Agent terms of use: not yet reviewed here.
 
 ## Changelog
 

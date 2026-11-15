@@ -18,7 +18,7 @@ This page lists what the wiki cannot answer yet. Items come from unknown fields,
 4. **Order types** for Coinbase, Webull, IBKR and Alpaca agent orders.
 5. **IBKR Autonomous Trading asset list.** An independent review found IBKR's descriptions inconsistent.[^ib-03]
 6. **Primary statements from blockers.** The JPMorgan and Morgan Stanley evidence is from news reports.[^bl-01][^bl-02]
-7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in the batch.[^rh-02][^ib-03]
+7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in our sources.[^rh-02][^ib-03]
 
 ## Payments and personal money agents
 

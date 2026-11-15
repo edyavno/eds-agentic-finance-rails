@@ -34,7 +34,7 @@ field_sources:
 
 # Webull
 
-> Every fact below links to a source card; "unknown" means no source in the current batch confirms it.
+> Every fact below links to a source card; "unknown" means no source we cite confirms it.
 
 ## Overview and current status
 
@@ -88,7 +88,7 @@ See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 - Cloud MCP limits, notifications and [paper mode](../glossary.md#paper-trading): unknown.
 - Exact order types per region: unknown.
-- Agent terms of use: not yet in the source batch.
+- Agent terms of use: not yet reviewed here.
 
 ## Changelog
 

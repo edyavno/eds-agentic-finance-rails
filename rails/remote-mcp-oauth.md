@@ -12,7 +12,7 @@ Most launch brokers host an MCP server that clients reach over HTTP and authoriz
 
 ## Discovery: protected-resource metadata
 
-Four servers in the batch publish OAuth protected-resource metadata at `/.well-known/oauth-protected-resource`, which tells a client where to sign in and which scopes exist:
+Four servers in our sources publish OAuth protected-resource metadata at `/.well-known/oauth-protected-resource`, which tells a client where to sign in and which scopes exist:
 
 | Server | Authorization server | Scopes advertised | Source |
 |---|---|---|---|

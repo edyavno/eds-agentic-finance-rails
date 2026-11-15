@@ -21,7 +21,7 @@ Agents can prove who they are to websites and merchants by signing their web req
 
 ## Why it matters for finance
 
-Banks in the batch say they block agents that log in with customer credentials or browser automation.[^bl-04][^bl-08] Signed, identifiable agent traffic is one way a provider could tell a sanctioned agent from an unvetted one.
+Banks in our sources say they block agents that log in with customer credentials or browser automation.[^bl-04][^bl-08] Signed, identifiable agent traffic is one way a provider could tell a sanctioned agent from an unvetted one.
 
 ERC-8004 says payments are orthogonal to the protocol and not covered here, but it gives examples of how x402 payments can enrich feedback signals.[^id-07]
 
