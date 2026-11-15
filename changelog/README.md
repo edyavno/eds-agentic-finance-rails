@@ -7,7 +7,7 @@ page_status: current
 
 # What changed
 
-Every update to the wiki, newest first. Generated from page headers; do not edit by hand.
+Every update to the wiki, newest first.
 
 ## The wiki in numbers
 

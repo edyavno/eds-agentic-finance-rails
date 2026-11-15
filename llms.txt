@@ -2,7 +2,7 @@
 
 > Connect AI agents to money, safely How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Every fact links to a source card; unconfirmed values say "unknown".
 
-Rules for agents: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Full rules: AGENTS.md.
+How to use it: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Reader's guide: AGENTS.md.
 
 ## Feedback
 
@@ -10,7 +10,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## Start here
 
-- [AGENTS.md](AGENTS.md): rules, citation format, page life cycle
+- [AGENTS.md](AGENTS.md): how to read and cite the wiki, and how to send corrections
 - [Trading](directory.md): short answer to which brokers let AI agents trade and who approves, then key fields for every broker
 - [FAQ](faq.md): short cited answers to common questions
 - [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Advisor agents](advisors/README.md), [Rails](rails/README.md): section home pages

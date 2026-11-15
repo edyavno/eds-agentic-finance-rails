@@ -1,19 +1,13 @@
 ---
 type: analysis
 title: Analyses
-summary: Saved answers to good questions, filed back into the wiki. Empty at launch.
+summary: Saved answers to questions asked of the wiki, each with cited sources. None yet.
 page_status: current
 ---
 
 # Analyses
 
-When a question asked against the wiki produces an answer worth keeping, it is saved here as a page (the "query" step in [AGENTS.md](../AGENTS.md#query)).
-
-Rules for analyses:
-
-- Save the answer with `page_status: current`, the date, and the question that produced it.
-- Cite source cards with footnotes, like every other page. An analysis is never a source for another page.
-- Note the date and the question that produced it.
+Answers to questions asked of the wiki that are worth keeping are saved here, with the question, the date and footnoted sources. An analysis is never used as a source for another page.
 
 No analyses yet.
 

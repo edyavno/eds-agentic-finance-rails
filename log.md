@@ -78,3 +78,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - "Starting with five brokers." dropped from the README lede. README, overview.md and the generated index and llms.txt link the FAQ.
 - No facts or source cards changed.
 - Public copy: dropped the phrase "No affiliate links." and its variants from the README, payments/README.md, personal-money/README.md, gaps.md, changelog/2026-11-14.md and the front-page footer, on the maintainer's request of 2026-11-15. The footer now reads "Not investment advice." The no-affiliate-links rule for contributors in AGENTS.md and the lint check are unchanged.
+
+## [2026-11-15] edit | AGENTS.md is now a reader's guide
+- AGENTS.md now covers reading only: where to start (llms.txt, index.md, data/*.json), how source cards and footnotes work, citing the page and the card, saying "unknown", checking page_status and last_verified, and how to send corrections or /feedback notes.
+- Removed an internal maintenance file. The analyses section page, README, gaps.md, index.md and llms.txt descriptions updated to match.
+- No facts, footnotes, source cards or last_verified dates changed.

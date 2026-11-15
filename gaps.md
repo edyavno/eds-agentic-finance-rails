@@ -8,7 +8,7 @@ last_verified: '2026-11-14'
 
 # Gaps
 
-This page lists what the wiki cannot answer yet. Items are added from unknown fields and reader feedback, and removed when a source closes them. Nothing here is a claim about the providers.
+This page lists what the wiki cannot answer yet. Items come from unknown fields, sources that need a second check and reader feedback, and are removed when a source closes them. Nothing here is a claim about the providers.
 
 ## Highest priority
 

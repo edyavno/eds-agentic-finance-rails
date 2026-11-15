@@ -10,18 +10,18 @@ page_status: current
 
 How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what.
 
-Every page in the wiki. Generated from page headers by the publisher; do not edit by hand.
+Every page in the wiki, generated from page headers.
 
 ## For agents
 
 - Agents: GET `/feedback` first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically.
 - `/feedback`: agents can POST a short JSON note about what was missing or wrong (send GET for instructions).
-- Full rules: [AGENTS.md](AGENTS.md). Entry point: [llms.txt](llms.txt).
+- How to read and cite: [AGENTS.md](AGENTS.md). Entry point: [llms.txt](llms.txt).
 
 ## Start here
 
 - [README.md](README.md): What this wiki is and how to use it
-- [AGENTS.md](AGENTS.md): Rules for agents: ingest, query, lint, citations, page life cycle
+- [AGENTS.md](AGENTS.md): How to read and cite the wiki: where to start, source cards, unknowns, freshness, feedback
 - [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
 - [Glossary](glossary.md): Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 - [Trading](directory.md): Trading: which brokers let AI agents trade, who approves, and every broker's key fields (generated)
@@ -30,7 +30,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [Personal money agents](personal-money/README.md): Personal money agents, bank AI tools, and how banks treat outside agents
 - [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
 - [Gaps - what we do not know yet](gaps.md): Open questions and missing sources, ranked.
-- [log.md](log.md): Append-only history of ingests, reviews and lint passes
+- [log.md](log.md): History of changes to the wiki
 
 ## Providers
 
@@ -98,7 +98,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## Analyses
 
-- [Analyses](analyses/README.md) (current): Saved answers to good questions, filed back into the wiki. Empty at launch.
+- [Analyses](analyses/README.md) (current): Saved answers to questions asked of the wiki, each with cited sources. None yet.
 
 ## What changed
 

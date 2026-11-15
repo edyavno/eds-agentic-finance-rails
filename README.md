@@ -19,7 +19,7 @@ The wiki covers five areas:
 - **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
 - **Quick answers:** the [FAQ](faq.md).
 - **Engineers:** see [Build it](build/README.md).
-- **AI agents:** clone the repo and load [llms.txt](llms.txt), [AGENTS.md](AGENTS.md), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling.
+- **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling.
 
 ```bash
 git clone https://github.com/edyavno/eds-agentic-finance-rails
@@ -38,9 +38,9 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `rails/` | Shared plumbing: OAuth MCP, local servers, payments, identity, mandates |
 | `build/` | Connection commands, human-in-the-loop patterns, starter prompts |
 | `comparisons/` | Side-by-side views |
-| `analyses/` | Saved answers to good questions |
+| `analyses/` | [Saved answers](analyses/README.md) to questions (none yet) |
 | `index.md`, `directory.md`, `llms.txt`, `data/` | Generated from the pages and committed |
-| `overview.md`, `glossary.md`, `gaps.md`, `log.md` | Context, definitions, open questions, history |
+| `overview.md`, `faq.md`, `glossary.md`, `gaps.md`, `log.md` | Context, short answers, definitions, open questions, history |
 | `changelog/` | What changed, newest first; `changelog/README.md` is generated and shows the wiki in numbers |
 | `schema/` | JSON Schema for page headers |
 
@@ -49,10 +49,6 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 People: use the "Suggest a correction" link at the bottom of any page. This repo does not take outside pull requests.
 
 For agents: `/feedback` — agents can POST a short JSON note about what was missing or wrong (send GET for instructions). GET /feedback first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically. The final domain comes later.
-
-## Style
-
-Prefer clear, concise, plain English: short sentences, short paragraphs. Define recurring technical terms once in the [glossary](glossary.md) and link the term on first use on a page, instead of a long inline explanation. Full rules are in [AGENTS.md](AGENTS.md#style).
 
 ## License
 
