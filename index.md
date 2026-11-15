@@ -6,7 +6,7 @@ page_status: current
 
 # Index
 
-**Connect AI agents to money, safely**
+**How AI agents connect to money**
 
 How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what.
 
