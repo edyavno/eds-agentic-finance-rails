@@ -20,6 +20,14 @@ This page lists what the wiki cannot answer yet. Items are added from unknown fi
 6. **Primary statements from blockers.** The JPMorgan and Morgan Stanley evidence is from news reports.[^bl-01][^bl-02]
 7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in the batch.[^rh-02][^ib-03]
 
+## Payments and personal money agents
+
+- **Fees** for agent payments: none of the cited [payments](payments/README.md) sources give them.
+- **Production MCP addresses** for Visa Intelligent Commerce and Mastercard Agent Pay, and whether Mastercard has an MCP at all.
+- **Who approves what** under ACP and x402. It depends on the agent or wallet, and the cited specs do not say.
+- **Primary sources** for [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md), which rests on one news report, and for most bank positions on [Banks and outside agents](personal-money/banks-and-outside-agents.md).
+- **Whether Meta Muse can move money** or pay bills, and whether it offers developer access.
+
 ## Advisor agents
 
 The [advisor agents](advisors/README.md) section is new and still thin: only Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate have pages so far. Official coverage of other advisor platforms, and of approval and access rules beyond the sources already cited, has not been collected yet.

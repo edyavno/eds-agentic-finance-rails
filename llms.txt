@@ -14,6 +14,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 - [Directory](directory.md): key fields for every provider
 - Feedback: GET /feedback first, then POST JSON (see above)
 - [providers.json](data/providers.json): the same data as JSON, with source URLs per field
+- [programs.json](data/programs.json): payments and personal money records as JSON, with source URLs per field
 - [Overview](overview.md): who lets agents in and who blocks them
 - [Glossary](glossary.md): short definitions of recurring terms
 
@@ -24,6 +25,26 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 - [Interactive Brokers](providers/interactive-brokers.md): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
 - [Robinhood](providers/robinhood.md): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 - [Webull](providers/webull.md): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
+
+## Payments
+
+- [Payments](payments/README.md): How AI agents pay. Card-network agent programs, payment tokens, commerce and payment protocols, and an agent credit card, each with its own page and a sourced record.
+- [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
+- [AP2 (Agent Payments Protocol)](payments/ap2.md): An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.
+- [Mastercard Agent Pay](payments/mastercard-agent-pay.md): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
+- [PayPal](payments/paypal.md): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
+- [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
+- [Stripe](payments/stripe.md): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
+- [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md): Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.
+- [x402](payments/x402.md): An open payment standard built on the HTTP 402 Payment Required status. A server asks for payment inside the web request, and the client pays and retries. Coinbase for Agents uses it.
+
+## Personal money agents
+
+- [Personal money agents](personal-money/README.md): AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
+- [Banks and outside agents](personal-money/banks-and-outside-agents.md): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
+- [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
+- [Meta Muse](personal-money/meta-muse.md): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
+- [Plaid MCP servers](personal-money/plaid.md): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users' accounts.
 
 ## Advisor agents
 
@@ -67,7 +88,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## What changed
 
-- [What changed: 2026-11-14](changelog/2026-11-14.md): Added official ERC-8004, cited remaining source cards, refreshed the front page, and added a glossary with a trim pass on the densest pages.
+- [What changed: 2026-11-14](changelog/2026-11-14.md): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 

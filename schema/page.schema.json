@@ -22,7 +22,9 @@
         "changelog",
         "gaps",
         "advisor",
-        "guide"
+        "guide",
+        "payment",
+        "personal-money"
       ]
     },
     "title": {

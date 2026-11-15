@@ -1,0 +1,848 @@
+{
+  "name": "Ed's Agentic Finance Rails",
+  "description": "Payments and personal money agents: one record per program, protocol or tool. Values are sourced or 'unknown'.",
+  "schema": "schema/program.schema.json",
+  "record_fields": [
+    "operator",
+    "agent_can",
+    "user_controls",
+    "mcp_server",
+    "endpoint",
+    "availability"
+  ],
+  "license": "CC-BY-4.0",
+  "programs": [
+    {
+      "id": "agentic-commerce-protocol",
+      "section": "payment",
+      "title": "Agentic Commerce Protocol (ACP)",
+      "kind": "commerce-protocol",
+      "page": "payments/agentic-commerce-protocol.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.",
+      "operator": "OpenAI and Stripe (spec maintainers)",
+      "agent_can": "Let a user find and buy from a business inside an AI app, through a checkout API and a delegated-payment spec",
+      "user_controls": "unknown",
+      "mcp_server": "unknown",
+      "endpoint": null,
+      "availability": "Beta. OpenAI and Stripe were the first to implement it",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-07",
+            "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-07",
+            "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-07",
+            "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-07",
+            "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-04",
+          "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22276.html",
+          "card": "sources/pm-04.md"
+        },
+        {
+          "id": "pm-07",
+          "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+          "card": "sources/pm-07.md"
+        }
+      ],
+      "unknown_fields": [
+        "user_controls",
+        "mcp_server"
+      ]
+    },
+    {
+      "id": "ap2",
+      "section": "payment",
+      "title": "AP2 (Agent Payments Protocol)",
+      "kind": "mandate-protocol",
+      "page": "payments/ap2.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.",
+      "operator": "Google (reference code on GitHub)",
+      "agent_can": "Carry signed proof of what the user authorized: a Checkout Mandate shared with the merchant and a Payment Mandate shared with the credential provider, the card networks and the payment processor",
+      "user_controls": "Open mandates hold the user's limits, such as budget and allowed payment methods, before a cart is final. Closed mandates authorize one finalized checkout and amount",
+      "mcp_server": "unknown",
+      "endpoint": null,
+      "availability": "Open protocol, available as an extension for A2A and Universal Commerce Protocol. Samples in Python, Go and Android",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-12",
+            "url": "https://github.com/google-agentic-commerce/AP2",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-13",
+            "url": "https://ap2-protocol.org/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-13",
+            "url": "https://ap2-protocol.org/",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-13",
+            "url": "https://ap2-protocol.org/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-13",
+            "url": "https://ap2-protocol.org/",
+            "authority": "official"
+          },
+          {
+            "id": "pm-12",
+            "url": "https://github.com/google-agentic-commerce/AP2",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-12",
+          "url": "https://github.com/google-agentic-commerce/AP2",
+          "card": "sources/pm-12.md"
+        },
+        {
+          "id": "pm-13",
+          "url": "https://ap2-protocol.org/",
+          "card": "sources/pm-13.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server"
+      ]
+    },
+    {
+      "id": "mastercard-agent-pay",
+      "section": "payment",
+      "title": "Mastercard Agent Pay",
+      "kind": "card-network-program",
+      "page": "payments/mastercard-agent-pay.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.",
+      "operator": "Mastercard",
+      "agent_can": "Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form",
+      "user_controls": "Mastercard says each transaction is checked against authenticated user intent and explicit consent before the action",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "unknown",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-05",
+            "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
+            "authority": "official"
+          },
+          {
+            "id": "pm-06",
+            "url": "https://www.mastercard.com/us/en/news-and-trends/stories/2025/agentic-commerce-framework.html",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-05",
+            "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
+            "authority": "official"
+          },
+          {
+            "id": "pm-06",
+            "url": "https://www.mastercard.com/us/en/news-and-trends/stories/2025/agentic-commerce-framework.html",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-05",
+            "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-05",
+          "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
+          "card": "sources/pm-05.md"
+        },
+        {
+          "id": "pm-06",
+          "url": "https://www.mastercard.com/us/en/news-and-trends/stories/2025/agentic-commerce-framework.html",
+          "card": "sources/pm-06.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint",
+        "availability"
+      ]
+    },
+    {
+      "id": "paypal",
+      "section": "payment",
+      "title": "PayPal",
+      "kind": "payment-mcp",
+      "page": "payments/paypal.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.",
+      "operator": "PayPal",
+      "agent_can": "Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes",
+      "user_controls": "Access uses the PayPal account's own credentials: an access token for the local server, or client ID and secret for the hosted one. A sandbox is available for testing",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.paypal.com",
+      "availability": "Local server (Node.js 18 or later) or hosted server. Sandbox address https://mcp.sandbox.paypal.com",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-10",
+            "url": "https://developer.paypal.com/ai-tools/mcp-server",
+            "authority": "official"
+          },
+          {
+            "id": "pm-11",
+            "url": "https://developer.paypal.com/ai-tools/toolkit",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-11",
+            "url": "https://developer.paypal.com/ai-tools/toolkit",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-10",
+            "url": "https://developer.paypal.com/ai-tools/mcp-server",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "pm-10",
+            "url": "https://developer.paypal.com/ai-tools/mcp-server",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-10",
+            "url": "https://developer.paypal.com/ai-tools/mcp-server",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-10",
+            "url": "https://developer.paypal.com/ai-tools/mcp-server",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-10",
+          "url": "https://developer.paypal.com/ai-tools/mcp-server",
+          "card": "sources/pm-10.md"
+        },
+        {
+          "id": "pm-11",
+          "url": "https://developer.paypal.com/ai-tools/toolkit",
+          "card": "sources/pm-11.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
+      "id": "robinhood-agentic-credit-card",
+      "section": "payment",
+      "title": "Robinhood Agentic Credit Card",
+      "kind": "agent-card",
+      "page": "payments/robinhood-agentic-credit-card.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.",
+      "operator": "Robinhood (Robinhood Credit, Inc.)",
+      "agent_can": "Fetch the agentic virtual card's number to finish purchases, and read that card's spending history and settings. The MCP does not browse or shop for you",
+      "user_controls": "Approve each purchase in the Robinhood Banking app, or set a monthly limit, which is required if you do not approve each purchase. The agent sees only the cards you authorize",
+      "mcp_server": "yes",
+      "endpoint": "https://banking-agent.robinhood.com/mcp/banking",
+      "availability": "A virtual card in the Robinhood Gold Card. Card setup and agent sign-in work on desktop only. Announced 2026-05-27",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "rh-09",
+            "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+            "authority": "official"
+          },
+          {
+            "id": "rh-10",
+            "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "rh-09",
+          "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+          "card": "sources/rh-09.md"
+        },
+        {
+          "id": "rh-10",
+          "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
+          "card": "sources/rh-10.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
+      "id": "stripe",
+      "section": "payment",
+      "title": "Stripe",
+      "kind": "payment-credential",
+      "page": "payments/stripe.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.",
+      "operator": "Stripe",
+      "agent_can": "Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server",
+      "user_controls": "Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.stripe.com",
+      "availability": "Shared payment tokens are in public preview in the US, Canada and select European countries",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-08",
+            "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+            "authority": "official"
+          },
+          {
+            "id": "pm-09",
+            "url": "https://docs.stripe.com/mcp",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-08",
+            "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+            "authority": "official"
+          },
+          {
+            "id": "pm-09",
+            "url": "https://docs.stripe.com/mcp",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-08",
+            "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+            "authority": "official"
+          },
+          {
+            "id": "pm-09",
+            "url": "https://docs.stripe.com/mcp",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "pm-09",
+            "url": "https://docs.stripe.com/mcp",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-09",
+            "url": "https://docs.stripe.com/mcp",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-08",
+            "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-07",
+          "url": "https://github.com/agentic-commerce-protocol/agentic-commerce-protocol",
+          "card": "sources/pm-07.md"
+        },
+        {
+          "id": "pm-08",
+          "url": "https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens",
+          "card": "sources/pm-08.md"
+        },
+        {
+          "id": "pm-09",
+          "url": "https://docs.stripe.com/mcp",
+          "card": "sources/pm-09.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
+      "id": "visa-intelligent-commerce",
+      "section": "payment",
+      "title": "Visa Intelligent Commerce",
+      "kind": "card-network-program",
+      "page": "payments/visa-intelligent-commerce.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.",
+      "operator": "Visa",
+      "agent_can": "Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved",
+      "user_controls": "Consumer-approved purchase instructions, Visa Payment Passkeys with device binding, and network-level controls",
+      "mcp_server": "yes",
+      "endpoint": "unknown",
+      "availability": "Production needs Visa onboarding and approval at each stage: sandbox, certification, production. Intelligent Commerce Connect was in pilot with select partners as of 2026-04-08",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-01",
+            "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-01",
+            "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-01",
+            "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "pm-02",
+            "url": "https://developer.visa.com/mcp-docs",
+            "authority": "official"
+          },
+          {
+            "id": "pm-01",
+            "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-01",
+            "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+            "authority": "official"
+          },
+          {
+            "id": "pm-04",
+            "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22276.html",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-01",
+          "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
+          "card": "sources/pm-01.md"
+        },
+        {
+          "id": "pm-02",
+          "url": "https://developer.visa.com/mcp-docs",
+          "card": "sources/pm-02.md"
+        },
+        {
+          "id": "pm-03",
+          "url": "https://github.com/visa/trusted-agent-protocol",
+          "card": "sources/pm-03.md"
+        },
+        {
+          "id": "pm-04",
+          "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22276.html",
+          "card": "sources/pm-04.md"
+        }
+      ],
+      "unknown_fields": [
+        "endpoint"
+      ]
+    },
+    {
+      "id": "x402",
+      "section": "payment",
+      "title": "x402",
+      "kind": "payment-protocol",
+      "page": "payments/x402.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "An open payment standard built on the HTTP 402 Payment Required status. A server asks for payment inside the web request, and the client pays and retries. Coinbase for Agents uses it.",
+      "operator": "x402 Foundation",
+      "agent_can": "Pay for a web resource as part of the request: the server replies 402 Payment Required with its terms, and the client retries with a payment attached",
+      "user_controls": "unknown",
+      "mcp_server": "unknown",
+      "endpoint": null,
+      "availability": "Open standard. Specification version 2 is published",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-14",
+            "url": "https://github.com/x402-foundation/x402",
+            "authority": "official"
+          },
+          {
+            "id": "pm-15",
+            "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-15",
+            "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-14",
+            "url": "https://github.com/x402-foundation/x402",
+            "authority": "official"
+          },
+          {
+            "id": "pm-15",
+            "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-14",
+            "url": "https://github.com/x402-foundation/x402",
+            "authority": "official"
+          },
+          {
+            "id": "pm-15",
+            "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cb-01",
+          "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
+          "card": "sources/cb-01.md"
+        },
+        {
+          "id": "pm-14",
+          "url": "https://github.com/x402-foundation/x402",
+          "card": "sources/pm-14.md"
+        },
+        {
+          "id": "pm-15",
+          "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
+          "card": "sources/pm-15.md"
+        }
+      ],
+      "unknown_fields": [
+        "user_controls",
+        "mcp_server"
+      ]
+    },
+    {
+      "id": "jpmorgan-smart-cash",
+      "section": "personal-money",
+      "title": "JPMorgan Smart Cash",
+      "kind": "bank-tool",
+      "page": "personal-money/jpmorgan-smart-cash.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.",
+      "operator": "JPMorgan Chase",
+      "agent_can": "Predict a user's cash flow and move funds to maximize yield, as the bank's CFO described it (news report)",
+      "user_controls": "unknown",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "A targeted pilot that began in the weeks before 2026-10-13 (news report)",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "bl-01",
+            "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+            "authority": "third-party"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "bl-01",
+            "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+            "authority": "third-party"
+          }
+        ],
+        "availability": [
+          {
+            "id": "bl-01",
+            "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+            "authority": "third-party"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "bl-01",
+          "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+          "card": "sources/bl-01.md"
+        }
+      ],
+      "unknown_fields": [
+        "user_controls",
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "meta-muse",
+      "section": "personal-money",
+      "title": "Meta Muse",
+      "kind": "personal-agent",
+      "page": "personal-money/meta-muse.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.",
+      "operator": "Meta",
+      "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information",
+      "user_controls": "You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Launched 2026-09-08 with Plaid-powered account connections in its finance features",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pb-01",
+            "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          },
+          {
+            "id": "pb-03",
+            "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+            "authority": "third-party"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pb-01",
+            "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pb-01",
+            "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pb-01",
+            "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "bl-01",
+          "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+          "card": "sources/bl-01.md"
+        },
+        {
+          "id": "pb-01",
+          "url": "https://plaid.com/blog/meta-muse/",
+          "card": "sources/pb-01.md"
+        },
+        {
+          "id": "pb-03",
+          "url": "https://www.cnbc.com/2026/09/27/meta-muse-ai-personal-agent.html",
+          "card": "sources/pb-03.md"
+        },
+        {
+          "id": "pb-04",
+          "url": "https://www.politico.com/newsletters/morning-money/2026/11/11/ai-agents-scramble-banks-fight-with-fintechs-01160620",
+          "card": "sources/pb-04.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "plaid",
+      "section": "personal-money",
+      "title": "Plaid MCP servers",
+      "kind": "aggregator-tools",
+      "page": "personal-money/plaid.md",
+      "page_status": "current",
+      "last_verified": "2026-11-14",
+      "summary": "Plaid's MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users' accounts.",
+      "operator": "Plaid",
+      "agent_can": "Developer work only: production diagnostics and analytics for a Plaid customer's team, and a local sandbox MCP for building. No access to end users' accounts",
+      "user_controls": "The Dashboard MCP needs a Plaid OAuth token, and the team must be approved for Production access",
+      "mcp_server": "yes",
+      "endpoint": "https://api.dashboard.plaid.com/mcp/",
+      "availability": "The Dashboard MCP is under active development. Plaid says breaking changes may occur and support is limited",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pb-02",
+            "url": "https://plaid.com/docs/resources/mcp/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pb-01",
+          "url": "https://plaid.com/blog/meta-muse/",
+          "card": "sources/pb-01.md"
+        },
+        {
+          "id": "pb-02",
+          "url": "https://plaid.com/docs/resources/mcp/",
+          "card": "sources/pb-02.md"
+        }
+      ],
+      "unknown_fields": []
+    }
+  ]
+}

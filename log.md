@@ -56,3 +56,10 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Added glossary.md with short, general definitions of recurring terms, and linked it from the overview, index, llms.txt, and the front page.
 - Trimmed overview, the five launch-broker provider pages, rails/local-mcp-and-cli.md, rails/mandates-and-data-access.md, and the front-page short answer so first-use terms link to the glossary. Facts, numbers, links, and footnotes were kept.
 - Added an AGENTS.md style rule: define terms in glossary.md and link them on first use, instead of writing long inline explanations.
+
+## [2026-11-14] edit | Payments and Personal money agents sections
+- Added payments/ (README plus visa-intelligent-commerce, mastercard-agent-pay, agentic-commerce-protocol, stripe, paypal, x402, ap2, robinhood-agentic-credit-card) and personal-money/ (README plus meta-muse, plaid, jpmorgan-smart-cash, banks-and-outside-agents). Built only from existing source cards pm-01 to pm-15, rh-09, rh-10, cb-01, pb-01 to pb-05, bl-01, bl-02 and bl-08. No new cards; prior-art cards were not used as evidence.
+- New schema/program.schema.json for program records (operator, agent_can, user_controls, mcp_server, endpoint, availability, field_sources). Page types payment and personal-money added to page.schema.json. Generated data/programs.json and directory tables.
+- Marked unknown where no source confirms a value: Mastercard MCP, endpoint and availability; Visa production MCP address; ACP and x402 user controls and MCP; AP2 MCP; Muse MCP and endpoint; JPMorgan Smart Cash controls, MCP and endpoint. JPMorgan Smart Cash rests on one news report (single-source warning).
+- Glossary: agentic commerce, data aggregator, open banking, payment token, stablecoin, virtual card.
+- Front-page Payments and Personal money agents tabs flipped live on the maintainer's instruction of 2026-11-14; "What we cover" overview added.

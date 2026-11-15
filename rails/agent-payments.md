@@ -10,20 +10,20 @@ last_verified: '2026-11-14'
 
 | Rail | What it is | Sources |
 |---|---|---|
-| Visa Intelligent Commerce | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
-| Mastercard Agent Pay | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
-| Agentic Commerce Protocol (ACP) | Open standard for buyers, their agents and businesses; the spec is maintained by OpenAI and Stripe | [^pm-07] |
-| Stripe Shared Payment Tokens | A scoped, expiring payment credential with usage limits for agent purchases | [^pm-08] |
-| Stripe MCP | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
-| PayPal MCP server and Agent Toolkit | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
-| x402 | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
+| [Visa Intelligent Commerce](../payments/visa-intelligent-commerce.md) | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
+| [Mastercard Agent Pay](../payments/mastercard-agent-pay.md) | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
+| [Agentic Commerce Protocol (ACP)](../payments/agentic-commerce-protocol.md) | Open standard for buyers, their agents and businesses; the spec is maintained by OpenAI and Stripe | [^pm-07] |
+| [Stripe Shared Payment Tokens](../payments/stripe.md) | A scoped, expiring payment credential with usage limits for agent purchases | [^pm-08] |
+| [Stripe MCP](../payments/stripe.md#stripe-mcp-server) | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
+| [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
+| [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 
 ## Where brokers meet payments
 
 - Coinbase for Agents lets an agent pay for data and research with x402 from a USDC balance.[^cb-01]
-- Robinhood's Agentic Credit Card gives an agent a dedicated virtual card through Robinhood Banking's MCP server, with a spending limit you set and a choice of manual approvals.[^rh-10][^rh-09]
+- Robinhood's Agentic Credit Card gives an agent a dedicated virtual card through Robinhood Banking's MCP server, with a spending limit you set and a choice of manual approvals.[^rh-10][^rh-09] Details: [Robinhood Agentic Credit Card](../payments/robinhood-agentic-credit-card.md).
 
-Payments are a starter set in batch 1; deeper pages will follow.
+Each program has its own page, with a sourced record, in the [Payments](../payments/README.md) section. AP2, which records what a user authorized, is on [AP2](../payments/ap2.md).
 
 ## Sources
 

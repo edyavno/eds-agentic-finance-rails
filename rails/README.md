@@ -14,7 +14,7 @@ last_verified: '2026-11-12'
 |---|---|
 | [Remote MCP with OAuth](remote-mcp-oauth.md) | Hosted MCP servers, OAuth discovery metadata, client registration |
 | [Local MCP servers and CLIs](local-mcp-and-cli.md) | Servers and CLIs you run yourself with API keys |
-| [Agent payments](agent-payments.md) | Card-network agent programs, payment tokens, HTTP 402 payments |
+| [Agent payments](agent-payments.md) | Card-network agent programs, payment tokens, HTTP 402 payments. One page per program in [Payments](../payments/README.md) |
 | [Agent identity](agent-identity.md) | Signing agent traffic so sites can tell which agent is calling |
 | [Mandates and data access](mandates-and-data-access.md) | Proof of what a user authorized, and the rules on sharing financial data |
 

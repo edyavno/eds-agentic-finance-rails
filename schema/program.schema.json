@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema/program.schema.json",
+  "title": "Program page YAML header (payments and personal money agents)",
+  "description": "One page per payment program, protocol, or personal money tool, in payments/ or personal-money/. Section READMEs and topic pages without an operator field use page.schema.json instead. Every record value is either backed by sources listed in field_sources or is the literal string \"unknown\". kind is the wiki's own category and needs no source.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "id",
+    "title",
+    "summary",
+    "page_status",
+    "last_verified",
+    "kind",
+    "operator",
+    "agent_can",
+    "user_controls",
+    "mcp_server",
+    "endpoint",
+    "availability",
+    "field_sources"
+  ],
+  "$defs": {
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}-\\d{2}$"
+    },
+    "unknown": {
+      "const": "unknown"
+    },
+    "text_or_unknown": {
+      "type": "string",
+      "minLength": 1
+    },
+    "yes_no_unknown": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/source_id"
+      }
+    }
+  },
+  "properties": {
+    "type": {
+      "enum": [
+        "payment",
+        "personal-money"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Matches the file name."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "page_status": {
+      "enum": [
+        "current",
+        "stale",
+        "archived"
+      ]
+    },
+    "last_verified": {
+      "$ref": "#/$defs/date"
+    },
+    "kind": {
+      "enum": [
+        "card-network-program",
+        "payment-credential",
+        "commerce-protocol",
+        "payment-protocol",
+        "mandate-protocol",
+        "payment-mcp",
+        "agent-card",
+        "personal-agent",
+        "aggregator-tools",
+        "bank-tool"
+      ],
+      "description": "The wiki's own category for the program. Not a sourced claim."
+    },
+    "operator": {
+      "$ref": "#/$defs/text_or_unknown",
+      "description": "Who runs or maintains it."
+    },
+    "agent_can": {
+      "$ref": "#/$defs/text_or_unknown",
+      "description": "What an agent can do with it, in plain English."
+    },
+    "user_controls": {
+      "$ref": "#/$defs/text_or_unknown",
+      "description": "Approvals, limits, or consent the person keeps."
+    },
+    "mcp_server": {
+      "$ref": "#/$defs/yes_no_unknown",
+      "description": "Whether an official MCP server is documented."
+    },
+    "endpoint": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/unknown"
+        },
+        {
+          "type": "null",
+          "description": "No hosted endpoint (a protocol or spec, not a service)."
+        },
+        {
+          "type": "string",
+          "pattern": "^https://[^\\s]+$"
+        }
+      ]
+    },
+    "availability": {
+      "$ref": "#/$defs/text_or_unknown",
+      "description": "Stage and reach as stated by sources (pilot, beta, preview, live, regions)."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "field_sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Source card ids (sources/<id>.md) backing each non-unknown record field.",
+      "properties": {
+        "operator": {
+          "$ref": "#/$defs/ids"
+        },
+        "agent_can": {
+          "$ref": "#/$defs/ids"
+        },
+        "user_controls": {
+          "$ref": "#/$defs/ids"
+        },
+        "mcp_server": {
+          "$ref": "#/$defs/ids"
+        },
+        "endpoint": {
+          "$ref": "#/$defs/ids"
+        },
+        "availability": {
+          "$ref": "#/$defs/ids"
+        }
+      }
+    }
+  }
+}

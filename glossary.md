@@ -1,7 +1,7 @@
 ---
 type: guide
 title: Glossary
-summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, and related agent-finance vocabulary.
+summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
 last_verified: '2026-11-14'
 ---
@@ -13,6 +13,10 @@ Short, plain-English definitions of recurring terms in this wiki. These entries 
 ## 2FA
 
 Two-factor authentication. A second check, besides a password, that a person is who they say they are.
+
+## Agentic commerce
+
+Shopping and paying done by an AI agent on a person's behalf, from finding an item to checking out.
 
 ## AI Partition
 
@@ -37,6 +41,10 @@ Command-line interface. A program you run by typing commands, rather than clicki
 ## Client ID Metadata Documents
 
 A way for an app to describe itself with a document at a URL, so a server can identify the app during [OAuth](#oauth) sign-in.
+
+## Data aggregator
+
+A company that connects apps to a person's bank and card accounts, with their permission, and passes along data such as balances and transactions.
 
 ## Dynamic Client Registration
 
@@ -70,6 +78,10 @@ Model Context Protocol. A standard way for an AI application to connect to a too
 
 A standard sign-in method that lets a person grant an app limited access to an account, without sharing their password with that app.
 
+## Open banking
+
+Sharing bank data with other apps through approved, permissioned connections, instead of handing over a bank password.
+
 ## OpenAPI
 
 A standard way to describe a web API, so people and programs can see what requests it accepts.
@@ -77,6 +89,10 @@ A standard way to describe a web API, so people and programs can see what reques
 ## Paper trading
 
 Practice trading with simulated money. Also called paper mode.
+
+## Payment token
+
+A stand-in for a card number or payment method that works only within set limits, such as one seller, a maximum amount or an expiry date. The real card number stays hidden.
 
 ## PKCE
 
@@ -102,6 +118,10 @@ A test environment that is not the live production system.
 
 Named permissions in an [OAuth](#oauth) sign-in request, which limit what the app is allowed to do.
 
+## Stablecoin
+
+A digital token designed to hold a steady value, usually pegged to a currency such as the US dollar.
+
 ## Stdio
 
 Standard input and output. A local program can talk to a client through these streams instead of over the internet.
@@ -109,6 +129,10 @@ Standard input and output. A local program can talk to a client through these st
 ## UAT
 
 User acceptance testing. A test environment used to try a system before using the live one. See also [sandbox](#sandbox).
+
+## Virtual card
+
+A card number that exists only online, often created for one purpose and with its own limits.
 
 ## x402
 
