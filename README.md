@@ -19,7 +19,7 @@ The wiki covers five areas:
 - **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
 - **Quick answers:** the [FAQ](faq.md).
 - **Engineers:** see [Build it](build/README.md).
-- **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling.
+- **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling. The site is at https://agenticfinancerails.com.
 
 ```bash
 git clone https://github.com/edyavno/eds-agentic-finance-rails
@@ -40,7 +40,7 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `comparisons/` | Side-by-side views |
 | `analyses/` | [Saved answers](analyses/README.md) to questions (none yet) |
 | `index.md`, `directory.md`, `llms.txt`, `data/` | Generated from the pages and committed |
-| `overview.md`, `faq.md`, `glossary.md`, `gaps.md`, `log.md` | Context, short answers, definitions, open questions, history |
+| `overview.md`, `faq.md`, `glossary.md`, `gaps.md` | Context, short answers, definitions, open questions |
 | `changelog/` | What changed, newest first; `changelog/README.md` is generated and shows the wiki in numbers |
 | `schema/` | JSON Schema for page headers |
 

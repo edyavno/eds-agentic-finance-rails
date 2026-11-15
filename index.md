@@ -28,7 +28,6 @@ Every page in the wiki, generated from page headers.
 - [Personal money agents](personal-money/README.md): Personal money agents, bank AI tools, and how banks treat outside agents
 - [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
 - [Gaps - what we do not know yet](gaps.md): Open questions and missing sources, ranked.
-- [log.md](log.md): History of changes to the wiki
 
 ## Providers
 

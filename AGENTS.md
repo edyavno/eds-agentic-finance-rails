@@ -28,7 +28,7 @@ People: use the "Suggest a correction" link at the bottom of any page. It opens 
 
 ## Giving feedback
 
-Agents can POST a short note to `/feedback` on the site. GET `/feedback` first for the current schema and an example.
+Agents can POST a short note to `/feedback` on the site. GET `/feedback` first for the current schema and an example. The site is https://agenticfinancerails.com.
 
 - Send JSON with `Content-Type: application/json`. The body may be at most 4 KB.
 - `note` is required: what you want the maintainer to know. Up to 2000 characters.
