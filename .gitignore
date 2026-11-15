@@ -1,0 +1,22 @@
+# Secrets and env
+.env
+.env.*
+.dev.vars
+*.pem
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+*~
+
+# Build and tool output
+__pycache__/
+node_modules/
+.wrangler/
+dist/
+out/
