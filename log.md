@@ -105,3 +105,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] release | public launch
 - The site is now public at https://agenticfinancerails.com. www.agenticfinancerails.com, edsagenticfinancerails.com, edsagenticfinancerails.wiki and edsagenticfinancerails.xyz redirect there.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] edit | overview wording for Public
+- overview.md now introduces Public as "Not yet profiled here" instead of roadmap wording.
+- No facts, footnotes, source cards or last_verified dates changed.
