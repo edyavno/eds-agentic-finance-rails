@@ -97,3 +97,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Changelog entries, gaps.md and three source cards (pa-01, pa-08, np-02) lost process notes; source card Notes now read "This card is a pointer, not a copy. Archive link: unknown."
 - This log stays in the repo but is no longer published on the site. index.md no longer links it.
 - No facts, footnotes or last_verified dates changed.
+
+## [2026-11-15] edit | log wording
+- Reworded four earlier entries in this log so they no longer mention private notes, an old site address or an internal file name. A one-time, recorded exception to the append-only rule covered this change.
+- No facts, footnotes, source cards or last_verified dates changed.
