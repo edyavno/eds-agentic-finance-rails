@@ -101,3 +101,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] edit | log wording
 - Reworded four earlier entries in this log so they no longer mention private notes, an old site address or an internal file name. A one-time, recorded exception to the append-only rule covered this change.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] release | public launch
+- The site is now public at https://agenticfinancerails.com. www.agenticfinancerails.com, edsagenticfinancerails.com, edsagenticfinancerails.wiki and edsagenticfinancerails.xyz redirect there.
+- No facts, footnotes, source cards or last_verified dates changed.
