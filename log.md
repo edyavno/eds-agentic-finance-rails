@@ -51,3 +51,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Rewrote overview.md (especially Public, tastytrade, Schwab, and PrimeXBT), and the Coinbase, Robinhood, Webull, Interactive Brokers, and Alpaca provider pages, following the AGENTS.md style rule. Light pass on rails/local-mcp-and-cli.md and rails/mandates-and-data-access.md.
 - Facts, numbers, links, and footnote citations were kept. No new facts were added.
 
+
+## [2026-11-14] edit | glossary and trim pass
+- Added glossary.md with short, general definitions of recurring terms, and linked it from the overview, index, llms.txt, and the front page.
+- Trimmed overview, the five launch-broker provider pages, rails/local-mcp-and-cli.md, rails/mandates-and-data-access.md, and the front-page short answer so first-use terms link to the glossary. Facts, numbers, links, and footnotes were kept.
+- Added an AGENTS.md style rule: define terms in glossary.md and link them on first use, instead of writing long inline explanations.

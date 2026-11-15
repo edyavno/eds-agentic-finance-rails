@@ -15,6 +15,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 - Feedback: GET /feedback first, then POST JSON (see above)
 - [providers.json](data/providers.json): the same data as JSON, with source URLs per field
 - [Overview](overview.md): who lets agents in and who blocks them
+- [Glossary](glossary.md): short definitions of recurring terms
 
 ## Providers
 
@@ -66,7 +67,7 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## What changed
 
-- [What changed: 2026-11-14](changelog/2026-11-14.md): Added official ERC-8004, cited remaining source cards, and refreshed the front page for search and plain-English answers.
+- [What changed: 2026-11-14](changelog/2026-11-14.md): Added official ERC-8004, cited remaining source cards, refreshed the front page, and added a glossary with a trim pass on the densest pages.
 - [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 

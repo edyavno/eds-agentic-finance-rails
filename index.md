@@ -23,6 +23,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 - [README.md](README.md): What this wiki is and how to use it
 - [AGENTS.md](AGENTS.md): Rules for agents: ingest, query, lint, citations, page life cycle
 - [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
+- [Glossary](glossary.md): Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, and related agent-finance vocabulary.
 - [directory.md](directory.md): Every provider's key fields in one table (generated)
 - [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
 - [Gaps - what we do not know yet](gaps.md): Open questions and missing sources, ranked.
@@ -78,7 +79,7 @@ Every page in the wiki. Generated from page headers by the publisher; do not edi
 
 ## What changed
 
-- [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added official ERC-8004, cited remaining source cards, and refreshed the front page for search and plain-English answers.
+- [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added official ERC-8004, cited remaining source cards, refreshed the front page, and added a glossary with a trim pass on the densest pages.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
 

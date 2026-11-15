@@ -8,22 +8,22 @@ last_verified: '2026-11-14'
 
 # Local MCP servers and CLIs
 
-Some providers publish servers or CLIs you run on your own machine with API credentials. MCP (Model Context Protocol) is a standard way for an AI to connect to a broker. A CLI is a command-line tool.
+Some providers publish servers or [CLIs](../glossary.md#cli) you run locally with API credentials.
 
 | Provider | Local option | Credentials | Safety defaults | Sources |
 |---|---|---|---|---|
-| Alpaca | Trading MCP v2 (stdio) and CLI | API key and secret | Tool filtering with `ALPACA_TOOLSETS`; CLI has no confirmation prompts | [^al-02][^al-05] |
-| Webull | OpenAPI MCP and CLI (alpha) | App Key and App Secret, 2FA | UAT sandbox by default; notional, quantity and symbol limits | [^wb-03][^wb-05] |
+| Alpaca | Trading [MCP](../glossary.md#mcp) v2 ([stdio](../glossary.md#stdio)) and CLI | [API key](../glossary.md#api-key) and secret | Tool filtering with `ALPACA_TOOLSETS`; CLI has no confirmation prompts | [^al-02][^al-05] |
+| Webull | [OpenAPI](../glossary.md#openapi) MCP and CLI (alpha) | App Key and App Secret, [2FA](../glossary.md#2fa) | [UAT](../glossary.md#uat) [sandbox](../glossary.md#sandbox) by default; notional, quantity and symbol limits | [^wb-03][^wb-05] |
 | Coinbase | CLI | CDP API key | Key scoped to chosen portfolios | [^cb-01] |
-| tastytrade | Self-hosted MCP only | OAuth2 refresh token in env vars | Defaults to production; read-only mode available | [^tt-03][^tt-04] |
+| tastytrade | Self-hosted MCP only | [OAuth](../glossary.md#oauth)2 [refresh token](../glossary.md#refresh-token) in env vars | Defaults to production; read-only mode available | [^tt-03][^tt-04] |
 
-A tastytrade newsroom post describes real-time quotes, option chains with Greeks (standard option risk measures), single- and multi-leg orders, and preflight cost estimates.[^tt-02]
+A newsroom post describes real-time quotes, option chains with [Greeks](../glossary.md#greeks), single- and multi-leg orders, and [preflight](../glossary.md#preflight) cost estimates.[^tt-02]
 
 ## Builder notes
 
 - Never expose a local server to the internet. Alpaca warns its package has no remote auth.[^al-02]
-- Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03] Webull also publishes OpenAPI agent skills for its CLI, with configurable risk controls.[^wb-04]
-- Limits set in environment variables can be changed by anything that can edit that environment.
+- Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03] Webull publishes OpenAPI agent skills for its CLI, with configurable risk controls.[^wb-04]
+- Limits set in [environment variables](../glossary.md#environment-variables) can be changed by anything that can edit that environment.
 
 ## Sources
 

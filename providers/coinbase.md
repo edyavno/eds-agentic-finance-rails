@@ -36,13 +36,11 @@ field_sources:
 
 ## Overview and current status
 
-Coinbase for Agents connects AI apps to a Coinbase account for crypto, equities and derivatives trading, portfolio management, and x402 payments (a way for an agent to pay for premium data).[^cb-01]
+Coinbase for Agents connects AI apps to a Coinbase account for crypto, equities and derivatives trading, portfolio management and [x402](../glossary.md#x402) payments.[^cb-01] It launched on 2026-06-11 with an [MCP](../glossary.md#mcp) server and a [CLI](../glossary.md#cli). At launch, crypto spot and derivatives were enabled and stocks were described as coming.[^cb-07] The current docs list eligible US stocks.[^cb-01]
 
-It launched on 2026-06-11 with an MCP server and a CLI (a command-line tool you run locally). MCP (Model Context Protocol) is a standard way for an AI to connect to a broker. At launch, crypto spot and derivatives were enabled and stocks were described as coming.[^cb-07] The current docs list eligible US stocks.[^cb-01]
+There are two ways in: a remote MCP server at `https://agents.coinbase.com/mcp` using [OAuth](../glossary.md#oauth), and a local CLI that uses a CDP [API key](../glossary.md#api-key).[^cb-01]
 
-There are two ways in: a remote MCP server at `https://agents.coinbase.com/mcp` using OAuth, a standard sign-in method, and a local CLI that uses a CDP API key (a Coinbase Developer Platform token).[^cb-01]
-
-The CDP CLI/MCP for the developer platform is a separate product. It is for wallets and payments, not consumer account access.[^cb-05]
+The CDP CLI/MCP for the developer platform is a separate product for wallets and payments, not consumer account access.[^cb-05]
 
 ## Feature matrix
 
@@ -60,11 +58,11 @@ The CDP CLI/MCP for the developer platform is a separate product. It is for wall
 ## Implementation details
 
 - **Endpoint:** `https://agents.coinbase.com/mcp`, for example `claude mcp add coinbase --transport http https://agents.coinbase.com/mcp`.[^cb-01]
-- **Auth:** OAuth with `login.coinbase.com` as the authorization server.[^cb-04] Dynamic Client Registration and Client ID Metadata Documents (ways an app can register when you connect) are supported, but Coinbase still allowlists clients.[^cb-01]
-- **Scopes advertised:** include `mcp:orders:create`, `mcp:trades:create`, `mcp:transfers:create` and `mcp:portfolios:update`. Scopes are the permissions named in the sign-in request.[^cb-04]
-- **Account boundary:** you choose which portfolios the agent can reach on the OAuth approval screen.[^cb-03] Isolated agent portfolios are spot crypto only. US derivatives work only in the default portfolio.[^cb-01]
-- **CLI:** runs locally with a CDP API key. Coinbase calls it the most reliable way to execute trades across models.[^cb-01]
-- **Agent feedback:** official docs have a Send feedback section. They say you or your agent can send feedback about the Coinbase MCP through the `coinbase_feedback_submit` tool. The team reads submitted feedback every day. Feedback is limited to 2,000 characters or less. Each user can send up to 6 submissions per day. A tool table on the same page also says submissions are screened. The official docs describe this MCP tool and a local CLI command `coinbase feedback`. They do not document an HTTP path named `/feedback`.[^cb-09]
+- **Auth:** OAuth with `login.coinbase.com` as the authorization server.[^cb-04] [Dynamic Client Registration](../glossary.md#dynamic-client-registration) and [Client ID Metadata Documents](../glossary.md#client-id-metadata-documents) are supported, but Coinbase still [allowlists](../glossary.md#allowlist) clients.[^cb-01]
+- **[Scopes](../glossary.md#scopes) advertised:** include `mcp:orders:create`, `mcp:trades:create`, `mcp:transfers:create` and `mcp:portfolios:update`.[^cb-04]
+- **Account boundary:** you choose which portfolios the agent can reach on the OAuth approval screen.[^cb-03] Isolated agent portfolios are spot crypto only; US derivatives work only in the default portfolio.[^cb-01]
+- **CLI:** runs locally with a CDP API key; Coinbase calls it the most reliable way to execute trades across models.[^cb-01]
+- **Agent feedback:** official docs have a Send feedback section. They say you or your agent can send feedback about the Coinbase MCP through the `coinbase_feedback_submit` tool, that the team reads submitted feedback every day, that feedback is limited to 2,000 characters or less, and that each user can send up to 6 submissions per day. A tool table on the same page also says submissions are screened. The official docs describe this MCP tool and a local CLI command `coinbase feedback`; they do not document an HTTP path named `/feedback`.[^cb-09]
 
 ## Guardrails and risks
 
@@ -72,7 +70,7 @@ The CDP CLI/MCP for the developer platform is a separate product. It is for wall
 |---|---|---|
 | Dedicated portfolio chosen at sign-in | Server side (broker), optional | [^cb-03][^cb-07] |
 | Main account access is also allowed | | [^cb-07] |
-| Client allowlisting, including Dynamic Client Registration clients | Server side (broker) | [^cb-01] |
+| Client allowlisting, including DCR clients | Server side (broker) | [^cb-01] |
 | Maximum trade size and spend rules | Announced as "soon", not shipped in the sources | [^cb-07] |
 | Per-order confirmation | Client side. Coinbase documents that Claude previews and asks to confirm, while ChatGPT creates the order in one turn | [^cb-01] |
 | KYT transaction monitoring on payments | Server side (broker) | [^cb-07] |
@@ -85,14 +83,14 @@ The advertised scopes include transfers, so check which tools your client expose
 2. Add the remote MCP in your client, or use the CLI with a CDP API key for terminal agents.[^cb-01]
 3. If your agent only previews orders on a hosted client, ask it to execute explicitly or use the CLI, as Coinbase suggests.[^cb-01]
 
-Coinbase also publishes an agent-readable documentation index at `https://docs.cdp.coinbase.com/llms.txt`, which lists Coinbase for Agents materials.[^cb-06]
+Coinbase publishes an agent-readable [llms.txt](../glossary.md#llmstxt) at `https://docs.cdp.coinbase.com/llms.txt`, which lists Coinbase for Agents materials.[^cb-06]
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
 ## Unknown so far
 
 - Order types and limits: unknown.
-- Paper trading for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
+- [Paper trading](../glossary.md#paper-trading) for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
 - Agent terms of use: not yet in the source batch.
 
 ## Changelog
