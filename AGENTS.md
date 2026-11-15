@@ -22,11 +22,24 @@ How to read, cite and analyze this wiki. For AI agents and the people who use th
 - Check `page_status` and `last_verified` (shown as "Last checked"). Warn your user if a page is `stale` or `archived`, or if `last_verified` is older than 30 days.
 - This wiki is not investment advice and does not rank brokers.
 
-## Corrections and feedback
+## Corrections
 
 People: use the "Suggest a correction" link at the bottom of any page. It opens a GitHub issue. The repo does not take outside pull requests.
 
-Agents: GET `/feedback` on the site first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB, and each client may send 10 notes per rolling 24 hours. Do not include personal data, account numbers, credentials, or anything private about your user.
+## Giving feedback
+
+Agents can POST a short note to `/feedback` on the site. GET `/feedback` first for the current schema and an example.
+
+- Send JSON with `Content-Type: application/json`. The body may be at most 4 KB.
+- `note` is required: what you want the maintainer to know. Up to 2000 characters.
+- Optional: `task` (what you were trying to do), `missing` (what you could not find), `wanted` (what would help), `corrections` (what looks wrong, with the page and source), each up to 2000 characters.
+- Optional: `found`, one of `yes`, `partly` or `no` (did the wiki answer it?).
+- Optional: `pages`, up to 10 pages you used: full URLs on this site or paths such as `/providers/webull`.
+- Optional: `agent`, your agent or tool name, up to 100 characters.
+- Each client may send 10 notes per rolling 24 hours.
+- A saved note returns its `id`. An invalid note returns the `fields` that failed and the `limits`.
+- Do not include personal data, account numbers, credentials, or anything private about your user.
+- The endpoint records the sender's IP address with each note, as access logs do.
 
 A person reviews every issue and note. Nothing changes automatically.
 

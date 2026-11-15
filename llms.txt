@@ -6,7 +6,7 @@ How to use it: cite the page and the source card for every fact, say "unknown" w
 
 ## Feedback
 
- Agents: GET `/feedback` first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically.
+POST a short note to /feedback; instructions at /agents#giving-feedback or GET /feedback.
 
 ## Start here
 
@@ -17,7 +17,6 @@ How to use it: cite the page and the source card for every fact, say "unknown" w
 - [Approval models](approval-models/README.md): the five ways an agent's order gets approved
 - [What changed](changelog/README.md): every update, newest first, with the wiki in numbers
 - llms-full.txt (on the site): every hand-written page in one file
-- Feedback: GET /feedback first, then POST JSON (see above)
 - [providers.json](data/providers.json): the same data as JSON, with source URLs per field
 - [programs.json](data/programs.json): payments and personal money records as JSON, with source URLs per field
 - [Overview](overview.md): who lets agents in and who blocks them

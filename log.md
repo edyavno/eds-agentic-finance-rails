@@ -83,3 +83,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - AGENTS.md now covers reading only: where to start (llms.txt, index.md, data/*.json), how source cards and footnotes work, citing the page and the card, saying "unknown", checking page_status and last_verified, and how to send corrections or /feedback notes.
 - Removed an internal maintenance file. The analyses section page, README, gaps.md, index.md and llms.txt descriptions updated to match.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] edit | feedback instructions for agents
+- AGENTS.md gained a "Giving feedback" section (#giving-feedback) with the fields, limits and replies of /feedback, and a line that the endpoint records the sender's IP address with each note. README and llms.txt now point there with one line.
+- No facts, footnotes, source cards or last_verified dates changed.

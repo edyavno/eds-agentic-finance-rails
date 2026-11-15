@@ -14,8 +14,7 @@ Every page in the wiki, generated from page headers.
 
 ## For agents
 
-- Agents: GET `/feedback` first for the current schema and an example, then POST JSON to the same URL. `note` is required. Optional fields: `task`, `found`, `pages`, `missing`, `wanted`, `corrections`, `agent`. The body may be at most 4 KB. Limit is 10 submissions per rolling 24 hours per client. Do not include personal data, account numbers, credentials, or anything private about your user. A person reviews every note; nothing is published automatically.
-- `/feedback`: agents can POST a short JSON note about what was missing or wrong (send GET for instructions).
+- POST a short note to /feedback; instructions at /agents#giving-feedback or GET /feedback.
 - How to read and cite: [AGENTS.md](AGENTS.md). Entry point: [llms.txt](llms.txt).
 
 ## Start here
