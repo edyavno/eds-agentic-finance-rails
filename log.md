@@ -63,3 +63,10 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Marked unknown where no source confirms a value: Mastercard MCP, endpoint and availability; Visa production MCP address; ACP and x402 user controls and MCP; AP2 MCP; Muse MCP and endpoint; JPMorgan Smart Cash controls, MCP and endpoint. JPMorgan Smart Cash rests on one news report (single-source warning).
 - Glossary: agentic commerce, data aggregator, open banking, payment token, stablecoin, virtual card.
 - Front-page Payments and Personal money agents tabs flipped live on the maintainer's instruction of 2026-11-14; "What we cover" overview added.
+
+## [2026-11-15] edit | front page reorganization and wiki navigation pass
+- Front page cut to a short version of the README (hero, What we cover, Start here, For AI agents, footer). The "No affiliate links / not investment advice" line moved from the hero to the footer.
+- Moved, not removed: the Trading short answer and its broker list now open directory.md (generated, with footnotes from the comparisons rows: rh-01, rh-04, cb-03, cb-07, wb-07, wb-03, ib-01, ib-07, ib-06, al-05, al-03, al-01, plus each provider's first status source). Front-page stats and "What changed" moved to a generated changelog/README.md. The approval-model cards are on approval-models/README.md, now linked from the directory and rails/README.md.
+- Generated record tables (what an agent can do, what you control, official MCP, last verified) added to payments/README.md and personal-money/README.md between records markers.
+- Glossary: approval model, human in the loop, rails. README style section now matches the AGENTS.md glossary rule. AGENTS.md lists the new generated files.
+- No last_verified dates were bumped; no facts or source cards changed.

@@ -1,11 +1,27 @@
 ---
 title: Directory
-summary: Key fields for every listed broker, generated from provider page headers, with source URLs in the JSON and CSV downloads.
+summary: Which brokers let AI agents trade and who approves each order, plus key fields for every listed broker, payment program and personal money tool. Every value is sourced or says unknown.
 page_status: current
 last_verified: '2026-11-14'
 ---
 
 # Directory
+
+## Which brokers let AI agents trade, and who approves the order?
+
+*Checked Nov 14, 2026.*
+
+All five launch brokers publish an official [MCP](glossary.md#mcp) server for AI agents.[^al-02][^cb-01][^ib-01][^rh-01][^wb-02] The brokers differ on who says yes before an order reaches the market.
+
+- [Robinhood:](providers/robinhood.md) The agent trades only in a separate account you fund. Per-order approval is an optional toggle, off by default for MCP accounts.[^rh-01][^rh-04]
+- [Coinbase:](providers/coinbase.md) The agent trades in the portfolios you pick when you sign in, which can include your main account. You can limit it to a dedicated portfolio.[^cb-03][^cb-07]
+- [Webull:](providers/webull.md) With the hosted Cloud MCP, you confirm each trade in the Webull app. The local OpenAPI MCP places orders directly, with limits you set.[^wb-07][^wb-03]
+- [Interactive Brokers:](providers/interactive-brokers.md) By default, the AI drafts instructions you review and submit. Eligible accounts can turn on Autonomous Trading inside a separately funded [AI Partition](glossary.md#ai-partition).[^ib-01][^ib-07][^ib-06]
+- [Alpaca:](providers/alpaca.md) No broker-side approval is documented, so approval has to live in your agent or client.[^al-05][^al-03] [Paper trading](glossary.md#paper-trading) is built in.[^al-01][^al-03]
+
+Who approves is explained in [approval models](approval-models/README.md). [Compare the launch brokers side by side](comparisons/launch-brokers.md), or see the [rails](rails/README.md) underneath.
+
+## Broker fields
 
 Key fields for every provider, generated from the YAML headers in `providers/`. Each value is sourced on the provider page; `unknown` means no source confirms it yet. Lists show the default path first. Machine-readable copies: [data/providers.json](data/providers.json), [data/providers.csv](data/providers.csv).
 
@@ -58,6 +74,24 @@ AI tools for financial advisors. These are not launch-broker pages, so they are 
 
 Approval models are explained in [approval-models/](approval-models/README.md).
 A page marked stale or archived should not be treated as current; check last_verified.
+
+## Sources
+
+[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^ib-01]: [Interactive Brokers AI Hub](sources/ib-01.md). Interactive Brokers, official, retrieved 2026-11-12.
+[^rh-01]: [Onboarding an external agent - Robinhood](sources/rh-01.md). Robinhood, official, retrieved 2026-11-12.
+[^wb-02]: [Webull Cloud MCP Server - Webull API](sources/wb-02.md). Webull Developer, official, retrieved 2026-11-12.
+[^rh-04]: [Trading with your agent - Robinhood](sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
+[^cb-03]: [Coinbase for Agents setup skill (skill.md)](sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
+[^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
+[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
+[^ib-07]: [AI Instructions](sources/ib-07.md). IBKR Guides, official, retrieved 2026-11-12.
+[^ib-06]: [AI-Powered Portfolio Analysis & Trading Tools (IBKR AI Integrations)](sources/ib-06.md). Interactive Brokers, official, retrieved 2026-11-12.
+[^al-05]: [GitHub - alpacahq/cli: CLI for Trading API · GitHub](sources/al-05.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-01]: [Alpaca - Trade with AI Using Alpaca's MCP Server](sources/al-01.md). Alpaca, official, retrieved 2026-11-12.
 
 ---
 

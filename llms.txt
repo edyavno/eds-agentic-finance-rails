@@ -11,7 +11,11 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 ## Start here
 
 - [AGENTS.md](AGENTS.md): rules, citation format, page life cycle
-- [Directory](directory.md): key fields for every provider
+- [Directory](directory.md): short answer to which brokers let AI agents trade and who approves, then key fields for every provider and program
+- [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Advisor agents](advisors/README.md), [Rails](rails/README.md): section home pages
+- [Approval models](approval-models/README.md): the five ways an agent's order gets approved
+- [What changed](changelog/README.md): every update, newest first, with the wiki in numbers
+- llms-full.txt (on the site): every hand-written page in one file
 - Feedback: GET /feedback first, then POST JSON (see above)
 - [providers.json](data/providers.json): the same data as JSON, with source URLs per field
 - [programs.json](data/programs.json): payments and personal money records as JSON, with source URLs per field
@@ -88,6 +92,8 @@ Rules for agents: cite the page and the source card for every fact, say "unknown
 
 ## What changed
 
+- [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, the Trading short answer moved to the directory, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
 - [What changed: 2026-11-14](changelog/2026-11-14.md): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.

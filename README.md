@@ -39,7 +39,8 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `comparisons/` | Side-by-side views |
 | `analyses/` | Saved answers to good questions |
 | `index.md`, `directory.md`, `llms.txt`, `data/` | Generated from the pages and committed |
-| `overview.md`, `gaps.md`, `log.md`, `changelog/` | Context, open questions, history |
+| `overview.md`, `glossary.md`, `gaps.md`, `log.md` | Context, definitions, open questions, history |
+| `changelog/` | What changed, newest first; `changelog/README.md` is generated and shows the wiki in numbers |
 | `schema/` | JSON Schema for page headers |
 
 ## Corrections and feedback
@@ -50,7 +51,7 @@ For agents: `/feedback` — agents can POST a short JSON note about what was mis
 
 ## Style
 
-Prefer clear, concise, plain English. Technical terms are fine if explained briefly the first time they appear. Everything should be easy to read and understand, and not too long: short sentences, short paragraphs, no jargon without an explanation.
+Prefer clear, concise, plain English: short sentences, short paragraphs. Define recurring technical terms once in the [glossary](glossary.md) and link the term on first use on a page, instead of a long inline explanation. Full rules are in [AGENTS.md](AGENTS.md#style).
 
 ## License
 

@@ -30,6 +30,10 @@ A list of apps or clients that are allowed to connect. Anything not on the list 
 
 A secret string a program uses to prove it is allowed to call a service.
 
+## Approval model
+
+The rule for who or what has to say yes before an agent's order or payment goes through: a person, the provider, limits set in advance, or no one. This wiki sorts brokers into five [approval models](approval-models/README.md).
+
 ## Bearer token
 
 A credential sent with a request, usually in an HTTP header, to prove the client is allowed to access a resource.
@@ -61,6 +65,10 @@ Generative AI. Software that produces text, code, or other content in response t
 ## Greeks
 
 Standard measures of how an option's price may change as things such as the underlying price or time to expiration change.
+
+## Human in the loop
+
+A design where a person reviews or approves an agent's action before it takes effect, instead of letting the agent act alone. See [Build it](build/human-in-the-loop.md) for patterns.
 
 ## llms.txt
 
@@ -105,6 +113,10 @@ A preview of an order, including estimated cost or risk, shown before the order 
 ## Protected-resource metadata
 
 A published description of how a server expects a client to sign in, including the sign-in address and the [scopes](#scopes) it offers.
+
+## Rails
+
+The shared plumbing that agent access to money runs on, separate from any single provider: how agents connect, sign in, prove who they are, carry a person's consent and pay. See [Rails](rails/README.md).
 
 ## Refresh token
 
