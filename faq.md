@@ -24,7 +24,11 @@ Sometimes. Alpaca has a separate [paper trading](glossary.md#paper-trading) endp
 
 ## Can an AI agent pay for things for me?
 
-Yes, through several programs, each with limits. Visa lets approved agent builders pay with tokenized Visa credentials, under purchase instructions the consumer approved.[^pm-01] Mastercard lets only registered agents pay, using agentic tokens.[^pm-05][^pm-06] Stripe's shared [payment tokens](glossary.md#payment-token) carry usage and expiry limits.[^pm-08] Robinhood's Agentic Credit Card asks you to approve each purchase or set a monthly limit.[^rh-09] See [Payments](payments/README.md).
+Yes, through several programs, each with limits. Visa lets approved agent builders pay with tokenized Visa credentials, under purchase instructions the consumer approved.[^pm-01] Mastercard lets only registered agents pay, using agentic tokens.[^pm-05][^pm-06] Stripe's shared [payment tokens](glossary.md#payment-token) carry usage and expiry limits.[^pm-08] Robinhood's Agentic Credit Card asks you to approve each purchase or set a monthly limit.[^rh-09] OpenAI's ChatGPT Wallet asks for a biometric check before each purchase, for ChatGPT Pro users in the US.[^oa-01] See [Payments](payments/README.md).
+
+## Can my AI agent buy from any website?
+
+No. Some merchants forbid agents in their terms. eBay bans buy-for-me agents without its prior express permission.[^eb-01] United bans the use of AI agents to make, change or service a ticket or to buy any product.[^ua-01] See [Merchants and outside agents](payments/merchants-and-outside-agents.md).
 
 ## Do banks let outside AI agents into my account?
 
@@ -53,6 +57,9 @@ Not on their own, for the two whose official pages address it. Anthropic's solut
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
 [^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^eb-01]: [User Agreement - eBay](sources/eb-01.md). eBay, official, retrieved 2026-11-15.
+[^ua-01]: [Contract of Carriage Document - United Airlines](sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.

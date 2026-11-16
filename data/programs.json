@@ -13,6 +13,90 @@
   "license": "CC-BY-4.0",
   "programs": [
     {
+      "id": "agentbank",
+      "section": "payment",
+      "title": "AgentBank",
+      "kind": "payment-mcp",
+      "page": "payments/agentbank.md",
+      "page_status": "current",
+      "last_verified": "2026-11-15",
+      "summary": "An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.",
+      "operator": "AgentBank, operated by Thinking Horizon, Inc.",
+      "agent_can": "Collect payments, convert between currencies and crypto assets, pay bank, QR or wallet recipients in local currency, and pay x402 services, through an MCP server",
+      "user_controls": "The owner confirms the recipient, amounts, fees and expiry of every payment before it is created. An approval threshold sets when a payment needs an extra approval. ChatGPT and Claude connections can also have a spending limit, and the owner can disconnect an agent at any time",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.useagentbank.com",
+      "availability": "unknown",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "ag-02",
+            "url": "https://useagentbank.com/security",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "ag-01",
+            "url": "https://useagentbank.com/for-developers",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "ag-01",
+            "url": "https://useagentbank.com/for-developers",
+            "authority": "official"
+          },
+          {
+            "id": "ag-02",
+            "url": "https://useagentbank.com/security",
+            "authority": "official"
+          },
+          {
+            "id": "ag-03",
+            "url": "https://useagentbank.com/faq",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "ag-01",
+            "url": "https://useagentbank.com/for-developers",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "ag-01",
+            "url": "https://useagentbank.com/for-developers",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "ag-01",
+          "url": "https://useagentbank.com/for-developers",
+          "card": "sources/ag-01.md"
+        },
+        {
+          "id": "ag-02",
+          "url": "https://useagentbank.com/security",
+          "card": "sources/ag-02.md"
+        },
+        {
+          "id": "ag-03",
+          "url": "https://useagentbank.com/faq",
+          "card": "sources/ag-03.md"
+        }
+      ],
+      "unknown_fields": [
+        "availability"
+      ]
+    },
+    {
       "id": "agentic-commerce-protocol",
       "section": "payment",
       "title": "Agentic Commerce Protocol (ACP)",
@@ -150,6 +234,99 @@
       ]
     },
     {
+      "id": "chatgpt-wallet",
+      "section": "payment",
+      "title": "ChatGPT Wallet",
+      "kind": "payment-credential",
+      "page": "payments/chatgpt-wallet.md",
+      "page_status": "current",
+      "last_verified": "2026-11-15",
+      "summary": "OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.",
+      "operator": "OpenAI, built with American Express, Mastercard and Visa",
+      "agent_can": "Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it",
+      "user_controls": "You review the items, total and card, then approve each purchase with a biometric check such as Face ID. The terms also allow granting ChatGPT authority to approve purchases in advance",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Rolling out from 2026-11-13 in dots, to ChatGPT Pro users in the US aged 18 or older with eligible US-issued American Express, Chase, Mastercard and Visa cards",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "oa-01",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "oa-01",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "oa-04",
+            "url": "https://developers.openai.com/commerce/guides/accept-payments",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "oa-01",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "oa-02",
+            "url": "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet",
+            "authority": "official"
+          },
+          {
+            "id": "oa-03",
+            "url": "https://openai.com/policies/chatgpt-wallet-terms/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "oa-01",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "oa-02",
+            "url": "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "oa-01",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "card": "sources/oa-01.md"
+        },
+        {
+          "id": "oa-02",
+          "url": "https://help.openai.com/en/articles/20001654-making-purchases-with-chatgpt-wallet",
+          "card": "sources/oa-02.md"
+        },
+        {
+          "id": "oa-03",
+          "url": "https://openai.com/policies/chatgpt-wallet-terms/",
+          "card": "sources/oa-03.md"
+        },
+        {
+          "id": "oa-04",
+          "url": "https://developers.openai.com/commerce/guides/accept-payments",
+          "card": "sources/oa-04.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
       "id": "mastercard-agent-pay",
       "section": "payment",
       "title": "Mastercard Agent Pay",
@@ -200,6 +377,11 @@
       },
       "sources": [
         {
+          "id": "oa-01",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "card": "sources/oa-01.md"
+        },
+        {
           "id": "pm-05",
           "url": "https://www.mastercard.com/global/en/business/artificial-intelligence/mastercard-agent-pay.html",
           "card": "sources/pm-05.md"
@@ -208,6 +390,11 @@
           "id": "pm-06",
           "url": "https://www.mastercard.com/us/en/news-and-trends/stories/2025/agentic-commerce-framework.html",
           "card": "sources/pm-06.md"
+        },
+        {
+          "id": "rn-01",
+          "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+          "card": "sources/rn-01.md"
         }
       ],
       "unknown_fields": [
@@ -294,6 +481,79 @@
         }
       ],
       "unknown_fields": []
+    },
+    {
+      "id": "rain-agent-vaults",
+      "section": "payment",
+      "title": "Rain Agent Vaults",
+      "kind": "agent-card",
+      "page": "payments/rain-agent-vaults.md",
+      "page_status": "current",
+      "last_verified": "2026-11-15",
+      "summary": "Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.",
+      "operator": "Rain",
+      "agent_can": "Spend from a funded vault with a scoped virtual card issued for each purchase, send money to bank accounts in local currency, and send stablecoins",
+      "user_controls": "The vault owner sets the rules, such as how much the agent can spend, which merchants it can pay and when. Each card's amount, merchant and expiry are fixed when it is issued, and the agent cannot raise its own limit",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Announced 2026-11-10 for companies and developers building agents, through Rain's sales team",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "rn-01",
+            "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "rn-01",
+            "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+            "authority": "official"
+          },
+          {
+            "id": "rn-02",
+            "url": "https://www.rain.xyz/product/agent-vaults",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "rn-01",
+            "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+            "authority": "official"
+          },
+          {
+            "id": "rn-02",
+            "url": "https://www.rain.xyz/product/agent-vaults",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "rn-01",
+            "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "rn-01",
+          "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+          "card": "sources/rn-01.md"
+        },
+        {
+          "id": "rn-02",
+          "url": "https://www.rain.xyz/product/agent-vaults",
+          "card": "sources/rn-02.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
     },
     {
       "id": "robinhood-agentic-credit-card",
@@ -533,6 +793,11 @@
       },
       "sources": [
         {
+          "id": "oa-01",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "card": "sources/oa-01.md"
+        },
+        {
           "id": "pm-01",
           "url": "https://developer.visa.com/docs/visa-intelligent-commerce",
           "card": "sources/pm-01.md"
@@ -551,6 +816,11 @@
           "id": "pm-04",
           "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22276.html",
           "card": "sources/pm-04.md"
+        },
+        {
+          "id": "rn-01",
+          "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
+          "card": "sources/rn-01.md"
         }
       ],
       "unknown_fields": [
@@ -763,6 +1033,79 @@
           "id": "pb-04",
           "url": "https://www.politico.com/newsletters/morning-money/2026/11/11/ai-agents-scramble-banks-fight-with-fintechs-01160620",
           "card": "sources/pb-04.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "nous",
+      "section": "personal-money",
+      "title": "Nous",
+      "kind": "personal-agent",
+      "page": "personal-money/nous.md",
+      "page_status": "current",
+      "last_verified": "2026-11-15",
+      "summary": "A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.",
+      "operator": "Nous (Nous for your House Limited, England)",
+      "agent_can": "Track household bills and subscriptions, switch energy, broadband, mobile and car insurance providers, cancel subscriptions, and handle other household admin. It cannot move or transfer money",
+      "user_controls": "Choose a savings mode (Manual, Balanced or Freedom) for how much Nous decides on its own, and set and change its permissions at any time",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Live in the UK for one address per household, with a free tier and a paid Premium tier",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "ns-02",
+            "url": "https://www.nous.co/terms-privacy/terms-of-use",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "ns-01",
+            "url": "https://www.nous.co/faqs",
+            "authority": "official"
+          },
+          {
+            "id": "ns-03",
+            "url": "https://www.nous.co/blog/weve-raised-17m-to-get-nous-into-every-household",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "ns-01",
+            "url": "https://www.nous.co/faqs",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "ns-01",
+            "url": "https://www.nous.co/faqs",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "ns-01",
+          "url": "https://www.nous.co/faqs",
+          "card": "sources/ns-01.md"
+        },
+        {
+          "id": "ns-02",
+          "url": "https://www.nous.co/terms-privacy/terms-of-use",
+          "card": "sources/ns-02.md"
+        },
+        {
+          "id": "ns-03",
+          "url": "https://www.nous.co/blog/weve-raised-17m-to-get-nous-into-every-household",
+          "card": "sources/ns-03.md"
         }
       ],
       "unknown_fields": [

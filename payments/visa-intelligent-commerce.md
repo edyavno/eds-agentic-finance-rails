@@ -47,6 +47,11 @@ Visa Intelligent Commerce (VIC) lets agent providers, wallet providers and agent
 
 On 2026-04-08, Visa announced Intelligent Commerce Connect as part of VIC. Visa says one integration covers payment initiation, tokenization, spend controls and authentication, and lets agents pay with Visa and non-Visa cards. It names agent protocols it accepts, including Trusted Agent Protocol, Machine Payments Protocol (MPP), ACP and Universal Commerce Protocol (UCP). At launch it was in pilot with select partners.[^pm-04]
 
+## Who says they work with it
+
+- OpenAI says it built [ChatGPT Wallet](chatgpt-wallet.md) in partnership with American Express, Mastercard and Visa. It does not say whether Wallet uses Visa Intelligent Commerce.[^oa-01]
+- Rain says its [Agent Vaults](rain-agent-vaults.md) support Visa Intelligent Commerce.[^rn-01]
+
 ## Related
 
 - Visa's Trusted Agent Protocol, on [agent identity](../rails/agent-identity.md).[^pm-03]
@@ -62,6 +67,8 @@ Fees, the consumer AI apps that support VIC today, and a production MCP address.
 [^pm-01]: [Visa Developer Center](../sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
 [^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](../sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
 
 ---

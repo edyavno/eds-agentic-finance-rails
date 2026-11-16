@@ -1,7 +1,7 @@
 ---
 type: payment
 title: Payments
-summary: How AI agents pay. Card-network agent programs, payment tokens, commerce and payment protocols, and an agent credit card, each with its own page and a sourced record.
+summary: How AI agents pay. Card-network agent programs, payment tokens, wallets, commerce and payment protocols, and agent cards, each with its own page and a sourced record, plus merchants that forbid agents.
 page_status: current
 last_verified: '2026-11-14'
 ---
@@ -22,6 +22,10 @@ This section covers how an AI agent pays for things on a person's behalf, often 
 | [x402](x402.md) | Payment protocol | An open standard for paying inside a web request, built on the HTTP 402 "Payment Required" status.[^pm-14][^pm-15] |
 | [AP2 (Agent Payments Protocol)](ap2.md) | Mandate protocol | An open protocol that carries signed proof of what the user authorized.[^pm-13] |
 | [Robinhood Agentic Credit Card](robinhood-agentic-credit-card.md) | Agent card | A [virtual card](../glossary.md#virtual-card) for your agent, with approval for each purchase or a required monthly limit.[^rh-09] |
+| [ChatGPT Wallet](chatgpt-wallet.md) | Payment token wallet | OpenAI's wallet for agents in ChatGPT. You approve each purchase with a biometric check, and the card network supplies a payment token.[^oa-01] |
+| [Rain Agent Vaults](rain-agent-vaults.md) | Agent card | A funded balance for an agent, which pays with a single-use virtual card issued for each purchase under the owner's rules.[^rn-01] |
+| [AgentBank](agentbank.md) | Payment MCP | An MCP server for collecting, converting and sending money, with owner confirmation on every payment and an approval threshold.[^ag-01][^ag-02] |
+| [Merchants and outside agents](merchants-and-outside-agents.md) | Topic | eBay and United forbid AI agents from buying on their sites without permission.[^eb-01][^ua-01] |
 
 ## What can an agent do with each program?
 
@@ -31,10 +35,13 @@ The same records side by side, taken from each page's YAML header. Each value is
 
 | Program | Operator | What an agent can do | What you control | Official MCP | Availability | Last verified |
 |---|---|---|---|---|---|---|
+| [AgentBank](agentbank.md) | AgentBank, operated by Thinking Horizon, Inc. | Collect payments, convert between currencies and crypto assets, pay bank, QR or wallet recipients in local currency, and pay x402 services, through an MCP server | The owner confirms the recipient, amounts, fees and expiry of every payment before it is created. An approval threshold sets when a payment needs an extra approval. ChatGPT and Claude connections can also have a spending limit, and the owner can disconnect an agent at any time | Yes | unknown | 2026-11-15 |
 | [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) | OpenAI and Stripe (spec maintainers) | Let a user find and buy from a business inside an AI app, through a checkout API and a delegated-payment spec | unknown | unknown | Beta. OpenAI and Stripe were the first to implement it | 2026-11-14 |
 | [AP2 (Agent Payments Protocol)](ap2.md) | Google (reference code on GitHub) | Carry signed proof of what the user authorized: a Checkout Mandate shared with the merchant and a Payment Mandate shared with the credential provider, the card networks and the payment processor | Open mandates hold the user's limits, such as budget and allowed payment methods, before a cart is final. Closed mandates authorize one finalized checkout and amount | unknown | Open protocol, available as an extension for A2A and Universal Commerce Protocol. Samples in Python, Go and Android | 2026-11-14 |
+| [ChatGPT Wallet](chatgpt-wallet.md) | OpenAI, built with American Express, Mastercard and Visa | Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it | You review the items, total and card, then approve each purchase with a biometric check such as Face ID. The terms also allow granting ChatGPT authority to approve purchases in advance | unknown | Rolling out from 2026-11-13 in dots, to ChatGPT Pro users in the US aged 18 or older with eligible US-issued American Express, Chase, Mastercard and Visa cards | 2026-11-15 |
 | [Mastercard Agent Pay](mastercard-agent-pay.md) | Mastercard | Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form | Mastercard says each transaction is checked against authenticated user intent and explicit consent before the action | unknown | unknown | 2026-11-14 |
 | [PayPal](paypal.md) | PayPal | Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes | Access uses the PayPal account's own credentials: an access token for the local server, or client ID and secret for the hosted one. A sandbox is available for testing | Yes | Local server (Node.js 18 or later) or hosted server. Sandbox address https://mcp.sandbox.paypal.com | 2026-11-14 |
+| [Rain Agent Vaults](rain-agent-vaults.md) | Rain | Spend from a funded vault with a scoped virtual card issued for each purchase, send money to bank accounts in local currency, and send stablecoins | The vault owner sets the rules, such as how much the agent can spend, which merchants it can pay and when. Each card's amount, merchant and expiry are fixed when it is issued, and the agent cannot raise its own limit | unknown | Announced 2026-11-10 for companies and developers building agents, through Rain's sales team | 2026-11-15 |
 | [Robinhood Agentic Credit Card](robinhood-agentic-credit-card.md) | Robinhood (Robinhood Credit, Inc.) | Fetch the agentic virtual card's number to finish purchases, and read that card's spending history and settings. The MCP does not browse or shop for you | Approve each purchase in the Robinhood Banking app, or set a monthly limit, which is required if you do not approve each purchase. The agent sees only the cards you authorize | Yes | A virtual card in the Robinhood Gold Card. Card setup and agent sign-in work on desktop only. Announced 2026-05-27 | 2026-11-14 |
 | [Stripe](stripe.md) | Stripe | Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server | Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked | Yes | Shared payment tokens are in public preview in the US, Canada and select European countries | 2026-11-14 |
 | [Visa Intelligent Commerce](visa-intelligent-commerce.md) | Visa | Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved | Consumer-approved purchase instructions, Visa Payment Passkeys with device binding, and network-level controls | Yes | Production needs Visa onboarding and approval at each stage: sandbox, certification, production. Intelligent Commerce Connect was in pilot with select partners as of 2026-04-08 | 2026-11-14 |
@@ -48,13 +55,15 @@ The sources describe three kinds of control. Most programs use more than one.
 
 - **The network vets the agent.** Visa requires approved participants and agent registration before production use.[^pm-01] Mastercard registers and verifies agents before they can transact.[^pm-06]
 - **The credential is limited.** Stripe's shared payment tokens carry usage and expiry limits.[^pm-08] Visa and Mastercard use tokenized credentials instead of the raw card number.[^pm-01][^pm-06] See [payment token](../glossary.md#payment-token).
-- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13]
+- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02]
+- **The balance is limited.** Rain Agent Vaults let an agent spend only what its owner put in the vault, one scoped card at a time.[^rn-01]
 
 ## What is still unknown
 
 - Fees for agent payments. None of the cited sources give them.
 - Which consumer AI apps can use each card-network program today.
 - Production MCP addresses for Visa and Mastercard.
+- Which merchants accept agent payments. Some, such as eBay and United, forbid agents in their terms.[^eb-01][^ua-01]
 
 See [gaps](../gaps.md) for the full list.
 
@@ -64,6 +73,7 @@ See [gaps](../gaps.md) for the full list.
 - [Agent identity](../rails/agent-identity.md): how merchants tell which agent is calling, including Visa's Trusted Agent Protocol and Web Bot Auth.
 - [Mandates and data access](../rails/mandates-and-data-access.md): proof of authorization and the US data-rights rule.
 - [Personal money agents](../personal-money/README.md): agents that work with your bank and card data.
+- [Merchants and outside agents](merchants-and-outside-agents.md): merchants whose terms forbid AI agents.
 
 Not investment advice.
 
@@ -81,6 +91,12 @@ Not investment advice.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-13]: [AP2 - Agent Payments Protocol Documentation](../sources/pm-13.md). AP2 Protocol, official, retrieved 2026-11-12.
 [^rh-09]: [Agentic Credit Card - Robinhood](../sources/rh-09.md). Robinhood, official, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
+[^ag-01]: [Connect your AI agent to real-world money - AgentBank](../sources/ag-01.md). AgentBank, official, retrieved 2026-11-15.
+[^ag-02]: [Security and wallet control - AgentBank](../sources/ag-02.md). AgentBank, official, retrieved 2026-11-15.
+[^eb-01]: [User Agreement - eBay](../sources/eb-01.md). eBay, official, retrieved 2026-11-15.
+[^ua-01]: [Contract of Carriage Document - United Airlines](../sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.
 
 ---
 

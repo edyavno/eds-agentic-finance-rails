@@ -27,6 +27,9 @@ This page lists what the wiki cannot answer yet. Items come from unknown fields,
 - **Who approves what** under ACP and x402. It depends on the agent or wallet, and the cited specs do not say.
 - **Primary sources** for [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md), which rests on one news report, and for most bank positions on [Banks and outside agents](personal-money/banks-and-outside-agents.md).
 - **Whether Meta Muse can move money** or pay bills, and whether it offers developer access.
+- **Whether ChatGPT Wallet runs on** Visa Intelligent Commerce or Mastercard Agent Pay. OpenAI names the networks as partners but not the programs.[^oa-01]
+- **Nous's own FCA status.** Nous names its FCA-regulated open banking provider, but no cited source says whether Nous itself is authorised or an appointed representative.[^ns-02]
+- **Merchant rules beyond eBay and United**, and whether either grants permission to any agent today.[^eb-01][^ua-02]
 
 ## Advisor agents
 
@@ -52,6 +55,10 @@ These cards are prior art or competing directories. They are leads only: use the
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^ns-02]: [Terms of use - Nous](sources/ns-02.md). Nous, official, retrieved 2026-11-15.
+[^eb-01]: [User Agreement - eBay](sources/eb-01.md). eBay, official, retrieved 2026-11-15.
+[^ua-02]: [Unauthorized third-party AI agents or assistants - United Airlines](sources/ua-02.md). United Airlines, official, retrieved 2026-11-15.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

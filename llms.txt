@@ -32,11 +32,15 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 
 ## Payments
 
-- [Payments](payments/README.md): How AI agents pay. Card-network agent programs, payment tokens, commerce and payment protocols, and an agent credit card, each with its own page and a sourced record.
+- [Payments](payments/README.md): How AI agents pay. Card-network agent programs, payment tokens, wallets, commerce and payment protocols, and agent cards, each with its own page and a sourced record, plus merchants that forbid agents.
+- [AgentBank](payments/agentbank.md): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md): An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.
+- [ChatGPT Wallet](payments/chatgpt-wallet.md): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
+- [Merchants and outside agents](payments/merchants-and-outside-agents.md): Some merchants forbid AI agents from buying on their sites. eBay's User Agreement bans buy-for-me agents without its permission, and United's Contract of Carriage bans AI agents from booking or changing tickets.
 - [PayPal](payments/paypal.md): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
+- [Rain Agent Vaults](payments/rain-agent-vaults.md): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
 - [Stripe](payments/stripe.md): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
 - [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md): Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.
@@ -48,6 +52,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Banks and outside agents](personal-money/banks-and-outside-agents.md): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
 - [Meta Muse](personal-money/meta-muse.md): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
+- [Nous](personal-money/nous.md): A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.
 - [Plaid MCP servers](personal-money/plaid.md): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users' accounts.
 
 ## Advisor agents
@@ -89,7 +94,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 ## What changed
 
 - [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
+- [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.

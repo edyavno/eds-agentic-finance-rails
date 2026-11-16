@@ -36,6 +36,11 @@ Mastercard says only registered agents can transact with Agent Pay, and that pay
 
 The framework story is dated 2025-10-14.[^pm-06]
 
+## Who says they work with it
+
+- OpenAI says it built [ChatGPT Wallet](chatgpt-wallet.md) in partnership with American Express, Mastercard and Visa. It does not say whether Wallet uses Agent Pay.[^oa-01]
+- Rain says its [Agent Vaults](rain-agent-vaults.md) support Mastercard Agent Pay.[^rn-01]
+
 ## Unknown
 
 Whether there is an official MCP server, any public endpoint, availability by country, and fees. No cited source confirms it, so the wiki says unknown.
@@ -46,6 +51,8 @@ All programs: [Payments](README.md).
 
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
 
 ---
 

@@ -39,11 +39,15 @@ Every page in the wiki, generated from page headers.
 
 ## Payments
 
-- [Payments](payments/README.md) (current): How AI agents pay. Card-network agent programs, payment tokens, commerce and payment protocols, and an agent credit card, each with its own page and a sourced record.
+- [Payments](payments/README.md) (current): How AI agents pay. Card-network agent programs, payment tokens, wallets, commerce and payment protocols, and agent cards, each with its own page and a sourced record, plus merchants that forbid agents.
+- [AgentBank](payments/agentbank.md) (current): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.
+- [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
+- [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying on their sites. eBay's User Agreement bans buy-for-me agents without its permission, and United's Contract of Carriage bans AI agents from booking or changing tickets.
 - [PayPal](payments/paypal.md) (current): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
+- [Rain Agent Vaults](payments/rain-agent-vaults.md) (current): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) (current): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
 - [Stripe](payments/stripe.md) (current): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
 - [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) (current): Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.
@@ -55,6 +59,7 @@ Every page in the wiki, generated from page headers.
 - [Banks and outside agents](personal-money/banks-and-outside-agents.md) (current): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) (current): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
 - [Meta Muse](personal-money/meta-muse.md) (current): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
+- [Nous](personal-money/nous.md) (current): A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.
 - [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users' accounts.
 
 ## Advisor agents
@@ -100,7 +105,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables on the Payments and Personal money pages, a What changed home page, and search and agent metadata on every page.
+- [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.
 - [What changed: 2026-11-12](changelog/2026-11-12.md) (current): First draft of the wiki - five launch broker pages, 103 source cards, approval-model taxonomy and agent packaging.
@@ -112,10 +117,13 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (114)
+## Sources (129)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
+| [ag-01](sources/ag-01.md): Connect your AI agent to real-world money \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
+| [ag-02](sources/ag-02.md): Security and wallet control \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
+| [ag-03](sources/ag-03.md): AgentBank FAQ: banking for AI agents \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
 | [al-01](sources/al-01.md): Alpaca - Trade with AI Using Alpaca's MCP Server | Alpaca | Alpaca | official | 2026-11-12 |
 | [al-02](sources/al-02.md): GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
 | [al-03](sources/al-03.md): GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
@@ -145,6 +153,7 @@ Every page in the wiki, generated from page headers.
 | [cb-07](sources/cb-07.md): Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase | Coinbase | Coinbase | official | 2026-11-12 |
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
 | [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-13 |
+| [eb-01](sources/eb-01.md): User Agreement \| eBay | eBay | eBay | official | 2026-11-15 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-02](sources/ib-02.md): Interactive Brokers Introduces Autonomous Trading | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-03](sources/ib-03.md): IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested | Interactive Brokers | DeskTested | third-party | 2026-11-12 |
@@ -162,7 +171,14 @@ Every page in the wiki, generated from page headers.
 | [ni-01](sources/ni-01.md): AI Agents Welcome \| Nitrogen | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [ni-02](sources/ni-02.md): Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [np-02](sources/np-02.md): PrimeXBT Launches AI-Assisted Trading with MCP Integration, Connecting ChatGPT and Claude to Trading Accounts | PrimeXBT | GlobeNewswire | official | 2026-11-12 |
+| [ns-01](sources/ns-01.md): Frequently asked questions \| Nous | Nous | Nous | official | 2026-11-15 |
+| [ns-02](sources/ns-02.md): Terms of use \| Nous | Nous | Nous | official | 2026-11-15 |
+| [ns-03](sources/ns-03.md): We've raised $17M to get Nous into every household that's had enough of life admin | Nous | Nous | official | 2026-11-15 |
 | [nv-01](sources/nv-01.md): Nevis Raises $70M Series B Led by EQT Ventures – Nevis | Nevis | Nevis | official | 2026-11-13 |
+| [oa-01](sources/oa-01.md): Introducing ChatGPT Wallet | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
+| [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-15 |
+| [oa-03](sources/oa-03.md): ChatGPT Wallet terms | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
+| [oa-04](sources/oa-04.md): Accept payments - OpenAI Commerce | ChatGPT Wallet | OpenAI Developers | official | 2026-11-15 |
 | [pa-01](sources/pa-01.md): GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun | awesome-broker-mcp | mphinance (GitHub) | third-party | 2026-11-12 |
 | [pa-02](sources/pa-02.md): GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub | awesome-finance-mcp | BlockRunAI (GitHub) | third-party | 2026-11-12 |
 | [pa-03](sources/pa-03.md): GitHub - frankxai/awesome-payment-agent-skills: Web-first payment-agent skills: mandates, auth, settlement. Human spend cap required. · GitHub | awesome-payment-agent-skills | frankxai (GitHub) | third-party | 2026-11-12 |
@@ -214,10 +230,14 @@ Every page in the wiki, generated from page headers.
 | [rh-11](sources/rh-11.md): Robinhood now lets your AI agents trade stocks \| TechCrunch | Robinhood | TechCrunch | third-party | 2026-11-12 |
 | [rh-12](sources/rh-12.md): Agent apps \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
 | [rh-13](sources/rh-13.md): Robinhood Trading MCP: OAuth protected-resource metadata | Robinhood | Robinhood (endpoint metadata) | official | 2026-11-12 |
+| [rn-01](sources/rn-01.md): Rain Agent Vaults bring embedded payments to AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
+| [rn-02](sources/rn-02.md): Rain Agent Vaults \| Embedded payments for AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
 | [tt-01](sources/tt-01.md): GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents.  | tastytrade | tastytrade (GitHub) | official | 2026-11-12 |
 | [tt-02](sources/tt-02.md): Open API MCP Brings AI to Your tastytrade Account | tastytrade | tastytrade | official | 2026-11-12 |
 | [tt-03](sources/tt-03.md): MCP Server · tastytrade Developer Docs | tastytrade | tastytrade Developer Docs | official | 2026-11-12 |
 | [tt-04](sources/tt-04.md): OAuth2 authentication · tastytrade Developer Docs | tastytrade | tastytrade Developer Docs | official | 2026-11-12 |
+| [ua-01](sources/ua-01.md): Contract of Carriage Document \| United Airlines | United Airlines | United Airlines | official | 2026-11-15 |
+| [ua-02](sources/ua-02.md): Unauthorized third-party AI agents or assistants \| United Airlines | United Airlines | United Airlines | official | 2026-11-15 |
 | [wb-01](sources/wb-01.md): Webull Agentic Trading — Let your AI agent trade the markets | Webull | Webull | official | 2026-11-12 |
 | [wb-02](sources/wb-02.md): Webull Cloud MCP Server \| Webull API | Webull | Webull Developer | official | 2026-11-12 |
 | [wb-03](sources/wb-03.md): GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub | Webull | Webull (GitHub) | official | 2026-11-12 |

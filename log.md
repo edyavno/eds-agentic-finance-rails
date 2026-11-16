@@ -122,3 +122,9 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-15] edit | headline
 - The headline is now "How AI agents connect to money". Updated in README.md, the generated index and llms.txt, the front page, the document title and the share-card text.
 - No facts, footnotes, source cards or last_verified dates changed.
+
+## [2026-11-15] ingest | ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous, merchant agent rules
+- Retrieved and ingested source cards oa-01 to oa-04 (OpenAI), eb-01 (eBay), ua-01 and ua-02 (United Airlines), rn-01 and rn-02 (Rain), ag-01 to ag-03 (AgentBank) and ns-01 to ns-03 (Nous). All official; summaries, fingerprints, short verified quotes; no full copies.
+- New pages: payments/chatgpt-wallet.md, payments/rain-agent-vaults.md, payments/agentbank.md, payments/merchants-and-outside-agents.md, personal-money/nous.md.
+- Edited: payments/README.md, payments/mastercard-agent-pay.md, payments/visa-intelligent-commerce.md, personal-money/README.md, rails/agent-identity.md, faq.md, gaps.md, glossary.md (network token, Web Bot Auth), changelog/2026-11-15.md. No existing facts or footnotes removed.
+- Unknown: Nous's own FCA status (no official source opened confirms it), whether ChatGPT Wallet runs on Visa Intelligent Commerce or Mastercard Agent Pay, MCP servers for ChatGPT Wallet, Rain and Nous, and AgentBank availability.

@@ -15,6 +15,7 @@ This section covers AI agents that help a person manage everyday money: seeing b
 | Page | Type | In one line |
 |---|---|---|
 | [Meta Muse](meta-muse.md) | Personal agent | Meta's personal AI agent. People connect bank and card accounts through Plaid for money guidance.[^pb-01] |
+| [Nous](nous.md) | Personal agent | A UK household agent that switches providers and cancels subscriptions, with a savings mode you choose. It cannot move money.[^ns-01] |
 | [Plaid MCP servers](plaid.md) | Developer tools | Plaid's MCP servers are for developer diagnostics and a sandbox coding kit, not end-user account access.[^pb-02] |
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | Bank AI tool | A JPMorgan pilot that aims to predict a user's cash flow and move funds for yield (news report).[^bl-01] |
 | [Banks and outside agents](banks-and-outside-agents.md) | Topic | News reports say several big US banks block outside agents that log in with a customer's password.[^bl-02][^bl-08] |
@@ -29,6 +30,7 @@ The same records side by side, taken from each page's YAML header. Each value is
 |---|---|---|---|---|---|---|
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | JPMorgan Chase | Predict a user's cash flow and move funds to maximize yield, as the bank's CFO described it (news report) | unknown | unknown | A targeted pilot that began in the weeks before 2026-10-13 (news report) | 2026-11-14 |
 | [Meta Muse](meta-muse.md) | Meta | Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information | You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal | unknown | Launched 2026-09-08 with Plaid-powered account connections in its finance features | 2026-11-14 |
+| [Nous](nous.md) | Nous (Nous for your House Limited, England) | Track household bills and subscriptions, switch energy, broadband, mobile and car insurance providers, cancel subscriptions, and handle other household admin. It cannot move or transfer money | Choose a savings mode (Manual, Balanced or Freedom) for how much Nous decides on its own, and set and change its permissions at any time | unknown | Live in the UK for one address per household, with a free tier and a paid Premium tier | 2026-11-15 |
 | [Plaid MCP servers](plaid.md) | Plaid | Developer work only: production diagnostics and analytics for a Plaid customer's team, and a local sandbox MCP for building. No access to end users' accounts | The Dashboard MCP needs a Plaid OAuth token, and the team must be approved for Production access | Yes | The Dashboard MCP is under active development. Plaid says breaking changes may occur and support is limited | 2026-11-14 |
 
 <!-- /records -->
@@ -39,11 +41,12 @@ The same records side by side, taken from each page's YAML header. Each value is
 - **The connection.** A [data aggregator](../glossary.md#data-aggregator), such as Plaid, links the agent to your bank with your permission.[^pb-01] This is a form of [open banking](../glossary.md#open-banking).
 - **The bank.** Banks decide what outside agents can do. News reports say most allow read-only access at best, while some build their own AI tools.[^bl-01][^bl-02]
 
-News reports also name other personal agents, such as Instinct, an invitation-only text-message concierge, and OpenAI's Dots. They have no pages yet.[^bl-01]
+News reports also name other personal agents, such as Instinct, an invitation-only text-message concierge, and OpenAI's Dots. They have no pages yet.[^bl-01] OpenAI's dots can pay merchants through [ChatGPT Wallet](../payments/chatgpt-wallet.md).[^oa-01]
 
 ## Related pages
 
 - [Robinhood Agentic Credit Card](../payments/robinhood-agentic-credit-card.md): a card your agent can spend with, with limits you set.
+- [Merchants and outside agents](../payments/merchants-and-outside-agents.md): merchants whose terms forbid AI agents.
 - [Mandates and data access](../rails/mandates-and-data-access.md): the US data-rights rule (often called 1033) in the background.
 - [Payments](../payments/README.md): how agents pay.
 
@@ -52,10 +55,12 @@ Not investment advice.
 ## Sources
 
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
+[^ns-01]: [Frequently asked questions - Nous](../sources/ns-01.md). Nous, official, retrieved 2026-11-15.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](../sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
+[^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 
 ---
 

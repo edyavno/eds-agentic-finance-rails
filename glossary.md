@@ -82,6 +82,10 @@ A record of what a person authorized an agent to do, used so later actions can b
 
 Model Context Protocol. A standard way for an AI application to connect to a tool or service, such as a broker.
 
+## Network token
+
+A [payment token](#payment-token) issued by a card network, such as Visa or Mastercard, in place of the card number. The merchant charges the token, and the network maps it to the real card.
+
 ## OAuth
 
 A standard sign-in method that lets a person grant an app limited access to an account, without sharing their password with that app.
@@ -145,6 +149,10 @@ User acceptance testing. A test environment used to try a system before using th
 ## Virtual card
 
 A card number that exists only online, often created for one purpose and with its own limits.
+
+## Web Bot Auth
+
+A draft web standard for bots and agents to sign their web requests, so a website can check which agent is calling. See [Agent identity](rails/agent-identity.md).
 
 ## x402
 
