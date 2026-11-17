@@ -10,12 +10,12 @@ last_verified: '2026-11-12'
 
 **What it means:** no broker-side approval step is documented. Guardrails, if any, are in software you control.
 
-## Examples
+## Which brokers have no broker-side approval?
 
 - **Alpaca:** the CLI has no confirmation prompts and every command executes immediately.[^al-05] Paper trading is available for testing.[^al-01]
 - **Webull local OpenAPI MCP:** places, modifies and cancels orders directly, with configurable notional limits, quantity limits and a symbol whitelist in the server you run.[^wb-03]
 
-## Builder notes
+## How do you add approval when the broker has none?
 
 - Put a human-in-the-loop step in your own client before live orders. See [Human-in-the-loop patterns](../build/human-in-the-loop.md).
 - Start on paper or sandbox endpoints where they exist.[^al-03][^wb-03]

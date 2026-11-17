@@ -10,11 +10,11 @@ last_verified: '2026-11-12'
 
 **What it means:** a broker-defined, separately funded sub-account where the AI may trade on criteria you set, without per-order approval. Access is gated by eligibility rules.
 
-## Example
+## Which broker offers an AI Partition?
 
 - **Interactive Brokers Autonomous Trading** (announced 2026-10-21): eligible clients authorize their connected AI to submit supported orders without approving each order individually.[^ib-02] It is limited to individual, non-margin accounts, and you must first execute at least 10 trades over two weeks in Review & Approve mode.[^ib-06] Funding is limited to the cash you allocate to the partition.[^ib-06]
 
-## How it differs from a separate account
+## How is an AI Partition different from a separate account?
 
 Both cap what the agent can lose. The AI Partition adds an **eligibility gate**: a track record of approved trades before autonomy is allowed.[^ib-06] Separate-account models in our sources do not require that history.[^rh-10][^cb-07]
 

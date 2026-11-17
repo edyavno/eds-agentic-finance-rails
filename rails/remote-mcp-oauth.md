@@ -1,7 +1,7 @@
 ---
 type: rail
 title: Remote MCP with OAuth
-summary: How hosted broker MCP servers advertise their OAuth setup, how clients register, and why allowlisting still matters.
+summary: How hosted broker MCP servers advertise their OAuth setup, how AI clients register with them, and why a broker's allowlist of clients still matters.
 page_status: current
 last_verified: '2026-11-14'
 ---
@@ -10,7 +10,7 @@ last_verified: '2026-11-14'
 
 Most launch brokers host an MCP server that clients reach over HTTP and authorize with OAuth.
 
-## Discovery: protected-resource metadata
+## How does a client find a broker's OAuth setup?
 
 Four servers in our sources publish OAuth protected-resource metadata at `/.well-known/oauth-protected-resource`, which tells a client where to sign in and which scopes exist:
 
@@ -26,13 +26,13 @@ Fine-grained scopes (Coinbase, Webull) let a client ask for less than full acces
 Public also documents a Claude and Claude Code connector for its MCP, and an official changelog entry covers Grok MCP connector setup with OAuth.[^pu-09][^pu-03]
 
 
-## Client registration
+## How do AI clients register with a broker's MCP server?
 
 - Robinhood: an independent test found a dynamic client registration endpoint and PKCE.[^rh-02]
 - Coinbase: supports Dynamic Client Registration and Client ID Metadata Documents, but still allowlists clients; registration does not grant every scope or tool.[^cb-01]
 - Alpaca: hosted MCP setups ship fixed OAuth client IDs per client app.[^al-03]
 
-## Builder notes
+## What should builders check before connecting?
 
 - Read the metadata before you build a consent screen; it tells you what a token can do.
 - Expect allowlisting. A working registration call does not mean your client may trade.[^cb-01]

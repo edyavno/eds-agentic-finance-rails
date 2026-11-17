@@ -1,14 +1,14 @@
 ---
 type: advisor
 title: Advisor agents
-summary: AI tools that help financial advisors work with client data and firm systems. This section is new and still thin. It currently covers Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate.
+summary: 'AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate.'
 page_status: current
 last_verified: '2026-11-13'
 ---
 
 # Advisor agents
 
-This section covers official agent tools built for financial advisors, as distinct from the retail broker MCP servers on the [Trading](../directory.md) page. It is new and still thin. Claims below are limited to the sources cited.
+Three official agent tools for financial advisors are covered here: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate. They are separate from the retail broker MCP servers on the [Trading](../directory.md) page; this section is still thin, and claims are limited to the sources cited.
 
 | Tool | What the cited sources say | Sources |
 |---|---|---|

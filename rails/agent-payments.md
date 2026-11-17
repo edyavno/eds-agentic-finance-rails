@@ -20,7 +20,7 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
 | [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 
-## Where brokers meet payments
+## Which brokers also let agents pay?
 
 - Coinbase for Agents lets an agent pay for data and research with x402 from a USDC balance.[^cb-01]
 - Robinhood's Agentic Credit Card gives an agent a dedicated virtual card through Robinhood Banking's MCP server, with a spending limit you set and a choice of manual approvals.[^rh-10][^rh-09] Details: [Robinhood Agentic Credit Card](../payments/robinhood-agentic-credit-card.md).

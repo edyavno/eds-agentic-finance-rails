@@ -2,7 +2,7 @@
 type: personal-money
 id: plaid
 title: Plaid MCP servers
-summary: 'Plaid''s MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users'' accounts.'
+summary: 'Plaid''s MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users'' accounts.'
 page_status: current
 last_verified: '2026-11-14'
 kind: aggregator-tools

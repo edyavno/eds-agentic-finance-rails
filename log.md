@@ -133,3 +133,9 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - New analysis: analyses/ap2-vs-acp-vs-x402.md (comparison table, criteria, method, one section per protocol, how to choose, FAQ). Cites existing cards only: pm-04, pm-07, pm-08, pm-12, pm-13, pm-14, pm-15, cb-01, ag-01. The ACP, AP2 and x402 pages were re-read on 2026-11-17 and still match the cards.
 - Edited: analyses/README.md (lists the page), README.md (analyses row), rails/agent-payments.md and payments/README.md (links), glossary.md (A2A, facilitator, merchant of record), changelog/2026-11-17.md. No existing facts or footnotes removed.
 - Unknown: fees for each protocol, what the person approves under ACP and x402, production AP2 support, and whether ACP is combined with AP2 or x402 in production.
+
+## [2026-11-17] edit | headings, openings, descriptions, Updated label
+- Provider pages: H2s are now questions (e.g. "Can an AI agent trade at Alpaca?", "What is still unknown about Alpaca?", "What changed on this page?"); each opens with a direct answer; the source-card/unknown callout moved to the end of the unknown section. Rails and approval-model pages: H2s reworded as questions.
+- Openers rewritten on faq, comparisons/launch-brokers, advisors/README, build/connect-an-mcp-client and gaps; the generated Trading page drops its "This page answers..." line and the dateline under the short answer.
+- Summaries (meta descriptions) brought to 120-160 characters on 15 pages. AGENTS.md now says last_verified is shown as "Updated". changelog/2026-11-17.md extended.
+- No facts, footnotes, source cards or last_verified dates changed.

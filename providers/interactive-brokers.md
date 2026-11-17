@@ -2,7 +2,7 @@
 type: provider
 id: interactive-brokers
 title: Interactive Brokers
-summary: Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
+summary: Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.
 provider: Interactive Brokers (IBKR)
 page_status: current
 last_verified: '2026-11-12'
@@ -34,17 +34,15 @@ notifications: unknown
 
 # Interactive Brokers
 
-> Every fact below links to a source card; "unknown" means no source we cite confirms it.
+## Can an AI agent trade at Interactive Brokers?
 
-## Overview and current status
-
-Interactive Brokers runs an [MCP](../glossary.md#mcp) server for AI platforms such as ChatGPT, Claude, Grok and Perplexity. With the default **AI Integration**, the AI generates trade instructions and you review and submit every order.[^ib-01] Instructions show up in an IBKR app such as Client Portal, where you confirm or reject them.[^ib-07]
+Yes, but by default you review and submit every order. Interactive Brokers runs an [MCP](../glossary.md#mcp) server for AI platforms such as ChatGPT, Claude, Grok and Perplexity. With the default **AI Integration**, the AI generates trade instructions and you review and submit every order.[^ib-01] Instructions show up in an IBKR app such as Client Portal, where you confirm or reject them.[^ib-07]
 
 On 2026-10-21 IBKR announced **Autonomous Trading**: eligible clients can let their connected AI submit supported orders without approving each one, inside a separately funded [AI Partition](../glossary.md#ai-partition).[^ib-02][^ib-06]
 
 Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom connector URL.[^ib-08]
 
-## Feature matrix
+## What can an AI agent do at Interactive Brokers?
 
 | Feature | AI Integration (default) | Autonomous Trading | Sources |
 |---|---|---|---|
@@ -56,7 +54,7 @@ Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom co
 | Paper or sandbox | unknown | unknown | |
 | Notifications | unknown | unknown | |
 
-## Implementation details
+## How does Interactive Brokers's agent connection work?
 
 - **Endpoint:** `https://api.ibkr.com/v1/api/mcp-public` for custom connectors in any MCP client, including Claude Code and Cursor.[^ib-08] The Claude connector directory lists `https://api.ibkr.com/v1/api/mcp` and tools such as `get_order_instructions`, `get_account_positions` and `search_contracts`.[^ib-04]
 - **Auth:** you sign in on IBKR's login screen; credentials are never shared with the AI app.[^ib-08][^ib-01]
@@ -64,7 +62,7 @@ Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom co
 - **Autonomous eligibility:** individual, non-margin accounts; joint, retirement, advisor-managed, organizational and Lite accounts are excluded. You first execute at least 10 trades over two weeks in Review & Approve mode.[^ib-06] An independent review quoted the requirement as 10 trades "of $100 or more each"; the IBKR page retrieved on 2026-11-12 does not show that amount.[^ib-03]
 - **Entities:** an independent review reports IBKR's FAQ plans Autonomous Trading for IB LLC, Australia, Singapore and the UK.[^ib-03]
 
-## Guardrails and risks
+## What guardrails and risks apply at Interactive Brokers?
 
 | Guardrail | Where it is enforced | Sources |
 |---|---|---|
@@ -76,7 +74,7 @@ Since release 1.1.5 (2026-07-17), any MCP client can connect through a custom co
 
 IBKR's AI Hub points to an Autonomous Trading Risk Disclosure that names the risk of agents placing unintended or erroneous orders.[^ib-01]
 
-## How to build against it
+## How do you connect an agent to Interactive Brokers?
 
 1. Start with AI Integration: connect the custom connector and have the agent create instructions you review in Client Portal.[^ib-08][^ib-07]
 2. Ask the agent to show account, side, quantity, order type, limit price, estimated value and available cash before creating an instruction, as IBKR's own example prompt does.[^ib-06]
@@ -84,14 +82,16 @@ IBKR's AI Hub points to an Autonomous Trading Risk Disclosure that names the ris
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
-## Unknown so far
+## What is still unknown about Interactive Brokers?
 
 - Exact asset and order-type list for Autonomous Trading: unknown (IBKR's own descriptions vary).[^ib-03]
 - AI Partition funding limits: stated only as "limits apply".[^ib-02]
 - [Paper trading](../glossary.md#paper-trading) through MCP: unknown.
 - The connection FAQ could not be captured (it needs JavaScript).
 
-## Changelog
+Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
+
+## What changed on this page?
 
 - 2026-11-12: First version of this page.
 

@@ -2,7 +2,7 @@
 type: provider
 id: alpaca
 title: Alpaca
-summary: Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.
+summary: Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.
 provider: Alpaca
 page_status: current
 last_verified: '2026-11-12'
@@ -34,17 +34,15 @@ field_sources:
 
 # Alpaca
 
-> Every fact below links to a source card; "unknown" means no source we cite confirms it.
+## Can an AI agent trade at Alpaca?
 
-## Overview and current status
-
-Alpaca is an API-first broker with several official agent options: hosted [MCP](../glossary.md#mcp) servers behind [OAuth](../glossary.md#oauth), a local Trading MCP server you run with [API keys](../glossary.md#api-key), and a [CLI](../glossary.md#cli).[^al-03] The hosted Trading MCP is at `https://api.alpaca.markets/mcp`, with a [paper-trading](../glossary.md#paper-trading) twin at `https://paper-api.alpaca.markets/mcp`.[^al-03] Hosted access currently supports Cursor, Claude Code and Codex through plugins.[^al-03]
+Yes. Alpaca is an API-first broker with several official agent options: hosted [MCP](../glossary.md#mcp) servers behind [OAuth](../glossary.md#oauth), a local Trading MCP server you run with [API keys](../glossary.md#api-key), and a [CLI](../glossary.md#cli).[^al-03] The hosted Trading MCP is at `https://api.alpaca.markets/mcp`, with a [paper-trading](../glossary.md#paper-trading) twin at `https://paper-api.alpaca.markets/mcp`.[^al-03] Hosted access currently supports Cursor, Claude Code and Codex through plugins.[^al-03]
 
 Agents can trade fractional equities, ETFs, crypto and multi-leg options.[^al-01] Paper mode starts with $100K in simulated funds; switching to live means changing API keys.[^al-01]
 
 A separate Broker API MCP, in public beta since 2026-07-20, is for broker partners who build investing apps for their own customers.[^al-07][^al-08] It is not a retail path and is noted here for context.
 
-## Feature matrix
+## What can an AI agent do at Alpaca?
 
 | Feature | Value | Sources |
 |---|---|---|
@@ -57,14 +55,14 @@ A separate Broker API MCP, in public beta since 2026-07-20, is for broker partne
 | Limits | unknown | |
 | Notifications | unknown | |
 
-## Implementation details
+## How does Alpaca's agent connection work?
 
 - **Hosted Trading MCP:** `https://api.alpaca.markets/mcp` (live) and `https://paper-api.alpaca.markets/mcp` (paper), OAuth sign-in with an Alpaca account.[^al-03]
 - **Local Trading MCP v2:** a full rewrite on FastMCP and [OpenAPI](../glossary.md#openapi); none of the v1 tools exist in v2.[^al-02] It runs over [stdio](../glossary.md#stdio) with API keys and does not set up remote auth, so Alpaca warns not to expose it to the internet.[^al-02]
 - **CLI:** built for agents and scripts; Alpaca says it has no confirmation prompts and every command runs immediately.[^al-05]
 - **Agent skills:** Alpaca publishes SKILL.md files for its Trading and Broker APIs.[^al-04]
 
-## Guardrails and risks
+## What guardrails and risks apply at Alpaca?
 
 | Guardrail | Where it is enforced | Sources |
 |---|---|---|
@@ -73,20 +71,22 @@ A separate Broker API MCP, in public beta since 2026-07-20, is for broker partne
 | Per-order approval | Not documented at the broker. The CLI has no confirmation prompts, so any approval step lives in your agent or MCP client | [^al-05] |
 | Do not expose the local server publicly | Your deployment | [^al-02] |
 
-## How to build against it
+## How do you connect an agent to Alpaca?
 
 1. Start on the paper endpoint or a paper account.[^al-01][^al-03]
 2. For hosted use, install Alpaca's plugin in Cursor, Claude Code or Codex and sign in with OAuth.[^al-03]
 3. For local use, run the v2 Trading MCP over stdio with API keys and limit tools with `ALPACA_TOOLSETS`.[^al-02]
 4. Add your own approval step before live orders. See [Human-in-the-loop patterns](../build/human-in-the-loop.md).
 
-## Unknown so far
+## What is still unknown about Alpaca?
 
 - Order types and limits for agent orders: unknown.
 - Whether the hosted Trading MCP adds any broker-side confirmation: unknown.
 - Agent terms of use: not yet reviewed here.
 
-## Changelog
+Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
+
+## What changed on this page?
 
 - 2026-11-12: First version of this page.
 

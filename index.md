@@ -20,29 +20,29 @@ Every page in the wiki, generated from page headers.
 
 - [README.md](README.md): What this wiki is and how to use it
 - [AGENTS.md](AGENTS.md): How to read and cite the wiki: where to start, source cards, unknowns, freshness
-- [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents in, which keep them out, and what changed in 2026.
+- [Overview - the race to be agent-friendly](overview.md): Which financial providers let AI agents read accounts, trade or pay, which keep them out, and what changed in 2026. Every fact links to its source.
 - [Glossary](glossary.md): Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 - [Trading](directory.md): Trading: which brokers let AI agents trade, who approves, and every broker's key fields (generated)
 - [FAQ: AI agents and money](faq.md): Short cited answers to common questions
 - [Payments](payments/README.md): How AI agents pay: card networks, payment tokens, commerce and payment protocols
 - [Personal money agents](personal-money/README.md): Personal money agents, bank AI tools, and how banks treat outside agents
 - [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
-- [Gaps - what we do not know yet](gaps.md): Open questions and missing sources, ranked.
+- [Gaps - what we do not know yet](gaps.md): Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.
 
 ## Providers
 
-- [Alpaca](providers/alpaca.md) (current): Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.
-- [Coinbase](providers/coinbase.md) (current): Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.
-- [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.
+- [Alpaca](providers/alpaca.md) (current): Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.
+- [Coinbase](providers/coinbase.md) (current): Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Agents can be limited to a dedicated portfolio.
+- [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.
 - [Robinhood](providers/robinhood.md) (current): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
-- [Webull](providers/webull.md) (current): Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
+- [Webull](providers/webull.md) (current): Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
 
 ## Payments
 
-- [Payments](payments/README.md) (current): How AI agents pay. Card-network agent programs, payment tokens, wallets, commerce and payment protocols, and agent cards, each with its own page and a sourced record, plus merchants that forbid agents.
+- [Payments](payments/README.md) (current): How AI agents pay: card-network agent programs, payment tokens, wallets, protocols and agent cards, each with a sourced page, plus merchants that ban agents.
 - [AgentBank](payments/agentbank.md) (current): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
-- [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.
+- [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 - [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying on their sites. eBay's User Agreement bans buy-for-me agents without its permission, and United's Contract of Carriage bans AI agents from booking or changing tickets.
@@ -50,8 +50,8 @@ Every page in the wiki, generated from page headers.
 - [Rain Agent Vaults](payments/rain-agent-vaults.md) (current): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) (current): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
 - [Stripe](payments/stripe.md) (current): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
-- [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) (current): Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.
-- [x402](payments/x402.md) (current): An open payment standard built on the HTTP 402 Payment Required status. A server asks for payment inside the web request, and the client pays and retries. Coinbase for Agents uses it.
+- [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) (current): Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.
+- [x402](payments/x402.md) (current): An open payment standard built on HTTP 402 Payment Required: the server asks for payment inside the request, and the client pays and retries. Coinbase uses it.
 
 ## Personal money agents
 
@@ -60,11 +60,11 @@ Every page in the wiki, generated from page headers.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) (current): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
 - [Meta Muse](personal-money/meta-muse.md) (current): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
 - [Nous](personal-money/nous.md) (current): A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.
-- [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for production diagnostics and analytics, and a local sandbox MCP for building. They do not give agents access to end users' accounts.
+- [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.
 
 ## Advisor agents
 
-- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems. This section is new and still thin. It currently covers Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate.
+- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate.
 - [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md) (current): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
 - [Nitrogen](advisors/nitrogen.md) (current): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
 - [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md) (current): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
@@ -85,12 +85,12 @@ Every page in the wiki, generated from page headers.
 - [Agent payments](rails/agent-payments.md) (current): Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 - [Local MCP servers and CLIs](rails/local-mcp-and-cli.md) (current): Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
 - [Mandates and data access](rails/mandates-and-data-access.md) (current): Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
-- [Remote MCP with OAuth](rails/remote-mcp-oauth.md) (current): How hosted broker MCP servers advertise their OAuth setup, how clients register, and why allowlisting still matters.
+- [Remote MCP with OAuth](rails/remote-mcp-oauth.md) (current): How hosted broker MCP servers advertise their OAuth setup, how AI clients register with them, and why a broker's allowlist of clients still matters.
 
 ## Build it
 
 - [Build it](build/README.md) (current): Practical notes for engineers and coding agents connecting to broker MCP servers safely.
-- [Connect an MCP client](build/connect-an-mcp-client.md) (current): Documented connection commands and URLs for each launch broker, taken from the providers' own setup pages.
+- [Connect an MCP client](build/connect-an-mcp-client.md) (current): The connection commands and server URLs each launch broker documents for MCP clients, from the providers' own setup pages. Start with paper or sandbox.
 - [Human-in-the-loop patterns](build/human-in-the-loop.md) (current): Where to put human approval in an agent trading flow, and why broker-side approval beats client-side approval.
 - [Starter prompts for coding agents](build/starter-prompts.md) (current): Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
 
@@ -106,7 +106,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A new comparison of the AP2, ACP and x402 agent payment protocols, the first page in Analyses, and three new glossary entries.
+- [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.

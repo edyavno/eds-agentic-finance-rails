@@ -19,7 +19,7 @@ Some providers publish servers or [CLIs](../glossary.md#cli) you run locally wit
 
 A newsroom post describes real-time quotes, option chains with [Greeks](../glossary.md#greeks), single- and multi-leg orders, and [preflight](../glossary.md#preflight) cost estimates.[^tt-02]
 
-## Builder notes
+## What should builders watch for with local servers?
 
 - Never expose a local server to the internet. Alpaca warns its package has no remote auth.[^al-02]
 - Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03] Webull publishes OpenAPI agent skills for its CLI, with configurable risk controls.[^wb-04]

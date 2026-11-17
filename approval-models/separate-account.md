@@ -12,12 +12,12 @@ last_verified: '2026-11-12'
 
 **What it does not mean:** it does not, on its own, require approval for each order.
 
-## Examples
+## Which brokers put the agent in a separate account?
 
 - **Robinhood:** outside agents trade only in a Robinhood Agentic account,[^rh-01] which holds only the funds you deposit into it.[^rh-10] The agent can still read all of your Robinhood accounts.[^rh-01]
 - **Coinbase:** you pick which portfolios the agent can reach on the approval screen.[^cb-03] This is optional; the agent can also use the main account.[^cb-07] Isolated agent portfolios are limited to spot crypto.[^cb-01]
 
-## Builder notes
+## What should you check when using a separate account?
 
 - Check read scope separately from trade scope. A separate trading account does not mean separate read access.
 - Fund the account with an amount you accept losing to a bad prompt or a bug.

@@ -24,7 +24,7 @@
       "page": "providers/alpaca.md",
       "page_status": "current",
       "last_verified": "2026-11-12",
-      "summary": "Developer-first. Hosted Trading MCP with OAuth (live and paper) plus a local open-source MCP and a CLI using API keys. No broker-side per-order approval is documented; paper trading is built in.",
+      "summary": "Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.",
       "status": "official-mcp",
       "can_place_orders": [
         "yes"
@@ -213,7 +213,7 @@
       "page": "providers/coinbase.md",
       "page_status": "current",
       "last_verified": "2026-11-14",
-      "summary": "Coinbase for Agents. Remote MCP with OAuth (allowlisted clients) or a local CLI with an API key. Agents can be limited to a dedicated portfolio chosen on the approval screen.",
+      "summary": "Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Agents can be limited to a dedicated portfolio.",
       "status": "official-mcp",
       "can_place_orders": [
         "yes"
@@ -378,7 +378,7 @@
       "page": "providers/interactive-brokers.md",
       "page_status": "current",
       "last_verified": "2026-11-12",
-      "summary": "Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading inside a separately funded AI Partition.",
+      "summary": "Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.",
       "status": "official-mcp",
       "can_place_orders": [
         "draft-only",
@@ -771,7 +771,7 @@
       "page": "providers/webull.md",
       "page_status": "current",
       "last_verified": "2026-11-14",
-      "summary": "Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.",
+      "summary": "Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.",
       "status": "official-mcp",
       "can_place_orders": [
         "confirm-in-app",

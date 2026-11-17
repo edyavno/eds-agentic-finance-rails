@@ -10,12 +10,12 @@ last_verified: '2026-11-12'
 
 **What it means:** the agent can build a complete order, but the broker holds it until you confirm it in the broker's app or website.
 
-## Examples
+## Which brokers ask you to confirm each order?
 
 - **Webull Cloud MCP:** each trade needs separate customer confirmation before it can be submitted.[^wb-07] Every Cloud order tool is documented as needing confirmation in the Webull app or desktop.[^wb-02]
 - **Robinhood with Trade approvals on:** the agent proposes trades and you review and place them in the app. The setting is off by default for MCP accounts and still rolling out.[^rh-04]
 
-## Not the same as a client-side preview
+## Is a preview in the agent's chat the same as confirming at the broker?
 
 A dry-run or preview inside the agent's chat is not broker-side confirmation. Coinbase documents that Claude previews and asks before ordering while ChatGPT orders in one turn, against the same server.[^cb-01] tastytrade's MCP uses a short-lived dry-run token and states that it is not human approval.[^tt-01]
 

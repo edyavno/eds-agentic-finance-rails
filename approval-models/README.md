@@ -20,11 +20,11 @@ An approval model answers one question: **before an agent's order reaches the ma
 
 **Blocked is not an approval model.** A provider that refuses outside agents gets `status: blocked` in its YAML header instead. See the [overview](../overview.md#who-is-blocking-agents).
 
-## How models combine
+## Can a broker use more than one approval model?
 
 Models stack. Robinhood puts the agent in a separate account and lets you add per-order approval on top.[^rh-04][^rh-01] Interactive Brokers starts every client on draft-then-submit and requires a track record there before the AI Partition opens.[^ib-06]
 
-## Where the guardrail lives
+## Is the guardrail enforced by the broker or by your client?
 
 The key builder question is whether the guardrail is enforced by the broker (server side) or by your agent or MCP client (client side). Client-side approval can be skipped by a different client or a prompt; broker-side approval cannot. Coinbase documents that one client previews and asks before ordering while another orders in one turn, against the same server.[^cb-01]
 

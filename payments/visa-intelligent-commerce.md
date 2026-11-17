@@ -2,7 +2,7 @@
 type: payment
 id: visa-intelligent-commerce
 title: Visa Intelligent Commerce
-summary: Visa's program for agent payments with Visa credentials. Approved agent builders get network-level controls, consumer-approved purchase instructions and tokenized credentials. Visa lists an MCP for it.
+summary: 'Visa''s agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.'
 page_status: current
 last_verified: '2026-11-14'
 kind: card-network-program

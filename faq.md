@@ -1,14 +1,14 @@
 ---
 type: guide
 title: "FAQ: AI agents and money"
-summary: Short, cited answers to common questions about AI agents that trade, pay and use bank data, and who approves what. Each answer links to the page with the details.
+summary: Short, cited answers to common questions about AI agents that trade, pay and use bank data, and who approves what. Each links to the page with the details.
 page_status: current
 last_verified: '2026-11-12'
 ---
 
 # FAQ: AI agents and money
 
-Short answers, each with its sources. The linked pages have the details. Anything the sources do not confirm stays "unknown". Not investment advice.
+AI agents can already trade at five launch brokers and pay through card-network programs, payment tokens and wallets, but each sets its own approval rules. Every answer below is short, cited and links to the page with the details; anything the sources do not confirm stays "unknown". Not investment advice.
 
 ## Which brokers let AI agents trade?
 

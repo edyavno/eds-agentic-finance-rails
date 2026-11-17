@@ -10,11 +10,11 @@ last_verified: '2026-11-14'
 
 A [mandate](../glossary.md#mandates) records what a user authorized an agent to do, and AP2 is a payments protocol built on them.[^pm-13] On data access, the US personal financial data rights rule (CFPB Section 1033) went through a reconsideration notice in August 2025, and a November 2026 report says it could become a vehicle to regulate AI agents.[^pb-05][^pb-04]
 
-## Mandates
+## Which protocol uses mandates?
 
 - **AP2 (Agent Payments Protocol):** a protocol for agent-initiated payments built on [mandates](../glossary.md#mandates), designed to work with A2A and [MCP](../glossary.md#mcp).[^pm-13] A reference implementation and samples are on GitHub.[^pm-12] Details: [AP2](../payments/ap2.md).
 
-## Data access
+## What rules cover agent access to financial data?
 
 - **CFPB Section 1033 (personal financial data rights):** the rule went through a reconsideration notice in August 2025.[^pb-05] A November 2026 report says the rule, then at OMB, could become a vehicle to regulate AI agents.[^pb-04]
 - **Aggregators:** Plaid powers account connections for Meta's Muse agent.[^pb-01] Plaid's own MCP servers are for dashboard diagnostics and a [sandbox](../glossary.md#sandbox) coding toolkit, not end-user account access.[^pb-02] A September 27, 2026 CNBC article covers Muse as a personal agent, including consumers giving the AI access to banking and credit card statements.[^pb-03] More in [Personal money agents](../personal-money/README.md), including [Meta Muse](../personal-money/meta-muse.md), [Plaid MCP servers](../personal-money/plaid.md) and [Banks and outside agents](../personal-money/banks-and-outside-agents.md).

@@ -7,11 +7,7 @@ last_verified: '2026-11-14'
 
 # Trading
 
-This page answers which brokers let AI agents trade and who approves each order, then lists every launch broker's key fields.
-
 ## Which brokers let AI agents trade, and who approves the order?
-
-*Checked Nov 14, 2026.*
 
 All five launch brokers publish an official [MCP](glossary.md#mcp) server for AI agents.[^al-02][^cb-01][^ib-01][^rh-01][^wb-02] The brokers differ on who says yes before an order reaches the market.
 
@@ -27,7 +23,7 @@ Who approves is explained in [approval models](approval-models/README.md). [Comp
 
 Key fields for every provider, generated from the YAML headers in `providers/`. Each value is sourced on the provider page; `unknown` means no source confirms it yet. Lists show the default path first. Machine-readable copies: [data/providers.json](data/providers.json), [data/providers.csv](data/providers.csv).
 
-| Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Last verified | Page status | Unknown fields |
+| Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Updated | Page status | Unknown fields |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [Alpaca](providers/alpaca.md) | official-mcp | yes | none | stocks; ETFs; fractional equities; options (including multi-leg); crypto | Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables | `https://api.alpaca.markets/mcp` | yes | 2026-11-12 | current | 3 of 12 |
 | [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-14 | current | 4 of 12 |

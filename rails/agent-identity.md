@@ -20,7 +20,7 @@ Agents can prove who they are to websites and merchants by signing their web req
 | World AgentKit | Proof-of-human delegation to agents, in beta | [^id-04] |
 | ERC-8004 (Trustless Agents) | Draft Ethereum ERC for on-chain identity, reputation, and validation registries, so agents can be discovered and trusted across organizational boundaries without pre-existing trust. Status on the official page: Draft. | [^id-07] |
 
-## Why it matters for finance
+## Why does agent identity matter for finance?
 
 Banks in our sources say they block agents that log in with customer credentials or browser automation.[^bl-04][^bl-08] Signed, identifiable agent traffic is one way a provider could tell a sanctioned agent from an unvetted one.
 

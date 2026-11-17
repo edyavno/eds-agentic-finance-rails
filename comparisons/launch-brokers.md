@@ -8,7 +8,7 @@ last_verified: '2026-11-12'
 
 # Launch brokers compared
 
-The [Trading](../directory.md) page lists every field. This page compares the safety posture.
+The five launch brokers differ most on who approves an agent's order and whether the broker or your own client enforces that guardrail. The tables below compare approval, read access and paper trading; every field is on the [Trading](../directory.md) page.
 
 ## Who approves the order?
 

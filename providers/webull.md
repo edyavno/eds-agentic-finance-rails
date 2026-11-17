@@ -2,7 +2,7 @@
 type: provider
 id: webull
 title: Webull
-summary: Two official paths. The hosted Cloud MCP prepares trade instructions that you confirm in the Webull app; the local OpenAPI MCP places orders directly, with configurable risk limits and a sandbox default.
+summary: Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
 provider: Webull
 page_status: current
 last_verified: '2026-11-14'
@@ -34,18 +34,16 @@ field_sources:
 
 # Webull
 
-> Every fact below links to a source card; "unknown" means no source we cite confirms it.
+## Can an AI agent trade at Webull?
 
-## Overview and current status
-
-Webull has two official agent paths:
+Yes. Webull has two official agent paths:
 
 1. **[Cloud MCP](../glossary.md#mcp)**, hosted by Webull at `https://api.webull.com/mcp`. It prepares trade instructions, and each trade needs your separate confirmation in Webull before it goes to the market.[^wb-02][^wb-07]
 2. **Local OpenAPI MCP**, an open-source server you run yourself with API credentials. It can place, modify and cancel orders directly.[^wb-03]
 
 Webull announced its MCP server on 2026-06-11, saying it had been working with clients since April.[^wb-06] An earlier official announcement, dated 08/04 in the post (source card published 2026-08-04), described ChatGPT, Claude, and Grok connectors, a Webull [CLI](../glossary.md#cli) packaged as a standalone Go binary, and enhanced MCP.[^wb-08] On 2026-09-29 it expanded Cloud MCP to trade preparation with no API keys, available to eligible US users through Claude, Perplexity and Grok, with ChatGPT pending.[^wb-07] A separate Japan launch was announced on 2026-05-13.[^wb-10] Webull maintains an official Agentic Trading product page.[^wb-01]
 
-## Feature matrix
+## What can an AI agent do at Webull?
 
 | Feature | Cloud MCP | Local OpenAPI MCP | Sources |
 |---|---|---|---|
@@ -57,7 +55,7 @@ Webull announced its MCP server on 2026-06-11, saying it had been working with c
 | Paper or sandbox | unknown | Defaults to the [UAT](../glossary.md#uat) [sandbox](../glossary.md#sandbox) | [^wb-03] |
 | Notifications or audit trail | unknown | Audit log of all order operations | [^wb-03] |
 
-## Implementation details
+## How does Webull's agent connection work?
 
 - **Cloud endpoint:** `https://api.webull.com/mcp` (a configuration URL, not a page to open).[^wb-02]
 - **Cloud auth:** [OAuth](../glossary.md#oauth) authorization code flow. Each account gets a Non-Trading capability (data and account info only) or a Trading capability (adds trade instructions).[^wb-02] The [protected-resource metadata](../glossary.md#protected-resource-metadata) lists [scopes](../glossary.md#scopes) `account:read`, `order:read`, `order:write`, `market:read`, `instrument:read` and `instruction:all`.[^wb-09]
@@ -65,7 +63,7 @@ Webull announced its MCP server on 2026-06-11, saying it had been working with c
 - **Local MCP:** runs with `uvx webull-openapi-mcp`, needs an App Key and App Secret, supports [2FA](../glossary.md#2fa), and defaults to the UAT sandbox until you set `WEBULL_ENVIRONMENT=prod`.[^wb-03]
 - **CLI:** Webull also publishes an [OpenAPI](../glossary.md#openapi) CLI, labelled an alpha preview.[^wb-05] A related official repo, webull-openapi-skills, provides agent skills for the OpenAPI CLI with configurable risk controls.[^wb-04]
 
-## Guardrails and risks
+## What guardrails and risks apply at Webull?
 
 | Guardrail | Where it is enforced | Sources |
 |---|---|---|
@@ -77,20 +75,22 @@ Webull announced its MCP server on 2026-06-11, saying it had been working with c
 
 The local server's limits live in your own configuration, so anyone who can change its [environment variables](../glossary.md#environment-variables) can change them.[^wb-03]
 
-## How to build against it
+## How do you connect an agent to Webull?
 
 - **Lowest risk:** connect Cloud MCP with the Non-Trading capability first, then switch the account to Trading when you want instructions you confirm in the app.[^wb-02]
 - **Automation:** run the local OpenAPI MCP in UAT, set notional limits and a symbol whitelist, and only then move to `prod`.[^wb-03]
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
-## Unknown so far
+## What is still unknown about Webull?
 
 - Cloud MCP limits, notifications and [paper mode](../glossary.md#paper-trading): unknown.
 - Exact order types per region: unknown.
 - Agent terms of use: not yet reviewed here.
 
-## Changelog
+Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
+
+## What changed on this page?
 
 - 2026-11-14: Added the official Agentic Trading landing page, the OpenAPI skills repo, and the 2026-08-04 connectors and CLI announcement.[^wb-01][^wb-04][^wb-08]
 - 2026-11-12: First version of this page.

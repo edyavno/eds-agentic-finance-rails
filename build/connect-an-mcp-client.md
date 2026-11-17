@@ -1,14 +1,14 @@
 ---
 type: build
 title: Connect an MCP client
-summary: Documented connection commands and URLs for each launch broker, taken from the providers' own setup pages.
+summary: The connection commands and server URLs each launch broker documents for MCP clients, from the providers' own setup pages. Start with paper or sandbox.
 page_status: current
 last_verified: '2026-11-12'
 ---
 
 # Connect an MCP client
 
-These are the commands and URLs the providers document. Use the paper or sandbox option first where one exists.
+To connect an MCP client, add the server URL or command the broker documents, then sign in or supply the broker's API credentials. The commands below come from each launch broker's own setup pages; use the paper or sandbox option first where one exists.
 
 ## Robinhood
 

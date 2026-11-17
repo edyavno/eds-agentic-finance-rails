@@ -19,7 +19,7 @@ How to read, cite and analyze this wiki. For AI agents and the people who use th
 
 - Cite the wiki page **and** the source card behind each fact.
 - If a field says `unknown`, or no source backs a claim, say "unknown". Never fill a gap from memory.
-- Check `page_status` and `last_verified` (shown as "Last checked"). Warn your user if a page is `stale` or `archived`, or if `last_verified` is older than 30 days.
+- Check `page_status` and `last_verified` (shown as "Updated"). Warn your user if a page is `stale` or `archived`, or if `last_verified` is older than 30 days.
 - This wiki is not investment advice and does not rank brokers.
 
 ## Corrections

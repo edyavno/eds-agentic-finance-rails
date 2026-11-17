@@ -34,11 +34,9 @@ field_sources:
 
 # Robinhood
 
-> Every fact below links to a source card; "unknown" means no source we cite confirms it.
+## Can an AI agent trade at Robinhood?
 
-## Overview and current status
-
-Robinhood runs an official remote Trading [MCP](../glossary.md#mcp) server for outside agents at `https://agent.robinhood.com/mcp/trading`.[^rh-01][^rh-13]
+Yes, in a separate agentic account. Robinhood runs an official remote Trading [MCP](../glossary.md#mcp) server for outside agents at `https://agent.robinhood.com/mcp/trading`.[^rh-01][^rh-13]
 
 Robinhood announced Agentic Trading on 2026-05-27 as a beta that supported equities only at launch.[^rh-10] The current support pages list long equities, options and crypto.[^rh-04]
 
@@ -52,7 +50,7 @@ A support article says Agent Apps are only available in the Robinhood mobile app
 
 TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded balance and reported that options, crypto, event contracts, futures, and prediction markets were planned at the time; treat current assets as the official support pages above.[^rh-11]
 
-## Feature matrix
+## What can an AI agent do at Robinhood?
 
 | Feature | Value | Sources |
 |---|---|---|
@@ -66,14 +64,14 @@ TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded bala
 | Notifications | Push notification on every agent trade, activity feed, P&L | [^rh-10] |
 | Paper or sandbox | unknown | |
 
-## Implementation details
+## How does Robinhood's agent connection work?
 
 - **Endpoint:** `https://agent.robinhood.com/mcp/trading`, added as a remote HTTP MCP server, for example `claude mcp add robinhood-trading --transport http https://agent.robinhood.com/mcp/trading`.[^rh-01]
 - **Auth:** [OAuth](../glossary.md#oauth). The [protected-resource metadata](../glossary.md#protected-resource-metadata) names the same URL as resource and authorization server, uses [bearer tokens](../glossary.md#bearer-token) in the header, and lists one [scope](../glossary.md#scopes), `internal`.[^rh-13] An independent test on 2026-09-05 reported OAuth 2.0 with [PKCE](../glossary.md#pkce), [dynamic client registration](../glossary.md#dynamic-client-registration), and 73 tools on that date.[^rh-02]
 - **Tool list:** Robinhood publishes tool tables per category, including trade-approval tools such as `get_trade_approvals` and `decline_trade_approval`.[^rh-04]
 - **Account boundary:** read access spans all accounts; trading is limited to the agentic account.[^rh-01]
 
-## Guardrails and risks
+## What guardrails and risks apply at Robinhood?
 
 | Guardrail | Where it is enforced | Sources |
 |---|---|---|
@@ -85,7 +83,7 @@ TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded bala
 
 Robinhood warns that if you tell your agent to act without asking you, it can place trades without your confirmation.[^rh-01] Because the agent can read every account, treat account numbers and balances it sees as sensitive inside your agent's logs.
 
-## How to build against it
+## How do you connect an agent to Robinhood?
 
 1. Open a Robinhood Agentic (MCP) account and fund it only with what the agent may use.[^rh-10]
 2. Add the MCP server in your client (Claude Code, Codex and others are documented) and complete OAuth.[^rh-01]
@@ -96,13 +94,15 @@ Robinhood also publishes a machine-readable [llms.txt](../glossary.md#llmstxt) a
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the-loop patterns](../build/human-in-the-loop.md).
 
-## Unknown so far
+## What is still unknown about Robinhood?
 
 - [Paper trading](../glossary.md#paper-trading) or [sandbox](../glossary.md#sandbox) for agents: unknown.
 - Order size and rate limits: unknown.
 - The agentic account agreement and disclosure text: not yet reviewed here.
 
-## Changelog
+Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
+
+## What changed on this page?
 
 - 2026-11-14: Added official product and support pages on built-in Agents, Agent Apps and Agent Loops, plus TechCrunch launch coverage and the site llms.txt index.[^rh-05][^rh-08][^rh-12][^rh-11][^rh-06]
 - 2026-11-12: First version of this page.

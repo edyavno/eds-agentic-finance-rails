@@ -1,14 +1,14 @@
 ---
 type: gaps
 title: Gaps - what we do not know yet
-summary: Open questions and missing sources, ranked.
+summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
 last_verified: '2026-11-14'
 ---
 
 # Gaps
 
-This page lists what the wiki cannot answer yet. Items come from unknown fields, sources that need a second check and reader feedback, and are removed when a source closes them. Nothing here is a claim about the providers.
+The biggest open questions are the brokers' agent terms and agreements, none of which are collected yet, and the limits on agent orders. Items come from unknown fields, sources that need a second check and reader feedback, and are removed when a source closes them. Nothing here is a claim about the providers.
 
 ## Highest priority
 

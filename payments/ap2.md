@@ -2,7 +2,7 @@
 type: payment
 id: ap2
 title: AP2 (Agent Payments Protocol)
-summary: 'An open protocol for agent payments that records what the user authorized as signed mandates: a Checkout Mandate for the merchant and a Payment Mandate for the payment side.'
+summary: 'An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.'
 page_status: current
 last_verified: '2026-11-14'
 kind: mandate-protocol

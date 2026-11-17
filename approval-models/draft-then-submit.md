@@ -10,11 +10,11 @@ last_verified: '2026-11-12'
 
 **What it means:** the agent's output is an instruction, not an order. You open the broker's app, review it, and submit or reject it.
 
-## Example
+## Which broker uses draft, then you submit?
 
 - **Interactive Brokers AI Integration:** "you review and submit every order."[^ib-01] Instructions must be reviewed and explicitly confirmed by the client in an IBKR application before any action is taken; you click Review & Submit or Reject.[^ib-07]
 
-## How it differs from per-order confirm
+## How is draft-then-submit different from per-order confirm?
 
 In practice they are close. The difference is who creates the order: under draft-then-submit you submit it yourself from the instruction; under per-order confirm the broker holds an order the agent created until you approve it. Webull calls its objects "instructions" too,[^wb-02] so read each provider's docs rather than the label.
 
