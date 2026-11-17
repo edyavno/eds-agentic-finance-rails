@@ -128,3 +128,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - New pages: payments/chatgpt-wallet.md, payments/rain-agent-vaults.md, payments/agentbank.md, payments/merchants-and-outside-agents.md, personal-money/nous.md.
 - Edited: payments/README.md, payments/mastercard-agent-pay.md, payments/visa-intelligent-commerce.md, personal-money/README.md, rails/agent-identity.md, faq.md, gaps.md, glossary.md (network token, Web Bot Auth), changelog/2026-11-15.md. No existing facts or footnotes removed.
 - Unknown: Nous's own FCA status (no official source opened confirms it), whether ChatGPT Wallet runs on Visa Intelligent Commerce or Mastercard Agent Pay, MCP servers for ChatGPT Wallet, Rain and Nous, and AgentBank availability.
+
+## [2026-11-17] query | AP2 vs ACP vs x402 comparison
+- New analysis: analyses/ap2-vs-acp-vs-x402.md (comparison table, criteria, method, one section per protocol, how to choose, FAQ). Cites existing cards only: pm-04, pm-07, pm-08, pm-12, pm-13, pm-14, pm-15, cb-01, ag-01. The ACP, AP2 and x402 pages were re-read on 2026-11-17 and still match the cards.
+- Edited: analyses/README.md (lists the page), README.md (analyses row), rails/agent-payments.md and payments/README.md (links), glossary.md (A2A, facilitator, merchant of record), changelog/2026-11-17.md. No existing facts or footnotes removed.
+- Unknown: fees for each protocol, what the person approves under ACP and x402, production AP2 support, and whether ACP is combined with AP2 or x402 in production.

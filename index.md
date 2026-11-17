@@ -100,11 +100,13 @@ Every page in the wiki, generated from page headers.
 
 ## Analyses
 
-- [Analyses](analyses/README.md) (current): Saved answers to questions asked of the wiki, each with cited sources. None yet.
+- [Analyses](analyses/README.md) (current): Saved answers to questions asked of the wiki, each with cited sources, starting with a comparison of the AP2, ACP and x402 agent payment protocols.
+- [AP2 vs ACP vs x402: which AI agent payment protocol does what?](analyses/ap2-vs-acp-vs-x402.md) (current): AP2, ACP and x402 compared side by side. What each agent payment protocol does, who maintains it, what it costs and its limits, with a sourced table and FAQ.
 
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A new comparison of the AP2, ACP and x402 agent payment protocols, the first page in Analyses, and three new glossary entries.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](changelog/2026-11-13.md) (current): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.

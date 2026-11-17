@@ -38,7 +38,7 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `rails/` | Shared plumbing: OAuth MCP, local servers, payments, identity, mandates |
 | `build/` | Connection commands, human-in-the-loop patterns, starter prompts |
 | `comparisons/` | Side-by-side views |
-| `analyses/` | [Saved answers](analyses/README.md) to questions (none yet) |
+| `analyses/` | [Saved answers](analyses/README.md) to questions, such as [AP2 vs ACP vs x402](analyses/ap2-vs-acp-vs-x402.md) |
 | `index.md`, `directory.md`, `llms.txt`, `data/` | Generated from the pages and committed |
 | `overview.md`, `faq.md`, `glossary.md`, `gaps.md` | Context, short answers, definitions, open questions |
 | `changelog/` | What changed, newest first; `changelog/README.md` is generated and shows the wiki in numbers |

@@ -74,6 +74,7 @@ See [gaps](../gaps.md) for the full list.
 - [Mandates and data access](../rails/mandates-and-data-access.md): proof of authorization and the US data-rights rule.
 - [Personal money agents](../personal-money/README.md): agents that work with your bank and card data.
 - [Merchants and outside agents](merchants-and-outside-agents.md): merchants whose terms forbid AI agents.
+- [AP2 vs ACP vs x402](../analyses/ap2-vs-acp-vs-x402.md): the three open agent payment protocols compared side by side.
 
 Not investment advice.
 

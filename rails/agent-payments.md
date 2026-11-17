@@ -25,6 +25,8 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 - Coinbase for Agents lets an agent pay for data and research with x402 from a USDC balance.[^cb-01]
 - Robinhood's Agentic Credit Card gives an agent a dedicated virtual card through Robinhood Banking's MCP server, with a spending limit you set and a choice of manual approvals.[^rh-10][^rh-09] Details: [Robinhood Agentic Credit Card](../payments/robinhood-agentic-credit-card.md).
 
+For the three open protocols side by side, see [AP2 vs ACP vs x402](../analyses/ap2-vs-acp-vs-x402.md).
+
 Each program has its own page, with a sourced record, in the [Payments](../payments/README.md) section. AP2, which records what a user authorized, is on [AP2](../payments/ap2.md).
 
 ## Sources

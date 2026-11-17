@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-17'
 ---
 
 # Glossary
@@ -13,6 +13,10 @@ Short, plain-English definitions of recurring terms in this wiki. These entries 
 ## 2FA
 
 Two-factor authentication. A second check, besides a password, that a person is who they say they are.
+
+## A2A
+
+Agent2Agent. An open protocol for AI agents to talk to and hand tasks to other agents. AP2 is offered as an extension to it.
 
 ## Agentic commerce
 
@@ -58,6 +62,10 @@ A way for an app to register itself with an [OAuth](#oauth) server as part of co
 
 Named settings stored in the environment of a running program, often used for credentials, endpoints, or limits.
 
+## Facilitator
+
+In [x402](#x402), a service that checks a payment and settles it on the payment network, so the website selling the resource does not have to do that itself.
+
 ## GenAI
 
 Generative AI. Software that produces text, code, or other content in response to a prompt.
@@ -81,6 +89,10 @@ A record of what a person authorized an agent to do, used so later actions can b
 ## MCP
 
 Model Context Protocol. A standard way for an AI application to connect to a tool or service, such as a broker.
+
+## Merchant of record
+
+The business that legally sells to the buyer and is named on the charge. It handles the payment, taxes, refunds and disputes for that sale.
 
 ## Network token
 

@@ -1,7 +1,7 @@
 ---
 type: analysis
 title: Analyses
-summary: Saved answers to questions asked of the wiki, each with cited sources. None yet.
+summary: Saved answers to questions asked of the wiki, each with cited sources, starting with a comparison of the AP2, ACP and x402 agent payment protocols.
 page_status: current
 ---
 
@@ -9,7 +9,7 @@ page_status: current
 
 Answers to questions asked of the wiki that are worth keeping are saved here, with the question, the date and footnoted sources. An analysis is never used as a source for another page.
 
-No analyses yet.
+- [AP2 vs ACP vs x402: which AI agent payment protocol does what?](ap2-vs-acp-vs-x402.md)
 
 ---
 

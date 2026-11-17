@@ -22,6 +22,7 @@ Every update to the wiki, newest first.
 
 ## Updates
 
+- [What changed: 2026-11-17](2026-11-17.md): A new comparison of the AP2, ACP and x402 agent payment protocols, the first page in Analyses, and three new glossary entries.
 - [What changed: 2026-11-15](2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](2026-11-14.md): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
 - [What changed: 2026-11-13](2026-11-13.md): Added a thin advisor-agents section, a third-party Schwab RIABiz source, official Coinbase agent-feedback docs, and related official and third-party source cards.

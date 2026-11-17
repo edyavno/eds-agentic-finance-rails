@@ -65,7 +65,7 @@ The wiki also covers AI tools for financial advisors, in a new [advisor agents](
 - The [glossary](glossary.md) defines recurring terms.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
-- [What changed](changelog/README.md) (latest: [2026-11-15](changelog/2026-11-15.md); earlier: [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
+- [What changed](changelog/README.md) (latest: [2026-11-17](changelog/2026-11-17.md); earlier: [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
 
 ## Sources
 
