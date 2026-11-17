@@ -104,3 +104,4 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Gaps](gaps.md): what is still unknown
 - [Index](index.md): every page, including all source cards
 - [providers.csv](data/providers.csv): CSV export
+- [About](https://agenticfinancerails.com/about): who curates the wiki
