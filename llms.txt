@@ -2,6 +2,8 @@
 
 > How AI agents connect to money How brokers, banks and payment networks let AI agents trade, pay and manage money, and who approves what. Every fact links to a source card; unconfirmed values say "unknown".
 
+[Curated by Edward Yavno](https://agenticfinancerails.com/about)
+
 How to use it: cite the page and the source card for every fact, say "unknown" when the wiki does, and check page_status and last_verified. Warn if a page is stale or archived, or last_verified is older than 30 days. Not investment advice. Reader's guide: AGENTS.md.
 
 ## Feedback
