@@ -32,7 +32,7 @@ Every page in the wiki, generated from page headers.
 ## Providers
 
 - [Alpaca](providers/alpaca.md) (current): Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.
-- [Coinbase](providers/coinbase.md) (current): Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Agents can be limited to a dedicated portfolio.
+- [Coinbase](providers/coinbase.md) (current): Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.
 - [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.
 - [Robinhood](providers/robinhood.md) (current): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 - [Webull](providers/webull.md) (current): Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
@@ -45,7 +45,7 @@ Every page in the wiki, generated from page headers.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
-- [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying on their sites. eBay's User Agreement bans buy-for-me agents without its permission, and United's Contract of Carriage bans AI agents from booking or changing tickets.
+- [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 - [PayPal](payments/paypal.md) (current): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 - [Rain Agent Vaults](payments/rain-agent-vaults.md) (current): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) (current): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
@@ -57,16 +57,19 @@ Every page in the wiki, generated from page headers.
 
 - [Personal money agents](personal-money/README.md) (current): AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
 - [Banks and outside agents](personal-money/banks-and-outside-agents.md) (current): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
+- [Gemini with Google Wallet](personal-money/gemini-google-wallet.md) (current): Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) (current): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
 - [Meta Muse](personal-money/meta-muse.md) (current): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
 - [Nous](personal-money/nous.md) (current): A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.
 - [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.
+- [Starling Assistant](personal-money/starling-assistant.md) (current): Starling Bank's in-app AI assistant will set up payments from voice or text, and the customer approves each one with a tap. It reaches all retail customers by the end of 2026.
 
 ## Advisor agents
 
-- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate.
+- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com.
 - [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md) (current): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
 - [Nitrogen](advisors/nitrogen.md) (current): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
+- [Wealth.com](advisors/wealth-com.md) (current): Wealth.com's estate and tax planning connector now works in ChatGPT through its MCP, and its Ester assistant runs inside Schwab Advisor Center. The source describes planning only.
 - [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md) (current): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
 
 ## Approval models
@@ -106,6 +109,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
@@ -119,7 +123,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (129)
+## Sources (142)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -137,6 +141,7 @@ Every page in the wiki, generated from page headers.
 | [an-01](sources/an-01.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
 | [an-02](sources/an-02.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
 | [bd-01](sources/bd-01.md): 8 questions for the Wells Fargo wealth unit’s AI chief \| Banking Dive | Wells Fargo | Banking Dive | third-party | 2026-11-13 |
+| [bk-01](sources/bk-01.md): Booking.com: Terms and Conditions (Customer terms of service) | Booking.com | Booking.com | official | 2026-11-18 |
 | [bl-01](sources/bl-01.md): JPMorgan blocks outside AI agents like Muse, Instinct from account access | JPMorgan Chase | CNBC | third-party | 2026-11-12 |
 | [bl-02](sources/bl-02.md): Scoop: Unvetted AI agents are accessing U.S. bank accounts | Banks (JPM, MS, BofA, Citi, Wells) | Axios | third-party | 2026-11-12 |
 | [bl-04](sources/bl-04.md): Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews | Charles Schwab | InvestmentNews | third-party | 2026-11-12 |
@@ -154,8 +159,11 @@ Every page in the wiki, generated from page headers.
 | [cb-06](sources/cb-06.md): Coinbase Developer Platform docs llms.txt | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-07](sources/cb-07.md): Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase | Coinbase | Coinbase | official | 2026-11-12 |
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
-| [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-13 |
+| [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-18 |
+| [cb-10](sources/cb-10.md): Coinbase for Agents introduces new Agent Controls | Coinbase | Coinbase | official | 2026-11-18 |
 | [eb-01](sources/eb-01.md): User Agreement \| eBay | eBay | eBay | official | 2026-11-15 |
+| [gg-01](sources/gg-01.md): Connect Google Wallet to Gemini for personal finance insights | Gemini and Google Wallet | Google | official | 2026-11-18 |
+| [gg-02](sources/gg-02.md): Get info & personalized insights from Google Wallet with Gemini Apps | Gemini and Google Wallet | Google Gemini Apps Help | official | 2026-11-18 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-02](sources/ib-02.md): Interactive Brokers Introduces Autonomous Trading | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-03](sources/ib-03.md): IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested | Interactive Brokers | DeskTested | third-party | 2026-11-12 |
@@ -196,6 +204,8 @@ Every page in the wiki, generated from page headers.
 | [pb-03](sources/pb-03.md): Meta's Muse is attacking one of economy's most profitable weak spots | Meta Muse | CNBC | third-party | 2026-11-12 |
 | [pb-04](sources/pb-04.md): AI agents scramble banks' fight with fintechs | Regulation (CFPB 1033) | POLITICO | third-party | 2026-11-12 |
 | [pb-05](sources/pb-05.md): Federal Register | CFPB 1033 | Federal Register | official | 2026-11-12 |
+| [pb-06](sources/pb-06.md): Introducing Agent Detection: building trust in the age of agentic finance | Plaid | Plaid | official | 2026-11-18 |
+| [pb-08](sources/pb-08.md): Plaid is powering personalized financial insights with Google Wallet in the Gemini app | Gemini and Google Wallet | Plaid | official | 2026-11-18 |
 | [pm-01](sources/pm-01.md): Visa Developer Center | Visa Intelligent Commerce | Visa Developer | official | 2026-11-12 |
 | [pm-02](sources/pm-02.md): MCP docs \| Visa Developer | Visa Intelligent Commerce | Visa Developer | official | 2026-11-12 |
 | [pm-03](sources/pm-03.md): GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc | Visa Trusted Agent Protocol | Visa (GitHub) | official | 2026-11-12 |
@@ -211,6 +221,8 @@ Every page in the wiki, generated from page headers.
 | [pm-13](sources/pm-13.md): AP2 - Agent Payments Protocol Documentation | Google AP2 | AP2 Protocol | official | 2026-11-12 |
 | [pm-14](sources/pm-14.md): GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub | x402 | x402 Foundation (GitHub) | official | 2026-11-12 |
 | [pm-15](sources/pm-15.md): x402 specification v2 | x402 | x402 Foundation (GitHub) | official | 2026-11-12 |
+| [pm-16](sources/pm-16.md): Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally | Visa Intelligent Commerce | Visa | official | 2026-11-18 |
+| [pm-17](sources/pm-17.md): Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase | Mastercard Agent Pay | Mastercard | official | 2026-11-18 |
 | [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-12 |
 | [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-12 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |
@@ -220,6 +232,8 @@ Every page in the wiki, generated from page headers.
 | [pu-07](sources/pu-07.md): public.com llms.txt | Public | Public.com | official | 2026-11-12 |
 | [pu-08](sources/pu-08.md): Release 0.1.0 · PublicDotCom/publicdotcom-mcp-server · GitHub | Public | Public.com (GitHub) | official | 2026-11-12 |
 | [pu-09](sources/pu-09.md): Claude & Claude Code Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-12 |
+| [pu-10](sources/pu-10.md): Release v0.11.0 · PublicDotCom/publicdotcom-mcp-server | Public | Public.com (GitHub) | official | 2026-11-18 |
+| [pu-11](sources/pu-11.md): Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19) | Public | Public.com (GitHub) | official | 2026-11-18 |
 | [rh-01](sources/rh-01.md): Onboarding an external agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
 | [rh-02](sources/rh-02.md): Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested | Robinhood | DeskTested | third-party | 2026-11-12 |
 | [rh-04](sources/rh-04.md): Trading with your agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
@@ -234,6 +248,8 @@ Every page in the wiki, generated from page headers.
 | [rh-13](sources/rh-13.md): Robinhood Trading MCP: OAuth protected-resource metadata | Robinhood | Robinhood (endpoint metadata) | official | 2026-11-12 |
 | [rn-01](sources/rn-01.md): Rain Agent Vaults bring embedded payments to AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
 | [rn-02](sources/rn-02.md): Rain Agent Vaults \| Embedded payments for AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
+| [st-01](sources/st-01.md): 'Talk to transact': Starling customers can use their voice to send money | Starling Bank | Starling Bank | official | 2026-11-18 |
+| [tg-01](sources/tg-01.md): Terms & Conditions : Target | Target | Target | official | 2026-11-18 |
 | [tt-01](sources/tt-01.md): GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents.  | tastytrade | tastytrade (GitHub) | official | 2026-11-12 |
 | [tt-02](sources/tt-02.md): Open API MCP Brings AI to Your tastytrade Account | tastytrade | tastytrade | official | 2026-11-12 |
 | [tt-03](sources/tt-03.md): MCP Server · tastytrade Developer Docs | tastytrade | tastytrade Developer Docs | official | 2026-11-12 |
@@ -250,6 +266,7 @@ Every page in the wiki, generated from page headers.
 | [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-12 |
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
+| [wc-01](sources/wc-01.md): November 2026 Wealth.com Updates | Wealth.com | Wealth.com | official | 2026-11-18 |
 | [wf-01](sources/wf-01.md): Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience | Wells Fargo | Wells Fargo | official | 2026-11-13 |
 | [ws-01](sources/ws-01.md): Wealthtech Roundup: Anthropic, Schwab, Advyzon, Orion And More | Anthropic | Wealth Solutions Report | third-party | 2026-11-13 |
 

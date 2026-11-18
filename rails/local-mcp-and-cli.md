@@ -3,7 +3,7 @@ type: rail
 title: Local MCP servers and CLIs
 summary: Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 ---
 
 # Local MCP servers and CLIs
@@ -15,6 +15,7 @@ Some providers publish servers or [CLIs](../glossary.md#cli) you run locally wit
 | Alpaca | Trading [MCP](../glossary.md#mcp) v2 ([stdio](../glossary.md#stdio)) and CLI | [API key](../glossary.md#api-key) and secret | Tool filtering with `ALPACA_TOOLSETS`; CLI has no confirmation prompts | [^al-02][^al-05] |
 | Webull | [OpenAPI](../glossary.md#openapi) MCP and CLI (alpha) | App Key and App Secret, [2FA](../glossary.md#2fa) | [UAT](../glossary.md#uat) [sandbox](../glossary.md#sandbox) by default; notional, quantity and symbol limits | [^wb-03][^wb-05] |
 | Coinbase | CLI | CDP API key | Key scoped to chosen portfolios | [^cb-01] |
+| Public | Self-hosted MCP server (`publicdotcom-mcp-server`) | Not stated in the cited release notes | Release 0.11.0: optional per-order quantity and value limits in environment variables, a preflight of the exact order, and user confirmation (`auto`, `required` or `off`); `PUBLIC_COM_READ_ONLY=true` removes every tool not marked read-only | [^pu-11] |
 | tastytrade | Self-hosted MCP only | [OAuth](../glossary.md#oauth)2 [refresh token](../glossary.md#refresh-token) in env vars | Defaults to production; read-only mode available | [^tt-03][^tt-04] |
 
 A newsroom post describes real-time quotes, option chains with [Greeks](../glossary.md#greeks), single- and multi-leg orders, and [preflight](../glossary.md#preflight) cost estimates.[^tt-02]
@@ -23,7 +24,8 @@ A newsroom post describes real-time quotes, option chains with [Greeks](../gloss
 
 - Never expose a local server to the internet. Alpaca warns its package has no remote auth.[^al-02]
 - Check the default environment. Webull defaults to sandbox;[^wb-03] tastytrade defaults to production.[^tt-03] Webull publishes OpenAPI agent skills for its CLI, with configurable risk controls.[^wb-04]
-- Limits set in [environment variables](../glossary.md#environment-variables) can be changed by anything that can edit that environment.
+- Limits set in [environment variables](../glossary.md#environment-variables) can be changed by anything that can edit that environment. Public's 0.11.0 limits work this way: the model cannot change them from the chat, but they are only as strong as your local setup.[^pu-11]
+- Public's confirmation mode `off` never prompts, and a client that does not support elicitation under `auto` gets the preflight and limits but no prompt from the server. Public's pull request says nothing had yet run against a real API when it was written.[^pu-11]
 
 ## Sources
 
@@ -32,6 +34,7 @@ A newsroom post describes real-time quotes, option chains with [Greeks](../gloss
 [^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^wb-05]: [GitHub - webull-inc/webull-openapi-cli · GitHub](../sources/wb-05.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](../sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
 [^tt-03]: [MCP Server · tastytrade Developer Docs](../sources/tt-03.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
 [^tt-04]: [OAuth2 authentication · tastytrade Developer Docs](../sources/tt-04.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
 [^tt-02]: [Open API MCP Brings AI to Your tastytrade Account](../sources/tt-02.md). tastytrade, official, retrieved 2026-11-12.

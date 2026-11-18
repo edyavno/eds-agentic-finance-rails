@@ -3,7 +3,7 @@ type: personal-money
 title: Banks and outside agents
 summary: What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 ---
 
 # Banks and outside agents
@@ -14,7 +14,7 @@ Most of what is known here comes from news reports, not from the banks. Each lin
 
 - Several big US banks block outside AI agents that log in with a customer's password.[^bl-01][^bl-02][^bl-08]
 - Most allow, or are moving toward, read-only access through approved data connections.[^bl-02] See [open banking](../glossary.md#open-banking).
-- Some banks are building their own AI tools, such as [JPMorgan Smart Cash](jpmorgan-smart-cash.md).[^bl-01]
+- Some banks are building their own AI tools, such as [JPMorgan Smart Cash](jpmorgan-smart-cash.md)[^bl-01] and, in the UK, [Starling Assistant](starling-assistant.md).[^st-01]
 
 ## Bank by bank (news reports)
 
@@ -34,6 +34,8 @@ Most of what is known here comes from news reports, not from the banks. Each lin
 
 Reading data is one thing, and moving money is another. Banks already allow read-only connections for budgeting apps.[^bl-02] Yahoo Finance says a standard way to give agents scoped, limited power to transact does not exist yet.[^bl-08] For a card-based approach with limits, see the [Robinhood Agentic Credit Card](../payments/robinhood-agentic-credit-card.md).
 
+Banks are also getting tools to tell agents apart. On 2026-11-16 Plaid launched [Agent Detection](../glossary.md#agent-detection), which lets a bank see whether a session is a person or an AI agent and which AI provider the agent is linked to, so it can decide how to handle each one.[^pb-06]
+
 ## The data-rights rule (background)
 
 Rules are background here, not a focus. The CFPB's personal financial data rights rule (Section 1033) went through a reconsideration notice in August 2025.[^pb-05] A November 2026 POLITICO report says bank lobbyists see the rule, then at the White House budget office, as a possible way to regulate AI agents.[^pb-04] More on [Mandates and data access](../rails/mandates-and-data-access.md).
@@ -49,6 +51,8 @@ All pages: [Personal money agents](README.md).
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](../sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
+[^st-01]: ['Talk to transact': Starling customers can use their voice to send money](../sources/st-01.md). Starling Bank, official, retrieved 2026-11-18.
+[^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 [^pb-05]: [Federal Register](../sources/pb-05.md). Federal Register, official, retrieved 2026-11-12.
 [^pb-04]: [AI agents scramble banks' fight with fintechs](../sources/pb-04.md). POLITICO, third-party, retrieved 2026-11-12.
 

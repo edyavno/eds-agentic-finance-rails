@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-17'
+last_verified: '2026-11-18'
 ---
 
 # Glossary
@@ -18,9 +18,17 @@ Two-factor authentication. A second check, besides a password, that a person is 
 
 Agent2Agent. An open protocol for AI agents to talk to and hand tasks to other agents. AP2 is offered as an extension to it.
 
+## Agent Detection
+
+A service that tells a bank or merchant whether a session is a person or an AI agent, and which AI provider the agent belongs to, by looking at signals such as device, behavior and network. It detects an agent; it does not prove who the agent is.
+
 ## Agentic commerce
 
 Shopping and paying done by an AI agent on a person's behalf, from finding an item to checking out.
+
+## Agentic Ready
+
+Visa's program for testing agent-initiated payments. Card issuers joined first, and in 2026-11 it opened to merchants, payment providers and acquirers.
 
 ## AI Partition
 
@@ -57,6 +65,10 @@ A company that connects apps to a person's bank and card accounts, with their pe
 ## Dynamic Client Registration
 
 A way for an app to register itself with an [OAuth](#oauth) server as part of connecting, instead of being set up in advance by a person.
+
+## Elicitation
+
+An MCP feature that lets a server stop and ask the person a question through the AI client, such as "confirm this order". The model cannot answer for the person.
 
 ## Environment variables
 
@@ -157,6 +169,10 @@ Standard input and output. A local program can talk to a client through these st
 ## UAT
 
 User acceptance testing. A test environment used to try a system before using the live one. See also [sandbox](#sandbox).
+
+## Verifiable Intent
+
+Mastercard's way of tying a customer's approval of a specific purchase to the payment, so the payment can be checked against what the customer approved.
 
 ## Virtual card
 

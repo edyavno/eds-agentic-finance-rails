@@ -212,8 +212,8 @@
       "provider": "Coinbase",
       "page": "providers/coinbase.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
-      "summary": "Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Agents can be limited to a dedicated portfolio.",
+      "last_verified": "2026-11-18",
+      "summary": "Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.",
       "status": "official-mcp",
       "can_place_orders": [
         "yes"
@@ -236,9 +236,9 @@
       ],
       "reads_portfolio": "yes",
       "paper_trading": "unknown",
-      "limits": "unknown",
+      "limits": "Maximum trade size in USD, a 24-hour volume limit and an auto-stop after a set percentage loss, set in the Coinbase app or on the web and enforced by Coinbase. Amounts are chosen by each user",
       "notifications": "unknown",
-      "notes": "The dedicated portfolio is optional; the main account can also be used. Isolated agent portfolios are spot-crypto only. Per-order confirmation depends on the AI client.",
+      "notes": "The dedicated portfolio is optional; the main account can also be used. Isolated agent portfolios are spot-crypto only. Per-order confirmation depends on the AI client and, in ChatGPT, on which Coinbase connection you use.",
       "field_sources": {
         "status": [
           {
@@ -320,6 +320,13 @@
             "url": "https://docs.cdp.coinbase.com/coinbase-for-agents/overview",
             "authority": "official"
           }
+        ],
+        "limits": [
+          {
+            "id": "cb-10",
+            "url": "https://www.coinbase.com/blog/agent-controls",
+            "authority": "official"
+          }
         ]
       },
       "sources": [
@@ -362,15 +369,19 @@
           "id": "cb-09",
           "url": "https://docs.cdp.coinbase.com/ai-agents/coinbase-for-agents/coinbase-mcp",
           "card": "sources/cb-09.md"
+        },
+        {
+          "id": "cb-10",
+          "url": "https://www.coinbase.com/blog/agent-controls",
+          "card": "sources/cb-10.md"
         }
       ],
       "unknown_fields": [
         "order_types",
         "paper_trading",
-        "limits",
         "notifications"
       ],
-      "unknown_count": 4
+      "unknown_count": 3
     },
     {
       "id": "interactive-brokers",

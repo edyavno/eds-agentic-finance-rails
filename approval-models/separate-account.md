@@ -3,7 +3,7 @@ type: approval-model
 title: "Approval model: separate account"
 summary: The agent can only trade in an account or portfolio you create and fund for it, so its reach is capped by what you deposit.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-18'
 ---
 
 # Separate account
@@ -15,7 +15,7 @@ last_verified: '2026-11-12'
 ## Which brokers put the agent in a separate account?
 
 - **Robinhood:** outside agents trade only in a Robinhood Agentic account,[^rh-01] which holds only the funds you deposit into it.[^rh-10] The agent can still read all of your Robinhood accounts.[^rh-01]
-- **Coinbase:** you pick which portfolios the agent can reach on the approval screen.[^cb-03] This is optional; the agent can also use the main account.[^cb-07] Isolated agent portfolios are limited to spot crypto.[^cb-01]
+- **Coinbase:** you pick which portfolios the agent can reach on the approval screen.[^cb-03] This is optional; the agent can also use the main account.[^cb-07] Isolated agent portfolios are limited to spot crypto.[^cb-01] Coinbase also enforces limits you set on its side: a maximum trade size, a 24-hour volume limit and an auto-stop after a set percentage loss.[^cb-10]
 
 ## What should you check when using a separate account?
 
@@ -31,6 +31,7 @@ last_verified: '2026-11-12'
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](../sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^cb-10]: [Coinbase for Agents introduces new Agent Controls](../sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
 
 ---
 

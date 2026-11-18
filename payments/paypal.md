@@ -4,7 +4,7 @@ id: paypal
 title: PayPal
 summary: PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 kind: payment-mcp
 operator: PayPal
 agent_can: Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes
@@ -43,6 +43,10 @@ PayPal's agent tools are for businesses that use PayPal. They let an AI agent wo
 - Pre-built functions for orders, invoices, subscriptions, shipment tracking, transaction details and disputes.[^pm-11]
 - Works with Amazon Bedrock, CrewAI, LangChain, MCP, OpenAI's Agents SDK and Vercel's AI SDK, in TypeScript and Python.[^pm-11]
 
+## Visa Agentic Ready
+
+Visa lists PayPal among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Visa says PayPal is working to expand acceptance of Visa agentic tokens across its merchant network, so merchants can process agent-initiated tokenized payments through their existing PayPal integration.[^pm-16] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
+
 ## Unknown
 
 Whether a consumer's own agent can pay with a PayPal account through these tools, and any per-action approval. No cited source confirms it, so the wiki says unknown.
@@ -53,6 +57,7 @@ All programs: [Payments](README.md).
 
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
+[^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-16.md). Visa, official, retrieved 2026-11-18.
 
 ---
 

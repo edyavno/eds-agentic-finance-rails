@@ -4,7 +4,7 @@ id: plaid
 title: Plaid MCP servers
 summary: 'Plaid''s MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users'' accounts.'
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 kind: aggregator-tools
 operator: Plaid
 agent_can: 'Developer work only: production diagnostics and analytics for a Plaid customer''s team, and a local sandbox MCP for building. No access to end users'' accounts'
@@ -45,9 +45,16 @@ The Dashboard MCP uses a Plaid [OAuth](../glossary.md#oauth) token. Plaid says i
 
 See [Meta Muse](meta-muse.md) and [Banks and outside agents](banks-and-outside-agents.md).
 
+## What else does Plaid offer for AI agents?
+
+- **Agent Detection.** On 2026-11-16 Plaid launched [Agent Detection](../glossary.md#agent-detection), an SDK that tells banks, fintechs and other financial companies whether a session is a person or an AI agent, and which AI provider the agent is associated with. It works across login, sign-up and money movement. Plaid says it looks at thousands of signals across devices, behavior, automation patterns and network activity.[^pb-06]
+- **A company-reported test.** In Plaid's own side-by-side test on live traffic, Agent Detection found 2.3x more agent sessions than competitors with no increase in false positives. That figure is Plaid's, not independent.[^pb-06]
+- **Read-only access for assistants.** Plaid says it powers consumer-permissioned, read-only access for AI assistants including ChatGPT, Claude, Perplexity, Grok, Meta Muse and Google Gemini (company-reported).[^pb-06] Google's Gemini uses Plaid to link accounts to Google Wallet: see [Gemini with Google Wallet](gemini-google-wallet.md).[^pb-08]
+- **Plans, not products.** Plaid says it is building toward a way for consumers to approve specific actions by an agent, and extending its Trust Index, which scores sessions for risk, to agent-driven sessions. It gives no dates.[^pb-06]
+
 ## Unknown
 
-Whether Plaid plans an MCP for end-user account access. No cited source confirms it, so the wiki says unknown.
+Whether Plaid plans an MCP for end-user account access, and when its consumer-approved path for agent actions will launch. No cited source confirms it, so the wiki says unknown.
 
 All pages: [Personal money agents](README.md).
 
@@ -55,6 +62,8 @@ All pages: [Personal money agents](README.md).
 
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
+[^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
+[^pb-08]: [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](../sources/pb-08.md). Plaid, official, retrieved 2026-11-18.
 
 ---
 

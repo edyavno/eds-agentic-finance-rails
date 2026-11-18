@@ -1,20 +1,21 @@
 ---
 type: advisor
 title: Advisor agents
-summary: 'AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate.'
+summary: 'AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com.'
 page_status: current
-last_verified: '2026-11-13'
+last_verified: '2026-11-18'
 ---
 
 # Advisor agents
 
-Three official agent tools for financial advisors are covered here: Claude for Financial Advisors, Nitrogen and Wells Fargo AI Teammate. They are separate from the retail broker MCP servers on the [Trading](../directory.md) page; this section is still thin, and claims are limited to the sources cited.
+Four official agent tools for financial advisors are covered here: Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com. They are separate from the retail broker MCP servers on the [Trading](../directory.md) page; this section is still thin, and claims are limited to the sources cited.
 
 | Tool | What the cited sources say | Sources |
 |---|---|---|
 | [Claude for Financial Advisors](claude-for-financial-advisors.md) | Anthropic product that connects advisors to firm systems through connectors. Official pages say Claude does not place trades or move money. | [^an-02][^an-01] |
 | [Nitrogen](nitrogen.md) | Advisor platform with a Nucleus agent and an official MCP server, brought into Claude and ChatGPT in a Fall 2026 release. Official pages say every action still requires advisor approval. | [^ni-01][^ni-02] |
 | [Wells Fargo AI Teammate](wells-fargo-ai-teammate.md) | Official chat-based capability embedded in Advisor Gateway, launched on 2026-07-15 for WIM advisor channels including FiNet. | [^wf-01] |
+| [Wealth.com](wealth-com.md) | Estate and tax planning connector for ChatGPT and Claude through an MCP, enabled by each firm, and the Ester assistant inside Schwab Advisor Center. The source describes planning only. | [^wc-01] |
 
 Related: Nevis, an AI platform for wealth management named as a Claude connector, published a company-reported $70 million Series B led by EQT Ventures, with participation that included Charles Schwab.[^an-01][^nv-01]
 
@@ -27,6 +28,7 @@ Retail vs advisor at Schwab is covered on the [overview](../overview.md): a thir
 [^ni-01]: [AI Agents Welcome - Nitrogen](../sources/ni-01.md). Nitrogen, official, retrieved 2026-11-13.
 [^ni-02]: [Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities](../sources/ni-02.md). Nitrogen, official, retrieved 2026-11-13.
 [^wf-01]: [Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience](../sources/wf-01.md). Wells Fargo, official, retrieved 2026-11-13.
+[^wc-01]: [November 2026 Wealth.com Updates](../sources/wc-01.md). Wealth.com, official, retrieved 2026-11-18.
 [^nv-01]: [Nevis Raises $70M Series B Led by EQT Ventures – Nevis](../sources/nv-01.md). Nevis, official, retrieved 2026-11-13.
 [^bl-11]: [Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM - RIABiz](../sources/bl-11.md). RIABiz, third-party, retrieved 2026-11-13.
 

@@ -4,7 +4,7 @@ id: stripe
 title: Stripe
 summary: Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 kind: payment-credential
 operator: Stripe
 agent_can: Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server
@@ -48,6 +48,10 @@ Stripe has two agent pieces in the cited sources: shared payment tokens for agen
 - Sign-in: [OAuth](../glossary.md#oauth) for clients acting for your Stripe user account, or an agent [API key](../glossary.md#api-key) for autonomous clients. Stripe says to give an agent key only the permissions the client needs.[^pm-09]
 - With OAuth you can grant access to live accounts or sandboxes, set permissions for each, and revoke a session in your Stripe settings.[^pm-09]
 
+## Visa Agentic Ready
+
+Visa lists Stripe among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Stripe says it is testing ways to recognize agent-initiated payments, strengthen merchant controls and improve approval rates.[^pm-16] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
+
 ## Unknown
 
 Fees for shared payment tokens. No cited source confirms it, so the wiki says unknown.
@@ -59,6 +63,7 @@ All programs: [Payments](README.md).
 [^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](../sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-12.
+[^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-16.md). Visa, official, retrieved 2026-11-18.
 
 ---
 

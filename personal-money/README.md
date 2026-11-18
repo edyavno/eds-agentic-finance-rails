@@ -3,7 +3,7 @@ type: personal-money
 title: Personal money agents
 summary: AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 ---
 
 # Personal money agents
@@ -16,6 +16,8 @@ This section covers AI agents that help a person manage everyday money: seeing b
 |---|---|---|
 | [Meta Muse](meta-muse.md) | Personal agent | Meta's personal AI agent. People connect bank and card accounts through Plaid for money guidance.[^pb-01] |
 | [Nous](nous.md) | Personal agent | A UK household agent that switches providers and cancels subscriptions, with a savings mode you choose. It cannot move money.[^ns-01] |
+| [Gemini with Google Wallet](gemini-google-wallet.md) | Personal agent | Google's Gemini app answers money questions from Google Wallet and accounts linked through Plaid. It is read-only.[^gg-01] |
+| [Starling Assistant](starling-assistant.md) | Bank AI tool | A UK bank's in-app assistant that will set up payments from voice or text, with a tap to approve each one.[^st-01] |
 | [Plaid MCP servers](plaid.md) | Developer tools | Plaid's MCP servers are for developer diagnostics and a sandbox coding kit, not end-user account access.[^pb-02] |
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | Bank AI tool | A JPMorgan pilot that aims to predict a user's cash flow and move funds for yield (news report).[^bl-01] |
 | [Banks and outside agents](banks-and-outside-agents.md) | Topic | News reports say several big US banks block outside agents that log in with a customer's password.[^bl-02][^bl-08] |
@@ -28,10 +30,12 @@ The same records side by side, taken from each page's YAML header. Each value is
 
 | Tool | Operator | What an agent can do | What you control | Official MCP | Availability | Updated |
 |---|---|---|---|---|---|---|
+| [Gemini with Google Wallet](gemini-google-wallet.md) | Google | Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money | You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal | unknown | Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually | 2026-11-18 |
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | JPMorgan Chase | Predict a user's cash flow and move funds to maximize yield, as the bank's CFO described it (news report) | unknown | unknown | A targeted pilot that began in the weeks before 2026-10-13 (news report) | 2026-11-14 |
 | [Meta Muse](meta-muse.md) | Meta | Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information | You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal | unknown | Launched 2026-09-08 with Plaid-powered account connections in its finance features | 2026-11-14 |
 | [Nous](nous.md) | Nous (Nous for your House Limited, England) | Track household bills and subscriptions, switch energy, broadband, mobile and car insurance providers, cancel subscriptions, and handle other household admin. It cannot move or transfer money | Choose a savings mode (Manual, Balanced or Freedom) for how much Nous decides on its own, and set and change its permissions at any time | unknown | Live in the UK for one address per household, with a free tier and a paid Premium tier | 2026-11-15 |
-| [Plaid MCP servers](plaid.md) | Plaid | Developer work only: production diagnostics and analytics for a Plaid customer's team, and a local sandbox MCP for building. No access to end users' accounts | The Dashboard MCP needs a Plaid OAuth token, and the team must be approved for Production access | Yes | The Dashboard MCP is under active development. Plaid says breaking changes may occur and support is limited | 2026-11-14 |
+| [Plaid MCP servers](plaid.md) | Plaid | Developer work only: production diagnostics and analytics for a Plaid customer's team, and a local sandbox MCP for building. No access to end users' accounts | The Dashboard MCP needs a Plaid OAuth token, and the team must be approved for Production access | Yes | The Dashboard MCP is under active development. Plaid says breaking changes may occur and support is limited | 2026-11-18 |
+| [Starling Assistant](starling-assistant.md) | Starling Bank | Set up a payment from a voice or text prompt such as "Pay the plumber £200", for the customer to approve. The assistant also analyses direct debits and subscriptions, builds personalised budgets and creates Spaces | The customer authorises each payment with a screen tap | unknown | Announced 2026-11-13 and rolling out to all retail customers by the end of 2026, so not yet available to everyone. Small business customers will soon get a similar feature for paying invoices, with no date given | 2026-11-18 |
 
 <!-- /records -->
 
@@ -56,6 +60,8 @@ Not investment advice.
 
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^ns-01]: [Frequently asked questions - Nous](../sources/ns-01.md). Nous, official, retrieved 2026-11-15.
+[^gg-01]: [Connect Google Wallet to Gemini for personal finance insights](../sources/gg-01.md). Google, official, retrieved 2026-11-18.
+[^st-01]: ['Talk to transact': Starling customers can use their voice to send money](../sources/st-01.md). Starling Bank, official, retrieved 2026-11-18.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](../sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.

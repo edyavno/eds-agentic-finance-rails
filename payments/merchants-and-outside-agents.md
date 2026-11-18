@@ -1,9 +1,9 @@
 ---
 type: payment
 title: Merchants and outside agents
-summary: Some merchants forbid AI agents from buying on their sites. eBay's User Agreement bans buy-for-me agents without its permission, and United's Contract of Carriage bans AI agents from booking or changing tickets.
+summary: Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 page_status: current
-last_verified: '2026-11-15'
+last_verified: '2026-11-18'
 ---
 
 # Merchants and outside agents
@@ -14,6 +14,8 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 
 - **eBay** bans buy-for-me agents and LLM-driven bots unless eBay gives prior express permission.[^eb-01]
 - **United Airlines** bans the use of AI agents to make, change or service a ticket, or to buy any product, and restricts agents through travel agencies and aggregators too.[^ua-01][^ua-02]
+- **Target** allows only agents on its Approved Agents list, currently its own AI Shopping Assistant, OAI, Google and Microsoft, and prohibits all other agentic commerce tools.[^tg-01]
+- **Booking.com** bars automated assistants, including AI-powered assistants, from its platform without its prior express written permission, and does not authorize them to make bookings.[^bk-01]
 - Payment programs are trying to make agents easier to accept. OpenAI warns that some sites may block agent purchases by accident, and asks merchants to recognize signed agent requests with [Web Bot Auth](../glossary.md#web-bot-auth).[^oa-01]
 
 ## Merchant by merchant
@@ -25,11 +27,17 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
   - Assistive technology for customers with disabilities is not affected.[^ua-02]
   - Travel agencies can use their own AI tools only with United's permission, and United does not work with any third-party AI agents yet.[^ua-02]
 
+- **Target.** Its Terms & Conditions, which the page marks as last updated 2026-09-10, have an "Agentic Commerce and Delegated Access" section. It applies when you expressly authorize an AI agent to act in your Target account without continuous human oversight. Only agents that Target provides, or that you approve and Target authorizes, may interact with the site; Target calls them Approved Agents. The current list is Target's AI Shopping Assistant, OAI, Google and Microsoft, and Target may change it at any time. All other agentic commerce tools are "unauthorized, expressly prohibited".[^tg-01]
+  - An Approved Agent may sign in, create or change carts, place orders and start returns, subject to limits you approve. Actions within those permissions are treated as authorized by you, and you are responsible for reviewing the agent's activity.[^tg-01]
+  - Target can suspend or revoke a third-party agent's access, for example for suspected fraud, misuse or security concerns, and you can revoke access in your Target profile settings.[^tg-01]
+- **Booking.com.** Its Customer terms of service, which the page marks as updated 2025-08-25, bar anyone from accessing or scraping the platform with robots or other automated means, "or automated assistants", including AI-powered assistants that work through your browser, without Booking.com's prior, express written permission. Booking.com says it does not authorize automated assistants to make bookings or reservations. It also says it will block anyone it suspects of using automated assistants, including AI-powered assistants, without express permission.[^bk-01]
+
 ## Why merchants say they restrict agents
 
 - United says agents with account access could expose personal information or make bookings, account changes or use of miles without the customer's approval. It wants standard integrations with privacy, security, authorization and accountability protections first.[^ua-02]
 - United also says an agent that checks a passenger in automatically could violate FAA and DOT rules, because check-in requires a person to confirm that bags hold no banned substances.[^ua-02]
-- eBay's agreement gives no reason in the cited text.[^eb-01]
+- eBay's agreement gives no reason in the cited text.[^eb-01] The cited Booking.com terms give none for their agent rule either.[^bk-01]
+- Target's terms give no reason for limiting agents to a list. They say Target may restrict an agent's access for suspected fraud, misuse, policy violations or security concerns, and that it is not responsible for third-party agents' conduct.[^tg-01]
 
 ## Related
 
@@ -39,13 +47,15 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 
 ## Unknown
 
-How either merchant detects agents, whether either grants permission to any agent today, and which other large merchants have similar rules. No cited source confirms it, so the wiki says unknown.
+How these merchants detect agents, whether eBay, United or Booking.com grant permission to any agent today, how Target decides who joins its list, and which other large merchants have similar rules. No cited source confirms it, so the wiki says unknown.
 
 ## Sources
 
 [^eb-01]: [User Agreement - eBay](../sources/eb-01.md). eBay, official, retrieved 2026-11-15.
 [^ua-01]: [Contract of Carriage Document - United Airlines](../sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.
 [^ua-02]: [Unauthorized third-party AI agents or assistants - United Airlines](../sources/ua-02.md). United Airlines, official, retrieved 2026-11-15.
+[^tg-01]: [Terms & Conditions : Target](../sources/tg-01.md). Target, official, retrieved 2026-11-18.
+[^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](../sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 
 ---

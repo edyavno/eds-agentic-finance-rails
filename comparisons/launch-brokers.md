@@ -3,7 +3,7 @@ type: comparison
 title: "Launch brokers compared: approval and safety posture"
 summary: Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-18'
 ---
 
 # Launch brokers compared
@@ -15,7 +15,7 @@ The five launch brokers differ most on who approves an agent's order and whether
 | Provider | Default path | Optional or second path | Guardrail enforced by | Sources |
 |---|---|---|---|---|
 | [Robinhood](../providers/robinhood.md) | Agent trades in a separate agentic account; Trade approvals off by default for MCP accounts | Turn on Trade approvals to confirm each order | Broker | [^rh-01][^rh-04] |
-| [Coinbase](../providers/coinbase.md) | Agent trades in the portfolios you pick at sign-in, which can include the main account | Dedicated portfolio (spot crypto only) | Broker for portfolio scope; client for per-order preview | [^cb-03][^cb-07][^cb-01] |
+| [Coinbase](../providers/coinbase.md) | Agent trades in the portfolios you pick at sign-in, which can include the main account | Dedicated portfolio (spot crypto only); Coinbase-enforced limits on trade size, 24-hour volume and loss (auto-stop) | Broker for portfolio scope and limits; per-order approval depends on the client, and the official ChatGPT plugin shows Coinbase confirmation cards | [^cb-03][^cb-07][^cb-01][^cb-10][^cb-09] |
 | [Webull](../providers/webull.md) | Cloud MCP: you confirm each trade in the Webull app | Local OpenAPI MCP: direct orders with local limits | Broker (Cloud); your server (local) | [^wb-07][^wb-03] |
 | [Interactive Brokers](../providers/interactive-brokers.md) | AI Integration: you review and submit every instruction | Autonomous Trading in a funded AI Partition, for eligible accounts | Broker | [^ib-01][^ib-07][^ib-06] |
 | [Alpaca](../providers/alpaca.md) | No broker-side approval documented | Paper endpoint for testing | Your client | [^al-05][^al-03] |
@@ -47,6 +47,8 @@ The five launch brokers differ most on who approves an agent's order and whether
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](../sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^cb-10]: [Coinbase for Agents introduces new Agent Controls](../sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
+[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-18.
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](../sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^ib-01]: [Interactive Brokers AI Hub](../sources/ib-01.md). Interactive Brokers, official, retrieved 2026-11-12.

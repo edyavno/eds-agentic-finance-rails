@@ -333,7 +333,7 @@
       "kind": "card-network-program",
       "page": "payments/mastercard-agent-pay.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.",
       "operator": "Mastercard",
       "agent_can": "Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form",
@@ -392,6 +392,11 @@
           "card": "sources/pm-06.md"
         },
         {
+          "id": "pm-17",
+          "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/november/end-to-end-AI-powered-travel-booking.html",
+          "card": "sources/pm-17.md"
+        },
+        {
           "id": "rn-01",
           "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
           "card": "sources/rn-01.md"
@@ -410,7 +415,7 @@
       "kind": "payment-mcp",
       "page": "payments/paypal.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.",
       "operator": "PayPal",
       "agent_can": "Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes",
@@ -478,6 +483,11 @@
           "id": "pm-11",
           "url": "https://developer.paypal.com/ai-tools/toolkit",
           "card": "sources/pm-11.md"
+        },
+        {
+          "id": "pm-16",
+          "url": "https://investor.visa.com/news/news-details/2026/Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
+          "card": "sources/pm-16.md"
         }
       ],
       "unknown_fields": []
@@ -641,7 +651,7 @@
       "kind": "payment-credential",
       "page": "payments/stripe.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.",
       "operator": "Stripe",
       "agent_can": "Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server",
@@ -724,6 +734,11 @@
           "id": "pm-09",
           "url": "https://docs.stripe.com/mcp",
           "card": "sources/pm-09.md"
+        },
+        {
+          "id": "pm-16",
+          "url": "https://investor.visa.com/news/news-details/2026/Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
+          "card": "sources/pm-16.md"
         }
       ],
       "unknown_fields": []
@@ -735,7 +750,7 @@
       "kind": "card-network-program",
       "page": "payments/visa-intelligent-commerce.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.",
       "operator": "Visa",
       "agent_can": "Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved",
@@ -816,6 +831,11 @@
           "id": "pm-04",
           "url": "https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.22276.html",
           "card": "sources/pm-04.md"
+        },
+        {
+          "id": "pm-16",
+          "url": "https://investor.visa.com/news/news-details/2026/Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
+          "card": "sources/pm-16.md"
         },
         {
           "id": "rn-01",
@@ -908,6 +928,99 @@
       "unknown_fields": [
         "user_controls",
         "mcp_server"
+      ]
+    },
+    {
+      "id": "gemini-google-wallet",
+      "section": "personal-money",
+      "title": "Gemini with Google Wallet",
+      "kind": "personal-agent",
+      "page": "personal-money/gemini-google-wallet.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.",
+      "operator": "Google",
+      "agent_can": "Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money",
+      "user_controls": "You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "gg-01",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "gg-01",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+            "authority": "official"
+          },
+          {
+            "id": "gg-02",
+            "url": "https://support.google.com/gemini/answer/18112192?hl=en",
+            "authority": "official"
+          },
+          {
+            "id": "pb-08",
+            "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "gg-01",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+            "authority": "official"
+          },
+          {
+            "id": "gg-02",
+            "url": "https://support.google.com/gemini/answer/18112192?hl=en",
+            "authority": "official"
+          },
+          {
+            "id": "pb-08",
+            "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "gg-01",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+            "authority": "official"
+          },
+          {
+            "id": "gg-02",
+            "url": "https://support.google.com/gemini/answer/18112192?hl=en",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "gg-01",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+          "card": "sources/gg-01.md"
+        },
+        {
+          "id": "gg-02",
+          "url": "https://support.google.com/gemini/answer/18112192?hl=en",
+          "card": "sources/gg-02.md"
+        },
+        {
+          "id": "pb-08",
+          "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
+          "card": "sources/pb-08.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
       ]
     },
     {
@@ -1120,7 +1233,7 @@
       "kind": "aggregator-tools",
       "page": "personal-money/plaid.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.",
       "operator": "Plaid",
       "agent_can": "Developer work only: production diagnostics and analytics for a Plaid customer's team, and a local sandbox MCP for building. No access to end users' accounts",
@@ -1183,9 +1296,77 @@
           "id": "pb-02",
           "url": "https://plaid.com/docs/resources/mcp/",
           "card": "sources/pb-02.md"
+        },
+        {
+          "id": "pb-06",
+          "url": "https://plaid.com/blog/agent-detection-agentic-finance/",
+          "card": "sources/pb-06.md"
+        },
+        {
+          "id": "pb-08",
+          "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
+          "card": "sources/pb-08.md"
         }
       ],
       "unknown_fields": []
+    },
+    {
+      "id": "starling-assistant",
+      "section": "personal-money",
+      "title": "Starling Assistant",
+      "kind": "bank-tool",
+      "page": "personal-money/starling-assistant.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Starling Bank's in-app AI assistant will set up payments from voice or text, and the customer approves each one with a tap. It reaches all retail customers by the end of 2026.",
+      "operator": "Starling Bank",
+      "agent_can": "Set up a payment from a voice or text prompt such as \"Pay the plumber £200\", for the customer to approve. The assistant also analyses direct debits and subscriptions, builds personalised budgets and creates Spaces",
+      "user_controls": "The customer authorises each payment with a screen tap",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Announced 2026-11-13 and rolling out to all retail customers by the end of 2026, so not yet available to everyone. Small business customers will soon get a similar feature for paying invoices, with no date given",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "st-01",
+            "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "st-01",
+            "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "st-01",
+            "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "st-01",
+            "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "st-01",
+          "url": "https://www.starlingbank.com/news/-talk-to-transact-starling-customers-can-use-their-voice-to-send-money/",
+          "card": "sources/st-01.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
     }
   ]
 }

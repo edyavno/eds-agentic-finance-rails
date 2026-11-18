@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 ---
 
 # Gaps
@@ -13,7 +13,7 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 ## Highest priority
 
 1. **Terms and agreements: none collected.** Needed: Robinhood agentic disclosures and crypto agreement, IBKR Autonomous Trading terms, Coinbase agent terms, Webull and Public MCP terms.
-2. **Limits.** IBKR AI Partition funding limits ("limits apply"),[^ib-02] Coinbase trade-size and spend rules (announced as coming soon),[^cb-07] and order rate limits for every provider.
+2. **Limits.** IBKR AI Partition funding limits ("limits apply"),[^ib-02] Coinbase trade-size and spend rules (announced as coming soon at launch,[^cb-07] since documented as available with the amounts set by each user,[^cb-10] while whether auto-stop cancels open orders is unknown), Public's hosted server (whether it has the 0.11.0 order gate with limits and confirmation),[^pu-11] and order rate limits for every provider.
 3. **Paper trading for agents** at Robinhood, Coinbase, IBKR and Webull Cloud MCP.
 4. **Order types** for Coinbase, Webull, IBKR and Alpaca agent orders.
 5. **IBKR Autonomous Trading asset list.** An independent review found IBKR's descriptions inconsistent.[^ib-03]
@@ -29,11 +29,12 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Whether Meta Muse can move money** or pay bills, and whether it offers developer access.
 - **Whether ChatGPT Wallet runs on** Visa Intelligent Commerce or Mastercard Agent Pay. OpenAI names the networks as partners but not the programs.[^oa-01]
 - **Nous's own FCA status.** Nous names its FCA-regulated open banking provider, but no cited source says whether Nous itself is authorised or an appointed representative.[^ns-02]
-- **Merchant rules beyond eBay and United**, and whether either grants permission to any agent today.[^eb-01][^ua-02]
+- **Merchant rules beyond eBay, United, Target and Booking.com**, and whether eBay, United or Booking.com grant permission to any agent today.[^eb-01][^ua-02][^tg-01][^bk-01]
+- **The airline, date and volume** in the live Mastercard Agent Pay flight purchase. The announcement names none of them.[^pm-17]
 
 ## Advisor agents
 
-The [advisor agents](advisors/README.md) section is new and still thin: only Claude for Financial Advisors, Nitrogen, and Wells Fargo AI Teammate have pages so far. Official coverage of other advisor platforms, and of approval and access rules beyond the sources already cited, has not been collected yet.
+The [advisor agents](advisors/README.md) section is new and still thin: only Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com have pages so far. Official coverage of other advisor platforms, and of approval and access rules beyond the sources already cited, has not been collected yet.
 
 ## Unknown fields by provider
 
@@ -51,6 +52,8 @@ These cards are prior art or competing directories. They are leads only: use the
 
 [^ib-02]: [Interactive Brokers Introduces Autonomous Trading](sources/ib-02.md). Interactive Brokers, official, retrieved 2026-11-12.
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
+[^cb-10]: [Coinbase for Agents introduces new Agent Controls](sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
+[^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
 [^ib-03]: [IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested](sources/ib-03.md). DeskTested, third-party, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
@@ -59,6 +62,9 @@ These cards are prior art or competing directories. They are leads only: use the
 [^ns-02]: [Terms of use - Nous](sources/ns-02.md). Nous, official, retrieved 2026-11-15.
 [^eb-01]: [User Agreement - eBay](sources/eb-01.md). eBay, official, retrieved 2026-11-15.
 [^ua-02]: [Unauthorized third-party AI agents or assistants - United Airlines](sources/ua-02.md). United Airlines, official, retrieved 2026-11-15.
+[^tg-01]: [Terms & Conditions : Target](sources/tg-01.md). Target, official, retrieved 2026-11-18.
+[^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
+[^pm-17]: [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](sources/pm-17.md). Mastercard, official, retrieved 2026-11-18.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

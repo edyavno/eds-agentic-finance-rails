@@ -4,7 +4,7 @@ id: mastercard-agent-pay
 title: Mastercard Agent Pay
 summary: Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 kind: card-network-program
 operator: Mastercard
 agent_can: Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form
@@ -32,14 +32,25 @@ Mastercard says only registered agents can transact with Agent Pay, and that pay
 - **Register the agent.** Mastercard's Agent Pay Acceptance Framework registers and verifies AI agents before they may transact on the network. Each agent is uniquely identified.[^pm-06]
 - **Pay with an agentic token.** Agents pay with agentic tokens, which Mastercard describes as dynamic, cryptographically secure credentials.[^pm-06] See [payment token](../glossary.md#payment-token).
 - **Merchants verify the agent.** Merchants can check an agent with the Web Bot Auth standard at their content delivery network. A verified agent can then submit a Dynamic Token Verification Code in a normal card checkout form.[^pm-06] More on [agent identity](../rails/agent-identity.md).
-- **User intent.** Mastercard says every transaction is verified by authenticated user intent and explicit consent before an action is taken.[^pm-05]
+- **User intent.** Mastercard says every transaction is verified by authenticated user intent and explicit consent before an action is taken.[^pm-05] In a 2026-11-12 announcement, Mastercard describes [Verifiable Intent](../glossary.md#verifiable-intent) as the link between the customer's approval and the payment.[^pm-17]
 
 The framework story is dated 2025-10-14.[^pm-06]
+
+## What did the live flight purchase show?
+
+On 2026-11-12, Mastercard, Travelport, Booked AI and Basis Theory announced a live purchase by an AI travel agent. The agent searched, booked, paid for and ticketed a flight without the customer leaving the conversation.[^pm-17]
+
+- **Payment.** Agent Pay made the payment with a tokenized credential. The card itself sat in Basis Theory's vault, and the agent never saw the card number.[^pm-17]
+- **Approval.** The customer approved the specific booking and amount before payment. Verifiable Intent linked that approval to the payment so it could be checked against the customer's instructions. Mastercard says a payment that did not match would not have proceeded, and a further purchase would need a new approval.[^pm-17]
+- **Merchant.** The airline stayed the merchant and processed the payment itself, with no intermediary checkout.[^pm-17]
+
+The airline is described only as "a major airline". The date of the transaction and the volume are not given, so they are unknown.[^pm-17]
 
 ## Who says they work with it
 
 - OpenAI says it built [ChatGPT Wallet](chatgpt-wallet.md) in partnership with American Express, Mastercard and Visa. It does not say whether Wallet uses Agent Pay.[^oa-01]
 - Rain says its [Agent Vaults](rain-agent-vaults.md) support Mastercard Agent Pay.[^rn-01]
+- Travelport, Booked AI and Basis Theory took part in the live flight purchase above.[^pm-17]
 
 ## Unknown
 
@@ -51,6 +62,7 @@ All programs: [Payments](README.md).
 
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
+[^pm-17]: [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](../sources/pm-17.md). Mastercard, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
 

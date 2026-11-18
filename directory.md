@@ -2,7 +2,7 @@
 title: Trading
 summary: Which brokers let AI agents trade and who approves each order, plus key fields for every launch broker. Every value is sourced or says unknown.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-18'
 ---
 
 # Trading
@@ -26,7 +26,7 @@ Key fields for every provider, generated from the YAML headers in `providers/`. 
 | Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Updated | Page status | Unknown fields |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [Alpaca](providers/alpaca.md) | official-mcp | yes | none | stocks; ETFs; fractional equities; options (including multi-leg); crypto | Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables | `https://api.alpaca.markets/mcp` | yes | 2026-11-12 | current | 3 of 12 |
-| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-14 | current | 4 of 12 |
+| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-18 | current | 3 of 12 |
 | [Interactive Brokers](providers/interactive-brokers.md) | official-mcp | draft-only; yes | draft-then-submit; ai-partition | stocks; equity options | IBKR's own login and authorization flow; credentials are never shared with the AI app; revoke in Client Portal > Settings > Manage Third-Party Consents | `https://api.ibkr.com/v1/api/mcp-public` | unknown | 2026-11-12 | current | 3 of 12 |
 | [Robinhood](providers/robinhood.md) | official-mcp | yes | separate-account; per-order-confirm | long equities; options (single-leg only); crypto (not in some states, including New York) | OAuth to the remote MCP server; protected-resource metadata lists the scope "internal"; an independent test reports PKCE and dynamic client registration | `https://agent.robinhood.com/mcp/trading` | unknown | 2026-11-14 | current | 2 of 12 |
 | [Webull](providers/webull.md) | official-mcp | confirm-in-app; yes | per-order-confirm; none | stocks; options (single-leg and strategies); futures; crypto; event contracts | Cloud MCP: OAuth authorization code flow with a per-account Non-Trading or Trading capability. Local OpenAPI MCP: App Key and App Secret, with a 2FA flow | `https://api.webull.com/mcp` | yes | 2026-11-14 | current | 2 of 12 |
