@@ -147,3 +147,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Not ingested: the OpenAI commerce page change (no ACP mention), which Edward deferred to the next pass, and Wirex Navoka, which he declined.
 - Unknown: whether Public's hosted server has the 0.11.0 order gate; whether Coinbase auto-stop cancels open orders and when product permissions ship; the airline, date and volume of the Mastercard flight purchase; the exact date of Wealth.com's November update; Starling payment limits.
 - Notes: the Target terms page states "LAST UPDATED: September 10, 2026" and the Booking.com page states "Updated August 25, 2025", so both revision dates are recorded on their cards. Business Insider's list of agent bans was used as a pointer only and is not cited.
+
+## [2026-11-18] edit | section pages for providers, sources and comparisons
+
+- Added providers/README.md, sources/README.md and comparisons/README.md. The left-hand menu links each folder to its own page, and these three folders had none, so /providers, /sources and /comparisons returned 404. providers/ and sources/ carry a generated listing.
+- Edited: overview.md and AGENTS.md (link the new pages), changelog/2026-11-18.md (one bullet).

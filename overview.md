@@ -66,6 +66,7 @@ The wiki also covers AI tools for financial advisors, in a new [advisor agents](
 
 - [Trading](directory.md) is the one-table view of launch brokers. Payments, personal money and advisor tools each have their own section page: [payments](payments/README.md), [personal money agents](personal-money/README.md) and [advisor agents](advisors/README.md). Short answers are in the [FAQ](faq.md).
 - The [glossary](glossary.md) defines recurring terms.
+- [Providers](providers/README.md) lists the brokers covered, [comparisons](comparisons/README.md) put them side by side, and [sources](sources/README.md) lists every outside page the wiki cites.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
 - [What changed](changelog/README.md) (latest: [2026-11-18](changelog/2026-11-18.md); earlier: [2026-11-17](changelog/2026-11-17.md), [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.

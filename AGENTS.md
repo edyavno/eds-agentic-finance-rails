@@ -11,7 +11,7 @@ How to read, cite and analyze this wiki. For AI agents and the people who use th
 
 ## How citations work
 
-- A **source card** (all are listed in [index.md](index.md)) is a short note about one outside page: its link, publisher, whether it is official or third-party, the date it was retrieved, a summary and a few short quotes. It is never a full copy.
+- A **source card** (all are listed in [sources](sources/README.md) and in [index.md](index.md)) is a short note about one outside page: its link, publisher, whether it is official or third-party, the date it was retrieved, a summary and a few short quotes. It is never a full copy.
 - A **footnote** like `[^rh-01]` marks the card behind a fact. The footnote id is the card id, and the Sources list at the bottom of each page links to the card.
 - Cards marked `use: leads-only` (prior art and other directories) are leads, not evidence.
 

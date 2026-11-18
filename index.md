@@ -99,6 +99,7 @@ Every page in the wiki, generated from page headers.
 
 ## Comparisons
 
+- [Comparisons](comparisons/README.md) (current): Side-by-side views of how providers handle approval, read access and safety for AI agents. Every value is sourced or says unknown.
 - [Launch brokers compared: approval and safety posture](comparisons/launch-brokers.md) (current): Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
 
 ## Analyses

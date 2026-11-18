@@ -94,6 +94,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 
 ## Comparisons
 
+- [Comparisons](comparisons/README.md): Side-by-side views of how providers handle approval, read access and safety for AI agents. Every value is sourced or says unknown.
 - [Launch brokers compared: approval and safety posture](comparisons/launch-brokers.md): Side-by-side view of how the five launch brokers let agents trade, who approves orders, and where the guardrails are enforced.
 
 ## Analyses
