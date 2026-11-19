@@ -110,7 +110,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, and the steps to add a Chase card to ChatGPT Wallet.
+- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, and how to connect Coinbase from ten AI apps.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
@@ -160,7 +160,7 @@ Every page in the wiki, generated from page headers.
 | [cb-06](sources/cb-06.md): Coinbase Developer Platform docs llms.txt | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-07](sources/cb-07.md): Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase | Coinbase | Coinbase | official | 2026-11-12 |
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
-| [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-18 |
+| [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-19 |
 | [cb-10](sources/cb-10.md): Coinbase for Agents introduces new Agent Controls | Coinbase | Coinbase | official | 2026-11-18 |
 | [cl-01](sources/cl-01.md): Use Personal Finance in Claude (Claude Help Center) | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |

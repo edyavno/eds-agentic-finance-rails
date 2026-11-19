@@ -4,7 +4,7 @@ id: grok-bot
 title: Grok Bot
 summary: Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 kind: personal-agent
 operator: xAI
 agent_can: Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase
@@ -57,6 +57,14 @@ Grok Bot can read your balances, spending and investments from accounts you link
 - After a bank or brokerage connector returns data, the Bot asks before sharing it anywhere else.[^gb-05]
 - Grok Bot's approval system checks each action and shows an approval card with the operation and its inputs when one needs your OK. xAI recommends setting explicit boundaries for purchases and financial transfers.[^gb-04]
 
+## Can Grok Bot connect to Coinbase?
+
+Yes. Coinbase lists Grok Bot as a supported app for its remote [MCP](../glossary.md#mcp), which lets an AI app work with your Coinbase account.[^cb-09] This is separate from the read-only Finance integration above: Coinbase says its connection covers trading, portfolio management and x402 payments.[^cb-09] See [Coinbase](../providers/coinbase.md#how-do-i-connect-coinbase-from-my-ai-app) for the steps in the other apps Coinbase lists.
+
+- **How to add it.** Click Marketplace, search for Coinbase, click Add, and sign in with your Coinbase account if prompted.[^cb-09]
+- **A Grok connection carries over.** If you already connected Coinbase in Grok, it should also appear in your Grok Bot account.[^cb-09]
+- **Connectors are account-wide.** A connector added by one Bot is available to all of your Bots. Coinbase says to limit access by selecting a dedicated portfolio on its approval screen.[^cb-09]
+
 ## Unknown
 
 - Which plans and countries can use the Finance integration. The posts and README do not say.
@@ -73,6 +81,7 @@ All pages: [Personal money agents](README.md).
 [^gb-05]: [Grok Bot changelog](../sources/gb-05.md). xAI, official, retrieved 2026-11-18.
 [^gb-03]: [Vault and secure sign-in (Grok Bot docs)](../sources/gb-03.md). xAI Docs, official, retrieved 2026-11-18.
 [^gb-04]: [Approvals, security, and privacy (Grok Bot docs)](../sources/gb-04.md). xAI Docs, official, retrieved 2026-11-18.
+[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
 
 ---
 

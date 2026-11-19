@@ -212,7 +212,7 @@
       "provider": "Coinbase",
       "page": "providers/coinbase.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-19",
       "summary": "Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.",
       "status": "official-mcp",
       "can_place_orders": [

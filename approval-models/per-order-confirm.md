@@ -29,7 +29,7 @@ A dry-run or preview inside the agent's chat is not broker-side confirmation. Co
 
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](../sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-12.
-[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-18.
+[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
 [^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](../sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
 [^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.

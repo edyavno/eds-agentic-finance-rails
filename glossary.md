@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 ---
 
 # Glossary
@@ -61,6 +61,10 @@ Command-line interface. A program you run by typing commands, rather than clicki
 ## Client ID Metadata Documents
 
 A way for an app to describe itself with a document at a URL, so a server can identify the app during [OAuth](#oauth) sign-in.
+
+## Connector
+
+An add-on that links an AI app to an outside service, so the app can read from it or act in it. Apps call this a connector, a plugin or an integration, and where you add one differs by app.
 
 ## Data aggregator
 

@@ -173,3 +173,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Not ingested: the Kinexys and Hyundai Card agent-to-agent FX test (declined).
 - Unknown: whether Chase's card block applies to agents that use ChatGPT Wallet; how much more the Link virtual card costs merchants; whether Visa or Mastercard have responded. The WSJ attributes the Chase block and the slow adoption of agentic tokens to people familiar with the matter, not to the bank.
 - Notes: the PYMNTS article repeats the Journal's reporting and adds its own earlier coverage; only the points the Journal report carries were used.
+
+## [2026-11-19] ingest | Coinbase docs: how to connect from each supported AI app
+- Re-read source card cb-09 (Coinbase MCP docs, direct fetch): the card's date, fingerprint and summary were updated in place, and its existing text and quotes are kept. The page now lists ten supported apps with a setup tab for each, a Disconnect note, and limits on the CLI API key.
+- Edited: providers/coinbase.md (new section on connecting from each app; revoke path and CLI key scope added to the guardrails table; changelog line), personal-money/grok-bot.md (how to add Coinbase in Grok Bot, account-wide connectors), glossary.md (Connector), changelog/2026-11-19.md.
+- Unknown: plan, country and workspace availability for most of the ten apps; whether the Grok, Perplexity Computer, Claude Code and Codex CLI tabs show a portfolio approval screen is not stated in those tabs. Hermes and Supertake are named as the doc names them, with no description added.

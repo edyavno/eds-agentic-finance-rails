@@ -5,7 +5,7 @@ title: Coinbase
 summary: 'Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.'
 provider: Coinbase
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account]
@@ -60,7 +60,7 @@ The CDP CLI/MCP for the developer platform is a separate product for wallets and
 - **Auth:** OAuth with `login.coinbase.com` as the authorization server.[^cb-04] [Dynamic Client Registration](../glossary.md#dynamic-client-registration) and [Client ID Metadata Documents](../glossary.md#client-id-metadata-documents) are supported, but Coinbase still [allowlists](../glossary.md#allowlist) clients.[^cb-01]
 - **[Scopes](../glossary.md#scopes) advertised:** include `mcp:orders:create`, `mcp:trades:create`, `mcp:transfers:create` and `mcp:portfolios:update`.[^cb-04]
 - **Account boundary:** you choose which portfolios the agent can reach on the OAuth approval screen.[^cb-03] Isolated agent portfolios are spot crypto only; US derivatives work only in the default portfolio.[^cb-01]
-- **CLI:** runs locally with a CDP API key; Coinbase calls it the most reliable way to execute trades across models.[^cb-01]
+- **CLI:** runs locally with a CDP API key; Coinbase calls it the most reliable way to execute trades across models.[^cb-01] You scope the API key to a chosen portfolio when you create it.[^cb-09]
 - **Agent feedback:** official docs have a Send feedback section. They say you or your agent can send feedback about the Coinbase MCP through the `coinbase_feedback_submit` tool, that the team reads submitted feedback every day, that feedback is limited to 2,000 characters or less, and that each user can send up to 6 submissions per day. A tool table on the same page also says submissions are screened. The official docs describe this MCP tool and a local CLI command `coinbase feedback`; they do not document an HTTP path named `/feedback`.[^cb-09]
 
 ## What guardrails and risks apply at Coinbase?
@@ -75,6 +75,8 @@ The CDP CLI/MCP for the developer platform is a separate product for wallets and
 | Product permissions (crypto, equities, derivatives) | Marked "coming soon" by Coinbase, so not available yet | [^cb-10] |
 | Per-order confirmation | Client side. Coinbase documents that Claude previews and asks to confirm, while ChatGPT creates the order in one turn.[^cb-01] The official Coinbase plugin for ChatGPT shows Coinbase confirmation cards instead, and the custom MCP connection trades without per-trade approval | [^cb-09] |
 | KYT transaction monitoring on payments | Server side (broker) | [^cb-07] |
+| Revoking an agent's access | In your Coinbase account, under Account > Security > Connections. Coinbase says deleting a local skill or clearing a chat is not the same as revoking access | [^cb-09] |
+| CLI API key scope | Set when you create the key in the CDP Portal: you select the portfolio the agent trades from and enable Trade and Transfer. Transfer only moves money between your own portfolios and does not allow withdrawals to external addresses. US Derivatives (Futures) only work in your default portfolio, so that portfolio must be in the key's scope for futures | [^cb-09] |
 
 The advertised scopes include transfers, so check which tools your client exposes before connecting a funded account.[^cb-04]
 
@@ -106,17 +108,42 @@ Coinbase publishes an agent-readable [llms.txt](../glossary.md#llmstxt) at `http
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md).
 
+## How do I connect Coinbase from my AI app?
+
+Coinbase's docs list ten AI apps that can connect to its remote MCP.[^cb-09] In most of them you add Coinbase from a [connector](../glossary.md#connector) or plugin list and then sign in to your Coinbase account. Coinbase says support is expanding as clients are approved, and that having Dynamic Client Registration alone does not mean a client is available yet.[^cb-09]
+
+| App | How to connect | Sources |
+|---|---|---|
+| ChatGPT | Two options. Custom MCP: open Plugins, click Add, then Add Custom MCP Server, enter `https://agents.coinbase.com/mcp`, keep OAuth, and sign in. If that option is missing, turn on developer mode in ChatGPT Settings. Coinbase says this is the option for automated trading without approving each trade. Official Coinbase plugin: for US Coinbase users, and it shows Coinbase confirmation cards for orders | [^cb-09] |
+| Grok Bot | Click Marketplace, search for Coinbase, click Add, and sign in if prompted. If you already connected Coinbase in Grok, it should also appear in your Grok Bot account. Connectors are account-wide: one added by any Bot is available to all of your Bots, so limit access with a dedicated portfolio | [^cb-09] |
+| Grok | Use Coinbase's Connect button, which opens Grok with the setup prompt, then click Connect on the Coinbase card in the reply. Or click Plugins, search for Coinbase, click Add, then Connect | [^cb-09] |
+| Muse | Share Coinbase's page or setup guide with Muse and use the setup prompt, then sign in to Coinbase. No CDP API key is needed | [^cb-09] |
+| Hermes | In the Hermes Agent app, click Capabilities, open the Connectors tab, search for Coinbase, pick Coinbase Agents and click Connect, then sign in | [^cb-09] |
+| Supertake | On supertake.com, open Settings, scroll to Trading, click Connect on Coinbase, and follow the tooltip to turn on equities. Then sign in to Coinbase | [^cb-09] |
+| Perplexity Computer | Use Coinbase's Connect button, or click Customize, search Connectors for Coinbase, and click Add Connector. Then sign in | [^cb-09] |
+| Claude | Use Coinbase's one-step add button, or click Customize, open Connectors, click + then Add custom connector, and enter `https://agents.coinbase.com/mcp`. Then sign in | [^cb-09] |
+| Claude Code | Run `claude mcp add coinbase --transport http https://agents.coinbase.com/mcp`, start Claude, run `/mcp`, and choose coinbase, then Authenticate | [^cb-09] |
+| Codex CLI | Run `codex mcp add coinbase --url https://agents.coinbase.com/mcp` and sign in. If the browser does not open, run `codex mcp login coinbase` | [^cb-09] |
+
+Coinbase's steps for ChatGPT, Hermes, Supertake and Claude say to choose which portfolios the agent can reach on the approval screen.[^cb-09] Coinbase's general advice is to create a separate portfolio first, fund it with only what you are willing to risk, and scope the agent's access to it.[^cb-09]
+
+On hosted chat clients, high-reasoning and extended-thinking modes sometimes draft an order but stop short of placing it. Coinbase suggests asking the agent to place the order explicitly, or using the CLI.[^cb-09] For an app that is not on the list, Coinbase points to the CLI.[^cb-09]
+
+To disconnect, revoke the connection at Coinbase under Account > Security > Connections. Deleting a local skill or clearing a chat does not revoke access.[^cb-09] For Grok Bot, see also [Can Grok Bot connect to Coinbase?](../personal-money/grok-bot.md#can-grok-bot-connect-to-coinbase)
+
 ## What is still unknown about Coinbase?
 
 - Order types: unknown.
 - Whether auto-stop cancels open orders, and when product permissions arrive: unknown.[^cb-10]
 - [Paper trading](../glossary.md#paper-trading) for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
 - Agent terms of use: not yet reviewed here.
+- Plan, country and workspace availability for most of the ten listed apps: unknown. Coinbase says only that the official ChatGPT plugin is currently for US Coinbase users, and that availability also depends on your ChatGPT account and workspace.[^cb-09]
 
 Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
 
 ## What changed on this page?
 
+- 2026-11-19: Added how to connect Coinbase from each of the ten listed AI apps, how to revoke access, and the limits on a CLI API key.[^cb-09]
 - 2026-11-18: Added Coinbase's Agent Controls (trade size, 24-hour volume, auto-stop) and the official ChatGPT plugin's confirmation cards.[^cb-10][^cb-09]
 - 2026-11-14: Cited the official CDP docs llms.txt index.[^cb-06]
 - 2026-11-13: Added the official `coinbase_feedback_submit` feedback tool, from Coinbase MCP docs.[^cb-09]
@@ -130,7 +157,7 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 [^cb-10]: [Coinbase for Agents introduces new Agent Controls](../sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
 [^cb-04]: [Coinbase for Agents MCP: OAuth protected-resource metadata](../sources/cb-04.md). Coinbase (endpoint metadata), official, retrieved 2026-11-12.
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
-[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-18.
+[^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
 [^cb-06]: [Coinbase Developer Platform docs llms.txt](../sources/cb-06.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-08]: [Coinbase’s new tool can help agents trade and pay for premium research - TechCrunch](../sources/cb-08.md). TechCrunch, third-party, retrieved 2026-11-12.
 

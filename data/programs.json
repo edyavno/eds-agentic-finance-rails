@@ -1392,7 +1392,7 @@
       "kind": "personal-agent",
       "page": "personal-money/grok-bot.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-19",
       "summary": "Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.",
       "operator": "xAI",
       "agent_can": "Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase",
@@ -1471,6 +1471,11 @@
         ]
       },
       "sources": [
+        {
+          "id": "cb-09",
+          "url": "https://docs.cdp.coinbase.com/ai-agents/coinbase-for-agents/coinbase-mcp",
+          "card": "sources/cb-09.md"
+        },
         {
           "id": "gb-01",
           "url": "https://x.com/bot/status/2103936247995752705",

@@ -19,7 +19,7 @@ The five brokers below are the wiki's launch brokers. "Approval model" is the wa
 | Provider | Status | Approval model | Updated |
 |---|---|---|---|
 | [Alpaca](alpaca.md) | official-mcp | none | 2026-11-12 |
-| [Coinbase](coinbase.md) | official-mcp | separate-account | 2026-11-18 |
+| [Coinbase](coinbase.md) | official-mcp | separate-account | 2026-11-19 |
 | [Interactive Brokers](interactive-brokers.md) | official-mcp | draft-then-submit; ai-partition | 2026-11-12 |
 | [Robinhood](robinhood.md) | official-mcp | separate-account; per-order-confirm | 2026-11-14 |
 | [Webull](webull.md) | official-mcp | per-order-confirm; none | 2026-11-14 |

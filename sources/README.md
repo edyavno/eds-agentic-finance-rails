@@ -41,7 +41,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Coinbase Developer Platform docs llms.txt](cb-06.md) | Coinbase Developer Platform | official | 2026-11-12 |
 | [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](cb-07.md) | Coinbase | official | 2026-11-12 |
 | [Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch](cb-08.md) | TechCrunch | third-party | 2026-11-12 |
-| [Coinbase MCP - Coinbase Developer Documentation](cb-09.md) | Coinbase Developer Platform | official | 2026-11-18 |
+| [Coinbase MCP - Coinbase Developer Documentation](cb-09.md) | Coinbase Developer Platform | official | 2026-11-19 |
 | [Coinbase for Agents introduces new Agent Controls](cb-10.md) | Coinbase | official | 2026-11-18 |
 | [Interactive Brokers AI Hub](ib-01.md) | Interactive Brokers | official | 2026-11-12 |
 | [Interactive Brokers Introduces Autonomous Trading](ib-02.md) | Interactive Brokers | official | 2026-11-12 |
