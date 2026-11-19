@@ -23,7 +23,9 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 ## Payments and personal money agents
 
 - **Fees** for agent payments: none of the cited [payments](payments/README.md) sources give them.
-- **Production MCP addresses** for Visa Intelligent Commerce and Mastercard Agent Pay, and whether Mastercard has an MCP at all.
+- **Production MCP addresses** for Visa Intelligent Commerce and Mastercard Agent Pay. Mastercard does have an official MCP server, but it serves developer documentation only, so whether Agent Pay has an MCP for payments is still unknown.[^pm-19][^pm-20] See [Mastercard Agent Pay](payments/mastercard-agent-pay.md#does-mastercard-have-an-mcp-server).
+- **Agent Pay for Machines.** Price, countries and how to join Early Access are not stated on Mastercard's announcement page.[^pm-23]
+- **Mastercard Open Finance US.** Whether an AI agent can use it on a consumer's behalf. Mastercard's developer page does not say.[^pm-24]
 - **Who approves what** under ACP and x402. It depends on the agent or wallet, and the cited specs do not say.
 - **Primary sources** for [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md), which rests on one news report, and for most bank positions on [Banks and outside agents](personal-money/banks-and-outside-agents.md).
 - **Whether Meta Muse can pay bills or send money from a bank account.** Meta's payments page names only Link by Stripe and a saved credit card for purchases. Whether it offers developer access is also unknown.
@@ -60,6 +62,10 @@ These cards are prior art or competing directories. They are leads only: use the
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
+[^pm-19]: [Mastercard Developers Agent Toolkit](sources/pm-19.md). Mastercard Developers, official, retrieved 2026-11-19.
+[^pm-20]: [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](sources/pm-20.md). Mastercard Developers, official, retrieved 2026-11-19.
+[^pm-23]: [What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action](sources/pm-23.md). Mastercard, official, retrieved 2026-11-19.
+[^pm-24]: [Mastercard Open Finance US (Mastercard Developers documentation)](sources/pm-24.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^oa-02]: [Making purchases with ChatGPT Wallet](sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.
 [^oa-01]: [Introducing ChatGPT Wallet](sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.

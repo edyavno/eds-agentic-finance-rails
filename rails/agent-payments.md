@@ -3,7 +3,7 @@ type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-19'
 ---
 
 # Agent payments
@@ -14,6 +14,8 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 |---|---|---|
 | [Visa Intelligent Commerce](../payments/visa-intelligent-commerce.md) | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
 | [Mastercard Agent Pay](../payments/mastercard-agent-pay.md) | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
+| [Mastercard Agent Pay for Machines](../payments/mastercard-agent-pay.md#what-is-agent-pay-for-machines) | Agents pay digital services within a business-set spending limit, signing a payment voucher; builds on x402; Early Access for developers | [^pm-23] |
+| [Mastercard Developers MCP](../payments/mastercard-agent-pay.md#does-mastercard-have-an-mcp-server) | Official MCP server for Mastercard's developer documentation; not a way to pay | [^pm-19][^pm-20] |
 | [Agentic Commerce Protocol (ACP)](../payments/agentic-commerce-protocol.md) | Open standard for buyers, their agents and businesses; the spec is maintained by OpenAI and Stripe | [^pm-07] |
 | [Stripe Shared Payment Tokens](../payments/stripe.md) | A scoped, expiring payment credential with usage limits for agent purchases | [^pm-08] |
 | [Stripe MCP](../payments/stripe.md#stripe-mcp-server) | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
@@ -39,6 +41,9 @@ Each program has its own page, with a sourced record, in the [Payments](../payme
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
+[^pm-23]: [What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action](../sources/pm-23.md). Mastercard, official, retrieved 2026-11-19.
+[^pm-19]: [Mastercard Developers Agent Toolkit](../sources/pm-19.md). Mastercard Developers, official, retrieved 2026-11-19.
+[^pm-20]: [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](../sources/pm-20.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-19.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.

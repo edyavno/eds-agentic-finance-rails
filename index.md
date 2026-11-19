@@ -113,7 +113,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, how to connect Coinbase and seven other providers from your AI app, and new pages for Public, Scalable Capital and Kraken.
+- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
@@ -128,7 +128,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (195)
+## Sources (201)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -265,6 +265,12 @@ Every page in the wiki, generated from page headers.
 | [pm-16](sources/pm-16.md): Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally | Visa Intelligent Commerce | Visa | official | 2026-11-18 |
 | [pm-17](sources/pm-17.md): Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase | Mastercard Agent Pay | Mastercard | official | 2026-11-18 |
 | [pm-18](sources/pm-18.md): Model Context Protocol (MCP) \| Stripe Documentation (Markdown version) | Stripe | Stripe Docs | official | 2026-11-19 |
+| [pm-19](sources/pm-19.md): Mastercard Developers Agent Toolkit | Mastercard Developers MCP server | Mastercard Developers | official | 2026-11-19 |
+| [pm-20](sources/pm-20.md): Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ) | Mastercard Developers MCP server | Mastercard Developers | official | 2026-11-19 |
+| [pm-21](sources/pm-21.md): GitHub - Mastercard/developers-agent-toolkit | Mastercard Developers MCP server | Mastercard (GitHub) | official | 2026-11-19 |
+| [pm-22](sources/pm-22.md): Mastercard unveils new tools and collaborations to power smarter, safer agentic commerce | Mastercard Developers MCP server | Mastercard | official | 2026-11-19 |
+| [pm-23](sources/pm-23.md): What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action | Mastercard Agent Pay for Machines | Mastercard | official | 2026-11-19 |
+| [pm-24](sources/pm-24.md): Mastercard Open Finance US (Mastercard Developers documentation) | Mastercard Open Finance US | Mastercard Developers | official | 2026-11-19 |
 | [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-19 |
 | [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |

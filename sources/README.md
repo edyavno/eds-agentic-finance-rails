@@ -124,6 +124,12 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Mastercard Agent Pay: secure, scalable and trusted agentic AI](pm-05.md) | Mastercard | official | 2026-11-12 |
 | [Agentic token framework: Driving trusted AI transactions](pm-06.md) | Mastercard | official | 2026-11-12 |
 | [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](pm-17.md) | Mastercard | official | 2026-11-18 |
+| [What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action](pm-23.md) | Mastercard | official | 2026-11-19 |
+| [Mastercard Developers Agent Toolkit](pm-19.md) | Mastercard Developers | official | 2026-11-19 |
+| [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](pm-20.md) | Mastercard Developers | official | 2026-11-19 |
+| [GitHub - Mastercard/developers-agent-toolkit](pm-21.md) | Mastercard (GitHub) | official | 2026-11-19 |
+| [Mastercard unveils new tools and collaborations to power smarter, safer agentic commerce](pm-22.md) | Mastercard | official | 2026-11-19 |
+| [Mastercard Open Finance US (Mastercard Developers documentation)](pm-24.md) | Mastercard Developers | official | 2026-11-19 |
 | [MCP server quickstart guide \| PayPal Developer](pm-10.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent toolkit quickstart guide \| PayPal Developer](pm-11.md) | PayPal Developer | official | 2026-11-12 |
 | [Rain Agent Vaults bring embedded payments to AI agents](rn-01.md) | Rain | official | 2026-11-15 |

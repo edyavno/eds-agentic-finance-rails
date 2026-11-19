@@ -486,7 +486,7 @@
       "kind": "card-network-program",
       "page": "payments/mastercard-agent-pay.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-19",
       "summary": "Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.",
       "operator": "Mastercard",
       "agent_can": "Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form",
@@ -548,6 +548,36 @@
           "id": "pm-17",
           "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/november/end-to-end-AI-powered-travel-booking.html",
           "card": "sources/pm-17.md"
+        },
+        {
+          "id": "pm-19",
+          "url": "https://developer.mastercard.com/platform/documentation/agent-toolkit/",
+          "card": "sources/pm-19.md"
+        },
+        {
+          "id": "pm-20",
+          "url": "https://developer.mastercard.com/platform/documentation/agent-toolkit/install-mcp-sdk/",
+          "card": "sources/pm-20.md"
+        },
+        {
+          "id": "pm-21",
+          "url": "https://github.com/Mastercard/developers-agent-toolkit",
+          "card": "sources/pm-21.md"
+        },
+        {
+          "id": "pm-22",
+          "url": "https://www.mastercard.com/global/en/news-and-trends/press/2025/september/mastercard-unveils-new-tools-and-collaborations-to-power-smarter,-safer-agentic-commerce.html",
+          "card": "sources/pm-22.md"
+        },
+        {
+          "id": "pm-23",
+          "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html",
+          "card": "sources/pm-23.md"
+        },
+        {
+          "id": "pm-24",
+          "url": "https://developer.mastercard.com/open-finance-us/documentation/",
+          "card": "sources/pm-24.md"
         },
         {
           "id": "rn-01",
@@ -1022,7 +1052,7 @@
       "kind": "payment-protocol",
       "page": "payments/x402.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-19",
       "summary": "An open payment standard built on HTTP 402 Payment Required: the server asks for payment inside the request, and the client pays and retries. Coinbase uses it.",
       "operator": "x402 Foundation",
       "agent_can": "Pay for a web resource as part of the request: the server replies 402 Payment Required with its terms, and the client retries with a payment attached",
@@ -1091,6 +1121,11 @@
           "id": "pm-15",
           "url": "https://raw.githubusercontent.com/x402-foundation/x402/main/specs/x402-specification-v2.md",
           "card": "sources/pm-15.md"
+        },
+        {
+          "id": "pm-23",
+          "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html",
+          "card": "sources/pm-23.md"
         }
       ],
       "unknown_fields": [
