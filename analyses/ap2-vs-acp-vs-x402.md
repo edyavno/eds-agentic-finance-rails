@@ -113,7 +113,7 @@ OpenAI and Stripe were the first to implement ACP,[^pm-07] and Visa lists ACP am
 [^pm-12]: [GitHub - google-agentic-commerce/AP2: Building a Secure and Interoperable Future for AI-Driven Payments. · GitHub](../sources/pm-12.md). Google (GitHub), official, retrieved 2026-11-12.
 [^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
-[^ag-01]: [Connect your AI agent to real-world money - AgentBank](../sources/ag-01.md). AgentBank, official, retrieved 2026-11-15.
+[^ag-01]: [Connect your AI agent to real-world money - AgentBank](../sources/ag-01.md). AgentBank, official, retrieved 2026-11-19.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 

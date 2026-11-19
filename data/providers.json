@@ -23,7 +23,7 @@
       "provider": "Alpaca",
       "page": "providers/alpaca.md",
       "page_status": "current",
-      "last_verified": "2026-11-12",
+      "last_verified": "2026-11-19",
       "summary": "Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.",
       "status": "official-mcp",
       "can_place_orders": [
@@ -39,7 +39,15 @@
         "options (including multi-leg)",
         "crypto"
       ],
-      "order_types": "unknown",
+      "order_types": [
+        "market",
+        "limit",
+        "stop",
+        "stop-limit",
+        "trailing stop",
+        "bracket",
+        "multi-leg options"
+      ],
       "auth": "Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables",
       "endpoint": "https://api.alpaca.markets/mcp",
       "transport": [
@@ -156,6 +164,13 @@
             "url": "https://github.com/alpacahq/agentic",
             "authority": "official"
           }
+        ],
+        "order_types": [
+          {
+            "id": "al-09",
+            "url": "https://docs.alpaca.markets/docs/alpaca-mcp-server",
+            "authority": "official"
+          }
         ]
       },
       "sources": [
@@ -201,11 +216,10 @@
         }
       ],
       "unknown_fields": [
-        "order_types",
         "limits",
         "notifications"
       ],
-      "unknown_count": 3
+      "unknown_count": 2
     },
     {
       "id": "coinbase",
@@ -570,11 +584,410 @@
       "unknown_count": 3
     },
     {
+      "id": "kraken",
+      "provider": "Kraken",
+      "page": "providers/kraken.md",
+      "page_status": "current",
+      "last_verified": "2026-11-19",
+      "summary": "Kraken ships a local MCP server with its CLI. It runs on your own machine, can trade live only when you turn on trading services, and asks you to approve each order, withdrawal or transfer.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "per-order-confirm"
+      ],
+      "assets": [
+        "crypto spot",
+        "xStocks (tokenized US stocks and ETFs)",
+        "forex",
+        "perpetual futures",
+        "inverse and fixed-date futures",
+        "earn and staking"
+      ],
+      "order_types": [
+        "market",
+        "limit"
+      ],
+      "auth": "API key and secret in environment variables, or a stored key: a browser sign-in key from kraken auth login (restricted, no withdrawal rights, expires after 90 days by default) or a key you created, stored with kraken setup",
+      "endpoint": null,
+      "transport": [
+        "local-stdio",
+        "cli"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "yes",
+      "limits": "Position size limits and pair allowlists can be set on the API key in Kraken's settings",
+      "notifications": "unknown",
+      "endpoint_note": "The MCP server, kraken-mcp, runs locally over stdio and is not exposed as a network service. There is no Kraken-hosted MCP endpoint.",
+      "notes": "Dangerous tools ask for approval on every call through MCP elicitation; a client that cannot show the prompt relies on its own tool-approval setting, and --allow-dangerous turns the gate off. The kraken CLI itself places orders without a confirmation prompt.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "kr-03",
+            "url": "https://github.com/krakenfx/kraken-cli",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "kr-03",
+            "url": "https://github.com/krakenfx/kraken-cli",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "kr-02",
+            "url": "https://docs.kraken.com/home/cli",
+            "authority": "official"
+          }
+        ],
+        "order_types": [
+          {
+            "id": "kr-02",
+            "url": "https://docs.kraken.com/home/cli",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "kr-02",
+            "url": "https://docs.kraken.com/home/cli",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "kr-02",
+            "url": "https://docs.kraken.com/home/cli",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          }
+        ],
+        "paper_trading": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "kr-02",
+            "url": "https://docs.kraken.com/home/cli",
+            "authority": "official"
+          }
+        ],
+        "limits": [
+          {
+            "id": "kr-01",
+            "url": "https://docs.kraken.com/home/mcp",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "kr-01",
+          "url": "https://docs.kraken.com/home/mcp",
+          "card": "sources/kr-01.md"
+        },
+        {
+          "id": "kr-02",
+          "url": "https://docs.kraken.com/home/cli",
+          "card": "sources/kr-02.md"
+        },
+        {
+          "id": "kr-03",
+          "url": "https://github.com/krakenfx/kraken-cli",
+          "card": "sources/kr-03.md"
+        }
+      ],
+      "unknown_fields": [
+        "notifications"
+      ],
+      "unknown_count": 1
+    },
+    {
+      "id": "public",
+      "provider": "Public.com",
+      "page": "providers/public.md",
+      "page_status": "current",
+      "last_verified": "2026-11-19",
+      "summary": "Public runs a hosted MCP server at mcp.public.com/mcp for Claude, ChatGPT, Codex, Meta Muse, Perplexity and Grok. Most apps sign in with OAuth; Muse uses a Public API key. Every trade is a real order, with no paper mode.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "separate-account",
+        "per-order-confirm"
+      ],
+      "assets": [
+        "US-listed stocks and ETFs",
+        "options",
+        "crypto",
+        "bonds",
+        "prediction markets"
+      ],
+      "order_types": "unknown",
+      "auth": "OAuth for Claude, ChatGPT, Codex, Perplexity and Grok; a Public API key as the bearer token for Meta Muse and for the Public Agent Skill",
+      "endpoint": "https://mcp.public.com/mcp",
+      "transport": [
+        "remote-http",
+        "cli"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "no",
+      "limits": "Hosted server: unknown. Self-hosted server release 0.11.0: optional per-order quantity and value limits set in environment variables, off by default",
+      "notifications": "Trade confirmations in real time, per Public's MCP page",
+      "notes": "approval_model lists the hosted server first (dedicated accounts are optional), then the self-hosted server from release 0.11.0, which asks you to confirm each order. Whether the hosted server confirms each order is unknown. The Claude directory connector cannot place trades; a custom connector can.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "pu-01",
+            "url": "https://public.com/mcp-trading",
+            "authority": "official"
+          },
+          {
+            "id": "pu-02",
+            "url": "https://public.com/api/docs/templates/hosted-mcp",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "pu-01",
+            "url": "https://public.com/mcp-trading",
+            "authority": "official"
+          },
+          {
+            "id": "pu-02",
+            "url": "https://public.com/api/docs/templates/hosted-mcp",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "pu-01",
+            "url": "https://public.com/mcp-trading",
+            "authority": "official"
+          },
+          {
+            "id": "pu-11",
+            "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server/pull/19",
+            "authority": "official"
+          }
+        ],
+        "assets": [
+          {
+            "id": "pu-01",
+            "url": "https://public.com/mcp-trading",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "pu-02",
+            "url": "https://public.com/api/docs/templates/hosted-mcp",
+            "authority": "official"
+          },
+          {
+            "id": "pu-13",
+            "url": "https://public.com/api/docs/templates/grok",
+            "authority": "official"
+          },
+          {
+            "id": "pu-14",
+            "url": "https://public.com/api/docs/templates/meta-muse",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pu-02",
+            "url": "https://public.com/api/docs/templates/hosted-mcp",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "pu-02",
+            "url": "https://public.com/api/docs/templates/hosted-mcp",
+            "authority": "official"
+          },
+          {
+            "id": "pu-16",
+            "url": "https://public.com/api/docs/templates",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "pu-09",
+            "url": "https://public.com/api/docs/templates/claude",
+            "authority": "official"
+          },
+          {
+            "id": "pu-14",
+            "url": "https://public.com/api/docs/templates/meta-muse",
+            "authority": "official"
+          }
+        ],
+        "paper_trading": [
+          {
+            "id": "pu-06",
+            "url": "https://public.com/learn/trade-stocks-options-crypto-using-claude",
+            "authority": "official"
+          }
+        ],
+        "limits": [
+          {
+            "id": "pu-11",
+            "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server/pull/19",
+            "authority": "official"
+          }
+        ],
+        "notifications": [
+          {
+            "id": "pu-01",
+            "url": "https://public.com/mcp-trading",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pu-01",
+          "url": "https://public.com/mcp-trading",
+          "card": "sources/pu-01.md"
+        },
+        {
+          "id": "pu-02",
+          "url": "https://public.com/api/docs/templates/hosted-mcp",
+          "card": "sources/pu-02.md"
+        },
+        {
+          "id": "pu-03",
+          "url": "https://public.com/api/docs/changelog",
+          "card": "sources/pu-03.md"
+        },
+        {
+          "id": "pu-04",
+          "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server",
+          "card": "sources/pu-04.md"
+        },
+        {
+          "id": "pu-05",
+          "url": "https://mcp.public.com/.well-known/oauth-protected-resource",
+          "card": "sources/pu-05.md"
+        },
+        {
+          "id": "pu-06",
+          "url": "https://public.com/learn/trade-stocks-options-crypto-using-claude",
+          "card": "sources/pu-06.md"
+        },
+        {
+          "id": "pu-07",
+          "url": "https://public.com/llms.txt",
+          "card": "sources/pu-07.md"
+        },
+        {
+          "id": "pu-08",
+          "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server/releases/tag/0.1.0",
+          "card": "sources/pu-08.md"
+        },
+        {
+          "id": "pu-09",
+          "url": "https://public.com/api/docs/templates/claude",
+          "card": "sources/pu-09.md"
+        },
+        {
+          "id": "pu-10",
+          "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server/releases/tag/v0.11.0",
+          "card": "sources/pu-10.md"
+        },
+        {
+          "id": "pu-11",
+          "url": "https://github.com/PublicDotCom/publicdotcom-mcp-server/pull/19",
+          "card": "sources/pu-11.md"
+        },
+        {
+          "id": "pu-12",
+          "url": "https://public.com/api/docs/templates/chatgpt",
+          "card": "sources/pu-12.md"
+        },
+        {
+          "id": "pu-13",
+          "url": "https://public.com/api/docs/templates/grok",
+          "card": "sources/pu-13.md"
+        },
+        {
+          "id": "pu-14",
+          "url": "https://public.com/api/docs/templates/meta-muse",
+          "card": "sources/pu-14.md"
+        },
+        {
+          "id": "pu-15",
+          "url": "https://public.com/api/docs/templates/perplexity",
+          "card": "sources/pu-15.md"
+        },
+        {
+          "id": "pu-16",
+          "url": "https://public.com/api/docs/templates",
+          "card": "sources/pu-16.md"
+        }
+      ],
+      "unknown_fields": [
+        "order_types"
+      ],
+      "unknown_count": 1
+    },
+    {
       "id": "robinhood",
       "provider": "Robinhood",
       "page": "providers/robinhood.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-19",
       "summary": "Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.",
       "status": "official-mcp",
       "can_place_orders": [
@@ -605,7 +1018,7 @@
       "paper_trading": "unknown",
       "limits": "unknown",
       "notifications": "Push notification whenever the agent makes a trade, plus a real-time activity feed and P&L in the app",
-      "notes": "Trade approvals are off by default for MCP accounts and still rolling out. Built-in Robinhood Agents are a separate product.",
+      "notes": "Trade approvals are off by default for MCP accounts. Robinhood's article said on 2026-11-12 that they were still rolling out; the 2026-11-19 version no longer says so. Built-in Robinhood Agents are a separate product.",
       "field_sources": {
         "status": [
           {
@@ -750,6 +1163,11 @@
           "card": "sources/rh-08.md"
         },
         {
+          "id": "rh-09",
+          "url": "https://robinhood.com/us/en/support/articles/agentic-credit-card/",
+          "card": "sources/rh-09.md"
+        },
+        {
           "id": "rh-10",
           "url": "https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/",
           "card": "sources/rh-10.md"
@@ -777,11 +1195,129 @@
       "unknown_count": 2
     },
     {
+      "id": "scalable-capital",
+      "provider": "Scalable Capital",
+      "page": "providers/scalable-capital.md",
+      "page_status": "current",
+      "last_verified": "2026-11-19",
+      "summary": "Scalable Capital runs an MCP server with four access levels you set in its web app. Buy and sell orders need Full access, and each order needs your fresh, explicit confirmation of a preview.",
+      "status": "official-mcp",
+      "can_place_orders": [
+        "yes"
+      ],
+      "approval_model": [
+        "per-order-confirm"
+      ],
+      "assets": "unknown",
+      "order_types": "unknown",
+      "auth": "Browser sign-in to Scalable through the AI app, with two-factor authentication; the MCP access level is set in the web version under Profile > Security > Agentic Investing",
+      "endpoint": "https://mcp.scalable.capital/mcp",
+      "transport": [
+        "remote-http"
+      ],
+      "reads_portfolio": "yes",
+      "paper_trading": "unknown",
+      "limits": "unknown",
+      "notifications": "unknown",
+      "notes": "One access level applies to every connected AI assistant and every portfolio. Orders need the Full access level. The Scalable CLI's access setting is managed separately. Personal Broker, Overnight and Fixed-Term accounts are supported; Junior accounts are not.",
+      "field_sources": {
+        "status": [
+          {
+            "id": "sc-01",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-do-i-connect-to-scalable-mcp-75fc6a40",
+            "authority": "official"
+          },
+          {
+            "id": "sc-03",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-are-orders-approved-and-protected-when-using-scalabl-d16595b5",
+            "authority": "official"
+          }
+        ],
+        "can_place_orders": [
+          {
+            "id": "sc-02",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/what-can-my-ai-assistant-do-with-the-scalable-mcp-28d8129c",
+            "authority": "official"
+          },
+          {
+            "id": "sc-03",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-are-orders-approved-and-protected-when-using-scalabl-d16595b5",
+            "authority": "official"
+          }
+        ],
+        "approval_model": [
+          {
+            "id": "sc-02",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/what-can-my-ai-assistant-do-with-the-scalable-mcp-28d8129c",
+            "authority": "official"
+          },
+          {
+            "id": "sc-03",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-are-orders-approved-and-protected-when-using-scalabl-d16595b5",
+            "authority": "official"
+          }
+        ],
+        "auth": [
+          {
+            "id": "sc-01",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-do-i-connect-to-scalable-mcp-75fc6a40",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "sc-01",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-do-i-connect-to-scalable-mcp-75fc6a40",
+            "authority": "official"
+          }
+        ],
+        "transport": [
+          {
+            "id": "sc-01",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-do-i-connect-to-scalable-mcp-75fc6a40",
+            "authority": "official"
+          }
+        ],
+        "reads_portfolio": [
+          {
+            "id": "sc-02",
+            "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/what-can-my-ai-assistant-do-with-the-scalable-mcp-28d8129c",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "sc-01",
+          "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-do-i-connect-to-scalable-mcp-75fc6a40",
+          "card": "sources/sc-01.md"
+        },
+        {
+          "id": "sc-02",
+          "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/what-can-my-ai-assistant-do-with-the-scalable-mcp-28d8129c",
+          "card": "sources/sc-02.md"
+        },
+        {
+          "id": "sc-03",
+          "url": "https://help.scalable.capital/en/agentic-investing-aac939f8/how-are-orders-approved-and-protected-when-using-scalabl-d16595b5",
+          "card": "sources/sc-03.md"
+        }
+      ],
+      "unknown_fields": [
+        "assets",
+        "order_types",
+        "paper_trading",
+        "limits",
+        "notifications"
+      ],
+      "unknown_count": 5
+    },
+    {
       "id": "webull",
       "provider": "Webull",
       "page": "providers/webull.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-19",
       "summary": "Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.",
       "status": "official-mcp",
       "can_place_orders": [

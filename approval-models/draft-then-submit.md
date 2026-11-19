@@ -24,7 +24,7 @@ In practice they are close. The difference is who creates the order: under draft
 
 [^ib-01]: [Interactive Brokers AI Hub](../sources/ib-01.md). Interactive Brokers, official, retrieved 2026-11-12.
 [^ib-07]: [AI Instructions](../sources/ib-07.md). IBKR Guides, official, retrieved 2026-11-12.
-[^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-12.
+[^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-19.
 
 ---
 

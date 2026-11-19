@@ -5,7 +5,7 @@ title: Robinhood
 summary: Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
 provider: Robinhood
 page_status: current
-last_verified: '2026-11-14'
+last_verified: '2026-11-19'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account, per-order-confirm]
@@ -18,7 +18,7 @@ reads_portfolio: 'yes'
 paper_trading: unknown
 limits: unknown
 notifications: Push notification whenever the agent makes a trade, plus a real-time activity feed and P&L in the app
-notes: Trade approvals are off by default for MCP accounts and still rolling out. Built-in Robinhood Agents are a separate product.
+notes: Trade approvals are off by default for MCP accounts. Robinhood's article said on 2026-11-12 that they were still rolling out; the 2026-11-19 version no longer says so. Built-in Robinhood Agents are a separate product.
 field_sources:
   status: [rh-01, rh-10, rh-13]
   can_place_orders: [rh-01, rh-04]
@@ -60,6 +60,8 @@ TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded bala
 | Assets | Long equities, single-leg options, crypto | [^rh-04] |
 | Multi-leg options | No, not through an agent | [^rh-04] |
 | Crypto transfers, staking, lending | No. The agent can trade crypto but not move, stake or lend it | [^rh-04] |
+| Crypto requirements | A Robinhood Crypto account that corresponds to your agentic or MCP account. The agent cannot open one for you. Crypto trades only in your MCP or agentic accounts, and only for pairs tradable at Robinhood | [^rh-04] |
+| Crypto after moving states | If you move from a restricted state to one where agentic crypto trading is supported, access is restored after 45 days | [^rh-04] |
 | Limits (size, rate) | unknown | |
 | Notifications | Push notification on every agent trade, activity feed, P&L | [^rh-10] |
 | Paper or sandbox | unknown | |
@@ -68,7 +70,7 @@ TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded bala
 
 - **Endpoint:** `https://agent.robinhood.com/mcp/trading`, added as a remote HTTP MCP server, for example `claude mcp add robinhood-trading --transport http https://agent.robinhood.com/mcp/trading`.[^rh-01]
 - **Auth:** [OAuth](../glossary.md#oauth). The [protected-resource metadata](../glossary.md#protected-resource-metadata) names the same URL as resource and authorization server, uses [bearer tokens](../glossary.md#bearer-token) in the header, and lists one [scope](../glossary.md#scopes), `internal`.[^rh-13] An independent test on 2026-09-05 reported OAuth 2.0 with [PKCE](../glossary.md#pkce), [dynamic client registration](../glossary.md#dynamic-client-registration), and 73 tools on that date.[^rh-02]
-- **Tool list:** Robinhood publishes tool tables per category, including trade-approval tools such as `get_trade_approvals` and `decline_trade_approval`.[^rh-04]
+- **Tool list:** Robinhood publishes tool tables per category, including trade-approval tools such as `get_trade_approvals` and `decline_trade_approval`.[^rh-04] The tables now also list scanner, alert, advanced-order and banking tools, such as `place_advanced_order`.[^rh-04]
 - **Account boundary:** read access spans all accounts; trading is limited to the agentic account.[^rh-01]
 
 ## What guardrails and risks apply at Robinhood?
@@ -77,15 +79,17 @@ TechCrunch's launch coverage on 2026-05-27 described a dedicated pre-loaded bala
 |---|---|---|
 | Trading only in the agentic account | Server side (broker) | [^rh-01][^rh-10] |
 | Trade approvals toggle: when on, the agent proposes and you place each order in the app | Server side (broker), optional | [^rh-04] |
-| Trade approvals are **off by default** for MCP accounts and still rolling out | | [^rh-04] |
+| Trade approvals are **off by default** for MCP accounts. Robinhood's article said on 2026-11-12 that they were still rolling out; the 2026-11-19 version no longer says so | | [^rh-04] |
+| Where to change Trade approvals for an MCP account: select your MCP account tab, tap your connected agent to open Agent Settings, and use the toggle under Safety Controls | Server side (broker) | [^rh-04] |
 | Some trades may still need your approval with approvals off | Server side (broker) | [^rh-04] |
-| Disconnect the agent at any time | Server side (broker) | [^rh-10] |
+| Disconnect the agent at any time, with the tap of a button | Server side (broker) | [^rh-10] |
+| Dedicated MCP account: it counts toward the limit of 10 self-directed individual investing accounts, and you need a primary individual investing account in good standing first | Server side (broker) | [^rh-01] |
 
 Robinhood warns that if you tell your agent to act without asking you, it can place trades without your confirmation.[^rh-01] Because the agent can read every account, treat account numbers and balances it sees as sensitive inside your agent's logs.
 
 ## How do you connect an agent to Robinhood?
 
-1. Open a Robinhood Agentic (MCP) account and fund it only with what the agent may use.[^rh-10]
+1. Open a Robinhood Agentic (MCP) account and fund it only with what the agent may use.[^rh-10] You are prompted to open it while you authenticate your AI agent. It counts toward the limit of 10 self-directed individual investing accounts, and you need a primary individual investing account in good standing first.[^rh-01]
 2. Add the MCP server in your client (Claude Code, Codex and others are documented) and complete OAuth.[^rh-01]
 3. Decide whether to turn on Trade approvals before the first order.[^rh-04]
 4. For your own client: discover OAuth metadata from `/.well-known/oauth-protected-resource`, then use bearer tokens.[^rh-13]
@@ -93,6 +97,23 @@ Robinhood warns that if you tell your agent to act without asking you, it can pl
 Robinhood also publishes a machine-readable [llms.txt](../glossary.md#llmstxt) at `https://robinhood.com/llms.txt`.[^rh-06]
 
 See [Connect an MCP client](../build/connect-an-mcp-client.md) and [Human-in-the-loop patterns](../build/human-in-the-loop.md).
+
+## How do I connect Robinhood from my AI app?
+
+Robinhood's support article gives steps for seven AI apps. Each one adds the Trading MCP link, `https://agent.robinhood.com/mcp/trading`, then signs in to Robinhood.[^rh-01]
+
+| App | How to connect | Sources |
+|---|---|---|
+| Claude Code | Run `claude mcp add robinhood-trading --transport http https://agent.robinhood.com/mcp/trading`, enter `/mcp`, select robinhood-trading and authenticate | [^rh-01] |
+| Claude Desktop | Go to Settings → Connectors → Add custom connector and add the MCP link | [^rh-01] |
+| ChatGPT | Go to Settings → Security & login and turn on Developer Mode, then select Plugins → + to add a new plugin with the MCP link | [^rh-01] |
+| Codex | Go to Settings → MCP servers, select Streamable HTTP and add the MCP link | [^rh-01] |
+| Codex CLI | Run `codex mcp add robinhood-trading --url https://agent.robinhood.com/mcp/trading`, enter `/mcp` and select robinhood-trading | [^rh-01] |
+| Cursor | Give your agent the MCP link, then go to Settings → Cursor Settings and select Tools & MCPs → Connect | [^rh-01] |
+| Grok | Start a chat, select +, then Add connector → Custom, and add the MCP link | [^rh-01] |
+| Other apps | Robinhood also supports Perplexity, OpenClaw, Replit, AWS Quick, Poke and any localhost platform with the same link. For any other platform, it asks you to contact support | [^rh-01] |
+
+If the connection misbehaves, Robinhood says to disconnect and reconnect the Trading MCP in your AI app.[^rh-01] The [Agentic Credit Card](../payments/robinhood-agentic-credit-card.md) uses a separate Banking MCP.[^rh-09]
 
 ## What is still unknown about Robinhood?
 
@@ -104,22 +125,24 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 
 ## What changed on this page?
 
+- 2026-11-19: Added how to connect from each AI app Robinhood lists, the MCP account requirements, where to change Trade approvals, and the crypto account rules.[^rh-01][^rh-04]
 - 2026-11-14: Added official product and support pages on built-in Agents, Agent Apps and Agent Loops, plus TechCrunch launch coverage and the site llms.txt index.[^rh-05][^rh-08][^rh-12][^rh-11][^rh-06]
 - 2026-11-12: First version of this page.
 
 ## Sources
 
-[^rh-01]: [Onboarding an external agent - Robinhood](../sources/rh-01.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-01]: [Onboarding an external agent - Robinhood](../sources/rh-01.md). Robinhood, official, retrieved 2026-11-19.
 [^rh-13]: [Robinhood Trading MCP: OAuth protected-resource metadata](../sources/rh-13.md). Robinhood (endpoint metadata), official, retrieved 2026-11-12.
-[^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-12.
-[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-19.
+[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-19.
 [^rh-07]: [Robinhood Agents overview - Robinhood](../sources/rh-07.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-05]: [Robinhood Agents - Build Your AI Trading Agent](../sources/rh-05.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-12]: [Agent apps - Robinhood](../sources/rh-12.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-08]: [Setting up an agent - Robinhood](../sources/rh-08.md). Robinhood, official, retrieved 2026-11-12.
 [^rh-11]: [Robinhood now lets your AI agents trade stocks - TechCrunch](../sources/rh-11.md). TechCrunch, third-party, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](../sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
-[^rh-06]: [robinhood.com llms.txt](../sources/rh-06.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-06]: [robinhood.com llms.txt](../sources/rh-06.md). Robinhood, official, retrieved 2026-11-19.
+[^rh-09]: [Agentic Credit Card - Robinhood](../sources/rh-09.md). Robinhood, official, retrieved 2026-11-19.
 
 ---
 

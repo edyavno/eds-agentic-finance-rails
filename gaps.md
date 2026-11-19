@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 ---
 
 # Gaps
@@ -12,10 +12,10 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 
 ## Highest priority
 
-1. **Terms and agreements: none collected.** Needed: Robinhood agentic disclosures and crypto agreement, IBKR Autonomous Trading terms, Coinbase agent terms, Webull and Public MCP terms.
-2. **Limits.** IBKR AI Partition funding limits ("limits apply"),[^ib-02] Coinbase trade-size and spend rules (announced as coming soon at launch,[^cb-07] since documented as available with the amounts set by each user,[^cb-10] while whether auto-stop cancels open orders is unknown), Public's hosted server (whether it has the 0.11.0 order gate with limits and confirmation),[^pu-11] and order rate limits for every provider.
-3. **Paper trading for agents** at Robinhood, Coinbase, IBKR and Webull Cloud MCP.
-4. **Order types** for Coinbase, Webull, IBKR and Alpaca agent orders.
+1. **Terms and agreements: none collected.** Needed: Robinhood agentic disclosures and crypto agreement, IBKR Autonomous Trading terms, Coinbase agent terms, Webull, Public, Scalable Capital and Kraken MCP terms.
+2. **Limits.** IBKR AI Partition funding limits ("limits apply"),[^ib-02] Coinbase trade-size and spend rules (announced as coming soon at launch,[^cb-07] since documented as available with the amounts set by each user,[^cb-10] while whether auto-stop cancels open orders is unknown), Public's hosted server (whether it has the 0.11.0 order gate with limits and confirmation),[^pu-11] Scalable Capital order size and spend limits, and order rate limits for every provider.
+3. **Paper trading for agents** at Robinhood, Coinbase, IBKR, Webull Cloud MCP and Scalable Capital.
+4. **Order types** for Coinbase, Webull, IBKR, Public and Scalable Capital agent orders. Alpaca's are now documented for its Trading MCP server.[^al-09]
 5. **IBKR Autonomous Trading asset list.** An independent review found IBKR's descriptions inconsistent.[^ib-03]
 6. **Primary statements from blockers.** The JPMorgan and Morgan Stanley evidence is from news reports.[^bl-01][^bl-02]
 7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in our sources.[^rh-02][^ib-03]
@@ -55,6 +55,7 @@ These cards are prior art or competing directories. They are leads only: use the
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
 [^cb-10]: [Coinbase for Agents introduces new Agent Controls](sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
 [^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
+[^al-09]: [Trading API MCP](sources/al-09.md). Alpaca Docs, official, retrieved 2026-11-19.
 [^ib-03]: [IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested](sources/ib-03.md). DeskTested, third-party, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.

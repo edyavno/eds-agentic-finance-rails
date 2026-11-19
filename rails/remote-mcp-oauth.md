@@ -43,12 +43,12 @@ Public also documents a Claude and Claude Code connector for its MCP, and an off
 [^cb-04]: [Coinbase for Agents MCP: OAuth protected-resource metadata](../sources/cb-04.md). Coinbase (endpoint metadata), official, retrieved 2026-11-12.
 [^wb-09]: [Webull API: OAuth protected-resource metadata](../sources/wb-09.md). Webull (endpoint metadata), official, retrieved 2026-11-12.
 [^pu-05]: [Public MCP: OAuth protected-resource metadata](../sources/pu-05.md). Public.com (endpoint metadata), official, retrieved 2026-11-12.
-[^pu-01]: [Public MCP Server for trading on AI platforms](../sources/pu-01.md). Public.com, official, retrieved 2026-11-12.
-[^pu-09]: [Claude & Claude Code Connector for Stock & Options Trading on Public MCP](../sources/pu-09.md). Public.com API docs, official, retrieved 2026-11-12.
+[^pu-01]: [Public MCP Server for trading on AI platforms](../sources/pu-01.md). Public.com, official, retrieved 2026-11-19.
+[^pu-09]: [Claude & Claude Code Connector for Stock & Options Trading on Public MCP](../sources/pu-09.md). Public.com API docs, official, retrieved 2026-11-19.
 [^pu-03]: [Public Trading API Changelog - Latest Updates & Release Notes](../sources/pu-03.md). Public.com API docs, official, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](../sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
-[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](../sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](../sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-19.
 
 ---
 

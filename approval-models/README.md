@@ -32,8 +32,8 @@ See the [approval model comparison](../comparisons/launch-brokers.md).
 
 ## Sources
 
-[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
-[^rh-01]: [Onboarding an external agent - Robinhood](../sources/rh-01.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-19.
+[^rh-01]: [Onboarding an external agent - Robinhood](../sources/rh-01.md). Robinhood, official, retrieved 2026-11-19.
 [^ib-06]: [AI-Powered Portfolio Analysis & Trading Tools (IBKR AI Integrations)](../sources/ib-06.md). Interactive Brokers, official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 

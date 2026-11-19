@@ -13,16 +13,16 @@ Every update to the wiki, newest first.
 
 | Measure | Count |
 |---|---|
-| Brokers | 5 |
+| Brokers | 8 |
 | Payment and money programs | 26 |
-| Source cards | 178 |
-| Official sources | 147 |
-| Broker fields still unknown | 13 of 60 |
+| Source cards | 195 |
+| Official sources | 164 |
+| Broker fields still unknown | 19 of 96 |
 | Latest broker check | 2026-11-19 |
 
 ## Updates
 
-- [What changed: 2026-11-19](2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, and how to connect Coinbase from ten AI apps.
+- [What changed: 2026-11-19](2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, how to connect Coinbase and seven other providers from your AI app, and new pages for Public, Scalable Capital and Kraken.
 - [What changed: 2026-11-18](2026-11-18.md): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](2026-11-17.md): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.

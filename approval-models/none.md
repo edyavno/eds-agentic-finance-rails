@@ -25,9 +25,9 @@ last_verified: '2026-11-12'
 ## Sources
 
 [^al-05]: [GitHub - alpacahq/cli: CLI for Trading API · GitHub](../sources/al-05.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^al-01]: [Alpaca - Trade with AI Using Alpaca's MCP Server](../sources/al-01.md). Alpaca, official, retrieved 2026-11-12.
-[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
-[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](../sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-01]: [Alpaca - Trade with AI Using Alpaca's MCP Server](../sources/al-01.md). Alpaca, official, retrieved 2026-11-19.
+[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-19.
+[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](../sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-19.
 
 ---
 

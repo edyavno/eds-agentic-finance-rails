@@ -36,23 +36,23 @@ Often not fully, according to news reports. They say several big US banks block 
 
 ## Sources
 
-[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-19.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^ib-01]: [Interactive Brokers AI Hub](sources/ib-01.md). Interactive Brokers, official, retrieved 2026-11-12.
-[^rh-01]: [Onboarding an external agent - Robinhood](sources/rh-01.md). Robinhood, official, retrieved 2026-11-12.
-[^wb-02]: [Webull Cloud MCP Server - Webull API](sources/wb-02.md). Webull Developer, official, retrieved 2026-11-12.
-[^rh-04]: [Trading with your agent - Robinhood](sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-01]: [Onboarding an external agent - Robinhood](sources/rh-01.md). Robinhood, official, retrieved 2026-11-19.
+[^wb-02]: [Webull Cloud MCP Server - Webull API](sources/wb-02.md). Webull Developer, official, retrieved 2026-11-19.
+[^rh-04]: [Trading with your agent - Robinhood](sources/rh-04.md). Robinhood, official, retrieved 2026-11-19.
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^ib-07]: [AI Instructions](sources/ib-07.md). IBKR Guides, official, retrieved 2026-11-12.
 [^al-05]: [GitHub - alpacahq/cli: CLI for Trading API · GitHub](sources/al-05.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^al-01]: [Alpaca - Trade with AI Using Alpaca's MCP Server](sources/al-01.md). Alpaca, official, retrieved 2026-11-12.
-[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
+[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-19.
+[^al-01]: [Alpaca - Trade with AI Using Alpaca's MCP Server](sources/al-01.md). Alpaca, official, retrieved 2026-11-19.
+[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-19.
 [^pm-01]: [Visa Developer Center](sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
-[^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-19.
 [^oa-01]: [Introducing ChatGPT Wallet](sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^eb-01]: [User Agreement - eBay](sources/eb-01.md). eBay, official, retrieved 2026-11-15.
 [^ua-01]: [Contract of Carriage Document - United Airlines](sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.

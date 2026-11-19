@@ -33,7 +33,10 @@ Every page in the wiki, generated from page headers.
 - [Alpaca](providers/alpaca.md) (current): Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.
 - [Coinbase](providers/coinbase.md) (current): Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.
 - [Interactive Brokers](providers/interactive-brokers.md) (current): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.
+- [Kraken](providers/kraken.md) (current): Kraken ships a local MCP server with its CLI. It runs on your own machine, can trade live only when you turn on trading services, and asks you to approve each order, withdrawal or transfer.
+- [Public](providers/public.md) (current): Public runs a hosted MCP server at mcp.public.com/mcp for Claude, ChatGPT, Codex, Meta Muse, Perplexity and Grok. Most apps sign in with OAuth; Muse uses a Public API key. Every trade is a real order, with no paper mode.
 - [Robinhood](providers/robinhood.md) (current): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
+- [Scalable Capital](providers/scalable-capital.md) (current): Scalable Capital runs an MCP server with four access levels you set in its web app. Buy and sell orders need Full access, and each order needs your fresh, explicit confirmation of a preview.
 - [Webull](providers/webull.md) (current): Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
 
 ## Payments
@@ -110,7 +113,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, and how to connect Coinbase from ten AI apps.
+- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, how to connect Coinbase and seven other providers from your AI app, and new pages for Public, Scalable Capital and Kraken.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
@@ -125,21 +128,26 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (178)
+## Sources (195)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
-| [ag-01](sources/ag-01.md): Connect your AI agent to real-world money \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
+| [ag-01](sources/ag-01.md): Connect your AI agent to real-world money \| AgentBank | AgentBank | AgentBank | official | 2026-11-19 |
 | [ag-02](sources/ag-02.md): Security and wallet control \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
 | [ag-03](sources/ag-03.md): AgentBank FAQ: banking for AI agents \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
-| [al-01](sources/al-01.md): Alpaca - Trade with AI Using Alpaca's MCP Server | Alpaca | Alpaca | official | 2026-11-12 |
-| [al-02](sources/al-02.md): GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
-| [al-03](sources/al-03.md): GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
+| [ag-04](sources/ag-04.md): Connect your agent - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [ag-05](sources/ag-05.md): Connect ChatGPT - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [ag-06](sources/ag-06.md): Connect Claude - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [ag-07](sources/ag-07.md): Account revocation - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [ag-08](sources/ag-08.md): Configure thresholds - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [al-01](sources/al-01.md): Alpaca - Trade with AI Using Alpaca's MCP Server | Alpaca | Alpaca | official | 2026-11-19 |
+| [al-02](sources/al-02.md): GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat | Alpaca | Alpaca (GitHub) | official | 2026-11-19 |
+| [al-03](sources/al-03.md): GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-19 |
 | [al-04](sources/al-04.md): GitHub - alpacahq/alpaca-skills: Agent skills for Alpaca's Trading API and Broker API: drop-in SKILL.md files for AI coding assistants · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
 | [al-05](sources/al-05.md): GitHub - alpacahq/cli: CLI for Trading API · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-12 |
 | [al-07](sources/al-07.md): Alpaca Launches MCP Servers in Public Beta for Broker Partners. | Alpaca | Alpaca | official | 2026-11-12 |
 | [al-08](sources/al-08.md): Broker API MCP (Alpaca Docs) | Alpaca | Alpaca Docs | official | 2026-11-12 |
-| [al-09](sources/al-09.md): Trading API MCP | Alpaca | Alpaca Docs | official | 2026-11-12 |
+| [al-09](sources/al-09.md): Trading API MCP | Alpaca | Alpaca Docs | official | 2026-11-19 |
 | [bk-01](sources/bk-01.md): Booking.com: Terms and Conditions (Customer terms of service) | Booking.com | Booking.com | official | 2026-11-18 |
 | [bl-01](sources/bl-01.md): JPMorgan blocks outside AI agents like Muse, Instinct from account access | JPMorgan Chase | CNBC | third-party | 2026-11-12 |
 | [bl-02](sources/bl-02.md): Scoop: Unvetted AI agents are accessing U.S. bank accounts | Banks (JPM, MS, BofA, Citi, Wells) | Axios | third-party | 2026-11-12 |
@@ -189,6 +197,9 @@ Every page in the wiki, generated from page headers.
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
 | [id-07](sources/id-07.md): ERC-8004: Trustless Agents | ERC-8004 | Ethereum Improvement Proposals | official | 2026-11-14 |
 | [jp-01](sources/jp-01.md): JPMorganChase and Plaid announce an extension to their data access agreement | JPMorgan and Plaid | JPMorganChase | official | 2026-11-18 |
+| [kr-01](sources/kr-01.md): MCP server - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
+| [kr-02](sources/kr-02.md): kraken-cli - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
+| [kr-03](sources/kr-03.md): GitHub - krakenfx/kraken-cli: Kraken CLI · GitHub | Kraken | Kraken (GitHub) | official | 2026-11-19 |
 | [mm-01](sources/mm-01.md): How Muse works with payments (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-02](sources/mm-02.md): How Muse works with Connectors (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-03](sources/mm-03.md): Introducing Muse (Meta newsroom) | Meta Muse | Meta | official | 2026-11-18 |
@@ -244,7 +255,7 @@ Every page in the wiki, generated from page headers.
 | [pm-06](sources/pm-06.md): Agentic token framework: Driving trusted AI transactions | Mastercard Agent Pay | Mastercard | official | 2026-11-12 |
 | [pm-07](sources/pm-07.md): GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec | Agentic Commerce Protocol (OpenAI/Stripe) | ACP (GitHub) | official | 2026-11-12 |
 | [pm-08](sources/pm-08.md): Shared payment tokens \| Stripe Documentation | Stripe | Stripe Docs | official | 2026-11-12 |
-| [pm-09](sources/pm-09.md): Model Context Protocol (MCP) \| Stripe Documentation | Stripe | Stripe Docs | official | 2026-11-12 |
+| [pm-09](sources/pm-09.md): Model Context Protocol (MCP) \| Stripe Documentation | Stripe | Stripe Docs | official | 2026-11-19 |
 | [pm-10](sources/pm-10.md): MCP server quickstart guide \| PayPal Developer | PayPal | PayPal Developer | official | 2026-11-12 |
 | [pm-11](sources/pm-11.md): Agent toolkit quickstart guide \| PayPal Developer | PayPal | PayPal Developer | official | 2026-11-12 |
 | [pm-12](sources/pm-12.md): GitHub - google-agentic-commerce/AP2: Building a Secure and Interoperable Future for AI-Driven Payments. · GitHub | Google AP2 | Google (GitHub) | official | 2026-11-12 |
@@ -253,31 +264,40 @@ Every page in the wiki, generated from page headers.
 | [pm-15](sources/pm-15.md): x402 specification v2 | x402 | x402 Foundation (GitHub) | official | 2026-11-12 |
 | [pm-16](sources/pm-16.md): Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally | Visa Intelligent Commerce | Visa | official | 2026-11-18 |
 | [pm-17](sources/pm-17.md): Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase | Mastercard Agent Pay | Mastercard | official | 2026-11-18 |
-| [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-12 |
-| [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-12 |
+| [pm-18](sources/pm-18.md): Model Context Protocol (MCP) \| Stripe Documentation (Markdown version) | Stripe | Stripe Docs | official | 2026-11-19 |
+| [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-19 |
+| [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |
 | [pu-04](sources/pu-04.md): GitHub - PublicDotCom/publicdotcom-mcp-server · GitHub | Public | Public.com (GitHub) | official | 2026-11-12 |
 | [pu-05](sources/pu-05.md): Public MCP: OAuth protected-resource metadata | Public | Public.com (endpoint metadata) | official | 2026-11-12 |
 | [pu-06](sources/pu-06.md): How to Trade Stocks, Options & Crypto Using Claude | Public | Public.com | official | 2026-11-12 |
 | [pu-07](sources/pu-07.md): public.com llms.txt | Public | Public.com | official | 2026-11-12 |
 | [pu-08](sources/pu-08.md): Release 0.1.0 · PublicDotCom/publicdotcom-mcp-server · GitHub | Public | Public.com (GitHub) | official | 2026-11-12 |
-| [pu-09](sources/pu-09.md): Claude & Claude Code Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-12 |
+| [pu-09](sources/pu-09.md): Claude & Claude Code Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-10](sources/pu-10.md): Release v0.11.0 · PublicDotCom/publicdotcom-mcp-server | Public | Public.com (GitHub) | official | 2026-11-18 |
 | [pu-11](sources/pu-11.md): Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19) | Public | Public.com (GitHub) | official | 2026-11-18 |
-| [rh-01](sources/rh-01.md): Onboarding an external agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
+| [pu-12](sources/pu-12.md): ChatGPT & Codex Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
+| [pu-13](sources/pu-13.md): Grok Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
+| [pu-14](sources/pu-14.md): Meta Muse Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
+| [pu-15](sources/pu-15.md): Perplexity Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
+| [pu-16](sources/pu-16.md): Guides (Public.com API docs index) | Public | Public.com API docs | official | 2026-11-19 |
+| [rh-01](sources/rh-01.md): Onboarding an external agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-19 |
 | [rh-02](sources/rh-02.md): Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested | Robinhood | DeskTested | third-party | 2026-11-12 |
-| [rh-04](sources/rh-04.md): Trading with your agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
+| [rh-04](sources/rh-04.md): Trading with your agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-19 |
 | [rh-05](sources/rh-05.md): Robinhood Agents \| Build Your AI Trading Agent | Robinhood | Robinhood | official | 2026-11-12 |
-| [rh-06](sources/rh-06.md): robinhood.com llms.txt | Robinhood | Robinhood | official | 2026-11-12 |
+| [rh-06](sources/rh-06.md): robinhood.com llms.txt | Robinhood | Robinhood | official | 2026-11-19 |
 | [rh-07](sources/rh-07.md): Robinhood Agents overview \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
 | [rh-08](sources/rh-08.md): Setting up an agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
-| [rh-09](sources/rh-09.md): Agentic Credit Card \| Robinhood | Robinhood (Agentic Credit Card) | Robinhood | official | 2026-11-12 |
-| [rh-10](sources/rh-10.md): Robinhood is Now Open to Agents | Robinhood | Robinhood | official | 2026-11-12 |
+| [rh-09](sources/rh-09.md): Agentic Credit Card \| Robinhood | Robinhood (Agentic Credit Card) | Robinhood | official | 2026-11-19 |
+| [rh-10](sources/rh-10.md): Robinhood is Now Open to Agents | Robinhood | Robinhood | official | 2026-11-19 |
 | [rh-11](sources/rh-11.md): Robinhood now lets your AI agents trade stocks \| TechCrunch | Robinhood | TechCrunch | third-party | 2026-11-12 |
 | [rh-12](sources/rh-12.md): Agent apps \| Robinhood | Robinhood | Robinhood | official | 2026-11-12 |
 | [rh-13](sources/rh-13.md): Robinhood Trading MCP: OAuth protected-resource metadata | Robinhood | Robinhood (endpoint metadata) | official | 2026-11-12 |
 | [rn-01](sources/rn-01.md): Rain Agent Vaults bring embedded payments to AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
 | [rn-02](sources/rn-02.md): Rain Agent Vaults \| Embedded payments for AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
+| [sc-01](sources/sc-01.md): How do I connect to Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
+| [sc-02](sources/sc-02.md): What can my AI assistant do with the Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
+| [sc-03](sources/sc-03.md): How are orders approved and protected when using Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
 | [sp-01](sources/sp-01.md): Stripe helps Meta Muse shop with Link | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-02](sources/sp-02.md): Giving agents the ability to pay (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-03](sources/sp-03.md): Helping personal agents shop more intelligently and reliably with Link (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
@@ -289,14 +309,14 @@ Every page in the wiki, generated from page headers.
 | [tt-04](sources/tt-04.md): OAuth2 authentication · tastytrade Developer Docs | tastytrade | tastytrade Developer Docs | official | 2026-11-12 |
 | [ua-01](sources/ua-01.md): Contract of Carriage Document \| United Airlines | United Airlines | United Airlines | official | 2026-11-15 |
 | [ua-02](sources/ua-02.md): Unauthorized third-party AI agents or assistants \| United Airlines | United Airlines | United Airlines | official | 2026-11-15 |
-| [wb-01](sources/wb-01.md): Webull Agentic Trading — Let your AI agent trade the markets | Webull | Webull | official | 2026-11-12 |
-| [wb-02](sources/wb-02.md): Webull Cloud MCP Server \| Webull API | Webull | Webull Developer | official | 2026-11-12 |
-| [wb-03](sources/wb-03.md): GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub | Webull | Webull (GitHub) | official | 2026-11-12 |
+| [wb-01](sources/wb-01.md): Webull Agentic Trading — Let your AI agent trade the markets | Webull | Webull | official | 2026-11-19 |
+| [wb-02](sources/wb-02.md): Webull Cloud MCP Server \| Webull API | Webull | Webull Developer | official | 2026-11-19 |
+| [wb-03](sources/wb-03.md): GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub | Webull | Webull (GitHub) | official | 2026-11-19 |
 | [wb-04](sources/wb-04.md): GitHub - webull-inc/webull-openapi-skills · GitHub | Webull | Webull (GitHub) | official | 2026-11-12 |
 | [wb-05](sources/wb-05.md): GitHub - webull-inc/webull-openapi-cli · GitHub | Webull | Webull (GitHub) | official | 2026-11-12 |
 | [wb-06](sources/wb-06.md): Webull Launches Model Context Protocol, Enabling Investors to Trade Through AI in Plain Language | Webull | PR Newswire | official | 2026-11-12 |
 | [wb-07](sources/wb-07.md): Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation | Webull | Webull / PR Newswire | official | 2026-11-12 |
-| [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-12 |
+| [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-19 |
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
 | [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |

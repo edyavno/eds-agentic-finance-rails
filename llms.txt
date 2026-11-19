@@ -29,7 +29,10 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Alpaca](providers/alpaca.md): Alpaca's hosted Trading MCP uses OAuth for live and paper accounts; a local MCP and a CLI use API keys. No broker-side per-order approval is documented.
 - [Coinbase](providers/coinbase.md): Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.
 - [Interactive Brokers](providers/interactive-brokers.md): Remote MCP connector. By default the AI drafts trade instructions you review and submit; eligible accounts can enable Autonomous Trading in an AI Partition.
+- [Kraken](providers/kraken.md): Kraken ships a local MCP server with its CLI. It runs on your own machine, can trade live only when you turn on trading services, and asks you to approve each order, withdrawal or transfer.
+- [Public](providers/public.md): Public runs a hosted MCP server at mcp.public.com/mcp for Claude, ChatGPT, Codex, Meta Muse, Perplexity and Grok. Most apps sign in with OAuth; Muse uses a Public API key. Every trade is a real order, with no paper mode.
 - [Robinhood](providers/robinhood.md): Remote Trading MCP with OAuth. Agents read all Robinhood accounts but trade only in a dedicated agentic (MCP) account; per-order approval is an optional toggle.
+- [Scalable Capital](providers/scalable-capital.md): Scalable Capital runs an MCP server with four access levels you set in its web app. Buy and sell orders need Full access, and each order needs your fresh, explicit confirmation of a preview.
 - [Webull](providers/webull.md): Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
 
 ## Payments
@@ -106,7 +109,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 ## What changed
 
 - [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-19](changelog/2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, and how to connect Coinbase from ten AI apps.
+- [What changed: 2026-11-19](changelog/2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, the steps to add a Chase card to ChatGPT Wallet, how to connect Coinbase and seven other providers from your AI app, and new pages for Public, Scalable Capital and Kraken.
 - [What changed: 2026-11-18](changelog/2026-11-18.md): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.

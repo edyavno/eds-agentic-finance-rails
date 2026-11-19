@@ -3,7 +3,7 @@ type: approval-model
 title: "Approval model: per-order confirm"
 summary: The agent prepares each order, and a person confirms it in the broker's own app before it reaches the market.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 ---
 
 # Per-order confirm
@@ -15,11 +15,13 @@ last_verified: '2026-11-18'
 - **Webull Cloud MCP:** each trade needs separate customer confirmation before it can be submitted.[^wb-07] Every Cloud order tool is documented as needing confirmation in the Webull app or desktop.[^wb-02]
 - **Coinbase's official ChatGPT plugin:** Coinbase confirmation cards, shown inside ChatGPT, cover placing, editing and cancelling orders and USD–USDC conversions. Coinbase says the custom MCP connection is the option for trading without approving each trade.[^cb-09]
 - **Public's self-hosted MCP server (release 0.11.0):** every order tool now asks the user to confirm through MCP elicitation, after a preflight of the exact order. The default mode, `auto`, prompts the user when the client supports elicitation and otherwise relies on the client's own tool-approval prompt; `required` refuses the order if the client cannot prompt, and `off` never prompts.[^pu-11] Whether Public's hosted server has this is unknown.[^pu-11]
-- **Robinhood with Trade approvals on:** the agent proposes trades and you review and place them in the app. The setting is off by default for MCP accounts and still rolling out.[^rh-04]
+- **Robinhood with Trade approvals on:** the agent proposes trades and you review and place them in the app. The setting is off by default for MCP accounts. Robinhood's article said on 2026-11-12 that it was still rolling out; the 2026-11-19 version no longer says so.[^rh-04]
+- **[Scalable Capital](../providers/scalable-capital.md):** buy and sell orders need the "Full access" level, and an order preview does not place an order. The agent cannot place an order without your renewed, explicit confirmation.[^sc-03] How that confirmation reaches Scalable is not documented.
+- **[Kraken](../providers/kraken.md):** its local MCP server asks you to approve every call to a dangerous tool (order placement, withdrawals, transfers, workspace promotion) through MCP elicitation. Starting the server with `--allow-dangerous` turns this off, and a client that cannot show the prompt relies on its own tool-approval setting.[^kr-01]
 
 ## Is a preview in the agent's chat the same as confirming at the broker?
 
-Confirmation does not always happen in the broker's own app. Coinbase's cards appear inside ChatGPT, and Public's prompt appears in your MCP client.
+Confirmation does not always happen in the broker's own app. Coinbase's cards appear inside ChatGPT, and the prompts from Public's self-hosted server and Kraken's server appear in your MCP client.[^kr-01]
 
 A dry-run or preview inside the agent's chat is not broker-side confirmation. Coinbase documents that Claude previews and asks before ordering while ChatGPT orders in one turn, against the same server.[^cb-01] Coinbase's official ChatGPT plugin adds its own confirmation cards.[^cb-09] tastytrade's MCP uses a short-lived dry-run token and states that it is not human approval.[^tt-01]
 
@@ -28,10 +30,12 @@ A dry-run or preview inside the agent's chat is not broker-side confirmation. Co
 ## Sources
 
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](../sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
-[^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-12.
+[^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-19.
 [^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
 [^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](../sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
-[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-04]: [Trading with your agent - Robinhood](../sources/rh-04.md). Robinhood, official, retrieved 2026-11-19.
+[^sc-03]: [How are orders approved and protected when using Scalable MCP? - Scalable Capital Help Center](../sources/sc-03.md). Scalable Capital Help Center, official, retrieved 2026-11-19.
+[^kr-01]: [MCP server - Kraken docs](../sources/kr-01.md). Kraken, official, retrieved 2026-11-19.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^tt-01]: [GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents. ](../sources/tt-01.md). tastytrade (GitHub), official, retrieved 2026-11-12.
 

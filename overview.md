@@ -3,7 +3,7 @@ type: overview
 title: Overview - the race to be agent-friendly
 summary: Which financial providers let AI agents read accounts, trade or pay, which keep them out, and what changed in 2026. Every fact links to its source.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 ---
 
 # Overview: the race to be agent-friendly
@@ -20,7 +20,12 @@ All five launch brokers document an official MCP server:
 - **Interactive Brokers** added a custom connector for any MCP client on 2026-07-17[^ib-08] and announced Autonomous Trading on 2026-10-21.[^ib-02]
 - **Alpaca** documents hosted and local Trading MCP servers.[^al-03][^al-02]
 
-Not yet profiled here: **Public**, which documents a hosted MCP at `https://mcp.public.com/mcp` with a [preflight](glossary.md#preflight) before you confirm and no [paper mode](glossary.md#paper-trading).[^pu-02][^pu-06] Public's product page lists stocks and ETFs, options, crypto, and bonds, describes dedicated brokerage accounts for MCP connections, and documents [OAuth](glossary.md#oauth) for some clients and an [API key](glossary.md#api-key) for others.[^pu-01] An official changelog entry covers Grok MCP connector setup with OAuth.[^pu-03] Public's official GitHub repository is `publicdotcom-mcp-server`; release 0.1.0 on 2026-03-11 is described as the "initial release of the Official Public API MCP Server," and the repo documents tools including `place_order` and `preflight_order`.[^pu-08][^pu-04] Public also publishes a Claude and Claude Code connector guide and a site-wide [llms.txt](glossary.md#llmstxt) index.[^pu-09][^pu-07] Release 0.11.0 of the self-hosted server, on 2026-11-17, puts the checks in the server: optional per-order quantity and value limits, a preflight of the exact order, and user confirmation through [MCP elicitation](glossary.md#elicitation), which is on by default. Whether Public's hosted server has the same changes is unknown.[^pu-10][^pu-11]
+**[Public](providers/public.md)**, profiled here since 2026-11-19, documents a hosted MCP at `https://mcp.public.com/mcp` with a [preflight](glossary.md#preflight) before you confirm and no [paper mode](glossary.md#paper-trading).[^pu-02][^pu-06] Public's product page lists stocks and ETFs, options, crypto, and bonds, describes dedicated brokerage accounts for MCP connections, and documents [OAuth](glossary.md#oauth) for some clients and an [API key](glossary.md#api-key) for others.[^pu-01] An official changelog entry covers Grok MCP connector setup with OAuth.[^pu-03] Public's official GitHub repository is `publicdotcom-mcp-server`; release 0.1.0 on 2026-03-11 is described as the "initial release of the Official Public API MCP Server," and the repo documents tools including `place_order` and `preflight_order`.[^pu-08][^pu-04] Public also publishes a Claude and Claude Code connector guide and a site-wide [llms.txt](glossary.md#llmstxt) index.[^pu-09][^pu-07] Release 0.11.0 of the self-hosted server, on 2026-11-17, puts the checks in the server: optional per-order quantity and value limits, a preflight of the exact order, and user confirmation through [MCP elicitation](glossary.md#elicitation), which is on by default. Whether Public's hosted server has the same changes is unknown.[^pu-10][^pu-11]
+
+Also profiled since 2026-11-19:
+
+- **[Scalable Capital](providers/scalable-capital.md)** documents an MCP server with four access levels; placing orders needs Full access and your confirmation of each order preview.[^sc-01][^sc-03]
+- **[Kraken](providers/kraken.md)** documents an MCP server that runs locally on your machine and asks you to approve each order, withdrawal or transfer, unless you start it with `--allow-dangerous`.[^kr-01]
 
 **tastytrade** documents a self-hosted MCP only, with "no tastytrade-hosted endpoint," using an OAuth2 [refresh token](glossary.md#refresh-token) in [environment variables](glossary.md#environment-variables).[^tt-03][^tt-04] A tastytrade newsroom post describes real-time quotes, full option chains with [Greeks](glossary.md#greeks), single-leg and multi-leg order placement, and preflight cost estimates.[^tt-02]
 
@@ -64,25 +69,28 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 
 ## Sources
 
-[^rh-10]: [Robinhood is Now Open to Agents](sources/rh-10.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-10]: [Robinhood is Now Open to Agents](sources/rh-10.md). Robinhood, official, retrieved 2026-11-19.
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
 [^cb-10]: [Coinbase for Agents introduces new Agent Controls](sources/cb-10.md). Coinbase, official, retrieved 2026-11-18.
 [^wb-06]: [Webull Launches Model Context Protocol, Enabling Investors to Trade Through AI in Plain Language](sources/wb-06.md). PR Newswire, official, retrieved 2026-11-12.
 [^wb-07]: [Webull Expands Cloud MCP to Enable AI-Powered Trading Without Coding or Installation](sources/wb-07.md). Webull / PR Newswire, official, retrieved 2026-11-12.
 [^ib-08]: [Version 1.1.5 - Custom Connector, Connect From Any MCP Client](sources/ib-08.md). IBKR Guides, official, retrieved 2026-11-12.
 [^ib-02]: [Interactive Brokers Introduces Autonomous Trading](sources/ib-02.md). Interactive Brokers, official, retrieved 2026-11-12.
-[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^pu-02]: [Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok - AI Trading Setup](sources/pu-02.md). Public.com API docs, official, retrieved 2026-11-12.
+[^al-03]: [GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub](sources/al-03.md). Alpaca (GitHub), official, retrieved 2026-11-19.
+[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-19.
+[^pu-02]: [Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok - AI Trading Setup](sources/pu-02.md). Public.com API docs, official, retrieved 2026-11-19.
 [^pu-06]: [How to Trade Stocks, Options & Crypto Using Claude](sources/pu-06.md). Public.com, official, retrieved 2026-11-12.
-[^pu-01]: [Public MCP Server for trading on AI platforms](sources/pu-01.md). Public.com, official, retrieved 2026-11-12.
+[^pu-01]: [Public MCP Server for trading on AI platforms](sources/pu-01.md). Public.com, official, retrieved 2026-11-19.
 [^pu-03]: [Public Trading API Changelog - Latest Updates & Release Notes](sources/pu-03.md). Public.com API docs, official, retrieved 2026-11-12.
 [^pu-08]: [Release 0.1.0 · PublicDotCom/publicdotcom-mcp-server · GitHub](sources/pu-08.md). Public.com (GitHub), official, retrieved 2026-11-12.
 [^pu-04]: [GitHub - PublicDotCom/publicdotcom-mcp-server · GitHub](sources/pu-04.md). Public.com (GitHub), official, retrieved 2026-11-12.
-[^pu-09]: [Claude & Claude Code Connector for Stock & Options Trading on Public MCP](sources/pu-09.md). Public.com API docs, official, retrieved 2026-11-12.
+[^pu-09]: [Claude & Claude Code Connector for Stock & Options Trading on Public MCP](sources/pu-09.md). Public.com API docs, official, retrieved 2026-11-19.
 [^pu-07]: [public.com llms.txt](sources/pu-07.md). Public.com, official, retrieved 2026-11-12.
 [^pu-10]: [Release v0.11.0 · PublicDotCom/publicdotcom-mcp-server](sources/pu-10.md). Public.com (GitHub), official, retrieved 2026-11-18.
 [^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.
+[^sc-01]: [How do I connect to Scalable MCP? - Scalable Capital Help Center](sources/sc-01.md). Scalable Capital Help Center, official, retrieved 2026-11-19.
+[^sc-03]: [How are orders approved and protected when using Scalable MCP? - Scalable Capital Help Center](sources/sc-03.md). Scalable Capital Help Center, official, retrieved 2026-11-19.
+[^kr-01]: [MCP server - Kraken docs](sources/kr-01.md). Kraken, official, retrieved 2026-11-19.
 [^tt-03]: [MCP Server · tastytrade Developer Docs](sources/tt-03.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
 [^tt-04]: [OAuth2 authentication · tastytrade Developer Docs](sources/tt-04.md). tastytrade Developer Docs, official, retrieved 2026-11-12.
 [^tt-02]: [Open API MCP Brings AI to Your tastytrade Account](sources/tt-02.md). tastytrade, official, retrieved 2026-11-12.
@@ -106,7 +114,7 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 [^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
 [^pm-15]: [x402 specification v2](sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-13]: [AP2 - Agent Payments Protocol Documentation](sources/pm-13.md). AP2 Protocol, official, retrieved 2026-11-12.
-[^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-19.
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](sources/pb-06.md). Plaid, official, retrieved 2026-11-18.

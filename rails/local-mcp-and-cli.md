@@ -29,9 +29,9 @@ A newsroom post describes real-time quotes, option chains with [Greeks](../gloss
 
 ## Sources
 
-[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](../sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-12.
+[^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](../sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-19.
 [^al-05]: [GitHub - alpacahq/cli: CLI for Trading API · GitHub](../sources/al-05.md). Alpaca (GitHub), official, retrieved 2026-11-12.
-[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-12.
+[^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-19.
 [^wb-05]: [GitHub - webull-inc/webull-openapi-cli · GitHub](../sources/wb-05.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^pu-11]: [Enforce preflight and user confirmation on every order — 0.11.0 (pull request 19)](../sources/pu-11.md). Public.com (GitHub), official, retrieved 2026-11-18.

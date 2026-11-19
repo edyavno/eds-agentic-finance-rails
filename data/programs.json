@@ -19,7 +19,7 @@
       "kind": "payment-mcp",
       "page": "payments/agentbank.md",
       "page_status": "current",
-      "last_verified": "2026-11-15",
+      "last_verified": "2026-11-19",
       "summary": "An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.",
       "operator": "AgentBank, operated by Thinking Horizon, Inc.",
       "agent_can": "Collect payments, convert between currencies and crypto assets, pay bank, QR or wallet recipients in local currency, and pay x402 services, through an MCP server",
@@ -58,6 +58,16 @@
             "id": "ag-03",
             "url": "https://useagentbank.com/faq",
             "authority": "official"
+          },
+          {
+            "id": "ag-07",
+            "url": "https://docs.useagentbank.com/security/account-revocation",
+            "authority": "official"
+          },
+          {
+            "id": "ag-08",
+            "url": "https://docs.useagentbank.com/autonomy/configure-thresholds",
+            "authority": "official"
           }
         ],
         "mcp_server": [
@@ -90,6 +100,31 @@
           "id": "ag-03",
           "url": "https://useagentbank.com/faq",
           "card": "sources/ag-03.md"
+        },
+        {
+          "id": "ag-04",
+          "url": "https://docs.useagentbank.com/getting-started/connect-your-agent",
+          "card": "sources/ag-04.md"
+        },
+        {
+          "id": "ag-05",
+          "url": "https://docs.useagentbank.com/remote-mcp/chatgpt",
+          "card": "sources/ag-05.md"
+        },
+        {
+          "id": "ag-06",
+          "url": "https://docs.useagentbank.com/remote-mcp/claude",
+          "card": "sources/ag-06.md"
+        },
+        {
+          "id": "ag-07",
+          "url": "https://docs.useagentbank.com/security/account-revocation",
+          "card": "sources/ag-07.md"
+        },
+        {
+          "id": "ag-08",
+          "url": "https://docs.useagentbank.com/autonomy/configure-thresholds",
+          "card": "sources/ag-08.md"
         }
       ],
       "unknown_fields": [
@@ -769,11 +804,11 @@
       "kind": "payment-credential",
       "page": "payments/stripe.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-19",
       "summary": "Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.",
       "operator": "Stripe",
       "agent_can": "Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server",
-      "user_controls": "Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked",
+      "user_controls": "Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked, and Stripe can require you to approve certain MCP actions in the Dashboard",
       "mcp_server": "yes",
       "endpoint": "https://mcp.stripe.com",
       "availability": "Shared payment tokens are in public preview in the US, Canada and select European countries",
@@ -857,6 +892,11 @@
           "id": "pm-16",
           "url": "https://investor.visa.com/news/news-details/2026/Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
           "card": "sources/pm-16.md"
+        },
+        {
+          "id": "pm-18",
+          "url": "https://docs.stripe.com/mcp.md",
+          "card": "sources/pm-18.md"
         },
         {
           "id": "sp-01",

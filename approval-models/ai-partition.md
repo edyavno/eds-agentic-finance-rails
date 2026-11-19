@@ -24,7 +24,7 @@ Both cap what the agent can lose. The AI Partition adds an **eligibility gate**:
 
 [^ib-02]: [Interactive Brokers Introduces Autonomous Trading](../sources/ib-02.md). Interactive Brokers, official, retrieved 2026-11-12.
 [^ib-06]: [AI-Powered Portfolio Analysis & Trading Tools (IBKR AI Integrations)](../sources/ib-06.md). Interactive Brokers, official, retrieved 2026-11-12.
-[^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-12.
+[^rh-10]: [Robinhood is Now Open to Agents](../sources/rh-10.md). Robinhood, official, retrieved 2026-11-19.
 [^cb-07]: [Coinbase for Agents: Your AI Agent Can Now Trade and Pay with Coinbase](../sources/cb-07.md). Coinbase, official, retrieved 2026-11-12.
 
 ---

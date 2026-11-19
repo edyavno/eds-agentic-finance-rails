@@ -22,6 +22,10 @@ Agent2Agent. An open protocol for AI agents to talk to and hand tasks to other a
 
 A service that tells a bank or merchant whether a session is a person or an AI agent, and which AI provider the agent belongs to, by looking at signals such as device, behavior and network. It detects an agent; it does not prove who the agent is.
 
+## Agent skill
+
+A packaged set of instructions, often a SKILL.md file, that an AI agent loads to learn how to use a particular tool or service. A skill teaches the agent; it does not give it any access by itself.
+
 ## Agentic commerce
 
 Shopping and paying done by an AI agent on a person's behalf, from finding an item to checking out.
@@ -73,6 +77,10 @@ A company that connects apps to a person's bank and card accounts, with their pe
 ## Data Transparency Messaging
 
 A step in Plaid's Link screen that tells a person which types of data an app is asking for and why, before they agree. Plaid introduced it to help its customers comply with the US data-rights rule often called 1033.
+
+## Dead man's switch
+
+A timer that cancels all open orders automatically unless the program that set it keeps checking in. If the agent or its computer stops, the orders do not stay live.
 
 ## Dynamic Client Registration
 
