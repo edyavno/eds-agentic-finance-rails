@@ -11,12 +11,11 @@ The wiki covers five areas:
 - **Trading:** brokers that let agents read accounts and place orders. Start at [Trading](directory.md).
 - **Payments:** card networks, payment tokens and protocols that let agents pay. Start at [payments](payments/README.md).
 - **Personal money agents:** AI agents that work with bank and card data, banks' own AI tools, and how banks treat outside agents. Start at [personal money agents](personal-money/README.md).
-- **Advisors:** AI tools for financial advisors. This section is new and still thin; start at [advisor agents](advisors/README.md).
 - **Rails:** the shared plumbing underneath, such as identity, mandates and payment protocols. Start at [rails](rails/README.md).
 
 ## Use it
 
-- **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md), the [advisor agents](advisors/README.md) section and the [approval models](approval-models/README.md).
+- **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md) and the [approval models](approval-models/README.md).
 - **Quick answers:** the [FAQ](faq.md).
 - **Engineers:** see [Build it](build/README.md).
 - **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling. The site is at https://agenticfinancerails.com.
@@ -32,7 +31,6 @@ git clone https://github.com/edyavno/eds-agentic-finance-rails
 | `providers/` | One page per provider, with a YAML header of key fields |
 | `payments/` | One page per payment program or protocol, with a YAML header record |
 | `personal-money/` | Personal money agents, bank AI tools and bank positions, with YAML header records |
-| `advisors/` | AI tools for financial advisors |
 | `sources/` | One short card per source (summary, short quotes, fingerprint), never a full copy |
 | `approval-models/` | The five approval models |
 | `rails/` | Shared plumbing: OAuth MCP, local servers, payments, identity, mandates |

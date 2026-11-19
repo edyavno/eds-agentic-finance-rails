@@ -26,7 +26,6 @@ Every page in the wiki, generated from page headers.
 - [FAQ: AI agents and money](faq.md): Short cited answers to common questions
 - [Payments](payments/README.md): How AI agents pay: card networks, payment tokens, commerce and payment protocols
 - [Personal money agents](personal-money/README.md): Personal money agents, bank AI tools, and how banks treat outside agents
-- [Advisor agents](advisors/README.md): AI tools for financial advisors (new, still thin)
 - [Gaps - what we do not know yet](gaps.md): Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.
 
 ## Providers
@@ -72,14 +71,6 @@ Every page in the wiki, generated from page headers.
 - [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.
 - [Starling Assistant](personal-money/starling-assistant.md) (current): Starling Bank's in-app AI assistant will set up payments from voice or text, and the customer approves each one with a tap. It reaches all retail customers by the end of 2026.
 - [X Money](personal-money/x-money.md) (current): X Money is a US money account inside the X app, run by X Payments LLC with Cross River Bank. Through the Grok Bot plugin, an agent can read the balance and history, and send or pay with approval per action.
-
-## Advisor agents
-
-- [Advisor agents](advisors/README.md) (current): AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com.
-- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md) (current): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
-- [Nitrogen](advisors/nitrogen.md) (current): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
-- [Wealth.com](advisors/wealth-com.md) (current): Wealth.com's estate and tax planning connector now works in ChatGPT through its MCP, and its Ester assistant runs inside Schwab Advisor Center. The source describes planning only.
-- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md) (current): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
 
 ## Approval models
 
@@ -133,7 +124,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (185)
+## Sources (176)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -148,9 +139,6 @@ Every page in the wiki, generated from page headers.
 | [al-07](sources/al-07.md): Alpaca Launches MCP Servers in Public Beta for Broker Partners. | Alpaca | Alpaca | official | 2026-11-12 |
 | [al-08](sources/al-08.md): Broker API MCP (Alpaca Docs) | Alpaca | Alpaca Docs | official | 2026-11-12 |
 | [al-09](sources/al-09.md): Trading API MCP | Alpaca | Alpaca Docs | official | 2026-11-12 |
-| [an-01](sources/an-01.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
-| [an-02](sources/an-02.md): Claude for Financial Advisors \| Claude by Anthropic | Anthropic | Anthropic | official | 2026-11-13 |
-| [bd-01](sources/bd-01.md): 8 questions for the Wells Fargo wealth unit’s AI chief \| Banking Dive | Wells Fargo | Banking Dive | third-party | 2026-11-13 |
 | [bk-01](sources/bk-01.md): Booking.com: Terms and Conditions (Customer terms of service) | Booking.com | Booking.com | official | 2026-11-18 |
 | [bl-01](sources/bl-01.md): JPMorgan blocks outside AI agents like Muse, Instinct from account access | JPMorgan Chase | CNBC | third-party | 2026-11-12 |
 | [bl-02](sources/bl-02.md): Scoop: Unvetted AI agents are accessing U.S. bank accounts | Banks (JPM, MS, BofA, Citi, Wells) | Axios | third-party | 2026-11-12 |
@@ -201,13 +189,10 @@ Every page in the wiki, generated from page headers.
 | [mm-01](sources/mm-01.md): How Muse works with payments (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-02](sources/mm-02.md): How Muse works with Connectors (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-03](sources/mm-03.md): Introducing Muse (Meta newsroom) | Meta Muse | Meta | official | 2026-11-18 |
-| [ni-01](sources/ni-01.md): AI Agents Welcome \| Nitrogen | Nitrogen | Nitrogen | official | 2026-11-13 |
-| [ni-02](sources/ni-02.md): Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [np-02](sources/np-02.md): PrimeXBT Launches AI-Assisted Trading with MCP Integration, Connecting ChatGPT and Claude to Trading Accounts | PrimeXBT | GlobeNewswire | official | 2026-11-12 |
 | [ns-01](sources/ns-01.md): Frequently asked questions \| Nous | Nous | Nous | official | 2026-11-15 |
 | [ns-02](sources/ns-02.md): Terms of use \| Nous | Nous | Nous | official | 2026-11-15 |
 | [ns-03](sources/ns-03.md): We've raised $17M to get Nous into every household that's had enough of life admin | Nous | Nous | official | 2026-11-15 |
-| [nv-01](sources/nv-01.md): Nevis Raises $70M Series B Led by EQT Ventures – Nevis | Nevis | Nevis | official | 2026-11-13 |
 | [oa-01](sources/oa-01.md): Introducing ChatGPT Wallet | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
 | [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-15 |
 | [oa-03](sources/oa-03.md): ChatGPT Wallet terms | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
@@ -311,9 +296,6 @@ Every page in the wiki, generated from page headers.
 | [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-12 |
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
-| [wc-01](sources/wc-01.md): November 2026 Wealth.com Updates | Wealth.com | Wealth.com | official | 2026-11-18 |
-| [wf-01](sources/wf-01.md): Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience | Wells Fargo | Wells Fargo | official | 2026-11-13 |
-| [ws-01](sources/ws-01.md): Wealthtech Roundup: Anthropic, Schwab, Advyzon, Orion And More | Anthropic | Wealth Solutions Report | third-party | 2026-11-13 |
 | [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [xm-02](sources/xm-02.md): Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform | X Money | Cross River Bank | third-party | 2026-11-18 |
 | [xm-03](sources/xm-03.md): X Money overview (payments.x.com) | X Money | X Corp | official | 2026-11-18 |

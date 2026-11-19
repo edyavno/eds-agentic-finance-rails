@@ -160,3 +160,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Not ingested: the CFPB 1033 / OIRA article (declined), Copilot, Alexa+ and Apple (no primary sources), and third-party explainers on X Money and Grok Bot (leads only; one unverified claim about Grok Bot linking X Money was deliberately not published).
 - Unknown: whether OpenAI dots can read Finances data; whether Muse can pay from a bank account or pay bills; the price in the JPMorgan and Plaid agreement; Perplexity's own description of Personal CFO (its page could not be fetched, so Plaid is cited); the launch date of Claude Duet; X Money agent limits and whether agents other than Grok Bot can connect; which institutions each assistant supports.
 - Notes: Meta's help pages and OpenAI's pages load only through a reader. The Grok Bot Finance plugin README carries a general caution that third-party connectors are not built or maintained by xAI, which the Grok Bot page repeats. The Grok Bot changelog (gb-05) is a running page, so its fingerprint will change as entries are added.
+
+## [2026-11-18] remove | Advisor agents section
+
+- Removed the Advisor agents section to keep the wiki focused on end-user agents: advisors/README.md and the four advisor pages, nine source cards (an-01, an-02, ni-01, ni-02, nv-01, wc-01, wf-01, ws-01, bd-01), the advisor type from the page schema, and the advisor links, entries and FAQ answer on README, index, llms.txt, overview, directory, faq and gaps. Older changelog and log entries stay, with their advisor links turned into plain text.
+- /advisors, /advisors/ and the four advisor page addresses now redirect to /overview. Source card bl-11 (Schwab) stays. The Interactive Brokers line on advisor-managed accounts is unchanged.

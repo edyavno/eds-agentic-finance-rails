@@ -34,10 +34,6 @@ No. Some merchants forbid agents in their terms. eBay bans buy-for-me agents wit
 
 Often not fully, according to news reports. They say several big US banks block outside agents that log in with a customer's password,[^bl-02][^bl-08] and that most allow read-only access at best, while some build their own AI tools.[^bl-01][^bl-02] See [Banks and outside agents](personal-money/banks-and-outside-agents.md).
 
-## Can AI tools for financial advisors place trades?
-
-Not on their own, for the two whose official pages address it. Anthropic's solutions page says "Claude doesn’t place trades or move money."[^an-02] Nitrogen's agents page says "Every action still requires your approval."[^ni-01] Wells Fargo's launch release describes AI Teammate as search and summary help for advisor teams; whether it can place trades is unknown.[^wf-01] See [Advisor agents](advisors/README.md).
-
 ## Sources
 
 [^al-02]: [GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat](sources/al-02.md). Alpaca (GitHub), official, retrieved 2026-11-12.
@@ -63,9 +59,6 @@ Not on their own, for the two whose official pages address it. Anthropic's solut
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
-[^an-02]: [Claude for Financial Advisors - Claude by Anthropic](sources/an-02.md). Anthropic, official, retrieved 2026-11-13.
-[^ni-01]: [AI Agents Welcome - Nitrogen](sources/ni-01.md). Nitrogen, official, retrieved 2026-11-13.
-[^wf-01]: [Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience](sources/wf-01.md). Wells Fargo, official, retrieved 2026-11-13.
 
 ---
 

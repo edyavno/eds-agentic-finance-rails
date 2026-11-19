@@ -181,20 +181,6 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Weekly Banking Bulletin, July 24, 2026 (New York DFS)](xm-07.md) | New York State Department of Financial Services | third-party | 2026-11-18 |
 | [X Money on X: "𝕏 Money is rolling out to U.S. Premium and Premium+ subscribers starting today"](xm-08.md) | X Money (@XMoney on X) | official | 2026-11-18 |
 
-### Advisor agents
-
-| Source card | Publisher | Official or third-party | Retrieved |
-|---|---|---|---|
-| [Claude for Financial Advisors \| Claude by Anthropic](an-01.md) | Anthropic | official | 2026-11-13 |
-| [Claude for Financial Advisors \| Claude by Anthropic](an-02.md) | Anthropic | official | 2026-11-13 |
-| [Wealthtech Roundup: Anthropic, Schwab, Advyzon, Orion And More](ws-01.md) | Wealth Solutions Report | third-party | 2026-11-13 |
-| [Nevis Raises $70M Series B Led by EQT Ventures – Nevis](nv-01.md) | Nevis | official | 2026-11-13 |
-| [AI Agents Welcome \| Nitrogen](ni-01.md) | Nitrogen | official | 2026-11-13 |
-| [Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities](ni-02.md) | Nitrogen | official | 2026-11-13 |
-| [November 2026 Wealth.com Updates](wc-01.md) | Wealth.com | official | 2026-11-18 |
-| [8 questions for the Wells Fargo wealth unit’s AI chief \| Banking Dive](bd-01.md) | Banking Dive | third-party | 2026-11-13 |
-| [Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience](wf-01.md) | Wells Fargo | official | 2026-11-13 |
-
 ### Agent identity
 
 | Source card | Publisher | Official or third-party | Retrieved |

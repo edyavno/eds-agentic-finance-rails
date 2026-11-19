@@ -53,18 +53,9 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 - [Starling Assistant](personal-money/starling-assistant.md) is a UK bank's in-app agent that will set up payments from voice or text, with a tap to approve each one.[^st-01]
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) is the bank's own pilot tool to forecast cash flow and move funds for yield (news report).[^bl-01]
 
-## Advisor agents
-
-The wiki also covers AI tools for financial advisors, in a new [advisor agents](advisors/README.md) section that is still thin. Current pages:
-
-- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md), including official connector names and that Claude does not place trades or move money.[^an-01][^an-02]
-- [Nitrogen](advisors/nitrogen.md), including an official MCP server and approval-required actions.[^ni-01][^ni-02]
-- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md), from Wells Fargo's July 15, 2026 launch release.[^wf-01]
-- [Wealth.com](advisors/wealth-com.md), whose estate and tax connector now works in ChatGPT and whose assistant is embedded in Schwab Advisor Center.[^wc-01]
-
 ## How to read this wiki
 
-- [Trading](directory.md) is the one-table view of launch brokers. Payments, personal money and advisor tools each have their own section page: [payments](payments/README.md), [personal money agents](personal-money/README.md) and [advisor agents](advisors/README.md). Short answers are in the [FAQ](faq.md).
+- [Trading](directory.md) is the one-table view of launch brokers. Payments and personal money each have their own section page: [payments](payments/README.md) and [personal money agents](personal-money/README.md). Short answers are in the [FAQ](faq.md).
 - The [glossary](glossary.md) defines recurring terms.
 - [Providers](providers/README.md) lists the brokers covered, [comparisons](comparisons/README.md) put them side by side, and [sources](sources/README.md) lists every outside page the wiki cites.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
@@ -121,12 +112,6 @@ The wiki also covers AI tools for financial advisors, in a new [advisor agents](
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 [^gg-01]: [Connect Google Wallet to Gemini for personal finance insights](sources/gg-01.md). Google, official, retrieved 2026-11-18.
 [^st-01]: ['Talk to transact': Starling customers can use their voice to send money](sources/st-01.md). Starling Bank, official, retrieved 2026-11-18.
-[^an-01]: [Claude for Financial Advisors - Claude by Anthropic](sources/an-01.md). Anthropic, official, retrieved 2026-11-13.
-[^an-02]: [Claude for Financial Advisors - Claude by Anthropic](sources/an-02.md). Anthropic, official, retrieved 2026-11-13.
-[^ni-01]: [AI Agents Welcome - Nitrogen](sources/ni-01.md). Nitrogen, official, retrieved 2026-11-13.
-[^ni-02]: [Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities](sources/ni-02.md). Nitrogen, official, retrieved 2026-11-13.
-[^wf-01]: [Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience](sources/wf-01.md). Wells Fargo, official, retrieved 2026-11-13.
-[^wc-01]: [November 2026 Wealth.com Updates](sources/wc-01.md). Wealth.com, official, retrieved 2026-11-18.
 
 ---
 

@@ -36,10 +36,6 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Merchant rules beyond eBay, United, Target and Booking.com**, and whether eBay, United or Booking.com grant permission to any agent today.[^eb-01][^ua-02][^tg-01][^bk-01]
 - **The airline, date and volume** in the live Mastercard Agent Pay flight purchase. The announcement names none of them.[^pm-17]
 
-## Advisor agents
-
-The [advisor agents](advisors/README.md) section is new and still thin: only Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com have pages so far. Official coverage of other advisor platforms, and of approval and access rules beyond the sources already cited, has not been collected yet.
-
 ## Unknown fields by provider
 
 See the `unknown` values in [data/providers.csv](data/providers.csv) or the [Trading](directory.md) page.

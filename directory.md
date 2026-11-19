@@ -33,7 +33,7 @@ Key fields for every provider, generated from the YAML headers in `providers/`. 
 
 ## Other sections
 
-Payment programs, personal money agents and advisor tools are not brokers, so they have their own pages: [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Advisor agents](advisors/README.md). Their records are also in [data/programs.json](data/programs.json).
+Payment programs and personal money agents are not brokers, so they have their own pages: [Payments](payments/README.md), [Personal money agents](personal-money/README.md). Their records are also in [data/programs.json](data/programs.json).
 
 Approval models are explained in [approval-models/](approval-models/README.md).
 A page marked stale or archived should not be treated as current; check last_verified.

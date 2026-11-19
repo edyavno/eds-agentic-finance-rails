@@ -15,7 +15,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [AGENTS.md](AGENTS.md): how to read and cite the wiki, and how to send corrections
 - [Trading](directory.md): short answer to which brokers let AI agents trade and who approves, then key fields for every broker
 - [FAQ](faq.md): short cited answers to common questions
-- [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Advisor agents](advisors/README.md), [Rails](rails/README.md): section home pages
+- [Payments](payments/README.md), [Personal money agents](personal-money/README.md), [Rails](rails/README.md): section home pages
 - [Approval models](approval-models/README.md): the five ways an agent's order gets approved
 - [What changed](changelog/README.md): every update, newest first, with the wiki in numbers
 - llms-full.txt (on the site): every hand-written page in one file
@@ -67,14 +67,6 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Plaid MCP servers](personal-money/plaid.md): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.
 - [Starling Assistant](personal-money/starling-assistant.md): Starling Bank's in-app AI assistant will set up payments from voice or text, and the customer approves each one with a tap. It reaches all retail customers by the end of 2026.
 - [X Money](personal-money/x-money.md): X Money is a US money account inside the X app, run by X Payments LLC with Cross River Bank. Through the Grok Bot plugin, an agent can read the balance and history, and send or pay with approval per action.
-
-## Advisor agents
-
-- [Advisor agents](advisors/README.md): AI tools that help financial advisors work with client data and firm systems: Claude for Financial Advisors, Nitrogen, Wells Fargo AI Teammate and Wealth.com.
-- [Claude for Financial Advisors](advisors/claude-for-financial-advisors.md): Anthropic's advisor product, with official connectors into firm systems. Official pages say Claude does not place trades or move money, and they recommend Enterprise for RIAs.
-- [Nitrogen](advisors/nitrogen.md): Official Nitrogen agents page documents an MCP server and approval-required actions. A Fall 2026 announcement said the suite was brought into Claude and ChatGPT and Nucleus was expanded.
-- [Wealth.com](advisors/wealth-com.md): Wealth.com's estate and tax planning connector now works in ChatGPT through its MCP, and its Ester assistant runs inside Schwab Advisor Center. The source describes planning only.
-- [Wells Fargo AI Teammate](advisors/wells-fargo-ai-teammate.md): Official July 15, 2026 launch of a chat-based AI capability embedded in Advisor Gateway for WIM advisors, including FiNet. Later interview figures are company-reported and are labeled as such.
 
 ## Approval models
 
