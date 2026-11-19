@@ -102,7 +102,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [AgentBank FAQ: banking for AI agents \| AgentBank](ag-03.md) | AgentBank | official | 2026-11-15 |
 | [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](pm-07.md) | ACP (GitHub) | official | 2026-11-12 |
 | [Introducing ChatGPT Wallet](oa-01.md) | OpenAI | official | 2026-11-15 |
-| [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-15 |
+| [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-19 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
 | [Accept payments - OpenAI Commerce](oa-04.md) | OpenAI Developers | official | 2026-11-15 |
 | [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
@@ -221,6 +221,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [User Agreement \| eBay](eb-01.md) | eBay | official | 2026-11-15 |
 | [JPMorgan blocks outside AI agents like Muse, Instinct from account access](bl-01.md) | CNBC | third-party | 2026-11-12 |
 | [JPMorgan CEO Dimon warns customers of 'liability transfer' with AI](bl-07.md) | Banking Dive | third-party | 2026-11-12 |
+| [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](bl-12.md) | The Wall Street Journal (syndicated on Mint) | third-party | 2026-11-19 |
+| [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](bl-13.md) | PYMNTS | third-party | 2026-11-19 |
 | [Terms & Conditions : Target](tg-01.md) | Target | official | 2026-11-18 |
 | [Contract of Carriage Document \| United Airlines](ua-01.md) | United Airlines | official | 2026-11-15 |
 | [Unauthorized third-party AI agents or assistants \| United Airlines](ua-02.md) | United Airlines | official | 2026-11-15 |

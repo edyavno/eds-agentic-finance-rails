@@ -165,3 +165,11 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 
 - Removed the Advisor agents section to keep the wiki focused on end-user agents: advisors/README.md and the four advisor pages, nine source cards (an-01, an-02, ni-01, ni-02, nv-01, wc-01, wf-01, ws-01, bd-01), the advisor type from the page schema, and the advisor links, entries and FAQ answer on README, index, llms.txt, overview, directory, faq and gaps. Older changelog and log entries stay, with their advisor links turned into plain text.
 - /advisors, /advisors/ and the four advisor page addresses now redirect to /overview. Source card bl-11 (Schwab) stays. The Interactive Brokers line on advisor-managed accounts is unchanged.
+
+## [2026-11-19] ingest | Chase block on agents shopping with a card number; Chase cards in ChatGPT Wallet
+- Retrieved and ingested source cards bl-12 (Wall Street Journal report by AnnaMaria Andriotis, Ben Glickman and Gina Heeb, syndicated on Mint, reader fetch) and bl-13 (PYMNTS summary of the same report, reader fetch), both third-party. Re-read oa-02 (OpenAI Help Center, Making purchases with ChatGPT Wallet, reader fetch): the page now has a Chase section and a primary-cardholder rule, so the card's date, fingerprint, summary and quotes were updated. Its older quote on Chat, Work and Codex threads is kept; the availability quote now includes the primary-cardholder sentence.
+- New pages: changelog/2026-11-19.md.
+- Edited: personal-money/banks-and-outside-agents.md (Chase card block, other banks' cards, Link, ChatGPT Wallet and Chase side by side), payments/link-wallet-for-agents.md (Chase cards and merchant cost), payments/merchants-and-outside-agents.md (merchants on agent virtual cards), payments/chatgpt-wallet.md (steps to add a Chase card), glossary.md (Agentic token).
+- Not ingested: the Kinexys and Hyundai Card agent-to-agent FX test (declined).
+- Unknown: whether Chase's card block applies to agents that use ChatGPT Wallet; how much more the Link virtual card costs merchants; whether Visa or Mastercard have responded. The WSJ attributes the Chase block and the slow adoption of agentic tokens to people familiar with the matter, not to the bank.
+- Notes: the PYMNTS article repeats the Journal's reporting and adds its own earlier coverage; only the points the Journal report carries were used.

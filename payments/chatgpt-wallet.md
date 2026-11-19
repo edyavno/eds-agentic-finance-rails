@@ -4,7 +4,7 @@ id: chatgpt-wallet
 title: ChatGPT Wallet
 summary: OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 page_status: current
-last_verified: '2026-11-15'
+last_verified: '2026-11-19'
 kind: payment-credential
 operator: OpenAI, built with American Express, Mastercard and Visa
 agent_can: Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it
@@ -56,6 +56,16 @@ Wallet does not hold a balance, extend credit or move funds.[^oa-03] OpenAI says
 
 Wallet started rolling out on 2026-11-13 in dots, OpenAI's agents, for ChatGPT Pro subscribers in the US aged 18 or older.[^oa-01] It works with eligible US-issued American Express, Chase, Mastercard and Visa cards. It is not available in Chat, Work or standalone Codex threads.[^oa-02]
 
+## How do I add a Chase card?
+
+OpenAI's help page gives these steps for an eligible Chase card:[^oa-02]
+
+1. Install the Chase app on your phone and sign in with biometrics.
+2. Follow the setup link to approve the connection in the Chase mobile app. If you are on a computer, scan the QR code with your phone.
+3. After approving in the Chase app, return to Wallet to finish setup.
+
+You must be the primary cardholder, not an authorized user.[^oa-02] See also [Banks and outside agents](../personal-money/banks-and-outside-agents.md#what-about-shopping-with-a-card) for a news report on Chase and agents that shop with a card number.
+
 ## Related ChatGPT pages
 
 - [Finances in ChatGPT](../personal-money/chatgpt-finances.md) reads your accounts through Plaid. It is separate from the wallet and cannot move money.[^oa-05]
@@ -70,7 +80,7 @@ All programs: [Payments](README.md).
 ## Sources
 
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
-[^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-15.
+[^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.
 [^oa-04]: [Accept payments - OpenAI Commerce](../sources/oa-04.md). OpenAI Developers, official, retrieved 2026-11-15.
 [^oa-03]: [ChatGPT Wallet terms](../sources/oa-03.md). OpenAI, official, retrieved 2026-11-15.
 [^oa-05]: [Finances in ChatGPT (OpenAI Help Center)](../sources/oa-05.md). OpenAI, official, retrieved 2026-11-18.

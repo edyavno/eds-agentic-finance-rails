@@ -56,7 +56,7 @@ Every page in the wiki, generated from page headers.
 ## Personal money agents
 
 - [Personal money agents](personal-money/README.md) (current): AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
-- [Banks and outside agents](personal-money/banks-and-outside-agents.md) (current): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
+- [Banks and outside agents](personal-money/banks-and-outside-agents.md) (current): What news reports say about big US banks blocking or limiting outside AI agents, including Chase's block on agents shopping with a card number, the read-only middle ground, and the US data-rights rule in the background.
 - [Finances in ChatGPT](personal-money/chatgpt-finances.md) (current): Finances in ChatGPT reads your accounts through Plaid and credit reports through Experian, in the US. OpenAI says it cannot move money, pay bills, trade or change account settings.
 - [Claude Duet](personal-money/claude-duet.md) (current): Claude Duet is Anthropic's proactive agent app, in research preview. It asks before it pays, sends or deletes, pays with a one-time Link card, and cannot trade or move money between accounts.
 - [Claude Personal Finance](personal-money/claude-personal-finance.md) (current): Claude's Personal Finance feature reads your balances and transactions from banks you link through Plaid, read-only. It cannot move, manage or invest money. It is in beta on paid US plans.
@@ -110,6 +110,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, and the steps to add a Chase card to ChatGPT Wallet.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
@@ -124,7 +125,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (176)
+## Sources (178)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -150,6 +151,8 @@ Every page in the wiki, generated from page headers.
 | [bl-09](sources/bl-09.md): Schwab and JPMorgan are blocking outside AI agents from accounts | Charles Schwab / JPMorgan | Quartz | third-party | 2026-11-12 |
 | [bl-10](sources/bl-10.md): Schwab blocks outside AI agents and steers clients to Charley: the cash-sweep stakes for client-side agents | Charles Schwab | The Exchange (theexchange.tech) | third-party | 2026-11-12 |
 | [bl-11](sources/bl-11.md): Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM \| RIABiz | Charles Schwab | RIABiz | third-party | 2026-11-13 |
+| [bl-12](sources/bl-12.md): AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint) | JPMorgan Chase | The Wall Street Journal (syndicated on Mint) | third-party | 2026-11-19 |
+| [bl-13](sources/bl-13.md): JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS) | JPMorgan Chase | PYMNTS | third-party | 2026-11-19 |
 | [cb-01](sources/cb-01.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-03](sources/cb-03.md): Coinbase for Agents setup skill (skill.md) | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-04](sources/cb-04.md): Coinbase for Agents MCP: OAuth protected-resource metadata | Coinbase | Coinbase (endpoint metadata) | official | 2026-11-12 |
@@ -194,7 +197,7 @@ Every page in the wiki, generated from page headers.
 | [ns-02](sources/ns-02.md): Terms of use \| Nous | Nous | Nous | official | 2026-11-15 |
 | [ns-03](sources/ns-03.md): We've raised $17M to get Nous into every household that's had enough of life admin | Nous | Nous | official | 2026-11-15 |
 | [oa-01](sources/oa-01.md): Introducing ChatGPT Wallet | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
-| [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-15 |
+| [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-19 |
 | [oa-03](sources/oa-03.md): ChatGPT Wallet terms | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
 | [oa-04](sources/oa-04.md): Accept payments - OpenAI Commerce | ChatGPT Wallet | OpenAI Developers | official | 2026-11-15 |
 | [oa-05](sources/oa-05.md): Finances in ChatGPT (OpenAI Help Center) | ChatGPT Finances | OpenAI | official | 2026-11-18 |

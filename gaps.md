@@ -31,6 +31,7 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Agent access to X Money beyond Grok Bot.** The plugin README describes Grok Bot, X's own help pages do not mention agents, and no source gives the separate agent limits.
 - **Perplexity's own description of Personal CFO.** The wiki relies on Plaid's posts, because Perplexity's page could not be fetched.
 - **The price in the JPMorgan and Plaid data agreement.** The press release says it includes a pricing structure but gives no figure.
+- **Whether Chase's card block applies to agents that use ChatGPT Wallet.** The Wall Street Journal report on the block does not mention Wallet, and OpenAI's help page does not mention the block.[^bl-12][^oa-02]
 - **Whether ChatGPT Wallet runs on** Visa Intelligent Commerce or Mastercard Agent Pay. OpenAI names the networks as partners but not the programs.[^oa-01]
 - **Nous's own FCA status.** Nous names its FCA-regulated open banking provider, but no cited source says whether Nous itself is authorised or an appointed representative.[^ns-02]
 - **Merchant rules beyond eBay, United, Target and Booking.com**, and whether eBay, United or Booking.com grant permission to any agent today.[^eb-01][^ua-02][^tg-01][^bk-01]
@@ -58,6 +59,8 @@ These cards are prior art or competing directories. They are leads only: use the
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
+[^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
+[^oa-02]: [Making purchases with ChatGPT Wallet](sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.
 [^oa-01]: [Introducing ChatGPT Wallet](sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^ns-02]: [Terms of use - Nous](sources/ns-02.md). Nous, official, retrieved 2026-11-15.
 [^eb-01]: [User Agreement - eBay](sources/eb-01.md). eBay, official, retrieved 2026-11-15.

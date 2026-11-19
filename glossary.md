@@ -30,6 +30,10 @@ Shopping and paying done by an AI agent on a person's behalf, from finding an it
 
 Visa's program for testing agent-initiated payments. Card issuers joined first, and in 2026-11 it opened to merchants, payment providers and acquirers.
 
+## Agentic token
+
+A [payment token](#payment-token) from Visa or Mastercard made for AI agents. It hides the card number and can carry extra data, such as what the shopper wants bought, a spending limit and whether the agent is trusted.
+
 ## AI Partition
 
 A separately funded slice of an account reserved for an agent, so the rest of the account stays out of reach.

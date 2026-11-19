@@ -4,7 +4,7 @@ id: link-wallet-for-agents
 title: Link wallet for agents
 summary: Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 kind: payment-credential
 operator: Stripe
 agent_can: Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount
@@ -46,6 +46,13 @@ Stripe says Link's wallet for agents is built on its Issuing primitives, and it 
 - **Grok Bot and Instinct.** Stripe says the Link agent wallet helps power payments for Grok Bot and Instinct.[^sp-01] Grok Bot's changelog says Link completes the payment after the person taps Allow on a purchase card.[^gb-05] See [Grok Bot](../personal-money/grok-bot.md) and [Instinct](../personal-money/instinct.md).
 - **Claude Duet.** Anthropic says Duet pays with a one-time card from a wallet like Link from Stripe, limited to the merchant and amount, and the person approves in the Link app.[^cl-03] See [Claude Duet](../personal-money/claude-duet.md).
 
+## Does Link work with Chase cards?
+
+A Wall Street Journal report of 2026-11-13, citing people familiar with the matter, says JPMorgan Chase has been blocking agents when consumers give the bots their card information. It says Stripe has a separate mechanism that can be used for Chase cards and other issuers: Stripe's wallet uses a one-time virtual card equal to the purchase amount, then charges the purchase amount to the consumer's actual card.[^bl-12] PYMNTS describes the same flow: the shopper sees one charge on the card they chose, and the merchant is paid by a different card.[^bl-13] Both are third-party reports. See [Banks and outside agents](../personal-money/banks-and-outside-agents.md#what-about-shopping-with-a-card).
+
+- **Agentic tokens.** The report says Link also uses [agentic tokens](../glossary.md#agentic-token) from Visa and Mastercard, and that Chase has been slow to implement them.[^bl-12]
+- **Cost to merchants.** Merchants are complaining to Visa and Mastercard that the virtual card costs them higher fees on average than the shopper's own card, because it is classified as a commercial card rather than a consumer card. Some merchant executives also say the temporary cards make returns harder to process.[^bl-12] See [Merchants and outside agents](merchants-and-outside-agents.md#what-do-merchants-say-about-agent-virtual-cards).
+
 ## What else did Stripe add?
 
 - **Incremental authorization.** An agent can request a higher approved amount when the final price exceeds the original, for example when a checked bag is added to a flight.[^sp-03]
@@ -57,6 +64,7 @@ Stripe says Link's wallet for agents is built on its Issuing primitives, and it 
 
 - Whether Link's agent wallet has an official MCP server or a public endpoint for consumer agents. The cited posts describe a command-line tool and APIs but no MCP address.
 - Which countries beyond the US can connect Link to agents.
+- How much more the virtual card costs merchants, and which other issuers' cards depend on it. The cited reports give no figure.
 - When spending limits that skip per-purchase approval will launch. Stripe gives no date.
 
 More on payments: [Payments](README.md).
@@ -67,6 +75,8 @@ More on payments: [Payments](README.md).
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^gb-05]: [Grok Bot changelog](../sources/gb-05.md). xAI, official, retrieved 2026-11-18.
 [^cl-03]: [Claude Duet safety, privacy and security](../sources/cl-03.md). Anthropic, official, retrieved 2026-11-18.
+[^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
+[^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 [^sp-03]: [Helping personal agents shop more intelligently and reliably with Link (Stripe)](../sources/sp-03.md). Stripe, official, retrieved 2026-11-18.
 
 ---

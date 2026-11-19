@@ -3,7 +3,7 @@ type: payment
 title: Merchants and outside agents
 summary: Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-19'
 ---
 
 # Merchants and outside agents
@@ -39,6 +39,10 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 - eBay's agreement gives no reason in the cited text.[^eb-01] The cited Booking.com terms give none for their agent rule either.[^bk-01]
 - Target's terms give no reason for limiting agents to a list. They say Target may restrict an agent's access for suspected fraud, misuse, policy violations or security concerns, and that it is not responsible for third-party agents' conduct.[^tg-01]
 
+## What do merchants say about agent virtual cards?
+
+When an agent pays through Stripe's [Link wallet](link-wallet-for-agents.md) with a one-time [virtual card](../glossary.md#virtual-card), the merchant is paid by that card, not by the shopper's own. The Wall Street Journal reported on 2026-11-13, citing people familiar with the matter, that merchants are complaining to Visa and Mastercard that the virtual card costs more on average to accept, because it is classified as a commercial card rather than a consumer card. It also reported that the temporary cards have made returns harder to process, according to some merchant executives.[^bl-12][^bl-13] These are third-party reports. How large the extra cost is, and whether Visa or Mastercard have responded, is unknown.
+
 ## Related
 
 - [Banks and outside agents](../personal-money/banks-and-outside-agents.md): the same question for bank accounts.
@@ -57,6 +61,8 @@ How these merchants detect agents, whether eBay, United or Booking.com grant per
 [^tg-01]: [Terms & Conditions : Target](../sources/tg-01.md). Target, official, retrieved 2026-11-18.
 [^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](../sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
+[^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 
 ---
 

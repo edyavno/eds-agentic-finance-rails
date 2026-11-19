@@ -240,7 +240,7 @@
       "kind": "payment-credential",
       "page": "payments/chatgpt-wallet.md",
       "page_status": "current",
-      "last_verified": "2026-11-15",
+      "last_verified": "2026-11-19",
       "summary": "OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.",
       "operator": "OpenAI, built with American Express, Mastercard and Visa",
       "agent_can": "Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it",
@@ -343,7 +343,7 @@
       "kind": "payment-credential",
       "page": "payments/link-wallet-for-agents.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-19",
       "summary": "Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.",
       "operator": "Stripe",
       "agent_can": "Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount",
@@ -403,6 +403,16 @@
         ]
       },
       "sources": [
+        {
+          "id": "bl-12",
+          "url": "https://www.livemint.com/global/ai-bots-are-using-credit-cards-banks-are-racing-to-keep-up-11794532545442.html",
+          "card": "sources/bl-12.md"
+        },
+        {
+          "id": "bl-13",
+          "url": "https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/",
+          "card": "sources/bl-13.md"
+        },
         {
           "id": "cl-03",
           "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
