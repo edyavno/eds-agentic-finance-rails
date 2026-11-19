@@ -319,6 +319,114 @@
           "id": "oa-04",
           "url": "https://developers.openai.com/commerce/guides/accept-payments",
           "card": "sources/oa-04.md"
+        },
+        {
+          "id": "oa-05",
+          "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+          "card": "sources/oa-05.md"
+        },
+        {
+          "id": "oa-07",
+          "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+          "card": "sources/oa-07.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "link-wallet-for-agents",
+      "section": "payment",
+      "title": "Link wallet for agents",
+      "kind": "payment-credential",
+      "page": "payments/link-wallet-for-agents.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.",
+      "operator": "Stripe",
+      "agent_can": "Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount",
+      "user_controls": "The person grants wallet access through OAuth and approves each spend request in Link on web, iOS or Android. They can track agent spending and manage connected agents in Link. Stripe plans spending limits and a way to let agents act without approving each purchase, with no date given",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Stripe announced Link's wallet for agents on 2026-04-29. Its 2026-09-08 release says US consumers can connect Link to Muse, and its 2026-09-29 post says Muse is the first agent to offer Link purchase protections",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "sp-02",
+            "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "sp-02",
+            "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+            "authority": "official"
+          },
+          {
+            "id": "sp-03",
+            "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "sp-02",
+            "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+            "authority": "official"
+          },
+          {
+            "id": "sp-03",
+            "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "sp-01",
+            "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+            "authority": "official"
+          },
+          {
+            "id": "sp-02",
+            "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+            "authority": "official"
+          },
+          {
+            "id": "sp-03",
+            "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cl-03",
+          "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+          "card": "sources/cl-03.md"
+        },
+        {
+          "id": "gb-05",
+          "url": "https://x.ai/changelog/bot",
+          "card": "sources/gb-05.md"
+        },
+        {
+          "id": "sp-01",
+          "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+          "card": "sources/sp-01.md"
+        },
+        {
+          "id": "sp-02",
+          "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+          "card": "sources/sp-02.md"
+        },
+        {
+          "id": "sp-03",
+          "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+          "card": "sources/sp-03.md"
         }
       ],
       "unknown_fields": [
@@ -739,6 +847,16 @@
           "id": "pm-16",
           "url": "https://investor.visa.com/news/news-details/2026/Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
           "card": "sources/pm-16.md"
+        },
+        {
+          "id": "sp-01",
+          "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+          "card": "sources/sp-01.md"
+        },
+        {
+          "id": "sp-02",
+          "url": "https://stripe.com/blog/giving-agents-the-ability-to-pay",
+          "card": "sources/sp-02.md"
         }
       ],
       "unknown_fields": []
@@ -931,6 +1049,240 @@
       ]
     },
     {
+      "id": "chatgpt-finances",
+      "section": "personal-money",
+      "title": "Finances in ChatGPT",
+      "kind": "personal-agent",
+      "page": "personal-money/chatgpt-finances.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Finances in ChatGPT reads your accounts through Plaid and credit reports through Experian, in the US. OpenAI says it cannot move money, pay bills, trade or change account settings.",
+      "operator": "OpenAI",
+      "agent_can": "Read balances, transactions, investments and liabilities from accounts connected through Plaid, and credit report data through Experian, to show a dashboard and answer questions. It cannot move money, pay bills, change account settings, make trades, change retirement contributions, open or close accounts or file taxes",
+      "user_controls": "You choose to connect each source, and Plaid and Experian are separate connections. You can disconnect Finances in Settings, which removes the connected data from ChatGPT, and view or delete financial memories. Temporary chats do not access connected accounts",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "In the US for Free, Go, Plus and Pro users on web, iOS and Android. Launched as a Pro preview on 2026-05-15, then Plus and Pro on 2026-06-25 and Free and Go from 2026-10-02",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "oa-05",
+            "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "oa-05",
+            "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+            "authority": "official"
+          },
+          {
+            "id": "oa-06",
+            "url": "https://openai.com/index/personal-finance-chatgpt/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "oa-05",
+            "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+            "authority": "official"
+          },
+          {
+            "id": "oa-06",
+            "url": "https://openai.com/index/personal-finance-chatgpt/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "oa-05",
+            "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+            "authority": "official"
+          },
+          {
+            "id": "oa-06",
+            "url": "https://openai.com/index/personal-finance-chatgpt/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "oa-05",
+          "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+          "card": "sources/oa-05.md"
+        },
+        {
+          "id": "oa-06",
+          "url": "https://openai.com/index/personal-finance-chatgpt/",
+          "card": "sources/oa-06.md"
+        },
+        {
+          "id": "pb-11",
+          "url": "https://plaid.com/blog/chatgpt-personal-finance-plaid/",
+          "card": "sources/pb-11.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "claude-duet",
+      "section": "personal-money",
+      "title": "Claude Duet",
+      "kind": "personal-agent",
+      "page": "personal-money/claude-duet.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Claude Duet is Anthropic's proactive agent app, in research preview. It asks before it pays, sends or deletes, pays with a one-time Link card, and cannot trade or move money between accounts.",
+      "operator": "Anthropic",
+      "agent_can": "Work as a proactive agent with its own virtual machine and browser, across connected apps. For purchases it pays with a one-time card from a wallet like Link from Stripe, limited to that merchant and amount. Trading securities and banking actions such as moving money between accounts stay off-limits even with approval",
+      "user_controls": "It shows the action, destination and content and waits for approval before sending a sensitive message, paying or deleting, with a separate automated check running alongside. Paying or sending money cannot be covered by a don't-ask-again rule. You approve a purchase in your Link app",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Research preview on iOS, Android and claude.ai, included in Pro, Max and Ultra plans. It starts with Pro, Max and Ultra users in the US, through a waitlist",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "cl-04",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "cl-03",
+            "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+            "authority": "official"
+          },
+          {
+            "id": "cl-04",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "cl-03",
+            "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "cl-04",
+            "url": "https://claude.com/resources/articles/claude-duet",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cl-01",
+          "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+          "card": "sources/cl-01.md"
+        },
+        {
+          "id": "cl-03",
+          "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+          "card": "sources/cl-03.md"
+        },
+        {
+          "id": "cl-04",
+          "url": "https://claude.com/resources/articles/claude-duet",
+          "card": "sources/cl-04.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "claude-personal-finance",
+      "section": "personal-money",
+      "title": "Claude Personal Finance",
+      "kind": "personal-agent",
+      "page": "personal-money/claude-personal-finance.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Claude's Personal Finance feature reads your balances and transactions from banks you link through Plaid, read-only. It cannot move, manage or invest money. It is in beta on paid US plans.",
+      "operator": "Anthropic",
+      "agent_can": "Read linked accounts through Plaid, read-only, to answer questions and build widgets, including account names, types and last four digits, up to 24 months of transactions, and balances and credit limits. It cannot move, manage or invest money",
+      "user_controls": "You sign in to your bank through Plaid and choose which accounts to share, and can link up to 16 banks. You can unlink a bank, turn the Plaid connector off or set it to ask before each read, and disconnect Claude at my.plaid.com. Claude asks before linking or unlinking a bank in a chat",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "In beta on Pro, Max and Ultra plans in the US only, on Claude web, desktop, iOS and Android. Not on Free, Team or Enterprise plans. Rolling out gradually",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "cl-01",
+            "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "cl-01",
+            "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+            "authority": "official"
+          },
+          {
+            "id": "cl-02",
+            "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+            "authority": "official"
+          },
+          {
+            "id": "pb-10",
+            "url": "https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "cl-01",
+            "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "cl-01",
+            "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cl-01",
+          "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+          "card": "sources/cl-01.md"
+        },
+        {
+          "id": "cl-02",
+          "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+          "card": "sources/cl-02.md"
+        },
+        {
+          "id": "pb-10",
+          "url": "https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/",
+          "card": "sources/pb-10.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
       "id": "gemini-google-wallet",
       "section": "personal-money",
       "title": "Gemini with Google Wallet",
@@ -1024,6 +1376,198 @@
       ]
     },
     {
+      "id": "grok-bot",
+      "section": "personal-money",
+      "title": "Grok Bot",
+      "kind": "personal-agent",
+      "page": "personal-money/grok-bot.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.",
+      "operator": "xAI",
+      "agent_can": "Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase",
+      "user_controls": "You choose whether to link accounts and can unlink them anytime. A financial connection is read-only. A Link purchase shows the amount to Allow or Deny, and every X Money action that moves money needs its own approval. After a bank or brokerage connector returns data, the Bot asks before sharing it anywhere else",
+      "mcp_server": "yes",
+      "endpoint": "https://connectors-gateway.grok.com/gateway/v1/finance/mcp",
+      "availability": "The Finance integration was announced on 2026-09-26 and needs Grok Bot 0.49 or newer. Plans and regions for it are unknown",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "gb-01",
+            "url": "https://x.com/bot/status/2103936247995752705",
+            "authority": "official"
+          },
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          },
+          {
+            "id": "gb-05",
+            "url": "https://x.ai/changelog/bot",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "gb-01",
+            "url": "https://x.com/bot/status/2103936247995752705",
+            "authority": "official"
+          },
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          },
+          {
+            "id": "gb-05",
+            "url": "https://x.ai/changelog/bot",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "gb-01",
+            "url": "https://x.com/bot/status/2103936247995752705",
+            "authority": "official"
+          },
+          {
+            "id": "gb-02",
+            "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "gb-01",
+          "url": "https://x.com/bot/status/2103936247995752705",
+          "card": "sources/gb-01.md"
+        },
+        {
+          "id": "gb-02",
+          "url": "https://github.com/cursor/plugins/tree/main/third_party/finance",
+          "card": "sources/gb-02.md"
+        },
+        {
+          "id": "gb-03",
+          "url": "https://docs.x.ai/grok-bot/vault",
+          "card": "sources/gb-03.md"
+        },
+        {
+          "id": "gb-04",
+          "url": "https://docs.x.ai/grok-bot/approvals-security-and-privacy",
+          "card": "sources/gb-04.md"
+        },
+        {
+          "id": "gb-05",
+          "url": "https://x.ai/changelog/bot",
+          "card": "sources/gb-05.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
+      "id": "instinct",
+      "section": "personal-money",
+      "title": "Instinct",
+      "kind": "personal-agent",
+      "page": "personal-money/instinct.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Instinct is a personal assistant that works in iMessage and WhatsApp. Plaid says it powers read-only account connections for US users, and Stripe says Link helps power its payments.",
+      "operator": "Instinct",
+      "agent_can": "Read balances and transactions from accounts connected through Plaid, read-only, alongside connections such as email and calendar, to spot patterns and flag what needs attention. Stripe says Link's agent wallet helps power its payments",
+      "user_controls": "You authenticate your accounts through Plaid when Instinct prompts you, and Plaid says Instinct asks for approval before taking next steps such as drafting a dispute",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Plaid's post of 2026-11-18 says US consumers can connect accounts, with thousands of US users. CNBC describes Instinct as invitation-only",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pb-09",
+            "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pb-09",
+            "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+            "authority": "official"
+          },
+          {
+            "id": "sp-01",
+            "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pb-09",
+            "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pb-09",
+            "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+            "authority": "official"
+          },
+          {
+            "id": "bl-01",
+            "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+            "authority": "third-party"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "bl-01",
+          "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
+          "card": "sources/bl-01.md"
+        },
+        {
+          "id": "pb-09",
+          "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+          "card": "sources/pb-09.md"
+        },
+        {
+          "id": "sp-01",
+          "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+          "card": "sources/sp-01.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
       "id": "jpmorgan-smart-cash",
       "section": "personal-money",
       "title": "JPMorgan Smart Cash",
@@ -1082,11 +1626,11 @@
       "kind": "personal-agent",
       "page": "personal-money/meta-muse.md",
       "page_status": "current",
-      "last_verified": "2026-11-14",
+      "last_verified": "2026-11-18",
       "summary": "Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.",
       "operator": "Meta",
-      "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information",
-      "user_controls": "You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal",
+      "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store",
+      "user_controls": "You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal. Muse always asks for your approval before completing a purchase, and you can disconnect a Connector at any time in Settings",
       "mcp_server": "unknown",
       "endpoint": "unknown",
       "availability": "Launched 2026-09-08 with Plaid-powered account connections in its finance features",
@@ -1109,12 +1653,27 @@
             "id": "pb-01",
             "url": "https://plaid.com/blog/meta-muse/",
             "authority": "official"
+          },
+          {
+            "id": "mm-01",
+            "url": "https://www.meta.com/help/superintelligence/1436362127544482/",
+            "authority": "official"
           }
         ],
         "user_controls": [
           {
             "id": "pb-01",
             "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          },
+          {
+            "id": "mm-01",
+            "url": "https://www.meta.com/help/superintelligence/1436362127544482/",
+            "authority": "official"
+          },
+          {
+            "id": "mm-02",
+            "url": "https://www.meta.com/help/superintelligence/1687253048996149/",
             "authority": "official"
           }
         ],
@@ -1133,6 +1692,21 @@
           "card": "sources/bl-01.md"
         },
         {
+          "id": "mm-01",
+          "url": "https://www.meta.com/help/superintelligence/1436362127544482/",
+          "card": "sources/mm-01.md"
+        },
+        {
+          "id": "mm-02",
+          "url": "https://www.meta.com/help/superintelligence/1687253048996149/",
+          "card": "sources/mm-02.md"
+        },
+        {
+          "id": "mm-03",
+          "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+          "card": "sources/mm-03.md"
+        },
+        {
           "id": "pb-01",
           "url": "https://plaid.com/blog/meta-muse/",
           "card": "sources/pb-01.md"
@@ -1146,6 +1720,11 @@
           "id": "pb-04",
           "url": "https://www.politico.com/newsletters/morning-money/2026/11/11/ai-agents-scramble-banks-fight-with-fintechs-01160620",
           "card": "sources/pb-04.md"
+        },
+        {
+          "id": "sp-01",
+          "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
+          "card": "sources/sp-01.md"
         }
       ],
       "unknown_fields": [
@@ -1227,6 +1806,172 @@
       ]
     },
     {
+      "id": "openai-dots",
+      "section": "personal-money",
+      "title": "OpenAI dots",
+      "kind": "personal-agent",
+      "page": "personal-money/openai-dots.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "OpenAI's dots are always-on agents with their own cloud computer. They can buy with a card saved on a merchant site after approval. Whether a dot can read your Finances data is unknown.",
+      "operator": "OpenAI",
+      "agent_can": "Work as an always-on agent on its own cloud computer, using plugins to connect to apps. A dot can buy with a card you saved on a merchant's website, with your approval, which may be given in advance when it specifically covers the purchase",
+      "user_controls": "Dots start with built-in rules for which actions need approval each time, which can be approved in advance and which need none. Custom Rules let you allow, require approval for, or block specific actions, and auto-review checks actions that could affect your accounts. Sensitive tasks such as changing a password stay with you, and you can pause a dot at any time",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "Announced 2026-09-29 and rolling out to Pro users aged 18 and over outside the EEA, Switzerland and the UK, and to Business Premium users in supported regions. Enterprise, Edu and Healthcare workspaces get it by default from 2026-11-18 unless an admin opts out",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "oa-08",
+            "url": "https://openai.com/index/introducing-dots/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "oa-07",
+            "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+            "authority": "official"
+          },
+          {
+            "id": "oa-08",
+            "url": "https://openai.com/index/introducing-dots/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "oa-07",
+            "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+            "authority": "official"
+          },
+          {
+            "id": "oa-08",
+            "url": "https://openai.com/index/introducing-dots/",
+            "authority": "official"
+          },
+          {
+            "id": "oa-09",
+            "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "oa-08",
+            "url": "https://openai.com/index/introducing-dots/",
+            "authority": "official"
+          },
+          {
+            "id": "oa-09",
+            "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "oa-01",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+          "card": "sources/oa-01.md"
+        },
+        {
+          "id": "oa-07",
+          "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
+          "card": "sources/oa-07.md"
+        },
+        {
+          "id": "oa-08",
+          "url": "https://openai.com/index/introducing-dots/",
+          "card": "sources/oa-08.md"
+        },
+        {
+          "id": "oa-09",
+          "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+          "card": "sources/oa-09.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "perplexity-personal-cfo",
+      "section": "personal-money",
+      "title": "Perplexity Personal CFO",
+      "kind": "personal-agent",
+      "page": "personal-money/perplexity-personal-cfo.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "Perplexity lets people connect accounts through Plaid and ask about their own money, read-only. Plaid reports it in the US with Perplexity Computer and in 17 European countries as Personal CFO.",
+      "operator": "Perplexity",
+      "agent_can": "According to Plaid, answer questions about spending, subscriptions and balances from accounts connected through Plaid, and build tools such as a budget tracker, net worth view or debt payoff plan. Plaid says access is read-only",
+      "user_controls": "According to Plaid, you choose which accounts to share and access is read-only. In the EU, Plaid provides the connection as a regulated account information service through Plaid B.V.",
+      "mcp_server": "unknown",
+      "endpoint": "unknown",
+      "availability": "According to Plaid, US users can connect accounts through Plaid, and Pro and Max users get Perplexity Computer features, from 2026-04-09. Plaid says people in 17 European countries can use Personal CFO from 2026-11-12",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pb-13",
+            "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pb-12",
+            "url": "https://plaid.com/blog/plaid-perplexity-ai-financial-insights-integration/",
+            "authority": "official"
+          },
+          {
+            "id": "pb-13",
+            "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pb-13",
+            "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pb-12",
+            "url": "https://plaid.com/blog/plaid-perplexity-ai-financial-insights-integration/",
+            "authority": "official"
+          },
+          {
+            "id": "pb-13",
+            "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pb-12",
+          "url": "https://plaid.com/blog/plaid-perplexity-ai-financial-insights-integration/",
+          "card": "sources/pb-12.md"
+        },
+        {
+          "id": "pb-13",
+          "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+          "card": "sources/pb-13.md"
+        }
+      ],
+      "unknown_fields": [
+        "mcp_server",
+        "endpoint"
+      ]
+    },
+    {
       "id": "plaid",
       "section": "personal-money",
       "title": "Plaid MCP servers",
@@ -1288,6 +2033,21 @@
       },
       "sources": [
         {
+          "id": "cl-01",
+          "url": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+          "card": "sources/cl-01.md"
+        },
+        {
+          "id": "gb-01",
+          "url": "https://x.com/bot/status/2103936247995752705",
+          "card": "sources/gb-01.md"
+        },
+        {
+          "id": "oa-05",
+          "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+          "card": "sources/oa-05.md"
+        },
+        {
           "id": "pb-01",
           "url": "https://plaid.com/blog/meta-muse/",
           "card": "sources/pb-01.md"
@@ -1306,6 +2066,76 @@
           "id": "pb-08",
           "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
           "card": "sources/pb-08.md"
+        },
+        {
+          "id": "pb-09",
+          "url": "https://plaid.com/blog/plaid-powers-instinct-ai-assistant/",
+          "card": "sources/pb-09.md"
+        },
+        {
+          "id": "pb-10",
+          "url": "https://plaid.com/blog/plaid-anthropic-financial-insights-in-claude/",
+          "card": "sources/pb-10.md"
+        },
+        {
+          "id": "pb-11",
+          "url": "https://plaid.com/blog/chatgpt-personal-finance-plaid/",
+          "card": "sources/pb-11.md"
+        },
+        {
+          "id": "pb-12",
+          "url": "https://plaid.com/blog/plaid-perplexity-ai-financial-insights-integration/",
+          "card": "sources/pb-12.md"
+        },
+        {
+          "id": "pb-13",
+          "url": "https://plaid.com/en-eu/blog/perplexity-personal-cfo-europe/",
+          "card": "sources/pb-13.md"
+        },
+        {
+          "id": "pb-14",
+          "url": "https://plaid.com/docs/link/",
+          "card": "sources/pb-14.md"
+        },
+        {
+          "id": "pb-15",
+          "url": "https://plaid.com/docs/link/oauth/",
+          "card": "sources/pb-15.md"
+        },
+        {
+          "id": "pb-16",
+          "url": "https://plaid.com/docs/link/data-transparency-messaging-migration-guide/",
+          "card": "sources/pb-16.md"
+        },
+        {
+          "id": "pb-17",
+          "url": "https://plaid.com/docs/link/initializing-products/",
+          "card": "sources/pb-17.md"
+        },
+        {
+          "id": "pb-18",
+          "url": "https://plaid.com/docs/api/items/",
+          "card": "sources/pb-18.md"
+        },
+        {
+          "id": "pb-19",
+          "url": "https://plaid.com/docs/api/products/transactions/",
+          "card": "sources/pb-19.md"
+        },
+        {
+          "id": "pb-20",
+          "url": "https://plaid.com/blog/data-privacy-week-2022/",
+          "card": "sources/pb-20.md"
+        },
+        {
+          "id": "pb-21",
+          "url": "https://support-my.plaid.com/hc/en-us/articles/4410328321303-Can-I-remove-app-access-or-delete-my-data-from-Plaid",
+          "card": "sources/pb-21.md"
+        },
+        {
+          "id": "pb-22",
+          "url": "https://plaid.com/blog/product-updates-august-2026/",
+          "card": "sources/pb-22.md"
         }
       ],
       "unknown_fields": []
@@ -1367,6 +2197,135 @@
         "mcp_server",
         "endpoint"
       ]
+    },
+    {
+      "id": "x-money",
+      "section": "personal-money",
+      "title": "X Money",
+      "kind": "payment-credential",
+      "page": "personal-money/x-money.md",
+      "page_status": "current",
+      "last_verified": "2026-11-18",
+      "summary": "X Money is a US money account inside the X app, run by X Payments LLC with Cross River Bank. Through the Grok Bot plugin, an agent can read the balance and history, and send or pay with approval per action.",
+      "operator": "X Payments LLC, with Cross River Bank holding the deposit accounts",
+      "agent_can": "Through the Grok Bot plugin and X Money's hosted MCP server, view the balance and transaction history, use the X Money card for purchases, and send or request money with users on X. X Money decides which of these actions each account gets",
+      "user_controls": "Connect with a code or QR code approved with a passkey in the X Money app, and revoke at X > Money > Settings > Connections. Every action that moves money needs its own Approve or Cancel, X Money refuses calls that were not approved, agents have separate limits, and higher-risk transfers stay in the X app",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.money.x.com/mcp",
+      "availability": "Rolling out in the US since 2026-07-27, first to Premium and Premium+ subscribers. X's pages now say it is available to select users who are 18 or older and live in the 50 states or DC. Interest is not available in New York",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "xm-04",
+            "url": "https://money-support.x.com/i/faq",
+            "authority": "official"
+          },
+          {
+            "id": "xm-05",
+            "url": "https://payments.x.com/en/licenses",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "xm-01",
+            "url": "https://raw.githubusercontent.com/cursor/plugins/main/third_party/x-money/README.md",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "xm-01",
+            "url": "https://raw.githubusercontent.com/cursor/plugins/main/third_party/x-money/README.md",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "xm-01",
+            "url": "https://raw.githubusercontent.com/cursor/plugins/main/third_party/x-money/README.md",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "xm-01",
+            "url": "https://raw.githubusercontent.com/cursor/plugins/main/third_party/x-money/README.md",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "xm-03",
+            "url": "https://payments.x.com/en",
+            "authority": "official"
+          },
+          {
+            "id": "xm-04",
+            "url": "https://money-support.x.com/i/faq",
+            "authority": "official"
+          },
+          {
+            "id": "xm-08",
+            "url": "https://x.com/XMoney/status/2081802002539876506",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "gb-03",
+          "url": "https://docs.x.ai/grok-bot/vault",
+          "card": "sources/gb-03.md"
+        },
+        {
+          "id": "gb-05",
+          "url": "https://x.ai/changelog/bot",
+          "card": "sources/gb-05.md"
+        },
+        {
+          "id": "xm-01",
+          "url": "https://raw.githubusercontent.com/cursor/plugins/main/third_party/x-money/README.md",
+          "card": "sources/xm-01.md"
+        },
+        {
+          "id": "xm-02",
+          "url": "https://www.crossriver.com/newsroom/cross-river-powers-x-money-first-p2p-payments-experience-built-into-us-social-media-platform",
+          "card": "sources/xm-02.md"
+        },
+        {
+          "id": "xm-03",
+          "url": "https://payments.x.com/en",
+          "card": "sources/xm-03.md"
+        },
+        {
+          "id": "xm-04",
+          "url": "https://money-support.x.com/i/faq",
+          "card": "sources/xm-04.md"
+        },
+        {
+          "id": "xm-05",
+          "url": "https://payments.x.com/en/licenses",
+          "card": "sources/xm-05.md"
+        },
+        {
+          "id": "xm-06",
+          "url": "https://www.consumerfinance.gov/data-research/prepaid-accounts/search-agreements/detail/621701/",
+          "card": "sources/xm-06.md"
+        },
+        {
+          "id": "xm-07",
+          "url": "https://www.dfs.ny.gov/reports-and-publications/weekly-bulletins/wb20260724",
+          "card": "sources/xm-07.md"
+        },
+        {
+          "id": "xm-08",
+          "url": "https://x.com/XMoney/status/2081802002539876506",
+          "card": "sources/xm-08.md"
+        }
+      ],
+      "unknown_fields": []
     }
   ]
 }

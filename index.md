@@ -44,6 +44,7 @@ Every page in the wiki, generated from page headers.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
+- [Link wallet for agents](payments/link-wallet-for-agents.md) (current): Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 - [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 - [PayPal](payments/paypal.md) (current): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
@@ -57,12 +58,20 @@ Every page in the wiki, generated from page headers.
 
 - [Personal money agents](personal-money/README.md) (current): AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
 - [Banks and outside agents](personal-money/banks-and-outside-agents.md) (current): What news reports say about big US banks blocking or limiting outside AI agents, the read-only middle ground, and the US data-rights rule in the background.
+- [Finances in ChatGPT](personal-money/chatgpt-finances.md) (current): Finances in ChatGPT reads your accounts through Plaid and credit reports through Experian, in the US. OpenAI says it cannot move money, pay bills, trade or change account settings.
+- [Claude Duet](personal-money/claude-duet.md) (current): Claude Duet is Anthropic's proactive agent app, in research preview. It asks before it pays, sends or deletes, pays with a one-time Link card, and cannot trade or move money between accounts.
+- [Claude Personal Finance](personal-money/claude-personal-finance.md) (current): Claude's Personal Finance feature reads your balances and transactions from banks you link through Plaid, read-only. It cannot move, manage or invest money. It is in beta on paid US plans.
 - [Gemini with Google Wallet](personal-money/gemini-google-wallet.md) (current): Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.
+- [Grok Bot](personal-money/grok-bot.md) (current): Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.
+- [Instinct](personal-money/instinct.md) (current): Instinct is a personal assistant that works in iMessage and WhatsApp. Plaid says it powers read-only account connections for US users, and Stripe says Link helps power its payments.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) (current): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
 - [Meta Muse](personal-money/meta-muse.md) (current): Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
 - [Nous](personal-money/nous.md) (current): A UK household AI agent that tracks bills and subscriptions, switches providers and cancels services for you. You choose how much it decides on its own. It reads bank data through an FCA-regulated open banking provider but cannot move money.
+- [OpenAI dots](personal-money/openai-dots.md) (current): OpenAI's dots are always-on agents with their own cloud computer. They can buy with a card saved on a merchant site after approval. Whether a dot can read your Finances data is unknown.
+- [Perplexity Personal CFO](personal-money/perplexity-personal-cfo.md) (current): Perplexity lets people connect accounts through Plaid and ask about their own money, read-only. Plaid reports it in the US with Perplexity Computer and in 17 European countries as Personal CFO.
 - [Plaid MCP servers](personal-money/plaid.md) (current): Plaid's MCP servers are developer tools: a hosted Dashboard MCP for diagnostics and a local sandbox MCP. They do not give agents access to users' accounts.
 - [Starling Assistant](personal-money/starling-assistant.md) (current): Starling Bank's in-app AI assistant will set up payments from voice or text, and the customer approves each one with a tap. It reaches all retail customers by the end of 2026.
+- [X Money](personal-money/x-money.md) (current): X Money is a US money account inside the X app, run by X Payments LLC with Cross River Bank. Through the Grok Bot plugin, an agent can read the balance and history, and send or pay with approval per action.
 
 ## Advisor agents
 
@@ -110,7 +119,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com.
+- [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
 - [What changed: 2026-11-15](changelog/2026-11-15.md) (current): A shorter front page, a trading-only Trading page, a cited FAQ, record tables, a What changed home page, search and agent metadata, and new pages on ChatGPT Wallet, Rain Agent Vaults, AgentBank, Nous and merchants that forbid agents.
 - [What changed: 2026-11-14](changelog/2026-11-14.md) (current): Added Payments and Personal money agents sections with one page per program, a What we cover overview on the front page, official ERC-8004, a glossary, and a front-page refresh.
@@ -124,7 +133,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (142)
+## Sources (185)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -162,7 +171,16 @@ Every page in the wiki, generated from page headers.
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
 | [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-18 |
 | [cb-10](sources/cb-10.md): Coinbase for Agents introduces new Agent Controls | Coinbase | Coinbase | official | 2026-11-18 |
+| [cl-01](sources/cl-01.md): Use Personal Finance in Claude (Claude Help Center) | Claude Personal Finance | Anthropic | official | 2026-11-18 |
+| [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |
+| [cl-03](sources/cl-03.md): Claude Duet safety, privacy and security | Claude Duet | Anthropic | official | 2026-11-18 |
+| [cl-04](sources/cl-04.md): Introducing Claude Duet | Claude Duet | Anthropic | official | 2026-11-18 |
 | [eb-01](sources/eb-01.md): User Agreement \| eBay | eBay | eBay | official | 2026-11-15 |
+| [gb-01](sources/gb-01.md): Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post) | Grok Bot | Grok Bot (@bot on X) | official | 2026-11-18 |
+| [gb-02](sources/gb-02.md): Finance plugin README (cursor/plugins, third_party/finance) | Grok Bot | cursor/plugins (GitHub) | official | 2026-11-18 |
+| [gb-03](sources/gb-03.md): Vault and secure sign-in (Grok Bot docs) | Grok Bot | xAI Docs | official | 2026-11-18 |
+| [gb-04](sources/gb-04.md): Approvals, security, and privacy (Grok Bot docs) | Grok Bot | xAI Docs | official | 2026-11-18 |
+| [gb-05](sources/gb-05.md): Grok Bot changelog | Grok Bot | xAI | official | 2026-11-18 |
 | [gg-01](sources/gg-01.md): Connect Google Wallet to Gemini for personal finance insights | Gemini and Google Wallet | Google | official | 2026-11-18 |
 | [gg-02](sources/gg-02.md): Get info & personalized insights from Google Wallet with Gemini Apps | Gemini and Google Wallet | Google Gemini Apps Help | official | 2026-11-18 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
@@ -179,6 +197,10 @@ Every page in the wiki, generated from page headers.
 | [id-05](sources/id-05.md): Emerging Trend in GenAI: Observations on AI Agents | FINRA | FINRA | official | 2026-11-12 |
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
 | [id-07](sources/id-07.md): ERC-8004: Trustless Agents | ERC-8004 | Ethereum Improvement Proposals | official | 2026-11-14 |
+| [jp-01](sources/jp-01.md): JPMorganChase and Plaid announce an extension to their data access agreement | JPMorgan and Plaid | JPMorganChase | official | 2026-11-18 |
+| [mm-01](sources/mm-01.md): How Muse works with payments (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
+| [mm-02](sources/mm-02.md): How Muse works with Connectors (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
+| [mm-03](sources/mm-03.md): Introducing Muse (Meta newsroom) | Meta Muse | Meta | official | 2026-11-18 |
 | [ni-01](sources/ni-01.md): AI Agents Welcome \| Nitrogen | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [ni-02](sources/ni-02.md): Nitrogen Brings Its AI-Powered Advisor Platform to Claude and ChatGPT, Expands Nucleus Capabilities | Nitrogen | Nitrogen | official | 2026-11-13 |
 | [np-02](sources/np-02.md): PrimeXBT Launches AI-Assisted Trading with MCP Integration, Connecting ChatGPT and Claude to Trading Accounts | PrimeXBT | GlobeNewswire | official | 2026-11-12 |
@@ -190,6 +212,11 @@ Every page in the wiki, generated from page headers.
 | [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-15 |
 | [oa-03](sources/oa-03.md): ChatGPT Wallet terms | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
 | [oa-04](sources/oa-04.md): Accept payments - OpenAI Commerce | ChatGPT Wallet | OpenAI Developers | official | 2026-11-15 |
+| [oa-05](sources/oa-05.md): Finances in ChatGPT (OpenAI Help Center) | ChatGPT Finances | OpenAI | official | 2026-11-18 |
+| [oa-06](sources/oa-06.md): A new personal finance experience in ChatGPT (OpenAI) | ChatGPT Finances | OpenAI | official | 2026-11-18 |
+| [oa-07](sources/oa-07.md): Dots privacy, security, and safety FAQs (OpenAI Help Center) | OpenAI dots | OpenAI | official | 2026-11-18 |
+| [oa-08](sources/oa-08.md): Introducing dots (OpenAI) | OpenAI dots | OpenAI | official | 2026-11-18 |
+| [oa-09](sources/oa-09.md): Getting started with your dot (OpenAI Help Center) | OpenAI dots | OpenAI | official | 2026-11-18 |
 | [pa-01](sources/pa-01.md): GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun | awesome-broker-mcp | mphinance (GitHub) | third-party | 2026-11-12 |
 | [pa-02](sources/pa-02.md): GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub | awesome-finance-mcp | BlockRunAI (GitHub) | third-party | 2026-11-12 |
 | [pa-03](sources/pa-03.md): GitHub - frankxai/awesome-payment-agent-skills: Web-first payment-agent skills: mandates, auth, settlement. Human spend cap required. · GitHub | awesome-payment-agent-skills | frankxai (GitHub) | third-party | 2026-11-12 |
@@ -207,6 +234,20 @@ Every page in the wiki, generated from page headers.
 | [pb-05](sources/pb-05.md): Federal Register | CFPB 1033 | Federal Register | official | 2026-11-12 |
 | [pb-06](sources/pb-06.md): Introducing Agent Detection: building trust in the age of agentic finance | Plaid | Plaid | official | 2026-11-18 |
 | [pb-08](sources/pb-08.md): Plaid is powering personalized financial insights with Google Wallet in the Gemini app | Gemini and Google Wallet | Plaid | official | 2026-11-18 |
+| [pb-09](sources/pb-09.md): Instinct gets the full financial picture with Plaid | Instinct | Plaid | official | 2026-11-18 |
+| [pb-10](sources/pb-10.md): Plaid powers financial insights in Claude | Claude Personal Finance | Plaid | official | 2026-11-18 |
+| [pb-11](sources/pb-11.md): ChatGPT personal finance experience, powered by Plaid | ChatGPT Finances | Plaid | official | 2026-11-18 |
+| [pb-12](sources/pb-12.md): Plaid and Perplexity expand integration to power personalized financial insights | Perplexity Personal CFO | Plaid | official | 2026-11-18 |
+| [pb-13](sources/pb-13.md): Perplexity brings Personal CFO to Europe with Plaid | Perplexity Personal CFO | Plaid | official | 2026-11-18 |
+| [pb-14](sources/pb-14.md): Link overview (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-15](sources/pb-15.md): Link OAuth guide (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-16](sources/pb-16.md): Data Transparency Messaging migration guide (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-17](sources/pb-17.md): Choosing how to initialize products (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-18](sources/pb-18.md): Items API reference (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-19](sources/pb-19.md): Transactions API reference (Plaid Docs) | Plaid | Plaid Docs | official | 2026-11-18 |
+| [pb-20](sources/pb-20.md): Announcing Plaid Portal: An ongoing commitment to data privacy | Plaid | Plaid | official | 2026-11-18 |
+| [pb-21](sources/pb-21.md): Can I remove app access or delete my data from Plaid? (Plaid Consumer Help Center) | Plaid | Plaid Consumer Help Center | official | 2026-11-18 |
+| [pb-22](sources/pb-22.md): Product Updates: August 2026 (Plaid) | Plaid | Plaid | official | 2026-11-18 |
 | [pm-01](sources/pm-01.md): Visa Developer Center | Visa Intelligent Commerce | Visa Developer | official | 2026-11-12 |
 | [pm-02](sources/pm-02.md): MCP docs \| Visa Developer | Visa Intelligent Commerce | Visa Developer | official | 2026-11-12 |
 | [pm-03](sources/pm-03.md): GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc | Visa Trusted Agent Protocol | Visa (GitHub) | official | 2026-11-12 |
@@ -249,6 +290,9 @@ Every page in the wiki, generated from page headers.
 | [rh-13](sources/rh-13.md): Robinhood Trading MCP: OAuth protected-resource metadata | Robinhood | Robinhood (endpoint metadata) | official | 2026-11-12 |
 | [rn-01](sources/rn-01.md): Rain Agent Vaults bring embedded payments to AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
 | [rn-02](sources/rn-02.md): Rain Agent Vaults \| Embedded payments for AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
+| [sp-01](sources/sp-01.md): Stripe helps Meta Muse shop with Link | Link wallet for agents | Stripe | official | 2026-11-18 |
+| [sp-02](sources/sp-02.md): Giving agents the ability to pay (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
+| [sp-03](sources/sp-03.md): Helping personal agents shop more intelligently and reliably with Link (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [st-01](sources/st-01.md): 'Talk to transact': Starling customers can use their voice to send money | Starling Bank | Starling Bank | official | 2026-11-18 |
 | [tg-01](sources/tg-01.md): Terms & Conditions : Target | Target | Target | official | 2026-11-18 |
 | [tt-01](sources/tt-01.md): GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents.  | tastytrade | tastytrade (GitHub) | official | 2026-11-12 |
@@ -270,6 +314,14 @@ Every page in the wiki, generated from page headers.
 | [wc-01](sources/wc-01.md): November 2026 Wealth.com Updates | Wealth.com | Wealth.com | official | 2026-11-18 |
 | [wf-01](sources/wf-01.md): Wells Fargo Newsroom - Wells Fargo introduces AI Teammate, bringing AI-powered support to the advisor experience | Wells Fargo | Wells Fargo | official | 2026-11-13 |
 | [ws-01](sources/ws-01.md): Wealthtech Roundup: Anthropic, Schwab, Advyzon, Orion And More | Anthropic | Wealth Solutions Report | third-party | 2026-11-13 |
+| [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |
+| [xm-02](sources/xm-02.md): Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform | X Money | Cross River Bank | third-party | 2026-11-18 |
+| [xm-03](sources/xm-03.md): X Money overview (payments.x.com) | X Money | X Corp | official | 2026-11-18 |
+| [xm-04](sources/xm-04.md): X Money Frequently Asked Questions | X Money | X Corp | official | 2026-11-18 |
+| [xm-05](sources/xm-05.md): X Payments Money Transmitter Licenses | X Money | X Corp | official | 2026-11-18 |
+| [xm-06](sources/xm-06.md): X Money Stored Value Account (CFPB prepaid account agreements database) | X Money | Consumer Financial Protection Bureau | third-party | 2026-11-18 |
+| [xm-07](sources/xm-07.md): Weekly Banking Bulletin, July 24, 2026 (New York DFS) | X Money | New York State Department of Financial Services | third-party | 2026-11-18 |
+| [xm-08](sources/xm-08.md): X Money on X: "𝕏 Money is rolling out to U.S. Premium and Premium+ subscribers starting today" | X Money | X Money (@XMoney on X) | official | 2026-11-18 |
 
 ---
 

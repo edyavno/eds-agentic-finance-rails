@@ -29,7 +29,7 @@ field_sources:
 
 # Plaid MCP servers
 
-Plaid is the [data aggregator](../glossary.md#data-aggregator) behind Meta Muse's account connections.[^pb-01] Its own [MCP](../glossary.md#mcp) servers, though, are for developers. They are not a way for an agent to reach a person's bank account.[^pb-02]
+Plaid is the [data aggregator](../glossary.md#data-aggregator) behind Meta Muse's account connections.[^pb-01] It also powers account connections for other assistants, listed [below](#which-assistants-connect-through-plaid). Its own [MCP](../glossary.md#mcp) servers, though, are for developers. They are not a way for an agent to reach a person's bank account.[^pb-02]
 
 ## The two servers
 
@@ -44,6 +44,50 @@ The Dashboard MCP uses a Plaid [OAuth](../glossary.md#oauth) token. Plaid says i
 - People can manage their Plaid-powered connections in Plaid Portal.[^pb-01]
 
 See [Meta Muse](meta-muse.md) and [Banks and outside agents](banks-and-outside-agents.md).
+
+## How does a Plaid connection work?
+
+When an assistant connects to your accounts through Plaid, the steps below are what Plaid's developer documentation describes. They apply to apps in general, and the assistants' own pages say which of them each one uses.
+
+1. **Link opens.** [Plaid Link](../glossary.md#plaid-link) is the screen where you choose your bank and sign in. Plaid says using Link is mandatory for all Plaid integrations except a few products that need no end-user step, and that it is the only way to connect accounts in Production.[^pb-14]
+2. **Banks that use OAuth.** For many large banks you leave Link, sign in and approve sharing on the bank's own website or app, then return. Plaid says this lets people grant access without sharing credentials with the third party, and that [OAuth](../glossary.md#oauth) support is required for US, EU and UK institutions.[^pb-15]
+3. **You see what is requested.** Plaid says [Data Transparency Messaging](../glossary.md#data-transparency-messaging) tells you which data types an app requests and why. Plaid introduced it to help customers stay in compliance with the 1033 rule, and since 2024-10-31 new US and Canada customers are enrolled automatically.[^pb-16] The API only returns data for products you consented to in Link.[^pb-16][^pb-17]
+4. **Tokens.** The app creates a temporary `link_token`. When you finish, Link returns a temporary `public_token`, which the app exchanges for a permanent `access_token` and an `item_id`.[^pb-14] The `public_token` expires after 30 minutes. The `access_token` does not expire but can be revoked.[^pb-18]
+5. **One Item per login.** An [Item](../glossary.md#item) is a login at a financial institution, and the `access_token` corresponds to it.[^pb-18]
+6. **Data.** For transactions, Plaid says an app can retrieve and refresh up to 24 months of history with merchant, geolocation and category information, and fetch updates with `/transactions/sync`.[^pb-19]
+7. **Staying connected.** Plaid sends a `PENDING_DISCONNECT` webhook (US and Canada) or `PENDING_EXPIRATION` webhook (UK and EU) when access is about to expire, and the person can go through Link's update mode to renew it.[^pb-18]
+
+Whether a particular assistant's service, such as xAI's, holds the access token or hands the data to another party is not stated in the sources, so the wiki says unknown.
+
+## What can you control in Plaid Portal?
+
+- **Plaid Portal.** [Plaid Portal](../glossary.md#plaid-portal) at my.plaid.com lets people see which apps have access to their financial information and the data types shared, disconnect accounts from apps, and delete their data from Plaid's systems. Plaid announced it for the US on 2022-01-25.[^pb-20]
+- **Consumer help.** Plaid's help article says you can use Portal or a Privacy Request Form to change how you share data, withdraw Plaid's access and request deletion, and that Plaid may retain some information as permitted or required by law.[^pb-21]
+- **Webhooks.** If you revoke permission through Plaid, such as in Portal, Plaid says it may fire a `USER_PERMISSION_REVOKED` webhook to the app. If you revoke directly at your bank, that webhook may not fire. `USER_ACCOUNT_REVOKED` is sent only for some institutions.[^pb-18]
+- **Removing an Item.** An app can call `/item/remove`, after which the `access_token` is no longer valid. Plaid says an Item removed this way may still show as active in a bank's own OAuth permission manager.[^pb-18]
+- **Assistants point here.** ChatGPT, Gemini, Claude and others tell people to manage access through Plaid. See [Finances in ChatGPT](chatgpt-finances.md), [Gemini with Google Wallet](gemini-google-wallet.md) and [Claude Personal Finance](claude-personal-finance.md).[^pb-11][^pb-08]
+
+## Which assistants connect through Plaid?
+
+| Assistant | What Plaid or the assistant's maker says |
+|---|---|
+| [Grok Bot](grok-bot.md) | Accounts connect through Plaid, read-only.[^gb-01] |
+| [Meta Muse](meta-muse.md) | Plaid powers account connections in its finance features.[^pb-01] |
+| [Finances in ChatGPT](chatgpt-finances.md) | Accounts connect through Plaid, and credit report data through Experian.[^oa-05] |
+| [Claude Personal Finance](claude-personal-finance.md) | Plaid powers account connections, read-only.[^pb-10] |
+| [Gemini with Google Wallet](gemini-google-wallet.md) | Accounts link to Google Wallet through Plaid, read-only.[^pb-08] |
+| [Perplexity Personal CFO](perplexity-personal-cfo.md) | Plaid says it powers the connection, in the US and in 17 European countries.[^pb-12][^pb-13] |
+| [Instinct](instinct.md) | Plaid powers read-only connectivity for US users.[^pb-09] |
+
+[Claude Duet](claude-duet.md) is not on this list: Anthropic's help article says Personal Finance is not available in Duet.[^cl-01] Whether [OpenAI dots](openai-dots.md) can read Plaid-linked data is unknown.
+
+## Plaid's own figures
+
+These are company-reported. Plaid says more than 800 AI companies build on it. In posts about Instinct and Claude it says 75% of people who connect more than one bank account to an AI platform connect a second within 1 day, 65% within one hour, and they keep more than 95% of connections active, and that nearly two-thirds of US people connecting accounts to AI assistants through Plaid had never used a Plaid-powered personal finance app.[^pb-09][^pb-10] In a 2026-11-12 post it says it provides EU connections as a regulated account information service through Plaid B.V.[^pb-13]
+
+## Is there a Plaid MCP for partners?
+
+Plaid's August 2026 product updates introduced MCP for Data Partners in Early Access. It lets data partners connect an AI agent such as Claude, Cursor or Codex to Plaid to investigate and resolve integration issues. It is for partners' integration work, not for reading a person's accounts.[^pb-22]
 
 ## What else does Plaid offer for AI agents?
 
@@ -62,8 +106,25 @@ All pages: [Personal money agents](README.md).
 
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](../sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
-[^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
+[^pb-14]: [Link overview (Plaid Docs)](../sources/pb-14.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-15]: [Link OAuth guide (Plaid Docs)](../sources/pb-15.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-16]: [Data Transparency Messaging migration guide (Plaid Docs)](../sources/pb-16.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-17]: [Choosing how to initialize products (Plaid Docs)](../sources/pb-17.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-18]: [Items API reference (Plaid Docs)](../sources/pb-18.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-19]: [Transactions API reference (Plaid Docs)](../sources/pb-19.md). Plaid Docs, official, retrieved 2026-11-18.
+[^pb-20]: [Announcing Plaid Portal: An ongoing commitment to data privacy](../sources/pb-20.md). Plaid, official, retrieved 2026-11-18.
+[^pb-21]: [Can I remove app access or delete my data from Plaid? (Plaid Consumer Help Center)](../sources/pb-21.md). Plaid Consumer Help Center, official, retrieved 2026-11-18.
+[^pb-11]: [ChatGPT personal finance experience, powered by Plaid](../sources/pb-11.md). Plaid, official, retrieved 2026-11-18.
 [^pb-08]: [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](../sources/pb-08.md). Plaid, official, retrieved 2026-11-18.
+[^gb-01]: [Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post)](../sources/gb-01.md). Grok Bot (@bot on X), official, retrieved 2026-11-18.
+[^oa-05]: [Finances in ChatGPT (OpenAI Help Center)](../sources/oa-05.md). OpenAI, official, retrieved 2026-11-18.
+[^pb-10]: [Plaid powers financial insights in Claude](../sources/pb-10.md). Plaid, official, retrieved 2026-11-18.
+[^pb-12]: [Plaid and Perplexity expand integration to power personalized financial insights](../sources/pb-12.md). Plaid, official, retrieved 2026-11-18.
+[^pb-13]: [Perplexity brings Personal CFO to Europe with Plaid](../sources/pb-13.md). Plaid, official, retrieved 2026-11-18.
+[^pb-09]: [Instinct gets the full financial picture with Plaid](../sources/pb-09.md). Plaid, official, retrieved 2026-11-18.
+[^cl-01]: [Use Personal Finance in Claude (Claude Help Center)](../sources/cl-01.md). Anthropic, official, retrieved 2026-11-18.
+[^pb-22]: [Product Updates: August 2026 (Plaid)](../sources/pb-22.md). Plaid, official, retrieved 2026-11-18.
+[^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 
 ---
 

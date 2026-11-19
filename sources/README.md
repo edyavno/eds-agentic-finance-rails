@@ -105,6 +105,9 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-15 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
 | [Accept payments - OpenAI Commerce](oa-04.md) | OpenAI Developers | official | 2026-11-15 |
+| [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
+| [Giving agents the ability to pay (Stripe)](sp-02.md) | Stripe | official | 2026-11-18 |
+| [Helping personal agents shop more intelligently and reliably with Link (Stripe)](sp-03.md) | Stripe | official | 2026-11-18 |
 | [Mastercard Agent Pay: secure, scalable and trusted agentic AI](pm-05.md) | Mastercard | official | 2026-11-12 |
 | [Agentic token framework: Driving trusted AI transactions](pm-06.md) | Mastercard | official | 2026-11-12 |
 | [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](pm-17.md) | Mastercard | official | 2026-11-18 |
@@ -125,18 +128,58 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 
 | Source card | Publisher | Official or third-party | Retrieved |
 |---|---|---|---|
+| [Finances in ChatGPT (OpenAI Help Center)](oa-05.md) | OpenAI | official | 2026-11-18 |
+| [A new personal finance experience in ChatGPT (OpenAI)](oa-06.md) | OpenAI | official | 2026-11-18 |
+| [ChatGPT personal finance experience, powered by Plaid](pb-11.md) | Plaid | official | 2026-11-18 |
+| [Claude Duet safety, privacy and security](cl-03.md) | Anthropic | official | 2026-11-18 |
+| [Introducing Claude Duet](cl-04.md) | Anthropic | official | 2026-11-18 |
+| [Use Personal Finance in Claude (Claude Help Center)](cl-01.md) | Anthropic | official | 2026-11-18 |
+| [Introducing Personal Finance in Claude](cl-02.md) | Anthropic | official | 2026-11-18 |
+| [Plaid powers financial insights in Claude](pb-10.md) | Plaid | official | 2026-11-18 |
 | [Connect Google Wallet to Gemini for personal finance insights](gg-01.md) | Google | official | 2026-11-18 |
 | [Get info & personalized insights from Google Wallet with Gemini Apps](gg-02.md) | Google Gemini Apps Help | official | 2026-11-18 |
 | [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](pb-08.md) | Plaid | official | 2026-11-18 |
+| [Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post)](gb-01.md) | Grok Bot (@bot on X) | official | 2026-11-18 |
+| [Finance plugin README (cursor/plugins, third_party/finance)](gb-02.md) | cursor/plugins (GitHub) | official | 2026-11-18 |
+| [Vault and secure sign-in (Grok Bot docs)](gb-03.md) | xAI Docs | official | 2026-11-18 |
+| [Approvals, security, and privacy (Grok Bot docs)](gb-04.md) | xAI Docs | official | 2026-11-18 |
+| [Grok Bot changelog](gb-05.md) | xAI | official | 2026-11-18 |
+| [Instinct gets the full financial picture with Plaid](pb-09.md) | Plaid | official | 2026-11-18 |
+| [JPMorganChase and Plaid announce an extension to their data access agreement](jp-01.md) | JPMorganChase | official | 2026-11-18 |
+| [How Muse works with payments (Meta Help Center)](mm-01.md) | Meta | official | 2026-11-18 |
+| [How Muse works with Connectors (Meta Help Center)](mm-02.md) | Meta | official | 2026-11-18 |
+| [Introducing Muse (Meta newsroom)](mm-03.md) | Meta | official | 2026-11-18 |
 | [Meta's Muse is attacking one of economy's most profitable weak spots](pb-03.md) | CNBC | third-party | 2026-11-12 |
 | [Plaid powers Meta's new AI agent, Muse \| Plaid](pb-01.md) | Plaid | official | 2026-11-12 |
 | [Frequently asked questions \| Nous](ns-01.md) | Nous | official | 2026-11-15 |
 | [Terms of use \| Nous](ns-02.md) | Nous | official | 2026-11-15 |
 | [We've raised $17M to get Nous into every household that's had enough of life admin](ns-03.md) | Nous | official | 2026-11-15 |
+| [Dots privacy, security, and safety FAQs (OpenAI Help Center)](oa-07.md) | OpenAI | official | 2026-11-18 |
+| [Introducing dots (OpenAI)](oa-08.md) | OpenAI | official | 2026-11-18 |
+| [Getting started with your dot (OpenAI Help Center)](oa-09.md) | OpenAI | official | 2026-11-18 |
+| [Plaid and Perplexity expand integration to power personalized financial insights](pb-12.md) | Plaid | official | 2026-11-18 |
+| [Perplexity brings Personal CFO to Europe with Plaid](pb-13.md) | Plaid | official | 2026-11-18 |
 | [Resources - MCP Server \| Plaid Docs](pb-02.md) | Plaid Docs | official | 2026-11-12 |
 | [Introducing Agent Detection: building trust in the age of agentic finance](pb-06.md) | Plaid | official | 2026-11-18 |
+| [Link overview (Plaid Docs)](pb-14.md) | Plaid Docs | official | 2026-11-18 |
+| [Link OAuth guide (Plaid Docs)](pb-15.md) | Plaid Docs | official | 2026-11-18 |
+| [Data Transparency Messaging migration guide (Plaid Docs)](pb-16.md) | Plaid Docs | official | 2026-11-18 |
+| [Choosing how to initialize products (Plaid Docs)](pb-17.md) | Plaid Docs | official | 2026-11-18 |
+| [Items API reference (Plaid Docs)](pb-18.md) | Plaid Docs | official | 2026-11-18 |
+| [Transactions API reference (Plaid Docs)](pb-19.md) | Plaid Docs | official | 2026-11-18 |
+| [Announcing Plaid Portal: An ongoing commitment to data privacy](pb-20.md) | Plaid | official | 2026-11-18 |
+| [Can I remove app access or delete my data from Plaid? (Plaid Consumer Help Center)](pb-21.md) | Plaid Consumer Help Center | official | 2026-11-18 |
+| [Product Updates: August 2026 (Plaid)](pb-22.md) | Plaid | official | 2026-11-18 |
 | [AI agents scramble banks' fight with fintechs](pb-04.md) | POLITICO | third-party | 2026-11-12 |
 | ['Talk to transact': Starling customers can use their voice to send money](st-01.md) | Starling Bank | official | 2026-11-18 |
+| [X Money plugin README (cursor/plugins, third_party/x-money)](xm-01.md) | cursor/plugins (GitHub) | official | 2026-11-18 |
+| [Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform](xm-02.md) | Cross River Bank | third-party | 2026-11-18 |
+| [X Money overview (payments.x.com)](xm-03.md) | X Corp | official | 2026-11-18 |
+| [X Money Frequently Asked Questions](xm-04.md) | X Corp | official | 2026-11-18 |
+| [X Payments Money Transmitter Licenses](xm-05.md) | X Corp | official | 2026-11-18 |
+| [X Money Stored Value Account (CFPB prepaid account agreements database)](xm-06.md) | Consumer Financial Protection Bureau | third-party | 2026-11-18 |
+| [Weekly Banking Bulletin, July 24, 2026 (New York DFS)](xm-07.md) | New York State Department of Financial Services | third-party | 2026-11-18 |
+| [X Money on X: "𝕏 Money is rolling out to U.S. Premium and Premium+ subscribers starting today"](xm-08.md) | X Money (@XMoney on X) | official | 2026-11-18 |
 
 ### Advisor agents
 

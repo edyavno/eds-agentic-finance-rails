@@ -62,6 +62,10 @@ A way for an app to describe itself with a document at a URL, so a server can id
 
 A company that connects apps to a person's bank and card accounts, with their permission, and passes along data such as balances and transactions.
 
+## Data Transparency Messaging
+
+A step in Plaid's Link screen that tells a person which types of data an app is asking for and why, before they agree. Plaid introduced it to help its customers comply with the US data-rights rule often called 1033.
+
 ## Dynamic Client Registration
 
 A way for an app to register itself with an [OAuth](#oauth) server as part of connecting, instead of being set up in advance by a person.
@@ -89,6 +93,10 @@ Standard measures of how an option's price may change as things such as the unde
 ## Human in the loop
 
 A design where a person reviews or approves an agent's action before it takes effect, instead of letting the agent act alone. See [Build it](build/human-in-the-loop.md) for patterns.
+
+## Item
+
+In Plaid, one login at a financial institution. When you link a bank through Plaid, the app gets an Item with its own identifier and access token. Linking the same account twice makes two Items.
 
 ## llms.txt
 
@@ -126,6 +134,10 @@ A standard way to describe a web API, so people and programs can see what reques
 
 Practice trading with simulated money. Also called paper mode.
 
+## Passkey
+
+A sign-in method that uses your device's fingerprint, face scan or PIN instead of a password. It is tied to your device and the site you made it for, so it cannot be typed into a fake page.
+
 ## Payment token
 
 A stand-in for a card number or payment method that works only within set limits, such as one seller, a maximum amount or an expiry date. The real card number stays hidden.
@@ -133,6 +145,14 @@ A stand-in for a card number or payment method that works only within set limits
 ## PKCE
 
 Proof Key for Code Exchange. An extra check in an [OAuth](#oauth) sign-in flow that helps make sure the same app that started the sign-in is the one that finishes it.
+
+## Plaid Link
+
+The screen, run by Plaid, where a person chooses their bank, signs in and agrees to share data with an app. The app never sees the bank password. In Plaid's docs it is the only way to connect accounts in production.
+
+## Plaid Portal
+
+Plaid's tool for people to see which apps they connected through Plaid, disconnect them and ask Plaid to delete their data. It is at my.plaid.com.
 
 ## Preflight
 
@@ -165,6 +185,10 @@ A digital token designed to hold a steady value, usually pegged to a currency su
 ## Stdio
 
 Standard input and output. A local program can talk to a client through these streams instead of over the internet.
+
+## Stored-value account
+
+A balance held for you by a payments company, usually a licensed money transmitter, with a partner bank holding the cash. It works like a bank account in the app but is not itself a bank account. X Money is described this way in a US regulator's database.
 
 ## UAT
 

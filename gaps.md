@@ -26,7 +26,11 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Production MCP addresses** for Visa Intelligent Commerce and Mastercard Agent Pay, and whether Mastercard has an MCP at all.
 - **Who approves what** under ACP and x402. It depends on the agent or wallet, and the cited specs do not say.
 - **Primary sources** for [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md), which rests on one news report, and for most bank positions on [Banks and outside agents](personal-money/banks-and-outside-agents.md).
-- **Whether Meta Muse can move money** or pay bills, and whether it offers developer access.
+- **Whether Meta Muse can pay bills or send money from a bank account.** Meta's payments page names only Link by Stripe and a saved credit card for purchases. Whether it offers developer access is also unknown.
+- **Whether OpenAI dots can read Finances data.** The dots pages read for this wiki do not mention Finances or Plaid.
+- **Agent access to X Money beyond Grok Bot.** The plugin README describes Grok Bot, X's own help pages do not mention agents, and no source gives the separate agent limits.
+- **Perplexity's own description of Personal CFO.** The wiki relies on Plaid's posts, because Perplexity's page could not be fetched.
+- **The price in the JPMorgan and Plaid data agreement.** The press release says it includes a pricing structure but gives no figure.
 - **Whether ChatGPT Wallet runs on** Visa Intelligent Commerce or Mastercard Agent Pay. OpenAI names the networks as partners but not the programs.[^oa-01]
 - **Nous's own FCA status.** Nous names its FCA-regulated open banking provider, but no cited source says whether Nous itself is authorised or an appointed representative.[^ns-02]
 - **Merchant rules beyond eBay, United, Target and Booking.com**, and whether eBay, United or Booking.com grant permission to any agent today.[^eb-01][^ua-02][^tg-01][^bk-01]

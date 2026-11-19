@@ -56,6 +56,11 @@ Wallet does not hold a balance, extend credit or move funds.[^oa-03] OpenAI says
 
 Wallet started rolling out on 2026-11-13 in dots, OpenAI's agents, for ChatGPT Pro subscribers in the US aged 18 or older.[^oa-01] It works with eligible US-issued American Express, Chase, Mastercard and Visa cards. It is not available in Chat, Work or standalone Codex threads.[^oa-02]
 
+## Related ChatGPT pages
+
+- [Finances in ChatGPT](../personal-money/chatgpt-finances.md) reads your accounts through Plaid. It is separate from the wallet and cannot move money.[^oa-05]
+- [OpenAI dots](../personal-money/openai-dots.md) are always-on agents that can buy with a saved merchant card after you approve.[^oa-07]
+
 ## Unknown
 
 Whether there is an official MCP server or a public endpoint, fees, and when Wallet will reach more users or countries. No cited source confirms it, so the wiki says unknown.
@@ -68,6 +73,8 @@ All programs: [Payments](README.md).
 [^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-15.
 [^oa-04]: [Accept payments - OpenAI Commerce](../sources/oa-04.md). OpenAI Developers, official, retrieved 2026-11-15.
 [^oa-03]: [ChatGPT Wallet terms](../sources/oa-03.md). OpenAI, official, retrieved 2026-11-15.
+[^oa-05]: [Finances in ChatGPT (OpenAI Help Center)](../sources/oa-05.md). OpenAI, official, retrieved 2026-11-18.
+[^oa-07]: [Dots privacy, security, and safety FAQs (OpenAI Help Center)](../sources/oa-07.md). OpenAI, official, retrieved 2026-11-18.
 
 ---
 
