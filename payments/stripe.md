@@ -4,7 +4,7 @@ id: stripe
 title: Stripe
 summary: Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 kind: payment-credential
 operator: Stripe
 agent_can: Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server
@@ -76,7 +76,7 @@ Stripe also runs Link, a consumer wallet that gives an agent a one-time-use card
 
 ## Visa Agentic Ready
 
-Visa lists Stripe among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Stripe says it is testing ways to recognize agent-initiated payments, strengthen merchant controls and improve approval rates.[^pm-16] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
+Visa lists Stripe among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Stripe says it is testing ways to recognize agent-initiated payments, strengthen merchant controls and improve approval rates.[^pm-26] Visa's release for Europe, dated 2026-11-18, also lists Stripe among its more than 85 initial acceptance participants there.[^pm-25] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
 
 ## Unknown
 
@@ -94,7 +94,8 @@ All programs: [Payments](README.md).
 [^pm-18]: [Model Context Protocol (MCP) - Stripe Documentation (Markdown version)](../sources/pm-18.md). Stripe Docs, official, retrieved 2026-11-19.
 [^sp-02]: [Giving agents the ability to pay (Stripe)](../sources/sp-02.md). Stripe, official, retrieved 2026-11-18.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
-[^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-16.md). Visa, official, retrieved 2026-11-18.
+[^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.
+[^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](../sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
 
 ---
 

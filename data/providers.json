@@ -226,7 +226,7 @@
       "provider": "Coinbase",
       "page": "providers/coinbase.md",
       "page_status": "current",
-      "last_verified": "2026-11-19",
+      "last_verified": "2026-11-20",
       "summary": "Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.",
       "status": "official-mcp",
       "can_place_orders": [
@@ -388,6 +388,16 @@
           "id": "cb-10",
           "url": "https://www.coinbase.com/blog/agent-controls",
           "card": "sources/cb-10.md"
+        },
+        {
+          "id": "cb-11",
+          "url": "https://www.coinbase.com/advisor",
+          "card": "sources/cb-11.md"
+        },
+        {
+          "id": "cb-12",
+          "url": "https://www.coinbase.com/blog/system-update-take-control-of-your-money-with-coinbase",
+          "card": "sources/cb-12.md"
         }
       ],
       "unknown_fields": [

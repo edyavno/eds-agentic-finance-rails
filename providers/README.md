@@ -19,7 +19,7 @@ Alpaca, Coinbase, Interactive Brokers, Robinhood and Webull are the wiki's five 
 | Provider | Status | Approval model | Updated |
 |---|---|---|---|
 | [Alpaca](alpaca.md) | official-mcp | none | 2026-11-19 |
-| [Coinbase](coinbase.md) | official-mcp | separate-account | 2026-11-19 |
+| [Coinbase](coinbase.md) | official-mcp | separate-account | 2026-11-20 |
 | [Interactive Brokers](interactive-brokers.md) | official-mcp | draft-then-submit; ai-partition | 2026-11-12 |
 | [Kraken](kraken.md) | official-mcp | per-order-confirm | 2026-11-19 |
 | [Public](public.md) | official-mcp | separate-account; per-order-confirm | 2026-11-19 |

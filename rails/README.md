@@ -3,7 +3,7 @@ type: rail
 title: Rails
 summary: The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-20'
 ---
 
 # Rails
@@ -17,6 +17,7 @@ last_verified: '2026-11-12'
 | [Agent payments](agent-payments.md) | Card-network agent programs, payment tokens, HTTP 402 payments. One page per program in [Payments](../payments/README.md) |
 | [Agent identity](agent-identity.md) | Signing agent traffic so sites can tell which agent is calling |
 | [Mandates and data access](mandates-and-data-access.md) | Proof of what a user authorized, and the rules on sharing financial data |
+| [Institutional markets](institutional-markets.md) | Agents negotiating and trading between firms, with a human approving the final terms |
 
 These pages are starter overviews and will get more detail as we add sources. Each claim is cited.
 

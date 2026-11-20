@@ -4,7 +4,7 @@ id: link-wallet-for-agents
 title: Link wallet for agents
 summary: Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 kind: payment-credential
 operator: Stripe
 agent_can: Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount
@@ -45,6 +45,7 @@ Stripe says Link's wallet for agents is built on its Issuing primitives, and it 
 - **Meta Muse.** Stripe says Meta integrated Link's wallet for agents with Muse for US consumers. At more than 1 million businesses that accept Link, Muse can check out with the payment method saved in Link, and elsewhere Link issues a single-use virtual card scoped to the purchase. The person approves the total in the chat and Muse never sees the underlying payment details.[^sp-01] See [Meta Muse](../personal-money/meta-muse.md).
 - **Grok Bot and Instinct.** Stripe says the Link agent wallet helps power payments for Grok Bot and Instinct.[^sp-01] Grok Bot's changelog says Link completes the payment after the person taps Allow on a purchase card.[^gb-05] See [Grok Bot](../personal-money/grok-bot.md) and [Instinct](../personal-money/instinct.md).
 - **Claude Duet.** Anthropic says Duet pays with a one-time card from a wallet like Link from Stripe, limited to the merchant and amount, and the person approves in the Link app.[^cl-03] See [Claude Duet](../personal-money/claude-duet.md).
+- **Replit Agent.** On 2026-11-12 Replit said its Agent can buy supplies for a business, such as shipping boxes, with Link and Visa.[^rp-01] See [Replit Agent](#how-does-replit-agent-buy-with-link) below.
 
 ## Does Link work with Chase cards?
 
@@ -52,6 +53,16 @@ A Wall Street Journal report of 2026-11-13, citing people familiar with the matt
 
 - **Agentic tokens.** The report says Link also uses [agentic tokens](../glossary.md#agentic-token) from Visa and Mastercard, and that Chase has been slow to implement them.[^bl-12]
 - **Cost to merchants.** Merchants are complaining to Visa and Mastercard that the virtual card costs them higher fees on average than the shopper's own card, because it is classified as a commercial card rather than a consumer card. Some merchant executives also say the temporary cards make returns harder to process.[^bl-12] See [Merchants and outside agents](merchants-and-outside-agents.md#what-do-merchants-say-about-agent-virtual-cards).
+
+## How does Replit Agent buy with Link?
+
+Replit says its Agent finds options and prepares the merchant's checkout, then waits for the business owner to approve the final total before anything is charged.[^rp-01]
+
+- **Link's part.** Replit says Link lets the user choose a saved payment method and approve the final total while protecting their payment details, and that Link facilitates the transaction scoped to the approved purchase.[^rp-01]
+- **The browser.** A browser subagent works on the merchant's site, prepares checkout and returns the purchase details to the Agent for approval. Replit says it uses a browser provided by Browserbase, so it does not need a separate integration with each store.[^rp-01]
+- **Limits.** Replit says the browser session is isolated and the Agent stops at the checkout for approval. It says the Agent never gets open-ended permission to spend, shell access and general browsing are disabled during payment, and approval checks are enforced in code, not left to the model.[^rp-01]
+- **Who can use it.** Replit says it is available for Core and Pro users, starting in the US and limited to one-time purchases.[^rp-01]
+- **Visa.** Replit says Visa provides trusted payment infrastructure and capabilities designed to support secure agent-initiated transactions. See [Visa Intelligent Commerce](visa-intelligent-commerce.md).[^rp-01]
 
 ## What else did Stripe add?
 
@@ -66,6 +77,7 @@ A Wall Street Journal report of 2026-11-13, citing people familiar with the matt
 - Which countries beyond the US can connect Link to agents.
 - How much more the virtual card costs merchants, and which other issuers' cards depend on it. The cited reports give no figure.
 - When spending limits that skip per-purchase approval will launch. Stripe gives no date.
+- Replit Agent's price, which countries beyond the US it will reach, and whether Link's purchase protections apply to its purchases. The Replit post does not say.[^rp-01]
 
 More on payments: [Payments](README.md).
 
@@ -75,6 +87,7 @@ More on payments: [Payments](README.md).
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^gb-05]: [Grok Bot changelog](../sources/gb-05.md). xAI, official, retrieved 2026-11-18.
 [^cl-03]: [Claude Duet safety, privacy and security](../sources/cl-03.md). Anthropic, official, retrieved 2026-11-18.
+[^rp-01]: [Replit Agent can now buy for your business and help you reach customers](../sources/rp-01.md). Replit, official, retrieved 2026-11-20.
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 [^sp-03]: [Helping personal agents shop more intelligently and reliably with Link (Stripe)](../sources/sp-03.md). Stripe, official, retrieved 2026-11-18.

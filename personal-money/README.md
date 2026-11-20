@@ -3,7 +3,7 @@ type: personal-money
 title: Personal money agents
 summary: AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-20'
 ---
 
 # Personal money agents
@@ -28,7 +28,7 @@ This section covers AI agents that help a person manage everyday money: seeing b
 | [Starling Assistant](starling-assistant.md) | Bank AI tool | A UK bank's in-app assistant that will set up payments from voice or text, with a tap to approve each one.[^st-01] |
 | [Plaid MCP servers](plaid.md) | Developer tools | Plaid's MCP servers are for developer diagnostics and a sandbox coding kit, not end-user account access.[^pb-02] |
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | Bank AI tool | A JPMorgan pilot that aims to predict a user's cash flow and move funds for yield (news report).[^bl-01] |
-| [Banks and outside agents](banks-and-outside-agents.md) | Topic | News reports say several big US banks block outside agents that log in with a customer's password.[^bl-02][^bl-08] |
+| [Banks and outside agents](banks-and-outside-agents.md) | Topic | News reports say several big US banks block outside agents that log in with a customer's password.[^bl-02][^bl-08] Citi and Chase say in their own user agreements that they treat an outside agent's actions as yours.[^ci-01][^jp-02] |
 
 ## What can an agent do with each tool?
 
@@ -94,6 +94,8 @@ Not investment advice.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](../sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
+[^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](../sources/ci-01.md). Citi, official, retrieved 2026-11-20.
+[^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](../sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 

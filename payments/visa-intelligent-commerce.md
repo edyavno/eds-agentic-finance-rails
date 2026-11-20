@@ -4,7 +4,7 @@ id: visa-intelligent-commerce
 title: Visa Intelligent Commerce
 summary: 'Visa''s agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.'
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-20'
 kind: card-network-program
 operator: Visa
 agent_can: Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved
@@ -49,15 +49,31 @@ On 2026-04-08, Visa announced Intelligent Commerce Connect as part of VIC. Visa 
 
 ## What is Agentic Ready?
 
-[Agentic Ready](../glossary.md#agentic-ready) is a Visa program, part of Visa Intelligent Commerce, where participants test agent-initiated transactions that use agentic network tokens.[^pm-16] Issuers joined first: Visa says 175+ issuers across 45 markets take part and test with their own credit and debit cards.[^pm-16]
+[Agentic Ready](../glossary.md#agentic-ready) is a Visa program, part of Visa Intelligent Commerce, where participants test agent-initiated transactions that use agentic network tokens.[^pm-26] Issuers joined first: Visa says 175+ issuers across 45 markets take part and test with their own credit and debit cards.[^pm-26]
 
-On 2026-11-17 Visa opened it to the acceptance side: merchants, B2B suppliers, payment providers, acquirers and commerce platforms. It launched with more than 140 participants, and Visa expects more financial institutions, merchants and enablers to join through 2027.[^pm-16] Visa says participants test how agent-initiated transactions can be recognized, authenticated and processed on the payment infrastructure they already use.[^pm-16]
+On 2026-11-17 Visa opened it to the acceptance side: merchants, B2B suppliers, payment providers, acquirers and commerce platforms. It launched with more than 140 participants, and Visa expects more financial institutions, merchants and enablers to join through 2027.[^pm-26] Visa says participants test how agent-initiated transactions can be recognized, authenticated and processed on the payment infrastructure they already use.[^pm-26]
+
+Visa issued a corrected release on 2026-11-19 that replaces its release of 2026-11-17.[^pm-26] The correction adds J.P. Morgan Payments to the subhead and after the 11th paragraph.[^pm-26] The release it replaced is the 2026-11-17 version, which the Agentic Ready paragraph above first relied on.[^pm-16]
+
+### Agentic Ready in Europe
+
+On 2026-11-18 Visa announced the expansion of Agentic Ready to the acceptance ecosystem in Europe, in a release datelined London.[^pm-25]
+
+- It launched with more than 85 acceptance participants across Europe, including Adyen, Barclaycard Payments, Checkout.com, Global Payments, Nuvei, PayPal, Stripe and Worldline.[^pm-25]
+- Merchants, payment service providers and acquirers can join the 40+ European issuers already taking part.[^pm-25]
+- Visa says the framework supports agentic transactions on both consumer and commercial cards, and lays a foundation for agentic B2B services and payments.[^pm-25]
+- Visa says the Visa Acceptance Platform complements the expanded programme with capabilities across the payment lifecycle, including omnichannel acceptance, credential management, fraud protection and dispute management.[^pm-25]
+- Visa expects more financial institutions, merchants and enablers to join throughout 2027.[^pm-25]
+- The release does not say whether the European participants are counted in the 140 or more in the global release, so that is unknown.
 
 ## Who says they work with it
 
 - OpenAI says it built [ChatGPT Wallet](chatgpt-wallet.md) in partnership with American Express, Mastercard and Visa. It does not say whether Wallet uses Visa Intelligent Commerce.[^oa-01]
 - Rain says its [Agent Vaults](rain-agent-vaults.md) support Visa Intelligent Commerce.[^rn-01]
-- Visa names Adyen, Antom, Billtrust, Checkout.com, Fiserv, Global Payments, PayPal and Stripe among the initial Agentic Ready participants.[^pm-16] Stripe says it is testing ways to recognize agent-initiated payments, and PayPal says it is expanding acceptance of Visa agentic tokens across its merchant network.[^pm-16] See [Stripe](stripe.md) and [PayPal](paypal.md).
+- Visa names Adyen, Antom, Billtrust, Checkout.com, Fiserv, Global Payments, PayPal and Stripe among the initial Agentic Ready participants.[^pm-26] Stripe says it is testing ways to recognize agent-initiated payments, and PayPal says it is expanding acceptance of Visa agentic tokens across its merchant network.[^pm-26] See [Stripe](stripe.md) and [PayPal](paypal.md).
+- Visa's corrected release names J.P. Morgan Payments among the initial participants.[^pm-26] It says J.P. Morgan Payments and Visa are collaborating to define how agentic payments should work across the acceptance ecosystem. They are testing and refining processing requirements and standards for agent-initiated transactions, including how agentic network tokens and associated Trusted Agent Protocol signals move across merchant, acquiring and network infrastructure.[^pm-26]
+- AXS, a Singapore bill payment network, says Visa will show Visa Intelligent Commerce connecting AI agents to AXS's MCP server to complete everyday bill payments, using an agentic token.[^ax-01] See [Agent payments](../rails/agent-payments.md#can-an-agent-pay-bills).
+- Replit says its Agent buys business supplies with Link and Visa. Replit says Link facilitates the transaction scoped to the approved purchase, while Visa provides trusted payment infrastructure and capabilities designed to support secure agent-initiated transactions.[^rp-01] See [Link wallet for agents](link-wallet-for-agents.md).
 
 ## Related
 
@@ -67,16 +83,20 @@ On 2026-11-17 Visa opened it to the acceptance side: merchants, B2B suppliers, p
 
 ## Unknown
 
-Fees, the consumer AI apps that support VIC today, a production MCP address, and how many Agentic Ready participants are live in production. No cited source confirms it, so the wiki says unknown.
+Fees, the consumer AI apps that support VIC today, a production MCP address, and how many Agentic Ready participants are live in production. Whether the European participants are part of the global count is also unknown. No cited source confirms it, so the wiki says unknown.
 
 ## Sources
 
 [^pm-01]: [Visa Developer Center](../sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
+[^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.
 [^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-16.md). Visa, official, retrieved 2026-11-18.
+[^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](../sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
+[^ax-01]: [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](../sources/ax-01.md). AXS, official, retrieved 2026-11-20.
+[^rp-01]: [Replit Agent can now buy for your business and help you reach customers](../sources/rp-01.md). Replit, official, retrieved 2026-11-20.
 [^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](../sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
 
 ---

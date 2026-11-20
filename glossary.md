@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Glossary
@@ -29,6 +29,14 @@ A packaged set of instructions, often a SKILL.md file, that an AI agent loads to
 ## Agentic commerce
 
 Shopping and paying done by an AI agent on a person's behalf, from finding an item to checking out.
+
+## Agentic Mobile Protocol (AMP)
+
+An open payment protocol built by Ant International so AI agents can execute payments through digital wallets, super apps, smart devices and other mobile interfaces. Ant International says it launched in April 2026.[^nt-01] See [Agent payments](rails/agent-payments.md#is-there-an-agent-payment-protocol-for-mobile-wallets).
+
+## Agentic Negotiation Protocol (ANP)
+
+BNY's framework and control layer for authorized agents from different organizations to negotiate with each other. BNY says it is patent pending, and that it verifies the participants and lets their agents exchange offers and counteroffers.[^bn-01] See [Institutional markets](rails/institutional-markets.md).
 
 ## Agentic Ready
 
@@ -114,6 +122,14 @@ A design where a person reviews or approves an agent's action before it takes ef
 
 In Plaid, one login at a financial institution. When you link a bank through Plaid, the app gets an Item with its own identifier and access token. Linking the same account twice makes two Items.
 
+## Know Your Agent (KYA)
+
+A way for a bank or merchant to learn who an agent is and whom it represents, what authority and mandate it has, and what assurance exists about it. The Monetary Authority of Singapore says it will facilitate the development of a Know Your Agent protocol for trusted information exchange between customer agents and financial institutions. Its text and date are unknown.[^ma-01] NETS and Ant International say they will explore interoperability between Know-Your-Agent frameworks.[^nt-01] See [Agent identity](rails/agent-identity.md#what-is-know-your-agent).
+
+## Know Your Human (KYH)
+
+Sardine's name for a way to tie the customer's own device to an agent's session, so a merchant can see signals from the person behind the agent. It is Sardine's own product, and the claims about it are Sardine's.[^sd-01] See [Merchants and outside agents](payments/merchants-and-outside-agents.md#what-does-sardine-say-about-agent-checkouts).
+
 ## llms.txt
 
 A machine-readable index of pages, published so AI agents can find and read a site's documentation.
@@ -129,6 +145,10 @@ Model Context Protocol. A standard way for an AI application to connect to a too
 ## Merchant of record
 
 The business that legally sells to the buyer and is named on the charge. It handles the payment, taxes, refunds and disputes for that sale.
+
+## MPP
+
+Machine Payments Protocol. A way for an agent to pay for a web request using the HTTP 402 Payment Required status code, as [x402](#x402) does. AWS's AgentCore payments guide supports both.[^aw-03]
 
 ## Network token
 
@@ -186,6 +206,10 @@ The shared plumbing that agent access to money runs on, separate from any single
 
 A credential an app can use to get a new access token without asking the person to sign in again.
 
+## SAFR
+
+Safeguards for Agentic Finance at Runtime. Work published by the Monetary Authority of Singapore. It says agents need bounded autonomy, clearly established identity and authority, clear and specific mandates, and controls proportionate to authority. A new phase will facilitate a [Know Your Agent](#know-your-agent-kya) protocol.[^ma-01]
+
 ## Sandbox
 
 A test environment that is not the live production system.
@@ -225,6 +249,14 @@ A draft web standard for bots and agents to sign their web requests, so a websit
 ## x402
 
 A protocol for paying for a resource as part of a web request, often used so an agent can pay for data or a service.
+
+## Sources
+
+[^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
+[^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
+[^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
+[^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
+[^aw-03]: [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](sources/aw-03.md). Amazon Web Services (AgentCore Developer Guide), official, retrieved 2026-11-20.
 
 ---
 

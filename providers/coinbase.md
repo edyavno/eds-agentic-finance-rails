@@ -5,7 +5,7 @@ title: Coinbase
 summary: 'Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.'
 provider: Coinbase
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account]
@@ -131,18 +131,33 @@ On hosted chat clients, high-reasoning and extended-thinking modes sometimes dra
 
 To disconnect, revoke the connection at Coinbase under Account > Security > Connections. Deleting a local skill or clearing a chat does not revoke access.[^cb-09] For Grok Bot, see also [Can Grok Bot connect to Coinbase?](../personal-money/grok-bot.md#can-grok-bot-connect-to-coinbase)
 
+## How is Coinbase Advisor different from an outside agent?
+
+Coinbase has two separate AI products. This page's other sections are about outside agents you connect to your account. Coinbase Advisor is Coinbase's own AI inside its app.
+
+- **What it is.** Coinbase calls Advisor an AI-powered, SEC-registered investment advisor inside the Coinbase app, rolling out first to Coinbase One members in the US.[^cb-12] Its page says early access is exclusively through Coinbase One, and that during the beta it is available to select users and otherwise to select Coinbase One subscribers at no additional cost, with fees for underlying Coinbase products still applying.[^cb-11]
+- **Who runs it.** Coinbase says Advisor is provided by Coinbase Advisors, LLC, registered with the US Securities and Exchange Commission as an investment adviser and with the US Commodity Futures Trading Commission as a commodity trading advisor.[^cb-11]
+- **Approval.** Coinbase says Advisor does not trade on your behalf. It describes a non-discretionary tool where trading is only done with your explicit permission, and you review, edit and authorize every action.[^cb-11]
+- **Scope.** Coinbase says the beta supports spot crypto, derivatives, equities, automated dollar cost averaging strategies and USDC Lending, and that prediction markets are being built.[^cb-11]
+- **How it differs.** Advisor is Coinbase's own advisor and is not one of the outside AI apps in the connection table above. Outside agents connect through Coinbase for Agents, where the limits are Agent Controls that Coinbase enforces on its servers.[^cb-12][^cb-10] Coinbase's own launch post describes Coinbase for Agents separately, as a way to let any AI agent execute strategies on your portfolio within boundaries you set.[^cb-12]
+- **Caveats Coinbase gives.** Coinbase says outputs are limited and may be inaccurate or incomplete, that Advisor cannot replace your judgment, and that outcomes cannot be guaranteed.[^cb-11] It says it may use conversational data to improve models over time.[^cb-11]
+
+The launch post is dated 2026-06-16.[^cb-12] The Advisor page itself is undated. The wiki has not read Advisor's terms or how it handles the account permissions that outside agents use, so those are unknown.
+
 ## What is still unknown about Coinbase?
 
 - Order types: unknown.
 - Whether auto-stop cancels open orders, and when product permissions arrive: unknown.[^cb-10]
 - [Paper trading](../glossary.md#paper-trading) for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
 - Agent terms of use: not yet reviewed here.
+- Advisor's terms, its price after the beta, and countries beyond the US: unknown.[^cb-11]
 - Plan, country and workspace availability for most of the ten listed apps: unknown. Coinbase says only that the official ChatGPT plugin is currently for US Coinbase users, and that availability also depends on your ChatGPT account and workspace.[^cb-09]
 
 Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
 
 ## What changed on this page?
 
+- 2026-11-20: Added how Coinbase Advisor, Coinbase's own AI, differs from outside agents.[^cb-11][^cb-12]
 - 2026-11-19: Added how to connect Coinbase from each of the ten listed AI apps, how to revoke access, and the limits on a CLI API key.[^cb-09]
 - 2026-11-18: Added Coinbase's Agent Controls (trade size, 24-hour volume, auto-stop) and the official ChatGPT plugin's confirmation cards.[^cb-10][^cb-09]
 - 2026-11-14: Cited the official CDP docs llms.txt index.[^cb-06]
@@ -159,6 +174,8 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 [^cb-03]: [Coinbase for Agents setup skill (skill.md)](../sources/cb-03.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
 [^cb-06]: [Coinbase Developer Platform docs llms.txt](../sources/cb-06.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
+[^cb-12]: [System Update: Take control of your money with Coinbase](../sources/cb-12.md). Coinbase, official, retrieved 2026-11-20.
+[^cb-11]: [Coinbase Advisor](../sources/cb-11.md). Coinbase, official, retrieved 2026-11-20.
 [^cb-08]: [Coinbase’s new tool can help agents trade and pay for premium research - TechCrunch](../sources/cb-08.md). TechCrunch, third-party, retrieved 2026-11-12.
 
 ---

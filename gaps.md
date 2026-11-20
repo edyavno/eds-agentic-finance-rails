@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Gaps
@@ -18,6 +18,7 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 4. **Order types** for Coinbase, Webull, IBKR, Public and Scalable Capital agent orders. Alpaca's are now documented for its Trading MCP server.[^al-09]
 5. **IBKR Autonomous Trading asset list.** An independent review found IBKR's descriptions inconsistent.[^ib-03]
 6. **Primary statements from blockers.** The JPMorgan and Morgan Stanley evidence is from news reports.[^bl-01][^bl-02]
+   - Citi's and Chase's own user agreements are now cited on [Banks and outside agents](personal-money/banks-and-outside-agents.md#what-do-the-citi-and-chase-user-agreements-say).[^ci-01][^jp-02] The day each changed is unknown. Bank of America, Citizens and PNC are known only from a TechCrunch report, and PNC's wording is unknown.[^tc-01]
 7. **Independent tests.** Only Robinhood and IBKR have independent write-ups in our sources.[^rh-02][^ib-03]
 
 ## Payments and personal money agents
@@ -38,6 +39,17 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Nous's own FCA status.** Nous names its FCA-regulated open banking provider, but no cited source says whether Nous itself is authorised or an appointed representative.[^ns-02]
 - **Merchant rules beyond eBay, United, Target and Booking.com**, and whether eBay, United or Booking.com grant permission to any agent today.[^eb-01][^ua-02][^tg-01][^bk-01]
 - **The airline, date and volume** in the live Mastercard Agent Pay flight purchase. The announcement names none of them.[^pm-17]
+- **Know Your Agent protocol.** The Monetary Authority of Singapore says it will facilitate one. Its speech gives no protocol text, date or participants, and no start date for its agentic money sandbox.[^ma-01]
+- **Amazon Bedrock AgentCore payments.** The list of AWS Regions and the prices are not in the pages read. The pages do not describe a per-purchase approval step beyond the session budget.[^aw-01][^aw-02][^aw-03] See [AgentCore payments](payments/agentcore-payments.md).
+- **Lightspark Agent Accounts.** Price, the countries where consumers can use it, and the MCP address.[^ls-01][^ls-02] See [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md).
+- **The Ant International coffee purchase on Agent Pay.** The date, amount, merchant and country are not given. Mastercard's 2026-11-19 text says Agent Pay for Machines was "Introduced in June this year", while the Mastercard page the wiki cites for it is dated 2026-10-20, and the two are not reconciled.[^an-01][^pm-23]
+- **AXS agentic bill payments.** The consumer launch date, the MCP address, and which agents can use it beyond those AXS names.[^ax-01]
+- **NETS and Ant International's AMP.** The agreement is a memorandum of understanding to explore. No dates or documentation are given.[^nt-01]
+- **Coinbase Advisor.** Availability beyond select Coinbase One subscribers, and whether Coinbase's Agent Controls apply to it.[^cb-11][^cb-12]
+- **Visa Agentic Ready in Europe.** Whether the 85 or more European acceptance participants are part of the 140 or more in Visa's global figure.[^pm-25][^pm-26]
+- **Sardine Know Your Human.** No independent test, and no merchant or agent is named as using it.[^sd-01][^sd-02]
+- **Replit Agent purchases with Link and Visa.** Price, countries beyond the US, and whether Link's purchase protections apply.[^rp-01]
+- **BNY and Microsoft's Treasury bill negotiation.** The bill's tenor, size and price, the date of the trade itself, and any public specification for BNY's Agentic Negotiation Protocol.[^bn-01] See [Institutional markets](rails/institutional-markets.md).
 
 ## Unknown fields by provider
 
@@ -61,6 +73,9 @@ These cards are prior art or competing directories. They are leads only: use the
 [^ib-03]: [IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested](sources/ib-03.md). DeskTested, third-party, retrieved 2026-11-12.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^bl-02]: [Scoop: Unvetted AI agents are accessing U.S. bank accounts](sources/bl-02.md). Axios, third-party, retrieved 2026-11-12.
+[^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](sources/ci-01.md). Citi, official, retrieved 2026-11-20.
+[^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
+[^tc-01]: [More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch)](sources/tc-01.md). TechCrunch, third-party, retrieved 2026-11-20.
 [^rh-02]: [Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested](sources/rh-02.md). DeskTested, third-party, retrieved 2026-11-12.
 [^pm-19]: [Mastercard Developers Agent Toolkit](sources/pm-19.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^pm-20]: [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](sources/pm-20.md). Mastercard Developers, official, retrieved 2026-11-19.
@@ -75,6 +90,23 @@ These cards are prior art or competing directories. They are leads only: use the
 [^tg-01]: [Terms & Conditions : Target](sources/tg-01.md). Target, official, retrieved 2026-11-18.
 [^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
 [^pm-17]: [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](sources/pm-17.md). Mastercard, official, retrieved 2026-11-18.
+[^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
+[^aw-01]: [AWS Marketplace now supports agentic payments with AgentCore](sources/aw-01.md). Amazon Web Services, official, retrieved 2026-11-20.
+[^aw-02]: [Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments](sources/aw-02.md). Amazon Web Services (AWS Machine Learning Blog), official, retrieved 2026-11-20.
+[^aw-03]: [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](sources/aw-03.md). Amazon Web Services (AgentCore Developer Guide), official, retrieved 2026-11-20.
+[^ls-01]: [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](sources/ls-01.md). Lightspark (via GlobeNewswire), official, retrieved 2026-11-20.
+[^ls-02]: [Agent Accounts (Lightspark documentation)](sources/ls-02.md). Lightspark (documentation), official, retrieved 2026-11-20.
+[^an-01]: [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (Ant International page)](sources/an-01.md). Mastercard (posted by Ant International), official, retrieved 2026-11-20.
+[^ax-01]: [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](sources/ax-01.md). AXS, official, retrieved 2026-11-20.
+[^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
+[^cb-11]: [Coinbase Advisor](sources/cb-11.md). Coinbase, official, retrieved 2026-11-20.
+[^cb-12]: [System Update: Take control of your money with Coinbase](sources/cb-12.md). Coinbase, official, retrieved 2026-11-20.
+[^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
+[^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](sources/pm-26.md). Visa, official, retrieved 2026-11-20.
+[^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
+[^sd-02]: [Know Your Human (KYH) for Agentic Commerce - Sardine](sources/sd-02.md). Sardine, official, retrieved 2026-11-20.
+[^rp-01]: [Replit Agent can now buy for your business and help you reach customers](sources/rp-01.md). Replit, official, retrieved 2026-11-20.
+[^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

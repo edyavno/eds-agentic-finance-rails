@@ -43,9 +43,11 @@ Every page in the wiki, generated from page headers.
 
 - [Payments](payments/README.md) (current): How AI agents pay: card-network agent programs, payment tokens, wallets, protocols and agent cards, each with a sourced page, plus merchants that ban agents.
 - [AgentBank](payments/agentbank.md) (current): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
+- [Amazon Bedrock AgentCore payments](payments/agentcore-payments.md) (current): AWS service that lets an agent pay for APIs, MCP servers and content over x402 and MPP within a per-session budget. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill, with no crypto wallet.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
+- [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md) (current): Lightspark accounts where an AI agent holds, spends, sends and receives money within limits and approvals the account holder sets. It pays Visa merchants with a card valid for one purchase. Sold to companies that build agents.
 - [Link wallet for agents](payments/link-wallet-for-agents.md) (current): Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 - [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
@@ -89,6 +91,7 @@ Every page in the wiki, generated from page headers.
 - [Rails](rails/README.md) (current): The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
 - [Agent identity](rails/agent-identity.md) (current): How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 - [Agent payments](rails/agent-payments.md) (current): Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
+- [Institutional markets](rails/institutional-markets.md) (current): How AI agents negotiate and trade between firms, starting with a pilot Treasury bill negotiation by BNY and Microsoft in which humans approved the final terms and the agents could not execute.
 - [Local MCP servers and CLIs](rails/local-mcp-and-cli.md) (current): Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
 - [Mandates and data access](rails/mandates-and-data-access.md) (current): Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
 - [Remote MCP with OAuth](rails/remote-mcp-oauth.md) (current): How hosted broker MCP servers advertise their OAuth setup, how AI clients register with them, and why a broker's allowlist of clients still matters.
@@ -113,6 +116,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md) (current): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
@@ -128,7 +132,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (201)
+## Sources (224)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -148,6 +152,12 @@ Every page in the wiki, generated from page headers.
 | [al-07](sources/al-07.md): Alpaca Launches MCP Servers in Public Beta for Broker Partners. | Alpaca | Alpaca | official | 2026-11-12 |
 | [al-08](sources/al-08.md): Broker API MCP (Alpaca Docs) | Alpaca | Alpaca Docs | official | 2026-11-12 |
 | [al-09](sources/al-09.md): Trading API MCP | Alpaca | Alpaca Docs | official | 2026-11-19 |
+| [an-01](sources/an-01.md): Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (Ant International page) | Mastercard Agent Pay | Mastercard (posted by Ant International) | official | 2026-11-20 |
+| [an-02](sources/an-02.md): Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (PR Newswire) | Mastercard Agent Pay | Mastercard (via PR Newswire) | official | 2026-11-20 |
+| [aw-01](sources/aw-01.md): AWS Marketplace now supports agentic payments with AgentCore | Amazon Bedrock AgentCore payments | Amazon Web Services | official | 2026-11-20 |
+| [aw-02](sources/aw-02.md): Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments | Amazon Bedrock AgentCore payments | Amazon Web Services (AWS Machine Learning Blog) | official | 2026-11-20 |
+| [aw-03](sources/aw-03.md): Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents | Amazon Bedrock AgentCore payments | Amazon Web Services (AgentCore Developer Guide) | official | 2026-11-20 |
+| [ax-01](sources/ax-01.md): AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners | AXS agentic bill payments | AXS | official | 2026-11-20 |
 | [bk-01](sources/bk-01.md): Booking.com: Terms and Conditions (Customer terms of service) | Booking.com | Booking.com | official | 2026-11-18 |
 | [bl-01](sources/bl-01.md): JPMorgan blocks outside AI agents like Muse, Instinct from account access | JPMorgan Chase | CNBC | third-party | 2026-11-12 |
 | [bl-02](sources/bl-02.md): Scoop: Unvetted AI agents are accessing U.S. bank accounts | Banks (JPM, MS, BofA, Citi, Wells) | Axios | third-party | 2026-11-12 |
@@ -161,6 +171,7 @@ Every page in the wiki, generated from page headers.
 | [bl-11](sources/bl-11.md): Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM \| RIABiz | Charles Schwab | RIABiz | third-party | 2026-11-13 |
 | [bl-12](sources/bl-12.md): AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint) | JPMorgan Chase | The Wall Street Journal (syndicated on Mint) | third-party | 2026-11-19 |
 | [bl-13](sources/bl-13.md): JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS) | JPMorgan Chase | PYMNTS | third-party | 2026-11-19 |
+| [bn-01](sources/bn-01.md): BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade | BNY and Microsoft Treasury bill negotiation | BNY | official | 2026-11-20 |
 | [cb-01](sources/cb-01.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-03](sources/cb-03.md): Coinbase for Agents setup skill (skill.md) | Coinbase | Coinbase Developer Platform | official | 2026-11-12 |
 | [cb-04](sources/cb-04.md): Coinbase for Agents MCP: OAuth protected-resource metadata | Coinbase | Coinbase (endpoint metadata) | official | 2026-11-12 |
@@ -170,6 +181,9 @@ Every page in the wiki, generated from page headers.
 | [cb-08](sources/cb-08.md): Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch | Coinbase | TechCrunch | third-party | 2026-11-12 |
 | [cb-09](sources/cb-09.md): Coinbase MCP - Coinbase Developer Documentation | Coinbase | Coinbase Developer Platform | official | 2026-11-19 |
 | [cb-10](sources/cb-10.md): Coinbase for Agents introduces new Agent Controls | Coinbase | Coinbase | official | 2026-11-18 |
+| [cb-11](sources/cb-11.md): Coinbase Advisor | Coinbase | Coinbase | official | 2026-11-20 |
+| [cb-12](sources/cb-12.md): System Update: Take control of your money with Coinbase | Coinbase | Coinbase | official | 2026-11-20 |
+| [ci-01](sources/ci-01.md): Citi Online User Agreement (Section H: Use of Third-party AI Agents) | Citi | Citi | official | 2026-11-20 |
 | [cl-01](sources/cl-01.md): Use Personal Finance in Claude (Claude Help Center) | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-03](sources/cl-03.md): Claude Duet safety, privacy and security | Claude Duet | Anthropic | official | 2026-11-18 |
@@ -197,9 +211,15 @@ Every page in the wiki, generated from page headers.
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
 | [id-07](sources/id-07.md): ERC-8004: Trustless Agents | ERC-8004 | Ethereum Improvement Proposals | official | 2026-11-14 |
 | [jp-01](sources/jp-01.md): JPMorganChase and Plaid announce an extension to their data access agreement | JPMorgan and Plaid | JPMorganChase | official | 2026-11-18 |
+| [jp-02](sources/jp-02.md): Digital Services Agreement (J.P. Morgan Chase) | JPMorgan Chase | JPMorgan Chase | official | 2026-11-20 |
 | [kr-01](sources/kr-01.md): MCP server - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
 | [kr-02](sources/kr-02.md): kraken-cli - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
 | [kr-03](sources/kr-03.md): GitHub - krakenfx/kraken-cli: Kraken CLI · GitHub | Kraken | Kraken (GitHub) | official | 2026-11-19 |
+| [ls-01](sources/ls-01.md): Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments | Lightspark Agent Accounts | Lightspark (via GlobeNewswire) | official | 2026-11-20 |
+| [ls-02](sources/ls-02.md): Agent Accounts (Lightspark documentation) | Lightspark Agent Accounts | Lightspark (documentation) | official | 2026-11-20 |
+| [ma-01](sources/ma-01.md): Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026 | Monetary Authority of Singapore (Know Your Agent) | Monetary Authority of Singapore | official | 2026-11-20 |
+| [mi-01](sources/mi-01.md): Trusted intelligence in banking, insurance, and capital markets: Six firms show how | BNY and Microsoft Treasury bill negotiation | Microsoft (Microsoft Cloud Blog) | official | 2026-11-20 |
+| [mi-02](sources/mi-02.md): Microsoft Ignite 2026: Empowering human ambition, intelligence and trust | BNY and Microsoft Treasury bill negotiation | Microsoft (Microsoft Source) | official | 2026-11-20 |
 | [mm-01](sources/mm-01.md): How Muse works with payments (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-02](sources/mm-02.md): How Muse works with Connectors (Meta Help Center) | Meta Muse | Meta | official | 2026-11-18 |
 | [mm-03](sources/mm-03.md): Introducing Muse (Meta newsroom) | Meta Muse | Meta | official | 2026-11-18 |
@@ -207,6 +227,7 @@ Every page in the wiki, generated from page headers.
 | [ns-01](sources/ns-01.md): Frequently asked questions \| Nous | Nous | Nous | official | 2026-11-15 |
 | [ns-02](sources/ns-02.md): Terms of use \| Nous | Nous | Nous | official | 2026-11-15 |
 | [ns-03](sources/ns-03.md): We've raised $17M to get Nous into every household that's had enough of life admin | Nous | Nous | official | 2026-11-15 |
+| [nt-01](sources/nt-01.md): NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol | Agentic Mobile Protocol | NETS (Network for Electronic Transfers) | official | 2026-11-20 |
 | [oa-01](sources/oa-01.md): Introducing ChatGPT Wallet | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
 | [oa-02](sources/oa-02.md): Making purchases with ChatGPT Wallet | ChatGPT Wallet | OpenAI Help Center | official | 2026-11-19 |
 | [oa-03](sources/oa-03.md): ChatGPT Wallet terms | ChatGPT Wallet | OpenAI | official | 2026-11-15 |
@@ -271,6 +292,8 @@ Every page in the wiki, generated from page headers.
 | [pm-22](sources/pm-22.md): Mastercard unveils new tools and collaborations to power smarter, safer agentic commerce | Mastercard Developers MCP server | Mastercard | official | 2026-11-19 |
 | [pm-23](sources/pm-23.md): What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action | Mastercard Agent Pay for Machines | Mastercard | official | 2026-11-19 |
 | [pm-24](sources/pm-24.md): Mastercard Open Finance US (Mastercard Developers documentation) | Mastercard Open Finance US | Mastercard Developers | official | 2026-11-19 |
+| [pm-25](sources/pm-25.md): Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe | Visa Intelligent Commerce | Visa (Visa UK newsroom) | official | 2026-11-20 |
+| [pm-26](sources/pm-26.md): CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally | Visa Intelligent Commerce | Visa | official | 2026-11-20 |
 | [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-19 |
 | [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |
@@ -301,13 +324,17 @@ Every page in the wiki, generated from page headers.
 | [rh-13](sources/rh-13.md): Robinhood Trading MCP: OAuth protected-resource metadata | Robinhood | Robinhood (endpoint metadata) | official | 2026-11-12 |
 | [rn-01](sources/rn-01.md): Rain Agent Vaults bring embedded payments to AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
 | [rn-02](sources/rn-02.md): Rain Agent Vaults \| Embedded payments for AI agents | Rain Agent Vaults | Rain | official | 2026-11-15 |
+| [rp-01](sources/rp-01.md): Replit Agent can now buy for your business and help you reach customers | Replit Agent with Link | Replit | official | 2026-11-20 |
 | [sc-01](sources/sc-01.md): How do I connect to Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
 | [sc-02](sources/sc-02.md): What can my AI assistant do with the Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
 | [sc-03](sources/sc-03.md): How are orders approved and protected when using Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
+| [sd-01](sources/sd-01.md): Know Your Human (KYH): Fraud prevention for agentic commerce | Sardine Know Your Human | Sardine | official | 2026-11-20 |
+| [sd-02](sources/sd-02.md): Know Your Human (KYH) for Agentic Commerce \| Sardine | Sardine Know Your Human | Sardine | official | 2026-11-20 |
 | [sp-01](sources/sp-01.md): Stripe helps Meta Muse shop with Link | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-02](sources/sp-02.md): Giving agents the ability to pay (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-03](sources/sp-03.md): Helping personal agents shop more intelligently and reliably with Link (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [st-01](sources/st-01.md): 'Talk to transact': Starling customers can use their voice to send money | Starling Bank | Starling Bank | official | 2026-11-18 |
+| [tc-01](sources/tc-01.md): More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch) | Banks (Citi, JPMorgan, Bank of America, PNC, Citizens) | TechCrunch | third-party | 2026-11-20 |
 | [tg-01](sources/tg-01.md): Terms & Conditions : Target | Target | Target | official | 2026-11-18 |
 | [tt-01](sources/tt-01.md): GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents.  | tastytrade | tastytrade (GitHub) | official | 2026-11-12 |
 | [tt-02](sources/tt-02.md): Open API MCP Brings AI to Your tastytrade Account | tastytrade | tastytrade | official | 2026-11-12 |

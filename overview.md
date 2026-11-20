@@ -3,7 +3,7 @@ type: overview
 title: Overview - the race to be agent-friendly
 summary: Which financial providers let AI agents read accounts, trade or pay, which keep them out, and what changed in 2026. Every fact links to its source.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Overview: the race to be agent-friendly
@@ -37,16 +37,19 @@ On the watchlist, not yet a provider page: PrimeXBT announced on 2026-11-04 an M
 - **Banks more broadly:** reports say JPMorgan, Morgan Stanley, Bank of America, Citi and Wells Fargo are detecting or blocking unvetted agents in customer accounts.[^bl-02][^bl-08]
 - **Charles Schwab:** reported to block agents that log in on clients' behalf and any agent moving money,[^bl-04][^bl-06] while piloting its own Schwab MCP Server with Claude for select clients.[^bl-05] Other third-party reports likewise say Schwab is blocking outside agents that use client credentials or browser automation, will not allow agents to move money, and is steering clients toward Charley, while describing MCP access for a client's chosen model to check balances and do research with no money movement.[^bl-10] Quartz, citing The Epoch Times, also reported that Schwab planned to let third-party models connect through MCP with defined permissions, including a bar on transferring funds.[^bl-09] A third-party RIABiz article published November 13, 2026, quotes the announcement as letting thinkorswim-enabled clients "prepare, place, and manage trades, all with the client in-the-loop, through their own AI platform," and quotes sources saying the announcement "does not at all impact or target RIAs or advisors" and "doesn’t cover advisor-managed accounts." The article's Key Points box is labeled "AI generated." The headline framing that Anthropic's days are numbered is the publisher's opinion, not a fact used here.[^bl-11]
 
-These are mostly news reports, not primary statements, which is a known gap. More detail, bank by bank: [Banks and outside agents](personal-money/banks-and-outside-agents.md).
+- **Citi and JPMorgan Chase, in their own terms:** both say that if you give an outside AI agent your login, they treat its actions as authorized by you.[^ci-01][^jp-02] TechCrunch also reports similar changes at Bank of America, Citizens and PNC.[^tc-01]
+
+Except for the Citi and Chase terms, these are mostly news reports, not primary statements, which is a known gap. More detail, bank by bank: [Banks and outside agents](personal-money/banks-and-outside-agents.md).
 
 ## Payments
 
 Card networks, payment companies and open protocols are building ways for agents to pay. Each has a page in [Payments](payments/README.md).
 
-- **Card networks:** [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) lets approved agent builders pay with tokenized Visa credentials,[^pm-01] and [Mastercard Agent Pay](payments/mastercard-agent-pay.md) lets only registered agents pay with agentic tokens.[^pm-05] On 2026-11-17 Visa opened its [Agentic Ready](glossary.md#agentic-ready) program to merchants, payment providers and acquirers, with more than 140 participants at launch.[^pm-16] On 2026-11-12 Mastercard and partners announced a live flight purchase by an AI agent that used Agent Pay and [Verifiable Intent](glossary.md#verifiable-intent).[^pm-17]
+- **Card networks:** [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) lets approved agent builders pay with tokenized Visa credentials,[^pm-01] and [Mastercard Agent Pay](payments/mastercard-agent-pay.md) lets only registered agents pay with agentic tokens.[^pm-05] On 2026-11-17 Visa opened its [Agentic Ready](glossary.md#agentic-ready) program to merchants, payment providers and acquirers, with more than 140 participants at launch.[^pm-26] On 2026-11-12 Mastercard and partners announced a live flight purchase by an AI agent that used Agent Pay and [Verifiable Intent](glossary.md#verifiable-intent).[^pm-17]
 - **Payment companies:** [Stripe](payments/stripe.md) has scoped, expiring [payment tokens](glossary.md#payment-token) for agent purchases,[^pm-08] and [PayPal](payments/paypal.md) has an MCP server for its business APIs.[^pm-10]
 - **Open protocols:** [ACP](payments/agentic-commerce-protocol.md) for checkout,[^pm-07] [x402](payments/x402.md) for paying inside a web request,[^pm-15] and [AP2](payments/ap2.md) for signed proof of what the user authorized.[^pm-13]
 - **An agent card:** the [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) gives your agent a virtual card, with approval for each purchase or a required monthly limit.[^rh-09]
+- **Newer accounts and cloud services:** [Amazon Bedrock AgentCore payments](payments/agentcore-payments.md) lets agents pay over x402 and MPP within a session budget,[^aw-02] and [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md) lets an agent hold and spend money within limits the account holder sets.[^ls-01]
 
 ## Personal money agents
 
@@ -65,7 +68,7 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 - [Providers](providers/README.md) lists the brokers covered, [comparisons](comparisons/README.md) put them side by side, and [sources](sources/README.md) lists every outside page the wiki cites.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
-- [What changed](changelog/README.md) (latest: [2026-11-19](changelog/2026-11-19.md); earlier: [2026-11-18](changelog/2026-11-18.md), [2026-11-17](changelog/2026-11-17.md), [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
+- [What changed](changelog/README.md) (latest: [2026-11-20](changelog/2026-11-20.md); earlier: [2026-11-19](changelog/2026-11-19.md), [2026-11-18](changelog/2026-11-18.md), [2026-11-17](changelog/2026-11-17.md), [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
 
 ## Sources
 
@@ -105,9 +108,12 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 [^bl-10]: [Schwab blocks outside AI agents and steers clients to Charley: the cash-sweep stakes for client-side agents](sources/bl-10.md). The Exchange (theexchange.tech), third-party, retrieved 2026-11-12.
 [^bl-09]: [Schwab and JPMorgan are blocking outside AI agents from accounts](sources/bl-09.md). Quartz, third-party, retrieved 2026-11-12.
 [^bl-11]: [Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM - RIABiz](sources/bl-11.md). RIABiz, third-party, retrieved 2026-11-13.
+[^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](sources/ci-01.md). Citi, official, retrieved 2026-11-20.
+[^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
+[^tc-01]: [More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch)](sources/tc-01.md). TechCrunch, third-party, retrieved 2026-11-20.
 [^pm-01]: [Visa Developer Center](sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
-[^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](sources/pm-16.md). Visa, official, retrieved 2026-11-18.
+[^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](sources/pm-26.md). Visa, official, retrieved 2026-11-20.
 [^pm-17]: [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](sources/pm-17.md). Mastercard, official, retrieved 2026-11-18.
 [^pm-08]: [Shared payment tokens - Stripe Documentation](sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
@@ -115,6 +121,8 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 [^pm-15]: [x402 specification v2](sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-13]: [AP2 - Agent Payments Protocol Documentation](sources/pm-13.md). AP2 Protocol, official, retrieved 2026-11-12.
 [^rh-09]: [Agentic Credit Card - Robinhood](sources/rh-09.md). Robinhood, official, retrieved 2026-11-19.
+[^aw-02]: [Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments](sources/aw-02.md). Amazon Web Services (AWS Machine Learning Blog), official, retrieved 2026-11-20.
+[^ls-01]: [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](sources/ls-01.md). Lightspark (via GlobeNewswire), official, retrieved 2026-11-20.
 [^pb-01]: [Plaid powers Meta's new AI agent, Muse - Plaid](sources/pb-01.md). Plaid, official, retrieved 2026-11-12.
 [^pb-02]: [Resources - MCP Server - Plaid Docs](sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](sources/pb-06.md). Plaid, official, retrieved 2026-11-18.

@@ -3,7 +3,7 @@ type: approval-model
 title: "Approval model: per-order confirm"
 summary: The agent prepares each order, and a person confirms it in the broker's own app before it reaches the market.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Per-order confirm
@@ -25,6 +25,10 @@ Confirmation does not always happen in the broker's own app. Coinbase's cards ap
 
 A dry-run or preview inside the agent's chat is not broker-side confirmation. Coinbase documents that Claude previews and asks before ordering while ChatGPT orders in one turn, against the same server.[^cb-01] Coinbase's official ChatGPT plugin adds its own confirmation cards.[^cb-09] tastytrade's MCP uses a short-lived dry-run token and states that it is not human approval.[^tt-01]
 
+## Do payment agents outside brokers ask for approval too?
+
+Some do. Replit says its Agent waits for the business owner to approve the final total before anything is charged, and that approval checks are enforced in code, not left to the model.[^rp-01] See [Link wallet for agents](../payments/link-wallet-for-agents.md#how-does-replit-agent-buy-with-link). Coinbase's own Advisor says trading happens only with your explicit permission.[^cb-11] See [Coinbase](../providers/coinbase.md#how-is-coinbase-advisor-different-from-an-outside-agent).
+
 [Back to approval models](README.md)
 
 ## Sources
@@ -38,6 +42,8 @@ A dry-run or preview inside the agent's chat is not broker-side confirmation. Co
 [^kr-01]: [MCP server - Kraken docs](../sources/kr-01.md). Kraken, official, retrieved 2026-11-19.
 [^cb-01]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-01.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^tt-01]: [GitHub - tastytrade/tastytrade-mcp: MCP server for the tastytrade open API: quotes, positions, balances, and dry-run-gated order flow for LLM agents. ](../sources/tt-01.md). tastytrade (GitHub), official, retrieved 2026-11-12.
+[^rp-01]: [Replit Agent can now buy for your business and help you reach customers](../sources/rp-01.md). Replit, official, retrieved 2026-11-20.
+[^cb-11]: [Coinbase Advisor](../sources/cb-11.md). Coinbase, official, retrieved 2026-11-20.
 
 ---
 

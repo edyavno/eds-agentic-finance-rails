@@ -3,7 +3,7 @@ type: approval-model
 title: "Approval model: draft, then you submit"
 summary: The agent writes a non-binding trade instruction; nothing happens until you review and submit it yourself in the broker's app.
 page_status: current
-last_verified: '2026-11-12'
+last_verified: '2026-11-20'
 ---
 
 # Draft, then you submit
@@ -18,6 +18,10 @@ last_verified: '2026-11-12'
 
 In practice they are close. The difference is who creates the order: under draft-then-submit you submit it yourself from the instruction; under per-order confirm the broker holds an order the agent created until you approve it. Webull calls its objects "instructions" too,[^wb-02] so read each provider's docs rather than the label.
 
+## Does draft-then-submit exist outside brokers?
+
+One institutional example does. In a pilot Treasury bill negotiation, the agents of BNY and Microsoft agreed proposed terms, and human traders at both firms reviewed and approved them before execution. BNY says the agents cannot execute the trade.[^bn-01] See [Institutional markets](../rails/institutional-markets.md).
+
 [Back to approval models](README.md)
 
 ## Sources
@@ -25,6 +29,7 @@ In practice they are close. The difference is who creates the order: under draft
 [^ib-01]: [Interactive Brokers AI Hub](../sources/ib-01.md). Interactive Brokers, official, retrieved 2026-11-12.
 [^ib-07]: [AI Instructions](../sources/ib-07.md). IBKR Guides, official, retrieved 2026-11-12.
 [^wb-02]: [Webull Cloud MCP Server - Webull API](../sources/wb-02.md). Webull Developer, official, retrieved 2026-11-19.
+[^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](../sources/bn-01.md). BNY, official, retrieved 2026-11-20.
 
 ---
 

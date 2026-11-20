@@ -4,7 +4,7 @@ id: mastercard-agent-pay
 title: Mastercard Agent Pay
 summary: Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 kind: card-network-program
 operator: Mastercard
 agent_can: Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form
@@ -46,6 +46,17 @@ On 2026-11-12, Mastercard, Travelport, Booked AI and Basis Theory announced a li
 
 The airline is described only as "a major airline". The date of the transaction and the volume are not given, so they are unknown.[^pm-17]
 
+## What did the Ant International coffee purchase show?
+
+On 2026-11-19 Mastercard announced two milestones in Asia Pacific. One is a live consumer transaction through Antom, Ant International's merchant payment and digitalization platform. The other is a completed [Agent Pay for Machines](#what-is-agent-pay-for-machines) pilot with Antom in Singapore.[^an-01][^an-02]
+
+- **The purchase.** An AI agent bought a cup of coffee based on the consumer's pre-captured intent, with acceptance supported by Antom.[^an-01][^an-02]
+- **What it ran on.** The transaction ran on Mastercard Agent Pay with [Verifiable Intent](../glossary.md#verifiable-intent), which created a verifiable record of what the consumer had authorized the agent to do.[^an-01][^an-02]
+- **What Verifiable Intent is.** Mastercard says it is designed as an open, standards-based and protocol-agnostic trust layer that helps merchants and other participants establish trust in agent-initiated transactions by making consumer authorization verifiable.[^an-01]
+- **The pilot.** Mastercard says Antom enabled the AI agent to use Agent Pay for Machines' credentialing, policy controls and payment authorization capabilities to buy digital services within parameters set by the business.[^an-01][^an-02] Mastercard also refers to its recent live demonstration of the product at Cloudflare Connect.[^an-01]
+
+The announcement does not give the date, amount, merchant or country of the coffee purchase, so they are unknown.[^an-01]
+
 ## Does Mastercard have an MCP server?
 
 Yes, but it is for developers and it serves documentation only. It is not Agent Pay. Mastercard Developers runs an official [MCP](../glossary.md#mcp) server that exposes product docs, API specs and guides as tools, so an AI assistant can answer questions about Mastercard's APIs.[^pm-19]
@@ -66,6 +77,7 @@ Agent Pay for Machines is a separate Mastercard offering, announced on 2026-10-2
 - **Who sets the limit.** Mastercard says businesses set the task, permissions and spending limit, and the agent transacts within those parameters rather than having unlimited spending authority.[^pm-23]
 - **Early Access.** Mastercard says it is opening Early Access to developers: the first version of its buyer- and seller-side APIs, plus a toolkit, sandbox and documentation.[^pm-23]
 - **Pilot partners.** Mastercard names Cloudflare, Ant International, AIsa, Base, BVNK, Coinbase and Hype as partners in its end-to-end pilots.[^pm-23] Coinbase's own agent payments are on its [provider page](../providers/coinbase.md).
+- **"Introduced in June".** Mastercard's 2026-11-19 announcement says Agent Pay for Machines was "Introduced in June this year", and reports a completed pilot with Antom in Singapore.[^an-01][^an-02] Mastercard's page about it, cited above, is dated 2026-10-20. This wiki does not reconcile the two dates.
 
 Price, countries and how to join Early Access are unknown. The page does not say.
 
@@ -78,10 +90,12 @@ Mastercard's developer documentation describes Open Finance US as API-based serv
 - OpenAI says it built [ChatGPT Wallet](chatgpt-wallet.md) in partnership with American Express, Mastercard and Visa. It does not say whether Wallet uses Agent Pay.[^oa-01]
 - Rain says its [Agent Vaults](rain-agent-vaults.md) support Mastercard Agent Pay.[^rn-01]
 - Travelport, Booked AI and Basis Theory took part in the live flight purchase above.[^pm-17]
+- Antom, Ant International's merchant payment platform, took part in the coffee purchase and the Agent Pay for Machines pilot above.[^an-01]
+- AXS, a Singapore bill payment network, says Mastercard is working with it to bring agentic bill payment capabilities into Mastercard's ecosystem, and that Mastercard will show its AI agents connecting to the AXS MCP server at the Singapore FinTech Festival 2026.[^ax-01] See [Agent payments](../rails/agent-payments.md#can-an-agent-pay-bills).
 
 ## Unknown
 
-Whether Agent Pay itself has an MCP server, any public endpoint, availability by country, and fees. Price, countries and how to join Agent Pay for Machines Early Access are also unknown. No cited source confirms them, so the wiki says unknown.
+Whether Agent Pay itself has an MCP server, any public endpoint, availability by country, and fees. Price, countries and how to join Agent Pay for Machines Early Access are also unknown. The date, amount, merchant and country of the Antom coffee purchase are unknown too. No cited source confirms them, so the wiki says unknown.
 
 All programs: [Payments](README.md).
 
@@ -90,6 +104,8 @@ All programs: [Payments](README.md).
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-17]: [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](../sources/pm-17.md). Mastercard, official, retrieved 2026-11-18.
+[^an-01]: [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (Ant International page)](../sources/an-01.md). Mastercard (posted by Ant International), official, retrieved 2026-11-20.
+[^an-02]: [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (PR Newswire)](../sources/an-02.md). Mastercard (via PR Newswire), official, retrieved 2026-11-20.
 [^pm-19]: [Mastercard Developers Agent Toolkit](../sources/pm-19.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^pm-20]: [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](../sources/pm-20.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^pm-21]: [GitHub - Mastercard/developers-agent-toolkit](../sources/pm-21.md). Mastercard (GitHub), official, retrieved 2026-11-19.
@@ -98,6 +114,7 @@ All programs: [Payments](README.md).
 [^pm-24]: [Mastercard Open Finance US (Mastercard Developers documentation)](../sources/pm-24.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
+[^ax-01]: [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](../sources/ax-01.md). AXS, official, retrieved 2026-11-20.
 
 ---
 

@@ -43,6 +43,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Coinbase’s new tool can help agents trade and pay for premium research \| TechCrunch](cb-08.md) | TechCrunch | third-party | 2026-11-12 |
 | [Coinbase MCP - Coinbase Developer Documentation](cb-09.md) | Coinbase Developer Platform | official | 2026-11-19 |
 | [Coinbase for Agents introduces new Agent Controls](cb-10.md) | Coinbase | official | 2026-11-18 |
+| [Coinbase Advisor](cb-11.md) | Coinbase | official | 2026-11-20 |
+| [System Update: Take control of your money with Coinbase](cb-12.md) | Coinbase | official | 2026-11-20 |
 | [Interactive Brokers AI Hub](ib-01.md) | Interactive Brokers | official | 2026-11-12 |
 | [Interactive Brokers Introduces Autonomous Trading](ib-02.md) | Interactive Brokers | official | 2026-11-12 |
 | [IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested](ib-03.md) | DeskTested | third-party | 2026-11-12 |
@@ -114,13 +116,25 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Account revocation - AgentBank docs](ag-07.md) | AgentBank | official | 2026-11-19 |
 | [Configure thresholds - AgentBank docs](ag-08.md) | AgentBank | official | 2026-11-19 |
 | [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](pm-07.md) | ACP (GitHub) | official | 2026-11-12 |
+| [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](nt-01.md) | NETS (Network for Electronic Transfers) | official | 2026-11-20 |
+| [AWS Marketplace now supports agentic payments with AgentCore](aw-01.md) | Amazon Web Services | official | 2026-11-20 |
+| [Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments](aw-02.md) | Amazon Web Services (AWS Machine Learning Blog) | official | 2026-11-20 |
+| [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](aw-03.md) | Amazon Web Services (AgentCore Developer Guide) | official | 2026-11-20 |
+| [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](ax-01.md) | AXS | official | 2026-11-20 |
+| [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](bn-01.md) | BNY | official | 2026-11-20 |
+| [Trusted intelligence in banking, insurance, and capital markets: Six firms show how](mi-01.md) | Microsoft (Microsoft Cloud Blog) | official | 2026-11-20 |
+| [Microsoft Ignite 2026: Empowering human ambition, intelligence and trust](mi-02.md) | Microsoft (Microsoft Source) | official | 2026-11-20 |
 | [Introducing ChatGPT Wallet](oa-01.md) | OpenAI | official | 2026-11-15 |
 | [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-19 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
 | [Accept payments - OpenAI Commerce](oa-04.md) | OpenAI Developers | official | 2026-11-15 |
+| [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](ls-01.md) | Lightspark (via GlobeNewswire) | official | 2026-11-20 |
+| [Agent Accounts (Lightspark documentation)](ls-02.md) | Lightspark (documentation) | official | 2026-11-20 |
 | [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
 | [Giving agents the ability to pay (Stripe)](sp-02.md) | Stripe | official | 2026-11-18 |
 | [Helping personal agents shop more intelligently and reliably with Link (Stripe)](sp-03.md) | Stripe | official | 2026-11-18 |
+| [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (Ant International page)](an-01.md) | Mastercard (posted by Ant International) | official | 2026-11-20 |
+| [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (PR Newswire)](an-02.md) | Mastercard (via PR Newswire) | official | 2026-11-20 |
 | [Mastercard Agent Pay: secure, scalable and trusted agentic AI](pm-05.md) | Mastercard | official | 2026-11-12 |
 | [Agentic token framework: Driving trusted AI transactions](pm-06.md) | Mastercard | official | 2026-11-12 |
 | [Travelport, Booked AI, Basis Theory, and Mastercard complete live end-to-end agentic flight purchase](pm-17.md) | Mastercard | official | 2026-11-18 |
@@ -134,6 +148,9 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Agent toolkit quickstart guide \| PayPal Developer](pm-11.md) | PayPal Developer | official | 2026-11-12 |
 | [Rain Agent Vaults bring embedded payments to AI agents](rn-01.md) | Rain | official | 2026-11-15 |
 | [Rain Agent Vaults \| Embedded payments for AI agents](rn-02.md) | Rain | official | 2026-11-15 |
+| [Replit Agent can now buy for your business and help you reach customers](rp-01.md) | Replit | official | 2026-11-20 |
+| [Know Your Human (KYH): Fraud prevention for agentic commerce](sd-01.md) | Sardine | official | 2026-11-20 |
+| [Know Your Human (KYH) for Agentic Commerce \| Sardine](sd-02.md) | Sardine | official | 2026-11-20 |
 | [Shared payment tokens \| Stripe Documentation](pm-08.md) | Stripe Docs | official | 2026-11-12 |
 | [Model Context Protocol (MCP) \| Stripe Documentation](pm-09.md) | Stripe Docs | official | 2026-11-19 |
 | [Model Context Protocol (MCP) \| Stripe Documentation (Markdown version)](pm-18.md) | Stripe Docs | official | 2026-11-19 |
@@ -141,6 +158,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [MCP docs \| Visa Developer](pm-02.md) | Visa Developer | official | 2026-11-12 |
 | [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide \| Visa](pm-04.md) | Visa | official | 2026-11-12 |
 | [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](pm-16.md) | Visa | official | 2026-11-18 |
+| [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](pm-25.md) | Visa (Visa UK newsroom) | official | 2026-11-20 |
+| [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](pm-26.md) | Visa | official | 2026-11-20 |
 | [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](pm-14.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
 | [x402 specification v2](pm-15.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
 
@@ -229,6 +248,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 
 | Source card | Publisher | Official or third-party | Retrieved |
 |---|---|---|---|
+| [More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch)](tc-01.md) | TechCrunch | third-party | 2026-11-20 |
 | [Scoop: Unvetted AI agents are accessing U.S. bank accounts](bl-02.md) | Axios | third-party | 2026-11-12 |
 | [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](bl-08.md) | Yahoo Finance | third-party | 2026-11-12 |
 | [Booking.com: Terms and Conditions (Customer terms of service)](bk-01.md) | Booking.com | official | 2026-11-18 |
@@ -238,11 +258,13 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Schwab blocks outside AI agents and steers clients to Charley: the cash-sweep stakes for client-side agents](bl-10.md) | The Exchange (theexchange.tech) | third-party | 2026-11-12 |
 | [Schwab surprises analysts with extra rapid launch of own MCP servers, also leaping from read-only to agentic (get stuff done) AI; it leaves RIAs out for now, and makes Anthropic's days numbered as Schwab's exclusive LLM \| RIABiz](bl-11.md) | RIABiz | third-party | 2026-11-13 |
 | [Schwab and JPMorgan are blocking outside AI agents from accounts](bl-09.md) | Quartz | third-party | 2026-11-12 |
+| [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](ci-01.md) | Citi | official | 2026-11-20 |
 | [User Agreement \| eBay](eb-01.md) | eBay | official | 2026-11-15 |
 | [JPMorgan blocks outside AI agents like Muse, Instinct from account access](bl-01.md) | CNBC | third-party | 2026-11-12 |
 | [JPMorgan CEO Dimon warns customers of 'liability transfer' with AI](bl-07.md) | Banking Dive | third-party | 2026-11-12 |
 | [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](bl-12.md) | The Wall Street Journal (syndicated on Mint) | third-party | 2026-11-19 |
 | [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](bl-13.md) | PYMNTS | third-party | 2026-11-19 |
+| [Digital Services Agreement (J.P. Morgan Chase)](jp-02.md) | JPMorgan Chase | official | 2026-11-20 |
 | [Terms & Conditions : Target](tg-01.md) | Target | official | 2026-11-18 |
 | [Contract of Carriage Document \| United Airlines](ua-01.md) | United Airlines | official | 2026-11-15 |
 | [Unauthorized third-party AI agents or assistants \| United Airlines](ua-02.md) | United Airlines | official | 2026-11-15 |
@@ -254,6 +276,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Federal Register](pb-05.md) | Federal Register | official | 2026-11-12 |
 | [Emerging Trend in GenAI: Observations on AI Agents](id-05.md) | FINRA | official | 2026-11-12 |
 | [GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report)](id-06.md) | FINRA | official | 2026-11-12 |
+| [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](ma-01.md) | Monetary Authority of Singapore | official | 2026-11-20 |
 
 ### Prior art (leads only, not evidence)
 

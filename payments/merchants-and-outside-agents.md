@@ -3,7 +3,7 @@ type: payment
 title: Merchants and outside agents
 summary: Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Merchants and outside agents
@@ -17,6 +17,7 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 - **Target** allows only agents on its Approved Agents list, currently its own AI Shopping Assistant, OAI, Google and Microsoft, and prohibits all other agentic commerce tools.[^tg-01]
 - **Booking.com** bars automated assistants, including AI-powered assistants, from its platform without its prior express written permission, and does not authorize them to make bookings.[^bk-01]
 - Payment programs are trying to make agents easier to accept. OpenAI warns that some sites may block agent purchases by accident, and asks merchants to recognize signed agent requests with [Web Bot Auth](../glossary.md#web-bot-auth).[^oa-01]
+- Sardine, a fraud-prevention company, says merchants decline legitimate agent purchases because agents look like bots, and proposes Know Your Human to fix it. These are Sardine's own claims.[^sd-01] See [Sardine below](#what-does-sardine-say-about-agent-checkouts).
 
 ## Merchant by merchant
 
@@ -43,6 +44,20 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 
 When an agent pays through Stripe's [Link wallet](link-wallet-for-agents.md) with a one-time [virtual card](../glossary.md#virtual-card), the merchant is paid by that card, not by the shopper's own. The Wall Street Journal reported on 2026-11-13, citing people familiar with the matter, that merchants are complaining to Visa and Mastercard that the virtual card costs more on average to accept, because it is classified as a commercial card rather than a consumer card. It also reported that the temporary cards have made returns harder to process, according to some merchant executives.[^bl-12][^bl-13] These are third-party reports. How large the extra cost is, and whether Visa or Mastercard have responded, is unknown.
 
+## What does Sardine say about agent checkouts?
+
+Sardine's blog and product page describe how it says merchants can tell a person's shopping agent from a malicious bot. Everything in this section is Sardine's own claim about its own product. The wiki found no independent test of it.[^sd-01][^sd-02]
+
+- **The problem, per Sardine.** Sardine says shopping agents often convert poorly because merchants mistake them for malicious bots and decline the order. It says an agent usually shops through a cloud browser in a data center, so the merchant sees a data center IP address and a headless browser.[^sd-01] Sardine names [Instinct](../personal-money/instinct.md), [Muse by Meta](../personal-money/meta-muse.md) and [Dots by OpenAI](../personal-money/openai-dots.md) as personal shopping agents that are gaining traction.[^sd-01]
+- **What Know Your Human does, per Sardine.** [Know Your Human](../glossary.md#know-your-human-kyh) (KYH) binds the customer's own device to the agent's session.[^sd-01]
+- **The flow, per Sardine.** The merchant sends the customer a secure, short-lived link by SMS or email. The customer opens it on their phone, and a page with Sardine's device and behavior SDK captures signals including device ID, fingerprint and IP address, then shows a one-time code. The customer enters the code in the shopping agent's window, the agent submits it at checkout, and the merchant validates it.[^sd-01] Sardine's product page says a link expires 5 minutes after it is created.[^sd-02]
+- **What the agent passes.** Sardine says the agent passes a few extra HTTP headers to the merchant, which uses Sardine to retrieve the customer's device and IP signals.[^sd-02] Sardine says KYH is complementary to agentic commerce protocols.[^sd-02]
+- **Disputes, per Sardine.** Sardine says Visa's Compelling Evidence 3.0 (CE 3.0) needs at least two matching data elements across the disputed purchase and two qualifying earlier undisputed transactions, and that at least one must be a device ID, fingerprint or IP address match.[^sd-01] It says KYH records those signals against the agent's session and can satisfy the device factor under Mastercard's First-Party Trust program.[^sd-01]
+- **Sardine's own caution.** Its product page says Visa CE 3.0 and Mastercard First-Party Trust have their own eligibility and evidence requirements, and that collecting a signal alone does not guarantee a successful dispute response.[^sd-02]
+- **Scope.** Sardine's page says its proposal describes possible extensions to email, phone, KYC and identity verification data.[^sd-02]
+
+No merchant or agent is named in these two pages as using KYH today, so that is unknown.
+
 ## Related
 
 - [Banks and outside agents](../personal-money/banks-and-outside-agents.md): the same question for bank accounts.
@@ -61,8 +76,10 @@ How these merchants detect agents, whether eBay, United or Booking.com grant per
 [^tg-01]: [Terms & Conditions : Target](../sources/tg-01.md). Target, official, retrieved 2026-11-18.
 [^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](../sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](../sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
+[^sd-02]: [Know Your Human (KYH) for Agentic Commerce - Sardine](../sources/sd-02.md). Sardine, official, retrieved 2026-11-20.
 
 ---
 

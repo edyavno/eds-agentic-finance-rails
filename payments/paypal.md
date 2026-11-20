@@ -4,7 +4,7 @@ id: paypal
 title: PayPal
 summary: PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-20'
 kind: payment-mcp
 operator: PayPal
 agent_can: Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes
@@ -45,7 +45,7 @@ PayPal's agent tools are for businesses that use PayPal. They let an AI agent wo
 
 ## Visa Agentic Ready
 
-Visa lists PayPal among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Visa says PayPal is working to expand acceptance of Visa agentic tokens across its merchant network, so merchants can process agent-initiated tokenized payments through their existing PayPal integration.[^pm-16] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
+Visa lists PayPal among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Visa says PayPal is working to expand acceptance of Visa agentic tokens across its merchant network, so merchants can process agent-initiated tokenized payments through their existing PayPal integration.[^pm-26] Visa's release for Europe, dated 2026-11-18, also lists PayPal among its more than 85 initial acceptance participants there.[^pm-25] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
 
 ## Unknown
 
@@ -57,7 +57,8 @@ All programs: [Payments](README.md).
 
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
-[^pm-16]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-16.md). Visa, official, retrieved 2026-11-18.
+[^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.
+[^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](../sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
 
 ---
 

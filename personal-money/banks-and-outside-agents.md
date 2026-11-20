@@ -3,7 +3,7 @@ type: personal-money
 title: Banks and outside agents
 summary: What news reports say about big US banks blocking or limiting outside AI agents, including Chase's block on agents shopping with a card number, the read-only middle ground, and the US data-rights rule in the background.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-20'
 ---
 
 # Banks and outside agents
@@ -16,6 +16,7 @@ Most of what is known here comes from news reports, not from the banks. Each lin
 - Most allow, or are moving toward, read-only access through approved data connections.[^bl-02] See [open banking](../glossary.md#open-banking).
 - JPMorgan Chase also blocks agents that shop with a card number a customer gives them, according to a Wall Street Journal report.[^bl-12][^bl-13] See [shopping with a card](#what-about-shopping-with-a-card).
 - Some banks are building their own AI tools, such as [JPMorgan Smart Cash](jpmorgan-smart-cash.md)[^bl-01] and, in the UK, [Starling Assistant](starling-assistant.md).[^st-01]
+- Citi and JPMorgan Chase now say in their own user agreements that if you give an outside AI agent your login, they treat the agent's actions as yours.[^ci-01][^jp-02] See [the Citi and Chase terms](#what-do-the-citi-and-chase-user-agreements-say).
 
 ## Bank by bank (news reports)
 
@@ -24,6 +25,37 @@ Most of what is known here comes from news reports, not from the banks. Each lin
 - **Citi.** Says it does not let third-party AI agents log into customer accounts or transact directly, but allows some read-only access through approved open-banking providers, as reported by Yahoo Finance.[^bl-08]
 - **Bank of America and Wells Fargo.** Named among the banks limiting third-party agent access. The cited reports give no bank-specific detail.[^bl-02][^bl-08]
 - **Schwab.** Covered on the [overview](../overview.md), because it blocks some agents while running its own MCP pilot.
+
+## What do the Citi and Chase user agreements say?
+
+These two come from the banks' own terms, not from news reports. Both say an outside AI agent you give your login to acts with your authority.
+
+**Citi.** Its Online User Agreement says it was last updated November 2026 to add a new Section H on third-party AI agents. The exact day is unknown.[^ci-01]
+
+- Section H cautions customers against using any third-party AI agent to access their accounts or use digital services through Citi Online or Citi Mobile.[^ci-01]
+- If a customer gives their Online Credentials to a third-party AI agent, or otherwise lets it access their accounts, Citi says it will consider any access and actions taken by the agent as authorized by the customer.[^ci-01]
+- Citi says the same applies if those credentials are further shared, leaked or otherwise distributed to other persons or AI agents.[^ci-01]
+- Citi says it has no responsibility to investigate the authority or validity of such actions, even if they conflict with the customer's instructions to the agent. It says the customer is responsible for errors from the agent's incorrect interpretation or execution, and for unintended actions or actions beyond the authority given.[^ci-01]
+- Citi says that by letting an agent access their accounts the customer authorizes Citi to disclose their information, including sensitive personal information, to the agent, and that the Citi Privacy Notice does not apply to the agent.[^ci-01]
+- The terms say they do not apply to AI agents, tools or features that Citi itself provides.[^ci-01]
+
+**JPMorgan Chase.** Its Digital Services Agreement is marked "Last updated: November 2026". The exact day is unknown.[^jp-02]
+
+- A notice says that, effective 2026-10-27, third parties, including External AI, automated tools or data aggregators, are prohibited from using the customer's Login Credentials to access Chase's digital platforms or the customer's accounts or services.[^jp-02]
+- Chase says it permits third-party applications and tools, including External AI, to access customer account data through approved application programming interfaces (APIs) with the customer's authorization.[^jp-02]
+- Chase tells customers who have shared Login Credentials with any third party to change them.[^jp-02]
+- If a customer permits, directs or facilitates a third party, including External AI, to access their accounts, Chase says the customer is deemed to expressly authorize that third party to transact in the account and the actions it initiates. Chase says it will treat that party's actions or instructions as evidence of the customer's authorization.[^jp-02]
+- Chase says the customer is responsible for resulting errors, including unintended actions, transactions the customer did not intend and actions that exceed the authority given.[^jp-02]
+- The agreement says that, subject to applicable law, the customer assumes the entire risk for the fraudulent, unauthorized or otherwise improper use of their login credentials.[^jp-02]
+- The wiki read an excerpt of the agreement, not the whole document.[^jp-02]
+
+## What do reports and a regulator say about other banks' new terms?
+
+- TechCrunch reported on 2026-11-18 that Citi had changed its terms of service that week.[^tc-01]
+- TechCrunch says JPMorgan and Bank of America "announced similar policies last month", and that PNC changed its terms on the day of the article.[^tc-01]
+- TechCrunch says Citizens emailed its customers that week, warning that they are on the hook for anything their AI assistant does, according to an email TechCrunch saw.[^tc-01]
+- These are TechCrunch's accounts. The wiki has not seen Bank of America's, Citizens' or PNC's own wording, so those details are unknown, and PNC's wording is unknown.[^tc-01]
+- The Monetary Authority of Singapore said on 2026-11-19 that it would not advise giving personal agents login credentials to financial accounts, as there is insufficient assurance of safety.[^ma-01] See [Mandates and data access](../rails/mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).
 
 ## Why banks say they are worried
 
@@ -55,7 +87,7 @@ Rules are background here, not a focus. The CFPB's personal financial data right
 
 ## Unknown
 
-Primary statements from most of these banks, and the price in the JPMorgan and Plaid agreement. Whether Chase's card block applies to agents that use ChatGPT Wallet is also unknown. This is listed on [gaps](../gaps.md).
+Primary statements from most of these banks, and the price in the JPMorgan and Plaid agreement. Whether Chase's card block applies to agents that use ChatGPT Wallet is also unknown. The exact days on which Citi's and Chase's terms changed are unknown, and so are Bank of America's, Citizens' and PNC's own wording. This is listed on [gaps](../gaps.md).
 
 All pages: [Personal money agents](README.md).
 
@@ -67,6 +99,10 @@ All pages: [Personal money agents](README.md).
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 [^st-01]: ['Talk to transact': Starling customers can use their voice to send money](../sources/st-01.md). Starling Bank, official, retrieved 2026-11-18.
+[^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](../sources/ci-01.md). Citi, official, retrieved 2026-11-20.
+[^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](../sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
+[^tc-01]: [More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch)](../sources/tc-01.md). TechCrunch, third-party, retrieved 2026-11-20.
+[^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](../sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 [^jp-01]: [JPMorganChase and Plaid announce an extension to their data access agreement](../sources/jp-01.md). JPMorganChase, official, retrieved 2026-11-18.
 [^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.

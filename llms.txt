@@ -39,9 +39,11 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 
 - [Payments](payments/README.md): How AI agents pay: card-network agent programs, payment tokens, wallets, protocols and agent cards, each with a sourced page, plus merchants that ban agents.
 - [AgentBank](payments/agentbank.md): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
+- [Amazon Bedrock AgentCore payments](payments/agentcore-payments.md): AWS service that lets an agent pay for APIs, MCP servers and content over x402 and MPP within a per-session budget. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill, with no crypto wallet.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
+- [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md): Lightspark accounts where an AI agent holds, spends, sends and receives money within limits and approvals the account holder sets. It pays Visa merchants with a card valid for one purchase. Sold to companies that build agents.
 - [Link wallet for agents](payments/link-wallet-for-agents.md): Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 - [Merchants and outside agents](payments/merchants-and-outside-agents.md): Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
@@ -85,6 +87,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Rails](rails/README.md): The building blocks under agent access to money - how agents connect, authenticate, pay, prove who they are, and carry a user's mandate.
 - [Agent identity](rails/agent-identity.md): How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 - [Agent payments](rails/agent-payments.md): Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
+- [Institutional markets](rails/institutional-markets.md): How AI agents negotiate and trade between firms, starting with a pilot Treasury bill negotiation by BNY and Microsoft in which humans approved the final terms and the agents could not execute.
 - [Local MCP servers and CLIs](rails/local-mcp-and-cli.md): Self-run MCP servers and CLIs authenticate with API keys you hold, so their guardrails are only as strong as your local setup.
 - [Mandates and data access](rails/mandates-and-data-access.md): Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
 - [Remote MCP with OAuth](rails/remote-mcp-oauth.md): How hosted broker MCP servers advertise their OAuth setup, how AI clients register with them, and why a broker's allowlist of clients still matters.
@@ -109,6 +112,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 ## What changed
 
 - [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-20](changelog/2026-11-20.md): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](changelog/2026-11-18.md): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
 - [What changed: 2026-11-17](changelog/2026-11-17.md): A comparison of the AP2, ACP and x402 agent payment protocols, question-style headings, answer-first openings, shorter page descriptions and an Updated date label.
