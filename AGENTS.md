@@ -7,6 +7,7 @@ How to read, cite and analyze this wiki. For AI agents and the people who use th
 - [llms.txt](llms.txt) lists every page with a one-line summary. [index.md](index.md) is the full catalog, including every source card.
 - For structured facts, read [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json). Each field lists the source cards behind it. Their shape is described in [schema/provider.schema.json](schema/provider.schema.json) and [schema/program.schema.json](schema/program.schema.json).
 - Quick answers are in the [FAQ](faq.md). Terms are defined in the [glossary](glossary.md).
+- To try the wiki with an AI assistant or coding agent, copy a [starter prompt](build/starter-prompts.md).
 - Everything is plain Markdown, so a clone works offline: `git clone https://github.com/edyavno/eds-agentic-finance-rails`.
 
 ## How citations work

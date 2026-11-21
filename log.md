@@ -200,3 +200,9 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Visa's corrected release (pm-26, 2026-11-19) replaced the 2026-11-17 release (pm-16) as the citation on the PayPal, Stripe and overview pages. pm-16 stays cited on the Visa page.
 - Unknown: the exact days Citi's and Chase's terms changed; Bank of America, Citizens and PNC wording; the Know Your Agent protocol text, date and participants; AgentCore payments Regions and pricing; Lightspark price, consumer countries and MCP address; the coffee purchase date, amount, merchant and country; whether Visa's European participants are in the global 140; AXS consumer launch date; BNY trade tenor, size, price and date.
 - Notes: Mastercard says Agent Pay for Machines was introduced in June, while its product page is dated 2026-10-20; the wiki states both without reconciling them.
+
+## [2026-11-21] edit | starter prompts and front-page Try a starter prompt
+- Reorganized build/starter-prompts.md: retitled Starter prompts; research prompts then prompts for coding agents, with a jump link and session preambles; question-style headings; full https://agenticfinancerails.com URLs in every prompt. The four earlier coding prompts are kept as rewritten research or coding prompts. No facts or footnotes were removed.
+- Front page "Start here" row: added Try a starter prompt, linking to /build/starter-prompts. Text prompt lines wrap; the stock copy button stays visible on touch. llms.txt "Start here" now lists the page. AGENTS.md and README link it. URL unchanged.
+- Added changelog/2026-11-21.md.
+- overview.md: What changed 'latest' link now points at changelog/2026-11-21.md.

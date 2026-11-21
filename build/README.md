@@ -12,7 +12,7 @@ Start here if you are wiring an agent to a brokerage account.
 
 1. [Connect an MCP client](connect-an-mcp-client.md): the documented connection commands for each launch broker.
 2. [Human-in-the-loop patterns](human-in-the-loop.md): where to put approval when the broker does not.
-3. [Starter prompts for coding agents](starter-prompts.md): prompts that make agents cite this wiki and say "unknown".
+3. [Starter prompts](starter-prompts.md): copy-paste prompts for AI assistants and coding agents that make them cite this wiki and say "unknown".
 
 Before any live order, read the provider page and its [approval model](../approval-models/README.md).
 

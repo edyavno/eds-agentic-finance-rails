@@ -101,7 +101,7 @@ Every page in the wiki, generated from page headers.
 - [Build it](build/README.md) (current): Practical notes for engineers and coding agents connecting to broker MCP servers safely.
 - [Connect an MCP client](build/connect-an-mcp-client.md) (current): The connection commands and server URLs each launch broker documents for MCP clients, from the providers' own setup pages. Start with paper or sandbox.
 - [Human-in-the-loop patterns](build/human-in-the-loop.md) (current): Where to put human approval in an agent trading flow, and why broker-side approval beats client-side approval.
-- [Starter prompts for coding agents](build/starter-prompts.md) (current): Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
+- [Starter prompts](build/starter-prompts.md) (current): Copy-paste prompts for AI assistants: questions this wiki can answer, then prompts for coding agents. Cite pages and say unknown rather than guess.
 
 ## Comparisons
 
@@ -116,6 +116,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, and the front page has a Try a starter prompt link.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.

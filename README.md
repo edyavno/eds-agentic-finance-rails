@@ -17,8 +17,8 @@ The wiki covers five areas:
 
 - **People:** start with the [overview](overview.md), [Trading](directory.md), [payments](payments/README.md), [personal money agents](personal-money/README.md) and the [approval models](approval-models/README.md).
 - **Quick answers:** the [FAQ](faq.md).
-- **Engineers:** see [Build it](build/README.md).
-- **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling. The site is at https://agenticfinancerails.com.
+- **Engineers:** see [Build it](build/README.md). To try the wiki with a coding agent, copy a [starter prompt](build/starter-prompts.md).
+- **AI agents:** read [AGENTS.md](AGENTS.md) for how to cite and when to say "unknown", then clone the repo and load [llms.txt](llms.txt), [data/providers.json](data/providers.json) and [data/programs.json](data/programs.json) into context. Everything works offline with no tooling. The site is at https://agenticfinancerails.com. Or paste a [starter prompt](build/starter-prompts.md).
 
 ```bash
 git clone https://github.com/edyavno/eds-agentic-finance-rails

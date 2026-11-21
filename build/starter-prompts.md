@@ -1,50 +1,77 @@
 ---
 type: build
-title: Starter prompts for coding agents
-summary: Copy-paste prompts that make a coding agent use this wiki, cite pages and say "unknown" instead of guessing.
+title: Starter prompts
+summary: "Copy-paste prompts for AI assistants: questions this wiki can answer, then prompts for coding agents. Cite pages and say unknown rather than guess."
 page_status: current
+last_verified: '2026-11-21'
 ---
 
-# Starter prompts for coding agents
+# Starter prompts
 
-Paste one of these into your coding agent with this repo cloned or its `llms.txt` loaded.
+Copy a prompt into your AI assistant or coding agent. Research prompts come first; [prompts for coding agents](#prompts-for-coding-agents) are further down.
 
-## 1. Research before building
+## Research prompts
 
-```text
-Use the Ed's Agentic Finance Rails wiki (start at llms.txt and index.md). For <broker>,
-tell me: endpoint, auth, whether an agent can place orders, the approval model, and
-paper-trading support. Cite the wiki page and the source card for every fact. If the
-wiki says "unknown" or has no source, say "unknown". Do not guess.
-```
+Each one is answerable from this wiki alone.
 
-## 2. Pick a broker for a use case
+**Building software?** Jump to [Prompts for coding agents](#prompts-for-coding-agents).
+
+### Start every research session with
 
 ```text
-Read data/providers.json and approval-models/. I want an agent that <use case>. Rank the
-providers by how much of the approval is enforced by the broker rather than my client.
-Quote each provider's approval_model and can_place_orders values exactly and cite the
-provider page. Flag every "unknown" field that matters for my use case.
+Read https://agenticfinancerails.com/llms-full.txt (or clone https://github.com/edyavno/eds-agentic-finance-rails). Cite the wiki page and the source card for every fact, and say "unknown" rather than guess.
 ```
 
-## 3. Build a client with a human approval step
+### Which brokers let AI agents trade, and who approves?
 
 ```text
-Using build/human-in-the-loop.md and the provider page for <broker>, write a minimal
-MCP client that connects to the documented endpoint, lists tools, and never sends an
-order without showing me the full order summary and getting my explicit yes. Start on
-the paper or sandbox endpoint if the provider page lists one. Cite the pages you used.
+Read https://agenticfinancerails.com/llms-full.txt. Using the Trading page, the FAQ and the approval-models pages, tell me which brokers let AI agents trade and who approves each order. Cite the wiki page and the source card for every fact. If the wiki says "unknown" or has no source, say "unknown". Do not guess.
 ```
 
-## 4. Check the wiki is current
+### How do the brokers compare for a use case?
 
 ```text
-Before relying on <broker>'s page, check its last_verified date and page_status. If
-page_status is "stale" or "archived", or last_verified is older than 30 days, warn me
-and open the source cards it cites to confirm the key facts.
+Read https://agenticfinancerails.com/data/providers.json and https://agenticfinancerails.com/approval-models. I want an agent that <use case>. Rank the providers by how much of the approval is enforced by the broker rather than my client. Quote each provider's approval_model and can_place_orders values exactly and cite the provider page. Flag every "unknown" field that matters for my use case.
 ```
 
-If you find something wrong or missing, use the "Suggest a correction" link at the bottom of any page.
+### Who approves what at a given broker?
+
+```text
+Use the Ed's Agentic Finance Rails wiki, starting at https://agenticfinancerails.com/llms.txt and https://agenticfinancerails.com/. For <broker>, tell me: endpoint, auth, whether an agent can place orders, the approval model, and paper-trading support. Cite the wiki page and the source card for every fact. If the wiki says "unknown" or has no source, say "unknown". Do not guess.
+```
+
+### Tips
+
+- Ask the agent to cite page URLs and source cards, and to say "unknown" rather than guess.
+- Check `last_verified` (shown as "Updated") and `page_status`. Warn if a page is stale or archived, or `last_verified` is older than 30 days.
+
+## Prompts for coding agents
+
+Copy-paste prompts for AI coding agents connecting to brokers or payment rails. Each tells the agent to cite pages of this wiki. See also [Build it](README.md).
+
+### Start every coding session with
+
+```text
+Read https://agenticfinancerails.com/llms.txt and https://agenticfinancerails.com/build/ before answering. Cite the wiki page and the source card for every fact, and say "unknown" rather than guess.
+```
+
+### How do I build a client against a broker?
+
+```text
+Using https://agenticfinancerails.com/build/connect-an-mcp-client and the provider page for <broker>, write a minimal MCP client that connects to the documented endpoint and lists tools. Start on the paper or sandbox endpoint if the provider page lists one. Cite the pages you used.
+```
+
+### How do I add a human approval step?
+
+```text
+Using https://agenticfinancerails.com/build/human-in-the-loop and the provider page for <broker>, add a human approval step so the client never sends an order without showing me the full order summary and getting my explicit yes. Cite the pages you used.
+```
+
+### How do I check that a wiki page is current?
+
+```text
+Before relying on <broker>'s page, check its last_verified date (shown as "Updated") and page_status at https://agenticfinancerails.com/. If page_status is "stale" or "archived", or last_verified is older than 30 days, warn me and open the source cards it cites to confirm the key facts.
+```
 
 ---
 

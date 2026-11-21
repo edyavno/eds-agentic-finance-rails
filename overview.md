@@ -68,7 +68,7 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 - [Providers](providers/README.md) lists the brokers covered, [comparisons](comparisons/README.md) put them side by side, and [sources](sources/README.md) lists every outside page the wiki cites.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.
 - [Build it](build/README.md) is for engineers and coding agents.
-- [What changed](changelog/README.md) (latest: [2026-11-20](changelog/2026-11-20.md); earlier: [2026-11-19](changelog/2026-11-19.md), [2026-11-18](changelog/2026-11-18.md), [2026-11-17](changelog/2026-11-17.md), [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
+- [What changed](changelog/README.md) (latest: [2026-11-21](changelog/2026-11-21.md); earlier: [2026-11-20](changelog/2026-11-20.md), [2026-11-19](changelog/2026-11-19.md), [2026-11-18](changelog/2026-11-18.md), [2026-11-17](changelog/2026-11-17.md), [2026-11-15](changelog/2026-11-15.md), [2026-11-14](changelog/2026-11-14.md), [2026-11-13](changelog/2026-11-13.md), [2026-11-12](changelog/2026-11-12.md)) and [gaps](gaps.md) show what is new and what is still unknown.
 
 ## Sources
 
