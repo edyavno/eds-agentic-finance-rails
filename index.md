@@ -116,7 +116,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November.
+- [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page now has a category-split bar and a purchase-flow diagram.
 - [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
