@@ -211,3 +211,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Retrieved and ingested 1 new source card: cb-13 (Coinbase's X post of 2026-11-21 with a 15-second video chart). Post text confirmed from X's public embed data; the video figures come from a viewer's description and were not checked against the video file.
 - Edited: providers/coinbase.md (new table, shares by AI app for 11/09 - 11/15), personal-money/grok-bot.md (one cited line), glossary.md (LLM client, Notional volume), changelog/2026-11-21.md.
 - Unknown: dollar totals; the year on the chart (2026 inferred from the post date); what "Custom CLI", "Muse" and "Other" cover; earlier weeks.
+
+## [2026-11-21] edit | cb-13 cites Coinbase's official video
+- Updated sources/cb-13.md so the chart title, footnote and shares cite the official 15-second video attached to Coinbase's X post. The post text is still confirmed from X's public embed data.
+- Reformatted the Coinbase "Which AI apps trade the most" section and the matching Grok Bot line: a rank table of shares, with period, source and unknowns in a short table or note. No facts or footnotes were removed.

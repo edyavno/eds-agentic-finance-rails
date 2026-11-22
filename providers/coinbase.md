@@ -146,20 +146,30 @@ The launch post is dated 2026-06-16.[^cb-12] The Advisor page itself is undated.
 
 ## Which AI apps trade the most on Coinbase?
 
-On 2026-11-21 Coinbase posted its own chart of where Coinbase for Agents trading comes from. It is Coinbase's own figure, shown in a 15-second video, and the wiki has not checked it against any other data.[^cb-13] The chart is titled "Where Coinbase for Agents traders come from", and its footnote says the shares are "% of [notional trading volume](../glossary.md#notional-volume) by [LLM client](../glossary.md#llm-client), 11/09 - 11/15".[^cb-13] The video does not show a year; 2026 is inferred from the post date.[^cb-13]
+On 2026-11-21 Coinbase posted its own chart of where Coinbase for Agents trading comes from, in a 15-second video.[^cb-13] It is Coinbase's own figure; the wiki has not checked it against any other data.[^cb-13] Shares are of [notional trading volume](../glossary.md#notional-volume) by [LLM client](../glossary.md#llm-client). Labels are as Coinbase shows them. The table is ordered by share.[^cb-13]
 
-| AI app (as Coinbase labels it) | Share of notional trading volume, 11/09 - 11/15 (2026 inferred) | Sources |
+| Rank | AI app | Share of notional volume | Sources |
+|---|---|---|---|
+| 1 | Grok Bot | 40.4% | [^cb-13] |
+| 2 | Grok | 16.4% | [^cb-13] |
+| 3 | Claude | 14.9% | [^cb-13] |
+| 4 | Custom CLI | 12.8% | [^cb-13] |
+| 5 | ChatGPT | 10.1% | [^cb-13] |
+| 6 | Muse | 2.1% | [^cb-13] |
+| 7 | Other | 1.8% | [^cb-13] |
+| 8 | Claude Code | 1.5% | [^cb-13] |
+
+The shares add up to 100%.[^cb-13]
+
+| Field | Details | Sources |
 |---|---|---|
-| Grok Bot | 40.4% | [^cb-13] |
-| Grok | 16.4% | [^cb-13] |
-| Claude | 14.9% | [^cb-13] |
-| Custom CLI | 12.8% | [^cb-13] |
-| ChatGPT | 10.1% | [^cb-13] |
-| Muse | 2.1% | [^cb-13] |
-| Claude Code | 1.5% | [^cb-13] |
-| Other | 1.8% | [^cb-13] |
+| Title | "WHERE COINBASE FOR AGENTS TRADERS COME FROM" | [^cb-13] |
+| Footnote | "% of notional trading volume by LLM client, 11/09 - 11/15" | [^cb-13] |
+| Period | 11/09 - 11/15 (the video does not show a year; 2026 is inferred from the post date) | [^cb-13] |
+| Source | Coinbase's official X post and the video attached to it | [^cb-13] |
+| Unknown | Dollar totals; earlier weeks; what "Custom CLI", "Muse" and "Other" cover | [^cb-13] |
 
-The shares add up to 100%.[^cb-13] The video shows no dollar totals, so the amount traded in the week is unknown. Coinbase's post says Grok Bot is the most popular AI agent on Coinbase "for now", that Claude, ChatGPT and custom setups are catching up fast, and that volume on Coinbase for Agents keeps hitting all-time highs.[^cb-13] The post gives no earlier weeks to compare, so how fast any share is changing is unknown. What "Custom CLI", "Muse" and "Other" cover is not explained in the post.
+Coinbase's post says Grok Bot is the most popular AI agent on Coinbase "for now", that Claude, ChatGPT and custom setups are catching up fast, and that volume on Coinbase for Agents keeps hitting all-time highs.[^cb-13] The post gives no earlier weeks to compare, so how fast any share is changing is unknown.
 
 ## What is still unknown about Coinbase?
 

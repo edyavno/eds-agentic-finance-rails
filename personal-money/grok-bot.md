@@ -63,7 +63,7 @@ Yes. Coinbase lists Grok Bot as a supported app for its remote [MCP](../glossary
 
 - **How to add it.** Click Marketplace, search for Coinbase, click Add, and sign in with your Coinbase account if prompted.[^cb-09]
 - **A Grok connection carries over.** If you already connected Coinbase in Grok, it should also appear in your Grok Bot account.[^cb-09]
-- **How much it is used there.** In Coinbase's own chart for 11/09 - 11/15 (2026 inferred), Grok Bot was the largest AI app by [notional trading volume](../glossary.md#notional-volume) on Coinbase for Agents, at 40.4%; Coinbase's post says "for now". Dollar totals are unknown. See [the table](../providers/coinbase.md#which-ai-apps-trade-the-most-on-coinbase).[^cb-13]
+- **How much it is used there.** In Coinbase's own chart, Grok Bot was the largest AI app by [notional trading volume](../glossary.md#notional-volume) on Coinbase for Agents, at 40.4%.[^cb-13] Coinbase's post says "for now". Dollar totals are unknown. Period: 11/09 - 11/15 (the video does not show a year; 2026 is inferred from the post date).[^cb-13] See [the table](../providers/coinbase.md#which-ai-apps-trade-the-most-on-coinbase).
 - **Connectors are account-wide.** A connector added by one Bot is available to all of your Bots. Coinbase says to limit access by selecting a dedicated portfolio on its approval screen.[^cb-09]
 
 ## Unknown
