@@ -24,7 +24,7 @@ These pages are starter overviews and will get more detail as we add sources. Ea
 ## Related pages
 
 - [Approval models](../approval-models/README.md): who or what says yes before an agent's order reaches the market.
-- [Trading](../directory.md): which brokers let AI agents trade, with every provider's key fields.
+- [Trading](../trading.md): which brokers let AI agents trade, with every provider's key fields.
 - [Payments](../payments/README.md) and [Personal money agents](../personal-money/README.md): the programs that run on these rails.
 - [Glossary](../glossary.md): short definitions of terms such as [MCP](../glossary.md#mcp), [OAuth](../glossary.md#oauth) and [mandates](../glossary.md#mandates).
 

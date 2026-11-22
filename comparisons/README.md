@@ -18,7 +18,7 @@ A comparison puts several providers next to each other on the same questions, so
 
 ## Where else are things compared?
 
-- [Trading](../directory.md) lists every broker's key fields in one table.
+- [Trading](../trading.md) lists every broker's key fields in one table.
 - [AP2 vs ACP vs x402](../analyses/ap2-vs-acp-vs-x402.md) compares three agent payment protocols, and the rest of the [analyses](../analyses/README.md) are written answers to single questions.
 - [Approval models](../approval-models/README.md) explains the ways a broker decides who approves an agent's order.
 

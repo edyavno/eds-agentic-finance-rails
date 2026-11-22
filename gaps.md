@@ -53,7 +53,7 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 
 ## Unknown fields by provider
 
-See the `unknown` values in [data/providers.csv](data/providers.csv) or the [Trading](directory.md) page.
+See the `unknown` values in [data/providers.csv](data/providers.csv) or the [Trading](trading.md) page.
 
 ## Leads and other directories (not evidence)
 

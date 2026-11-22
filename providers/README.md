@@ -31,7 +31,7 @@ Alpaca, Coinbase, Interactive Brokers, Robinhood and Webull are the wiki's five 
 
 ## Where can I compare them?
 
-- [Trading](../directory.md) lists every provider's key fields in one table, including order types, assets and the connection endpoint.
+- [Trading](../trading.md) lists every provider's key fields in one table, including order types, assets and the connection endpoint.
 - [Launch brokers compared](../comparisons/launch-brokers.md) puts approval, read access and paper trading side by side.
 - [Glossary](../glossary.md) defines terms such as [paper trading](../glossary.md#paper-trading) and [OAuth](../glossary.md#oauth).
 

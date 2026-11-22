@@ -308,7 +308,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 ## Where do I go next?
 
 - [Providers](../providers/README.md): one page per broker, with a source behind every field.
-- [Trading](../directory.md): every broker's key fields in one table.
+- [Trading](../trading.md): every broker's key fields in one table.
 - [Index](../index.md): every page in the wiki in one list.
 
 ---

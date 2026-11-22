@@ -12,7 +12,7 @@ AI agents can already trade at five launch brokers and pay through card-network 
 
 ## Which brokers let AI agents trade?
 
-All five launch brokers publish an official [MCP](glossary.md#mcp) server for AI agents: Alpaca, Coinbase, Interactive Brokers, Robinhood and Webull.[^al-02][^cb-01][^ib-01][^rh-01][^wb-02] They differ on who approves each order. Details: [Trading](directory.md).
+All five launch brokers publish an official [MCP](glossary.md#mcp) server for AI agents: Alpaca, Coinbase, Interactive Brokers, Robinhood and Webull.[^al-02][^cb-01][^ib-01][^rh-01][^wb-02] They differ on who approves each order. Details: [Trading](trading.md).
 
 ## Who approves an AI agent's trades?
 

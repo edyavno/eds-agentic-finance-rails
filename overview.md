@@ -63,7 +63,7 @@ Personal AI agents now read people's bank and card data. Banks are pushing back.
 
 ## How to read this wiki
 
-- [Trading](directory.md) is the one-table view of launch brokers. Payments and personal money each have their own section page: [payments](payments/README.md) and [personal money agents](personal-money/README.md). Short answers are in the [FAQ](faq.md).
+- [Trading](trading.md) is the one-table view of launch brokers. Payments and personal money each have their own section page: [payments](payments/README.md) and [personal money agents](personal-money/README.md). Short answers are in the [FAQ](faq.md).
 - The [glossary](glossary.md) defines recurring terms.
 - [Providers](providers/README.md) lists the brokers covered, [comparisons](comparisons/README.md) put them side by side, and [sources](sources/README.md) lists every outside page the wiki cites.
 - [Approval models](approval-models/README.md) explain who approves an agent's order.

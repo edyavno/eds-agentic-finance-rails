@@ -8,7 +8,7 @@ last_verified: '2026-11-18'
 
 # Launch brokers compared
 
-The five launch brokers differ most on who approves an agent's order and whether the broker or your own client enforces that guardrail. A [cheatsheet of who says yes and who enforces it](../approval-models/README.md#who-says-yes-and-who-enforces-it) places the same five brokers on those two axes. The tables below compare approval, read access and paper trading; every field is on the [Trading](../directory.md) page.
+The five launch brokers differ most on who approves an agent's order and whether the broker or your own client enforces that guardrail. A [cheatsheet of who says yes and who enforces it](../approval-models/README.md#who-says-yes-and-who-enforces-it) places the same five brokers on those two axes. The tables below compare approval, read access and paper trading; every field is on the [Trading](../trading.md) page.
 
 ## Who approves the order?
 
