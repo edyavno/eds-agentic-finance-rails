@@ -67,7 +67,313 @@ The sources describe four kinds of control. Most programs use more than one.
 
 ## Which controls does each program use?
 
-The same four controls, across the programs on this page. **Yes** means a cited source describes that control. **unknown** means no cited source confirms it. A short phrase is used when the source describes a related limit that is not exactly the control named in the column. The topic page [Merchants and outside agents](merchants-and-outside-agents.md) is not a payment program, so it is not in the grid.
+The same four controls, across the programs on this page. The topic page [Merchants and outside agents](merchants-and-outside-agents.md) is not a payment program, so it is not in the diagram.
+
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--desktop">
+<svg role="img" viewBox="0 0 800 604" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pay-d-title pay-d-desc">
+  <title id="pay-d-title">Which controls each payment program uses</title>
+  <desc id="pay-d-desc">A matrix of 15 payment programs against four controls: the network vets the agent, the credential is limited, the person approves, and the balance is limited. A filled circle means a cited source describes that control. A hollow circle means unknown: no cited source confirms it. A diamond means a cited source describes a related limit that is not exactly that control: AgentCore has a session budget and expiry; Lightspark lets the owner decide which payments need approval and set spending limits. Visa and Mastercard have a filled circle for the first three controls. Stripe, ChatGPT Wallet, Link, Rain and Lightspark have a limited credential. AP2, Robinhood's agentic card, ChatGPT Wallet, Link, X Money and AgentBank have person approval. Rain has a funded vault. ACP, PayPal and x402 are unknown on all four controls.</desc>
+  <rect width="800" height="604" fill="var(--light)"/>
+  <rect x="0" y="0" width="800" height="68" fill="var(--light)"/>
+<text x="273.0" y="28" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="273.0" y="28">Network vets</tspan>
+  <tspan x="273.0" dy="16">the agent</tspan>
+  </text>
+<text x="419.0" y="28" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="419.0" y="28">Credential</tspan>
+  <tspan x="419.0" dy="16">is limited</tspan>
+  </text>
+<text x="565.0" y="28" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="565.0" y="28">Person</tspan>
+  <tspan x="565.0" dy="16">approves</tspan>
+  </text>
+<text x="711.0" y="28" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="711.0" y="28">Balance</tspan>
+  <tspan x="711.0" dy="16">is limited</tspan>
+  </text>
+  <rect x="0" y="68" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="89.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="89.0">Visa</tspan>
+  </text>
+  <circle cx="273.0" cy="84.0" r="8" fill="var(--secondary)"/>
+  <circle cx="419.0" cy="84.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="84.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="84.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="121.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="121.0">Mastercard</tspan>
+  </text>
+  <circle cx="273.0" cy="116.0" r="8" fill="var(--secondary)"/>
+  <circle cx="419.0" cy="116.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="116.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="116.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="132" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="153.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="153.0">ACP</tspan>
+  </text>
+  <circle cx="273.0" cy="148.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="148.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="148.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="711.0" cy="148.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="185.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="185.0">Stripe</tspan>
+  </text>
+  <circle cx="273.0" cy="180.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="180.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="180.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="711.0" cy="180.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="196" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="217.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="217.0">PayPal</tspan>
+  </text>
+  <circle cx="273.0" cy="212.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="212.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="212.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="711.0" cy="212.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="249.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="249.0">x402</tspan>
+  </text>
+  <circle cx="273.0" cy="244.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="244.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="244.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="711.0" cy="244.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="260" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="281.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="281.0">AP2</tspan>
+  </text>
+  <circle cx="273.0" cy="276.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="276.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="276.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="276.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="313.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="313.0">Robinhood card</tspan>
+  </text>
+  <circle cx="273.0" cy="308.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="308.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="308.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="308.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="324" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="345.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="345.0">ChatGPT Wallet</tspan>
+  </text>
+  <circle cx="273.0" cy="340.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="340.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="340.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="340.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="377.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="377.0">Link wallet</tspan>
+  </text>
+  <circle cx="273.0" cy="372.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="372.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="372.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="372.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="388" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="409.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="409.0">X Money</tspan>
+  </text>
+  <circle cx="273.0" cy="404.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="404.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="404.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="404.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="441.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="441.0">Rain Vaults</tspan>
+  </text>
+  <circle cx="273.0" cy="436.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="436.0" r="8" fill="var(--secondary)"/>
+  <circle cx="565.0" cy="436.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="711.0" cy="436.0" r="8" fill="var(--secondary)"/>
+  <rect x="0" y="452" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="473.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="473.0">AgentBank</tspan>
+  </text>
+  <circle cx="273.0" cy="468.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="468.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="468.0" r="8" fill="var(--secondary)"/>
+  <circle cx="711.0" cy="468.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="505.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="505.0">AgentCore</tspan>
+  </text>
+  <circle cx="273.0" cy="500.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="500.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="565.0" cy="500.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <path d="M711.0,491.0 L720.0,500.0 L711.0,509.0 L702.0,500.0 Z" fill="var(--tertiary)"/>
+  <rect x="0" y="516" width="800" height="32" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="537.0" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="537.0">Lightspark</tspan>
+  </text>
+  <circle cx="273.0" cy="532.0" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="419.0" cy="532.0" r="8" fill="var(--secondary)"/>
+  <path d="M565.0,523.0 L574.0,532.0 L565.0,541.0 L556.0,532.0 Z" fill="var(--tertiary)"/>
+  <path d="M711.0,523.0 L720.0,532.0 L711.0,541.0 L702.0,532.0 Z" fill="var(--tertiary)"/>
+  <circle cx="24" cy="570" r="8" fill="var(--secondary)"/>
+<text x="38" y="574" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="38" y="574">Yes, cited</tspan>
+  </text>
+  <circle cx="146" cy="570" r="8" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="160" y="574" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="160" y="574">unknown</tspan>
+  </text>
+  <path d="M266,561 L275,570 L266,579 L257,570 Z" fill="var(--tertiary)"/>
+<text x="282" y="574" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="282" y="574">Related cited limit, not exactly this control</tspan>
+  </text>
+</svg>
+<figcaption>A filled circle means a cited source describes that control. A hollow circle is unknown. A diamond is a related, cited limit that is not exactly the control in that column.</figcaption>
+</figure>
+
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--mobile">
+<svg role="img" viewBox="0 0 360 736" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pay-m-title pay-m-desc">
+  <title id="pay-m-title">Which controls each payment program uses</title>
+  <desc id="pay-m-desc">A matrix of 15 payment programs against four controls: the network vets the agent, the credential is limited, the person approves, and the balance is limited. A filled circle means a cited source describes that control. A hollow circle means unknown: no cited source confirms it. A diamond means a cited source describes a related limit that is not exactly that control: AgentCore has a session budget and expiry; Lightspark lets the owner decide which payments need approval and set spending limits. Visa and Mastercard have a filled circle for the first three controls. Stripe, ChatGPT Wallet, Link, Rain and Lightspark have a limited credential. AP2, Robinhood's agentic card, ChatGPT Wallet, Link, X Money and AgentBank have person approval. Rain has a funded vault. ACP, PayPal and x402 are unknown on all four controls.</desc>
+  <rect width="360" height="736" fill="var(--light)"/>
+  <rect x="0" y="0" width="360" height="68" fill="var(--light)"/>
+<text x="158.5" y="40" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="158.5" y="40">Vets</tspan>
+  </text>
+<text x="211.5" y="40" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="211.5" y="40">Cred</tspan>
+  </text>
+<text x="264.5" y="40" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="264.5" y="40">Appr</tspan>
+  </text>
+<text x="317.5" y="40" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="317.5" y="40">Bal</tspan>
+  </text>
+  <rect x="0" y="68" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="91.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="91.0">Visa</tspan>
+  </text>
+  <circle cx="158.5" cy="86.0" r="7" fill="var(--secondary)"/>
+  <circle cx="211.5" cy="86.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="86.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="86.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="127.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="127.0">Mastercard</tspan>
+  </text>
+  <circle cx="158.5" cy="122.0" r="7" fill="var(--secondary)"/>
+  <circle cx="211.5" cy="122.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="122.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="122.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="140" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="163.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="163.0">ACP</tspan>
+  </text>
+  <circle cx="158.5" cy="158.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="158.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="158.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="317.5" cy="158.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="199.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="199.0">Stripe</tspan>
+  </text>
+  <circle cx="158.5" cy="194.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="194.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="194.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="317.5" cy="194.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="212" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="235.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="235.0">PayPal</tspan>
+  </text>
+  <circle cx="158.5" cy="230.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="230.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="230.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="317.5" cy="230.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="271.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="271.0">x402</tspan>
+  </text>
+  <circle cx="158.5" cy="266.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="266.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="266.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="317.5" cy="266.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="284" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="307.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="307.0">AP2</tspan>
+  </text>
+  <circle cx="158.5" cy="302.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="302.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="302.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="302.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="343.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="343.0">Robinhood card</tspan>
+  </text>
+  <circle cx="158.5" cy="338.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="338.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="338.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="338.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="356" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="379.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="379.0">ChatGPT Wallet</tspan>
+  </text>
+  <circle cx="158.5" cy="374.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="374.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="374.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="374.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="415.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="415.0">Link wallet</tspan>
+  </text>
+  <circle cx="158.5" cy="410.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="410.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="410.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="410.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <rect x="0" y="428" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="451.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="451.0">X Money</tspan>
+  </text>
+  <circle cx="158.5" cy="446.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="446.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="446.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="446.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="487.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="487.0">Rain Vaults</tspan>
+  </text>
+  <circle cx="158.5" cy="482.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="482.0" r="7" fill="var(--secondary)"/>
+  <circle cx="264.5" cy="482.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="317.5" cy="482.0" r="7" fill="var(--secondary)"/>
+  <rect x="0" y="500" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="523.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="523.0">AgentBank</tspan>
+  </text>
+  <circle cx="158.5" cy="518.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="518.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="518.0" r="7" fill="var(--secondary)"/>
+  <circle cx="317.5" cy="518.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="14" y="559.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="559.0">AgentCore</tspan>
+  </text>
+  <circle cx="158.5" cy="554.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="554.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="264.5" cy="554.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <path d="M317.5,546.0 L325.5,554.0 L317.5,562.0 L309.5,554.0 Z" fill="var(--tertiary)"/>
+  <rect x="0" y="572" width="360" height="36" fill="var(--lightgray)" fill-opacity="0.28"/>
+<text x="14" y="595.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="595.0">Lightspark</tspan>
+  </text>
+  <circle cx="158.5" cy="590.0" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+  <circle cx="211.5" cy="590.0" r="7" fill="var(--secondary)"/>
+  <path d="M264.5,582.0 L272.5,590.0 L264.5,598.0 L256.5,590.0 Z" fill="var(--tertiary)"/>
+  <path d="M317.5,582.0 L325.5,590.0 L317.5,598.0 L309.5,590.0 Z" fill="var(--tertiary)"/>
+<text x="14" y="622" text-anchor="start" fill="var(--darkgray)" font-size="10" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="14" y="622">Columns: Vets = network vets the agent</tspan>
+  <tspan x="14" dy="13">Cred = credential is limited · Appr = person approves</tspan>
+  <tspan x="14" dy="13">Bal = balance is limited</tspan>
+  </text>
+  <circle cx="22" cy="668" r="7" fill="var(--secondary)"/>
+<text x="36" y="672" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="36" y="672">Yes, a cited source describes this</tspan>
+  </text>
+  <circle cx="22" cy="690" r="7" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="36" y="694" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="36" y="694">unknown: no cited source confirms it</tspan>
+  </text>
+  <path d="M22,705 L29,712 L22,719 L15,712 Z" fill="var(--tertiary)"/>
+<text x="36" y="716" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="36" y="716">A related cited limit, not exactly this control</tspan>
+  </text>
+</svg>
+<figcaption>A filled circle means a cited source describes that control. A hollow circle is unknown. A diamond is a related, cited limit that is not exactly the control in that column.</figcaption>
+</figure>
+
+<details class="afr-cheatsheet-sources">
+<summary>Sources and full table</summary>
 
 | Program | Network vets the agent | Credential is limited | Person approves | Balance is limited | Sources |
 |---|---|---|---|---|---|
@@ -86,6 +392,8 @@ The same four controls, across the programs on this page. **Yes** means a cited 
 | [AgentBank](agentbank.md) | unknown | unknown | Yes: the owner confirms every payment, with an extra approval above a threshold | unknown | [^ag-02] |
 | [Amazon Bedrock AgentCore payments](agentcore-payments.md) | unknown | unknown | unknown | Session budget and expiry: further payments are denied once either is reached | [^aw-01][^aw-02] |
 | [Lightspark Agent Accounts](lightspark-agent-accounts.md) | unknown | Yes: a card valid for that purchase alone, or a saved card seen only as a card ID | The owner decides which payments need approval | Spending limits the owner sets | [^ls-01][^ls-02] |
+
+</details>
 
 ## What is still unknown
 

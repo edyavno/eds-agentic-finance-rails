@@ -32,69 +32,261 @@ See the [approval model comparison](../comparisons/launch-brokers.md).
 
 ## Who says yes, and who enforces it?
 
-The five launch brokers, placed by who has to say yes and whether the [broker or your client](#is-the-guardrail-enforced-by-the-broker-or-by-your-client) enforces that guardrail. A broker can appear in more than one cell when its models stack. A dash means the wiki does not place a launch broker there. See also the [approval model comparison](../comparisons/launch-brokers.md).
+The five launch brokers, placed by who has to say yes and whether the [broker or your client](#is-the-guardrail-enforced-by-the-broker-or-by-your-client) enforces that guardrail. A broker can appear in more than one cell when its models stack. See also the [approval model comparison](../comparisons/launch-brokers.md).
 
-<figure class="afr-cheatsheet-visual">
-<svg role="img" viewBox="0 0 920 430" xmlns="http://www.w3.org/2000/svg" aria-labelledby="am-vis-title am-vis-desc">
-  <title id="am-vis-title">Approval models spectrum for the five launch brokers</title>
-  <desc id="am-vis-desc">A two-axis chart. Across: who says yes, from you approve each order, to draft then you submit, to a funded partition or separate account, to no broker approval. Up: who enforces it, the broker or your client. Robinhood sits in a separate account and, when Trade approvals are on, also in you approve each order, both enforced by the broker. Interactive Brokers starts at draft then you submit and, for Autonomous Trading, uses a funded AI Partition, both enforced by the broker. Webull Cloud MCP is you approve each order, enforced by the broker. Webull local OpenAPI MCP and Alpaca are no broker approval, enforced by your client or server. Coinbase per-order approval depends on the client. Coinbase's optional dedicated portfolio is in the table, not drawn as a default placement.</desc>
-  <rect width="920" height="430" fill="var(--light)"/>
-  <text x="16" y="28" fill="var(--darkgray)" font-size="13" font-family="system-ui, sans-serif">Who enforces it</text>
-  <text x="200" y="54" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, sans-serif">You approve each order</text>
-  <text x="410" y="54" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, sans-serif">Draft, then you submit</text>
-  <text x="620" y="54" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, sans-serif">Funded partition or separate account</text>
-  <text x="830" y="54" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, sans-serif">No broker approval</text>
-  <rect x="95" y="66" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="305" y="66" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="515" y="66" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="725" y="66" width="180" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="95" y="221" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="305" y="221" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="515" y="221" width="210" height="155" fill="none" stroke="var(--lightgray)"/>
-  <rect x="725" y="221" width="180" height="155" fill="none" stroke="var(--lightgray)"/>
-  <text x="16" y="150" fill="var(--darkgray)" font-size="13" font-family="system-ui, sans-serif">Broker</text>
-  <text x="16" y="305" fill="var(--darkgray)" font-size="13" font-family="system-ui, sans-serif">Your client</text>
-  <rect x="108" y="80" width="184" height="40" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="200" y="104" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Webull Cloud MCP</text>
-  <rect x="108" y="150" width="184" height="48" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="200" y="168" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Robinhood + Trade approvals</text>
-  <text x="200" y="184" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">stacks with separate account</text>
-  <rect x="318" y="110" width="184" height="52" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="410" y="130" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Interactive Brokers</text>
-  <text x="410" y="146" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">AI Integration (default)</text>
-  <rect x="528" y="80" width="184" height="48" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="620" y="98" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Robinhood (default)</text>
-  <text x="620" y="114" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">separate agentic account</text>
-  <rect x="528" y="150" width="184" height="48" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="620" y="168" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Interactive Brokers</text>
-  <text x="620" y="184" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">AI Partition</text>
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--desktop">
+<svg role="img" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" aria-labelledby="am-d-title am-d-desc">
+  <title id="am-d-title">Approval models spectrum for the five launch brokers</title>
+  <desc id="am-d-desc">A two-axis chart. Across: who says yes, from you approve each order, to draft then you submit, to a funded partition or separate account, to no broker approval. Up: who enforces it, the broker or your client. Robinhood sits in a separate account and, when Trade approvals are on, also in you approve each order, both enforced by the broker. Interactive Brokers starts at draft then you submit and, for Autonomous Trading, uses a funded AI Partition, both enforced by the broker. Webull Cloud MCP is you approve each order, enforced by the broker. Webull local OpenAPI MCP and Alpaca are no broker approval, enforced by your client or server. Coinbase per-order approval depends on the client. Coinbase's dedicated portfolio is an optional separate account, enforced by the broker.</desc>
+  <rect width="800" height="560" fill="var(--light)"/>
   <defs>
-    <marker id="am-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 z" fill="var(--tertiary)"/>
+    <marker id="am-d-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="var(--tertiary)"/>
     </marker>
   </defs>
-  <path d="M528,104 C 430,104 330,174 292,174" fill="none" stroke="var(--tertiary)" stroke-width="2" marker-end="url(#am-arrow)"/>
-  <path d="M502,136 L528,166" fill="none" stroke="var(--tertiary)" stroke-width="2" marker-end="url(#am-arrow)"/>
-  <rect x="108" y="250" width="184" height="68" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="200" y="270" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Coinbase per-order</text>
-  <text x="200" y="286" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">depends on the client</text>
-  <text x="200" y="302" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">ChatGPT shows confirmation cards</text>
-  <rect x="736" y="240" width="156" height="44" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="814" y="257" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Alpaca</text>
-  <text x="814" y="273" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">no broker-side approval</text>
-  <rect x="736" y="296" width="156" height="52" rx="6" fill="var(--highlight)" stroke="var(--secondary)"/>
-  <text x="814" y="315" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, sans-serif">Webull local OpenAPI</text>
-  <text x="814" y="331" text-anchor="middle" fill="var(--darkgray)" font-size="10" font-family="system-ui, sans-serif">your server enforces limits</text>
-  <text x="510" y="412" text-anchor="middle" fill="var(--darkgray)" font-size="13" font-family="system-ui, sans-serif">Who says yes →</text>
+<text x="14" y="28" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="14" y="28">Who enforces it</tspan>
+  </text>
+<text x="185" y="30" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="185" y="30">You approve</tspan>
+  <tspan x="185" dy="15">each order</tspan>
+  </text>
+<text x="355" y="30" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="355" y="30">Draft, then</tspan>
+  <tspan x="355" dy="15">you submit</tspan>
+  </text>
+<text x="525" y="30" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="525" y="30">Funded partition or</tspan>
+  <tspan x="525" dy="15">separate account</tspan>
+  </text>
+<text x="695" y="30" text-anchor="middle" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="695" y="30">No broker</tspan>
+  <tspan x="695" dy="15">approval</tspan>
+  </text>
+  <rect x="100" y="68" width="680" height="430" fill="none" stroke="var(--lightgray)" stroke-width="1"/>
+  <line x1="270" y1="68" x2="270" y2="498" stroke="var(--lightgray)"/>
+  <line x1="440" y1="68" x2="440" y2="498" stroke="var(--lightgray)"/>
+  <line x1="610" y1="68" x2="610" y2="498" stroke="var(--lightgray)"/>
+  <line x1="100" y1="300" x2="780" y2="300" stroke="var(--lightgray)"/>
+<text x="16" y="180" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="180">Broker</tspan>
+  </text>
+<text x="16" y="390" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="390">Your</tspan>
+  <tspan x="16" dy="16">client</tspan>
+  </text>
+<rect x="110" y="84" width="140" height="52" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="105.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="105.6">Webull Cloud MCP</tspan>
+  </text>
+<text x="180.0" y="125.19999999999999" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="125.19999999999999">confirm in the app</tspan>
+  </text>
+<rect x="110" y="146" width="140" height="72" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="169.8" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="169.8">Robinhood +</tspan>
+  <tspan x="180.0" dy="16.2">Trade approvals</tspan>
+  </text>
+<text x="180.0" y="205.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="205.0">stacks with separate account</tspan>
+  </text>
+<rect x="280" y="130" width="140" height="64" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="350.0" y="149.8" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="350.0" y="149.8">Interactive Brokers</tspan>
+  <tspan x="350.0" dy="16.2">AI Integration</tspan>
+  </text>
+<text x="350.0" y="185.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="350.0" y="185.0">default</tspan>
+  </text>
+<rect x="450" y="84" width="140" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="520.0" y="107.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="520.0" y="107.6">Robinhood</tspan>
+  </text>
+<text x="520.0" y="127.19999999999999" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="520.0" y="127.19999999999999">default · separate account</tspan>
+  </text>
+<rect x="450" y="152" width="140" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="520.0" y="177.4" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="520.0" y="177.4">Interactive Brokers</tspan>
+  <tspan x="520.0" dy="16.2">AI Partition</tspan>
+  </text>
+<rect x="450" y="220" width="140" height="64" rx="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="5 4"/><text x="520.0" y="239.8" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="520.0" y="239.8">Coinbase dedicated</tspan>
+  <tspan x="520.0" dy="16.2">portfolio</tspan>
+  </text>
+<text x="520.0" y="275.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="520.0" y="275.0">optional · spot crypto only</tspan>
+  </text>
+<text x="695" y="190" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="695" y="190">—</tspan>
+  </text>
+  <path d="M450,112 C 360,112 280,182 250,182" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
+  <path d="M420,162 L450,180" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
+<rect x="110" y="324" width="140" height="80" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="353.0" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="353.0">Coinbase per-order</tspan>
+  </text>
+<text x="180.0" y="372.6" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="372.6">depends on the client</tspan>
+  <tspan x="180.0" dy="13.8">ChatGPT shows cards</tspan>
+  </text>
+<text x="355" y="400" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="355" y="400">—</tspan>
+  </text>
+<text x="525" y="400" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="525" y="400">—</tspan>
+  </text>
+<rect x="620" y="324" width="150" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="695.0" y="347.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="695.0" y="347.6">Alpaca</tspan>
+  </text>
+<text x="695.0" y="367.20000000000005" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="695.0" y="367.20000000000005">no broker-side approval</tspan>
+  </text>
+<rect x="620" y="392" width="150" height="64" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="695.0" y="411.8" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="695.0" y="411.8">Webull local</tspan>
+  <tspan x="695.0" dy="16.2">OpenAPI MCP</tspan>
+  </text>
+<text x="695.0" y="447.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="695.0" y="447.0">your server enforces limits</tspan>
+  </text>
+  <line x1="120" y1="540" x2="148" y2="540" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
+<text x="156" y="544" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="156" y="544">Models that stack</tspan>
+  </text>
+  <rect x="330" y="530" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
+<text x="364" y="544" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="364" y="544">Optional, not a default path</tspan>
+  </text>
 </svg>
-<figcaption>The table below has the same placements and the sources. Arrows show models that stack: Robinhood's separate account plus Trade approvals, and Interactive Brokers' draft-then-submit path then the AI Partition.</figcaption>
+<figcaption>Arrows mark models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
 </figure>
 
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--mobile">
+<svg role="img" viewBox="0 0 360 1180" xmlns="http://www.w3.org/2000/svg" aria-labelledby="am-m-title am-m-desc">
+  <title id="am-m-title">Approval models spectrum for the five launch brokers</title>
+  <desc id="am-m-desc">A two-axis chart. Across: who says yes, from you approve each order, to draft then you submit, to a funded partition or separate account, to no broker approval. Up: who enforces it, the broker or your client. Robinhood sits in a separate account and, when Trade approvals are on, also in you approve each order, both enforced by the broker. Interactive Brokers starts at draft then you submit and, for Autonomous Trading, uses a funded AI Partition, both enforced by the broker. Webull Cloud MCP is you approve each order, enforced by the broker. Webull local OpenAPI MCP and Alpaca are no broker approval, enforced by your client or server. Coinbase per-order approval depends on the client. Coinbase's dedicated portfolio is an optional separate account, enforced by the broker.</desc>
+  <rect width="360" height="1180" fill="var(--light)"/>
+  <defs>
+    <marker id="am-m-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="var(--tertiary)"/>
+    </marker>
+  </defs>
+<text x="16" y="28" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="28">Who enforces it</tspan>
+  </text>
+  <rect x="12" y="44" width="336" height="28" rx="6" fill="var(--highlight)"/>
+<text x="180" y="63" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180" y="63">Broker</tspan>
+  </text>
+<text x="16" y="96" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="96">You approve each order</tspan>
+  </text>
+<rect x="16" y="106" width="328" height="48" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="125.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="125.6">Webull Cloud MCP</tspan>
+  </text>
+<text x="180.0" y="145.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="145.2">confirm in the app</tspan>
+  </text>
+<rect x="16" y="162" width="328" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="185.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="185.6">Robinhood + Trade approvals</tspan>
+  </text>
+<text x="180.0" y="205.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="205.2">stacks with the separate account</tspan>
+  </text>
+<text x="16" y="244" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="244">Draft, then you submit</tspan>
+  </text>
+<rect x="16" y="254" width="328" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="277.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="277.6">Interactive Brokers AI Integration</tspan>
+  </text>
+<text x="180.0" y="297.20000000000005" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="297.20000000000005">default</tspan>
+  </text>
+  <path d="M180,314 L180,336" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-m-arrow)"/>
+<text x="16" y="356" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="356">Funded partition or separate account</tspan>
+  </text>
+<rect x="16" y="366" width="328" height="48" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="385.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="385.6">Robinhood</tspan>
+  </text>
+<text x="180.0" y="405.20000000000005" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="405.20000000000005">default · separate agentic account</tspan>
+  </text>
+<rect x="16" y="422" width="328" height="48" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="451.2" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="451.2">Interactive Brokers AI Partition</tspan>
+  </text>
+<rect x="16" y="478" width="328" height="56" rx="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="5 4"/><text x="180.0" y="501.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="501.6">Coinbase dedicated portfolio</tspan>
+  </text>
+<text x="180.0" y="521.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="521.2">optional · spot crypto only</tspan>
+  </text>
+<text x="16" y="556" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="556">No broker approval</tspan>
+  </text>
+<text x="180" y="582" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180" y="582">—</tspan>
+  </text>
+  <rect x="12" y="610" width="336" height="28" rx="6" fill="var(--highlight)"/>
+<text x="180" y="629" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180" y="629">Your client</tspan>
+  </text>
+<text x="16" y="662" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="662">You approve each order</tspan>
+  </text>
+<rect x="16" y="672" width="328" height="64" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="693.0" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="693.0">Coinbase per-order</tspan>
+  </text>
+<text x="180.0" y="712.6" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="712.6">depends on the client</tspan>
+  <tspan x="180.0" dy="13.8">ChatGPT shows confirmation cards</tspan>
+  </text>
+<text x="16" y="758" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="758">Draft, then you submit</tspan>
+  </text>
+<text x="180" y="784" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180" y="784">—</tspan>
+  </text>
+<text x="16" y="814" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="814">Funded partition or separate account</tspan>
+  </text>
+<text x="180" y="840" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180" y="840">—</tspan>
+  </text>
+<text x="16" y="870" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="16" y="870">No broker approval</tspan>
+  </text>
+<rect x="16" y="880" width="328" height="48" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="899.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="899.6">Alpaca</tspan>
+  </text>
+<text x="180.0" y="919.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="919.2">no broker-side approval</tspan>
+  </text>
+<rect x="16" y="936" width="328" height="56" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="959.6" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180.0" y="959.6">Webull local OpenAPI MCP</tspan>
+  </text>
+<text x="180.0" y="979.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="180.0" y="979.2">your server enforces limits</tspan>
+  </text>
+  <line x1="16" y1="1016" x2="344" y2="1016" stroke="var(--lightgray)"/>
+  <line x1="24" y1="1040" x2="24" y2="1064" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-m-arrow)"/>
+<text x="36" y="1056" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="36" y="1056">Models that stack</tspan>
+  </text>
+  <rect x="24" y="1080" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
+<text x="60" y="1093" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="60" y="1093">Optional, not a default path</tspan>
+  </text>
+<text x="16" y="1130" text-anchor="start" fill="var(--gray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="16" y="1130">A dash means the wiki does not place a launch broker there.</tspan>
+  </text>
+</svg>
+<figcaption>Arrows mark models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
+</figure>
+
+<details class="afr-cheatsheet-sources">
+<summary>Sources and full table</summary>
 
 | Who enforces | You approve each order | Draft, then you submit | Funded partition or separate account | No broker approval | Sources |
 |---|---|---|---|---|---|
 | Broker | [Webull](../providers/webull.md) Cloud MCP: you confirm each trade in the Webull app. [Robinhood](../providers/robinhood.md) with Trade approvals on, which stacks with the separate account. | [Interactive Brokers](../providers/interactive-brokers.md) AI Integration (default): you review and submit every instruction. A track record here is required before the AI Partition opens. | Robinhood (default): the agent trades in a separate agentic account, with Trade approvals off. Interactive Brokers Autonomous Trading: a funded [AI Partition](ai-partition.md). [Coinbase](../providers/coinbase.md) optional dedicated portfolio (spot crypto only); Coinbase also enforces limits on trade size, 24-hour volume and loss (auto-stop). Coinbase's default path is the portfolios you pick at sign-in, which can include the main account. | — | [^wb-07][^rh-04][^rh-01][^ib-01][^ib-07][^ib-06][^cb-03][^cb-07][^cb-10] |
 | Your client | Coinbase: per-order approval depends on the client. The official ChatGPT plugin shows Coinbase confirmation cards. | — | — | [Alpaca](../providers/alpaca.md): no broker-side approval documented. Webull local OpenAPI MCP: direct orders with local limits enforced by your server. | [^cb-01][^cb-09][^al-05][^al-03][^wb-03] |
+
+</details>
 
 ## Sources
 

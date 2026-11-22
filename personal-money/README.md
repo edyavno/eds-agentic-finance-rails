@@ -57,7 +57,256 @@ The same records side by side, taken from each page's YAML header. Each value is
 
 ## Read, pay or move money?
 
-What each tool can do, and how it connects. **Read-only** means the cited sources describe the tool as read-only. If a tool also pays or moves money, that column says how it reads, not "read-only." **unknown** means no cited source confirms it. [Banks and outside agents](banks-and-outside-agents.md) is a topic page, not a tool, so it is not in the grid.
+What each tool can do, and how it connects. [Banks and outside agents](banks-and-outside-agents.md) is a topic page, not a tool, so it is not in the diagram.
+
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--desktop">
+<svg role="img" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pm-d-title pm-d-desc">
+  <title id="pm-d-title">Personal money agents: read, pay or move money</title>
+  <desc id="pm-d-desc">Three lanes. Each tool sits in the rightmost lane the wiki can confirm: read only, pays with approval, or moves money. Read only holds Claude Personal Finance, Finances in ChatGPT, Perplexity Personal CFO, and Gemini with Google Wallet. Pays with approval holds Meta Muse, Grok Bot, Claude Duet, OpenAI dots, Instinct, and Starling Assistant. Moves money holds X Money and JPMorgan Smart Cash. Nous cannot move money, and whether it pays or only reads is unknown, so it sits in Other. Plaid MCP servers are developer tools, not end-user account access, so they also sit in Other. Marks on each chip show how it connects: Plaid, Link or a wallet like it, an own account, inside the bank, another cited connection, or unknown.</desc>
+  <rect width="800" height="560" fill="var(--light)"/>
+  <rect x="16.0" y="16" width="248.0" height="336" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="16.0" y="16" width="248.0" height="40" rx="12" fill="var(--highlight)"/>
+  <rect x="16.0" y="32" width="248.0" height="24" fill="var(--highlight)"/>
+<text x="140.0" y="42" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="140.0" y="42">Read only</tspan>
+  </text>
+<rect x="24.0" y="64" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="34.0" y="89.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="34.0" y="89.0">Claude Personal Finance</tspan>
+  </text>
+  <circle cx="238.5" cy="84.0" r="5.5" fill="var(--secondary)"/>
+<rect x="24.0" y="112" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="34.0" y="137.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="34.0" y="137.0">Finances in ChatGPT</tspan>
+  </text>
+  <path d="M238.5,126.5 L244.0,137.5 L233.0,137.5 Z" fill="var(--gray)"/>
+  <circle cx="224.5" cy="132.0" r="5.5" fill="var(--secondary)"/>
+<rect x="24.0" y="160" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="34.0" y="185.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="34.0" y="185.0">Perplexity Personal CFO</tspan>
+  </text>
+  <circle cx="238.5" cy="180.0" r="5.5" fill="var(--secondary)"/>
+<rect x="24.0" y="208" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="34.0" y="233.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="34.0" y="233.0">Gemini + Google Wallet</tspan>
+  </text>
+  <path d="M238.5,222.5 L244.0,233.5 L233.0,233.5 Z" fill="var(--gray)"/>
+  <circle cx="224.5" cy="228.0" r="5.5" fill="var(--secondary)"/>
+  <rect x="276.0" y="16" width="248.0" height="336" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="276.0" y="16" width="248.0" height="40" rx="12" fill="var(--highlight)"/>
+  <rect x="276.0" y="32" width="248.0" height="24" fill="var(--highlight)"/>
+<text x="400.0" y="42" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="400.0" y="42">Pays with approval</tspan>
+  </text>
+<rect x="284.0" y="64" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="89.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="89.0">Meta Muse</tspan>
+  </text>
+  <path d="M498.5,78.5 L504.0,84.0 L498.5,89.5 L493.0,84.0 Z" fill="var(--tertiary)"/>
+  <circle cx="484.5" cy="84.0" r="5.5" fill="var(--secondary)"/>
+<rect x="284.0" y="112" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="137.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="137.0">Grok Bot</tspan>
+  </text>
+  <rect x="493.0" y="126.5" width="11.0" height="11.0" rx="2" fill="var(--dark)"/>
+  <path d="M484.5,126.5 L490.0,132.0 L484.5,137.5 L479.0,132.0 Z" fill="var(--tertiary)"/>
+  <circle cx="470.5" cy="132.0" r="5.5" fill="var(--secondary)"/>
+<rect x="284.0" y="160" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="185.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="185.0">Claude Duet</tspan>
+  </text>
+  <path d="M498.5,174.5 L504.0,180.0 L498.5,185.5 L493.0,180.0 Z" fill="var(--tertiary)"/>
+<rect x="284.0" y="208" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="233.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="233.0">OpenAI dots</tspan>
+  </text>
+  <path d="M498.5,222.5 L504.0,233.5 L493.0,233.5 Z" fill="var(--gray)"/>
+<rect x="284.0" y="256" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="281.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="281.0">Instinct</tspan>
+  </text>
+  <path d="M498.5,270.5 L504.0,276.0 L498.5,281.5 L493.0,276.0 Z" fill="var(--tertiary)"/>
+  <circle cx="484.5" cy="276.0" r="5.5" fill="var(--secondary)"/>
+<rect x="284.0" y="304" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="294.0" y="329.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="294.0" y="329.0">Starling Assistant</tspan>
+  </text>
+  <path d="M493.0,329.5 L493.0,323.0 L498.5,318.5 L504.0,323.0 L504.0,329.5 Z" fill="var(--darkgray)"/>
+  <rect x="536.0" y="16" width="248.0" height="336" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="536.0" y="16" width="248.0" height="40" rx="12" fill="var(--highlight)"/>
+  <rect x="536.0" y="32" width="248.0" height="24" fill="var(--highlight)"/>
+<text x="660.0" y="42" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="660.0" y="42">Moves money</tspan>
+  </text>
+<rect x="544.0" y="64" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="554.0" y="89.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="554.0" y="89.0">X Money</tspan>
+  </text>
+  <rect x="753.0" y="78.5" width="11.0" height="11.0" rx="2" fill="var(--dark)"/>
+<rect x="544.0" y="112" width="232.0" height="40" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="554.0" y="137.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="554.0" y="137.0">JPMorgan Smart Cash</tspan>
+  </text>
+  <path d="M753.0,137.5 L753.0,131.0 L758.5,126.5 L764.0,131.0 L764.0,137.5 Z" fill="var(--darkgray)"/>
+  <rect x="16" y="364" width="768" height="126" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+<text x="28" y="386" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="28" y="386">Other</tspan>
+  </text>
+<rect x="28" y="398" width="360" height="44" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="38" y="425.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="38" y="425.0">Nous</tspan>
+  </text>
+  <circle cx="370.5" cy="420.0" r="5.5" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="28" y="458" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="28" y="458">Cannot move money; pay and read are unknown</tspan>
+  </text>
+<rect x="408" y="398" width="360" height="44" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="418" y="425.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="418" y="425.0">Plaid MCP servers</tspan>
+  </text>
+  <circle cx="750.5" cy="420.0" r="5.5" fill="var(--secondary)"/>
+<text x="408" y="458" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="408" y="458">Not for end-user accounts</tspan>
+  </text>
+  <circle cx="22" cy="510" r="6" fill="var(--secondary)"/>
+<text x="34" y="514" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="34" y="514">Plaid</tspan>
+  </text>
+  <path d="M212,504 L218,510 L212,516 L206,510 Z" fill="var(--tertiary)"/>
+<text x="224" y="514" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="224" y="514">Link, or a wallet like it</tspan>
+  </text>
+  <rect x="396" y="504" width="12" height="12" rx="2" fill="var(--dark)"/>
+<text x="414" y="514" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="414" y="514">Own account</tspan>
+  </text>
+  <path d="M16,538 L16,531 L22,526 L28,531 L28,538 Z" fill="var(--darkgray)"/>
+<text x="34" y="536" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="34" y="536">Inside the bank</tspan>
+  </text>
+  <path d="M212,526 L218,538 L206,538 Z" fill="var(--gray)"/>
+<text x="224" y="536" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="224" y="536">Other cited connection</tspan>
+  </text>
+  <circle cx="402" cy="532" r="6" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="414" y="536" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="414" y="536">unknown</tspan>
+  </text>
+</svg>
+<figcaption>Each tool sits in the rightmost lane the wiki can confirm. A tool that also reads may still sit in Pays or Moves. Connection marks are in the legend. Other holds tools the wiki cannot place in a lane.</figcaption>
+</figure>
+
+<figure class="afr-cheatsheet-visual afr-cheatsheet-visual--mobile">
+<svg role="img" viewBox="0 0 360 1058" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pm-m-title pm-m-desc">
+  <title id="pm-m-title">Personal money agents: read, pay or move money</title>
+  <desc id="pm-m-desc">Three lanes. Each tool sits in the rightmost lane the wiki can confirm: read only, pays with approval, or moves money. Read only holds Claude Personal Finance, Finances in ChatGPT, Perplexity Personal CFO, and Gemini with Google Wallet. Pays with approval holds Meta Muse, Grok Bot, Claude Duet, OpenAI dots, Instinct, and Starling Assistant. Moves money holds X Money and JPMorgan Smart Cash. Nous cannot move money, and whether it pays or only reads is unknown, so it sits in Other. Plaid MCP servers are developer tools, not end-user account access, so they also sit in Other. Marks on each chip show how it connects: Plaid, Link or a wallet like it, an own account, inside the bank, another cited connection, or unknown.</desc>
+  <rect width="360" height="1058" fill="var(--light)"/>
+  <rect x="12" y="12" width="336" height="248" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="12" y="12" width="336" height="34" rx="12" fill="var(--highlight)"/>
+  <rect x="12" y="28" width="336" height="18" fill="var(--highlight)"/>
+<text x="180" y="34" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180" y="34">Read only</tspan>
+  </text>
+<rect x="22" y="54" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="80.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="80.0">Claude Personal Finance</tspan>
+  </text>
+  <circle cx="320.5" cy="75.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="104" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="130.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="130.0">Finances in ChatGPT</tspan>
+  </text>
+  <path d="M320.5,119.5 L326.0,130.5 L315.0,130.5 Z" fill="var(--gray)"/>
+  <circle cx="306.5" cy="125.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="154" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="180.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="180.0">Perplexity Personal CFO</tspan>
+  </text>
+  <circle cx="320.5" cy="175.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="204" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="230.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="230.0">Gemini + Google Wallet</tspan>
+  </text>
+  <path d="M320.5,219.5 L326.0,230.5 L315.0,230.5 Z" fill="var(--gray)"/>
+  <circle cx="306.5" cy="225.0" r="5.5" fill="var(--secondary)"/>
+  <rect x="12" y="270" width="336" height="348" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="12" y="270" width="336" height="34" rx="12" fill="var(--highlight)"/>
+  <rect x="12" y="286" width="336" height="18" fill="var(--highlight)"/>
+<text x="180" y="292" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180" y="292">Pays with approval</tspan>
+  </text>
+<rect x="22" y="312" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="338.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="338.0">Meta Muse</tspan>
+  </text>
+  <path d="M320.5,327.5 L326.0,333.0 L320.5,338.5 L315.0,333.0 Z" fill="var(--tertiary)"/>
+  <circle cx="306.5" cy="333.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="362" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="388.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="388.0">Grok Bot</tspan>
+  </text>
+  <rect x="315.0" y="377.5" width="11.0" height="11.0" rx="2" fill="var(--dark)"/>
+  <path d="M306.5,377.5 L312.0,383.0 L306.5,388.5 L301.0,383.0 Z" fill="var(--tertiary)"/>
+  <circle cx="292.5" cy="383.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="412" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="438.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="438.0">Claude Duet</tspan>
+  </text>
+  <path d="M320.5,427.5 L326.0,433.0 L320.5,438.5 L315.0,433.0 Z" fill="var(--tertiary)"/>
+<rect x="22" y="462" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="488.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="488.0">OpenAI dots</tspan>
+  </text>
+  <path d="M320.5,477.5 L326.0,488.5 L315.0,488.5 Z" fill="var(--gray)"/>
+<rect x="22" y="512" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="538.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="538.0">Instinct</tspan>
+  </text>
+  <path d="M320.5,527.5 L326.0,533.0 L320.5,538.5 L315.0,533.0 Z" fill="var(--tertiary)"/>
+  <circle cx="306.5" cy="533.0" r="5.5" fill="var(--secondary)"/>
+<rect x="22" y="562" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="588.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="588.0">Starling Assistant</tspan>
+  </text>
+  <path d="M315.0,588.5 L315.0,582.0 L320.5,577.5 L326.0,582.0 L326.0,588.5 Z" fill="var(--darkgray)"/>
+  <rect x="12" y="628" width="336" height="148" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+  <rect x="12" y="628" width="336" height="34" rx="12" fill="var(--highlight)"/>
+  <rect x="12" y="644" width="336" height="18" fill="var(--highlight)"/>
+<text x="180" y="650" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="180" y="650">Moves money</tspan>
+  </text>
+<rect x="22" y="670" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="696.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="696.0">X Money</tspan>
+  </text>
+  <rect x="315.0" y="685.5" width="11.0" height="11.0" rx="2" fill="var(--dark)"/>
+<rect x="22" y="720" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="746.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="746.0">JPMorgan Smart Cash</tspan>
+  </text>
+  <path d="M315.0,746.5 L315.0,740.0 L320.5,735.5 L326.0,740.0 L326.0,746.5 Z" fill="var(--darkgray)"/>
+  <rect x="12" y="786" width="336" height="172" rx="12" fill="var(--light)" stroke="var(--lightgray)"/>
+<text x="24" y="808" text-anchor="start" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="24" y="808">Other</tspan>
+  </text>
+<rect x="22" y="820" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="846.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="846.0">Nous</tspan>
+  </text>
+  <circle cx="320.5" cy="841.0" r="5.5" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="24" y="875" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="24" y="875">Cannot move money; pay and read are unknown</tspan>
+  </text>
+<rect x="22" y="882" width="316" height="42" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="32" y="908.0" text-anchor="start" fill="var(--dark)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
+  <tspan x="32" y="908.0">Plaid MCP servers</tspan>
+  </text>
+  <circle cx="320.5" cy="903.0" r="5.5" fill="var(--secondary)"/>
+<text x="24" y="937" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="24" y="937">Not for end-user accounts</tspan>
+  </text>
+  <circle cx="22" cy="984" r="5.5" fill="var(--secondary)"/>
+<text x="32" y="988" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="32" y="988">Plaid</tspan>
+  </text>
+  <path d="M190,978.5 L195.5,984 L190,989.5 L184.5,984 Z" fill="var(--tertiary)"/>
+<text x="200" y="988" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="200" y="988">Link, or a wallet like it</tspan>
+  </text>
+  <rect x="16.5" y="998.5" width="11.0" height="11.0" rx="2" fill="var(--dark)"/>
+<text x="32" y="1008" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="32" y="1008">Own account</tspan>
+  </text>
+  <path d="M184.5,1009.5 L184.5,1003 L190,998.5 L195.5,1003 L195.5,1009.5 Z" fill="var(--darkgray)"/>
+<text x="200" y="1008" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="200" y="1008">Inside the bank</tspan>
+  </text>
+  <path d="M22,1018.5 L27.5,1029.5 L16.5,1029.5 Z" fill="var(--gray)"/>
+<text x="32" y="1028" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="32" y="1028">Other cited connection</tspan>
+  </text>
+  <circle cx="190" cy="1024" r="5.5" fill="var(--light)" stroke="var(--darkgray)" stroke-width="1.5"/>
+<text x="200" y="1028" text-anchor="start" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="200" y="1028">unknown</tspan>
+  </text>
+</svg>
+<figcaption>Each tool sits in the rightmost lane the wiki can confirm. A tool that also reads may still sit in Pays or Moves. Connection marks are in the legend. Other holds tools the wiki cannot place in a lane.</figcaption>
+</figure>
+
+<details class="afr-cheatsheet-sources">
+<summary>Sources and full table</summary>
 
 | Tool | Read-only | Pays with approval | Moves money | How it connects | Sources |
 |---|---|---|---|---|---|
@@ -75,6 +324,8 @@ What each tool can do, and how it connects. **Read-only** means the cited source
 | [Starling Assistant](starling-assistant.md) | unknown | Yes: a tap to approve each payment | unknown | Inside the bank | [^st-01] |
 | [Plaid MCP servers](plaid.md) | Not for end-user accounts | Not for end-user accounts | Not for end-user accounts | Plaid, for developer diagnostics and a sandbox coding kit | [^pb-02] |
 | [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | unknown | unknown | Yes: move funds to maximize yield (news report) | Inside the bank | [^bl-01] |
+
+</details>
 
 ## How it fits together
 
