@@ -55,6 +55,27 @@ The same records side by side, taken from each page's YAML header. Each value is
 
 <!-- /records -->
 
+## Read, pay or move money?
+
+What each tool can do, and how it connects. **Read-only** means the cited sources describe the tool as read-only. If a tool also pays or moves money, that column says how it reads, not "read-only." **unknown** means no cited source confirms it. [Banks and outside agents](banks-and-outside-agents.md) is a topic page, not a tool, so it is not in the grid.
+
+| Tool | Read-only | Pays with approval | Moves money | How it connects | Sources |
+|---|---|---|---|---|---|
+| [Meta Muse](meta-muse.md) | Plaid path is read-only | Yes | unknown | [Plaid](../glossary.md#data-aggregator); [Link](../payments/link-wallet-for-agents.md) for purchases | [^pb-01][^sp-01] |
+| [Grok Bot](grok-bot.md) | Finance (Plaid) path is read-only | Yes | unknown | Plaid; Link or [X Money](x-money.md) for purchases | [^gb-01][^gb-05] |
+| [X Money](x-money.md) | unknown | Yes: pay with the X Money card | Yes: send money, with approval for each money move | Its own US account, through the Grok Bot plugin | [^xm-01] |
+| [Claude Personal Finance](claude-personal-finance.md) | Yes | unknown | No: it cannot move, manage or invest money | Plaid | [^cl-01] |
+| [Claude Duet](claude-duet.md) | unknown | Yes: a one-time card from a wallet like Link | No: it cannot move money between accounts | A wallet like Link | [^cl-03][^cl-04] |
+| [Finances in ChatGPT](chatgpt-finances.md) | Yes | No: it cannot pay bills | No: it cannot move money | Plaid, and credit reports through Experian | [^oa-05] |
+| [OpenAI dots](openai-dots.md) | unknown | Yes: a card saved on a merchant's website, with approval | unknown | A saved merchant card; [ChatGPT Wallet](../payments/chatgpt-wallet.md) is how the pages describe dots paying merchants | [^oa-07][^oa-08][^oa-01] |
+| [Instinct](instinct.md) | Plaid path is read-only | Yes | unknown | Plaid; Link (Stripe says Link's agent wallet helps power its payments) | [^pb-09][^sp-01] |
+| [Perplexity Personal CFO](perplexity-personal-cfo.md) | Yes | unknown | unknown | Plaid | [^pb-12][^pb-13] |
+| [Nous](nous.md) | unknown | unknown | No: it cannot move or transfer money | unknown | [^ns-01] |
+| [Gemini with Google Wallet](gemini-google-wallet.md) | Yes | unknown | No: it cannot move, manage or invest money | Google Wallet, and accounts linked to Wallet through Plaid | [^gg-01] |
+| [Starling Assistant](starling-assistant.md) | unknown | Yes: a tap to approve each payment | unknown | Inside the bank | [^st-01] |
+| [Plaid MCP servers](plaid.md) | Not for end-user accounts | Not for end-user accounts | Not for end-user accounts | Plaid, for developer diagnostics and a sandbox coding kit | [^pb-02] |
+| [JPMorgan Smart Cash](jpmorgan-smart-cash.md) | unknown | unknown | Yes: move funds to maximize yield (news report) | Inside the bank | [^bl-01] |
+
 ## How it fits together
 
 - **The agent.** A personal agent, such as Muse, reads account data you choose to share.[^pb-01]

@@ -63,7 +63,7 @@ x402 lets a client, such as an agent, pay for a web resource as part of the requ
 - The project says it aims to support all networks, crypto and fiat, and forms of value including stablecoins, tokens and fiat.[^pm-14]
 - The x402 Foundation publishes the code and the specification.[^pm-14]
 
-More detail: [x402](../payments/x402.md).
+More detail: [x402](../payments/x402.md), including the [request flow](../payments/x402.md#x402-request-flow).
 
 ## Can AP2, ACP and x402 work together?
 

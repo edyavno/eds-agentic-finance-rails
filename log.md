@@ -215,3 +215,7 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 ## [2026-11-21] edit | cb-13 cites Coinbase's official video
 - Updated sources/cb-13.md so the chart title, footnote and shares cite the official 15-second video attached to Coinbase's X post. The post text is still confirmed from X's public embed data.
 - Reformatted the Coinbase "Which AI apps trade the most" section and the matching Grok Bot line: a rank table of shares, with period, source and unknowns in a short table or note. No facts or footnotes were removed.
+
+## [2026-11-21] edit | visual cheatsheets for approval models, payments, personal money, and x402
+- Added cited cheatsheets: a two-axis approval-model spectrum on approval-models/README.md (linked from comparisons/launch-brokers.md); a payments control matrix on payments/README.md (15 programs, four named controls; Merchants topic excluded; "three kinds" typo corrected to four); a read / pay / move grid on personal-money/README.md (14 tools; Banks topic excluded); an x402 request-flow sequence on payments/x402.md (linked from analyses/ap2-vs-acp-vs-x402.md).
+- Each cheatsheet is a sourced markdown table. The spectrum and x402 flow also have an inline SVG with title and desc (hidden below 800px so phones use the table). Unknown stays unknown. No facts or footnotes were removed. Front page unchanged.

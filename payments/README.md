@@ -58,12 +58,34 @@ The same records side by side, taken from each page's YAML header. Each value is
 
 ## How the controls work
 
-The sources describe three kinds of control. Most programs use more than one.
+The sources describe four kinds of control. Most programs use more than one.
 
 - **The network vets the agent.** Visa requires approved participants and agent registration before production use.[^pm-01] Mastercard registers and verifies agents before they can transact.[^pm-06]
 - **The credential is limited.** Stripe's shared payment tokens carry usage and expiry limits.[^pm-08] Visa and Mastercard use tokenized credentials instead of the raw card number.[^pm-01][^pm-06] See [payment token](../glossary.md#payment-token).
 - **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02]
 - **The balance is limited.** Rain Agent Vaults let an agent spend only what its owner put in the vault, one scoped card at a time.[^rn-01]
+
+## Which controls does each program use?
+
+The same four controls, across the programs on this page. **Yes** means a cited source describes that control. **unknown** means no cited source confirms it. A short phrase is used when the source describes a related limit that is not exactly the control named in the column. The topic page [Merchants and outside agents](merchants-and-outside-agents.md) is not a payment program, so it is not in the grid.
+
+| Program | Network vets the agent | Credential is limited | Person approves | Balance is limited | Sources |
+|---|---|---|---|---|---|
+| [Visa Intelligent Commerce](visa-intelligent-commerce.md) | Yes | Yes: tokenized credentials, not the raw card number | Yes: purchase instructions the consumer approved | unknown | [^pm-01] |
+| [Mastercard Agent Pay](mastercard-agent-pay.md) | Yes | Yes: agentic tokens | Yes: each transaction is checked against authenticated user intent and explicit consent | unknown | [^pm-05][^pm-06] |
+| [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) | unknown | unknown | unknown | unknown | |
+| [Stripe](stripe.md) | unknown | Yes: shared payment tokens have usage and expiry limits | unknown | unknown | [^pm-08] |
+| [PayPal](paypal.md) | unknown | unknown | unknown | unknown | |
+| [x402](x402.md) | unknown | unknown | unknown | unknown | |
+| [AP2 (Agent Payments Protocol)](ap2.md) | unknown | unknown | Yes: signed [mandates](../glossary.md#mandates) | unknown | [^pm-13] |
+| [Robinhood Agentic Credit Card](robinhood-agentic-credit-card.md) | unknown | unknown | Yes: you approve each purchase, or a monthly limit is required if you turn that off | unknown | [^rh-09] |
+| [ChatGPT Wallet](chatgpt-wallet.md) | unknown | Yes: a one-purchase [payment token](../glossary.md#payment-token) | Yes: a biometric check on each purchase | unknown | [^oa-01] |
+| [Link wallet for agents](link-wallet-for-agents.md) | unknown | Yes: a one-time card or shared payment token, scoped by amount, currency and merchant | Yes: you approve each spend request in Link | unknown | [^sp-01][^sp-02] |
+| [X Money](../personal-money/x-money.md) | unknown | unknown | Yes: approval for each money move | unknown | [^xm-01] |
+| [Rain Agent Vaults](rain-agent-vaults.md) | unknown | Yes: a scoped virtual card issued for each purchase | unknown | Yes: the agent can spend only what the owner put in the vault | [^rn-01] |
+| [AgentBank](agentbank.md) | unknown | unknown | Yes: the owner confirms every payment, with an extra approval above a threshold | unknown | [^ag-02] |
+| [Amazon Bedrock AgentCore payments](agentcore-payments.md) | unknown | unknown | unknown | Session budget and expiry: further payments are denied once either is reached | [^aw-01][^aw-02] |
+| [Lightspark Agent Accounts](lightspark-agent-accounts.md) | unknown | Yes: a card valid for that purchase alone, or a saved card seen only as a card ID | The owner decides which payments need approval | Spending limits the owner sets | [^ls-01][^ls-02] |
 
 ## What is still unknown
 
