@@ -15,14 +15,14 @@ Every update to the wiki, newest first.
 |---|---|
 | Brokers | 8 |
 | Payment and money programs | 28 |
-| Source cards | 224 |
-| Official sources | 192 |
+| Source cards | 225 |
+| Official sources | 193 |
 | Broker fields still unknown | 19 of 96 |
-| Latest broker check | 2026-11-20 |
+| Latest broker check | 2026-11-21 |
 
 ## Updates
 
-- [What changed: 2026-11-21](2026-11-21.md): The starter prompts page now has research questions and coding-agent prompts, and the front page has a Try a starter prompt link.
+- [What changed: 2026-11-21](2026-11-21.md): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](2026-11-20.md): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](2026-11-19.md): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](2026-11-18.md): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.

@@ -206,3 +206,8 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Front page "Start here" row: added Try a starter prompt, linking to /build/starter-prompts. Text prompt lines wrap; the stock copy button stays visible on touch. llms.txt "Start here" now lists the page. AGENTS.md and README link it. URL unchanged.
 - Added changelog/2026-11-21.md.
 - overview.md: What changed 'latest' link now points at changelog/2026-11-21.md.
+
+## [2026-11-21] ingest | Coinbase's chart of which AI apps trade the most
+- Retrieved and ingested 1 new source card: cb-13 (Coinbase's X post of 2026-11-21 with a 15-second video chart). Post text confirmed from X's public embed data; the video figures come from a viewer's description and were not checked against the video file.
+- Edited: providers/coinbase.md (new table, shares by AI app for 11/09 - 11/15), personal-money/grok-bot.md (one cited line), glossary.md (LLM client, Notional volume), changelog/2026-11-21.md.
+- Unknown: dollar totals; the year on the chart (2026 inferred from the post date); what "Custom CLI", "Muse" and "Other" cover; earlier weeks.

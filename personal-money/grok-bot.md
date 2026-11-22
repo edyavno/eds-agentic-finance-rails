@@ -4,7 +4,7 @@ id: grok-bot
 title: Grok Bot
 summary: Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-21'
 kind: personal-agent
 operator: xAI
 agent_can: Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase
@@ -63,6 +63,7 @@ Yes. Coinbase lists Grok Bot as a supported app for its remote [MCP](../glossary
 
 - **How to add it.** Click Marketplace, search for Coinbase, click Add, and sign in with your Coinbase account if prompted.[^cb-09]
 - **A Grok connection carries over.** If you already connected Coinbase in Grok, it should also appear in your Grok Bot account.[^cb-09]
+- **How much it is used there.** In Coinbase's own chart for 11/09 - 11/15 (2026 inferred), Grok Bot was the largest AI app by [notional trading volume](../glossary.md#notional-volume) on Coinbase for Agents, at 40.4%; Coinbase's post says "for now". Dollar totals are unknown. See [the table](../providers/coinbase.md#which-ai-apps-trade-the-most-on-coinbase).[^cb-13]
 - **Connectors are account-wide.** A connector added by one Bot is available to all of your Bots. Coinbase says to limit access by selecting a dedicated portfolio on its approval screen.[^cb-09]
 
 ## Unknown
@@ -82,6 +83,7 @@ All pages: [Personal money agents](README.md).
 [^gb-03]: [Vault and secure sign-in (Grok Bot docs)](../sources/gb-03.md). xAI Docs, official, retrieved 2026-11-18.
 [^gb-04]: [Approvals, security, and privacy (Grok Bot docs)](../sources/gb-04.md). xAI Docs, official, retrieved 2026-11-18.
 [^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.
+[^cb-13]: [Coinbase on X: "Which AI agent is the most popular on Coinbase?" (with video chart)](../sources/cb-13.md). Coinbase (@coinbase on X), official, retrieved 2026-11-21.
 
 ---
 

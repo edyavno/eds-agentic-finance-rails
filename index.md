@@ -116,7 +116,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, and the front page has a Try a starter prompt link.
+- [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
 - [What changed: 2026-11-18](changelog/2026-11-18.md) (current): Coinbase Agent Controls and ChatGPT confirmation cards, Public's order gate, Visa Agentic Ready, a live Mastercard flight purchase, Plaid Agent Detection, Gemini, Starling and Wealth.com, plus Grok Bot, X Money, Claude, ChatGPT Finances, dots, Instinct and Perplexity.
@@ -133,7 +133,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (224)
+## Sources (225)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -184,6 +184,7 @@ Every page in the wiki, generated from page headers.
 | [cb-10](sources/cb-10.md): Coinbase for Agents introduces new Agent Controls | Coinbase | Coinbase | official | 2026-11-18 |
 | [cb-11](sources/cb-11.md): Coinbase Advisor | Coinbase | Coinbase | official | 2026-11-20 |
 | [cb-12](sources/cb-12.md): System Update: Take control of your money with Coinbase | Coinbase | Coinbase | official | 2026-11-20 |
+| [cb-13](sources/cb-13.md): Coinbase on X: "Which AI agent is the most popular on Coinbase?" (with video chart) | Coinbase | Coinbase (@coinbase on X) | official | 2026-11-21 |
 | [ci-01](sources/ci-01.md): Citi Online User Agreement (Section H: Use of Third-party AI Agents) | Citi | Citi | official | 2026-11-20 |
 | [cl-01](sources/cl-01.md): Use Personal Finance in Claude (Claude Help Center) | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |

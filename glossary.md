@@ -130,6 +130,10 @@ A way for a bank or merchant to learn who an agent is and whom it represents, wh
 
 Sardine's name for a way to tie the customer's own device to an agent's session, so a merchant can see signals from the person behind the agent. It is Sardine's own product, and the claims about it are Sardine's.[^sd-01] See [Merchants and outside agents](payments/merchants-and-outside-agents.md#what-does-sardine-say-about-agent-checkouts).
 
+## LLM client
+
+The AI app or tool a person uses to talk to a large language model, such as a chat app or a command-line tool. A service that connects to many of them can report how much activity comes from each.
+
 ## llms.txt
 
 A machine-readable index of pages, published so AI agents can find and read a site's documentation.
@@ -153,6 +157,10 @@ Machine Payments Protocol. A way for an agent to pay for a web request using the
 ## Network token
 
 A [payment token](#payment-token) issued by a card network, such as Visa or Mastercard, in place of the card number. The merchant charges the token, and the network maps it to the real card.
+
+## Notional volume
+
+The total dollar value of the trades made, counted at the trade price. It measures how much money was traded, not how many trades there were or how much was gained or lost.
 
 ## OAuth
 

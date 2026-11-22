@@ -45,6 +45,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Coinbase for Agents introduces new Agent Controls](cb-10.md) | Coinbase | official | 2026-11-18 |
 | [Coinbase Advisor](cb-11.md) | Coinbase | official | 2026-11-20 |
 | [System Update: Take control of your money with Coinbase](cb-12.md) | Coinbase | official | 2026-11-20 |
+| [Coinbase on X: "Which AI agent is the most popular on Coinbase?" (with video chart)](cb-13.md) | Coinbase (@coinbase on X) | official | 2026-11-21 |
 | [Interactive Brokers AI Hub](ib-01.md) | Interactive Brokers | official | 2026-11-12 |
 | [Interactive Brokers Introduces Autonomous Trading](ib-02.md) | Interactive Brokers | official | 2026-11-12 |
 | [IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested](ib-03.md) | DeskTested | third-party | 2026-11-12 |

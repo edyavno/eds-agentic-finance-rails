@@ -2,7 +2,7 @@
 title: Trading
 summary: Which brokers let AI agents trade and who approves each order, plus key fields for every provider. Every value is sourced or says unknown.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-21'
 ---
 
 # Trading
@@ -29,7 +29,7 @@ Key fields for every provider, generated from the YAML headers in `providers/`. 
 | Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Updated | Page status | Unknown fields |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [Alpaca](providers/alpaca.md) | official-mcp | yes | none | stocks; ETFs; fractional equities; options (including multi-leg); crypto | Hosted Trading MCP: OAuth sign-in with an Alpaca account (plugins for Cursor, Claude Code and Codex). Local Trading MCP and CLI: API key and secret in environment variables | `https://api.alpaca.markets/mcp` | yes | 2026-11-19 | current | 2 of 12 |
-| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-20 | current | 3 of 12 |
+| [Coinbase](providers/coinbase.md) | official-mcp | yes | separate-account | crypto spot; US derivatives (futures); eligible US equities; x402 payments | OAuth via login.coinbase.com for the remote MCP; Dynamic Client Registration and Client ID Metadata Documents supported, but clients are allowlisted; the local CLI uses a CDP API key | `https://agents.coinbase.com/mcp` | unknown | 2026-11-21 | current | 3 of 12 |
 | [Interactive Brokers](providers/interactive-brokers.md) | official-mcp | draft-only; yes | draft-then-submit; ai-partition | stocks; equity options | IBKR's own login and authorization flow; credentials are never shared with the AI app; revoke in Client Portal > Settings > Manage Third-Party Consents | `https://api.ibkr.com/v1/api/mcp-public` | unknown | 2026-11-12 | current | 3 of 12 |
 | [Kraken](providers/kraken.md) | official-mcp | yes | per-order-confirm | crypto spot; xStocks (tokenized US stocks and ETFs); forex; perpetual futures; inverse and fixed-date futures; earn and staking | API key and secret in environment variables, or a stored key: a browser sign-in key from kraken auth login (restricted, no withdrawal rights, expires after 90 days by default) or a key you created, stored with kraken setup | none (self-hosted only) | yes | 2026-11-19 | current | 1 of 12 |
 | [Public](providers/public.md) | official-mcp | yes | separate-account; per-order-confirm | US-listed stocks and ETFs; options; crypto; bonds; prediction markets | OAuth for Claude, ChatGPT, Codex, Perplexity and Grok; a Public API key as the bearer token for Meta Muse and for the Public Agent Skill | `https://mcp.public.com/mcp` | no | 2026-11-19 | current | 1 of 12 |

@@ -5,7 +5,7 @@ title: Coinbase
 summary: 'Coinbase for Agents: a remote MCP with OAuth for allowlisted clients, or a local CLI with an API key. Coinbase enforces trade limits, and a dedicated portfolio is optional.'
 provider: Coinbase
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-21'
 status: official-mcp
 can_place_orders: ['yes']
 approval_model: [separate-account]
@@ -144,6 +144,23 @@ Coinbase has two separate AI products. This page's other sections are about outs
 
 The launch post is dated 2026-06-16.[^cb-12] The Advisor page itself is undated. The wiki has not read Advisor's terms or how it handles the account permissions that outside agents use, so those are unknown.
 
+## Which AI apps trade the most on Coinbase?
+
+On 2026-11-21 Coinbase posted its own chart of where Coinbase for Agents trading comes from. It is Coinbase's own figure, shown in a 15-second video, and the wiki has not checked it against any other data.[^cb-13] The chart is titled "Where Coinbase for Agents traders come from", and its footnote says the shares are "% of [notional trading volume](../glossary.md#notional-volume) by [LLM client](../glossary.md#llm-client), 11/09 - 11/15".[^cb-13] The video does not show a year; 2026 is inferred from the post date.[^cb-13]
+
+| AI app (as Coinbase labels it) | Share of notional trading volume, 11/09 - 11/15 (2026 inferred) | Sources |
+|---|---|---|
+| Grok Bot | 40.4% | [^cb-13] |
+| Grok | 16.4% | [^cb-13] |
+| Claude | 14.9% | [^cb-13] |
+| Custom CLI | 12.8% | [^cb-13] |
+| ChatGPT | 10.1% | [^cb-13] |
+| Muse | 2.1% | [^cb-13] |
+| Claude Code | 1.5% | [^cb-13] |
+| Other | 1.8% | [^cb-13] |
+
+The shares add up to 100%.[^cb-13] The video shows no dollar totals, so the amount traded in the week is unknown. Coinbase's post says Grok Bot is the most popular AI agent on Coinbase "for now", that Claude, ChatGPT and custom setups are catching up fast, and that volume on Coinbase for Agents keeps hitting all-time highs.[^cb-13] The post gives no earlier weeks to compare, so how fast any share is changing is unknown. What "Custom CLI", "Muse" and "Other" cover is not explained in the post.
+
 ## What is still unknown about Coinbase?
 
 - Order types: unknown.
@@ -151,12 +168,14 @@ The launch post is dated 2026-06-16.[^cb-12] The Advisor page itself is undated.
 - [Paper trading](../glossary.md#paper-trading) for the consumer agent product: unknown. A news report's "separate sandbox" describes running the agent outside the main account, which reads like the isolated portfolio rather than paper trading.[^cb-08]
 - Agent terms of use: not yet reviewed here.
 - Advisor's terms, its price after the beta, and countries beyond the US: unknown.[^cb-11]
+- Dollar totals behind the 11/09 - 11/15 shares, the year shown on the chart (2026 is inferred), and shares for any other week.[^cb-13]
 - Plan, country and workspace availability for most of the ten listed apps: unknown. Coinbase says only that the official ChatGPT plugin is currently for US Coinbase users, and that availability also depends on your ChatGPT account and workspace.[^cb-09]
 
 Every fact on this page links to a source card; "unknown" means no source we cite confirms it.
 
 ## What changed on this page?
 
+- 2026-11-21: Added Coinbase's own chart of which AI apps trade the most on Coinbase for Agents, 11/09 - 11/15.[^cb-13]
 - 2026-11-20: Added how Coinbase Advisor, Coinbase's own AI, differs from outside agents.[^cb-11][^cb-12]
 - 2026-11-19: Added how to connect Coinbase from each of the ten listed AI apps, how to revoke access, and the limits on a CLI API key.[^cb-09]
 - 2026-11-18: Added Coinbase's Agent Controls (trade size, 24-hour volume, auto-stop) and the official ChatGPT plugin's confirmation cards.[^cb-10][^cb-09]
@@ -176,6 +195,7 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 [^cb-06]: [Coinbase Developer Platform docs llms.txt](../sources/cb-06.md). Coinbase Developer Platform, official, retrieved 2026-11-12.
 [^cb-12]: [System Update: Take control of your money with Coinbase](../sources/cb-12.md). Coinbase, official, retrieved 2026-11-20.
 [^cb-11]: [Coinbase Advisor](../sources/cb-11.md). Coinbase, official, retrieved 2026-11-20.
+[^cb-13]: [Coinbase on X: "Which AI agent is the most popular on Coinbase?" (with video chart)](../sources/cb-13.md). Coinbase (@coinbase on X), official, retrieved 2026-11-21.
 [^cb-08]: [Coinbase’s new tool can help agents trade and pay for premium research - TechCrunch](../sources/cb-08.md). TechCrunch, third-party, retrieved 2026-11-12.
 
 ---
