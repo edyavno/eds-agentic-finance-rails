@@ -564,7 +564,7 @@
       "kind": "payment-credential",
       "page": "payments/link-wallet-for-agents.md",
       "page_status": "current",
-      "last_verified": "2026-11-20",
+      "last_verified": "2026-11-22",
       "summary": "Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.",
       "operator": "Stripe",
       "agent_can": "Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount",
@@ -663,6 +663,11 @@
           "id": "sp-03",
           "url": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
           "card": "sources/sp-03.md"
+        },
+        {
+          "id": "sp-04",
+          "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+          "card": "sources/sp-04.md"
         }
       ],
       "unknown_fields": [
@@ -1713,7 +1718,7 @@
       "kind": "personal-agent",
       "page": "personal-money/grok-bot.md",
       "page_status": "current",
-      "last_verified": "2026-11-21",
+      "last_verified": "2026-11-22",
       "summary": "Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.",
       "operator": "xAI",
       "agent_can": "Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase",
@@ -1826,6 +1831,11 @@
           "id": "gb-05",
           "url": "https://x.ai/changelog/bot",
           "card": "sources/gb-05.md"
+        },
+        {
+          "id": "sp-04",
+          "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+          "card": "sources/sp-04.md"
         }
       ],
       "unknown_fields": []
@@ -1837,7 +1847,7 @@
       "kind": "personal-agent",
       "page": "personal-money/instinct.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-22",
       "summary": "Instinct is a personal assistant that works in iMessage and WhatsApp. Plaid says it powers read-only account connections for US users, and Stripe says Link helps power its payments.",
       "operator": "Instinct",
       "agent_can": "Read balances and transactions from accounts connected through Plaid, read-only, alongside connections such as email and calendar, to spot patterns and flag what needs attention. Stripe says Link's agent wallet helps power its payments",
@@ -1901,6 +1911,11 @@
           "id": "sp-01",
           "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
           "card": "sources/sp-01.md"
+        },
+        {
+          "id": "sp-04",
+          "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+          "card": "sources/sp-04.md"
         }
       ],
       "unknown_fields": [
@@ -1967,7 +1982,7 @@
       "kind": "personal-agent",
       "page": "personal-money/meta-muse.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-22",
       "summary": "Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.",
       "operator": "Meta",
       "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store",
@@ -2066,6 +2081,11 @@
           "id": "sp-01",
           "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
           "card": "sources/sp-01.md"
+        },
+        {
+          "id": "sp-04",
+          "url": "https://x.com/ernietedeschi/status/2123852064027471901",
+          "card": "sources/sp-04.md"
         }
       ],
       "unknown_fields": [

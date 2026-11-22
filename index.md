@@ -116,6 +116,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November.
 - [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
 - [What changed: 2026-11-19](changelog/2026-11-19.md) (current): Chase's reported block on agents that shop with a card number, how Stripe's Link gets around it, adding a Chase card to ChatGPT Wallet, connecting eight providers from your AI app, new pages for Public, Scalable Capital and Kraken, and Mastercard's developer MCP server and Agent Pay for Machines.
@@ -133,7 +134,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (225)
+## Sources (226)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -335,6 +336,7 @@ Every page in the wiki, generated from page headers.
 | [sp-01](sources/sp-01.md): Stripe helps Meta Muse shop with Link | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-02](sources/sp-02.md): Giving agents the ability to pay (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-03](sources/sp-03.md): Helping personal agents shop more intelligently and reliably with Link (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
+| [sp-04](sources/sp-04.md): Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season" | Link wallet for agents | Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account | third-party | 2026-11-22 |
 | [st-01](sources/st-01.md): 'Talk to transact': Starling customers can use their voice to send money | Starling Bank | Starling Bank | official | 2026-11-18 |
 | [tc-01](sources/tc-01.md): More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch) | Banks (Citi, JPMorgan, Bank of America, PNC, Citizens) | TechCrunch | third-party | 2026-11-20 |
 | [tg-01](sources/tg-01.md): Terms & Conditions : Target | Target | Target | official | 2026-11-18 |

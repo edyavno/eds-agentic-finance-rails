@@ -134,6 +134,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
 | [Giving agents the ability to pay (Stripe)](sp-02.md) | Stripe | official | 2026-11-18 |
 | [Helping personal agents shop more intelligently and reliably with Link (Stripe)](sp-03.md) | Stripe | official | 2026-11-18 |
+| [Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season"](sp-04.md) | Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account | third-party | 2026-11-22 |
 | [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (Ant International page)](an-01.md) | Mastercard (posted by Ant International) | official | 2026-11-20 |
 | [Mastercard and Ant International Advance Trusted Agentic Commerce in Asia Pacific (PR Newswire)](an-02.md) | Mastercard (via PR Newswire) | official | 2026-11-20 |
 | [Mastercard Agent Pay: secure, scalable and trusted agentic AI](pm-05.md) | Mastercard | official | 2026-11-12 |

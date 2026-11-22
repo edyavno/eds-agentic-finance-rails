@@ -4,7 +4,7 @@ id: link-wallet-for-agents
 title: Link wallet for agents
 summary: Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-22'
 kind: payment-credential
 operator: Stripe
 agent_can: Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount
@@ -71,6 +71,19 @@ Replit says its Agent finds options and prepares the merchant's checkout, then w
 - **Purchase protections.** Eligible Link purchases made by an agent may carry free protections for damage, loss, price drops and returns. Stripe says Muse is the first agent to offer them.[^sp-03]
 - **Financial insights.** With a consumer's permission, an agent can use Link's financial insights, which Stripe says come from its Financial Connections open banking product, to recommend purchases. Stripe says Financial Connections covers more than 12,000 institutions and that people can revoke access at any time.[^sp-03]
 
+## How much are agents spending?
+
+On 2026-11-20 Stripe's chief economist, writing on a personal X account rather than as an official Stripe release, shared figures for spend through Link Agent Wallet.[^sp-04]
+
+| Field | Details |
+|---|---|
+| Growth | Daily spend was nearly 80-fold higher in mid-November than at the start of September, measured using a [seven-day rolling average](../glossary.md#seven-day-rolling-average). A callout on the attached chart reads "7,982% of Sep 1 level" (the chart's index is September 1 = 100, through November 19, 2026). |
+| Last month | Spend doubled in the last month. The article does not give exact dates for that month. |
+| Categories | The article says that last week, over 40% of Link agentic spending volume was on airfare, travel, and lodging, roughly a third on retail, and a quarter on other categories. The attached chart, for the last seven days through November 19, 2026, labels airfare, travel, and lodging 43%, retail 34%, life admin 7%, events and performances 4%, and other 11% (those shares add to 99%; the chart does not explain the remaining 1%). A retail inset for November 13–19, 2026 gives a split of retail dollars; those shares are on the [source card](../sources/sp-04.md). |
+| Repeat purchases | The article says more than half of consumers who make one agentic purchase come back to make at least a second, typically in the same spending category. The attached chart labels that first repeat rate as 56%, among customers whose first agentic purchase was approved by October 15, with data through November 15, 2026. Among those who had made nine purchases, 78% made a tenth. |
+| Who is included | The article says Link Agent Wallet powers payments for personal agents including Muse, Instinct, and Grok. The spend figures are for Link agent spend as a whole, not for any one app. |
+| Unknown | Dollar amounts and user counts. |
+
 ## Unknown
 
 - Whether Link's agent wallet has an official MCP server or a public endpoint for consumer agents. The cited posts describe a command-line tool and APIs but no MCP address.
@@ -91,6 +104,7 @@ More on payments: [Payments](README.md).
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 [^sp-03]: [Helping personal agents shop more intelligently and reliably with Link (Stripe)](../sources/sp-03.md). Stripe, official, retrieved 2026-11-18.
+[^sp-04]: [Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season"](../sources/sp-04.md). Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account, third-party, retrieved 2026-11-22.
 
 ---
 

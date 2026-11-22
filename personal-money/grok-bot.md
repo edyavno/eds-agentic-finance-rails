@@ -4,7 +4,7 @@ id: grok-bot
 title: Grok Bot
 summary: Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.
 page_status: current
-last_verified: '2026-11-21'
+last_verified: '2026-11-22'
 kind: personal-agent
 operator: xAI
 agent_can: Through its Finance integration, answer questions about balances, spending, subscriptions and investments from bank, card and investment accounts linked through Plaid, read-only. Separately, pay at checkout with Stripe Link or X Money, with an approval step for each purchase
@@ -49,6 +49,7 @@ Grok Bot can read your balances, spending and investments from accounts you link
 - **Read.** Ask about balances, recent spending, subscriptions and investments across linked accounts.[^gb-02]
 - **Not move money.** The README says a financial connection is read-only, so it cannot be used to move money into or out of bank accounts.[^gb-02]
 - **Pay.** Grok Bot's changelog says that from v0.30.0 (2026-08-28) a Bot that wants to buy something shows a card with the amount to Allow or Deny, and Link then completes the payment. From v0.70.2 (2026-10-11), Bots can pay with X Money or Stripe Link.[^gb-05] See [Link wallet for agents](../payments/link-wallet-for-agents.md) and [X Money](x-money.md).
+- **How much agents spend through Link.** Stripe's chief economist, writing on a personal account on 2026-11-20, says Link's agent wallet powers payments for personal agents including Muse, Instinct, and Grok, and that daily spend on Link Agent Wallet was nearly 80-fold higher in mid-November than at the start of September, measured as a [seven-day rolling average](../glossary.md#seven-day-rolling-average). The figures are for Link agent spend as a whole, not for Grok Bot alone.[^sp-04] See [How much are agents spending?](../payments/link-wallet-for-agents.md#how-much-are-agents-spending).
 - **Wallets in settings.** Grok Bot's Vault page lists payment accounts, which are wallets you can connect such as Link, X Money or Shop Pay, and a default payment method that the Bot pays with first.[^gb-03]
 
 ## What do you control?
@@ -80,6 +81,7 @@ All pages: [Personal money agents](README.md).
 [^gb-01]: [Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post)](../sources/gb-01.md). Grok Bot (@bot on X), official, retrieved 2026-11-18.
 [^gb-02]: [Finance plugin README (cursor/plugins, third_party/finance)](../sources/gb-02.md). cursor/plugins (GitHub), official, retrieved 2026-11-18.
 [^gb-05]: [Grok Bot changelog](../sources/gb-05.md). xAI, official, retrieved 2026-11-18.
+[^sp-04]: [Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season"](../sources/sp-04.md). Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account, third-party, retrieved 2026-11-22.
 [^gb-03]: [Vault and secure sign-in (Grok Bot docs)](../sources/gb-03.md). xAI Docs, official, retrieved 2026-11-18.
 [^gb-04]: [Approvals, security, and privacy (Grok Bot docs)](../sources/gb-04.md). xAI Docs, official, retrieved 2026-11-18.
 [^cb-09]: [Coinbase MCP - Coinbase Developer Documentation](../sources/cb-09.md). Coinbase Developer Platform, official, retrieved 2026-11-19.

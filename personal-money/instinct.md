@@ -4,7 +4,7 @@ id: instinct
 title: Instinct
 summary: Instinct is a personal assistant that works in iMessage and WhatsApp. Plaid says it powers read-only account connections for US users, and Stripe says Link helps power its payments.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-22'
 kind: personal-agent
 operator: Instinct
 agent_can: Read balances and transactions from accounts connected through Plaid, read-only, alongside connections such as email and calendar, to spot patterns and flag what needs attention. Stripe says Link's agent wallet helps power its payments
@@ -38,7 +38,7 @@ Instinct is a personal assistant that works through iMessage and WhatsApp. Plaid
 ## What can it do with money?
 
 - Plaid gives examples: splitting grocery bills with a roommate, where Instinct finds the orders, works out who owes what and messages each roommate their share; and flagging a possible duplicate charge and offering to draft a dispute, with approval asked before any next step.[^pb-09]
-- Stripe says its Link agent wallet helps power payments for Instinct. [Link wallet for agents](../payments/link-wallet-for-agents.md) explains how it works.[^sp-01]
+- Stripe says its Link agent wallet helps power payments for Instinct. [Link wallet for agents](../payments/link-wallet-for-agents.md) explains how it works.[^sp-01] Stripe's chief economist, writing on a personal account on 2026-11-20, says Link's agent wallet powers payments for personal agents including Muse, Instinct, and Grok, and that daily spend on Link Agent Wallet was nearly 80-fold higher in mid-November than at the start of September, measured as a [seven-day rolling average](../glossary.md#seven-day-rolling-average). The figures are for Link agent spend as a whole, not for Instinct alone.[^sp-04] See [How much are agents spending?](../payments/link-wallet-for-agents.md#how-much-are-agents-spending).
 - A CNBC report says JPMorgan blocks outside agents such as Muse and Instinct from account access. See [Banks and outside agents](banks-and-outside-agents.md).[^bl-01]
 
 ## Company-reported figures
@@ -58,6 +58,7 @@ All pages: [Personal money agents](README.md).
 
 [^pb-09]: [Instinct gets the full financial picture with Plaid](../sources/pb-09.md). Plaid, official, retrieved 2026-11-18.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
+[^sp-04]: [Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season"](../sources/sp-04.md). Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account, third-party, retrieved 2026-11-22.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 
 ---

@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-22'
 ---
 
 # Glossary
@@ -225,6 +225,10 @@ A test environment that is not the live production system.
 ## Scopes
 
 Named permissions in an [OAuth](#oauth) sign-in request, which limit what the app is allowed to do.
+
+## Seven-day rolling average
+
+A way of smoothing a daily series by taking the average of the last seven days at each point, so a single day's jump does not dominate the picture. A seven-day moving average is the same idea.
 
 ## Stablecoin
 
