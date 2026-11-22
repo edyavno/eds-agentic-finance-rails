@@ -228,3 +228,6 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 
 ## [2026-11-22] edit | plain language instead of "YAML header" on public pages
 - Reworded reader-facing "YAML header" on the payments, personal money, approval models and trading (directory) pages into plain language. Facts, footnotes and data links were kept. Repo docs, schemas and changelog history were left alone. Preview only; no production deploy and no push in this entry's scope.
+
+## [2026-11-22] edit | payments records table folded after the controls diagram
+- Moved "What can an agent do with each program?" on payments/README.md to sit after the controls diagram, and folded the seven-column record table into a closed "Full details for every program" details block. The heading, intro, data/programs.json link, facts and footnotes were kept. Preview only; no production deploy and no push in this entry's scope.
