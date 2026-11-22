@@ -39,11 +39,6 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
   <title id="am-d-title">Approval models spectrum for the five launch brokers</title>
   <desc id="am-d-desc">A two-axis chart. Across: who says yes, from you approve each order, to draft then you submit, to a funded partition or separate account, to no broker approval. Up: who enforces it, the broker or your client. Robinhood sits in a separate account and, when Trade approvals are on, also in you approve each order, both enforced by the broker. Interactive Brokers starts at draft then you submit and, for Autonomous Trading, uses a funded AI Partition, both enforced by the broker. Webull Cloud MCP is you approve each order, enforced by the broker. Webull local OpenAPI MCP and Alpaca are no broker approval, enforced by your client or server. Coinbase per-order approval depends on the client. Coinbase's dedicated portfolio is an optional separate account, enforced by the broker.</desc>
   <rect width="800" height="560" fill="var(--light)"/>
-  <defs>
-    <marker id="am-d-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-      <path d="M0,0 L9,4.5 L0,9 z" fill="var(--tertiary)"/>
-    </marker>
-  </defs>
 <text x="14" y="28" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
   <tspan x="14" y="28">Who enforces it</tspan>
   </text>
@@ -112,11 +107,25 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
 <text x="520.0" y="275.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="520.0" y="275.0">optional · spot crypto only</tspan>
   </text>
+  <circle cx="258" cy="182" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="258" y="186" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="258" y="186">1</tspan>
+  </text>
+  <circle cx="598" cy="112" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="598" y="116" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="598" y="116">1</tspan>
+  </text>
+  <circle cx="428" cy="162" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="428" y="166" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="428" y="166">2</tspan>
+  </text>
+  <circle cx="598" cy="180" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="598" y="184" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="598" y="184">2</tspan>
+  </text>
 <text x="695" y="190" text-anchor="middle" fill="var(--gray)" font-size="18" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="695" y="190">—</tspan>
   </text>
-  <path d="M450,112 C 360,112 280,182 250,182" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
-  <path d="M420,162 L450,180" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
 <rect x="110" y="324" width="140" height="80" rx="9" fill="var(--highlight)" stroke="var(--secondary)" stroke-width="1.25"/><text x="180.0" y="353.0" text-anchor="middle" fill="var(--dark)" font-size="13" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
   <tspan x="180.0" y="353.0">Coinbase per-order</tspan>
   </text>
@@ -143,16 +152,23 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
 <text x="695.0" y="447.0" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="695.0" y="447.0">your server enforces limits</tspan>
   </text>
-  <line x1="120" y1="540" x2="148" y2="540" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-d-arrow)"/>
-<text x="156" y="544" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-  <tspan x="156" y="544">Models that stack</tspan>
+  <circle cx="128" cy="538" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="128" y="542" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="128" y="542">1</tspan>
   </text>
-  <rect x="330" y="530" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
-<text x="364" y="544" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-  <tspan x="364" y="544">Optional, not a default path</tspan>
+  <circle cx="150" cy="538" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="150" y="542" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="150" y="542">2</tspan>
+  </text>
+<text x="166" y="542" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="166" y="542">Models that stack (same number)</tspan>
+  </text>
+  <rect x="430" y="528" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
+<text x="464" y="542" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="464" y="542">Optional, not a default path</tspan>
   </text>
 </svg>
-<figcaption>Arrows mark models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
+<figcaption>Cards that share a stack number are models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
 </figure>
 
 <figure class="afr-cheatsheet-visual afr-cheatsheet-visual--mobile">
@@ -160,11 +176,6 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
   <title id="am-m-title">Approval models spectrum for the five launch brokers</title>
   <desc id="am-m-desc">A two-axis chart. Across: who says yes, from you approve each order, to draft then you submit, to a funded partition or separate account, to no broker approval. Up: who enforces it, the broker or your client. Robinhood sits in a separate account and, when Trade approvals are on, also in you approve each order, both enforced by the broker. Interactive Brokers starts at draft then you submit and, for Autonomous Trading, uses a funded AI Partition, both enforced by the broker. Webull Cloud MCP is you approve each order, enforced by the broker. Webull local OpenAPI MCP and Alpaca are no broker approval, enforced by your client or server. Coinbase per-order approval depends on the client. Coinbase's dedicated portfolio is an optional separate account, enforced by the broker.</desc>
   <rect width="360" height="1180" fill="var(--light)"/>
-  <defs>
-    <marker id="am-m-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
-      <path d="M0,0 L9,4.5 L0,9 z" fill="var(--tertiary)"/>
-    </marker>
-  </defs>
 <text x="16" y="28" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
   <tspan x="16" y="28">Who enforces it</tspan>
   </text>
@@ -196,7 +207,6 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
 <text x="180.0" y="297.20000000000005" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="180.0" y="297.20000000000005">default</tspan>
   </text>
-  <path d="M180,314 L180,336" fill="none" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-m-arrow)"/>
 <text x="16" y="356" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
   <tspan x="16" y="356">Funded partition or separate account</tspan>
   </text>
@@ -214,6 +224,22 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
   </text>
 <text x="180.0" y="521.2" text-anchor="middle" fill="var(--darkgray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="180.0" y="521.2">optional · spot crypto only</tspan>
+  </text>
+  <circle cx="32" cy="190" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="32" y="194" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="32" y="194">1</tspan>
+  </text>
+  <circle cx="32" cy="282" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="32" y="286" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="32" y="286">2</tspan>
+  </text>
+  <circle cx="32" cy="390" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="32" y="394" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="32" y="394">1</tspan>
+  </text>
+  <circle cx="32" cy="446" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="32" y="450" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="32" y="450">2</tspan>
   </text>
 <text x="16" y="556" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif" font-weight="600">
   <tspan x="16" y="556">No broker approval</tspan>
@@ -263,19 +289,26 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
   <tspan x="180.0" y="979.2">your server enforces limits</tspan>
   </text>
   <line x1="16" y1="1016" x2="344" y2="1016" stroke="var(--lightgray)"/>
-  <line x1="24" y1="1040" x2="24" y2="1064" stroke="var(--tertiary)" stroke-width="2.25" marker-end="url(#am-m-arrow)"/>
-<text x="36" y="1056" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-  <tspan x="36" y="1056">Models that stack</tspan>
+  <circle cx="32" cy="1048" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="32" y="1052" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="32" y="1052">1</tspan>
   </text>
-  <rect x="24" y="1080" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
-<text x="60" y="1093" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
-  <tspan x="60" y="1093">Optional, not a default path</tspan>
+  <circle cx="54" cy="1048" r="9" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.5"/>
+<text x="54" y="1052" text-anchor="middle" fill="var(--dark)" font-size="11" font-family="system-ui, -apple-system, sans-serif" font-weight="700">
+  <tspan x="54" y="1052">2</tspan>
+  </text>
+<text x="70" y="1052" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="70" y="1052">Models that stack (same number)</tspan>
+  </text>
+  <rect x="24" y="1078" width="28" height="16" rx="4" fill="var(--light)" stroke="var(--secondary)" stroke-width="1.25" stroke-dasharray="4 3"/>
+<text x="60" y="1091" text-anchor="start" fill="var(--darkgray)" font-size="12" font-family="system-ui, -apple-system, sans-serif">
+  <tspan x="60" y="1091">Optional, not a default path</tspan>
   </text>
 <text x="16" y="1130" text-anchor="start" fill="var(--gray)" font-size="11" font-family="system-ui, -apple-system, sans-serif">
   <tspan x="16" y="1130">A dash means the wiki does not place a launch broker there.</tspan>
   </text>
 </svg>
-<figcaption>Arrows mark models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
+<figcaption>Cards that share a stack number are models that stack. A dashed card is optional, not a default path. A dash means the wiki does not place a launch broker there.</figcaption>
 </figure>
 
 <details class="afr-cheatsheet-sources">
