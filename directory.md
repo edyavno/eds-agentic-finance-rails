@@ -24,7 +24,7 @@ Who approves is explained in [approval models](approval-models/README.md). [Comp
 
 ## Broker fields
 
-Key fields for every provider, generated from the YAML headers in `providers/`. Each value is sourced on the provider page; `unknown` means no source confirms it yet. Lists show the default path first. Machine-readable copies: [data/providers.json](data/providers.json), [data/providers.csv](data/providers.csv).
+Every broker side by side. Each value is sourced on its own page, and `unknown` means no source confirms it yet. Lists show the default path first. Machine-readable copies: [data/providers.json](data/providers.json), [data/providers.csv](data/providers.csv).
 
 | Provider | Status | Can place orders | Approval model | Assets | Auth | Endpoint | Paper trading | Updated | Page status | Unknown fields |
 |---|---|---|---|---|---|---|---|---|---|---|

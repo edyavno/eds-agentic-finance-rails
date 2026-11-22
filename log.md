@@ -225,3 +225,6 @@ Format: `## [YYYY-MM-DD] operation | subject`, then a few bullet points.
 - Front page unchanged. No facts or footnotes were removed. Preview only; no production deploy and no push in this entry's scope.
 ## [2026-11-22] edit | approval spectrum: stack marks instead of crossing arrows
 - Replaced the crossing arrows on the approval-models diagram with numbered stack marks in the gutters, so no connector runs across a card or label. Placements, facts, footnotes and the sourced table are unchanged. The other three cheatsheet diagrams were not edited. Preview only; no production deploy and no push in this entry's scope.
+
+## [2026-11-22] edit | plain language instead of "YAML header" on public pages
+- Reworded reader-facing "YAML header" on the payments, personal money, approval models and trading (directory) pages into plain language. Facts, footnotes and data links were kept. Repo docs, schemas and changelog history were left alone. Preview only; no production deploy and no push in this entry's scope.

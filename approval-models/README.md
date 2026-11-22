@@ -18,7 +18,7 @@ An approval model answers one question: **before an agent's order reaches the ma
 | [Draft, then you submit](draft-then-submit.md) | The agent writes a non-binding instruction; you review and submit it | Interactive Brokers AI Integration |
 | [None at the broker](none.md) | The broker executes what the agent sends; any approval lives in your client | Alpaca, Webull local OpenAPI MCP |
 
-**Blocked is not an approval model.** A provider that refuses outside agents gets `status: blocked` in its YAML header instead. See the [overview](../overview.md#who-is-blocking-agents).
+**Blocked is not an approval model.** A provider that refuses outside agents is marked blocked on its page instead. See the [overview](../overview.md#who-is-blocking-agents).
 
 ## Can a broker use more than one approval model?
 
