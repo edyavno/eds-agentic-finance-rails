@@ -13,6 +13,150 @@
   "license": "CC-BY-4.0",
   "programs": [
     {
+      "id": "aave-mcp",
+      "section": "payment",
+      "title": "Aave MCP",
+      "kind": "payment-mcp",
+      "page": "payments/aave-mcp.md",
+      "page_status": "current",
+      "last_verified": "2026-11-23",
+      "summary": "Aave's official MCP server for Aave V3 and V4. An agent can read markets and positions, including health factor, simulate an action, and prepare an unsigned transaction. The user's wallet signs every state change.",
+      "operator": "Aave",
+      "agent_can": "Read V3 and V4 markets and a wallet's positions, including health factor, and preview and prepare supply, borrow, withdraw, repay and related actions as unsigned transactions or EIP-712 typed data",
+      "user_controls": "The user's wallet signs every state change. The server never holds keys or signs. Only submit_signed_order and cancel_order relay orders the user has already signed",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.aave.com",
+      "availability": "No API key and no sign-in. The docs say the endpoint needs no key today, and that clients should handle 401 and 429 responses; numeric limits are unknown.",
+      "notes": "The hosted server is a shared service. Fees, audits of the MCP, and usage numbers are unknown. The npm package @aave/mcp is version 1.0.0 under the Business Source License; the plugin repository is MIT.",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "aa-01",
+            "url": "https://aave.com/docs/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "aa-01",
+            "url": "https://aave.com/docs/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          },
+          {
+            "id": "aa-05",
+            "url": "https://aave.com/docs/mcp/tools",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "aa-01",
+            "url": "https://aave.com/docs/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          },
+          {
+            "id": "aa-04",
+            "url": "https://aave.com/docs/mcp/safety",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "aa-02",
+            "url": "https://aave.com/docs/mcp/getting-started",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "aa-01",
+            "url": "https://aave.com/docs/mcp",
+            "authority": "official"
+          },
+          {
+            "id": "aa-02",
+            "url": "https://aave.com/docs/mcp/getting-started",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "aa-02",
+            "url": "https://aave.com/docs/mcp/getting-started",
+            "authority": "official"
+          },
+          {
+            "id": "aa-03",
+            "url": "https://mcp.aave.com/llms.txt",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "aa-01",
+          "url": "https://aave.com/docs/mcp",
+          "card": "sources/aa-01.md"
+        },
+        {
+          "id": "aa-02",
+          "url": "https://aave.com/docs/mcp/getting-started",
+          "card": "sources/aa-02.md"
+        },
+        {
+          "id": "aa-03",
+          "url": "https://mcp.aave.com/llms.txt",
+          "card": "sources/aa-03.md"
+        },
+        {
+          "id": "aa-04",
+          "url": "https://aave.com/docs/mcp/safety",
+          "card": "sources/aa-04.md"
+        },
+        {
+          "id": "aa-05",
+          "url": "https://aave.com/docs/mcp/tools",
+          "card": "sources/aa-05.md"
+        },
+        {
+          "id": "aa-06",
+          "url": "https://github.com/aave/skills",
+          "card": "sources/aa-06.md"
+        },
+        {
+          "id": "aa-07",
+          "url": "https://www.npmjs.com/package/@aave/mcp",
+          "card": "sources/aa-07.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
       "id": "agentbank",
       "section": "payment",
       "title": "AgentBank",

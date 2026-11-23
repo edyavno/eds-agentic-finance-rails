@@ -56,6 +56,8 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Payment Choice Framework.** Affirm and Consumer Reports published a draft for review only, not for real-world use. Test results do not establish improved consumer outcomes or readiness for consumer use.[^cr-01][^cr-02] See [Personal money agents](personal-money/README.md#how-should-an-agent-choose-a-way-to-pay).
 - **Stripe Issuing for agents.** The product is in private preview. Access is by application or by contacting Stripe, and the pages cited are for business accounts, not consumers.[^pm-31] See [Stripe](payments/stripe.md#issuing-for-agents).
 
+- **Aave MCP.** Fees, numeric rate limits, audits of the MCP server, and usage numbers are not in the pages cited. The docs say clients should handle 401 and 429 responses, but they give no figures.[^aa-02] See [Aave MCP](payments/aave-mcp.md).
+
 ## Unknown fields by provider
 
 See the `unknown` values in [data/providers.csv](data/providers.csv) or the [Trading](trading.md) page.
@@ -118,6 +120,7 @@ These cards are prior art or competing directories. They are leads only: use the
 [^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
 [^cr-02]: [GitHub - consumer-reports-innovation-lab/payment-choice-framework](sources/cr-02.md). Consumer Reports Innovation Lab (GitHub), with Affirm, official, retrieved 2026-11-23.
 [^pm-31]: [Issuing for agents - Stripe Documentation](sources/pm-31.md). Stripe Docs, official, retrieved 2026-11-23.
+[^aa-02]: [Get Started with Aave MCP](sources/aa-02.md). Aave, official, retrieved 2026-11-23.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

@@ -28,6 +28,7 @@ This section covers how an AI agent pays for things on a person's behalf, often 
 | [X Money](../personal-money/x-money.md) | Money account with an agent plugin | A US account in the X app. Through the Grok Bot plugin an agent can read the balance, pay with the X card and send money, with approval for each money move.[^xm-01] |
 | [Rain Agent Vaults](rain-agent-vaults.md) | Agent card | A funded balance for an agent, which pays with a single-use virtual card issued for each purchase under the owner's rules.[^rn-01] |
 | [AgentBank](agentbank.md) | Payment MCP | An MCP server for collecting, converting and sending money, with owner confirmation on every payment and an approval threshold.[^ag-01][^ag-02] |
+| [Aave MCP](aave-mcp.md) | Lending MCP | Aave's official MCP server for V3 and V4: an agent can read markets and positions, including health factor, and prepare unsigned transactions. The user's wallet signs every state change.[^aa-01][^aa-03] |
 | [Amazon Bedrock AgentCore payments](agentcore-payments.md) | Cloud payment service | AWS service for agents to pay over x402 and MPP within per-session budgets, and to pay AWS Marketplace sellers in US dollars on the AWS bill.[^aw-01][^aw-02] |
 | [Lightspark Agent Accounts](lightspark-agent-accounts.md) | Agent account | Accounts where an agent holds and spends money within limits and approvals the owner sets, paying Visa merchants with a card valid for one purchase.[^ls-01][^ls-02] |
 | [Merchants and outside agents](merchants-and-outside-agents.md) | Topic | eBay and United forbid AI agents from buying on their sites without permission.[^eb-01][^ua-01] |
@@ -44,7 +45,7 @@ The sources describe four kinds of control. Most programs use more than one.
 
 - **The network vets the agent.** Visa requires approved participants and agent registration before production use.[^pm-01] Mastercard registers and verifies agents before they can transact.[^pm-06]
 - **The credential is limited.** Stripe's shared payment tokens carry usage and expiry limits.[^pm-08] Visa and Mastercard use tokenized credentials instead of the raw card number.[^pm-01][^pm-06] See [payment token](../glossary.md#payment-token).
-- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02] When an agent checks out through Adyen Agentic with Klarna, shoppers review and confirm every purchase.[^pm-29]
+- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02] When an agent checks out through Adyen Agentic with Klarna, shoppers review and confirm every purchase.[^pm-29] On [Aave MCP](aave-mcp.md), the user's wallet signs every state change.[^aa-04]
 - **The balance is limited.** Rain Agent Vaults let an agent spend only what its owner put in the vault, one scoped card at a time.[^rn-01]
 
 ## Which controls does each program use?
@@ -388,6 +389,7 @@ Every program side by side. Each value is sourced on its own page, and `unknown`
 
 | Program | Operator | What an agent can do | What you control | Official MCP | Availability | Updated |
 |---|---|---|---|---|---|---|
+| [Aave MCP](aave-mcp.md) | Aave | Read V3 and V4 markets and a wallet's positions, including health factor, and preview and prepare supply, borrow, withdraw, repay and related actions as unsigned transactions or EIP-712 typed data | The user's wallet signs every state change. The server never holds keys or signs. Only submit_signed_order and cancel_order relay orders the user has already signed | Yes | No API key and no sign-in. The docs say the endpoint needs no key today, and that clients should handle 401 and 429 responses; numeric limits are unknown. | 2026-11-23 |
 | [AgentBank](agentbank.md) | AgentBank, operated by Thinking Horizon, Inc. | Collect payments, convert between currencies and crypto assets, pay bank, QR or wallet recipients in local currency, and pay x402 services, through an MCP server | The owner confirms the recipient, amounts, fees and expiry of every payment before it is created. An approval threshold sets when a payment needs an extra approval. ChatGPT and Claude connections can also have a spending limit, and the owner can disconnect an agent at any time | Yes | unknown | 2026-11-19 |
 | [Amazon Bedrock AgentCore payments](agentcore-payments.md) | Amazon Web Services (AWS) | Pay for paid APIs, MCP servers and web content over x402 and the Machine Payments Protocol, through a configured wallet provider, and pay x402-enabled AWS Marketplace sellers per request in US dollars on the AWS bill | Each payment session has a budget limit and an expiry, and further payments are denied once either is reached. Developers can also set spending limits and approved sellers with AgentCore policy, and AWS Marketplace purchases appear in AWS CloudTrail and AWS Cost Explorer | unknown | Generally available since August 2026. AWS Marketplace payments are available in all AWS Regions where AgentCore payments is available, and the list of Regions is unknown | 2026-11-20 |
 | [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) | OpenAI and Stripe (spec maintainers) | Let a user find and buy from a business inside an AI app, through a checkout API and a delegated-payment spec | unknown | unknown | Beta. OpenAI and Stripe were the first to implement it | 2026-11-14 |
@@ -451,6 +453,8 @@ Not investment advice.
 [^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
 [^ag-01]: [Connect your AI agent to real-world money - AgentBank](../sources/ag-01.md). AgentBank, official, retrieved 2026-11-19.
 [^ag-02]: [Security and wallet control - AgentBank](../sources/ag-02.md). AgentBank, official, retrieved 2026-11-15.
+[^aa-01]: [Aave MCP](../sources/aa-01.md). Aave, official, retrieved 2026-11-23.
+[^aa-03]: [Aave MCP llms.txt](../sources/aa-03.md). Aave, official, retrieved 2026-11-23.
 [^aw-01]: [AWS Marketplace now supports agentic payments with AgentCore](../sources/aw-01.md). Amazon Web Services, official, retrieved 2026-11-20.
 [^aw-02]: [Enable AI agents to pay for AWS Marketplace x402 products with Amazon Bedrock AgentCore payments](../sources/aw-02.md). Amazon Web Services (AWS Machine Learning Blog), official, retrieved 2026-11-20.
 [^ls-01]: [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](../sources/ls-01.md). Lightspark (via GlobeNewswire), official, retrieved 2026-11-20.
@@ -458,6 +462,7 @@ Not investment advice.
 [^eb-01]: [User Agreement - eBay](../sources/eb-01.md). eBay, official, retrieved 2026-11-15.
 [^ua-01]: [Contract of Carriage Document - United Airlines](../sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.
 [^pm-29]: [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](../sources/pm-29.md). Klarna and Adyen (Business Wire release on Klarna's investor site), official, retrieved 2026-11-23.
+[^aa-04]: [Aave MCP Safety](../sources/aa-04.md). Aave, official, retrieved 2026-11-23.
 
 ---
 

@@ -42,6 +42,7 @@ Every page in the wiki, generated from page headers.
 ## Payments
 
 - [Payments](payments/README.md) (current): How AI agents pay: card-network agent programs, payment tokens, wallets, protocols and agent cards, each with a sourced page, plus merchants that ban agents.
+- [Aave MCP](payments/aave-mcp.md) (current): Aave's official MCP server for Aave V3 and V4. An agent can read markets and positions, including health factor, simulate an action, and prepare an unsigned transaction. The user's wallet signs every state change.
 - [AgentBank](payments/agentbank.md) (current): An MCP server that lets an AI agent collect, hold, convert and send money, including to bank accounts in local currency, using crypto rails. The owner confirms every payment, and an approval threshold adds an extra check.
 - [Amazon Bedrock AgentCore payments](payments/agentcore-payments.md) (current): AWS service that lets an agent pay for APIs, MCP servers and content over x402 and MPP within a per-session budget. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill, with no crypto wallet.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
@@ -117,7 +118,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
-- [What changed: 2026-11-23](changelog/2026-11-23.md) (current): Visa CLI, Klarna in Adyen Agentic checkout, Stripe Treasury and Issuing for agents, PayPal Agent Ready, and pay.sh are on the payments pages. Consumer Reports and Affirm published a draft payment-choice framework; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
+- [What changed: 2026-11-23](changelog/2026-11-23.md) (current): Visa CLI, Klarna in Adyen Agentic checkout, Stripe agent fund tools, PayPal Agent Ready, pay.sh, and Aave's official MCP are on the payments pages. A Consumer Reports and Affirm draft covers payment choice; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
@@ -136,10 +137,17 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (238)
+## Sources (245)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
+| [aa-01](sources/aa-01.md): Aave MCP | Aave MCP | Aave | official | 2026-11-23 |
+| [aa-02](sources/aa-02.md): Get Started with Aave MCP | Aave MCP | Aave | official | 2026-11-23 |
+| [aa-03](sources/aa-03.md): Aave MCP llms.txt | Aave MCP | Aave | official | 2026-11-23 |
+| [aa-04](sources/aa-04.md): Aave MCP Safety | Aave MCP | Aave | official | 2026-11-23 |
+| [aa-05](sources/aa-05.md): Aave MCP Tools | Aave MCP | Aave | official | 2026-11-23 |
+| [aa-06](sources/aa-06.md): GitHub - aave/skills | Aave MCP | Aave (GitHub) | official | 2026-11-23 |
+| [aa-07](sources/aa-07.md): @aave/mcp | Aave MCP | npm (package published by Aave) | official | 2026-11-23 |
 | [ag-01](sources/ag-01.md): Connect your AI agent to real-world money \| AgentBank | AgentBank | AgentBank | official | 2026-11-19 |
 | [ag-02](sources/ag-02.md): Security and wallet control \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |
 | [ag-03](sources/ag-03.md): AgentBank FAQ: banking for AI agents \| AgentBank | AgentBank | AgentBank | official | 2026-11-15 |

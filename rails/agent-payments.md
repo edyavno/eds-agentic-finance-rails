@@ -23,6 +23,7 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | [PayPal Agent Ready](../payments/paypal.md#agent-ready) | Lets Braintree and PayPal merchants accept agent checkout on ChatGPT, Google AI Mode and Gemini over ACP or UCP | [^pm-32] |
 | [Stripe MCP](../payments/stripe.md#stripe-mcp-server) | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
 | [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
+| [Aave MCP](../payments/aave-mcp.md) | Official MCP for Aave V3 and V4 markets and positions; the agent prepares unsigned transactions, and the user's wallet signs every state change | [^aa-01][^aa-03][^aa-04] |
 | [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 | [pay.sh](https://pay.sh/) | A client and gateway for x402 and MPP payments in stablecoins on Solana, launched 2026-05-05 by the Solana Foundation with Google Cloud | [^pm-33][^so-01] |
 | [Amazon Bedrock AgentCore payments](../payments/agentcore-payments.md) | AWS service for agents to pay over x402 and MPP within per-session budgets. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill | [^aw-01][^aw-03] |
@@ -81,6 +82,9 @@ The Agentic Mobile Protocol ([AMP](../glossary.md#agentic-mobile-protocol-amp)) 
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-19.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
+[^aa-01]: [Aave MCP](../sources/aa-01.md). Aave, official, retrieved 2026-11-23.
+[^aa-03]: [Aave MCP llms.txt](../sources/aa-03.md). Aave, official, retrieved 2026-11-23.
+[^aa-04]: [Aave MCP Safety](../sources/aa-04.md). Aave, official, retrieved 2026-11-23.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-33]: [pay.sh](../sources/pm-33.md). pay.sh, official, retrieved 2026-11-23.
 [^so-01]: [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](../sources/so-01.md). Solana Foundation, official, retrieved 2026-11-23.

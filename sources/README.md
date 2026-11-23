@@ -108,6 +108,13 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 
 | Source card | Publisher | Official or third-party | Retrieved |
 |---|---|---|---|
+| [Aave MCP](aa-01.md) | Aave | official | 2026-11-23 |
+| [Get Started with Aave MCP](aa-02.md) | Aave | official | 2026-11-23 |
+| [Aave MCP llms.txt](aa-03.md) | Aave | official | 2026-11-23 |
+| [Aave MCP Safety](aa-04.md) | Aave | official | 2026-11-23 |
+| [Aave MCP Tools](aa-05.md) | Aave | official | 2026-11-23 |
+| [GitHub - aave/skills](aa-06.md) | Aave (GitHub) | official | 2026-11-23 |
+| [@aave/mcp](aa-07.md) | npm (package published by Aave) | official | 2026-11-23 |
 | [Connect your AI agent to real-world money \| AgentBank](ag-01.md) | AgentBank | official | 2026-11-19 |
 | [Security and wallet control \| AgentBank](ag-02.md) | AgentBank | official | 2026-11-15 |
 | [AgentBank FAQ: banking for AI agents \| AgentBank](ag-03.md) | AgentBank | official | 2026-11-15 |

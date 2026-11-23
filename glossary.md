@@ -98,6 +98,10 @@ A timer that cancels all open orders automatically unless the program that set i
 
 A way for an app to register itself with an [OAuth](#oauth) server as part of connecting, instead of being set up in advance by a person.
 
+## EIP-712
+
+A way for an Ethereum wallet to sign a structured message, rather than a raw transaction. [Aave MCP](payments/aave-mcp.md) can return EIP-712 typed data for the user to sign.[^aa-01]
+
 ## Elicitation
 
 An MCP feature that lets a server stop and ask the person a question through the AI client, such as "confirm this order". The model cannot answer for the person.
@@ -291,6 +295,7 @@ A protocol for paying for a resource as part of a web request, often used so an 
 [^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
 [^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
 [^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
+[^aa-01]: [Aave MCP](sources/aa-01.md). Aave, official, retrieved 2026-11-23.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
 [^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
 [^aw-03]: [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](sources/aw-03.md). Amazon Web Services (AgentCore Developer Guide), official, retrieved 2026-11-20.
