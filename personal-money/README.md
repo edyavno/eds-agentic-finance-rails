@@ -3,7 +3,7 @@ type: personal-money
 title: Personal money agents
 summary: AI agents that work with a person's bank and card data, the tools that connect them, banks' own AI tools, and how big banks treat outside agents.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Personal money agents
@@ -332,6 +332,14 @@ Every tool side by side. Each value is sourced on its own page, and `unknown` me
 
 </details>
 
+## How should an agent choose a way to pay?
+
+Affirm and Consumer Reports published a draft Payment Choice Framework: a set of written instructions that helps an AI assistant recommend how to pay for a purchase. It asks the assistant to check terms, compare costs on the same assumptions, consider what could go wrong, rule out poor fits, and explain the recommendation. The best suggestion might be to finance, pay in full, choose another provider, wait, or not buy.[^cr-01] They tested it against Consumer Reports' [Consumer Finance AI Standard](../glossary.md#consumer-finance-ai-standard).[^cr-01]
+
+The [GitHub repository](https://github.com/consumer-reports-innovation-lab/payment-choice-framework) describes the draft as "for review only. Not for real world use."[^cr-02] The case study says the framework is not a financial adviser or a finished product, cannot access accounts or make purchases on its own, and that further testing is needed before use in real-world consumer experiences.[^cr-01]
+
+Testing used 30 payment-advice tasks, with and without the framework, across four model configurations. Each model attempted the 30 tasks three times per condition, producing 720 conversations. Pass rates were higher with the framework. Averaged across the four models, the pass rate was 48.6% without it and 71.8% with it, an increase of 23.2 percentage points. The case study says these results do not establish improved consumer outcomes or readiness for consumer use.[^cr-01]
+
 ## How it fits together
 
 - **The agent.** A personal agent, such as Muse, reads account data you choose to share.[^pb-01]
@@ -375,6 +383,8 @@ Not investment advice.
 [^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](../sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
+[^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](../sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
+[^cr-02]: [GitHub - consumer-reports-innovation-lab/payment-choice-framework](../sources/cr-02.md). Consumer Reports Innovation Lab (GitHub), with Affirm, official, retrieved 2026-11-23.
 
 ---
 

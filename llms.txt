@@ -52,6 +52,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 - [Rain Agent Vaults](payments/rain-agent-vaults.md): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
 - [Stripe](payments/stripe.md): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
+- [Visa CLI](payments/visa-cli.md): A Visa Crypto Labs product: after a US Visa card check, an agent gets a signing key, is listed in the Visa Agent Directory, and can take paid tasks and pay HTTP 402 requests in OUSD within limits the owner set.
 - [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md): Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.
 - [x402](payments/x402.md): An open payment standard built on HTTP 402 Payment Required: the server asks for payment inside the request, and the client pays and retries. Coinbase uses it.
 
@@ -113,6 +114,7 @@ POST a short note to /feedback; instructions at /agents#giving-feedback or GET /
 ## What changed
 
 - [What changed](changelog/README.md): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-23](changelog/2026-11-23.md): Visa CLI, Klarna in Adyen Agentic checkout, Stripe Treasury and Issuing for agents, PayPal Agent Ready, and pay.sh are on the payments pages. Consumer Reports and Affirm published a draft payment-choice framework; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](changelog/2026-11-22.md): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](changelog/2026-11-21.md): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.

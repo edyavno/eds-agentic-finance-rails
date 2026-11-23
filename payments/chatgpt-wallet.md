@@ -4,7 +4,7 @@ id: chatgpt-wallet
 title: ChatGPT Wallet
 summary: OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-23'
 kind: payment-credential
 operator: OpenAI, built with American Express, Mastercard and Visa
 agent_can: Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it
@@ -49,7 +49,7 @@ Wallet does not hold a balance, extend credit or move funds.[^oa-03] OpenAI says
 ## Who it works with
 
 - **Card networks.** Built in partnership with American Express, Mastercard and Visa.[^oa-01] See [Mastercard Agent Pay](mastercard-agent-pay.md) and [Visa Intelligent Commerce](visa-intelligent-commerce.md). OpenAI does not say whether Wallet runs on those programs.
-- **Fraud and payment partners.** OpenAI names fraud prevention partners Forter, Riskified, Sardine and Signifyd, and payment service providers Adyen, Checkout.com and Stripe, as working to help their systems recognize legitimate agent purchases.[^oa-01]
+- **Fraud and payment partners.** OpenAI names fraud prevention partners Forter, Riskified, Sardine and Signifyd, and payment service providers Adyen, Checkout.com and Stripe, as working to help their systems recognize legitimate agent purchases.[^oa-01] Separately, on 2026-11-20 Adyen and Klarna said merchants on Adyen Agentic can offer Klarna at agent checkout, with the shopper confirming every purchase. The announcement does not say that this is available in ChatGPT Wallet.[^pm-29]
 - **Merchant websites.** OpenAI asks merchants to recognize signed agent requests with [Web Bot Auth](../glossary.md#web-bot-auth), and warns that some sites may block agent purchases by accident.[^oa-01] Some merchants block agents on purpose: see [Merchants and outside agents](merchants-and-outside-agents.md).
 
 ## Availability
@@ -83,6 +83,7 @@ All programs: [Payments](README.md).
 [^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.
 [^oa-04]: [Accept payments - OpenAI Commerce](../sources/oa-04.md). OpenAI Developers, official, retrieved 2026-11-15.
 [^oa-03]: [ChatGPT Wallet terms](../sources/oa-03.md). OpenAI, official, retrieved 2026-11-15.
+[^pm-29]: [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](../sources/pm-29.md). Klarna and Adyen (Business Wire release on Klarna's investor site), official, retrieved 2026-11-23.
 [^oa-05]: [Finances in ChatGPT (OpenAI Help Center)](../sources/oa-05.md). OpenAI, official, retrieved 2026-11-18.
 [^oa-07]: [Dots privacy, security, and safety FAQs (OpenAI Help Center)](../sources/oa-07.md). OpenAI, official, retrieved 2026-11-18.
 

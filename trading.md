@@ -2,7 +2,7 @@
 title: Trading
 summary: Which brokers let AI agents trade and who approves each order, plus key fields for every provider. Every value is sourced or says unknown.
 page_status: current
-last_verified: '2026-11-21'
+last_verified: '2026-11-23'
 ---
 
 # Trading
@@ -171,7 +171,7 @@ Every broker side by side. Each value is sourced on its own page, and `unknown` 
 | [Public](providers/public.md) | official-mcp | yes | separate-account; per-order-confirm | US-listed stocks and ETFs; options; crypto; bonds; prediction markets | OAuth for Claude, ChatGPT, Codex, Perplexity and Grok; a Public API key as the bearer token for Meta Muse and for the Public Agent Skill | `https://mcp.public.com/mcp` | no | 2026-11-19 | current | 1 of 12 |
 | [Robinhood](providers/robinhood.md) | official-mcp | yes | separate-account; per-order-confirm | long equities; options (single-leg only); crypto (not in some states, including New York) | OAuth to the remote MCP server; protected-resource metadata lists the scope "internal"; an independent test reports PKCE and dynamic client registration | `https://agent.robinhood.com/mcp/trading` | unknown | 2026-11-19 | current | 2 of 12 |
 | [Scalable Capital](providers/scalable-capital.md) | official-mcp | yes | per-order-confirm | unknown | Browser sign-in to Scalable through the AI app, with two-factor authentication; the MCP access level is set in the web version under Profile > Security > Agentic Investing | `https://mcp.scalable.capital/mcp` | unknown | 2026-11-19 | current | 5 of 12 |
-| [Webull](providers/webull.md) | official-mcp | confirm-in-app; yes | per-order-confirm; none | stocks; options (single-leg and strategies); futures; crypto; event contracts | Cloud MCP: OAuth authorization code flow with a per-account Non-Trading or Trading capability. Local OpenAPI MCP: App Key and App Secret, with a 2FA flow | `https://api.webull.com/mcp` | yes | 2026-11-19 | current | 2 of 12 |
+| [Webull](providers/webull.md) | official-mcp | confirm-in-app; yes | per-order-confirm; none | stocks; options (single-leg and strategies); futures; crypto; event contracts | Cloud MCP: OAuth authorization code flow with a per-account Non-Trading or Trading capability. Local OpenAPI MCP: App Key and App Secret, with a 2FA flow | `https://api.webull.com/mcp` | yes | 2026-11-23 | current | 2 of 12 |
 
 </details>
 

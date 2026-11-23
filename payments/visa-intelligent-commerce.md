@@ -4,7 +4,7 @@ id: visa-intelligent-commerce
 title: Visa Intelligent Commerce
 summary: 'Visa''s agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.'
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 kind: card-network-program
 operator: Visa
 agent_can: Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved
@@ -77,6 +77,7 @@ On 2026-11-18 Visa announced the expansion of Agentic Ready to the acceptance ec
 
 ## Related
 
+- [Visa CLI](visa-cli.md), a separate Visa Crypto Labs product that lists new agents in the [Visa Agent Directory](../glossary.md#visa-agent-directory) and pays HTTP 402 requests in [OUSD](../glossary.md#ousd).[^pm-27][^pm-28]
 - Visa's Trusted Agent Protocol, on [agent identity](../rails/agent-identity.md).[^pm-03]
 - [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md).
 - All programs: [Payments](README.md).
@@ -97,6 +98,8 @@ Fees, the consumer AI apps that support VIC today, a production MCP address, and
 [^rn-01]: [Rain Agent Vaults bring embedded payments to AI agents](../sources/rn-01.md). Rain, official, retrieved 2026-11-15.
 [^ax-01]: [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](../sources/ax-01.md). AXS, official, retrieved 2026-11-20.
 [^rp-01]: [Replit Agent can now buy for your business and help you reach customers](../sources/rp-01.md). Replit, official, retrieved 2026-11-20.
+[^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](../sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
 
 ---

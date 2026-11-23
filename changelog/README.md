@@ -14,14 +14,15 @@ Every update to the wiki, newest first.
 | Measure | Count |
 |---|---|
 | Brokers | 8 |
-| Payment and money programs | 28 |
-| Source cards | 226 |
-| Official sources | 193 |
+| Payment and money programs | 29 |
+| Source cards | 238 |
+| Official sources | 205 |
 | Broker fields still unknown | 19 of 96 |
-| Latest broker check | 2026-11-21 |
+| Latest broker check | 2026-11-23 |
 
 ## Updates
 
+- [What changed: 2026-11-23](2026-11-23.md): Visa CLI, Klarna in Adyen Agentic checkout, Stripe Treasury and Issuing for agents, PayPal Agent Ready, and pay.sh are on the payments pages. Consumer Reports and Affirm published a draft payment-choice framework; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](2026-11-22.md): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](2026-11-21.md): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](2026-11-20.md): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.

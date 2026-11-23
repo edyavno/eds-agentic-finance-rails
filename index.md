@@ -55,6 +55,7 @@ Every page in the wiki, generated from page headers.
 - [Rain Agent Vaults](payments/rain-agent-vaults.md) (current): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) (current): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
 - [Stripe](payments/stripe.md) (current): Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
+- [Visa CLI](payments/visa-cli.md) (current): A Visa Crypto Labs product: after a US Visa card check, an agent gets a signing key, is listed in the Visa Agent Directory, and can take paid tasks and pay HTTP 402 requests in OUSD within limits the owner set.
 - [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md) (current): Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.
 - [x402](payments/x402.md) (current): An open payment standard built on HTTP 402 Payment Required: the server asks for payment inside the request, and the client pays and retries. Coinbase uses it.
 
@@ -116,6 +117,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-23](changelog/2026-11-23.md) (current): Visa CLI, Klarna in Adyen Agentic checkout, Stripe Treasury and Issuing for agents, PayPal Agent Ready, and pay.sh are on the payments pages. Consumer Reports and Affirm published a draft payment-choice framework; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
 - [What changed: 2026-11-20](changelog/2026-11-20.md) (current): Citi and Chase user agreements, Singapore's planned Know Your Agent protocol, AWS AgentCore payments, Lightspark, BNY and Microsoft's Treasury bill negotiation, and six more updates.
@@ -134,7 +136,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (226)
+## Sources (238)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -191,7 +193,10 @@ Every page in the wiki, generated from page headers.
 | [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-03](sources/cl-03.md): Claude Duet safety, privacy and security | Claude Duet | Anthropic | official | 2026-11-18 |
 | [cl-04](sources/cl-04.md): Introducing Claude Duet | Claude Duet | Anthropic | official | 2026-11-18 |
+| [cr-01](sources/cr-01.md): A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study) | Payment Choice Framework | Affirm and Consumer Reports | official | 2026-11-23 |
+| [cr-02](sources/cr-02.md): GitHub - consumer-reports-innovation-lab/payment-choice-framework | Payment Choice Framework | Consumer Reports Innovation Lab (GitHub), with Affirm | official | 2026-11-23 |
 | [eb-01](sources/eb-01.md): User Agreement \| eBay | eBay | eBay | official | 2026-11-15 |
+| [fr-01](sources/fr-01.md): Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence | Banks and outside agents | Board of Governors of the Federal Reserve System | official | 2026-11-23 |
 | [gb-01](sources/gb-01.md): Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post) | Grok Bot | Grok Bot (@bot on X) | official | 2026-11-18 |
 | [gb-02](sources/gb-02.md): Finance plugin README (cursor/plugins, third_party/finance) | Grok Bot | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [gb-03](sources/gb-03.md): Vault and secure sign-in (Grok Bot docs) | Grok Bot | xAI Docs | official | 2026-11-18 |
@@ -297,6 +302,13 @@ Every page in the wiki, generated from page headers.
 | [pm-24](sources/pm-24.md): Mastercard Open Finance US (Mastercard Developers documentation) | Mastercard Open Finance US | Mastercard Developers | official | 2026-11-19 |
 | [pm-25](sources/pm-25.md): Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe | Visa Intelligent Commerce | Visa (Visa UK newsroom) | official | 2026-11-20 |
 | [pm-26](sources/pm-26.md): CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally | Visa Intelligent Commerce | Visa | official | 2026-11-20 |
+| [pm-27](sources/pm-27.md): Visa CLI docs: Introduction | Visa CLI | Visa CLI docs (Visa Crypto Labs) | official | 2026-11-23 |
+| [pm-28](sources/pm-28.md): Visa CLI docs: What's live today | Visa CLI | Visa CLI docs (Visa Crypto Labs) | official | 2026-11-23 |
+| [pm-29](sources/pm-29.md): Adyen Merchants Can Now Offer Klarna in AI Agent Checkout | Klarna / Adyen Agentic | Klarna and Adyen (Business Wire release on Klarna's investor site) | official | 2026-11-23 |
+| [pm-30](sources/pm-30.md): Give your agents controlled access to analyze your data and move funds | Stripe | Stripe | official | 2026-11-23 |
+| [pm-31](sources/pm-31.md): Issuing for agents - Stripe Documentation | Stripe | Stripe Docs | official | 2026-11-23 |
+| [pm-32](sources/pm-32.md): Agent Ready overview \| PayPal Developer | PayPal | PayPal Developer | official | 2026-11-23 |
+| [pm-33](sources/pm-33.md): pay.sh | pay.sh | pay.sh | official | 2026-11-23 |
 | [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-19 |
 | [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |
@@ -333,6 +345,7 @@ Every page in the wiki, generated from page headers.
 | [sc-03](sources/sc-03.md): How are orders approved and protected when using Scalable MCP? \| Scalable Capital Help Center | Scalable Capital | Scalable Capital Help Center | official | 2026-11-19 |
 | [sd-01](sources/sd-01.md): Know Your Human (KYH): Fraud prevention for agentic commerce | Sardine Know Your Human | Sardine | official | 2026-11-20 |
 | [sd-02](sources/sd-02.md): Know Your Human (KYH) for Agentic Commerce \| Sardine | Sardine Know Your Human | Sardine | official | 2026-11-20 |
+| [so-01](sources/so-01.md): Solana Foundation Launches Pay.sh in Collaboration with Google Cloud | pay.sh | Solana Foundation | official | 2026-11-23 |
 | [sp-01](sources/sp-01.md): Stripe helps Meta Muse shop with Link | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-02](sources/sp-02.md): Giving agents the ability to pay (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
 | [sp-03](sources/sp-03.md): Helping personal agents shop more intelligently and reliably with Link (Stripe) | Link wallet for agents | Stripe | official | 2026-11-18 |
@@ -356,6 +369,7 @@ Every page in the wiki, generated from page headers.
 | [wb-08](sources/wb-08.md): Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools | Webull | Webull / PR Newswire | official | 2026-11-19 |
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
+| [wb-11](sources/wb-11.md): webull-openapi-mcp release 1.2.8 | Webull | Webull (GitHub) | official | 2026-11-23 |
 | [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [xm-02](sources/xm-02.md): Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform | X Money | Cross River Bank | third-party | 2026-11-18 |
 | [xm-03](sources/xm-03.md): X Money overview (payments.x.com) | X Money | X Corp | official | 2026-11-18 |

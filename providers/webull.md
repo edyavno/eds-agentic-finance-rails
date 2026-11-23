@@ -5,7 +5,7 @@ title: Webull
 summary: Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.
 provider: Webull
 page_status: current
-last_verified: '2026-11-19'
+last_verified: '2026-11-23'
 status: official-mcp
 can_place_orders: [confirm-in-app, 'yes']
 approval_model: [per-order-confirm, none]
@@ -50,7 +50,7 @@ Webull announced its MCP server on 2026-06-11, saying it had been working with c
 | Read portfolio | Yes (account info, portfolio, watchlists) | Yes | [^wb-02][^wb-03] |
 | Place orders | Instructions only, confirmed in the Webull app or desktop | Yes: place, modify, cancel | [^wb-02][^wb-03] |
 | Assets | Stock, single-leg option, option strategy, futures, crypto, event and algo instructions | Stocks, options, futures, crypto, event contracts | [^wb-02][^wb-03] |
-| Regions | US (eligible users) | US, HK, JP, SG, MY, UK, MX, BR, ZA, with region-specific features | [^wb-07][^wb-03] |
+| Regions | US (eligible users) | US, HK, JP, SG, MY, UK, MX, BR, ZA, AU, with region-specific features | [^wb-07][^wb-03][^wb-11] |
 | Limits | unknown | Notional limits per market, quantity limits, symbol whitelist | [^wb-03] |
 | Paper or sandbox | unknown | Defaults to the [UAT](../glossary.md#uat) [sandbox](../glossary.md#sandbox) | [^wb-03] |
 | Notifications or audit trail | unknown | Audit log of all order operations | [^wb-03] |
@@ -107,6 +107,7 @@ Webull's connectors for ChatGPT, Claude and Grok give eligible users natural-lan
 
 - Cloud MCP limits, notifications and [paper mode](../glossary.md#paper-trading): unknown.
 - Exact order types per region: unknown.
+- The text of the AU-specific disclaimer added in local OpenAPI MCP 1.2.8: unknown.
 - Agent terms of use: not yet reviewed here.
 - Whether the Agentic Trading page's read-only mode and hard limits apply to Cloud MCP: unknown.
 - How to unlink Cloud MCP step by step: unknown. The Agentic Trading page says only that you can unlink with one click.[^wb-01]
@@ -115,6 +116,7 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 
 ## What changed on this page?
 
+- 2026-11-23: Local OpenAPI MCP release 1.2.8 enables the AU region, with an AU-specific disclaimer. The text of that disclaimer is not in the release note, and the hosted Cloud MCP regions are unchanged.[^wb-11]
 - 2026-11-19: Added how to connect Cloud MCP from each app Webull documents, account selection at sign-in, market data rules, the instruction revoke tool, and community tools that post under your account.[^wb-02][^wb-01]
 - 2026-11-14: Added the official Agentic Trading landing page, the OpenAPI skills repo, and the 2026-08-04 connectors and CLI announcement.[^wb-01][^wb-04][^wb-08]
 - 2026-11-12: First version of this page.
@@ -128,6 +130,7 @@ Every fact on this page links to a source card; "unknown" means no source we cit
 [^wb-08]: [Webull Launches ChatGPT, Claude & Grok Connectors, CLI, and Enhanced MCP to Expand AI-Powered Investing Tools](../sources/wb-08.md). Webull / PR Newswire, official, retrieved 2026-11-19.
 [^wb-10]: [「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※）](../sources/wb-10.md). Webull Securities Japan, official, retrieved 2026-11-12.
 [^wb-01]: [Webull Agentic Trading — Let your AI agent trade the markets](../sources/wb-01.md). Webull, official, retrieved 2026-11-19.
+[^wb-11]: [webull-openapi-mcp release 1.2.8](../sources/wb-11.md). Webull (GitHub), official, retrieved 2026-11-23.
 [^wb-09]: [Webull API: OAuth protected-resource metadata](../sources/wb-09.md). Webull (endpoint metadata), official, retrieved 2026-11-12.
 [^wb-05]: [GitHub - webull-inc/webull-openapi-cli · GitHub](../sources/wb-05.md). Webull (GitHub), official, retrieved 2026-11-12.
 [^wb-04]: [GitHub - webull-inc/webull-openapi-skills · GitHub](../sources/wb-04.md). Webull (GitHub), official, retrieved 2026-11-12.

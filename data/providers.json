@@ -1332,7 +1332,7 @@
       "provider": "Webull",
       "page": "providers/webull.md",
       "page_status": "current",
-      "last_verified": "2026-11-19",
+      "last_verified": "2026-11-23",
       "summary": "Webull's hosted Cloud MCP prepares trades you confirm in the Webull app; its local OpenAPI MCP places orders directly, with risk limits and a sandbox default.",
       "status": "official-mcp",
       "can_place_orders": [
@@ -1540,6 +1540,11 @@
           "id": "wb-10",
           "url": "https://www.webull.co.jp/blog/322",
           "card": "sources/wb-10.md"
+        },
+        {
+          "id": "wb-11",
+          "url": "https://github.com/webull-inc/webull-openapi-mcp/releases/tag/1.2.8",
+          "card": "sources/wb-11.md"
         }
       ],
       "unknown_fields": [

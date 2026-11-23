@@ -3,7 +3,7 @@ type: payment
 title: Payments
 summary: 'How AI agents pay: card-network agent programs, payment tokens, wallets, protocols and agent cards, each with a sourced page, plus merchants that ban agents.'
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Payments
@@ -15,6 +15,7 @@ This section covers how an AI agent pays for things on a person's behalf, often 
 | Program | Type | In one line |
 |---|---|---|
 | [Visa Intelligent Commerce](visa-intelligent-commerce.md) | Card network | Approved agent builders pay with tokenized Visa credentials, under purchase instructions the consumer approved.[^pm-01] |
+| [Visa CLI](visa-cli.md) | Card network | A Visa Crypto Labs product: after a US Visa card check, an agent gets a signing key, is listed in the [Visa Agent Directory](../glossary.md#visa-agent-directory), and can pay HTTP 402 requests in [OUSD](../glossary.md#ousd) within owner-set limits.[^pm-27][^pm-28] |
 | [Mastercard Agent Pay](mastercard-agent-pay.md) | Card network | Only registered agents can pay, using Mastercard agentic tokens.[^pm-05][^pm-06] |
 | [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) | Commerce protocol | An open standard for buyers, their agents and businesses to complete purchases. OpenAI and Stripe maintain it, and it is in beta.[^pm-07] |
 | [Stripe](stripe.md) | Payment tokens and MCP | Shared payment tokens give a seller limited use of a customer's payment method. Stripe also runs an official MCP server.[^pm-08][^pm-09] |
@@ -31,13 +32,19 @@ This section covers how an AI agent pays for things on a person's behalf, often 
 | [Lightspark Agent Accounts](lightspark-agent-accounts.md) | Agent account | Accounts where an agent holds and spends money within limits and approvals the owner sets, paying Visa merchants with a card valid for one purchase.[^ls-01][^ls-02] |
 | [Merchants and outside agents](merchants-and-outside-agents.md) | Topic | eBay and United forbid AI agents from buying on their sites without permission.[^eb-01][^ua-01] |
 
+## Klarna in Adyen Agentic checkout
+
+On 2026-11-20 Klarna and Adyen said shoppers can pay with Klarna when an AI agent checks out through [Adyen Agentic](https://www.adyen.com/agentic-commerce), Adyen's agentic commerce suite. Klarna is the first payment option beyond cards there. Merchants that already offer Klarna through Adyen can switch it on with no new integration. The agent shows the same Klarna options the merchant already offers, such as paying in full, in interest-free installments or with financing. Shoppers review and confirm every purchase before it is completed.[^pm-29]
+
+Adyen built the integration on Klarna's open [payment handler](../glossary.md#payment-handler), a published specification any payment provider can use. The release does not link that specification, so its URL is unknown, and it does not name the AI platforms where the checkout runs.[^pm-29]
+
 ## How the controls work
 
 The sources describe four kinds of control. Most programs use more than one.
 
 - **The network vets the agent.** Visa requires approved participants and agent registration before production use.[^pm-01] Mastercard registers and verifies agents before they can transact.[^pm-06]
 - **The credential is limited.** Stripe's shared payment tokens carry usage and expiry limits.[^pm-08] Visa and Mastercard use tokenized credentials instead of the raw card number.[^pm-01][^pm-06] See [payment token](../glossary.md#payment-token).
-- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02]
+- **The person approves.** Robinhood lets you approve each purchase in its app. If you turn that off, a monthly limit is required.[^rh-09] AP2 records the user's authorization as signed [mandates](../glossary.md#mandates).[^pm-13] ChatGPT Wallet asks for a biometric check on each purchase.[^oa-01] AgentBank asks the owner to confirm every payment, with an extra approval above a threshold.[^ag-02] When an agent checks out through Adyen Agentic with Klarna, shoppers review and confirm every purchase.[^pm-29]
 - **The balance is limited.** Rain Agent Vaults let an agent spend only what its owner put in the vault, one scoped card at a time.[^rn-01]
 
 ## Which controls does each program use?
@@ -385,16 +392,17 @@ Every program side by side. Each value is sourced on its own page, and `unknown`
 | [Amazon Bedrock AgentCore payments](agentcore-payments.md) | Amazon Web Services (AWS) | Pay for paid APIs, MCP servers and web content over x402 and the Machine Payments Protocol, through a configured wallet provider, and pay x402-enabled AWS Marketplace sellers per request in US dollars on the AWS bill | Each payment session has a budget limit and an expiry, and further payments are denied once either is reached. Developers can also set spending limits and approved sellers with AgentCore policy, and AWS Marketplace purchases appear in AWS CloudTrail and AWS Cost Explorer | unknown | Generally available since August 2026. AWS Marketplace payments are available in all AWS Regions where AgentCore payments is available, and the list of Regions is unknown | 2026-11-20 |
 | [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) | OpenAI and Stripe (spec maintainers) | Let a user find and buy from a business inside an AI app, through a checkout API and a delegated-payment spec | unknown | unknown | Beta. OpenAI and Stripe were the first to implement it | 2026-11-14 |
 | [AP2 (Agent Payments Protocol)](ap2.md) | Google (reference code on GitHub) | Carry signed proof of what the user authorized: a Checkout Mandate shared with the merchant and a Payment Mandate shared with the credential provider, the card networks and the payment processor | Open mandates hold the user's limits, such as budget and allowed payment methods, before a cart is final. Closed mandates authorize one finalized checkout and amount | unknown | Open protocol, available as an extension for A2A and Universal Commerce Protocol. Samples in Python, Go and Android | 2026-11-20 |
-| [ChatGPT Wallet](chatgpt-wallet.md) | OpenAI, built with American Express, Mastercard and Visa | Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it | You review the items, total and card, then approve each purchase with a biometric check such as Face ID. The terms also allow granting ChatGPT authority to approve purchases in advance | unknown | Rolling out from 2026-11-13 in dots, to ChatGPT Pro users in the US aged 18 or older with eligible US-issued American Express, Chase, Mastercard and Visa cards | 2026-11-19 |
+| [ChatGPT Wallet](chatgpt-wallet.md) | OpenAI, built with American Express, Mastercard and Visa | Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it | You review the items, total and card, then approve each purchase with a biometric check such as Face ID. The terms also allow granting ChatGPT authority to approve purchases in advance | unknown | Rolling out from 2026-11-13 in dots, to ChatGPT Pro users in the US aged 18 or older with eligible US-issued American Express, Chase, Mastercard and Visa cards | 2026-11-23 |
 | [Lightspark Agent Accounts](lightspark-agent-accounts.md) | Lightspark Group, Inc. | Hold, spend, send and receive money for a person or business, pay a merchant that accepts Visa with a card valid for that purchase alone or a saved card seen only as a card ID, and settle directly with a merchant that has an Agent Account | The account holder sets spending limits and decides which payments need their approval. The customer authorizes a delegated key once and can pause the agent, revoke the key or delete the agent at any time | unknown | Launched 2026-11-17 for companies building agents for consumers, small businesses and merchants. The Agents API must be enabled for each platform | 2026-11-20 |
 | [Link wallet for agents](link-wallet-for-agents.md) | Stripe | Create a spend request in a person's Link wallet to get a one-time-use card or a shared payment token for a purchase, scoped by amount, currency and merchant. Stripe says Link can also tell an agent how to continue, such as a 3D Secure link, and an agent can ask for a higher approved amount | The person grants wallet access through OAuth and approves each spend request in Link on web, iOS or Android. They can track agent spending and manage connected agents in Link. Stripe plans spending limits and a way to let agents act without approving each purchase, with no date given | unknown | Stripe announced Link's wallet for agents on 2026-04-29. Its 2026-09-08 release says US consumers can connect Link to Muse, and its 2026-09-29 post says Muse is the first agent to offer Link purchase protections | 2026-11-22 |
 | [Mastercard Agent Pay](mastercard-agent-pay.md) | Mastercard | Pay with agentic tokens once registered and verified, including through a merchant's normal card checkout form | Mastercard says each transaction is checked against authenticated user intent and explicit consent before the action | unknown | unknown | 2026-11-20 |
-| [PayPal](paypal.md) | PayPal | Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes | Access uses the PayPal account's own credentials: an access token for the local server, or client ID and secret for the hosted one. A sandbox is available for testing | Yes | Local server (Node.js 18 or later) or hosted server. Sandbox address https://mcp.sandbox.paypal.com | 2026-11-20 |
+| [PayPal](paypal.md) | PayPal | Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes | Access uses the PayPal account's own credentials: an access token for the local server, or client ID and secret for the hosted one. A sandbox is available for testing | Yes | Local server (Node.js 18 or later) or hosted server. Sandbox address https://mcp.sandbox.paypal.com | 2026-11-23 |
 | [Rain Agent Vaults](rain-agent-vaults.md) | Rain | Spend from a funded vault with a scoped virtual card issued for each purchase, send money to bank accounts in local currency, and send stablecoins | The vault owner sets the rules, such as how much the agent can spend, which merchants it can pay and when. Each card's amount, merchant and expiry are fixed when it is issued, and the agent cannot raise its own limit | unknown | Announced 2026-11-10 for companies and developers building agents, through Rain's sales team | 2026-11-15 |
 | [Robinhood Agentic Credit Card](robinhood-agentic-credit-card.md) | Robinhood (Robinhood Credit, Inc.) | Fetch the agentic virtual card's number to finish purchases, and read that card's spending history and settings. The MCP does not browse or shop for you | Approve each purchase in the Robinhood Banking app, or set a monthly limit, which is required if you do not approve each purchase. The agent sees only the cards you authorize | Yes | A virtual card in the Robinhood Gold Card. Card setup and agent sign-in work on desktop only. Announced 2026-05-27 | 2026-11-14 |
-| [Stripe](stripe.md) | Stripe | Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server | Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked, and Stripe can require you to approve certain MCP actions in the Dashboard | Yes | Shared payment tokens are in public preview in the US, Canada and select European countries | 2026-11-20 |
-| [Visa Intelligent Commerce](visa-intelligent-commerce.md) | Visa | Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved | Consumer-approved purchase instructions, Visa Payment Passkeys with device binding, and network-level controls | Yes | Production needs Visa onboarding and approval at each stage: sandbox, certification, production. Intelligent Commerce Connect was in pilot with select partners as of 2026-04-08 | 2026-11-20 |
-| [x402](x402.md) | x402 Foundation | Pay for a web resource as part of the request: the server replies 402 Payment Required with its terms, and the client retries with a payment attached | unknown | unknown | Open standard. Specification version 2 is published | 2026-11-20 |
+| [Stripe](stripe.md) | Stripe | Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server | Each token has usage and expiry limits, such as currency, maximum amount and an expiry window. MCP access is granted on Stripe's OAuth consent page and can be revoked, and Stripe can require you to approve certain MCP actions in the Dashboard | Yes | Shared payment tokens are in public preview in the US, Canada and select European countries | 2026-11-23 |
+| [Visa CLI](visa-cli.md) | Visa (Visa Crypto Labs) | Take paid tasks with the reward paid to the owner's wallet, and pay per-request APIs that answer with HTTP 402, in OUSD on Tempo, within limits the owner set. Requests are signed so a server can check them. | The owner passes a Visa card check and sets limits on what the agent can pay. One card and one person can connect up to 25 agents, which can share a wallet. | Yes | Access is by invitation. The card check takes US Visa cards; prepaid, corporate and JPMorgan Chase cards cannot be added yet. New agents have been listed in the Visa Agent Directory since 2026-11-18. | 2026-11-23 |
+| [Visa Intelligent Commerce](visa-intelligent-commerce.md) | Visa | Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved | Consumer-approved purchase instructions, Visa Payment Passkeys with device binding, and network-level controls | Yes | Production needs Visa onboarding and approval at each stage: sandbox, certification, production. Intelligent Commerce Connect was in pilot with select partners as of 2026-04-08 | 2026-11-23 |
+| [x402](x402.md) | x402 Foundation | Pay for a web resource as part of the request: the server replies 402 Payment Required with its terms, and the client retries with a payment attached | unknown | unknown | Open standard. Specification version 2 is published | 2026-11-23 |
 
 <!-- /records -->
 
@@ -412,7 +420,7 @@ See [gaps](../gaps.md) for the full list.
 ## Related pages
 
 - [Agent payments](../rails/agent-payments.md): the one-table rail overview.
-- [Agent identity](../rails/agent-identity.md): how merchants tell which agent is calling, including Visa's Trusted Agent Protocol and Web Bot Auth.
+- [Agent identity](../rails/agent-identity.md): how merchants tell which agent is calling, including Visa's [Trusted Agent Protocol](../glossary.md#trusted-agent-protocol-tap) and Web Bot Auth.
 - [Mandates and data access](../rails/mandates-and-data-access.md): proof of authorization and the US data-rights rule.
 - [Personal money agents](../personal-money/README.md): agents that work with your bank and card data.
 - [Merchants and outside agents](merchants-and-outside-agents.md): merchants whose terms forbid AI agents.
@@ -423,6 +431,8 @@ Not investment advice.
 ## Sources
 
 [^pm-01]: [Visa Developer Center](../sources/pm-01.md). Visa Developer, official, retrieved 2026-11-12.
+[^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-05]: [Mastercard Agent Pay: secure, scalable and trusted agentic AI](../sources/pm-05.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-07]: [GitHub - agentic-commerce-protocol/agentic-commerce-protocol: The Agentic Commerce Protocol (ACP) is an interaction model and open standard for connec](../sources/pm-07.md). ACP (GitHub), official, retrieved 2026-11-12.
@@ -447,6 +457,7 @@ Not investment advice.
 [^ls-02]: [Agent Accounts (Lightspark documentation)](../sources/ls-02.md). Lightspark (documentation), official, retrieved 2026-11-20.
 [^eb-01]: [User Agreement - eBay](../sources/eb-01.md). eBay, official, retrieved 2026-11-15.
 [^ua-01]: [Contract of Carriage Document - United Airlines](../sources/ua-01.md). United Airlines, official, retrieved 2026-11-15.
+[^pm-29]: [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](../sources/pm-29.md). Klarna and Adyen (Business Wire release on Klarna's investor site), official, retrieved 2026-11-23.
 
 ---
 

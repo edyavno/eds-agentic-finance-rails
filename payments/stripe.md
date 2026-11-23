@@ -4,7 +4,7 @@ id: stripe
 title: Stripe
 summary: Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 kind: payment-credential
 operator: Stripe
 agent_can: Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server
@@ -70,6 +70,21 @@ Stripe recommends its agent plugins, which set up the MCP server and Stripe's [a
 
 If you have feedback on the MCP server, Stripe asks you to email mcp@stripe.com; the server also has a `send_stripe_feedback` tool.[^pm-09][^pm-18]
 
+## Treasury for agents
+
+This section is about Stripe businesses, not consumer accounts. Stripe says more than 24,000 businesses already use Stripe Treasury for agents with read access to financial data, such as reviewing transactions, building cash flow models and reconciling payments. On 2026-11-19 Stripe said it was adding write access and customizable controls so agents can transfer funds, convert currencies and pay vendors within limits the business sets. Those money-movement capabilities are in public preview.[^pm-30]
+
+A business connects a compatible AI tool, such as Claude or Codex, through Stripe's [MCP](../glossary.md#mcp) server and chooses what the agent can see, which actions it can take, and when a person must approve.[^pm-30]
+
+- If the agent connects through [OAuth](../glossary.md#oauth) as an authorized user, it inherits that user's permissions, and the business must confirm every action that moves money, including a refund or payout.[^pm-30]
+- The business can also give an agent its own identity with an agent API key, and set that key's permissions, expiry and rotation. By default, agent-initiated refunds, payouts and outbound transfers still need human approval. The business can change those rules, for example letting an agent process an ACH transfer under $50 automatically.[^pm-30]
+
+## Issuing for agents
+
+Separately, Stripe documents [Issuing](https://docs.stripe.com/issuing/agents) for agents as a private preview. A business can issue cards and credentials that agents use to buy, with spend controls, real-time authorization and transaction visibility, using Stripe Issuing APIs. Before a purchase, the business can decide what the agent can spend, where, and how much.[^pm-31]
+
+Agents can pay through programmatic checkout, including a scoped [shared payment token](../glossary.md#payment-token) from an Issuing card for flows such as [MPP](../glossary.md#mpp) or Universal Commerce Protocol, or through a browser using virtual card credentials, including a single-use card. Access is by application or by contacting Stripe.[^pm-31]
+
 ## Link wallet for agents
 
 Stripe also runs Link, a consumer wallet that gives an agent a one-time-use card or a shared payment token for a purchase the person approves in Link. Muse, Grok Bot and Instinct use it. See [Link wallet for agents](link-wallet-for-agents.md).[^sp-02][^sp-01]
@@ -82,7 +97,7 @@ Visa lists Stripe among the initial participants in its [Agentic Ready](../gloss
 
 Fees for shared payment tokens. No cited source confirms it, so the wiki says unknown.
 
-Also unknown: spending caps on Treasury sends and transfers made through the MCP server, and the countries where the MCP server is available.
+Also unknown: spending caps on Treasury sends and transfers made through the MCP server, and the countries where the MCP server is available. Default spend-limit values for Treasury write access, and when Issuing for agents will leave private preview, are also unknown.
 
 All programs: [Payments](README.md).
 
@@ -92,6 +107,8 @@ All programs: [Payments](README.md).
 [^pm-08]: [Shared payment tokens - Stripe Documentation](../sources/pm-08.md). Stripe Docs, official, retrieved 2026-11-12.
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-19.
 [^pm-18]: [Model Context Protocol (MCP) - Stripe Documentation (Markdown version)](../sources/pm-18.md). Stripe Docs, official, retrieved 2026-11-19.
+[^pm-30]: [Give your agents controlled access to analyze your data and move funds](../sources/pm-30.md). Stripe, official, retrieved 2026-11-23.
+[^pm-31]: [Issuing for agents - Stripe Documentation](../sources/pm-31.md). Stripe Docs, official, retrieved 2026-11-23.
 [^sp-02]: [Giving agents the ability to pay (Stripe)](../sources/sp-02.md). Stripe, official, retrieved 2026-11-18.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.

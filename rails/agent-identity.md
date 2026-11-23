@@ -3,7 +3,7 @@ type: rail
 title: Agent identity
 summary: How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Agent identity
@@ -14,7 +14,8 @@ Agents can prove who they are to websites and merchants by signing their web req
 |---|---|---|
 | Web Bot Auth | IETF draft using HTTP Message Signatures for automated traffic | [^id-01] |
 | Cloudflare signed agents | Verification of Web Bot Auth signatures for bots and agents | [^id-02][^id-03] |
-| Visa Trusted Agent Protocol | Agent identity to merchants via HTTP Message Signatures | [^pm-03] |
+| [Trusted Agent Protocol](../glossary.md#trusted-agent-protocol-tap) (Visa) | Agent identity to merchants via HTTP Message Signatures | [^pm-03] |
+| [Visa Agent Directory](../glossary.md#visa-agent-directory) / [Visa CLI](../payments/visa-cli.md) | Visa CLI, a Visa Crypto Labs product, registers a newly connected agent's signing key in the Visa Agent Directory after the owner passes a US Visa card check. Since 2026-11-18, new agents are listed in the production directory | [^pm-27][^pm-28] |
 | Mastercard Agent Pay | Uses Web Bot Auth at the CDN to verify agents | [^pm-06] |
 | Plaid Agent Detection | A financial company's check on whether a session is a person or an AI agent, and which AI provider, from device, behavior, automation and network signals. It detects agents rather than verifying a signed identity | [^pb-06] |
 | OpenAI ChatGPT agents | OpenAI asks merchants to recognize its agents' signed requests with Web Bot Auth | [^oa-01] |
@@ -61,6 +62,8 @@ BNY says its [Agentic Negotiation Protocol](../glossary.md#agentic-negotiation-p
 [^id-07]: [ERC-8004: Trustless Agents](../sources/id-07.md). Ethereum Improvement Proposals, official, retrieved 2026-11-14.
 [^id-02]: [Web Bot Auth · Cloudflare bot solutions docs](../sources/id-02.md). Cloudflare Docs, official, retrieved 2026-11-12.
 [^id-03]: [The age of agents: cryptographically recognizing agent traffic - Cloudflare Blog](../sources/id-03.md). Cloudflare Blog, official, retrieved 2026-11-12.
+[^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](../sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.

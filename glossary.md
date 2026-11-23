@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-22'
+last_verified: '2026-11-23'
 ---
 
 # Glossary
@@ -77,6 +77,10 @@ A way for an app to describe itself with a document at a URL, so a server can id
 ## Connector
 
 An add-on that links an AI app to an outside service, so the app can read from it or act in it. Apps call this a connector, a plugin or an integration, and where you add one differs by app.
+
+## Consumer Finance AI Standard
+
+A Consumer Reports standard for testing whether an AI system gives consumers sound, unbiased financial guidance. Affirm and Consumer Reports used it to score tests of their Payment Choice Framework.[^cr-01]
 
 ## Data aggregator
 
@@ -174,6 +178,10 @@ Sharing bank data with other apps through approved, permissioned connections, in
 
 A standard way to describe a web API, so people and programs can see what requests it accepts.
 
+## OUSD
+
+A dollar [stablecoin](#stablecoin) used on the Tempo network. [Visa CLI](payments/visa-cli.md) agents can pay HTTP 402 requests in OUSD, within limits the owner set.[^pm-27]
+
 ## Paper trading
 
 Practice trading with simulated money. Also called paper mode.
@@ -181,6 +189,10 @@ Practice trading with simulated money. Also called paper mode.
 ## Passkey
 
 A sign-in method that uses your device's fingerprint, face scan or PIN instead of a password. It is tied to your device and the site you made it for, so it cannot be typed into a fake page.
+
+## Payment handler
+
+A published way for a payment provider to plug into an agent checkout. Adyen built its Klarna integration on Klarna's open payment-handler specification. The announcement does not link that specification, so its URL is unknown.[^pm-29]
 
 ## Payment token
 
@@ -242,6 +254,14 @@ Standard input and output. A local program can talk to a client through these st
 
 A balance held for you by a payments company, usually a licensed money transmitter, with a partner bank holding the cash. It works like a bank account in the app but is not itself a bank account. X Money is described this way in a US regulator's database.
 
+## Tempo
+
+A blockchain network that carries dollar [stablecoin](#stablecoin) payments, including [OUSD](#ousd). [Visa CLI](payments/visa-cli.md) uses Tempo for agent payments from the owner's wallet.[^pm-27]
+
+## Trusted Agent Protocol (TAP)
+
+A Visa protocol that lets a merchant check an agent's identity using HTTP Message Signatures. [Visa CLI](payments/visa-cli.md) signs requests under TAP and lists new agents in the [Visa Agent Directory](#visa-agent-directory).[^pm-03][^pm-27]
+
 ## UAT
 
 User acceptance testing. A test environment used to try a system before using the live one. See also [sandbox](#sandbox).
@@ -249,6 +269,10 @@ User acceptance testing. A test environment used to try a system before using th
 ## Verifiable Intent
 
 Mastercard's way of tying a customer's approval of a specific purchase to the payment, so the payment can be checked against what the customer approved.
+
+## Visa Agent Directory
+
+Visa's public registry of agents whose signing keys have been checked. [Visa CLI](payments/visa-cli.md) has listed newly connected agents there since 18 November 2026. Agents connected before then remain in a sandbox directory.[^pm-28]
 
 ## Virtual card
 
@@ -266,9 +290,14 @@ A protocol for paying for a resource as part of a web request, often used so an 
 
 [^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
 [^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
+[^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
 [^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
 [^aw-03]: [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](sources/aw-03.md). Amazon Web Services (AgentCore Developer Guide), official, retrieved 2026-11-20.
+[^pm-27]: [Visa CLI docs: Introduction](sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-29]: [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](sources/pm-29.md). Klarna and Adyen (Business Wire release on Klarna's investor site), official, retrieved 2026-11-23.
+[^pm-03]: [GitHub - visa/trusted-agent-protocol: Establishing a universal standard of trust between AI agents and merchants for the next phase of agentic commerc](sources/pm-03.md). Visa (GitHub), official, retrieved 2026-11-12.
+[^pm-28]: [Visa CLI docs: What's live today](sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 
 ---
 

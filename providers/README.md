@@ -25,7 +25,7 @@ Alpaca, Coinbase, Interactive Brokers, Robinhood and Webull are the wiki's five 
 | [Public](public.md) | official-mcp | separate-account; per-order-confirm | 2026-11-19 |
 | [Robinhood](robinhood.md) | official-mcp | separate-account; per-order-confirm | 2026-11-19 |
 | [Scalable Capital](scalable-capital.md) | official-mcp | per-order-confirm | 2026-11-19 |
-| [Webull](webull.md) | official-mcp | per-order-confirm; none | 2026-11-19 |
+| [Webull](webull.md) | official-mcp | per-order-confirm; none | 2026-11-23 |
 
 <!-- /listing -->
 

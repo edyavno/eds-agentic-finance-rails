@@ -4,7 +4,7 @@ id: paypal
 title: PayPal
 summary: PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 kind: payment-mcp
 operator: PayPal
 agent_can: Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes
@@ -43,6 +43,18 @@ PayPal's agent tools are for businesses that use PayPal. They let an AI agent wo
 - Pre-built functions for orders, invoices, subscriptions, shipment tracking, transaction details and disputes.[^pm-11]
 - Works with Amazon Bedrock, CrewAI, LangChain, MCP, OpenAI's Agents SDK and Vercel's AI SDK, in TypeScript and Python.[^pm-11]
 
+## Agent Ready
+
+PayPal's Agent Ready docs, last updated 2026-10-13, describe a way for Braintree and PayPal merchants to accept payments from AI shopping assistants on ChatGPT, Google AI Mode and Gemini without a separate integration for each.[^pm-32]
+
+PayPal supports two protocols along three paths:[^pm-32]
+
+- [Agentic Commerce Protocol (ACP)](agentic-commerce-protocol.md) for ChatGPT and OpenAI, using delegated payment tokens through Braintree.
+- Universal Commerce Protocol (UCP) with Braintree, for Google AI Mode and Gemini, using a Google Pay [payment handler](../glossary.md#payment-handler) through Braintree.
+- UCP with PayPal, for the same Google surfaces, using a Google Pay payment handler through PayPal's Orders v2 API.
+
+Merchants use their existing Braintree or PayPal merchant account. This is merchant acceptance of agent checkout, not a new way for a consumer's own agent to pay from a PayPal balance.
+
 ## Visa Agentic Ready
 
 Visa lists PayPal among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Visa says PayPal is working to expand acceptance of Visa agentic tokens across its merchant network, so merchants can process agent-initiated tokenized payments through their existing PayPal integration.[^pm-26] Visa's release for Europe, dated 2026-11-18, also lists PayPal among its more than 85 initial acceptance participants there.[^pm-25] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
@@ -57,6 +69,7 @@ All programs: [Payments](README.md).
 
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
+[^pm-32]: [Agent Ready overview - PayPal Developer](../sources/pm-32.md). PayPal Developer, official, retrieved 2026-11-23.
 [^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.
 [^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](../sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
 

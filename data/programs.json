@@ -383,7 +383,7 @@
       "kind": "payment-credential",
       "page": "payments/chatgpt-wallet.md",
       "page_status": "current",
-      "last_verified": "2026-11-19",
+      "last_verified": "2026-11-23",
       "summary": "OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.",
       "operator": "OpenAI, built with American Express, Mastercard and Visa",
       "agent_can": "Complete a purchase at a merchant's normal checkout with a one-purchase payment token, after you approve it",
@@ -472,6 +472,11 @@
           "id": "oa-07",
           "url": "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs",
           "card": "sources/oa-07.md"
+        },
+        {
+          "id": "pm-29",
+          "url": "https://investors.klarna.com/News--Events/news/news-details/2026/Adyen-Merchants-Can-Now-Offer-Klarna-in-AI-Agent-Checkout/default.aspx",
+          "card": "sources/pm-29.md"
         }
       ],
       "unknown_fields": [
@@ -809,7 +814,7 @@
       "kind": "payment-mcp",
       "page": "payments/paypal.md",
       "page_status": "current",
-      "last_verified": "2026-11-20",
+      "last_verified": "2026-11-23",
       "summary": "PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.",
       "operator": "PayPal",
       "agent_can": "Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes",
@@ -887,6 +892,11 @@
           "id": "pm-26",
           "url": "https://investor.visa.com/news/news-details/2026/CORRECTING-and-REPLACING-Visa-Expands-Agentic-Ready-to-Help-Scale-Trusted-AI-Commerce-Globally/default.aspx",
           "card": "sources/pm-26.md"
+        },
+        {
+          "id": "pm-32",
+          "url": "https://developer.paypal.com/agent-ready/overview",
+          "card": "sources/pm-32.md"
         }
       ],
       "unknown_fields": []
@@ -1050,7 +1060,7 @@
       "kind": "payment-credential",
       "page": "payments/stripe.md",
       "page_status": "current",
-      "last_verified": "2026-11-20",
+      "last_verified": "2026-11-23",
       "summary": "Stripe offers shared payment tokens, which give a seller scoped, time-limited use of a customer's payment method for agent purchases, plus an official MCP server at mcp.stripe.com.",
       "operator": "Stripe",
       "agent_can": "Grant a seller a shared payment token for a purchase. Separately, call the Stripe API and search Stripe's docs through the Stripe MCP server",
@@ -1150,6 +1160,16 @@
           "card": "sources/pm-26.md"
         },
         {
+          "id": "pm-30",
+          "url": "https://stripe.com/blog/give-your-agents-controlled-access-to-analyze-your-data-and-move-funds",
+          "card": "sources/pm-30.md"
+        },
+        {
+          "id": "pm-31",
+          "url": "https://docs.stripe.com/issuing/agents",
+          "card": "sources/pm-31.md"
+        },
+        {
           "id": "sp-01",
           "url": "https://stripe.com/newsroom/news/stripe-helps-meta-muse-shop-with-link",
           "card": "sources/sp-01.md"
@@ -1163,13 +1183,97 @@
       "unknown_fields": []
     },
     {
+      "id": "visa-cli",
+      "section": "payment",
+      "title": "Visa CLI",
+      "kind": "card-network-program",
+      "page": "payments/visa-cli.md",
+      "page_status": "current",
+      "last_verified": "2026-11-23",
+      "summary": "A Visa Crypto Labs product: after a US Visa card check, an agent gets a signing key, is listed in the Visa Agent Directory, and can take paid tasks and pay HTTP 402 requests in OUSD within limits the owner set.",
+      "operator": "Visa (Visa Crypto Labs)",
+      "agent_can": "Take paid tasks with the reward paid to the owner's wallet, and pay per-request APIs that answer with HTTP 402, in OUSD on Tempo, within limits the owner set. Requests are signed so a server can check them.",
+      "user_controls": "The owner passes a Visa card check and sets limits on what the agent can pay. One card and one person can connect up to 25 agents, which can share a wallet.",
+      "mcp_server": "yes",
+      "endpoint": "https://auth.visacli.sh",
+      "availability": "Access is by invitation. The card check takes US Visa cards; prepaid, corporate and JPMorgan Chase cards cannot be added yet. New agents have been listed in the Visa Agent Directory since 2026-11-18.",
+      "notes": "The documented host is the API, the registry and the hosted MCP server; the exact MCP path is unknown. Invitation terms, fees and default spend limits are unknown. Whether live HTTP 402 payments use the x402 protocol is unknown; the status docs tell merchants to test payment handling with an MPP server.",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "pm-28",
+            "url": "https://app.visacli.sh/docs/status",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "pm-27",
+            "url": "https://app.visacli.sh/docs/introduction",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "pm-27",
+            "url": "https://app.visacli.sh/docs/introduction",
+            "authority": "official"
+          },
+          {
+            "id": "pm-28",
+            "url": "https://app.visacli.sh/docs/status",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "pm-28",
+            "url": "https://app.visacli.sh/docs/status",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "pm-28",
+            "url": "https://app.visacli.sh/docs/status",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "pm-27",
+            "url": "https://app.visacli.sh/docs/introduction",
+            "authority": "official"
+          },
+          {
+            "id": "pm-28",
+            "url": "https://app.visacli.sh/docs/status",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "pm-27",
+          "url": "https://app.visacli.sh/docs/introduction",
+          "card": "sources/pm-27.md"
+        },
+        {
+          "id": "pm-28",
+          "url": "https://app.visacli.sh/docs/status",
+          "card": "sources/pm-28.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
       "id": "visa-intelligent-commerce",
       "section": "payment",
       "title": "Visa Intelligent Commerce",
       "kind": "card-network-program",
       "page": "payments/visa-intelligent-commerce.md",
       "page_status": "current",
-      "last_verified": "2026-11-20",
+      "last_verified": "2026-11-23",
       "summary": "Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.",
       "operator": "Visa",
       "agent_can": "Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved",
@@ -1272,6 +1376,16 @@
           "card": "sources/pm-26.md"
         },
         {
+          "id": "pm-27",
+          "url": "https://app.visacli.sh/docs/introduction",
+          "card": "sources/pm-27.md"
+        },
+        {
+          "id": "pm-28",
+          "url": "https://app.visacli.sh/docs/status",
+          "card": "sources/pm-28.md"
+        },
+        {
           "id": "rn-01",
           "url": "https://www.rain.xyz/resources/rain-agent-vaults-bring-embedded-payments-to-ai-agents",
           "card": "sources/rn-01.md"
@@ -1293,7 +1407,7 @@
       "kind": "payment-protocol",
       "page": "payments/x402.md",
       "page_status": "current",
-      "last_verified": "2026-11-20",
+      "last_verified": "2026-11-23",
       "summary": "An open payment standard built on HTTP 402 Payment Required: the server asks for payment inside the request, and the client pays and retries. Coinbase uses it.",
       "operator": "x402 Foundation",
       "agent_can": "Pay for a web resource as part of the request: the server replies 402 Payment Required with its terms, and the client retries with a payment attached",
@@ -1377,6 +1491,26 @@
           "id": "pm-23",
           "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html",
           "card": "sources/pm-23.md"
+        },
+        {
+          "id": "pm-27",
+          "url": "https://app.visacli.sh/docs/introduction",
+          "card": "sources/pm-27.md"
+        },
+        {
+          "id": "pm-28",
+          "url": "https://app.visacli.sh/docs/status",
+          "card": "sources/pm-28.md"
+        },
+        {
+          "id": "pm-33",
+          "url": "https://pay.sh/",
+          "card": "sources/pm-33.md"
+        },
+        {
+          "id": "so-01",
+          "url": "https://solana.com/news/solana-foundation-launches-pay-sh-in-collaboration-with-google-cloud",
+          "card": "sources/so-01.md"
         }
       ],
       "unknown_fields": [

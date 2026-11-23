@@ -129,6 +129,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-19 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
 | [Accept payments - OpenAI Commerce](oa-04.md) | OpenAI Developers | official | 2026-11-15 |
+| [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](pm-29.md) | Klarna and Adyen (Business Wire release on Klarna's investor site) | official | 2026-11-23 |
 | [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](ls-01.md) | Lightspark (via GlobeNewswire) | official | 2026-11-20 |
 | [Agent Accounts (Lightspark documentation)](ls-02.md) | Lightspark (documentation) | official | 2026-11-20 |
 | [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
@@ -146,8 +147,11 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [GitHub - Mastercard/developers-agent-toolkit](pm-21.md) | Mastercard (GitHub) | official | 2026-11-19 |
 | [Mastercard unveils new tools and collaborations to power smarter, safer agentic commerce](pm-22.md) | Mastercard | official | 2026-11-19 |
 | [Mastercard Open Finance US (Mastercard Developers documentation)](pm-24.md) | Mastercard Developers | official | 2026-11-19 |
+| [pay.sh](pm-33.md) | pay.sh | official | 2026-11-23 |
+| [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](so-01.md) | Solana Foundation | official | 2026-11-23 |
 | [MCP server quickstart guide \| PayPal Developer](pm-10.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent toolkit quickstart guide \| PayPal Developer](pm-11.md) | PayPal Developer | official | 2026-11-12 |
+| [Agent Ready overview \| PayPal Developer](pm-32.md) | PayPal Developer | official | 2026-11-23 |
 | [Rain Agent Vaults bring embedded payments to AI agents](rn-01.md) | Rain | official | 2026-11-15 |
 | [Rain Agent Vaults \| Embedded payments for AI agents](rn-02.md) | Rain | official | 2026-11-15 |
 | [Replit Agent can now buy for your business and help you reach customers](rp-01.md) | Replit | official | 2026-11-20 |
@@ -156,6 +160,10 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Shared payment tokens \| Stripe Documentation](pm-08.md) | Stripe Docs | official | 2026-11-12 |
 | [Model Context Protocol (MCP) \| Stripe Documentation](pm-09.md) | Stripe Docs | official | 2026-11-19 |
 | [Model Context Protocol (MCP) \| Stripe Documentation (Markdown version)](pm-18.md) | Stripe Docs | official | 2026-11-19 |
+| [Give your agents controlled access to analyze your data and move funds](pm-30.md) | Stripe | official | 2026-11-23 |
+| [Issuing for agents - Stripe Documentation](pm-31.md) | Stripe Docs | official | 2026-11-23 |
+| [Visa CLI docs: Introduction](pm-27.md) | Visa CLI docs (Visa Crypto Labs) | official | 2026-11-23 |
+| [Visa CLI docs: What's live today](pm-28.md) | Visa CLI docs (Visa Crypto Labs) | official | 2026-11-23 |
 | [Visa Developer Center](pm-01.md) | Visa Developer | official | 2026-11-12 |
 | [MCP docs \| Visa Developer](pm-02.md) | Visa Developer | official | 2026-11-12 |
 | [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide \| Visa](pm-04.md) | Visa | official | 2026-11-12 |
@@ -169,6 +177,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 
 | Source card | Publisher | Official or third-party | Retrieved |
 |---|---|---|---|
+| [Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence](fr-01.md) | Board of Governors of the Federal Reserve System | official | 2026-11-23 |
 | [Finances in ChatGPT (OpenAI Help Center)](oa-05.md) | OpenAI | official | 2026-11-18 |
 | [A new personal finance experience in ChatGPT (OpenAI)](oa-06.md) | OpenAI | official | 2026-11-18 |
 | [ChatGPT personal finance experience, powered by Plaid](pb-11.md) | Plaid | official | 2026-11-18 |
@@ -198,6 +207,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Dots privacy, security, and safety FAQs (OpenAI Help Center)](oa-07.md) | OpenAI | official | 2026-11-18 |
 | [Introducing dots (OpenAI)](oa-08.md) | OpenAI | official | 2026-11-18 |
 | [Getting started with your dot (OpenAI Help Center)](oa-09.md) | OpenAI | official | 2026-11-18 |
+| [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](cr-01.md) | Affirm and Consumer Reports | official | 2026-11-23 |
+| [GitHub - consumer-reports-innovation-lab/payment-choice-framework](cr-02.md) | Consumer Reports Innovation Lab (GitHub), with Affirm | official | 2026-11-23 |
 | [Plaid and Perplexity expand integration to power personalized financial insights](pb-12.md) | Plaid | official | 2026-11-18 |
 | [Perplexity brings Personal CFO to Europe with Plaid](pb-13.md) | Plaid | official | 2026-11-18 |
 | [Resources - MCP Server \| Plaid Docs](pb-02.md) | Plaid Docs | official | 2026-11-12 |
@@ -302,6 +313,12 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [MCP server - Kraken docs](kr-01.md) | Kraken | official | 2026-11-19 |
 | [kraken-cli - Kraken docs](kr-02.md) | Kraken | official | 2026-11-19 |
 | [GitHub - krakenfx/kraken-cli: Kraken CLI · GitHub](kr-03.md) | Kraken (GitHub) | official | 2026-11-19 |
+
+### Trading
+
+| Source card | Publisher | Official or third-party | Retrieved |
+|---|---|---|---|
+| [webull-openapi-mcp release 1.2.8](wb-11.md) | Webull (GitHub) | official | 2026-11-23 |
 
 <!-- /listing -->
 

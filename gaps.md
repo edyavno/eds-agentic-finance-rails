@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Gaps
@@ -50,6 +50,11 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Sardine Know Your Human.** No independent test, and no merchant or agent is named as using it.[^sd-01][^sd-02]
 - **Replit Agent purchases with Link and Visa.** Price, countries beyond the US, and whether Link's purchase protections apply.[^rp-01]
 - **BNY and Microsoft's Treasury bill negotiation.** The bill's tenor, size and price, the date of the trade itself, and any public specification for BNY's Agentic Negotiation Protocol.[^bn-01] See [Institutional markets](rails/institutional-markets.md).
+
+- **Visa CLI.** Invitation terms, fees, default spend limits, the exact MCP path, and whether live HTTP 402 payments use the [x402](payments/x402.md) protocol. The status docs tell merchants to test payment handling with an MPP server.[^pm-27][^pm-28] See [Visa CLI](payments/visa-cli.md).
+- **Klarna in Adyen Agentic checkout.** The URL of Klarna's open payment-handler specification, and the AI platforms where the checkout runs, are not in the announcement.[^pm-29] See [Payments](payments/README.md#klarna-in-adyen-agentic-checkout).
+- **Payment Choice Framework.** Affirm and Consumer Reports published a draft for review only, not for real-world use. Test results do not establish improved consumer outcomes or readiness for consumer use.[^cr-01][^cr-02] See [Personal money agents](personal-money/README.md#how-should-an-agent-choose-a-way-to-pay).
+- **Stripe Issuing for agents.** The product is in private preview. Access is by application or by contacting Stripe, and the pages cited are for business accounts, not consumers.[^pm-31] See [Stripe](payments/stripe.md#issuing-for-agents).
 
 ## Unknown fields by provider
 
@@ -107,6 +112,12 @@ These cards are prior art or competing directories. They are leads only: use the
 [^sd-02]: [Know Your Human (KYH) for Agentic Commerce - Sardine](sources/sd-02.md). Sardine, official, retrieved 2026-11-20.
 [^rp-01]: [Replit Agent can now buy for your business and help you reach customers](sources/rp-01.md). Replit, official, retrieved 2026-11-20.
 [^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
+[^pm-27]: [Visa CLI docs: Introduction](sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-28]: [Visa CLI docs: What's live today](sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-29]: [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](sources/pm-29.md). Klarna and Adyen (Business Wire release on Klarna's investor site), official, retrieved 2026-11-23.
+[^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
+[^cr-02]: [GitHub - consumer-reports-innovation-lab/payment-choice-framework](sources/cr-02.md). Consumer Reports Innovation Lab (GitHub), with Affirm, official, retrieved 2026-11-23.
+[^pm-31]: [Issuing for agents - Stripe Documentation](sources/pm-31.md). Stripe Docs, official, retrieved 2026-11-23.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

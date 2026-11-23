@@ -3,7 +3,7 @@ type: rail
 title: Mandates and data access
 summary: Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Mandates and data access
@@ -34,6 +34,11 @@ On 2026-11-19 the Monetary Authority of Singapore (MAS) spoke about who is respo
 - MAS says consumers and businesses need to keep meaningful control over the objectives, mandate and actions of their agents, and that autonomy has to be bounded.[^ma-01]
 - The text, date and participants of the Know Your Agent protocol, and the start date of the sandbox, are unknown.
 
+**Federal Reserve**, in a 16 November 2026 speech by Governor Michael S. Barr:
+
+- Barr said major banks now report finding AI agents attempting to take actions in retail customer accounts, without the bank being able to verify authenticity, consent, and alignment with customer instructions.[^fr-01]
+- He called for strict authentication, explicit consent verification for specific actions, and technical controls limiting agent capabilities.[^fr-01] The rest of the speech is about financial stability and is not used here.
+
 **Citi and Chase**, in their own user agreements:
 
 - Citi says that if a customer gives an outside AI agent their Online Credentials, Citi will consider the agent's access and actions authorized by the customer.[^ci-01]
@@ -54,6 +59,7 @@ Rules and risk are background here, not a focus. A January 27, 2026 FINRA blog, 
 [^pb-02]: [Resources - MCP Server - Plaid Docs](../sources/pb-02.md). Plaid Docs, official, retrieved 2026-11-12.
 [^pb-03]: [Meta's Muse is attacking one of economy's most profitable weak spots](../sources/pb-03.md). CNBC, third-party, retrieved 2026-11-12.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](../sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
+[^fr-01]: [Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence](../sources/fr-01.md). Board of Governors of the Federal Reserve System, official, retrieved 2026-11-23.
 [^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](../sources/ci-01.md). Citi, official, retrieved 2026-11-20.
 [^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](../sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
 [^id-05]: [Emerging Trend in GenAI: Observations on AI Agents](../sources/id-05.md). FINRA, official, retrieved 2026-11-12.

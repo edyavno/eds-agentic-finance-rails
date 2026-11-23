@@ -3,7 +3,7 @@ type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-23'
 ---
 
 # Agent payments
@@ -13,14 +13,18 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | Rail | What it is | Sources |
 |---|---|---|
 | [Visa Intelligent Commerce](../payments/visa-intelligent-commerce.md) | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
+| [Visa CLI](../payments/visa-cli.md) | After a US Visa card check, an agent gets a signing key, is listed in the [Visa Agent Directory](../glossary.md#visa-agent-directory), and can pay HTTP 402 requests in [OUSD](../glossary.md#ousd) within owner-set limits | [^pm-27][^pm-28] |
 | [Mastercard Agent Pay](../payments/mastercard-agent-pay.md) | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
 | [Mastercard Agent Pay for Machines](../payments/mastercard-agent-pay.md#what-is-agent-pay-for-machines) | Agents pay digital services within a business-set spending limit, signing a payment voucher; builds on x402; Early Access for developers | [^pm-23] |
 | [Mastercard Developers MCP](../payments/mastercard-agent-pay.md#does-mastercard-have-an-mcp-server) | Official MCP server for Mastercard's developer documentation; not a way to pay | [^pm-19][^pm-20] |
 | [Agentic Commerce Protocol (ACP)](../payments/agentic-commerce-protocol.md) | Open standard for buyers, their agents and businesses; the spec is maintained by OpenAI and Stripe | [^pm-07] |
 | [Stripe Shared Payment Tokens](../payments/stripe.md) | A scoped, expiring payment credential with usage limits for agent purchases | [^pm-08] |
+| [Stripe Treasury for agents](../payments/stripe.md#treasury-for-agents) | Business accounts only, in public preview: agents can read financial data and, within limits the business sets, transfer funds, convert currencies and pay vendors | [^pm-30] |
+| [PayPal Agent Ready](../payments/paypal.md#agent-ready) | Lets Braintree and PayPal merchants accept agent checkout on ChatGPT, Google AI Mode and Gemini over ACP or UCP | [^pm-32] |
 | [Stripe MCP](../payments/stripe.md#stripe-mcp-server) | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
 | [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
 | [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
+| [pay.sh](https://pay.sh/) | A client and gateway for x402 and MPP payments in stablecoins on Solana, launched 2026-05-05 by the Solana Foundation with Google Cloud | [^pm-33][^so-01] |
 | [Amazon Bedrock AgentCore payments](../payments/agentcore-payments.md) | AWS service for agents to pay over x402 and MPP within per-session budgets. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill | [^aw-01][^aw-03] |
 | [Lightspark Agent Accounts](../payments/lightspark-agent-accounts.md) | Accounts where an agent holds and spends money within limits and approvals the owner sets; pays Visa merchants with a card valid for one purchase | [^ls-01] |
 
@@ -66,14 +70,20 @@ The Agentic Mobile Protocol ([AMP](../glossary.md#agentic-mobile-protocol-amp)) 
 [^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
+[^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
+[^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
 [^pm-23]: [What happens when AI agents start paying each other? Watch Mastercard Agent Pay for Machines in action](../sources/pm-23.md). Mastercard, official, retrieved 2026-11-19.
 [^pm-19]: [Mastercard Developers Agent Toolkit](../sources/pm-19.md). Mastercard Developers, official, retrieved 2026-11-19.
 [^pm-20]: [Use the MCP SDK (Mastercard Developers Agent Toolkit FAQ)](../sources/pm-20.md). Mastercard Developers, official, retrieved 2026-11-19.
+[^pm-30]: [Give your agents controlled access to analyze your data and move funds](../sources/pm-30.md). Stripe, official, retrieved 2026-11-23.
+[^pm-32]: [Agent Ready overview - PayPal Developer](../sources/pm-32.md). PayPal Developer, official, retrieved 2026-11-23.
 [^pm-09]: [Model Context Protocol (MCP) - Stripe Documentation](../sources/pm-09.md). Stripe Docs, official, retrieved 2026-11-19.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
+[^pm-33]: [pay.sh](../sources/pm-33.md). pay.sh, official, retrieved 2026-11-23.
+[^so-01]: [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](../sources/so-01.md). Solana Foundation, official, retrieved 2026-11-23.
 [^aw-01]: [AWS Marketplace now supports agentic payments with AgentCore](../sources/aw-01.md). Amazon Web Services, official, retrieved 2026-11-20.
 [^aw-03]: [Amazon Bedrock AgentCore payments: Enable secure microtransaction payments for AI agents](../sources/aw-03.md). Amazon Web Services (AgentCore Developer Guide), official, retrieved 2026-11-20.
 [^ls-01]: [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](../sources/ls-01.md). Lightspark (via GlobeNewswire), official, retrieved 2026-11-20.
