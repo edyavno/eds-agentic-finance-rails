@@ -521,6 +521,105 @@
       ]
     },
     {
+      "id": "cashfree-wallet",
+      "section": "payment",
+      "title": "Cashfree Wallet",
+      "kind": "payment-mcp",
+      "page": "payments/cashfree-wallet.md",
+      "page_status": "current",
+      "last_verified": "2026-11-25",
+      "summary": "A prepaid wallet in India, in invite-only beta, that an AI agent can pay bills from through Cashfree's AgentPay MCP server. The user sets a budget and can revoke access; the agent never sees card, UPI or bank details.",
+      "operator": "Cashfree",
+      "agent_can": "Pay everyday bills such as electricity, water, mobile and broadband from the customer's Cashfree wallet through India's Bharat Bill Payment System, within limits the customer approved. Travel, food, groceries and shopping are coming soon",
+      "user_controls": "The user links the wallet with a mobile OTP, sets a budget (how much, how many payments, and how long consent lasts) or a monthly mandate, can revoke access at any time, and gets an alert for every payment. The agent never sees card, UPI or bank details",
+      "mcp_server": "yes",
+      "endpoint": "https://mcp.cashfree.com/agentpay/mcp",
+      "availability": "The consumer wallet is in invite-only beta. AgentPay MCP access and API keys are set up by Cashfree's sales team. The product pays Indian billers on BBPS",
+      "notes": "",
+      "field_sources": {
+        "operator": [
+          {
+            "id": "cf-01",
+            "url": "https://www.cashfree.com/cashfree-wallet/",
+            "authority": "official"
+          }
+        ],
+        "agent_can": [
+          {
+            "id": "cf-01",
+            "url": "https://www.cashfree.com/cashfree-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "cf-02",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/overview",
+            "authority": "official"
+          }
+        ],
+        "user_controls": [
+          {
+            "id": "cf-01",
+            "url": "https://www.cashfree.com/cashfree-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "cf-02",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/overview",
+            "authority": "official"
+          }
+        ],
+        "mcp_server": [
+          {
+            "id": "cf-02",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/overview",
+            "authority": "official"
+          },
+          {
+            "id": "cf-03",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/integration-guide",
+            "authority": "official"
+          }
+        ],
+        "endpoint": [
+          {
+            "id": "cf-03",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/integration-guide",
+            "authority": "official"
+          }
+        ],
+        "availability": [
+          {
+            "id": "cf-01",
+            "url": "https://www.cashfree.com/cashfree-wallet/",
+            "authority": "official"
+          },
+          {
+            "id": "cf-03",
+            "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/integration-guide",
+            "authority": "official"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cf-01",
+          "url": "https://www.cashfree.com/cashfree-wallet/",
+          "card": "sources/cf-01.md"
+        },
+        {
+          "id": "cf-02",
+          "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/overview",
+          "card": "sources/cf-02.md"
+        },
+        {
+          "id": "cf-03",
+          "url": "https://www.cashfree.com/docs/tools-ai/agentpay-mcp/integration-guide",
+          "card": "sources/cf-03.md"
+        }
+      ],
+      "unknown_fields": []
+    },
+    {
       "id": "chatgpt-wallet",
       "section": "payment",
       "title": "ChatGPT Wallet",
@@ -958,7 +1057,7 @@
       "kind": "payment-mcp",
       "page": "payments/paypal.md",
       "page_status": "current",
-      "last_verified": "2026-11-23",
+      "last_verified": "2026-11-25",
       "summary": "PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.",
       "operator": "PayPal",
       "agent_can": "Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes",
@@ -1041,6 +1140,11 @@
           "id": "pm-32",
           "url": "https://developer.paypal.com/agent-ready/overview",
           "card": "sources/pm-32.md"
+        },
+        {
+          "id": "pm-34",
+          "url": "https://www.paypalobjects.com/marketing/ua/OA/agentic-commerce-merchant-vc-tnc/en-US-112326.pdf",
+          "card": "sources/pm-34.md"
         }
       ],
       "unknown_fields": []
@@ -1417,7 +1521,7 @@
       "kind": "card-network-program",
       "page": "payments/visa-intelligent-commerce.md",
       "page_status": "current",
-      "last_verified": "2026-11-23",
+      "last_verified": "2026-11-25",
       "summary": "Visa's agent payments program: approved agent builders get tokenized Visa credentials, network-level controls and consumer-approved purchase instructions.",
       "operator": "Visa",
       "agent_can": "Buy things for a consumer with tokenized Visa credentials, under purchase instructions the consumer approved",
@@ -1474,6 +1578,11 @@
         ]
       },
       "sources": [
+        {
+          "id": "ak-01",
+          "url": "https://www.akamai.com/blog/security/make-holiday-shopping-agent-ready-visa-tap",
+          "card": "sources/ak-01.md"
+        },
         {
           "id": "ax-01",
           "url": "https://www.axs.com.sg/axs-enables-agentic-bill-payments-opening-its-bill-payment-network-to-ai-powered-partners/",
@@ -1903,14 +2012,14 @@
       "kind": "personal-agent",
       "page": "personal-money/gemini-google-wallet.md",
       "page_status": "current",
-      "last_verified": "2026-11-18",
+      "last_verified": "2026-11-25",
       "summary": "Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.",
       "operator": "Google",
-      "agent_can": "Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money",
-      "user_controls": "You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal",
+      "agent_can": "Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money. From 2026-11-23, Search AI Mode can also opt in to connect Wallet and read spending and card-benefit tips, still without moving, managing or investing money",
+      "user_controls": "You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal. For Search AI Mode, you opt in to connect Wallet to Personal Intelligence",
       "mcp_server": "unknown",
       "endpoint": "unknown",
-      "availability": "Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually",
+      "availability": "Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually. From 2026-11-23, users can opt in to connect Google Wallet to Personal Intelligence in Search AI Mode; the countries for that rollout are unknown",
       "notes": "",
       "field_sources": {
         "operator": [
@@ -1935,6 +2044,11 @@
             "id": "pb-08",
             "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
             "authority": "official"
+          },
+          {
+            "id": "gg-03",
+            "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+            "authority": "official"
           }
         ],
         "user_controls": [
@@ -1952,6 +2066,11 @@
             "id": "pb-08",
             "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
             "authority": "official"
+          },
+          {
+            "id": "gg-03",
+            "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+            "authority": "official"
           }
         ],
         "availability": [
@@ -1963,6 +2082,11 @@
           {
             "id": "gg-02",
             "url": "https://support.google.com/gemini/answer/18112192?hl=en",
+            "authority": "official"
+          },
+          {
+            "id": "gg-03",
+            "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
             "authority": "official"
           }
         ]
@@ -1977,6 +2101,11 @@
           "id": "gg-02",
           "url": "https://support.google.com/gemini/answer/18112192?hl=en",
           "card": "sources/gg-02.md"
+        },
+        {
+          "id": "gg-03",
+          "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+          "card": "sources/gg-03.md"
         },
         {
           "id": "pb-08",
@@ -2260,14 +2389,14 @@
       "kind": "personal-agent",
       "page": "personal-money/meta-muse.md",
       "page_status": "current",
-      "last_verified": "2026-11-22",
+      "last_verified": "2026-11-25",
       "summary": "Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.",
       "operator": "Meta",
-      "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store",
-      "user_controls": "You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal. Muse always asks for your approval before completing a purchase, and you can disconnect a Connector at any time in Settings",
+      "agent_can": "Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store. From 2026-11-24, shop Walmart through the Walmart Agent Gateway, shop Gopuff once you approve the order, and shop JD Sports in the UK",
+      "user_controls": "You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal. Muse always asks for your approval before completing a purchase, and you can disconnect a Connector at any time in Settings. On Walmart, you set an Agent Profile spending limit and approve purchases",
       "mcp_server": "unknown",
       "endpoint": "unknown",
-      "availability": "Launched 2026-09-08 with Plaid-powered account connections in its finance features",
+      "availability": "Launched 2026-09-08 with Plaid-powered account connections in its finance features. From 2026-11-24 it can shop Walmart through the Walmart Agent Gateway, and JD Sports says Muse launched in the UK that day for people aged 18 or over",
       "notes": "",
       "field_sources": {
         "operator": [
@@ -2292,6 +2421,21 @@
             "id": "mm-01",
             "url": "https://www.meta.com/help/superintelligence/1436362127544482/",
             "authority": "official"
+          },
+          {
+            "id": "wm-01",
+            "url": "https://corporate.walmart.com/news/2026/11/black-friday-deals-with-meta-muse",
+            "authority": "official"
+          },
+          {
+            "id": "gp-01",
+            "url": "https://www.gopuff.com/newsroom/company-news/now-muse-can-do-the-grocery-run-with-gopuff-delivering-in-minutes",
+            "authority": "official"
+          },
+          {
+            "id": "jd-01",
+            "url": "https://www.jdplc.com/jd-partners-with-meta-as-it-launches-muse-in-uk/",
+            "authority": "official"
           }
         ],
         "user_controls": [
@@ -2309,12 +2453,42 @@
             "id": "mm-02",
             "url": "https://www.meta.com/help/superintelligence/1687253048996149/",
             "authority": "official"
+          },
+          {
+            "id": "wm-01",
+            "url": "https://corporate.walmart.com/news/2026/11/black-friday-deals-with-meta-muse",
+            "authority": "official"
+          },
+          {
+            "id": "wm-02",
+            "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+            "authority": "official"
+          },
+          {
+            "id": "gp-01",
+            "url": "https://www.gopuff.com/newsroom/company-news/now-muse-can-do-the-grocery-run-with-gopuff-delivering-in-minutes",
+            "authority": "official"
+          },
+          {
+            "id": "jd-01",
+            "url": "https://www.jdplc.com/jd-partners-with-meta-as-it-launches-muse-in-uk/",
+            "authority": "official"
           }
         ],
         "availability": [
           {
             "id": "pb-01",
             "url": "https://plaid.com/blog/meta-muse/",
+            "authority": "official"
+          },
+          {
+            "id": "wm-01",
+            "url": "https://corporate.walmart.com/news/2026/11/black-friday-deals-with-meta-muse",
+            "authority": "official"
+          },
+          {
+            "id": "jd-01",
+            "url": "https://www.jdplc.com/jd-partners-with-meta-as-it-launches-muse-in-uk/",
             "authority": "official"
           }
         ]
@@ -2324,6 +2498,16 @@
           "id": "bl-01",
           "url": "https://www.cnbc.com/2026/10/13/jpmorgan-ai-agents-account-access.html",
           "card": "sources/bl-01.md"
+        },
+        {
+          "id": "gp-01",
+          "url": "https://www.gopuff.com/newsroom/company-news/now-muse-can-do-the-grocery-run-with-gopuff-delivering-in-minutes",
+          "card": "sources/gp-01.md"
+        },
+        {
+          "id": "jd-01",
+          "url": "https://www.jdplc.com/jd-partners-with-meta-as-it-launches-muse-in-uk/",
+          "card": "sources/jd-01.md"
         },
         {
           "id": "mm-01",
@@ -2364,6 +2548,16 @@
           "id": "sp-04",
           "url": "https://x.com/ernietedeschi/status/2123852064027471901",
           "card": "sources/sp-04.md"
+        },
+        {
+          "id": "wm-01",
+          "url": "https://corporate.walmart.com/news/2026/11/black-friday-deals-with-meta-muse",
+          "card": "sources/wm-01.md"
+        },
+        {
+          "id": "wm-02",
+          "url": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+          "card": "sources/wm-02.md"
         }
       ],
       "unknown_fields": [

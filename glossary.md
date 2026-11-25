@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 ---
 
 # Glossary
@@ -21,6 +21,14 @@ Agent2Agent. An open protocol for AI agents to talk to and hand tasks to other a
 ## Agent Detection
 
 A service that tells a bank or merchant whether a session is a person or an AI agent, and which AI provider the agent belongs to, by looking at signals such as device, behavior and network. It detects an agent; it does not prove who the agent is.
+
+## Agent Gateway (Walmart)
+
+Walmart's connection point for shopping agents. An agent, such as Meta's [Muse](personal-money/meta-muse.md), passes a shopping list to Walmart through the gateway rather than browsing the site as a person would.[^wm-01][^wm-02]
+
+## Agent Profile
+
+Walmart's term for the settings a shopper creates in their Walmart account the first time an agent adds an item to the cart. The shopper can set a spending limit, approve purchases, check which purchases the agent made, and delete the profile.[^wm-01][^wm-02]
 
 ## Agent skill
 
@@ -46,6 +54,10 @@ Visa's program for testing agent-initiated payments. Card issuers joined first, 
 
 A [payment token](#payment-token) from Visa or Mastercard made for AI agents. It hides the card number and can carry extra data, such as what the shopper wants bought, a spending limit and whether the agent is trusted.
 
+## Agentic VC
+
+PayPal's term for a one-time [virtual card](#virtual-card) it uses to settle a PayPal payment to a merchant when a buyer pays with PayPal through an agent commerce service. The merchant must show the payment method as "PayPal", and these payments are not eligible under PayPal's Seller Protection program.[^pm-34]
+
 ## AI Partition
 
 A separately funded slice of an account reserved for an agent, so the rest of the account stays out of reach.
@@ -61,6 +73,10 @@ A secret string a program uses to prove it is allowed to call a service.
 ## Approval model
 
 The rule for who or what has to say yes before an agent's order or payment goes through: a person, the provider, limits set in advance, or no one. This wiki sorts brokers into five [approval models](approval-models/README.md).
+
+## BBPS
+
+India's Bharat Bill Payment System, the bill payment network that connects most Indian billers. [Cashfree Wallet](payments/cashfree-wallet.md) pays everyday bills through BBPS.[^cf-02]
 
 ## Bearer token
 
@@ -292,8 +308,12 @@ A protocol for paying for a resource as part of a web request, often used so an 
 
 ## Sources
 
+[^wm-01]: [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](sources/wm-01.md). Walmart, official, retrieved 2026-11-25.
+[^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
 [^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
 [^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
+[^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
+[^cf-02]: [AgentPay MCP](sources/cf-02.md). Cashfree, official, retrieved 2026-11-25.
 [^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
 [^aa-01]: [Aave MCP](sources/aa-01.md). Aave, official, retrieved 2026-11-23.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.

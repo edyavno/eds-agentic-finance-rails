@@ -132,6 +132,9 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](bn-01.md) | BNY | official | 2026-11-20 |
 | [Trusted intelligence in banking, insurance, and capital markets: Six firms show how](mi-01.md) | Microsoft (Microsoft Cloud Blog) | official | 2026-11-20 |
 | [Microsoft Ignite 2026: Empowering human ambition, intelligence and trust](mi-02.md) | Microsoft (Microsoft Source) | official | 2026-11-20 |
+| [Cashfree Wallet](cf-01.md) | Cashfree | official | 2026-11-25 |
+| [AgentPay MCP](cf-02.md) | Cashfree | official | 2026-11-25 |
+| [AgentPay MCP Integration Guide](cf-03.md) | Cashfree | official | 2026-11-25 |
 | [Introducing ChatGPT Wallet](oa-01.md) | OpenAI | official | 2026-11-15 |
 | [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-19 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
@@ -159,6 +162,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [MCP server quickstart guide \| PayPal Developer](pm-10.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent toolkit quickstart guide \| PayPal Developer](pm-11.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent Ready overview \| PayPal Developer](pm-32.md) | PayPal Developer | official | 2026-11-23 |
+| [PayPal Agentic Commerce Merchant Virtual Card Terms](pm-34.md) | PayPal | official | 2026-11-25 |
 | [Rain Agent Vaults bring embedded payments to AI agents](rn-01.md) | Rain | official | 2026-11-15 |
 | [Rain Agent Vaults \| Embedded payments for AI agents](rn-02.md) | Rain | official | 2026-11-15 |
 | [Replit Agent can now buy for your business and help you reach customers](rp-01.md) | Replit | official | 2026-11-20 |
@@ -177,6 +181,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](pm-16.md) | Visa | official | 2026-11-18 |
 | [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](pm-25.md) | Visa (Visa UK newsroom) | official | 2026-11-20 |
 | [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](pm-26.md) | Visa | official | 2026-11-20 |
+| [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](wm-01.md) | Walmart | official | 2026-11-25 |
+| [Making It Possible for Agents to Shop on Behalf of Customers](wm-02.md) | Walmart | official | 2026-11-25 |
 | [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](pm-14.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
 | [x402 specification v2](pm-15.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
 
@@ -196,6 +202,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Connect Google Wallet to Gemini for personal finance insights](gg-01.md) | Google | official | 2026-11-18 |
 | [Get info & personalized insights from Google Wallet with Gemini Apps](gg-02.md) | Google Gemini Apps Help | official | 2026-11-18 |
 | [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](pb-08.md) | Plaid | official | 2026-11-18 |
+| [A more tailored Google Search that’s uniquely yours](gg-03.md) | Google | official | 2026-11-25 |
 | [Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post)](gb-01.md) | Grok Bot (@bot on X) | official | 2026-11-18 |
 | [Finance plugin README (cursor/plugins, third_party/finance)](gb-02.md) | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [Vault and secure sign-in (Grok Bot docs)](gb-03.md) | xAI Docs | official | 2026-11-18 |
@@ -203,6 +210,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Grok Bot changelog](gb-05.md) | xAI | official | 2026-11-18 |
 | [Instinct gets the full financial picture with Plaid](pb-09.md) | Plaid | official | 2026-11-18 |
 | [JPMorganChase and Plaid announce an extension to their data access agreement](jp-01.md) | JPMorganChase | official | 2026-11-18 |
+| [Now Muse Can Do the Grocery Run, With Gopuff Delivering in Minutes](gp-01.md) | Gopuff | official | 2026-11-25 |
+| [JD partners with Meta as it launches Muse in UK](jd-01.md) | JD Sports Fashion plc | official | 2026-11-25 |
 | [How Muse works with payments (Meta Help Center)](mm-01.md) | Meta | official | 2026-11-18 |
 | [How Muse works with Connectors (Meta Help Center)](mm-02.md) | Meta | official | 2026-11-18 |
 | [Introducing Muse (Meta newsroom)](mm-03.md) | Meta | official | 2026-11-18 |
@@ -320,6 +329,14 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [MCP server - Kraken docs](kr-01.md) | Kraken | official | 2026-11-19 |
 | [kraken-cli - Kraken docs](kr-02.md) | Kraken | official | 2026-11-19 |
 | [GitHub - krakenfx/kraken-cli: Kraken CLI · GitHub](kr-03.md) | Kraken (GitHub) | official | 2026-11-19 |
+
+### Rails
+
+| Source card | Publisher | Official or third-party | Retrieved |
+|---|---|---|---|
+| [Our approach to Agentic AI](fc-01.md) | Financial Conduct Authority | official | 2026-11-25 |
+| [Using AI agents](fc-02.md) | Financial Conduct Authority | official | 2026-11-25 |
+| [Make Holiday Shopping Agent-Ready with Visa TAP](ak-01.md) | Akamai | official | 2026-11-25 |
 
 ### Trading
 

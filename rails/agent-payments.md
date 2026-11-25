@@ -3,7 +3,7 @@ type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 ---
 
 # Agent payments
@@ -24,6 +24,7 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | [Stripe MCP](../payments/stripe.md#stripe-mcp-server) | Official Stripe MCP server for API actions and knowledge search, at `https://mcp.stripe.com`, with OAuth or agent API keys | [^pm-09] |
 | [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
 | [Aave MCP](../payments/aave-mcp.md) | Official MCP for Aave V3 and V4 markets and positions; the agent prepares unsigned transactions, and the user's wallet signs every state change | [^aa-01][^aa-03][^aa-04] |
+| [Cashfree Wallet](../payments/cashfree-wallet.md) | A wallet in India whose AgentPay MCP server pays everyday bills through [BBPS](../glossary.md#bbps), within a budget or mandate the user approved | [^cf-01][^cf-02][^cf-03] |
 | [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 | [pay.sh](https://pay.sh/) | A client and gateway for x402 and MPP payments in stablecoins on Solana, launched 2026-05-05 by the Solana Foundation with Google Cloud | [^pm-33][^so-01] |
 | [Amazon Bedrock AgentCore payments](../payments/agentcore-payments.md) | AWS service for agents to pay over x402 and MPP within per-session budgets. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill | [^aw-01][^aw-03] |
@@ -50,6 +51,8 @@ In Singapore, AXS has opened its bill payment network to AI agents. AXS says it 
 - Singapore's regulator says it will build on SAFR with a Know Your Agent protocol. See [Mandates and data access](mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).[^ma-01]
 - AXS also says HSBC and Green Link Digital Bank are collaborating with it through the Monetary Authority of Singapore's PathFin.ai initiative. It says it is exploring with Green Link Digital Bank how agents can help business customers manage and pay bills.[^ax-01]
 - The consumer launch date, the MCP address and the full list of agents that can use it are unknown.
+
+In India, [Cashfree Wallet](../payments/cashfree-wallet.md) lets an agent pay everyday bills through India's [Bharat Bill Payment System (BBPS)](../glossary.md#bbps). The AgentPay MCP server is at `https://mcp.cashfree.com/agentpay/mcp`. The consumer wallet is in invite-only beta. The user sets a budget or approves a monthly mandate, can revoke access, and the agent never sees card, UPI or bank details. Travel, food, groceries and shopping are listed as coming soon. Fees, the launch date and numeric limits are unknown.[^cf-01][^cf-02][^cf-03]
 
 ## Is there an agent payment protocol for mobile wallets?
 
@@ -85,6 +88,9 @@ The Agentic Mobile Protocol ([AMP](../glossary.md#agentic-mobile-protocol-amp)) 
 [^aa-01]: [Aave MCP](../sources/aa-01.md). Aave, official, retrieved 2026-11-23.
 [^aa-03]: [Aave MCP llms.txt](../sources/aa-03.md). Aave, official, retrieved 2026-11-23.
 [^aa-04]: [Aave MCP Safety](../sources/aa-04.md). Aave, official, retrieved 2026-11-23.
+[^cf-01]: [Cashfree Wallet](../sources/cf-01.md). Cashfree, official, retrieved 2026-11-25.
+[^cf-02]: [AgentPay MCP](../sources/cf-02.md). Cashfree, official, retrieved 2026-11-25.
+[^cf-03]: [AgentPay MCP Integration Guide](../sources/cf-03.md). Cashfree, official, retrieved 2026-11-25.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-33]: [pay.sh](../sources/pm-33.md). pay.sh, official, retrieved 2026-11-23.
 [^so-01]: [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](../sources/so-01.md). Solana Foundation, official, retrieved 2026-11-23.

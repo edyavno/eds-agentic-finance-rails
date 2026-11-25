@@ -3,7 +3,7 @@ type: rail
 title: Agent identity
 summary: How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 ---
 
 # Agent identity
@@ -15,6 +15,7 @@ Agents can prove who they are to websites and merchants by signing their web req
 | Web Bot Auth | IETF draft using HTTP Message Signatures for automated traffic | [^id-01] |
 | Cloudflare signed agents | Verification of Web Bot Auth signatures for bots and agents | [^id-02][^id-03] |
 | [Trusted Agent Protocol](../glossary.md#trusted-agent-protocol-tap) (Visa) | Agent identity to merchants via HTTP Message Signatures | [^pm-03] |
+| Akamai and Visa TAP | Akamai's blog says agents registered with Visa TAP are identified in Akamai's bot directory, and that Akamai verifies TAP signatures at the edge against credentials tied to Visa's agent directory. These are Akamai's own claims | [^ak-01] |
 | [Visa Agent Directory](../glossary.md#visa-agent-directory) / [Visa CLI](../payments/visa-cli.md) | Visa CLI, a Visa Crypto Labs product, registers a newly connected agent's signing key in the Visa Agent Directory after the owner passes a US Visa card check. Since 2026-11-18, new agents are listed in the production directory | [^pm-27][^pm-28] |
 | Mastercard Agent Pay | Uses Web Bot Auth at the CDN to verify agents | [^pm-06] |
 | Plaid Agent Detection | A financial company's check on whether a session is a person or an AI agent, and which AI provider, from device, behavior, automation and network signals. It detects agents rather than verifying a signed identity | [^pb-06] |
@@ -49,6 +50,8 @@ ERC-8004 says payments are orthogonal to the protocol and not covered here, but 
 
 Sardine says a shopping agent usually shops through a cloud browser in a data center, so a merchant sees a data center IP address and a headless browser. Sardine says these are signals often seen in card testing or credential stuffing attacks.[^sd-01] Sardine's [Know Your Human](../glossary.md#know-your-human-kyh) is its answer: it captures signals from the customer's own device and ties them to the agent's session.[^sd-01] Sardine says the agent passes a few extra HTTP headers to the merchant, which uses Sardine to retrieve the customer's device and IP signals.[^sd-02] These are Sardine's claims about its own product. See [Merchants and outside agents](../payments/merchants-and-outside-agents.md#what-does-sardine-say-about-agent-checkouts).
 
+Akamai's blog says it verifies Visa TAP signatures at the edge, so a merchant can let a verified agent browse a catalog while checkout, login or account changes follow stricter rules. These are Akamai's own claims.[^ak-01]
+
 ## How do agents from different firms identify each other?
 
 BNY says its [Agentic Negotiation Protocol](../glossary.md#agentic-negotiation-protocol-anp) verifies participants and allows them to connect securely, so the agents can exchange offers and counteroffers.[^bn-01] See [Institutional markets](institutional-markets.md).
@@ -62,6 +65,7 @@ BNY says its [Agentic Negotiation Protocol](../glossary.md#agentic-negotiation-p
 [^id-07]: [ERC-8004: Trustless Agents](../sources/id-07.md). Ethereum Improvement Proposals, official, retrieved 2026-11-14.
 [^id-02]: [Web Bot Auth · Cloudflare bot solutions docs](../sources/id-02.md). Cloudflare Docs, official, retrieved 2026-11-12.
 [^id-03]: [The age of agents: cryptographically recognizing agent traffic - Cloudflare Blog](../sources/id-03.md). Cloudflare Blog, official, retrieved 2026-11-12.
+[^ak-01]: [Make Holiday Shopping Agent-Ready with Visa TAP](../sources/ak-01.md). Akamai, official, retrieved 2026-11-25.
 [^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.

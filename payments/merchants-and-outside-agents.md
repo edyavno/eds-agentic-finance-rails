@@ -3,7 +3,7 @@ type: payment
 title: Merchants and outside agents
 summary: Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-25'
 ---
 
 # Merchants and outside agents
@@ -16,6 +16,7 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 - **United Airlines** bans the use of AI agents to make, change or service a ticket, or to buy any product, and restricts agents through travel agencies and aggregators too.[^ua-01][^ua-02]
 - **Target** allows only agents on its Approved Agents list, currently its own AI Shopping Assistant, OAI, Google and Microsoft, and prohibits all other agentic commerce tools.[^tg-01]
 - **Booking.com** bars automated assistants, including AI-powered assistants, from its platform without its prior express written permission, and does not authorize them to make bookings.[^bk-01]
+- **Walmart** runs its own [Agent Gateway](../glossary.md#agent-gateway-walmart). From 2026-11-24, Meta's [Muse](../personal-money/meta-muse.md) can shop Walmart through it, under an [Agent Profile](../glossary.md#agent-profile) the shopper sets in their Walmart account, including a spending limit and purchase approvals.[^wm-01][^wm-02]
 - Payment programs are trying to make agents easier to accept. OpenAI warns that some sites may block agent purchases by accident, and asks merchants to recognize signed agent requests with [Web Bot Auth](../glossary.md#web-bot-auth).[^oa-01]
 - Sardine, a fraud-prevention company, says merchants decline legitimate agent purchases because agents look like bots, and proposes Know Your Human to fix it. These are Sardine's own claims.[^sd-01] See [Sardine below](#what-does-sardine-say-about-agent-checkouts).
 
@@ -32,6 +33,7 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
   - An Approved Agent may sign in, create or change carts, place orders and start returns, subject to limits you approve. Actions within those permissions are treated as authorized by you, and you are responsible for reviewing the agent's activity.[^tg-01]
   - Target can suspend or revoke a third-party agent's access, for example for suspected fraud, misuse or security concerns, and you can revoke access in your Target profile settings.[^tg-01]
 - **Booking.com.** Its Customer terms of service, which the page marks as updated 2025-08-25, bar anyone from accessing or scraping the platform with robots or other automated means, "or automated assistants", including AI-powered assistants that work through your browser, without Booking.com's prior, express written permission. Booking.com says it does not authorize automated assistants to make bookings or reservations. It also says it will block anyone it suspects of using automated assistants, including AI-powered assistants, without express permission.[^bk-01]
+- **Walmart.** From 2026-11-24, [Muse](../personal-money/meta-muse.md) can shop Walmart through the [Walmart Agent Gateway](../glossary.md#agent-gateway-walmart). The shopper sets up an [Agent Profile](../glossary.md#agent-profile) in their Walmart account, including a spending limit, and can approve purchases and check which purchases the agent made. Checkout uses a card saved in the Walmart account. Walmart's 2026-10-21 announcement said customers must approve agent purchases by default, that Walmart may require additional approvals even within the spending limit, that an Agent Profile can be deleted at any time, and that agents do not receive payment-card information. Which other agents can use the Gateway, and the default spending-limit figures, are unknown.[^wm-01][^wm-02]
 
 ## Why merchants say they restrict agents
 
@@ -43,6 +45,8 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 ## What do merchants say about agent virtual cards?
 
 When an agent pays through Stripe's [Link wallet](link-wallet-for-agents.md) with a one-time [virtual card](../glossary.md#virtual-card), the merchant is paid by that card, not by the shopper's own. The Wall Street Journal reported on 2026-11-13, citing people familiar with the matter, that merchants are complaining to Visa and Mastercard that the virtual card costs more on average to accept, because it is classified as a commercial card rather than a consumer card. It also reported that the temporary cards have made returns harder to process, according to some merchant executives.[^bl-12][^bl-13] These are third-party reports. How large the extra cost is, and whether Visa or Mastercard have responded, is unknown.
+
+PayPal's Agentic Commerce Merchant Virtual Card Terms, last updated 2026-11-23, describe what happens when a buyer pays with PayPal through an agent commerce service and PayPal settles to the merchant with a one-time virtual card (an [Agentic VC](../glossary.md#agentic-vc)). The merchant is responsible for the card-processor fees on that card, must refund to the same Agentic VC, and must show the buyer's payment method as "PayPal". These payments are not eligible under PayPal's Seller Protection program; disputes go through the card network's chargeback process. Which agent services trigger an Agentic VC is not listed in the terms, so it is unknown.[^pm-34] See [PayPal](paypal.md#agentic-vc-merchant-virtual-card-terms).
 
 ## What does Sardine say about agent checkouts?
 
@@ -75,10 +79,13 @@ How these merchants detect agents, whether eBay, United or Booking.com grant per
 [^ua-02]: [Unauthorized third-party AI agents or assistants - United Airlines](../sources/ua-02.md). United Airlines, official, retrieved 2026-11-15.
 [^tg-01]: [Terms & Conditions : Target](../sources/tg-01.md). Target, official, retrieved 2026-11-18.
 [^bk-01]: [Booking.com: Terms and Conditions (Customer terms of service)](../sources/bk-01.md). Booking.com, official, retrieved 2026-11-18.
+[^wm-01]: [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](../sources/wm-01.md). Walmart, official, retrieved 2026-11-25.
+[^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](../sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^sd-01]: [Know Your Human (KYH): Fraud prevention for agentic commerce](../sources/sd-01.md). Sardine, official, retrieved 2026-11-20.
 [^bl-12]: [AI bots are using credit cards. Banks are racing to keep up. (The Wall Street Journal, via Mint)](../sources/bl-12.md). The Wall Street Journal (syndicated on Mint), third-party, retrieved 2026-11-19.
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
+[^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](../sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
 [^sd-02]: [Know Your Human (KYH) for Agentic Commerce - Sardine](../sources/sd-02.md). Sardine, official, retrieved 2026-11-20.
 
 ---

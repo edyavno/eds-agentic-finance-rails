@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 ---
 
 # Gaps
@@ -57,6 +57,12 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Stripe Issuing for agents.** The product is in private preview. Access is by application or by contacting Stripe, and the pages cited are for business accounts, not consumers.[^pm-31] See [Stripe](payments/stripe.md#issuing-for-agents).
 
 - **Aave MCP.** Fees, numeric rate limits, audits of the MCP server, and usage numbers are not in the pages cited. The docs say clients should handle 401 and 429 responses, but they give no figures.[^aa-02] See [Aave MCP](payments/aave-mcp.md).
+- **Walmart Agent Gateway.** Which other agents besides [Muse](personal-money/meta-muse.md) can use it, and the default spending-limit figures, are not in the pages cited.[^wm-01][^wm-02]
+- **Cashfree Wallet.** Fees, the launch date, any particular wallet licence, and numeric rate limits are not in the pages cited.[^cf-01][^cf-03] See [Cashfree Wallet](payments/cashfree-wallet.md).
+- **PayPal Agentic VC.** Which agent commerce services trigger settlement by an Agentic VC is determined by PayPal and is not listed in the merchant terms.[^pm-34] See [PayPal](payments/paypal.md#agentic-vc-merchant-virtual-card-terms).
+- **Google Search AI Mode and Wallet.** The 2026-11-23 blog post does not name the countries where the opt-in Wallet connection is available.[^gg-03] See [Gemini with Google Wallet](personal-money/gemini-google-wallet.md#what-about-search-ai-mode).
+- **FCA agentic AI pages.** A linked Digital Regulation Cooperation Forum joint statement PDF was not opened for this wiki.[^fc-01]
+- **Akamai and Visa TAP.** The account of edge verification is Akamai's own blog, not a Visa source.[^ak-01] See [Agent identity](rails/agent-identity.md).
 
 ## Unknown fields by provider
 
@@ -121,6 +127,14 @@ These cards are prior art or competing directories. They are leads only: use the
 [^cr-02]: [GitHub - consumer-reports-innovation-lab/payment-choice-framework](sources/cr-02.md). Consumer Reports Innovation Lab (GitHub), with Affirm, official, retrieved 2026-11-23.
 [^pm-31]: [Issuing for agents - Stripe Documentation](sources/pm-31.md). Stripe Docs, official, retrieved 2026-11-23.
 [^aa-02]: [Get Started with Aave MCP](sources/aa-02.md). Aave, official, retrieved 2026-11-23.
+[^wm-01]: [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](sources/wm-01.md). Walmart, official, retrieved 2026-11-25.
+[^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
+[^cf-01]: [Cashfree Wallet](sources/cf-01.md). Cashfree, official, retrieved 2026-11-25.
+[^cf-03]: [AgentPay MCP Integration Guide](sources/cf-03.md). Cashfree, official, retrieved 2026-11-25.
+[^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
+[^gg-03]: [A more tailored Google Search that’s uniquely yours](sources/gg-03.md). Google, official, retrieved 2026-11-25.
+[^fc-01]: [Our approach to Agentic AI](sources/fc-01.md). Financial Conduct Authority, official, retrieved 2026-11-25.
+[^ak-01]: [Make Holiday Shopping Agent-Ready with Visa TAP](sources/ak-01.md). Akamai, official, retrieved 2026-11-25.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

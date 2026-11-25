@@ -4,14 +4,14 @@ id: meta-muse
 title: Meta Muse
 summary: Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
 page_status: current
-last_verified: '2026-11-22'
+last_verified: '2026-11-25'
 kind: personal-agent
 operator: Meta
-agent_can: Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store
-user_controls: You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal. Muse always asks for your approval before completing a purchase, and you can disconnect a Connector at any time in Settings
+agent_can: Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store. From 2026-11-24, shop Walmart through the Walmart Agent Gateway, shop Gopuff once you approve the order, and shop JD Sports in the UK
+user_controls: You choose whether to connect accounts, and you can manage Plaid-powered connections in Plaid Portal. Muse always asks for your approval before completing a purchase, and you can disconnect a Connector at any time in Settings. On Walmart, you set an Agent Profile spending limit and approve purchases
 mcp_server: unknown
 endpoint: unknown
-availability: Launched 2026-09-08 with Plaid-powered account connections in its finance features
+availability: Launched 2026-09-08 with Plaid-powered account connections in its finance features. From 2026-11-24 it can shop Walmart through the Walmart Agent Gateway, and JD Sports says Muse launched in the UK that day for people aged 18 or over
 field_sources:
   operator:
   - pb-01
@@ -19,12 +19,21 @@ field_sources:
   agent_can:
   - pb-01
   - mm-01
+  - wm-01
+  - gp-01
+  - jd-01
   user_controls:
   - pb-01
   - mm-01
   - mm-02
+  - wm-01
+  - wm-02
+  - gp-01
+  - jd-01
   availability:
   - pb-01
+  - wm-01
+  - jd-01
 ---
 
 # Meta Muse
@@ -44,11 +53,19 @@ Muse is Meta's personal AI agent. It launched on 2026-09-08 with Plaid-powered a
 - **A saved card.** Muse can also log in with credentials saved in its Secure Credential Store and pay with a saved credit card. Meta says you are responsible for all transactions Muse makes on your behalf.[^mm-01]
 - **Bank accounts.** Meta's payments help page names only Link by Stripe and a saved credit card. It does not say Muse can pay from a bank account.[^mm-01]
 
+## Where can Muse shop?
+
+- **Walmart.** From 2026-11-24, customers can shop Walmart through Muse via the [Walmart Agent Gateway](../glossary.md#agent-gateway-walmart). Muse passes the shopping list, and you set up an [Agent Profile](../glossary.md#agent-profile) the first time you add an item to your cart, inside your Walmart account, including a spending limit. You can set spending limits, approve purchases and check which purchases were made by the agent. Checkout uses a card saved in the Walmart account, and Walmart's return policy still applies.[^wm-01]
+- Walmart's 2026-10-21 announcement of the Agent Gateway said customers must approve agent purchases by default, that Walmart may require additional approvals even for purchases within the spending limit, that you can delete an Agent Profile at any time, and that agents do not receive payment-card information and cannot add or change a customer's payment methods. Those are the published control rules from October. The 2026-11-24 article is the source for Muse being live.[^wm-02][^wm-01]
+- **Gopuff.** Gopuff said on 2026-11-24 that Muse can find items at the nearest Gopuff, build an order, and check out once you approve. Before anything is purchased, Muse shows what is in stock and when it will arrive, then asks for approval.[^gp-01]
+- **JD Sports.** JD Sports Fashion plc said on 2026-11-24 that it is a UK launch connector partner for Muse. Through the connector, customers can discover, compare and purchase JD products in Muse. JD says users are in full control, with Muse checking before it spends, sends or shares. It says Muse is available to anyone aged 18 and over in the UK from that day on iOS, Android and muse.ai, and is coming to Meta's AI glasses in the months ahead.[^jd-01]
+
 ## What you control
 
 - You choose whether to connect an account, and you can manage Plaid-powered connections in Plaid Portal.[^pb-01] [How a Plaid connection works](plaid.md#how-does-a-plaid-connection-work) and [what you can do in Plaid Portal](plaid.md#what-can-you-control-in-plaid-portal) explain the steps.
 - Muse checks with you before sensitive actions such as sending an email or making a purchase, and shows an audit trail of what it has done and plans to do.[^mm-03]
 - By default Muse will not take many important actions without your approval, and you can disconnect a Connector at any time in Settings. Information Muse already used may remain in its memories and your conversation history.[^mm-02]
+- On Walmart, you set a spending limit in your Agent Profile, approve purchases, and can delete the profile at any time.[^wm-01][^wm-02]
 
 ## How banks reacted (news reports)
 
@@ -59,7 +76,7 @@ More on this: [Banks and outside agents](banks-and-outside-agents.md).
 
 ## Unknown
 
-Whether Muse can pay bills or send money from a bank account (Meta's payments page names only Link by Stripe and a saved credit card), and whether it has an official MCP server or other developer access. No cited source confirms it, so the wiki says unknown. Meta's Connectors help page does not name a financial or Plaid connector, so how Muse's Plaid connection appears in Settings is also unknown.
+Whether Muse can pay bills or send money from a bank account (Meta's payments page names only Link by Stripe and a saved credit card), and whether it has an official MCP server or other developer access. No cited source confirms it, so the wiki says unknown. Meta's Connectors help page does not name a financial or Plaid connector, so how Muse's Plaid connection appears in Settings is also unknown. Which other agents can use the Walmart Agent Gateway, and the default spending-limit figures, are also unknown.
 
 All pages: [Personal money agents](README.md).
 
@@ -70,6 +87,10 @@ All pages: [Personal money agents](README.md).
 [^mm-01]: [How Muse works with payments (Meta Help Center)](../sources/mm-01.md). Meta, official, retrieved 2026-11-18.
 [^sp-01]: [Stripe helps Meta Muse shop with Link](../sources/sp-01.md). Stripe, official, retrieved 2026-11-18.
 [^sp-04]: [Ernie Tedeschi on X: "The agentic story on the eve of the 2026 holiday season"](../sources/sp-04.md). Ernie Tedeschi (@ernietedeschi on X), Stripe's chief economist, personal account, third-party, retrieved 2026-11-22.
+[^wm-01]: [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](../sources/wm-01.md). Walmart, official, retrieved 2026-11-25.
+[^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](../sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
+[^gp-01]: [Now Muse Can Do the Grocery Run, With Gopuff Delivering in Minutes](../sources/gp-01.md). Gopuff, official, retrieved 2026-11-25.
+[^jd-01]: [JD partners with Meta as it launches Muse in UK](../sources/jd-01.md). JD Sports Fashion plc, official, retrieved 2026-11-25.
 [^mm-03]: [Introducing Muse (Meta newsroom)](../sources/mm-03.md). Meta, official, retrieved 2026-11-18.
 [^mm-02]: [How Muse works with Connectors (Meta Help Center)](../sources/mm-02.md). Meta, official, retrieved 2026-11-18.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.

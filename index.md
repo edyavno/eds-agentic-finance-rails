@@ -47,6 +47,7 @@ Every page in the wiki, generated from page headers.
 - [Amazon Bedrock AgentCore payments](payments/agentcore-payments.md) (current): AWS service that lets an agent pay for APIs, MCP servers and content over x402 and MPP within a per-session budget. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill, with no crypto wallet.
 - [Agentic Commerce Protocol (ACP)](payments/agentic-commerce-protocol.md) (current): An open standard for buyers, their AI agents and businesses to complete purchases. OpenAI and Stripe maintain the spec, which is in beta.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
+- [Cashfree Wallet](payments/cashfree-wallet.md) (current): A prepaid wallet in India, in invite-only beta, that an AI agent can pay bills from through Cashfree's AgentPay MCP server. The user sets a budget and can revoke access; the agent never sees card, UPI or bank details.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
 - [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md) (current): Lightspark accounts where an AI agent holds, spends, sends and receives money within limits and approvals the account holder sets. It pays Visa merchants with a card valid for one purchase. Sold to companies that build agents.
 - [Link wallet for agents](payments/link-wallet-for-agents.md) (current): Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
@@ -118,6 +119,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-25](changelog/2026-11-25.md) (current): Walmart's Agent Gateway is live with Muse, plus Gopuff and JD Sports UK. New Cashfree Wallet page. FCA agentic AI pages, PayPal Agentic VC merchant terms, Google AI Mode Wallet opt-in (read-only), and Akamai's blog on verifying Visa TAP.
 - [What changed: 2026-11-23](changelog/2026-11-23.md) (current): Visa CLI, Klarna in Adyen Agentic checkout, Stripe agent fund tools, PayPal Agent Ready, pay.sh, and Aave's official MCP are on the payments pages. A Consumer Reports and Affirm draft covers payment choice; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](changelog/2026-11-21.md) (current): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
@@ -137,7 +139,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (245)
+## Sources (257)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -156,6 +158,7 @@ Every page in the wiki, generated from page headers.
 | [ag-06](sources/ag-06.md): Connect Claude - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
 | [ag-07](sources/ag-07.md): Account revocation - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
 | [ag-08](sources/ag-08.md): Configure thresholds - AgentBank docs | AgentBank | AgentBank | official | 2026-11-19 |
+| [ak-01](sources/ak-01.md): Make Holiday Shopping Agent-Ready with Visa TAP | Trusted Agent Protocol | Akamai | official | 2026-11-25 |
 | [al-01](sources/al-01.md): Alpaca - Trade with AI Using Alpaca's MCP Server | Alpaca | Alpaca | official | 2026-11-19 |
 | [al-02](sources/al-02.md): GitHub - alpacahq/alpaca-mcp-server: Alpaca’s official MCP Server lets you trade stocks, ETFs, crypto, and options, run data analysis, and build strat | Alpaca | Alpaca (GitHub) | official | 2026-11-19 |
 | [al-03](sources/al-03.md): GitHub - alpacahq/agentic: Multi-platform plugin marketplace for Alpaca APIs · GitHub | Alpaca | Alpaca (GitHub) | official | 2026-11-19 |
@@ -196,6 +199,9 @@ Every page in the wiki, generated from page headers.
 | [cb-11](sources/cb-11.md): Coinbase Advisor | Coinbase | Coinbase | official | 2026-11-20 |
 | [cb-12](sources/cb-12.md): System Update: Take control of your money with Coinbase | Coinbase | Coinbase | official | 2026-11-20 |
 | [cb-13](sources/cb-13.md): Coinbase on X: "Which AI agent is the most popular on Coinbase?" (with video chart) | Coinbase | Coinbase (@coinbase on X) | official | 2026-11-21 |
+| [cf-01](sources/cf-01.md): Cashfree Wallet | Cashfree Wallet | Cashfree | official | 2026-11-25 |
+| [cf-02](sources/cf-02.md): AgentPay MCP | Cashfree Wallet | Cashfree | official | 2026-11-25 |
+| [cf-03](sources/cf-03.md): AgentPay MCP Integration Guide | Cashfree Wallet | Cashfree | official | 2026-11-25 |
 | [ci-01](sources/ci-01.md): Citi Online User Agreement (Section H: Use of Third-party AI Agents) | Citi | Citi | official | 2026-11-20 |
 | [cl-01](sources/cl-01.md): Use Personal Finance in Claude (Claude Help Center) | Claude Personal Finance | Anthropic | official | 2026-11-18 |
 | [cl-02](sources/cl-02.md): Introducing Personal Finance in Claude | Claude Personal Finance | Anthropic | official | 2026-11-18 |
@@ -204,6 +210,8 @@ Every page in the wiki, generated from page headers.
 | [cr-01](sources/cr-01.md): A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study) | Payment Choice Framework | Affirm and Consumer Reports | official | 2026-11-23 |
 | [cr-02](sources/cr-02.md): GitHub - consumer-reports-innovation-lab/payment-choice-framework | Payment Choice Framework | Consumer Reports Innovation Lab (GitHub), with Affirm | official | 2026-11-23 |
 | [eb-01](sources/eb-01.md): User Agreement \| eBay | eBay | eBay | official | 2026-11-15 |
+| [fc-01](sources/fc-01.md): Our approach to Agentic AI | Agentic AI regulation | Financial Conduct Authority | official | 2026-11-25 |
+| [fc-02](sources/fc-02.md): Using AI agents | Agentic AI regulation | Financial Conduct Authority | official | 2026-11-25 |
 | [fr-01](sources/fr-01.md): Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence | Banks and outside agents | Board of Governors of the Federal Reserve System | official | 2026-11-23 |
 | [gb-01](sources/gb-01.md): Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post) | Grok Bot | Grok Bot (@bot on X) | official | 2026-11-18 |
 | [gb-02](sources/gb-02.md): Finance plugin README (cursor/plugins, third_party/finance) | Grok Bot | cursor/plugins (GitHub) | official | 2026-11-18 |
@@ -212,6 +220,8 @@ Every page in the wiki, generated from page headers.
 | [gb-05](sources/gb-05.md): Grok Bot changelog | Grok Bot | xAI | official | 2026-11-18 |
 | [gg-01](sources/gg-01.md): Connect Google Wallet to Gemini for personal finance insights | Gemini and Google Wallet | Google | official | 2026-11-18 |
 | [gg-02](sources/gg-02.md): Get info & personalized insights from Google Wallet with Gemini Apps | Gemini and Google Wallet | Google Gemini Apps Help | official | 2026-11-18 |
+| [gg-03](sources/gg-03.md): A more tailored Google Search that’s uniquely yours | Gemini with Google Wallet | Google | official | 2026-11-25 |
+| [gp-01](sources/gp-01.md): Now Muse Can Do the Grocery Run, With Gopuff Delivering in Minutes | Meta Muse | Gopuff | official | 2026-11-25 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-02](sources/ib-02.md): Interactive Brokers Introduces Autonomous Trading | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-03](sources/ib-03.md): IBKR Autonomous Trading: What the AI Partition Lets an AI Trade Without Asking, Read Off IBKR's Pages — DeskTested | Interactive Brokers | DeskTested | third-party | 2026-11-12 |
@@ -226,6 +236,7 @@ Every page in the wiki, generated from page headers.
 | [id-05](sources/id-05.md): Emerging Trend in GenAI: Observations on AI Agents | FINRA | FINRA | official | 2026-11-12 |
 | [id-06](sources/id-06.md): GenAI: Continuing and Emerging Trends (FINRA 2026 oversight report) | FINRA | FINRA | official | 2026-11-12 |
 | [id-07](sources/id-07.md): ERC-8004: Trustless Agents | ERC-8004 | Ethereum Improvement Proposals | official | 2026-11-14 |
+| [jd-01](sources/jd-01.md): JD partners with Meta as it launches Muse in UK | Meta Muse | JD Sports Fashion plc | official | 2026-11-25 |
 | [jp-01](sources/jp-01.md): JPMorganChase and Plaid announce an extension to their data access agreement | JPMorgan and Plaid | JPMorganChase | official | 2026-11-18 |
 | [jp-02](sources/jp-02.md): Digital Services Agreement (J.P. Morgan Chase) | JPMorgan Chase | JPMorgan Chase | official | 2026-11-20 |
 | [kr-01](sources/kr-01.md): MCP server - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
@@ -317,6 +328,7 @@ Every page in the wiki, generated from page headers.
 | [pm-31](sources/pm-31.md): Issuing for agents - Stripe Documentation | Stripe | Stripe Docs | official | 2026-11-23 |
 | [pm-32](sources/pm-32.md): Agent Ready overview \| PayPal Developer | PayPal | PayPal Developer | official | 2026-11-23 |
 | [pm-33](sources/pm-33.md): pay.sh | pay.sh | pay.sh | official | 2026-11-23 |
+| [pm-34](sources/pm-34.md): PayPal Agentic Commerce Merchant Virtual Card Terms | PayPal | PayPal | official | 2026-11-25 |
 | [pu-01](sources/pu-01.md): Public MCP Server for trading on AI platforms | Public | Public.com | official | 2026-11-19 |
 | [pu-02](sources/pu-02.md): Connect the Public Hosted MCP Server to Claude, ChatGPT, Codex, Muse, Perplexity, and Grok \| AI Trading Setup | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-03](sources/pu-03.md): Public Trading API Changelog \| Latest Updates & Release Notes | Public | Public.com API docs | official | 2026-11-12 |
@@ -378,6 +390,8 @@ Every page in the wiki, generated from page headers.
 | [wb-09](sources/wb-09.md): Webull API: OAuth protected-resource metadata | Webull | Webull (endpoint metadata) | official | 2026-11-12 |
 | [wb-10](sources/wb-10.md): 「Webull MCP Server」および「Webull Agent Skills」の提供開始　日本株と米国株の取引ができる公式MCP Serverの提供は日本初（※） | Webull | Webull Securities Japan | official | 2026-11-12 |
 | [wb-11](sources/wb-11.md): webull-openapi-mcp release 1.2.8 | Webull | Webull (GitHub) | official | 2026-11-23 |
+| [wm-01](sources/wm-01.md): Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too. | Walmart Agent Gateway | Walmart | official | 2026-11-25 |
+| [wm-02](sources/wm-02.md): Making It Possible for Agents to Shop on Behalf of Customers | Walmart Agent Gateway | Walmart | official | 2026-11-25 |
 | [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [xm-02](sources/xm-02.md): Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform | X Money | Cross River Bank | third-party | 2026-11-18 |
 | [xm-03](sources/xm-03.md): X Money overview (payments.x.com) | X Money | X Corp | official | 2026-11-18 |

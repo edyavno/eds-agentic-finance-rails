@@ -4,14 +4,14 @@ id: gemini-google-wallet
 title: Gemini with Google Wallet
 summary: Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-25'
 kind: personal-agent
 operator: Google
-agent_can: Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money
-user_controls: You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal
+agent_can: Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money. From 2026-11-23, Search AI Mode can also opt in to connect Wallet and read spending and card-benefit tips, still without moving, managing or investing money
+user_controls: You choose whether to connect Wallet to Gemini and can turn the connection on or off at any time. You can unlink financial accounts in Google Wallet settings and manage Plaid connections in Plaid Portal. For Search AI Mode, you opt in to connect Wallet to Personal Intelligence
 mcp_server: unknown
 endpoint: unknown
-availability: Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually
+availability: Rolling out from 2026-11-13 to Gemini app users in the US who are 18 or over, with a personal Google Account, in English, on the Gemini mobile and web apps. Google says it is being made available gradually. From 2026-11-23, users can opt in to connect Google Wallet to Personal Intelligence in Search AI Mode; the countries for that rollout are unknown
 field_sources:
   operator:
   - gg-01
@@ -19,13 +19,16 @@ field_sources:
   - gg-01
   - gg-02
   - pb-08
+  - gg-03
   user_controls:
   - gg-01
   - gg-02
   - pb-08
+  - gg-03
   availability:
   - gg-01
   - gg-02
+  - gg-03
 ---
 
 # Gemini with Google Wallet
@@ -53,9 +56,17 @@ Google's Gemini app can answer money questions from your Google Wallet data, and
 
 Google announced it on 2026-11-13 for all Gemini app users in the US, on web and mobile (Android and iOS).[^gg-01] Google's help page adds that you must be 18 or over and in the US, and sign in with a personal Google Account rather than a work or school one. Gemini needs History turned on, and the connection is English only, in the Gemini mobile app and the web app, and not in Gems or Gemini Live. Google says it is making the feature available gradually, so it might not be available to you yet.[^gg-02]
 
+## What about Search AI Mode?
+
+A Google blog post dated 2026-11-23 says you can opt in to connect Google Wallet to Personal Intelligence in Search AI Mode, starting to roll out that day, with support for Drive and the Gemini app following in the coming weeks.[^gg-03]
+
+- If you connect Wallet, AI Mode can only read information from your accounts; it cannot move, manage or invest your money.[^gg-03]
+- Google says you can get tips on credit-card benefits, such as cash-back categories, travel perks and reward points, based on the cards linked in Wallet.[^gg-03]
+- The post does not name countries, so where this AI Mode connection is available is unknown. It also does not mention Plaid.
+
 ## Unknown
 
-Whether Gemini has an official MCP server or developer access for this connection, and whether Google plans to let Gemini take actions beyond reading. No cited source confirms it, so the wiki says unknown.
+Whether Gemini has an official MCP server or developer access for this connection, and whether Google plans to let Gemini take actions beyond reading. No cited source confirms it, so the wiki says unknown. The countries where Search AI Mode can connect to Wallet are also unknown.
 
 All pages: [Personal money agents](README.md). See also [Meta Muse](meta-muse.md) and [Plaid](plaid.md).
 
@@ -64,6 +75,7 @@ All pages: [Personal money agents](README.md). See also [Meta Muse](meta-muse.md
 [^gg-01]: [Connect Google Wallet to Gemini for personal finance insights](../sources/gg-01.md). Google, official, retrieved 2026-11-18.
 [^pb-08]: [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](../sources/pb-08.md). Plaid, official, retrieved 2026-11-18.
 [^gg-02]: [Get info & personalized insights from Google Wallet with Gemini Apps](../sources/gg-02.md). Google Gemini Apps Help, official, retrieved 2026-11-18.
+[^gg-03]: [A more tailored Google Search that’s uniquely yours](../sources/gg-03.md). Google, official, retrieved 2026-11-25.
 
 ---
 

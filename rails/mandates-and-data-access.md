@@ -3,7 +3,7 @@ type: rail
 title: Mandates and data access
 summary: Protocols that record what a user authorized an agent to do, and the US data-rights rule that may shape agent access to bank data.
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 ---
 
 # Mandates and data access
@@ -21,7 +21,7 @@ A [mandate](../glossary.md#mandates) records what a user authorized an agent to 
 
 ## What have a regulator and two banks said about agent authority?
 
-On 2026-11-19 the Monetary Authority of Singapore (MAS) spoke about who is responsible when an agent acts for a customer. Citi and Chase put their answer in their user agreements.
+On 2026-11-19 the Monetary Authority of Singapore (MAS) spoke about who is responsible when an agent acts for a customer. The UK's Financial Conduct Authority published firm and consumer pages on 2026-11-24. Citi and Chase put their answer in their user agreements.
 
 **MAS**, in a keynote at the Singapore FinTech Festival:
 
@@ -38,6 +38,12 @@ On 2026-11-19 the Monetary Authority of Singapore (MAS) spoke about who is respo
 
 - Barr said major banks now report finding AI agents attempting to take actions in retail customer accounts, without the bank being able to verify authenticity, consent, and alignment with customer instructions.[^fr-01]
 - He called for strict authentication, explicit consent verification for specific actions, and technical controls limiting agent capabilities.[^fr-01] The rest of the speech is about financial stability and is not used here.
+
+**Financial Conduct Authority (UK)**, in pages first published 2026-11-24:
+
+- The firm page tells technology providers considering a UK agentic product to consider whether they are carrying out regulated activities, including payments services, financial promotions, credit broking or intermediation, or financial advice. The FCA says it has powers to intervene if regulated financial services are offered without authorisation, and will not hesitate to use them if necessary.[^fc-01]
+- It tells regulated firms to consider how they know they are dealing with an agent, what consents are in place, what the agent may do, and whether it is appropriate to accept payments instructed by an AI agent, or from a digital wallet controlled by an AI agent.[^fc-01]
+- The consumer page says that before allowing a tool to make transactions, people should understand how it works and what protections (if any) they might have if something goes wrong, and should consider how much responsibility they are comfortable giving away, including whether to consent to every transaction, set limits, or let decisions be made for them. It also warns of scams and of the risks of providing bank account details to AI agents.[^fc-02]
 
 **Citi and Chase**, in their own user agreements:
 
@@ -60,6 +66,8 @@ Rules and risk are background here, not a focus. A January 27, 2026 FINRA blog, 
 [^pb-03]: [Meta's Muse is attacking one of economy's most profitable weak spots](../sources/pb-03.md). CNBC, third-party, retrieved 2026-11-12.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](../sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
 [^fr-01]: [Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence](../sources/fr-01.md). Board of Governors of the Federal Reserve System, official, retrieved 2026-11-23.
+[^fc-01]: [Our approach to Agentic AI](../sources/fc-01.md). Financial Conduct Authority, official, retrieved 2026-11-25.
+[^fc-02]: [Using AI agents](../sources/fc-02.md). Financial Conduct Authority, official, retrieved 2026-11-25.
 [^ci-01]: [Citi Online User Agreement (Section H: Use of Third-party AI Agents)](../sources/ci-01.md). Citi, official, retrieved 2026-11-20.
 [^jp-02]: [Digital Services Agreement (J.P. Morgan Chase)](../sources/jp-02.md). JPMorgan Chase, official, retrieved 2026-11-20.
 [^id-05]: [Emerging Trend in GenAI: Observations on AI Agents](../sources/id-05.md). FINRA, official, retrieved 2026-11-12.

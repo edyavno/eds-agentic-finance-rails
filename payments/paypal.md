@@ -4,7 +4,7 @@ id: paypal
 title: PayPal
 summary: PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 page_status: current
-last_verified: '2026-11-23'
+last_verified: '2026-11-25'
 kind: payment-mcp
 operator: PayPal
 agent_can: Use PayPal APIs for orders, invoices, subscriptions, shipment tracking, transaction details and disputes
@@ -55,13 +55,24 @@ PayPal supports two protocols along three paths:[^pm-32]
 
 Merchants use their existing Braintree or PayPal merchant account. This is merchant acceptance of agent checkout, not a new way for a consumer's own agent to pay from a PayPal balance.
 
+## Agentic VC (merchant virtual card terms)
+
+PayPal's Agentic Commerce Merchant Virtual Card Terms, last updated 2026-11-23, apply to merchants with a PayPal business account when a buyer pays with PayPal through an artificial intelligence agent commerce service and PayPal settles to the merchant with a one-time virtual card (an [Agentic VC](../glossary.md#agentic-vc)).[^pm-34]
+
+- The merchant is solely responsible for the costs of accepting the Agentic VC, as determined by the fees owed under the merchant's agreement with their card processor, which may differ from the fees for accepting PayPal Checkout or the buyer's own payment instrument.[^pm-34]
+- Refunds, partial refunds and price adjustments must go back as a credit to the same Agentic VC, through the card processor that processed the original transaction, not as cash, check, store credit, or to another payment method.[^pm-34]
+- The merchant must identify the payment method as "PayPal" anywhere the buyer's payment method is shown, including on order pages, order confirmations and receipts, and must not show the Agentic VC card number or card network to the buyer.[^pm-34]
+- These payments are not eligible transactions under PayPal's Seller Protection program. Disputes are resolved through the card network's chargeback process.[^pm-34]
+
+Which agent commerce services trigger an Agentic VC is determined by PayPal and is not listed in the terms, so it is unknown.
+
 ## Visa Agentic Ready
 
 Visa lists PayPal among the initial participants in its [Agentic Ready](../glossary.md#agentic-ready) program for the acceptance ecosystem, announced 2026-11-17. Visa says PayPal is working to expand acceptance of Visa agentic tokens across its merchant network, so merchants can process agent-initiated tokenized payments through their existing PayPal integration.[^pm-26] Visa's release for Europe, dated 2026-11-18, also lists PayPal among its more than 85 initial acceptance participants there.[^pm-25] See [Visa Intelligent Commerce](visa-intelligent-commerce.md).
 
 ## Unknown
 
-Whether a consumer's own agent can pay with a PayPal account through these tools, and any per-action approval. No cited source confirms it, so the wiki says unknown.
+Whether a consumer's own agent can pay with a PayPal account through these tools, and any per-action approval. Which agent commerce services trigger an Agentic VC is also unknown. No cited source confirms either, so the wiki says unknown.
 
 All programs: [Payments](README.md).
 
@@ -70,6 +81,7 @@ All programs: [Payments](README.md).
 [^pm-11]: [Agent toolkit quickstart guide - PayPal Developer](../sources/pm-11.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-10]: [MCP server quickstart guide - PayPal Developer](../sources/pm-10.md). PayPal Developer, official, retrieved 2026-11-12.
 [^pm-32]: [Agent Ready overview - PayPal Developer](../sources/pm-32.md). PayPal Developer, official, retrieved 2026-11-23.
+[^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](../sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
 [^pm-26]: [CORRECTING and REPLACING Visa Expands Agentic Ready to Help Scale Trusted AI Commerce Globally](../sources/pm-26.md). Visa, official, retrieved 2026-11-20.
 [^pm-25]: [Visa Expands Agentic Ready to Help Scale Trusted AI Commerce across Europe](../sources/pm-25.md). Visa (Visa UK newsroom), official, retrieved 2026-11-20.
 

@@ -14,14 +14,15 @@ Every update to the wiki, newest first.
 | Measure | Count |
 |---|---|
 | Brokers | 8 |
-| Payment and money programs | 30 |
-| Source cards | 245 |
-| Official sources | 212 |
+| Payment and money programs | 31 |
+| Source cards | 257 |
+| Official sources | 224 |
 | Broker fields still unknown | 19 of 96 |
 | Latest broker check | 2026-11-23 |
 
 ## Updates
 
+- [What changed: 2026-11-25](2026-11-25.md): Walmart's Agent Gateway is live with Muse, plus Gopuff and JD Sports UK. New Cashfree Wallet page. FCA agentic AI pages, PayPal Agentic VC merchant terms, Google AI Mode Wallet opt-in (read-only), and Akamai's blog on verifying Visa TAP.
 - [What changed: 2026-11-23](2026-11-23.md): Visa CLI, Klarna in Adyen Agentic checkout, Stripe agent fund tools, PayPal Agent Ready, pay.sh, and Aave's official MCP are on the payments pages. A Consumer Reports and Affirm draft covers payment choice; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](2026-11-22.md): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
 - [What changed: 2026-11-21](2026-11-21.md): The starter prompts page now has research questions and coding-agent prompts, the front page has a Try a starter prompt link, and Coinbase has a table of which AI apps trade the most.
