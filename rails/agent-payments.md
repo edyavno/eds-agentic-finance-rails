@@ -3,7 +3,7 @@ type: rail
 title: Agent payments
 summary: Starter overview of how agents pay - card-network agent programs, scoped payment tokens, open commerce protocols and HTTP 402 payments.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Agent payments
@@ -13,6 +13,7 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | Rail | What it is | Sources |
 |---|---|---|
 | [Visa Intelligent Commerce](../payments/visa-intelligent-commerce.md) | Lets agent providers transact with Visa credentials, with network-level controls, consumer-approved instructions and tokenized credentials; an MCP is available | [^pm-01][^pm-02][^pm-04] |
+| LianLian XCard | A Lianlian DigiTech press release says this business card, which lets authorised AI agents pay within set limits, is powered by Visa Intelligent Commerce Connect | [^ll-01] |
 | [Visa CLI](../payments/visa-cli.md) | After a US Visa card check, an agent gets a signing key, is listed in the [Visa Agent Directory](../glossary.md#visa-agent-directory), and can pay HTTP 402 requests in [OUSD](../glossary.md#ousd) within owner-set limits | [^pm-27][^pm-28] |
 | [Mastercard Agent Pay](../payments/mastercard-agent-pay.md) | Registered, verified agents and agentic tokens | [^pm-05][^pm-06] |
 | [Mastercard Agent Pay for Machines](../payments/mastercard-agent-pay.md#what-is-agent-pay-for-machines) | Agents pay digital services within a business-set spending limit, signing a payment voucher; builds on x402; Early Access for developers | [^pm-23] |
@@ -25,6 +26,8 @@ AI agents pay through card-network programs, limited payment tokens, open commer
 | [PayPal MCP server and Agent Toolkit](../payments/paypal.md) | MCP server that runs locally or remotely | [^pm-10][^pm-11] |
 | [Aave MCP](../payments/aave-mcp.md) | Official MCP for Aave V3 and V4 markets and positions; the agent prepares unsigned transactions, and the user's wallet signs every state change | [^aa-01][^aa-03][^aa-04] |
 | [Cashfree Wallet](../payments/cashfree-wallet.md) | A wallet in India whose AgentPay MCP server pays everyday bills through [BBPS](../glossary.md#bbps), within a budget or mandate the user approved | [^cf-01][^cf-02][^cf-03] |
+| [paymove](../payments/paymove.md) | Agents in Poland can browse a catalog and pay with [BLIK](../glossary.md#blik); each payment is confirmed in the customer's banking app. An x402 balance mode exists but is switched off | [^pv-01] |
+| [GoCardless agentic payments](../payments/gocardless.md) | A GoCardless-hosted MCP server can set up a Direct Debit mandate or take a one-off bank payment, with a secure form and final approval. Early access in the UK, in the FCA AI Live Testing programme | [^gc-01][^gc-02] |
 | [x402](../payments/x402.md) | Open, HTTP-native payment standard built on HTTP 402 | [^pm-14][^pm-15] |
 | [pay.sh](https://pay.sh/) | A client and gateway for x402 and MPP payments in stablecoins on Solana, launched 2026-05-05 by the Solana Foundation with Google Cloud | [^pm-33][^so-01] |
 | [Amazon Bedrock AgentCore payments](../payments/agentcore-payments.md) | AWS service for agents to pay over x402 and MPP within per-session budgets. Since 2026-11-19 it can also pay AWS Marketplace sellers in US dollars on the AWS bill | [^aw-01][^aw-03] |
@@ -74,6 +77,7 @@ The Agentic Mobile Protocol ([AMP](../glossary.md#agentic-mobile-protocol-amp)) 
 [^pm-14]: [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](../sources/pm-14.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-02]: [MCP docs - Visa Developer](../sources/pm-02.md). Visa Developer, official, retrieved 2026-11-12.
 [^pm-04]: [Visa Opens the Door to AI-Driven Shopping for Businesses Worldwide - Visa](../sources/pm-04.md). Visa, official, retrieved 2026-11-12.
+[^ll-01]: [Lianlian DigiTech Launches LianLian XCard](../sources/ll-01.md). Lianlian DigiTech (PR Newswire), official, retrieved 2026-11-27.
 [^pm-27]: [Visa CLI docs: Introduction](../sources/pm-27.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-28]: [Visa CLI docs: What's live today](../sources/pm-28.md). Visa CLI docs (Visa Crypto Labs), official, retrieved 2026-11-23.
 [^pm-06]: [Agentic token framework: Driving trusted AI transactions](../sources/pm-06.md). Mastercard, official, retrieved 2026-11-12.
@@ -91,6 +95,9 @@ The Agentic Mobile Protocol ([AMP](../glossary.md#agentic-mobile-protocol-amp)) 
 [^cf-01]: [Cashfree Wallet](../sources/cf-01.md). Cashfree, official, retrieved 2026-11-25.
 [^cf-02]: [AgentPay MCP](../sources/cf-02.md). Cashfree, official, retrieved 2026-11-25.
 [^cf-03]: [AgentPay MCP Integration Guide](../sources/cf-03.md). Cashfree, official, retrieved 2026-11-25.
+[^pv-01]: [AI Payments](../sources/pv-01.md). paymove, official, retrieved 2026-11-27.
+[^gc-01]: [Take payments through AI agents](../sources/gc-01.md). GoCardless, official, retrieved 2026-11-27.
+[^gc-02]: [What we learned building the UK’s first agentic bank payment](../sources/gc-02.md). GoCardless, official, retrieved 2026-11-27.
 [^pm-15]: [x402 specification v2](../sources/pm-15.md). x402 Foundation (GitHub), official, retrieved 2026-11-12.
 [^pm-33]: [pay.sh](../sources/pm-33.md). pay.sh, official, retrieved 2026-11-23.
 [^so-01]: [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](../sources/so-01.md). Solana Foundation, official, retrieved 2026-11-23.

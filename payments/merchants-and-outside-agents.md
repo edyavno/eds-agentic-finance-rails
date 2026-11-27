@@ -3,7 +3,7 @@ type: payment
 title: Merchants and outside agents
 summary: Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Merchants and outside agents
@@ -19,6 +19,7 @@ An agent that can pay still needs the merchant to accept it. Some merchants now 
 - **Walmart** runs its own [Agent Gateway](../glossary.md#agent-gateway-walmart). From 2026-11-24, Meta's [Muse](../personal-money/meta-muse.md) can shop Walmart through it, under an [Agent Profile](../glossary.md#agent-profile) the shopper sets in their Walmart account, including a spending limit and purchase approvals.[^wm-01][^wm-02]
 - Payment programs are trying to make agents easier to accept. OpenAI warns that some sites may block agent purchases by accident, and asks merchants to recognize signed agent requests with [Web Bot Auth](../glossary.md#web-bot-auth).[^oa-01]
 - Sardine, a fraud-prevention company, says merchants decline legitimate agent purchases because agents look like bots, and proposes Know Your Human to fix it. These are Sardine's own claims.[^sd-01] See [Sardine below](#what-does-sardine-say-about-agent-checkouts).
+- Holiday-traffic reports from Cloudflare Radar and Forter describe how much personal-agent shopping they are seeing. The figures change, and Forter's are its own vendor-reported numbers. See [holiday traffic](#what-do-holiday-traffic-reports-say-about-personal-agents).
 
 ## Merchant by merchant
 
@@ -62,6 +63,14 @@ Sardine's blog and product page describe how it says merchants can tell a person
 
 No merchant or agent is named in these two pages as using KYH today, so that is unknown.
 
+## What do holiday-traffic reports say about personal agents?
+
+Cloudflare Radar's Black Friday / Cyber Monday 2026 Spotlight, updated hourly, showed the following when it was read at about 1:17 PM ET (America/New_York) on 27 November 2026: personal-agent share of requests was up from 0.02% in the 1–7 October baseline to 0.05% in the last 7 days; 98.39% of personal-agent requests were allowed and 1.61% were blocked; requests from personal agents to cart, payment and purchase pages, in the last 7 days versus that baseline, were shown as all personal agents +535%, Muse +919%, dots +148% and Gemini Tasks +784%; and the United States was 75.4% of global all-personal-agent traffic.[^ra-01]
+
+Forter's own Agentic BFCM page, retrieved at about 1:16 PM ET the same day, reported figures from Forter's merchant network: agentic orders so far that Cyber Week (26–27 November 2026) were 107 times a year earlier; the average agentic order this peak season was $220 against $105 for direct purchases; and in the week of 16 November 2026, 20% of agentic orders on its network checked out through a commerce protocol. These are Forter's vendor-reported figures, not an independent measurement, and the page says they are refreshed.[^ft-01]
+
+The two reports measure different things (requests on Cloudflare's network, and orders Forter identified on its merchant network) and should not be read as the same series.
+
 ## Related
 
 - [Banks and outside agents](../personal-money/banks-and-outside-agents.md): the same question for bank accounts.
@@ -87,6 +96,8 @@ How these merchants detect agents, whether eBay, United or Booking.com grant per
 [^bl-13]: [JPMorgan Stops AI Agents From Using Customer Credit Cards (PYMNTS)](../sources/bl-13.md). PYMNTS, third-party, retrieved 2026-11-19.
 [^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](../sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
 [^sd-02]: [Know Your Human (KYH) for Agentic Commerce - Sardine](../sources/sd-02.md). Sardine, official, retrieved 2026-11-20.
+[^ra-01]: [Personal agents are shopping this holiday season](../sources/ra-01.md). Cloudflare, official, retrieved 2026-11-27.
+[^ft-01]: [Agentic BFCM: how AI agents shop Black Friday & Cyber Monday 2026](../sources/ft-01.md). Forter, official, retrieved 2026-11-27.
 
 ---
 

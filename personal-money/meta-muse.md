@@ -4,7 +4,7 @@ id: meta-muse
 title: Meta Muse
 summary: Meta's personal AI agent. Its finance features use Plaid so people can connect bank, card, investment and mortgage accounts for personalized money guidance.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 kind: personal-agent
 operator: Meta
 agent_can: Give personalized money guidance from accounts you connect through Plaid, such as balances, transactions, investment holdings and mortgage information. Separately, with your approval each time, buy online using Link by Stripe or a card saved in its Secure Credential Store. From 2026-11-24, shop Walmart through the Walmart Agent Gateway, shop Gopuff once you approve the order, and shop JD Sports in the UK
@@ -78,6 +78,8 @@ More on this: [Banks and outside agents](banks-and-outside-agents.md).
 
 Whether Muse can pay bills or send money from a bank account (Meta's payments page names only Link by Stripe and a saved credit card), and whether it has an official MCP server or other developer access. No cited source confirms it, so the wiki says unknown. Meta's Connectors help page does not name a financial or Plaid connector, so how Muse's Plaid connection appears in Settings is also unknown. Which other agents can use the Walmart Agent Gateway, and the default spending-limit figures, are also unknown.
 
+Cloudflare Radar's Black Friday / Cyber Monday 2026 Spotlight, when read at about 1:17 PM ET (America/New_York) on 27 November 2026, showed requests from Muse to cart, payment and purchase pages at +919% in the last 7 days versus the 1–7 October baseline. The figures are updated hourly.[^ra-01]
+
 All pages: [Personal money agents](README.md).
 
 ## Sources
@@ -95,6 +97,7 @@ All pages: [Personal money agents](README.md).
 [^mm-02]: [How Muse works with Connectors (Meta Help Center)](../sources/mm-02.md). Meta, official, retrieved 2026-11-18.
 [^bl-01]: [JPMorgan blocks outside AI agents like Muse, Instinct from account access](../sources/bl-01.md). CNBC, third-party, retrieved 2026-11-12.
 [^pb-04]: [AI agents scramble banks' fight with fintechs](../sources/pb-04.md). POLITICO, third-party, retrieved 2026-11-12.
+[^ra-01]: [Personal agents are shopping this holiday season](../sources/ra-01.md). Cloudflare, official, retrieved 2026-11-27.
 
 ---
 

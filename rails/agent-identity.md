@@ -3,7 +3,7 @@ type: rail
 title: Agent identity
 summary: How agents can prove who they are to websites and merchants - signed HTTP requests, network-run trust protocols and proof-of-human delegation.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Agent identity
@@ -52,6 +52,8 @@ Sardine says a shopping agent usually shops through a cloud browser in a data ce
 
 Akamai's blog says it verifies Visa TAP signatures at the edge, so a merchant can let a verified agent browse a catalog while checkout, login or account changes follow stricter rules. These are Akamai's own claims.[^ak-01]
 
+Cloudflare Radar's Black Friday / Cyber Monday 2026 Spotlight, updated hourly, is a network-level look at personal-agent requests. When the page was read at about 1:17 PM ET (America/New_York) on 27 November 2026, it showed personal-agent share of requests up from 0.02% in the 1–7 October baseline to 0.05% in the last 7 days, 98.39% of personal-agent requests allowed and 1.61% blocked, and the United States as 75.4% of that global traffic. Requests to cart, payment and purchase pages were shown as all personal agents +535% versus the baseline, with Muse +919%, dots +148% and Gemini Tasks +784%.[^ra-01] Forter's own page, retrieved at about 1:16 PM ET the same day, reported that agentic orders on its merchant network so far that Cyber Week were 107 times a year earlier, and that 20% of agentic orders in the week of 16 November 2026 checked out through a commerce protocol. Those are Forter's vendor-reported figures.[^ft-01] See [Merchants and outside agents](../payments/merchants-and-outside-agents.md#what-do-holiday-traffic-reports-say-about-personal-agents).
+
 ## How do agents from different firms identify each other?
 
 BNY says its [Agentic Negotiation Protocol](../glossary.md#agentic-negotiation-protocol-anp) verifies participants and allows them to connect securely, so the agents can exchange offers and counteroffers.[^bn-01] See [Institutional markets](institutional-markets.md).
@@ -77,6 +79,8 @@ BNY says its [Agentic Negotiation Protocol](../glossary.md#agentic-negotiation-p
 [^bl-04]: [Schwab CEO says firm is blocking rogue AI agents from client accounts  - InvestmentNews](../sources/bl-04.md). InvestmentNews, third-party, retrieved 2026-11-12.
 [^bl-08]: [Five Major Banks Are Blocking AI Agents From Logging Into Customer Accounts](../sources/bl-08.md). Yahoo Finance, third-party, retrieved 2026-11-12.
 [^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](../sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
+[^ra-01]: [Personal agents are shopping this holiday season](../sources/ra-01.md). Cloudflare, official, retrieved 2026-11-27.
+[^ft-01]: [Agentic BFCM: how AI agents shop Black Friday & Cyber Monday 2026](../sources/ft-01.md). Forter, official, retrieved 2026-11-27.
 
 ---
 

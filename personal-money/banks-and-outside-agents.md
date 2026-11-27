@@ -3,7 +3,7 @@ type: personal-money
 title: Banks and outside agents
 summary: What news reports say about big US banks blocking or limiting outside AI agents, including Chase's block on agents shopping with a card number, the read-only middle ground, and the US data-rights rule in the background.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Banks and outside agents
@@ -59,6 +59,7 @@ These two come from the banks' own terms, not from news reports. Both say an out
 - The Monetary Authority of Singapore said on 2026-11-19 that it would not advise giving personal agents login credentials to financial accounts, as there is insufficient assurance of safety.[^ma-01] See [Mandates and data access](../rails/mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).
 - In a 16 November 2026 speech, Federal Reserve Governor Michael S. Barr said major banks now report finding AI agents attempting to take actions in retail customer accounts, without the bank being able to verify authenticity, consent, and alignment with customer instructions. He called for strict authentication, explicit consent verification for specific actions, and technical controls limiting agent capabilities.[^fr-01]
 - The UK's Financial Conduct Authority (FCA) published firm and consumer pages on 2026-11-24. The firm page tells technology providers to consider whether they are carrying out regulated activities, including payments services, and says the FCA has powers to intervene if regulated financial services are offered without authorisation. It tells regulated firms to consider how they know they are dealing with an agent, what consents are in place, what the agent may do, and whether it is appropriate to accept payments instructed by an AI agent, or from a digital wallet controlled by an AI agent.[^fc-01] The consumer page says people should understand how a tool works and what protections they might have if something goes wrong, and consider whether to consent to every transaction, set limits, or let decisions be made for them. It also warns of scams and of the risks of providing bank account details to AI agents.[^fc-02] See [Mandates and data access](../rails/mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).
+- GoCardless, a UK payments company, says it was selected for the FCA's Live AI Testing Programme and, working alongside that programme, completed what it calls the UK's first agentic account-to-account payment, a recurring donation to Trussell. A GoCardless-hosted MCP server can set up a Direct Debit mandate or a one-off bank payment; a secure form opens in the chat, and the agent does not get the payer's bank details. The product is in early access for UK merchants taking payments in GBP.[^gc-01][^gc-02][^gc-03] See [GoCardless agentic payments](../payments/gocardless.md).
 
 ## Why banks say they are worried
 
@@ -109,6 +110,9 @@ All pages: [Personal money agents](README.md).
 [^tc-01]: [More banks say customers using AI agents are on their own — even if they get hacked (TechCrunch)](../sources/tc-01.md). TechCrunch, third-party, retrieved 2026-11-20.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](../sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.
 [^fr-01]: [Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence](../sources/fr-01.md). Board of Governors of the Federal Reserve System, official, retrieved 2026-11-23.
+[^gc-01]: [Take payments through AI agents](../sources/gc-01.md). GoCardless, official, retrieved 2026-11-27.
+[^gc-02]: [What we learned building the UK’s first agentic bank payment](../sources/gc-02.md). GoCardless, official, retrieved 2026-11-27.
+[^gc-03]: [How we collected the UK’s first agentic account-to-account payment with Trussell](../sources/gc-03.md). GoCardless, official, retrieved 2026-11-27.
 [^pb-06]: [Introducing Agent Detection: building trust in the age of agentic finance](../sources/pb-06.md). Plaid, official, retrieved 2026-11-18.
 [^jp-01]: [JPMorganChase and Plaid announce an extension to their data access agreement](../sources/jp-01.md). JPMorganChase, official, retrieved 2026-11-18.
 [^oa-02]: [Making purchases with ChatGPT Wallet](../sources/oa-02.md). OpenAI Help Center, official, retrieved 2026-11-19.

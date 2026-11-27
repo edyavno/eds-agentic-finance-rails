@@ -139,7 +139,11 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Making purchases with ChatGPT Wallet](oa-02.md) | OpenAI Help Center | official | 2026-11-19 |
 | [ChatGPT Wallet terms](oa-03.md) | OpenAI | official | 2026-11-15 |
 | [Accept payments - OpenAI Commerce](oa-04.md) | OpenAI Developers | official | 2026-11-15 |
+| [Take payments through AI agents](gc-01.md) | GoCardless | official | 2026-11-27 |
+| [What we learned building the UK’s first agentic bank payment](gc-02.md) | GoCardless | official | 2026-11-27 |
+| [How we collected the UK’s first agentic account-to-account payment with Trussell](gc-03.md) | GoCardless | official | 2026-11-27 |
 | [Adyen Merchants Can Now Offer Klarna in AI Agent Checkout](pm-29.md) | Klarna and Adyen (Business Wire release on Klarna's investor site) | official | 2026-11-23 |
+| [Lianlian DigiTech Launches LianLian XCard](ll-01.md) | Lianlian DigiTech (PR Newswire) | official | 2026-11-27 |
 | [Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments](ls-01.md) | Lightspark (via GlobeNewswire) | official | 2026-11-20 |
 | [Agent Accounts (Lightspark documentation)](ls-02.md) | Lightspark (documentation) | official | 2026-11-20 |
 | [Stripe helps Meta Muse shop with Link](sp-01.md) | Stripe | official | 2026-11-18 |
@@ -159,6 +163,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Mastercard Open Finance US (Mastercard Developers documentation)](pm-24.md) | Mastercard Developers | official | 2026-11-19 |
 | [pay.sh](pm-33.md) | pay.sh | official | 2026-11-23 |
 | [Solana Foundation Launches Pay.sh in Collaboration with Google Cloud](so-01.md) | Solana Foundation | official | 2026-11-23 |
+| [AI Payments](pv-01.md) | paymove | official | 2026-11-27 |
+| [paymove for agents](pv-02.md) | paymove | official | 2026-11-27 |
 | [MCP server quickstart guide \| PayPal Developer](pm-10.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent toolkit quickstart guide \| PayPal Developer](pm-11.md) | PayPal Developer | official | 2026-11-12 |
 | [Agent Ready overview \| PayPal Developer](pm-32.md) | PayPal Developer | official | 2026-11-23 |
@@ -185,6 +191,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Making It Possible for Agents to Shop on Behalf of Customers](wm-02.md) | Walmart | official | 2026-11-25 |
 | [GitHub - x402-foundation/x402: A payments protocol for the internet. Built on HTTP. · GitHub](pm-14.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
 | [x402 specification v2](pm-15.md) | x402 Foundation (GitHub) | official | 2026-11-12 |
+| [Scheme: exact on Bitcoin Lightning (lnbtc)](xf-01.md) | x402 Foundation | official | 2026-11-27 |
 
 ### Personal money agents
 
@@ -240,6 +247,7 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 | [Product Updates: August 2026 (Plaid)](pb-22.md) | Plaid | official | 2026-11-18 |
 | [AI agents scramble banks' fight with fintechs](pb-04.md) | POLITICO | third-party | 2026-11-12 |
 | ['Talk to transact': Starling customers can use their voice to send money](st-01.md) | Starling Bank | official | 2026-11-18 |
+| [Put Gemini to work for you](gg-04.md) | Google | official | 2026-11-27 |
 | [X Money plugin README (cursor/plugins, third_party/x-money)](xm-01.md) | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform](xm-02.md) | Cross River Bank | third-party | 2026-11-18 |
 | [X Money overview (payments.x.com)](xm-03.md) | X Corp | official | 2026-11-18 |
@@ -336,6 +344,8 @@ The cards are grouped by topic. Within a group they are sorted by subject, such 
 |---|---|---|---|
 | [Our approach to Agentic AI](fc-01.md) | Financial Conduct Authority | official | 2026-11-25 |
 | [Using AI agents](fc-02.md) | Financial Conduct Authority | official | 2026-11-25 |
+| [Agentic BFCM: how AI agents shop Black Friday & Cyber Monday 2026](ft-01.md) | Forter | official | 2026-11-27 |
+| [Personal agents are shopping this holiday season](ra-01.md) | Cloudflare | official | 2026-11-27 |
 | [Make Holiday Shopping Agent-Ready with Visa TAP](ak-01.md) | Akamai | official | 2026-11-25 |
 
 ### Trading

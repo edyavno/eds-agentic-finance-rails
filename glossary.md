@@ -3,7 +3,7 @@ type: guide
 title: Glossary
 summary: Short, plain-English definitions of recurring terms in this wiki, including MCP, OAuth, paper trading, payment tokens, open banking, and related agent-finance vocabulary.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Glossary
@@ -17,6 +17,10 @@ Two-factor authentication. A second check, besides a password, that a person is 
 ## A2A
 
 Agent2Agent. An open protocol for AI agents to talk to and hand tasks to other agents. AP2 is offered as an extension to it.
+
+## Account-to-account payment
+
+A bank payment from one account to another, rather than a card. GoCardless uses the term for Direct Debit and open-banking payments set up by an agent.[^gc-02][^gc-03]
 
 ## Agent Detection
 
@@ -66,6 +70,10 @@ A separately funded slice of an account reserved for an agent, so the rest of th
 
 A list of apps or clients that are allowed to connect. Anything not on the list is denied.
 
+## AP2
+
+The Agent Payments Protocol, an open protocol that carries signed proof of what the user authorized. [Tasks in Gemini](personal-money/gemini-tasks.md) says it uses AP2 for purchases.[^gg-04] See [AP2](payments/ap2.md).
+
 ## API key
 
 A secret string a program uses to prove it is allowed to call a service.
@@ -81,6 +89,14 @@ India's Bharat Bill Payment System, the bill payment network that connects most 
 ## Bearer token
 
 A credential sent with a request, usually in an HTTP header, to prove the client is allowed to access a resource.
+
+## BLIK
+
+A Polish payment method confirmed with a code in the customer's banking app. [paymove](payments/paymove.md) uses a fresh BLIK transaction for each agent payment.[^pv-01]
+
+## BOLT11
+
+A standard format for a Bitcoin [Lightning](#lightning) invoice. In the x402 Lightning scheme, the client pays a fresh BOLT11 invoice and returns the payment preimage.[^xf-01]
 
 ## CLI
 
@@ -109,6 +125,10 @@ A step in Plaid's Link screen that tells a person which types of data an app is 
 ## Dead man's switch
 
 A timer that cancels all open orders automatically unless the program that set it keeps checking in. If the agent or its computer stops, the orders do not stay live.
+
+## Direct Debit
+
+A bank payment instruction that lets a business collect money from a customer's account, often on a recurring schedule. [GoCardless](payments/gocardless.md) lets an agent set up a Direct Debit mandate through a hosted MCP server, with the payer confirming in a secure form.[^gc-02]
 
 ## Dynamic Client Registration
 
@@ -161,6 +181,10 @@ The AI app or tool a person uses to talk to a large language model, such as a ch
 ## llms.txt
 
 A machine-readable index of pages, published so AI agents can find and read a site's documentation.
+
+## Lightning
+
+Bitcoin's network for fast payments, settled with invoices rather than on-chain transactions. An x402 scheme uses Lightning under the `lnbtc` namespace.[^xf-01]
 
 ## Mandates
 
@@ -274,6 +298,10 @@ Standard input and output. A local program can talk to a client through these st
 
 A balance held for you by a payments company, usually a licensed money transmitter, with a partner bank holding the cash. It works like a bank account in the app but is not itself a bank account. X Money is described this way in a US regulator's database.
 
+## Tasks in Gemini
+
+A mode in Google's Gemini app that can carry out tasks, including shopping and checkout with Google Pay. Google says it uses [AP2](#ap2) for purchases, and you can set a hard spending cap.[^gg-04] See [Tasks in Gemini](personal-money/gemini-tasks.md).
+
 ## Tempo
 
 A blockchain network that carries dollar [stablecoin](#stablecoin) payments, including [OUSD](#ousd). [Visa CLI](payments/visa-cli.md) uses Tempo for agent payments from the owner's wallet.[^pm-27]
@@ -308,12 +336,17 @@ A protocol for paying for a resource as part of a web request, often used so an 
 
 ## Sources
 
+[^gc-02]: [What we learned building the UK’s first agentic bank payment](sources/gc-02.md). GoCardless, official, retrieved 2026-11-27.
+[^gc-03]: [How we collected the UK’s first agentic account-to-account payment with Trussell](sources/gc-03.md). GoCardless, official, retrieved 2026-11-27.
 [^wm-01]: [Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too.](sources/wm-01.md). Walmart, official, retrieved 2026-11-25.
 [^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
 [^nt-01]: [NETS and Ant International Deepen Partnership to Empower Singapore’s Businesses for a Future in Agentic Commerce with Agentic Mobile Protocol](sources/nt-01.md). NETS (Network for Electronic Transfers), official, retrieved 2026-11-20.
 [^bn-01]: [BNY and Microsoft Complete First Agentic Negotiation of a U.S. Treasury Trade](sources/bn-01.md). BNY, official, retrieved 2026-11-20.
 [^pm-34]: [PayPal Agentic Commerce Merchant Virtual Card Terms](sources/pm-34.md). PayPal, official, retrieved 2026-11-25.
+[^gg-04]: [Put Gemini to work for you](sources/gg-04.md). Google, official, retrieved 2026-11-27.
 [^cf-02]: [AgentPay MCP](sources/cf-02.md). Cashfree, official, retrieved 2026-11-25.
+[^pv-01]: [AI Payments](sources/pv-01.md). paymove, official, retrieved 2026-11-27.
+[^xf-01]: [Scheme: exact on Bitcoin Lightning (lnbtc)](sources/xf-01.md). x402 Foundation, official, retrieved 2026-11-27.
 [^cr-01]: [A Consumer-First Standard for AI Payments (Affirm and Consumer Reports case study)](sources/cr-01.md). Affirm and Consumer Reports, official, retrieved 2026-11-23.
 [^aa-01]: [Aave MCP](sources/aa-01.md). Aave, official, retrieved 2026-11-23.
 [^ma-01]: [Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026](sources/ma-01.md). Monetary Authority of Singapore, official, retrieved 2026-11-20.

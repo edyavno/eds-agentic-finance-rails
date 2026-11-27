@@ -4,7 +4,7 @@ id: ap2
 title: AP2 (Agent Payments Protocol)
 summary: 'An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.'
 page_status: current
-last_verified: '2026-11-20'
+last_verified: '2026-11-27'
 kind: mandate-protocol
 operator: Google (reference code on GitHub)
 agent_can: 'Carry signed proof of what the user authorized: a Checkout Mandate shared with the merchant and a Payment Mandate shared with the credential provider, the card networks and the payment processor'
@@ -44,19 +44,21 @@ The mandates chain together into an audit trail, whether or not the person is pr
 - AP2 is available as an extension for the open Agent2Agent (A2A) protocol and for Universal Commerce Protocol. Its docs call it an open extension for A2A and [MCP](../glossary.md#mcp).[^pm-13]
 - Google's GitHub repo has reference code and sample scenarios in Python, Go and Android. The samples use Google's Agent Development Kit, but AP2 does not require it.[^pm-12]
 - AXS, a Singapore bill payment network, says its agentic bill payment solution is designed around four standards and frameworks, including AP2. AXS describes AP2 as providing a framework for secure, verifiable payment authorisation.[^ax-01] See [Agent payments](../rails/agent-payments.md#can-an-agent-pay-bills).
+- Google says [Tasks in Gemini](../personal-money/gemini-tasks.md) now uses AP2 to make purchases, with digital tokens on supported Mastercard and Visa cards, and American Express coming soon.[^gg-04]
 - AP2 is a protocol, not a hosted service, so there is no endpoint.
 
 More context: [Mandates and data access](../rails/mandates-and-data-access.md). All programs: [Payments](README.md).
 
 ## Unknown
 
-Which payment networks and wallets support AP2 in production. No cited source confirms it, so the wiki says unknown.
+Which wallets besides Gemini, and which merchants, support AP2 in production. Google says Tasks in Gemini uses AP2 with Mastercard and Visa tokens; how widely that is accepted is unknown.
 
 ## Sources
 
 [^pm-13]: [AP2 - Agent Payments Protocol Documentation](../sources/pm-13.md). AP2 Protocol, official, retrieved 2026-11-12.
 [^pm-12]: [GitHub - google-agentic-commerce/AP2: Building a Secure and Interoperable Future for AI-Driven Payments. · GitHub](../sources/pm-12.md). Google (GitHub), official, retrieved 2026-11-12.
 [^ax-01]: [AXS Pioneers Agentic Bill Payments in South-East Asia, Opening Its Bill Payment Network to AI-Powered Partners](../sources/ax-01.md). AXS, official, retrieved 2026-11-20.
+[^gg-04]: [Put Gemini to work for you](../sources/gg-04.md). Google, official, retrieved 2026-11-27.
 
 ---
 

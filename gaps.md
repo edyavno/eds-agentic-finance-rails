@@ -3,7 +3,7 @@ type: gaps
 title: Gaps - what we do not know yet
 summary: 'Open questions the wiki cannot answer yet, ranked: missing agent terms, order limits, paper trading and more, from unknown fields and reader feedback.'
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Gaps
@@ -63,6 +63,12 @@ The biggest open questions are the brokers' agent terms and agreements, none of 
 - **Google Search AI Mode and Wallet.** The 2026-11-23 blog post does not name the countries where the opt-in Wallet connection is available.[^gg-03] See [Gemini with Google Wallet](personal-money/gemini-google-wallet.md#what-about-search-ai-mode).
 - **FCA agentic AI pages.** A linked Digital Regulation Cooperation Forum joint statement PDF was not opened for this wiki.[^fc-01]
 - **Akamai and Visa TAP.** The account of edge verification is Akamai's own blog, not a Visa source.[^ak-01] See [Agent identity](rails/agent-identity.md).
+- **Tasks in Gemini.** Default cap amounts, which merchants it can check out with, and whether Google Pay checkout works outside the United States are not in the post cited.[^gg-04] See [Tasks in Gemini](personal-money/gemini-tasks.md).
+- **paymove.** Fees, the MCP endpoint, and whether the listed ChatGPT, Claude and Grok connections are live are not in the pages cited.[^pv-01] See [paymove](payments/paymove.md).
+- **GoCardless agentic payments.** Fees, the MCP endpoint, and whether the product is generally available are not in the pages cited.[^gc-01] See [GoCardless agentic payments](payments/gocardless.md).
+- **LianLian XCard.** The countries, fees, and the Visa Intelligent Commerce Connect claim are from Lianlian DigiTech's own press release, not a Visa page.[^ll-01] See [Visa Intelligent Commerce](payments/visa-intelligent-commerce.md).
+- **Holiday-traffic figures.** Cloudflare Radar and Forter numbers change (Radar hourly; Forter says peak-season figures refresh every hour and others daily). Forter's figures are its own vendor-reported numbers from its merchant network.[^ra-01][^ft-01]
+- **x402 Lightning scheme.** The `lnbtc` scheme describes a machine-to-machine invoice and preimage flow. It does not describe a person approving a payment.[^xf-01] See [x402](payments/x402.md).
 
 ## Unknown fields by provider
 
@@ -135,6 +141,13 @@ These cards are prior art or competing directories. They are leads only: use the
 [^gg-03]: [A more tailored Google Search that’s uniquely yours](sources/gg-03.md). Google, official, retrieved 2026-11-25.
 [^fc-01]: [Our approach to Agentic AI](sources/fc-01.md). Financial Conduct Authority, official, retrieved 2026-11-25.
 [^ak-01]: [Make Holiday Shopping Agent-Ready with Visa TAP](sources/ak-01.md). Akamai, official, retrieved 2026-11-25.
+[^gg-04]: [Put Gemini to work for you](sources/gg-04.md). Google, official, retrieved 2026-11-27.
+[^pv-01]: [AI Payments](sources/pv-01.md). paymove, official, retrieved 2026-11-27.
+[^gc-01]: [Take payments through AI agents](sources/gc-01.md). GoCardless, official, retrieved 2026-11-27.
+[^ll-01]: [Lianlian DigiTech Launches LianLian XCard](sources/ll-01.md). Lianlian DigiTech (PR Newswire), official, retrieved 2026-11-27.
+[^ra-01]: [Personal agents are shopping this holiday season](sources/ra-01.md). Cloudflare, official, retrieved 2026-11-27.
+[^ft-01]: [Agentic BFCM: how AI agents shop Black Friday & Cyber Monday 2026](sources/ft-01.md). Forter, official, retrieved 2026-11-27.
+[^xf-01]: [Scheme: exact on Bitcoin Lightning (lnbtc)](sources/xf-01.md). x402 Foundation, official, retrieved 2026-11-27.
 [^pa-01]: [GitHub - mphinance/awesome-broker-mcp: Which brokers can an AI actually trade through? A verified directory of broker MCP servers — official vs commun](sources/pa-01.md). mphinance (GitHub), third-party, retrieved 2026-11-12.
 [^pa-02]: [GitHub - BlockRunAI/awesome-finance-mcp: A curated list of MCP servers for AI finance agents · GitHub](sources/pa-02.md). BlockRunAI (GitHub), third-party, retrieved 2026-11-12.
 [^pa-05]: [GitHub - macoloye/awesome-finance-agent: A curated list of finance agent SDKs, MCP tools, wallet infrastructure, safeguards, simulation systems, and s](sources/pa-05.md). macoloye (GitHub), third-party, retrieved 2026-11-12.

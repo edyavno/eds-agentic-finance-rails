@@ -4,7 +4,7 @@ id: gemini-google-wallet
 title: Gemini with Google Wallet
 summary: Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 kind: personal-agent
 operator: Google
 agent_can: Answer money questions from Google Wallet data and from bank, card, loan and investment accounts linked to Wallet through Plaid, such as spending charts, forgotten subscriptions, budgets, and rewards and offers on cards and passes. Read-only, it cannot move, manage or invest money. From 2026-11-23, Search AI Mode can also opt in to connect Wallet and read spending and card-benefit tips, still without moving, managing or investing money
@@ -64,9 +64,13 @@ A Google blog post dated 2026-11-23 says you can opt in to connect Google Wallet
 - Google says you can get tips on credit-card benefits, such as cash-back categories, travel perks and reward points, based on the cards linked in Wallet.[^gg-03]
 - The post does not name countries, so where this AI Mode connection is available is unknown. It also does not mention Plaid.
 
+## What about Tasks in Gemini?
+
+[Tasks in Gemini](gemini-tasks.md) is a separate feature, announced 2026-11-17. In that mode, Google says Gemini can check out with Google Pay and now uses [AP2](../glossary.md#ap2) for purchases. That is not the read-only Wallet insights connection described on this page.[^gg-04]
+
 ## Unknown
 
-Whether Gemini has an official MCP server or developer access for this connection, and whether Google plans to let Gemini take actions beyond reading. No cited source confirms it, so the wiki says unknown. The countries where Search AI Mode can connect to Wallet are also unknown.
+Whether Gemini has an official MCP server or developer access for this Wallet insights connection. No cited source confirms it, so the wiki says unknown. The countries where Search AI Mode can connect to Wallet are also unknown. This page does not cover checkout; that is on [Tasks in Gemini](gemini-tasks.md).
 
 All pages: [Personal money agents](README.md). See also [Meta Muse](meta-muse.md) and [Plaid](plaid.md).
 
@@ -76,6 +80,7 @@ All pages: [Personal money agents](README.md). See also [Meta Muse](meta-muse.md
 [^pb-08]: [Plaid is powering personalized financial insights with Google Wallet in the Gemini app](../sources/pb-08.md). Plaid, official, retrieved 2026-11-18.
 [^gg-02]: [Get info & personalized insights from Google Wallet with Gemini Apps](../sources/gg-02.md). Google Gemini Apps Help, official, retrieved 2026-11-18.
 [^gg-03]: [A more tailored Google Search that’s uniquely yours](../sources/gg-03.md). Google, official, retrieved 2026-11-25.
+[^gg-04]: [Put Gemini to work for you](../sources/gg-04.md). Google, official, retrieved 2026-11-27.
 
 ---
 

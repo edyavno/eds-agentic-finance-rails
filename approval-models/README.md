@@ -3,7 +3,7 @@ type: approval-model
 title: Approval models
 summary: The five ways brokers decide who approves an agent's order, from a walled-off account to no broker-side approval at all.
 page_status: current
-last_verified: '2026-11-25'
+last_verified: '2026-11-27'
 ---
 
 # Approval models
@@ -321,7 +321,7 @@ The five launch brokers, placed by who has to say yes and whether the [broker or
 
 </details>
 
-Outside the broker chart, a shopper can also set limits and approvals in a merchant [Agent Profile](../glossary.md#agent-profile), as Walmart describes for its [Agent Gateway](../glossary.md#agent-gateway-walmart).[^wm-02] The UK's Financial Conduct Authority tells consumers to consider whether they want to consent to every transaction, set limits, or let decisions be made for them.[^fc-02] See [Meta Muse](../personal-money/meta-muse.md#where-can-muse-shop) and [Mandates and data access](../rails/mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).
+Outside the broker chart, a shopper can also set limits and approvals in a merchant [Agent Profile](../glossary.md#agent-profile), as Walmart describes for its [Agent Gateway](../glossary.md#agent-gateway-walmart).[^wm-02] The UK's Financial Conduct Authority tells consumers to consider whether they want to consent to every transaction, set limits, or let decisions be made for them.[^fc-02] In [Tasks in Gemini](../personal-money/gemini-tasks.md), you can set a hard spending cap, and Gemini is designed to ask for confirmation or pre-approval before clicking "Buy," unless you set a routine action to "Always allow".[^gg-04] See [Meta Muse](../personal-money/meta-muse.md#where-can-muse-shop) and [Mandates and data access](../rails/mandates-and-data-access.md#what-have-a-regulator-and-two-banks-said-about-agent-authority).
 
 ## Sources
 
@@ -341,6 +341,7 @@ Outside the broker chart, a shopper can also set limits and approvals in a merch
 [^wb-03]: [GitHub - webull-inc/webull-openapi-mcp: Webull OpenAPI MCP · GitHub](../sources/wb-03.md). Webull (GitHub), official, retrieved 2026-11-19.
 [^wm-02]: [Making It Possible for Agents to Shop on Behalf of Customers](../sources/wm-02.md). Walmart, official, retrieved 2026-11-25.
 [^fc-02]: [Using AI agents](../sources/fc-02.md). Financial Conduct Authority, official, retrieved 2026-11-25.
+[^gg-04]: [Put Gemini to work for you](../sources/gg-04.md). Google, official, retrieved 2026-11-27.
 
 ---
 

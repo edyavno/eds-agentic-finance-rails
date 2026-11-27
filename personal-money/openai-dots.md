@@ -4,7 +4,7 @@ id: openai-dots
 title: OpenAI dots
 summary: OpenAI's dots are always-on agents with their own cloud computer. They can buy with a card saved on a merchant site after approval. Whether a dot can read your Finances data is unknown.
 page_status: current
-last_verified: '2026-11-18'
+last_verified: '2026-11-27'
 kind: personal-agent
 operator: OpenAI
 agent_can: Work as an always-on agent on its own cloud computer, using plugins to connect to apps. A dot can buy with a card you saved on a merchant's website, with your approval, which may be given in advance when it specifically covers the purchase
@@ -53,6 +53,8 @@ OpenAI announced dots on 2026-09-29, rolling out to Pro and Business Premium use
 - Whether a dot can pay from a bank account or a wallet other than a saved merchant card or ChatGPT Wallet.
 - Whether dots have an MCP server or other developer access.
 
+Cloudflare Radar's Black Friday / Cyber Monday 2026 Spotlight, when read at about 1:17 PM ET (America/New_York) on 27 November 2026, showed requests from dots to cart, payment and purchase pages at +148% in the last 7 days versus the 1–7 October baseline. The figures are updated hourly.[^ra-01]
+
 All pages: [Personal money agents](README.md).
 
 ## Sources
@@ -61,6 +63,7 @@ All pages: [Personal money agents](README.md).
 [^oa-08]: [Introducing dots (OpenAI)](../sources/oa-08.md). OpenAI, official, retrieved 2026-11-18.
 [^oa-01]: [Introducing ChatGPT Wallet](../sources/oa-01.md). OpenAI, official, retrieved 2026-11-15.
 [^oa-09]: [Getting started with your dot (OpenAI Help Center)](../sources/oa-09.md). OpenAI, official, retrieved 2026-11-18.
+[^ra-01]: [Personal agents are shopping this holiday season](../sources/ra-01.md). Cloudflare, official, retrieved 2026-11-27.
 
 ---
 

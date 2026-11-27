@@ -49,10 +49,12 @@ Every page in the wiki, generated from page headers.
 - [AP2 (Agent Payments Protocol)](payments/ap2.md) (current): An open protocol that records what a user authorized an agent to buy as signed mandates: a Checkout Mandate for the merchant, a Payment Mandate for payment.
 - [Cashfree Wallet](payments/cashfree-wallet.md) (current): A prepaid wallet in India, in invite-only beta, that an AI agent can pay bills from through Cashfree's AgentPay MCP server. The user sets a budget and can revoke access; the agent never sees card, UPI or bank details.
 - [ChatGPT Wallet](payments/chatgpt-wallet.md) (current): OpenAI's wallet that lets an agent in ChatGPT pay for you. You approve each purchase with a biometric check, and the card network supplies a payment token so the agent and merchant never see your real card number.
+- [GoCardless agentic payments](payments/gocardless.md) (current): A GoCardless-hosted MCP server lets a business's AI agent set up a Direct Debit mandate or take a one-off bank payment. A secure form opens in the chat, and the agent does not get the payer's bank details. It is in early access for UK merchants, built in the FCA AI Live Testing programme.
 - [Lightspark Agent Accounts](payments/lightspark-agent-accounts.md) (current): Lightspark accounts where an AI agent holds, spends, sends and receives money within limits and approvals the account holder sets. It pays Visa merchants with a card valid for one purchase. Sold to companies that build agents.
 - [Link wallet for agents](payments/link-wallet-for-agents.md) (current): Stripe's Link wallet for agents lets a person approve each purchase an agent makes, with a one-time card or shared payment token. Muse, Grok Bot, Instinct and Claude Duet use Link or a wallet like it.
 - [Mastercard Agent Pay](payments/mastercard-agent-pay.md) (current): Mastercard's program for agent payments. Agents are registered and verified before they can pay, and they pay with agentic tokens. Merchants can verify agents with Web Bot Auth.
 - [Merchants and outside agents](payments/merchants-and-outside-agents.md) (current): Some merchants forbid AI agents from buying. eBay, United and Booking.com ban them without permission, and Target allows only a short list of approved agents.
+- [paymove](payments/paymove.md) (current): A Polish payments company whose AI agents can browse a catalog and pay with BLIK. Each payment is confirmed with a code from the customer's banking app; an automatic x402 balance mode exists but is switched off.
 - [PayPal](payments/paypal.md) (current): PayPal offers an MCP server, run locally or hosted, and an agent toolkit that let AI agents use PayPal business APIs such as orders, invoices, subscriptions and disputes.
 - [Rain Agent Vaults](payments/rain-agent-vaults.md) (current): Rain's funded balance for AI agents. The owner funds a vault and sets rules, and the agent pays with a single-use virtual Visa or Mastercard card issued for each purchase. Sold to companies that build agents.
 - [Robinhood Agentic Credit Card](payments/robinhood-agentic-credit-card.md) (current): A virtual card inside the Robinhood Gold Card that your AI agent uses through the Robinhood Banking MCP. You approve each purchase or set a required monthly limit.
@@ -69,6 +71,7 @@ Every page in the wiki, generated from page headers.
 - [Claude Duet](personal-money/claude-duet.md) (current): Claude Duet is Anthropic's proactive agent app, in research preview. It asks before it pays, sends or deletes, pays with a one-time Link card, and cannot trade or move money between accounts.
 - [Claude Personal Finance](personal-money/claude-personal-finance.md) (current): Claude's Personal Finance feature reads your balances and transactions from banks you link through Plaid, read-only. It cannot move, manage or invest money. It is in beta on paid US plans.
 - [Gemini with Google Wallet](personal-money/gemini-google-wallet.md) (current): Google's Gemini app can read your spending from Google Wallet and linked bank and card accounts to answer money questions. It is read-only and cannot move money.
+- [Tasks in Gemini](personal-money/gemini-tasks.md) (current): Google's Tasks in Gemini can shop and check out with Google Pay, using the Agent Payments Protocol. You can set a hard spending cap, and it is designed to ask before buying, unless you set a routine action to Always allow.
 - [Grok Bot](personal-money/grok-bot.md) (current): Grok Bot can read balances, spending and investments from accounts you link through Plaid, read-only. It can also pay with a Link one-time card or X Money, with a prompt to approve each purchase.
 - [Instinct](personal-money/instinct.md) (current): Instinct is a personal assistant that works in iMessage and WhatsApp. Plaid says it powers read-only account connections for US users, and Stripe says Link helps power its payments.
 - [JPMorgan Smart Cash](personal-money/jpmorgan-smart-cash.md) (current): A JPMorgan Chase AI tool in a targeted pilot. Per a news report, it aims to predict a user's cash flow and move funds to maximize yield. Only a news source is cited.
@@ -119,6 +122,7 @@ Every page in the wiki, generated from page headers.
 ## What changed
 
 - [What changed](changelog/README.md) (current): Every update to the wiki, newest first, with the current size of the wiki in numbers. Generated from page headers.
+- [What changed: 2026-11-27](changelog/2026-11-27.md) (current): New pages for Tasks in Gemini, paymove and GoCardless. Cloudflare Radar and Forter holiday-traffic figures as of 27 Nov 2026, early afternoon ET. LianLian XCard as a Visa Intelligent Commerce Connect claim, and a short note on the x402 Lightning scheme.
 - [What changed: 2026-11-25](changelog/2026-11-25.md) (current): Walmart's Agent Gateway is live with Muse, plus Gopuff and JD Sports UK. New Cashfree Wallet page. FCA agentic AI pages, PayPal Agentic VC merchant terms, Google AI Mode Wallet opt-in (read-only), and Akamai's blog on verifying Visa TAP.
 - [What changed: 2026-11-23](changelog/2026-11-23.md) (current): Visa CLI, Klarna in Adyen Agentic checkout, Stripe agent fund tools, PayPal Agent Ready, pay.sh, and Aave's official MCP are on the payments pages. A Consumer Reports and Affirm draft covers payment choice; a Fed governor spoke about bank-account agents. Webull's local MCP adds Australia.
 - [What changed: 2026-11-22](changelog/2026-11-22.md) (current): Stripe's chief economist shared Link agent-wallet spend figures, including nearly 80-fold growth from September to mid-November. The Link page has a spend diagram; Trading moved to /trading with a broker-approval diagram, and personal-money records are folded.
@@ -139,7 +143,7 @@ Every page in the wiki, generated from page headers.
 - [schema/program.schema.json](schema/program.schema.json): payments and personal money program page headers
 - [schema/page.schema.json](schema/page.schema.json): all other page headers
 
-## Sources (257)
+## Sources (267)
 
 | Card | Subject | Publisher | Authority | Retrieved |
 |---|---|---|---|---|
@@ -213,14 +217,19 @@ Every page in the wiki, generated from page headers.
 | [fc-01](sources/fc-01.md): Our approach to Agentic AI | Agentic AI regulation | Financial Conduct Authority | official | 2026-11-25 |
 | [fc-02](sources/fc-02.md): Using AI agents | Agentic AI regulation | Financial Conduct Authority | official | 2026-11-25 |
 | [fr-01](sources/fr-01.md): Speech by Governor Barr: Some Potential Financial Stability Implications of Artificial Intelligence | Banks and outside agents | Board of Governors of the Federal Reserve System | official | 2026-11-23 |
+| [ft-01](sources/ft-01.md): Agentic BFCM: how AI agents shop Black Friday & Cyber Monday 2026 | agentic commerce | Forter | official | 2026-11-27 |
 | [gb-01](sources/gb-01.md): Grok Bot on X: "Grok Bot now connects to your finances" (with follow-up post) | Grok Bot | Grok Bot (@bot on X) | official | 2026-11-18 |
 | [gb-02](sources/gb-02.md): Finance plugin README (cursor/plugins, third_party/finance) | Grok Bot | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [gb-03](sources/gb-03.md): Vault and secure sign-in (Grok Bot docs) | Grok Bot | xAI Docs | official | 2026-11-18 |
 | [gb-04](sources/gb-04.md): Approvals, security, and privacy (Grok Bot docs) | Grok Bot | xAI Docs | official | 2026-11-18 |
 | [gb-05](sources/gb-05.md): Grok Bot changelog | Grok Bot | xAI | official | 2026-11-18 |
+| [gc-01](sources/gc-01.md): Take payments through AI agents | GoCardless | GoCardless | official | 2026-11-27 |
+| [gc-02](sources/gc-02.md): What we learned building the UK’s first agentic bank payment | GoCardless | GoCardless | official | 2026-11-27 |
+| [gc-03](sources/gc-03.md): How we collected the UK’s first agentic account-to-account payment with Trussell | GoCardless | GoCardless | official | 2026-11-27 |
 | [gg-01](sources/gg-01.md): Connect Google Wallet to Gemini for personal finance insights | Gemini and Google Wallet | Google | official | 2026-11-18 |
 | [gg-02](sources/gg-02.md): Get info & personalized insights from Google Wallet with Gemini Apps | Gemini and Google Wallet | Google Gemini Apps Help | official | 2026-11-18 |
 | [gg-03](sources/gg-03.md): A more tailored Google Search that’s uniquely yours | Gemini with Google Wallet | Google | official | 2026-11-25 |
+| [gg-04](sources/gg-04.md): Put Gemini to work for you | Tasks in Gemini | Google | official | 2026-11-27 |
 | [gp-01](sources/gp-01.md): Now Muse Can Do the Grocery Run, With Gopuff Delivering in Minutes | Meta Muse | Gopuff | official | 2026-11-25 |
 | [ib-01](sources/ib-01.md): Interactive Brokers AI Hub | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
 | [ib-02](sources/ib-02.md): Interactive Brokers Introduces Autonomous Trading | Interactive Brokers | Interactive Brokers | official | 2026-11-12 |
@@ -242,6 +251,7 @@ Every page in the wiki, generated from page headers.
 | [kr-01](sources/kr-01.md): MCP server - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
 | [kr-02](sources/kr-02.md): kraken-cli - Kraken docs | Kraken | Kraken | official | 2026-11-19 |
 | [kr-03](sources/kr-03.md): GitHub - krakenfx/kraken-cli: Kraken CLI · GitHub | Kraken | Kraken (GitHub) | official | 2026-11-19 |
+| [ll-01](sources/ll-01.md): Lianlian DigiTech Launches LianLian XCard | LianLian XCard | Lianlian DigiTech (PR Newswire) | official | 2026-11-27 |
 | [ls-01](sources/ls-01.md): Lightspark Launches Agent Accounts for AI Agents to Make and Receive Payments | Lightspark Agent Accounts | Lightspark (via GlobeNewswire) | official | 2026-11-20 |
 | [ls-02](sources/ls-02.md): Agent Accounts (Lightspark documentation) | Lightspark Agent Accounts | Lightspark (documentation) | official | 2026-11-20 |
 | [ma-01](sources/ma-01.md): Keynote address by the Managing Director of the Monetary Authority of Singapore at the Singapore FinTech Festival 2026 | Monetary Authority of Singapore (Know Your Agent) | Monetary Authority of Singapore | official | 2026-11-20 |
@@ -345,6 +355,9 @@ Every page in the wiki, generated from page headers.
 | [pu-14](sources/pu-14.md): Meta Muse Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-15](sources/pu-15.md): Perplexity Connector for Stock & Options Trading on Public MCP | Public | Public.com API docs | official | 2026-11-19 |
 | [pu-16](sources/pu-16.md): Guides (Public.com API docs index) | Public | Public.com API docs | official | 2026-11-19 |
+| [pv-01](sources/pv-01.md): AI Payments | paymove | paymove | official | 2026-11-27 |
+| [pv-02](sources/pv-02.md): paymove for agents | paymove | paymove | official | 2026-11-27 |
+| [ra-01](sources/ra-01.md): Personal agents are shopping this holiday season | personal agents | Cloudflare | official | 2026-11-27 |
 | [rh-01](sources/rh-01.md): Onboarding an external agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-19 |
 | [rh-02](sources/rh-02.md): Robinhood MCP Server: What 73 Tools and an OAuth Handshake Look Like Up Close — DeskTested | Robinhood | DeskTested | third-party | 2026-11-12 |
 | [rh-04](sources/rh-04.md): Trading with your agent \| Robinhood | Robinhood | Robinhood | official | 2026-11-19 |
@@ -392,6 +405,7 @@ Every page in the wiki, generated from page headers.
 | [wb-11](sources/wb-11.md): webull-openapi-mcp release 1.2.8 | Webull | Webull (GitHub) | official | 2026-11-23 |
 | [wm-01](sources/wm-01.md): Walmart’s Black Friday Deals Continue. Meta’s Muse Can Now Shop Them, Too. | Walmart Agent Gateway | Walmart | official | 2026-11-25 |
 | [wm-02](sources/wm-02.md): Making It Possible for Agents to Shop on Behalf of Customers | Walmart Agent Gateway | Walmart | official | 2026-11-25 |
+| [xf-01](sources/xf-01.md): Scheme: exact on Bitcoin Lightning (lnbtc) | x402 | x402 Foundation | official | 2026-11-27 |
 | [xm-01](sources/xm-01.md): X Money plugin README (cursor/plugins, third_party/x-money) | X Money | cursor/plugins (GitHub) | official | 2026-11-18 |
 | [xm-02](sources/xm-02.md): Cross River Powers X Money: The First P2P Payments Experience Built Into a U.S. Social Media Platform | X Money | Cross River Bank | third-party | 2026-11-18 |
 | [xm-03](sources/xm-03.md): X Money overview (payments.x.com) | X Money | X Corp | official | 2026-11-18 |
